@@ -1,4 +1,2 @@
-<map id="Edge&lt; ATTR_TYPE, NODE_TYPE &gt;" name="Edge&lt; ATTR_TYPE, NODE_TYPE &gt;">
-<area shape="rect" id="node2" href="$class_node.html" title="{Node\&lt; NODE_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l}" alt="" coords="95,300,250,407"/>
-<area shape="rect" id="node3" href="$class_node.html" title="{Node\&lt; ATTR_TYPE \&gt;\n|&#45; _id\l|+ getAttribute()\l+ setAttribute()\l}" alt="" coords="96,145,244,237"/>
+<map id="Edge&lt; NODE_TYPE, EDGE_TYPE &gt;" name="Edge&lt; NODE_TYPE, EDGE_TYPE &gt;">
 </map>

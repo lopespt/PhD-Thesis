@@ -13,11 +13,11 @@ MAKEFILE      = QMakefile
 CC            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 CXX           = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 DEFINES       = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
-CXXFLAGS      = -pipe -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6 -Wall -W -fPIE $(DEFINES)
+CFLAGS        = -pipe -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.7 -Wall -W -fPIE $(DEFINES)
+CXXFLAGS      = -pipe -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.7 -Wall -W -fPIE $(DEFINES)
 INCPATH       = -I/opt/local/share/qt5/mkspecs/macx-clang -I. -I. -Isrc -I/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers -F/opt/local/Library/Frameworks
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
-LFLAGS        = -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.6
+LFLAGS        = -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -stdlib=libc++ -mmacosx-version-min=10.7
 LIBS          = $(SUBLIBS) -F/opt/local/Library/Frameworks -framework QtWidgets -framework QtGui -framework QtCore -framework OpenGL -framework AGL 
 AR            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq
 RANLIB        = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib -s
@@ -154,6 +154,7 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/default_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/resolve_config.prf \
 		/opt/local/share/qt5/mkspecs/features/default_post.prf \
+		/opt/local/share/qt5/mkspecs/features/c++11.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/sdk.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/default_post.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/objective_c.prf \
@@ -182,7 +183,9 @@ QMAKE_COMP_QMAKE_OBJECTIVE_CFLAGS = -pipe \
 		-O2 \
 		-isysroot \
 		/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk \
-		-mmacosx-version-min=10.6 \
+		-std=c++11 \
+		-stdlib=libc++ \
+		-mmacosx-version-min=10.7 \
 		-Wall \
 		-W
 
@@ -317,6 +320,7 @@ QMakefile: PhdThesis.pro /opt/local/share/qt5/mkspecs/macx-clang/qmake.conf /opt
 		/opt/local/share/qt5/mkspecs/features/mac/default_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/resolve_config.prf \
 		/opt/local/share/qt5/mkspecs/features/default_post.prf \
+		/opt/local/share/qt5/mkspecs/features/c++11.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/sdk.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/default_post.prf \
 		/opt/local/share/qt5/mkspecs/features/mac/objective_c.prf \
@@ -438,6 +442,7 @@ QMakefile: PhdThesis.pro /opt/local/share/qt5/mkspecs/macx-clang/qmake.conf /opt
 /opt/local/share/qt5/mkspecs/features/mac/default_pre.prf:
 /opt/local/share/qt5/mkspecs/features/resolve_config.prf:
 /opt/local/share/qt5/mkspecs/features/default_post.prf:
+/opt/local/share/qt5/mkspecs/features/c++11.prf:
 /opt/local/share/qt5/mkspecs/features/mac/sdk.prf:
 /opt/local/share/qt5/mkspecs/features/mac/default_post.prf:
 /opt/local/share/qt5/mkspecs/features/mac/objective_c.prf:
@@ -519,13 +524,10 @@ compiler_clean:
 
 ####### Compile
 
-ComplexNetwork.o: src/ComplexNetwork.cpp src/ComplexNetwork.hpp \
-		src/Node.hpp \
-		src/Edge.hpp
+ComplexNetwork.o: src/ComplexNetwork.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ComplexNetwork.o src/ComplexNetwork.cpp
 
-Edge.o: src/Edge.cpp src/Edge.hpp \
-		src/Node.hpp
+Edge.o: src/Edge.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Edge.o src/Edge.cpp
 
 main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QCoreApplication \
@@ -535,8 +537,7 @@ main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/H
 		src/Edge.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o src/main.cpp
 
-Node.o: src/Node.cpp src/Node.hpp \
-		src/Edge.hpp
+Node.o: src/Node.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Node.o src/Node.cpp
 
 ####### Install

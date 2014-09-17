@@ -1,4 +1,7 @@
 .ycm*
-PhD-Thesis.app
-PhD-Thesis.pro
+PhDThesis.app
+PhDThesis.pro
+release
 build
+.DS_Store
+.qmake.stash

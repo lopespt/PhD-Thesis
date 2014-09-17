@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nodes',['nodes',['../class_complex_network.html#a19a96536d5c3febe9f0e3e2f25bb18e0',1,'ComplexNetwork']]]
+  ['nodes',['nodes',['../class_complex_network.html#a03230eb6662d7d14b10e5ead9d5dea35',1,'ComplexNetwork']]]
 ];

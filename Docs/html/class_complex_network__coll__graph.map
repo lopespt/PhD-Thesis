@@ -1,7 +1,3 @@
 <map id="ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;" name="ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;">
-<area shape="rect" id="node3" href="$class_node.html" title="{Node\&lt; NODE_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l}" alt="" coords="205,300,359,407"/>
-<area shape="rect" id="node9" href="$class_edge.html" title="{Edge\&lt; EDGE_TYPE, NODE\l_TYPE \&gt;\n|&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="334,683,523,819"/>
-<area shape="rect" id="node10" href="$class_edge.html" title="{Edge\&lt; ATTR_TYPE, NODE\l_TYPE \&gt;\n||+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="337,484,520,620"/>
-<area shape="rect" id="node4" href="$class_node.html" title="{Node\&lt; ATTR_TYPE \&gt;\n|&#45; _id\l|+ getAttribute()\l+ setAttribute()\l}" alt="" coords="228,145,376,237"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="131,712,219,789"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="147,145,235,223"/>
 </map>
