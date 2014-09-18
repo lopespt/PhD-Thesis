@@ -39,7 +39,7 @@ void initTest(long int num_nodes, long int max_edges){
             cn.addNode(new Node<node_t, int>(node_t(i,i+1)));
         }
 
-        std::srand(std::time(NULL));
+        std::srand(time(NULL));
         const long int max = max_edges;
         time_t last_time = time(NULL);
         time_t initial_time = time(NULL);
