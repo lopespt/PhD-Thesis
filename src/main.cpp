@@ -3,6 +3,7 @@
 #include "ComplexNetwork.hpp"
 #include "tests/ComplexNetworkTest.cpp"
 #include "SunDatabaseReader.hpp"
+#include <QFile>
 
 int main(int argc, char **argv){
 

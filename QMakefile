@@ -550,7 +550,9 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
 
 release/object_files/Node.o: src/Node.cpp 

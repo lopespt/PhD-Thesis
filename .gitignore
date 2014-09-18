@@ -5,3 +5,4 @@ release
 build
 .DS_Store
 .qmake.stash
+*.swp
