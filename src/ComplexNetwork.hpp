@@ -44,7 +44,6 @@ class ComplexNetwork{
 
 template <class NODE_TYPE, class EDGE_TYPE>
 ComplexNetwork<NODE_TYPE,EDGE_TYPE>::ComplexNetwork():edges( ComplexNetwork<NODE_TYPE, EDGE_TYPE>::compare ){
-    printf( "Construido\n" );
     
 }
 
@@ -68,7 +67,6 @@ ComplexNetwork<NODE_TYPE, EDGE_TYPE>::~ComplexNetwork(){
     std::for_each(this->edges.begin(), this->edges.end(), 
             []( std::pair< std::pair<NodePtr, NodePtr>,  EdgePtr > el ){
                 delete el.second;
-                printf("Deletando aresta\n");
             });
 
     edges.clear();
@@ -77,7 +75,6 @@ ComplexNetwork<NODE_TYPE, EDGE_TYPE>::~ComplexNetwork(){
     std::for_each(nodes.begin(), nodes.end(), 
             [](std::pair< NODE_TYPE, NodePtr> el){
                 delete el.second;   
-                printf("Deletando no\n");
             });
 
     nodes.clear();
