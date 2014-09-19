@@ -4,18 +4,23 @@
 #include <QPolygon>
 #include <QImage>
 #include <QString>
+#include <QLabel>
+#include <QPixmap>
+#include <QPainter>
+#include <QColor>
 
 class Region{
 
     private:
+        QImage *image;
         QPolygon boundary;
-        QImage region;
         QString label;
+        QLabel *l=NULL;
 
     public:
-        Region(QPolygon boundary, QImage image, QString label);
-
-        
+        Region(QImage *image, QPolygon boundary, QString label);
+        void show_region();
+        ~Region();
 
 };
 

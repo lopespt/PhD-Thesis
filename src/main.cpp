@@ -14,8 +14,10 @@ int main(int argc, char **argv){
     SunDatabaseReader r("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial/");
     SupervisedImage* s=r.readNext();
     //while((s=r.readNext())!=NULL){
-    s->show_image();
-        
+    //s->show_image();
+    foreach(Region *r, s->getRegions()){
+        r->show_region();
+    }
     //}
     //initTest( 50000 , 50000000 );
 

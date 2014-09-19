@@ -2,7 +2,7 @@
 #ifndef SUPERVISED_IMAGE__H
 #define SUPERVISED_IMAGE__H
 
-#include <list>
+#include <QList>
 #include <QImage>
 #include "Region.hpp"
 #include <QLabel>
@@ -20,8 +20,9 @@ class SupervisedImage{
         QString imagePath;
         QString supervisedPath;
         QImage image;
-        list<Region> regions;
-        Region createRegion(QString polygonXml);
+        QList<Region*> regions;
+        static QPolygon extractPolygon(QString Xml);
+        static QString extractLabel(QString Xml);
         void parse_xml();
         QLabel* l=NULL;
 
@@ -29,6 +30,7 @@ class SupervisedImage{
         SupervisedImage(QString imagePath, QString supervisedPath);
         void show_image();
         ~SupervisedImage();
+        const QList<Region*>& getRegions() const;
 
 };
 

@@ -48,12 +48,14 @@ OBJECTS_DIR   = release/object_files/
 SOURCES       = src/ComplexNetwork.cpp \
 		src/Edge.cpp \
 		src/Node.cpp \
+		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
 		src/SupervisedImage.cpp \
 		src/main.cpp 
 OBJECTS       = release/object_files/ComplexNetwork.o \
 		release/object_files/Edge.o \
 		release/object_files/Node.o \
+		release/object_files/Region.o \
 		release/object_files/SunDatabaseReader.o \
 		release/object_files/SupervisedImage.o \
 		release/object_files/main.o
@@ -177,6 +179,7 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		PhdThesis.pro src/ComplexNetwork.cpp \
 		src/Edge.cpp \
 		src/Node.cpp \
+		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
 		src/SupervisedImage.cpp \
 		src/main.cpp
@@ -487,7 +490,7 @@ release/PhdThesis.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,teste.PhdThesis,g" -e "s,@EXECUTABLE@,PhdThesis,g" -e "s,@TYPEINFO@,????,g" /opt/local/share/qt5/mkspecs/macx-clang/Info.plist.app >release/PhdThesis.app/Contents/Info.plist
 dist: 
 	@test -d release/object_files/PhdThesis1.0.0 || mkdir -p release/object_files/PhdThesis1.0.0
-	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.cpp src/Edge.cpp src/Node.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
+	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.cpp src/Edge.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
 
 
 clean:compiler_clean 
@@ -539,9 +542,28 @@ release/object_files/Edge.o: src/Edge.cpp
 release/object_files/Node.o: src/Node.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
 
+release/object_files/Region.o: src/Region.cpp src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Region.o src/Region.cpp
+
 release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatabaseReader.hpp \
 		src/DatabaseReader.hpp \
 		src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
 		src/Region.hpp \
@@ -553,22 +575,28 @@ release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatab
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QtAlgorithms \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SunDatabaseReader.o src/SunDatabaseReader.cpp
 
 release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
 		src/Region.hpp \
@@ -580,12 +608,18 @@ release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedIm
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QtAlgorithms \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SupervisedImage.o src/SupervisedImage.cpp
 
 release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QCoreApplication \
@@ -599,6 +633,8 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		src/SunDatabaseReader.hpp \
 		src/DatabaseReader.hpp \
 		src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
 		src/Region.hpp \
@@ -610,16 +646,20 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QtAlgorithms \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo

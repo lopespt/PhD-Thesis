@@ -8,7 +8,7 @@ SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imag
 }
 
 void SupervisedImage::parse_xml(){
-    QRegularExpression exp("<polygon>.*?</polygon>", QRegularExpression::DotMatchesEverythingOption );      
+    QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );      
 
     QFile f(this->supervisedPath);
 
@@ -17,14 +17,38 @@ void SupervisedImage::parse_xml(){
     f.close();
     auto matches = exp.globalMatch(contents);
     while(matches.hasNext()){
-        printf("entrei\n");
-        printf("%s\n", matches.next().captured(0).toStdString().c_str());
+        QString regionXml = matches.next().captured(0);
+        QPolygon polygon = extractPolygon(regionXml);
+        QString label    = extractLabel(regionXml);
+        foreach(QPoint x, polygon){
+            printf("x = %d\ty = %d\n", x.x(), x.y());
+        }
+        printf("label = %s\n", label.toStdString().c_str());
+        //QImage image = this->image.copy(polygon.boundingRect());
+        this->regions << new Region(&this->image, polygon, label);
     }
-    printf("passei\n");
 
 }
 
-Region SupervisedImage::createRegion(QString polygonXml){
+QPolygon SupervisedImage::extractPolygon(QString Xml){
+    QRegularExpression exp("<pt>.?<x>.?(\\d*).?</x>.?<y>.?(\\d*).?</y>.?</pt>", QRegularExpression::DotMatchesEverythingOption );      
+    auto matches = exp.globalMatch(Xml);
+    QPolygon res;
+    while(matches.hasNext()){
+        auto match = matches.next();
+        int x = match.captured(1).toInt();
+        int y = match.captured(2).toInt();
+        res << QPoint(x,y);
+    }
+    return res;
+}
+
+QString SupervisedImage::extractLabel(QString Xml){
+       
+    QRegularExpression exp("<name>(.*?)</name>", QRegularExpression::DotMatchesEverythingOption );      
+    auto matched = exp.globalMatch(Xml);
+    return matched.next().captured(1).remove("\n");
+
 }
     
 
@@ -35,7 +59,15 @@ void SupervisedImage::show_image(){
     l->setVisible(true);
 }
 
+const QList<Region*>& SupervisedImage::getRegions() const{
+    return this->regions;
+}
+
+
 SupervisedImage::~SupervisedImage(){
+    foreach(Region* r, regions)
+        delete r;
+
     if(l)
         l->deleteLater();
 }
