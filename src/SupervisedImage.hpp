@@ -13,10 +13,13 @@ class SupervisedImage{
     private:
         QImage image;
         list<Region> regions;
+        void parse_xml(QString supervisedPath);
 
     public:
+        SupervisedImage(QString imagePath, QString supervisedPath);
 
 };
+
 
 #endif
 

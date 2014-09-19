@@ -9,7 +9,7 @@ int main(int argc, char **argv){
 
     QCoreApplication a(argc, argv);
 
-    SunDatabaseReader r("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial");
+    SunDatabaseReader r("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial/");
     
     //initTest( 50000 , 50000000 );
 

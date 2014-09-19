@@ -5,7 +5,7 @@ class DatabaseReader{
     private:
 
     public:
-        virtual SupervisedImage readNext()=0;
+        virtual SupervisedImage* readNext()=0;
 
 };
 

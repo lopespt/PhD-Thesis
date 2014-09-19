@@ -15,7 +15,7 @@ CXX           = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefau
 DEFINES       = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.7 -Wall -W -fPIE $(DEFINES)
 CXXFLAGS      = -pipe -std=c++11 -U__STRICT_ANSI__ -O2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.7 -Wall -W -fPIE $(DEFINES)
-INCPATH       = -I/opt/local/share/qt5/mkspecs/macx-clang -I. -I. -Isrc -Isrc/tests -I/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers -F/opt/local/Library/Frameworks
+INCPATH       = -I/opt/local/share/qt5/mkspecs/macx-clang -I. -Isrc -I/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers -I/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/Headers -F/opt/local/Library/Frameworks
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 LFLAGS        = -headerpad_max_install_names -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -stdlib=libc++ -mmacosx-version-min=10.7
 LIBS          = $(SUBLIBS) -F/opt/local/Library/Frameworks -framework QtWidgets -framework QtGui -framework QtCore -framework OpenGL -framework AGL 
@@ -47,14 +47,16 @@ OBJECTS_DIR   = release/object_files/
 
 SOURCES       = src/ComplexNetwork.cpp \
 		src/Edge.cpp \
-		src/main.cpp \
 		src/Node.cpp \
-		src/SunDatabaseReader.cpp 
+		src/SunDatabaseReader.cpp \
+		src/SupervisedImage.cpp \
+		src/main.cpp 
 OBJECTS       = release/object_files/ComplexNetwork.o \
 		release/object_files/Edge.o \
-		release/object_files/main.o \
 		release/object_files/Node.o \
-		release/object_files/SunDatabaseReader.o
+		release/object_files/SunDatabaseReader.o \
+		release/object_files/SupervisedImage.o \
+		release/object_files/main.o
 DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		/opt/local/share/qt5/mkspecs/qdevice.pri \
 		/opt/local/share/qt5/mkspecs/features/device_config.prf \
@@ -174,9 +176,10 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/lex.prf \
 		PhdThesis.pro src/ComplexNetwork.cpp \
 		src/Edge.cpp \
-		src/main.cpp \
 		src/Node.cpp \
-		src/SunDatabaseReader.cpp
+		src/SunDatabaseReader.cpp \
+		src/SupervisedImage.cpp \
+		src/main.cpp
 QMAKE_TARGET  = PhdThesis
 DESTDIR       = release/#avoid trailing-slash linebreak
 TARGET        = release/PhdThesis.app/Contents/MacOS/PhdThesis
@@ -484,7 +487,7 @@ release/PhdThesis.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,teste.PhdThesis,g" -e "s,@EXECUTABLE@,PhdThesis,g" -e "s,@TYPEINFO@,????,g" /opt/local/share/qt5/mkspecs/macx-clang/Info.plist.app >release/PhdThesis.app/Contents/Info.plist
 dist: 
 	@test -d release/object_files/PhdThesis1.0.0 || mkdir -p release/object_files/PhdThesis1.0.0
-	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.cpp src/Edge.cpp src/main.cpp src/Node.cpp src/SunDatabaseReader.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
+	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.cpp src/Edge.cpp src/Node.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
 
 
 clean:compiler_clean 
@@ -533,6 +536,38 @@ release/object_files/ComplexNetwork.o: src/ComplexNetwork.cpp
 release/object_files/Edge.o: src/Edge.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Edge.o src/Edge.cpp
 
+release/object_files/Node.o: src/Node.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
+
+release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatabaseReader.hpp \
+		src/DatabaseReader.hpp \
+		src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SunDatabaseReader.o src/SunDatabaseReader.cpp
+
+release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SupervisedImage.o src/SupervisedImage.cpp
+
 release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QCoreApplication \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qcoreapplication.h \
 		src/ComplexNetwork.hpp \
@@ -551,26 +586,14 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
-
-release/object_files/Node.o: src/Node.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
-
-release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatabaseReader.hpp \
-		src/DatabaseReader.hpp \
-		src/SupervisedImage.hpp \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
-		src/Region.hpp \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SunDatabaseReader.o src/SunDatabaseReader.cpp
 
 ####### Install
 
