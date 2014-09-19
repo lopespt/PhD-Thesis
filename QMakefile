@@ -549,6 +549,16 @@ release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatab
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
@@ -565,11 +575,23 @@ release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedIm
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SupervisedImage.o src/SupervisedImage.cpp
 
 release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QCoreApplication \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qcoreapplication.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QApplication \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qapplication.h \
 		src/ComplexNetwork.hpp \
 		src/Node.hpp \
 		src/Edge.hpp \
@@ -584,15 +606,23 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QDir \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
 
 ####### Install

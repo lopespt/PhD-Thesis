@@ -13,6 +13,7 @@ class Region{
         QString label;
 
     public:
+        Region(QPolygon boundary, QImage image, QString label);
 
         
 
