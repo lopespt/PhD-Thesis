@@ -19,12 +19,8 @@ void SupervisedImage::parse_xml(){
     while(matches.hasNext()){
         QString regionXml = matches.next().captured(0);
         QPolygon polygon = extractPolygon(regionXml);
+        polygon = polygon.intersected(QPolygon(QRect(0,0,image.width()-1, image.height()-1)));
         QString label    = extractLabel(regionXml);
-        foreach(QPoint x, polygon){
-            printf("x = %d\ty = %d\n", x.x(), x.y());
-        }
-        printf("label = %s\n", label.toStdString().c_str());
-        //QImage image = this->image.copy(polygon.boundingRect());
         this->regions << new Region(&this->image, polygon, label);
     }
 
@@ -63,6 +59,10 @@ const QList<Region*>& SupervisedImage::getRegions() const{
     return this->regions;
 }
 
+
+QImage* SupervisedImage::getImage(){
+    return &this->image;
+}
 
 SupervisedImage::~SupervisedImage(){
     foreach(Region* r, regions)

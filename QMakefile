@@ -556,7 +556,9 @@ release/object_files/Region.o: src/Region.cpp src/Region.hpp \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Region.o src/Region.cpp
 
 release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatabaseReader.hpp \
@@ -579,6 +581,8 @@ release/object_files/SunDatabaseReader.o: src/SunDatabaseReader.cpp src/SunDatab
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
@@ -612,6 +616,8 @@ release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedIm
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
@@ -650,6 +656,8 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \

@@ -25,12 +25,14 @@ class SupervisedImage{
         static QString extractLabel(QString Xml);
         void parse_xml();
         QLabel* l=NULL;
+        
 
     public:
         SupervisedImage(QString imagePath, QString supervisedPath);
         void show_image();
         ~SupervisedImage();
         const QList<Region*>& getRegions() const;
+        QImage* getImage();
 
 };
 

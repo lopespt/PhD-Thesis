@@ -8,6 +8,7 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QColor>
+#include <QPoint>
 
 class Region{
 
@@ -21,6 +22,11 @@ class Region{
         Region(QImage *image, QPolygon boundary, QString label);
         void show_region();
         ~Region();
+        QRect getBoundaryRect() const;
+        QRgb getPixel(int x, int y, bool *insideRegion=NULL) const;
+        QRgb getPixelRelative(int x, int y, bool *insideRegion=NULL) const;
+        QString getLabel() const;
+        
 
 };
 
