@@ -1,12 +1,13 @@
 <map id="src/main.cpp" name="src/main.cpp">
-<area shape="rect" id="node4" href="$_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="205,155,350,181"/>
-<area shape="rect" id="node10" href="$_complex_network_test_8cpp.html" title="tests/ComplexNetworkTest.cpp" alt="" coords="438,80,637,107"/>
-<area shape="rect" id="node15" href="$_sun_database_reader_8hpp.html" title="SunDatabaseReader.hpp" alt="" coords="865,80,1037,107"/>
-<area shape="rect" id="node36" href="$_area_feature_8hpp.html" title="AreaFeature.hpp" alt="" coords="1361,155,1479,181"/>
-<area shape="rect" id="node5" href="$_node_8hpp.html" title="Node.hpp" alt="" coords="307,229,386,256"/>
-<area shape="rect" id="node6" href="$_edge_8hpp.html" title="Edge.hpp" alt="" coords="310,304,389,331"/>
-<area shape="rect" id="node16" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="764,155,913,181"/>
-<area shape="rect" id="node17" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="779,229,925,256"/>
-<area shape="rect" id="node20" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="1160,304,1248,331"/>
-<area shape="rect" id="node37" href="$_feature_8hpp.html" title="Feature.hpp" alt="" coords="1321,229,1412,256"/>
+<area shape="rect" id="node4" href="$_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="113,155,258,181"/>
+<area shape="rect" id="node10" href="$_complex_network_test_8cpp.html" title="tests/ComplexNetworkTest.cpp" alt="" coords="346,80,545,107"/>
+<area shape="rect" id="node15" href="$_sun_database_reader_8hpp.html" title="SunDatabaseReader.hpp" alt="" coords="742,80,914,107"/>
+<area shape="rect" id="node36" href="$_area_feature_extractor_8hpp.html" title="AreaFeatureExtractor.hpp" alt="" coords="1097,80,1263,107"/>
+<area shape="rect" id="node5" href="$_node_8hpp.html" title="Node.hpp" alt="" coords="235,229,314,256"/>
+<area shape="rect" id="node6" href="$_edge_8hpp.html" title="Edge.hpp" alt="" coords="149,304,227,331"/>
+<area shape="rect" id="node16" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="1096,155,1245,181"/>
+<area shape="rect" id="node17" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="1096,229,1243,256"/>
+<area shape="rect" id="node20" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="1355,304,1443,331"/>
+<area shape="rect" id="node37" href="$_feature_extractor_8hpp.html" title="FeatureExtractor.hpp" alt="" coords="1327,155,1465,181"/>
+<area shape="rect" id="node38" href="$_feature_8hpp.html" title="Feature.hpp" alt="" coords="1433,229,1524,256"/>
 </map>

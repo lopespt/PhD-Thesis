@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26" title="SunDatabaseReader::\lreadNext" alt="" coords="122,5,274,47"/>
-<area shape="rect" id="node3" href="$class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7" title="SupervisedImage::getRegions" alt="" coords="103,71,293,98"/>
-<area shape="rect" id="node4" href="$class_area_feature.html#a076f7a3918e7aa54e64b7e45733ad63d" title="AreaFeature::extractFeature" alt="" coords="110,122,286,149"/>
-<area shape="rect" id="node8" href="$class_feature.html#a0e73c5cb157120a30704efb4af866ec0" title="Feature::printFeature" alt="" coords="131,173,265,199"/>
-<area shape="rect" id="node5" href="$class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d" title="Region::getBoundaryRect" alt="" coords="341,97,508,123"/>
-<area shape="rect" id="node6" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="345,147,504,174"/>
-<area shape="rect" id="node7" href="$class_region.html#acc0edaac14854ccc448f419844a722bf" title="Region::getPixel" alt="" coords="556,147,668,174"/>
+<area shape="rect" id="node2" href="$class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b" title="FeatureExtractor::setDiscretization" alt="" coords="103,5,313,32"/>
+<area shape="rect" id="node3" href="$class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26" title="SunDatabaseReader::\lreadNext" alt="" coords="132,57,284,98"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7" title="SupervisedImage::getRegions" alt="" coords="113,123,303,149"/>
+<area shape="rect" id="node5" href="$class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0" title="FeatureExtractor::extract\lFeature" alt="" coords="130,174,286,215"/>
+<area shape="rect" id="node8" href="$class_feature.html#a0e73c5cb157120a30704efb4af866ec0" title="Feature::printFeature" alt="" coords="141,240,275,267"/>
+<area shape="rect" id="node6" href="$class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5" title="FeatureExtractor::doExtraction" alt="" coords="371,156,559,183"/>
+<area shape="rect" id="node7" href="$class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f" title="FeatureExtractor::doDiscretization" alt="" coords="361,207,568,233"/>
 </map>

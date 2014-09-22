@@ -83,102 +83,84 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_feature-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Feature Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Feature Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_feature_8hpp_source.html">Feature.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Feature:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_feature__inherit__graph.png" border="0" usemap="#_feature_inherit__map" alt="Inheritance graph"/></div>
-<map name="_feature_inherit__map" id="_feature_inherit__map">
-<area shape="rect" id="node2" href="class_area_feature.html" title="{AreaFeature\n||+ AreaFeature()\l+ extractFeature()\l}" alt="" coords="5,189,127,281"/></map>
-</div>
-<div class="dynheader">
 Collaboration diagram for Feature:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_feature__coll__graph.png" border="0" usemap="#_feature_coll__map" alt="Collaboration graph"/></div>
 <map name="_feature_coll__map" id="_feature_coll__map">
-<area shape="rect" id="node2" href="class_region.html" title="{Region\n|&#45; image\l&#45; boundary\l&#45; label\l&#45; l\l|+ Region()\l+ show_region()\l+ ~Region()\l+ getBoundaryRect()\l+ getPixel()\l+ getPixelRelative()\l+ getLabel()\l}" alt="" coords="5,5,145,215"/></map>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab96106b9d1ba89cfa00ffb63a26b2130"><td class="memItemLeft" align="right" valign="top">const QVector&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#ab96106b9d1ba89cfa00ffb63a26b2130">getVector</a> () const </td></tr>
 <tr class="separator:ab96106b9d1ba89cfa00ffb63a26b2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce2b27ca0932c42b99c41c3d1d20366"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a6ce2b27ca0932c42b99c41c3d1d20366">extractFeature</a> ()=0</td></tr>
-<tr class="separator:a6ce2b27ca0932c42b99c41c3d1d20366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e73c5cb157120a30704efb4af866ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">printFeature</a> () const </td></tr>
 <tr class="separator:a0e73c5cb157120a30704efb4af866ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb49b85cd5b7be97899edf4222f110f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a5bb49b85cd5b7be97899edf4222f110f">operator&lt;</a> (const <a class="el" href="class_feature.html">Feature</a> &amp;other)</td></tr>
+<tr class="separator:a5bb49b85cd5b7be97899edf4222f110f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b7327d95ee32b3e8da711aa77b6561"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a81b7327d95ee32b3e8da711aa77b6561">Feature</a> (float *v, int n)</td></tr>
+<tr class="separator:a81b7327d95ee32b3e8da711aa77b6561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb380f7d2b8fc2d0044a47edf36ea450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#afb380f7d2b8fc2d0044a47edf36ea450">Feature</a> (QVector&lt; float &gt; &amp;other)</td></tr>
+<tr class="separator:afb380f7d2b8fc2d0044a47edf36ea450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4129c864c4c97078084332515f6f20d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a4129c864c4c97078084332515f6f20d1">Feature</a> (<a class="el" href="class_region.html">Region</a> *<a class="el" href="class_feature.html#a134c6b5022108c2a1000c7c88c40f352">region</a>)</td></tr>
-<tr class="separator:a4129c864c4c97078084332515f6f20d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a134c6b5022108c2a1000c7c88c40f352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_region.html">Region</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a134c6b5022108c2a1000c7c88c40f352">region</a></td></tr>
-<tr class="separator:a134c6b5022108c2a1000c7c88c40f352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a8158dfca752942aeb84f35c363184d95"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">vector</a></td></tr>
 <tr class="separator:a8158dfca752942aeb84f35c363184d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4129c864c4c97078084332515f6f20d1"></a>
+<a class="anchor" id="a81b7327d95ee32b3e8da711aa77b6561"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Feature::Feature </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_region.html">Region</a> *&#160;</td>
-          <td class="paramname"><em>region</em></td><td>)</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb380f7d2b8fc2d0044a47edf36ea450"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Feature::Feature </td>
+          <td>(</td>
+          <td class="paramtype">QVector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6ce2b27ca0932c42b99c41c3d1d20366"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Feature::extractFeature </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="class_area_feature.html#a076f7a3918e7aa54e64b7e45733ad63d">AreaFeature</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ab96106b9d1ba89cfa00ffb63a26b2130"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,6 +170,22 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bb49b85cd5b7be97899edf4222f110f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Feature::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_feature.html">Feature</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,26 +217,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a134c6b5022108c2a1000c7c88c40f352"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_region.html">Region</a>* Feature::region</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a8158dfca752942aeb84f35c363184d95"></a>
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +230,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -266,7 +244,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 21 2014 23:49:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

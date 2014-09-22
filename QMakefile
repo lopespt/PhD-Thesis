@@ -45,19 +45,23 @@ OBJECTS_DIR   = release/object_files/
 
 ####### Files
 
-SOURCES       = src/AreaFeature.cpp \
+SOURCES       = src/AreaFeatureExtractor.cpp \
 		src/ComplexNetwork.cpp \
+		src/ComplexNetworkConstructor.cpp \
 		src/Edge.cpp \
 		src/Feature.cpp \
+		src/FeatureExtractor.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
 		src/SupervisedImage.cpp \
 		src/main.cpp 
-OBJECTS       = release/object_files/AreaFeature.o \
+OBJECTS       = release/object_files/AreaFeatureExtractor.o \
 		release/object_files/ComplexNetwork.o \
+		release/object_files/ComplexNetworkConstructor.o \
 		release/object_files/Edge.o \
 		release/object_files/Feature.o \
+		release/object_files/FeatureExtractor.o \
 		release/object_files/Node.o \
 		release/object_files/Region.o \
 		release/object_files/SunDatabaseReader.o \
@@ -180,10 +184,12 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/exceptions.prf \
 		/opt/local/share/qt5/mkspecs/features/yacc.prf \
 		/opt/local/share/qt5/mkspecs/features/lex.prf \
-		PhdThesis.pro src/AreaFeature.cpp \
+		PhdThesis.pro src/AreaFeatureExtractor.cpp \
 		src/ComplexNetwork.cpp \
+		src/ComplexNetworkConstructor.cpp \
 		src/Edge.cpp \
 		src/Feature.cpp \
+		src/FeatureExtractor.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
@@ -496,7 +502,7 @@ release/PhdThesis.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,teste.PhdThesis,g" -e "s,@EXECUTABLE@,PhdThesis,g" -e "s,@TYPEINFO@,????,g" /opt/local/share/qt5/mkspecs/macx-clang/Info.plist.app >release/PhdThesis.app/Contents/Info.plist
 dist: 
 	@test -d release/object_files/PhdThesis1.0.0 || mkdir -p release/object_files/PhdThesis1.0.0
-	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeature.hpp src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Feature.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeature.cpp src/ComplexNetwork.cpp src/Edge.cpp src/Feature.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
+	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.hpp src/ComplexNetwork.hpp src/ComplexNetworkConstructor.hpp src/DatabaseReader.hpp src/Edge.hpp src/Feature.hpp src/FeatureExtractor.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.cpp src/ComplexNetwork.cpp src/ComplexNetworkConstructor.cpp src/Edge.cpp src/Feature.cpp src/FeatureExtractor.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
 
 
 clean:compiler_clean 
@@ -539,7 +545,8 @@ compiler_clean:
 
 ####### Compile
 
-release/object_files/AreaFeature.o: src/AreaFeature.cpp src/AreaFeature.hpp \
+release/object_files/AreaFeatureExtractor.o: src/AreaFeatureExtractor.cpp src/AreaFeatureExtractor.hpp \
+		src/FeatureExtractor.hpp \
 		src/Feature.hpp \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
@@ -560,10 +567,50 @@ release/object_files/AreaFeature.o: src/AreaFeature.cpp src/AreaFeature.hpp \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/AreaFeature.o src/AreaFeature.cpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/AreaFeatureExtractor.o src/AreaFeatureExtractor.cpp
 
 release/object_files/ComplexNetwork.o: src/ComplexNetwork.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/ComplexNetwork.o src/ComplexNetwork.cpp
+
+release/object_files/ComplexNetworkConstructor.o: src/ComplexNetworkConstructor.cpp src/ComplexNetworkConstructor.hpp \
+		src/ComplexNetwork.hpp \
+		src/Node.hpp \
+		src/Edge.hpp \
+		src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h \
+		src/DatabaseReader.hpp \
+		src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qregularexpression.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFile \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfile.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QtAlgorithms \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h \
+		src/AreaFeatureExtractor.hpp \
+		src/FeatureExtractor.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/ComplexNetworkConstructor.o src/ComplexNetworkConstructor.cpp
 
 release/object_files/Edge.o: src/Edge.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Edge.o src/Edge.cpp
@@ -589,6 +636,29 @@ release/object_files/Feature.o: src/Feature.cpp src/Feature.hpp \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Feature.o src/Feature.cpp
+
+release/object_files/FeatureExtractor.o: src/FeatureExtractor.cpp src/FeatureExtractor.hpp \
+		src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/FeatureExtractor.o src/FeatureExtractor.cpp
 
 release/object_files/Node.o: src/Node.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
@@ -679,14 +749,8 @@ release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedIm
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/SupervisedImage.o src/SupervisedImage.cpp
 
-release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QCoreApplication \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qcoreapplication.h \
-		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QApplication \
+release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QApplication \
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qapplication.h \
-		src/ComplexNetwork.hpp \
-		src/Node.hpp \
-		src/Edge.hpp \
-		src/tests/ComplexNetworkTest.cpp \
 		src/SunDatabaseReader.hpp \
 		src/DatabaseReader.hpp \
 		src/SupervisedImage.hpp \
@@ -722,10 +786,15 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo \
-		src/AreaFeature.hpp \
+		src/ComplexNetworkConstructor.hpp \
+		src/ComplexNetwork.hpp \
+		src/Node.hpp \
+		src/Edge.hpp \
 		src/Feature.hpp \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
+		src/AreaFeatureExtractor.hpp \
+		src/FeatureExtractor.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
 
 ####### Install

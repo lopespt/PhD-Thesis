@@ -106,40 +106,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NODE_TYPE <a class="code" href="class_node.html#a1272270025389e601164431b42ab5237">getAttribute</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">setAttribute</a>(NODE_TYPE attr);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node</a>(NODE_TYPE <a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> operator&lt;(const Node&lt;NODE_TYPE, EDGE_TYPE&gt; &amp;other);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_node.html#a94263af6c10cc9882d33918080dc722f">   25</a></span>&#160;<a class="code" href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::Node</a>(NODE_TYPE attribute):attribute(attribute){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_node.html#a1272270025389e601164431b42ab5237">   29</a></span>&#160;NODE_TYPE <a class="code" href="class_node.html#a1272270025389e601164431b42ab5237">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::getAttribute</a>(){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> this-&gt;attribute;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::setAttribute</a>(NODE_TYPE attr){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    this-&gt;attribute = attr;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_node.html#a94263af6c10cc9882d33918080dc722f">   28</a></span>&#160;<a class="code" href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::Node</a>(NODE_TYPE attribute):attribute(attribute){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_node.html#a1272270025389e601164431b42ab5237">   32</a></span>&#160;NODE_TYPE <a class="code" href="class_node.html#a1272270025389e601164431b42ab5237">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::getAttribute</a>(){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> this-&gt;attribute;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::setAttribute</a>(NODE_TYPE attr){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;attribute = attr;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> this-&gt;attribute &lt; other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">   47</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> !((this-&gt;attribute &lt; other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>) || (other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a> &lt; this-&gt;attribute ));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">   52</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a> &lt; this-&gt;attribute;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.hpp:6</div></div>
-<div class="ttc" id="class_node_html_a94263af6c10cc9882d33918080dc722f"><div class="ttname"><a href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node::Node</a></div><div class="ttdeci">Node(NODE_TYPE attribute)</div><div class="ttdef"><b>Definition:</b> Node.hpp:25</div></div>
-<div class="ttc" id="class_node_html_a1272270025389e601164431b42ab5237"><div class="ttname"><a href="class_node.html#a1272270025389e601164431b42ab5237">Node::getAttribute</a></div><div class="ttdeci">NODE_TYPE getAttribute()</div><div class="ttdef"><b>Definition:</b> Node.hpp:29</div></div>
+<div class="ttc" id="class_node_html_a94263af6c10cc9882d33918080dc722f"><div class="ttname"><a href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node::Node</a></div><div class="ttdeci">Node(NODE_TYPE attribute)</div><div class="ttdef"><b>Definition:</b> Node.hpp:28</div></div>
+<div class="ttc" id="class_node_html_a1272270025389e601164431b42ab5237"><div class="ttname"><a href="class_node.html#a1272270025389e601164431b42ab5237">Node::getAttribute</a></div><div class="ttdeci">NODE_TYPE getAttribute()</div><div class="ttdef"><b>Definition:</b> Node.hpp:32</div></div>
 <div class="ttc" id="class_node_html_a533ab17912d5b919a37ada31a8a78dc4"><div class="ttname"><a href="class_node.html#a533ab17912d5b919a37ada31a8a78dc4">Node::_id</a></div><div class="ttdeci">int _id</div><div class="ttdef"><b>Definition:</b> Node.hpp:13</div></div>
+<div class="ttc" id="class_node_html_aa9d5b3e98302e3238ef5fc92eb559a81"><div class="ttname"><a href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">Node::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:52</div></div>
 <div class="ttc" id="_edge_8hpp_html"><div class="ttname"><a href="_edge_8hpp.html">Edge.hpp</a></div></div>
-<div class="ttc" id="class_node_html_acb8f913ce2f995a6a14b9b05c60938f8"><div class="ttname"><a href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">Node::setAttribute</a></div><div class="ttdeci">void setAttribute(NODE_TYPE attr)</div><div class="ttdef"><b>Definition:</b> Node.hpp:34</div></div>
+<div class="ttc" id="class_node_html_a81e297dd17c704ae72bf1899dbcfcfeb"><div class="ttname"><a href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">Node::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:42</div></div>
+<div class="ttc" id="class_node_html_acb8f913ce2f995a6a14b9b05c60938f8"><div class="ttname"><a href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">Node::setAttribute</a></div><div class="ttdeci">void setAttribute(NODE_TYPE attr)</div><div class="ttdef"><b>Definition:</b> Node.hpp:37</div></div>
+<div class="ttc" id="class_node_html_aeafeb0e9528fa394a5b8fca4d30070dd"><div class="ttname"><a href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">Node::operator==</a></div><div class="ttdeci">bool operator==(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:47</div></div>
 <div class="ttc" id="class_node_html_a434cad0f70931bc3aaa048d52d0b0ee3"><div class="ttname"><a href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">Node::attribute</a></div><div class="ttdeci">NODE_TYPE attribute</div><div class="ttdef"><b>Definition:</b> Node.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 21 2014 23:49:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

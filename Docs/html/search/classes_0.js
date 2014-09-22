@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['areafeature',['AreaFeature',['../class_area_feature.html',1,'']]]
+  ['areafeatureextractor',['AreaFeatureExtractor',['../class_area_feature_extractor.html',1,'']]]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['l',['l',['../class_region.html#a31cb137d1eab434b70aaa95633e704fe',1,'Region::l()'],['../class_supervised_image.html#a2f1fcadc1267a86ad9d6469b0b2d11b5',1,'SupervisedImage::l()']]],
-  ['label',['label',['../class_region.html#afcc063386e02be883d71eaf5bcef2a55',1,'Region']]]
+  ['image',['image',['../class_region.html#a090b8bc9a8c73f8f874d8d439a0843be',1,'Region::image()'],['../class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5',1,'SupervisedImage::image()']]],
+  ['image_5ffiles',['image_files',['../class_sun_database_reader.html#a155716f43a3dc33e1a4d0a2a4a9f3ff1',1,'SunDatabaseReader']]],
+  ['image_5ffiles_5fit',['image_files_it',['../class_sun_database_reader.html#a227d88c9c5c3d37b0f27123027c0b00e',1,'SunDatabaseReader']]],
+  ['imagepath',['imagePath',['../class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9',1,'SupervisedImage']]]
 ];

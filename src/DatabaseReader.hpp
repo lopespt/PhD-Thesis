@@ -1,4 +1,7 @@
 
+#ifndef DATABASE_READER__HPP
+#define DATABASE_READER__HPP
+
 #include "SupervisedImage.hpp"
 
 class DatabaseReader{
@@ -10,5 +13,5 @@ class DatabaseReader{
 };
 
 
-
+#endif
 

@@ -8,19 +8,15 @@
 class Feature{
 
     private:
+        const char *featureName;
+        QVector<float> vector;
 
     public:
         const QVector<float> &getVector() const;
-        virtual void extractFeature()=0;
         void printFeature() const;
-
-    protected:
-        Region* region;
-        QVector<float> vector;
-        Feature(Region* region);
-        //Feature(float *v, int n);
-        //Feature(QVector<float> &other);
-    
+        bool operator<(const Feature& other);
+        Feature(const char* featureName, float *v, int n);
+        Feature(const char* featureName, QVector<float> &other);
 
 };
 

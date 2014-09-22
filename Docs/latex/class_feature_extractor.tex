@@ -1,0 +1,179 @@
+\hypertarget{class_feature_extractor}{\section{Feature\+Extractor Class Reference}
+\label{class_feature_extractor}\index{Feature\+Extractor@{Feature\+Extractor}}
+}
+
+
+{\ttfamily \#include $<$Feature\+Extractor.\+hpp$>$}
+
+
+
+Inheritance diagram for Feature\+Extractor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_feature_extractor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Feature\+Extractor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_feature_extractor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feature}{Feature} \hyperlink{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0}{extract\+Feature} (\hyperlink{class_region}{Region} $\ast$r)
+\item 
+void \hyperlink{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b}{set\+Discretization} (int i)
+\item 
+int \hyperlink{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{discretization} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Q\+Vector$<$ float $>$ \hyperlink{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}{do\+Extraction} (\hyperlink{class_region}{Region} $\ast$r)=0
+\item 
+virtual void \hyperlink{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}{do\+Discretization} (Q\+Vector$<$ float $>$ \&feature, int \hyperlink{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{discretization})=0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_feature_extractor_a76b9438b85a119c2ec4126b75c0486bf}{\+\_\+discretization}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{\index{Feature\+Extractor@{Feature\+Extractor}!discretization@{discretization}}
+\index{discretization@{discretization}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{discretization}]{\setlength{\rightskip}{0pt plus 5cm}int Feature\+Extractor\+::discretization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Discretization@{do\+Discretization}}
+\index{do\+Discretization@{do\+Discretization}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{do\+Discretization}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Feature\+Extractor\+::do\+Discretization (
+\begin{DoxyParamCaption}
+\item[{Q\+Vector$<$ float $>$ \&}]{feature, }
+\item[{int}]{discretization}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}
+
+
+Implemented in \hyperlink{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}{Area\+Feature\+Extractor}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Extraction@{do\+Extraction}}
+\index{do\+Extraction@{do\+Extraction}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{do\+Extraction}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+Vector$<$float$>$ Feature\+Extractor\+::do\+Extraction (
+\begin{DoxyParamCaption}
+\item[{{\bf Region} $\ast$}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}
+
+
+Implemented in \hyperlink{class_area_feature_extractor_a9dfd50444d94b1fd82fdd6ec0f9163c3}{Area\+Feature\+Extractor}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0}{\index{Feature\+Extractor@{Feature\+Extractor}!extract\+Feature@{extract\+Feature}}
+\index{extract\+Feature@{extract\+Feature}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{extract\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} Feature\+Extractor\+::extract\+Feature (
+\begin{DoxyParamCaption}
+\item[{{\bf Region} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}\label{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b}{\index{Feature\+Extractor@{Feature\+Extractor}!set\+Discretization@{set\+Discretization}}
+\index{set\+Discretization@{set\+Discretization}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{set\+Discretization}]{\setlength{\rightskip}{0pt plus 5cm}void Feature\+Extractor\+::set\+Discretization (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_feature_extractor_a76b9438b85a119c2ec4126b75c0486bf}{\index{Feature\+Extractor@{Feature\+Extractor}!\+\_\+discretization@{\+\_\+discretization}}
+\index{\+\_\+discretization@{\+\_\+discretization}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{\+\_\+discretization}]{\setlength{\rightskip}{0pt plus 5cm}int Feature\+Extractor\+::\+\_\+discretization\hspace{0.3cm}{\ttfamily [private]}}}\label{class_feature_extractor_a76b9438b85a119c2ec4126b75c0486bf}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_feature_extractor_8hpp}{Feature\+Extractor.\+hpp}\item 
+src/\hyperlink{_feature_extractor_8cpp}{Feature\+Extractor.\+cpp}\end{DoxyCompactItemize}

@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   1: "acdefnrs",
   2: "acdefmnrs",
   3: "acdefgimnoprs~",
-  4: "_abefilnrstv",
+  4: "_abcefilnrstv",
   5: "en",
   6: "c"
 };
