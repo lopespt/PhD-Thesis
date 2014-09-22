@@ -17,9 +17,9 @@ class Node{
         NODE_TYPE getAttribute();
         void setAttribute(NODE_TYPE attr);
         Node(NODE_TYPE attribute);
-        bool operator<(const Node<NODE_TYPE, EDGE_TYPE> &other);
-        bool operator==(const Node<NODE_TYPE, EDGE_TYPE> &other);
-        bool operator>(const Node<NODE_TYPE, EDGE_TYPE> &other);
+        bool operator<(const Node<NODE_TYPE, EDGE_TYPE> &other) const;
+        bool operator==(const Node<NODE_TYPE, EDGE_TYPE> &other) const;
+        bool operator>(const Node<NODE_TYPE, EDGE_TYPE> &other) const;
 
 };
 
@@ -39,17 +39,17 @@ void Node<NODE_TYPE, EDGE_TYPE>::setAttribute(NODE_TYPE attr){
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
-bool Node<NODE_TYPE, EDGE_TYPE>::operator<(const Node<NODE_TYPE, EDGE_TYPE> &other){
+bool Node<NODE_TYPE, EDGE_TYPE>::operator<(const Node<NODE_TYPE, EDGE_TYPE> &other) const{
     return this->attribute < other.attribute;
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
-bool Node<NODE_TYPE, EDGE_TYPE>::operator==(const Node<NODE_TYPE, EDGE_TYPE> &other){
+bool Node<NODE_TYPE, EDGE_TYPE>::operator==(const Node<NODE_TYPE, EDGE_TYPE> &other) const{
     return !((this->attribute < other.attribute) || (other.attribute < this->attribute ));
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
-bool Node<NODE_TYPE, EDGE_TYPE>::operator>(const Node<NODE_TYPE, EDGE_TYPE> &other){
+bool Node<NODE_TYPE, EDGE_TYPE>::operator>(const Node<NODE_TYPE, EDGE_TYPE> &other) const{
     return other.attribute < this->attribute;
 }
 

@@ -29,7 +29,7 @@ void Feature::printFeature() const{
 }
 
 
-bool Feature::operator<(const Feature& other){
+bool Feature::operator<(const Feature& other) const{
     for(int i=0;i<this->vector.size() && other.vector.size();i++){
         if( this->vector[i] < other.vector[i] )
             return true;

@@ -4,7 +4,7 @@
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
 
     parse_xml();
-    printf("%s\n%s\n", imagePath.toStdString().c_str(), supervisedPath.toStdString().c_str()); 
+    //printf("%s\n%s\n", imagePath.toStdString().c_str(), supervisedPath.toStdString().c_str()); 
 }
 
 void SupervisedImage::parse_xml(){

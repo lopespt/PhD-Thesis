@@ -8,16 +8,25 @@
 #include "Region.hpp"
 #include "SupervisedImage.hpp"
 #include "AreaFeatureExtractor.hpp"
+#include <QLinkedList>
+#include "Link.hpp"
+
+typedef ComplexNetwork<Feature, Link> t_cn;
 
 class ComplexNetworkConstructor{
 
     private:
-        ComplexNetwork<Feature, float> &cn;
+        t_cn &cn;
         DatabaseReader &reader;
         QList<FeatureExtractor*> extractors;
+        unsigned long long int time=1;
+        void makeCoOccurrences(QLinkedList<Feature> &features);
+        float lambda=2;
+        float learningRate=0.2;
+
 
     public:
-        ComplexNetworkConstructor(ComplexNetwork<Feature, float> &cn, DatabaseReader &reader, QList<FeatureExtractor*> extractors);
+        ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractor*> extractors);
         void analyseNext();
 
 };

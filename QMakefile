@@ -51,6 +51,7 @@ SOURCES       = src/AreaFeatureExtractor.cpp \
 		src/Edge.cpp \
 		src/Feature.cpp \
 		src/FeatureExtractor.cpp \
+		src/Link.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
@@ -62,6 +63,7 @@ OBJECTS       = release/object_files/AreaFeatureExtractor.o \
 		release/object_files/Edge.o \
 		release/object_files/Feature.o \
 		release/object_files/FeatureExtractor.o \
+		release/object_files/Link.o \
 		release/object_files/Node.o \
 		release/object_files/Region.o \
 		release/object_files/SunDatabaseReader.o \
@@ -190,6 +192,7 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		src/Edge.cpp \
 		src/Feature.cpp \
 		src/FeatureExtractor.cpp \
+		src/Link.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
@@ -502,7 +505,7 @@ release/PhdThesis.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,teste.PhdThesis,g" -e "s,@EXECUTABLE@,PhdThesis,g" -e "s,@TYPEINFO@,????,g" /opt/local/share/qt5/mkspecs/macx-clang/Info.plist.app >release/PhdThesis.app/Contents/Info.plist
 dist: 
 	@test -d release/object_files/PhdThesis1.0.0 || mkdir -p release/object_files/PhdThesis1.0.0
-	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.hpp src/ComplexNetwork.hpp src/ComplexNetworkConstructor.hpp src/DatabaseReader.hpp src/Edge.hpp src/Feature.hpp src/FeatureExtractor.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.cpp src/ComplexNetwork.cpp src/ComplexNetworkConstructor.cpp src/Edge.cpp src/Feature.cpp src/FeatureExtractor.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
+	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.hpp src/ComplexNetwork.hpp src/ComplexNetworkConstructor.hpp src/DatabaseReader.hpp src/Edge.hpp src/Feature.hpp src/FeatureExtractor.hpp src/Link.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeatureExtractor.cpp src/ComplexNetwork.cpp src/ComplexNetworkConstructor.cpp src/Edge.cpp src/Feature.cpp src/FeatureExtractor.cpp src/Link.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
 
 
 clean:compiler_clean 
@@ -609,7 +612,10 @@ release/object_files/ComplexNetworkConstructor.o: src/ComplexNetworkConstructor.
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QtAlgorithms \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qalgorithms.h \
 		src/AreaFeatureExtractor.hpp \
-		src/FeatureExtractor.hpp
+		src/FeatureExtractor.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QLinkedList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlinkedlist.h \
+		src/Link.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/ComplexNetworkConstructor.o src/ComplexNetworkConstructor.cpp
 
 release/object_files/Edge.o: src/Edge.cpp 
@@ -659,6 +665,9 @@ release/object_files/FeatureExtractor.o: src/FeatureExtractor.cpp src/FeatureExt
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/FeatureExtractor.o src/FeatureExtractor.cpp
+
+release/object_files/Link.o: src/Link.cpp src/Link.hpp
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Link.o src/Link.cpp
 
 release/object_files/Node.o: src/Node.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
@@ -751,16 +760,15 @@ release/object_files/SupervisedImage.o: src/SupervisedImage.cpp src/SupervisedIm
 
 release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QApplication \
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qapplication.h \
-		src/SunDatabaseReader.hpp \
-		src/DatabaseReader.hpp \
-		src/SupervisedImage.hpp \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
-		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		src/Link.hpp \
+		src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
 		src/Region.hpp \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
 		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
@@ -773,6 +781,11 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtWidget
 		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h \
+		src/SunDatabaseReader.hpp \
+		src/DatabaseReader.hpp \
+		src/SupervisedImage.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlist.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QObject \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qobject.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QRegularExpression \
@@ -790,11 +803,10 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtWidget
 		src/ComplexNetwork.hpp \
 		src/Node.hpp \
 		src/Edge.hpp \
-		src/Feature.hpp \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
 		src/AreaFeatureExtractor.hpp \
-		src/FeatureExtractor.hpp
+		src/FeatureExtractor.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QLinkedList \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qlinkedlist.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
 
 ####### Install

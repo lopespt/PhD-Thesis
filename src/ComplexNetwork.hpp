@@ -38,6 +38,8 @@ class ComplexNetwork{
         NodePtr getNode(NODE_TYPE);
         edge_iterator getEdgesFromNode_LowerBound(NodePtr n);
         edge_iterator getEdgesFromNode_UpperBound(NodePtr n);
+        unsigned long int getNumNodes() const;
+        unsigned long int getNumEdges() const;
 
 };
 
@@ -124,6 +126,18 @@ typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE
 template <class NODE_TYPE, class EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesFromNode_UpperBound(NodePtr n){
     return edges.upper_bound( std::pair<NodePtr, NodePtr>(n, NULL) );
+}
+
+
+template <class NODE_TYPE, class EDGE_TYPE>
+unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumNodes() const{
+    return this->nodes.size();
+}
+
+
+template <class NODE_TYPE, class EDGE_TYPE>
+unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges() const{
+    return this->edges.size();
 }
 
 
