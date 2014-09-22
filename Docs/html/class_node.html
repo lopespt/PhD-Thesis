@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,7 +96,7 @@ Collaboration diagram for Node&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_node__coll__graph.png" border="0" usemap="#_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" id="_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="56,145,144,223"/></map>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -113,9 +114,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a533ab17912d5b919a37ada31a8a78dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434cad0f70931bc3aaa048d52d0b0ee3"><td class="memItemLeft" align="right" valign="top">NODE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a></td></tr>
 <tr class="separator:a434cad0f70931bc3aaa048d52d0b0ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e71d509f953dc57eddb20e3223dd6d1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_edge.html">Edge</a>&lt; NODE_TYPE, <br class="typebreak" />
-EDGE_TYPE &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a9e71d509f953dc57eddb20e3223dd6d1">edges</a></td></tr>
-<tr class="separator:a9e71d509f953dc57eddb20e3223dd6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a94263af6c10cc9882d33918080dc722f"></a>
@@ -151,6 +149,15 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node_a1272270025389e601164431b42ab5237_icgraph.png" border="0" usemap="#class_node_a1272270025389e601164431b42ab5237_icgraph" alt=""/></div>
+<map name="class_node_a1272270025389e601164431b42ab5237_icgraph" id="class_node_a1272270025389e601164431b42ab5237_icgraph">
+<area shape="rect" id="node2" href="class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180" title="ComplexNetwork::addNode" alt="" coords="173,5,351,32"/><area shape="rect" id="node3" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="399,5,459,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -217,35 +224,13 @@ template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9e71d509f953dc57eddb20e3223dd6d1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::list&lt;<a class="el" href="class_edge.html">Edge</a>&lt;NODE_TYPE, EDGE_TYPE&gt;* &gt; <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::edges</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="_node_8hpp_source.html">Node.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 17 2014 11:14:05 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 21 2014 23:49:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

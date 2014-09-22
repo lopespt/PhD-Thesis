@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,19 +90,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_node_8hpp_source.html">Node.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Edge.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_edge_8hpp__incl.png" border="0" usemap="#src_2_edge_8hpp" alt=""/></div>
 <map name="src_2_edge_8hpp" id="src_2_edge_8hpp">
-<area shape="rect" id="node2" href="_node_8hpp.html" title="Node.hpp" alt="" coords="15,80,94,107"/></map>
+<area shape="rect" id="node2" href="_node_8hpp.html" title="Node.hpp" alt="" coords="5,155,84,181"/><area shape="rect" id="node4" href="_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="95,80,240,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_edge_8hpp__dep__incl.png" border="0" usemap="#src_2_edge_8hppdep" alt=""/></div>
 <map name="src_2_edge_8hppdep" id="src_2_edge_8hppdep">
-<area shape="rect" id="node2" href="_node_8hpp.html" title="src/Node.hpp" alt="" coords="5,80,104,107"/><area shape="rect" id="node3" href="_complex_network_8hpp.html" title="src/ComplexNetwork.hpp" alt="" coords="15,155,180,181"/><area shape="rect" id="node4" href="main_8cpp.html" title="src/main.cpp" alt="" coords="50,229,145,256"/></map>
+<area shape="rect" id="node2" href="_node_8hpp.html" title="src/Node.hpp" alt="" coords="5,80,104,107"/><area shape="rect" id="node3" href="_complex_network_8hpp.html" title="src/ComplexNetwork.hpp" alt="" coords="71,155,236,181"/><area shape="rect" id="node4" href="main_8cpp.html" title="src/main.cpp" alt="" coords="106,319,201,345"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html" title="src/tests/ComplexNetwork\lTest.cpp" alt="" coords="129,229,300,271"/></map>
 </div>
 </div>
 <p><a href="_edge_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -111,13 +112,16 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_edge.html">Edge&lt; NODE_TYPE, EDGE_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html">ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rede Complexa.  <a href="class_complex_network.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_edge.html">Edge&lt; NODE_TYPE, EDGE_TYPE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 17 2014 11:14:05 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 21 2014 23:49:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

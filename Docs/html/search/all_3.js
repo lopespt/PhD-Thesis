@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['edge',['Edge',['../class_edge.html',1,'Edge&lt; NODE_TYPE, EDGE_TYPE &gt;'],['../class_edge.html#a16c5157732e48a737ca0a1d7841e8e19',1,'Edge::Edge(Node&lt; NODE_TYPE, EDGE_TYPE &gt; *from, Node&lt; NODE_TYPE, EDGE_TYPE &gt; *to)'],['../class_edge.html#a6d1f57f17db61020c1e51c09ff8ab7bb',1,'Edge::Edge(Node&lt; NODE_TYPE, EDGE_TYPE &gt; *from, Node&lt; NODE_TYPE, EDGE_TYPE &gt; *to, EDGE_TYPE attribute)']]],
-  ['edge_2ecpp',['Edge.cpp',['../_edge_8cpp.html',1,'']]],
-  ['edge_2ehpp',['Edge.hpp',['../_edge_8hpp.html',1,'']]],
-  ['edges',['edges',['../class_complex_network.html#a7241d134d1dc4a4bfb21144fb0fa5520',1,'ComplexNetwork::edges()'],['../class_node.html#a9e71d509f953dc57eddb20e3223dd6d1',1,'Node::edges()']]]
+  ['compare',['compare',['../class_complex_network.html#a8bf5d81ac027456c5578a3ef7f499a4b',1,'ComplexNetwork']]],
+  ['complexnetwork',['ComplexNetwork',['../class_complex_network.html',1,'ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;'],['../class_complex_network.html#a8e33a5505e7a856076cd7d982a165348',1,'ComplexNetwork::ComplexNetwork()']]],
+  ['complexnetwork_2ecpp',['ComplexNetwork.cpp',['../_complex_network_8cpp.html',1,'']]],
+  ['complexnetwork_2ehpp',['ComplexNetwork.hpp',['../_complex_network_8hpp.html',1,'']]],
+  ['complexnetwork_3c_20node_5ftype_2c_20edge_5ftype_20_3e',['ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;',['../class_edge.html#ad8438fc5199b628ea294f77319026b6a',1,'Edge']]],
+  ['complexnetworktest_2ecpp',['ComplexNetworkTest.cpp',['../_complex_network_test_8cpp.html',1,'']]]
 ];

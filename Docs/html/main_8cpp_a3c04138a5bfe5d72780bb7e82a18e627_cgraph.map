@@ -1,3 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_complex_network.html#a3e537a20ea5443faa9b4c8836615dad4" title="ComplexNetwork::addNode" alt="" coords="103,5,280,32"/>
+<area shape="rect" id="node2" href="$class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26" title="SunDatabaseReader::\lreadNext" alt="" coords="122,5,274,47"/>
+<area shape="rect" id="node3" href="$class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7" title="SupervisedImage::getRegions" alt="" coords="103,71,293,98"/>
+<area shape="rect" id="node4" href="$class_area_feature.html#a076f7a3918e7aa54e64b7e45733ad63d" title="AreaFeature::extractFeature" alt="" coords="110,122,286,149"/>
+<area shape="rect" id="node8" href="$class_feature.html#a0e73c5cb157120a30704efb4af866ec0" title="Feature::printFeature" alt="" coords="131,173,265,199"/>
+<area shape="rect" id="node5" href="$class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d" title="Region::getBoundaryRect" alt="" coords="341,97,508,123"/>
+<area shape="rect" id="node6" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="345,147,504,174"/>
+<area shape="rect" id="node7" href="$class_region.html#acc0edaac14854ccc448f419844a722bf" title="Region::getPixel" alt="" coords="556,147,668,174"/>
 </map>

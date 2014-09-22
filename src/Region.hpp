@@ -9,6 +9,7 @@
 #include <QPainter>
 #include <QColor>
 #include <QPoint>
+#include <QColor>
 
 class Region{
 

@@ -1,0 +1,4 @@
+<map id="AreaFeature" name="AreaFeature">
+<area shape="rect" id="node2" href="$class_feature.html" title="{Feature\n|# vector\l|+ getVector()\l+ extractFeature()\l+ printFeature()\l# Feature()\l}" alt="" coords="15,277,136,399"/>
+<area shape="rect" id="node3" href="$class_region.html" title="{Region\n|&#45; image\l&#45; boundary\l&#45; label\l&#45; l\l|+ Region()\l+ show_region()\l+ ~Region()\l+ getBoundaryRect()\l+ getPixel()\l+ getPixelRelative()\l+ getLabel()\l}" alt="" coords="5,5,145,215"/>
+</map>

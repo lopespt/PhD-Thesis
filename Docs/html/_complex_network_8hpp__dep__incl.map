@@ -1,3 +1,6 @@
 <map id="src/ComplexNetwork.hpp" name="src/ComplexNetwork.hpp">
-<area shape="rect" id="node2" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="41,80,135,107"/>
+<area shape="rect" id="node2" href="$_edge_8hpp.html" title="src/Edge.hpp" alt="" coords="5,87,104,114"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="206,169,301,196"/>
+<area shape="rect" id="node5" href="$_complex_network_test_8cpp.html" title="src/tests/ComplexNetwork\lTest.cpp" alt="" coords="229,80,400,121"/>
+<area shape="rect" id="node3" href="$_node_8hpp.html" title="src/Node.hpp" alt="" coords="5,169,104,196"/>
 </map>

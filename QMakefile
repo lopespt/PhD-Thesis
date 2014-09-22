@@ -45,15 +45,19 @@ OBJECTS_DIR   = release/object_files/
 
 ####### Files
 
-SOURCES       = src/ComplexNetwork.cpp \
+SOURCES       = src/AreaFeature.cpp \
+		src/ComplexNetwork.cpp \
 		src/Edge.cpp \
+		src/Feature.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
 		src/SupervisedImage.cpp \
 		src/main.cpp 
-OBJECTS       = release/object_files/ComplexNetwork.o \
+OBJECTS       = release/object_files/AreaFeature.o \
+		release/object_files/ComplexNetwork.o \
 		release/object_files/Edge.o \
+		release/object_files/Feature.o \
 		release/object_files/Node.o \
 		release/object_files/Region.o \
 		release/object_files/SunDatabaseReader.o \
@@ -176,8 +180,10 @@ DIST          = /opt/local/share/qt5/mkspecs/features/spec_pre.prf \
 		/opt/local/share/qt5/mkspecs/features/exceptions.prf \
 		/opt/local/share/qt5/mkspecs/features/yacc.prf \
 		/opt/local/share/qt5/mkspecs/features/lex.prf \
-		PhdThesis.pro src/ComplexNetwork.cpp \
+		PhdThesis.pro src/AreaFeature.cpp \
+		src/ComplexNetwork.cpp \
 		src/Edge.cpp \
+		src/Feature.cpp \
 		src/Node.cpp \
 		src/Region.cpp \
 		src/SunDatabaseReader.cpp \
@@ -490,7 +496,7 @@ release/PhdThesis.app/Contents/Info.plist:
 	@sed -e "s,@SHORT_VERSION@,1.0,g" -e "s,@TYPEINFO@,????,g" -e "s,@ICON@,,g" -e "s,@BUNDLEIDENTIFIER@,teste.PhdThesis,g" -e "s,@EXECUTABLE@,PhdThesis,g" -e "s,@TYPEINFO@,????,g" /opt/local/share/qt5/mkspecs/macx-clang/Info.plist.app >release/PhdThesis.app/Contents/Info.plist
 dist: 
 	@test -d release/object_files/PhdThesis1.0.0 || mkdir -p release/object_files/PhdThesis1.0.0
-	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/ComplexNetwork.cpp src/Edge.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
+	$(COPY_FILE) --parents $(DIST) release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeature.hpp src/ComplexNetwork.hpp src/DatabaseReader.hpp src/Edge.hpp src/Feature.hpp src/Node.hpp src/Region.hpp src/SunDatabaseReader.hpp src/SupervisedImage.hpp src/tests/ComplexNetworkTest.cpp release/object_files/PhdThesis1.0.0/ && $(COPY_FILE) --parents src/AreaFeature.cpp src/ComplexNetwork.cpp src/Edge.cpp src/Feature.cpp src/Node.cpp src/Region.cpp src/SunDatabaseReader.cpp src/SupervisedImage.cpp src/main.cpp release/object_files/PhdThesis1.0.0/ && (cd `dirname release/object_files/PhdThesis1.0.0` && $(TAR) PhdThesis1.0.0.tar PhdThesis1.0.0 && $(COMPRESS) PhdThesis1.0.0.tar) && $(MOVE) `dirname release/object_files/PhdThesis1.0.0`/PhdThesis1.0.0.tar.gz . && $(DEL_FILE) -r release/object_files/PhdThesis1.0.0
 
 
 clean:compiler_clean 
@@ -533,11 +539,56 @@ compiler_clean:
 
 ####### Compile
 
+release/object_files/AreaFeature.o: src/AreaFeature.cpp src/AreaFeature.hpp \
+		src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/AreaFeature.o src/AreaFeature.cpp
+
 release/object_files/ComplexNetwork.o: src/ComplexNetwork.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/ComplexNetwork.o src/ComplexNetwork.cpp
 
 release/object_files/Edge.o: src/Edge.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Edge.o src/Edge.cpp
+
+release/object_files/Feature.o: src/Feature.cpp src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h \
+		src/Region.hpp \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPolygon \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpolygon.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QImage \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qimage.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QString \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qstring.h \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QLabel \
+		/opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/qlabel.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPixmap \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpixmap.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QPainter \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qpainter.h \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/QColor \
+		/opt/local/Library/Frameworks/QtGui.framework/Versions/5/Headers/qcolor.h \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QPoint \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qpoint.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Feature.o src/Feature.cpp
 
 release/object_files/Node.o: src/Node.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/Node.o src/Node.cpp
@@ -670,7 +721,11 @@ release/object_files/main.o: src/main.cpp /opt/local/Library/Frameworks/QtCore.f
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qdir.h \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfoList \
 		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qfileinfo.h \
-		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QFileInfo \
+		src/AreaFeature.hpp \
+		src/Feature.hpp \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/QVector \
+		/opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/object_files/main.o src/main.cpp
 
 ####### Install

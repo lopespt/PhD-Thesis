@@ -1,0 +1,5 @@
+<map id="AreaFeature::extractFeature" name="AreaFeature::extractFeature">
+<area shape="rect" id="node2" href="$class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d" title="Region::getBoundaryRect" alt="" coords="229,5,396,32"/>
+<area shape="rect" id="node3" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="233,56,392,83"/>
+<area shape="rect" id="node4" href="$class_region.html#acc0edaac14854ccc448f419844a722bf" title="Region::getPixel" alt="" coords="444,56,556,83"/>
+</map>

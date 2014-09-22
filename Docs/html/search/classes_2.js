@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node',['Node',['../class_node.html',1,'']]]
+  ['databasereader',['DatabaseReader',['../class_database_reader.html',1,'']]]
 ];

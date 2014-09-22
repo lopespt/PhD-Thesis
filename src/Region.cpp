@@ -16,13 +16,12 @@ void Region::show_region() {
 
 QRect Region::getBoundaryRect() const {
     return boundary.boundingRect();
-
 }
 
 QRgb Region::getPixel(int x, int y, bool *insideRegion) const{
-    printf("%d, %d, inside? %d \n ", x,y,this->boundary.contains(QPoint(x,y)));
     if(insideRegion)
-        *insideRegion = this->boundary.contains(QPoint(x,y));
+        *insideRegion = this->boundary.containsPoint(QPoint(x,y), Qt::OddEvenFill);
+    
     return this->image->pixel(x, y);
 }
 

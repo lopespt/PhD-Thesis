@@ -1,0 +1,214 @@
+\hypertarget{class_supervised_image}{\section{Supervised\+Image Class Reference}
+\label{class_supervised_image}\index{Supervised\+Image@{Supervised\+Image}}
+}
+
+
+{\ttfamily \#include $<$Supervised\+Image.\+hpp$>$}
+
+
+
+Collaboration diagram for Supervised\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_supervised_image__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_supervised_image_a032c9ef022d741cfb65c683ed11029ed}{Supervised\+Image} (Q\+String \hyperlink{class_supervised_image_a39f8b0212d2dae489d7b060b0d8dd1b9}{image\+Path}, Q\+String \hyperlink{class_supervised_image_aeeb634f3804dffba600e6aea71fc353e}{supervised\+Path})
+\item 
+void \hyperlink{class_supervised_image_aa2ab17f3c0be74a99858965e2cddb298}{show\+\_\+image} ()
+\item 
+\hyperlink{class_supervised_image_a4e9cb98175c10635ff6b4aedb578d70e}{$\sim$\+Supervised\+Image} ()
+\item 
+const Q\+List$<$ \hyperlink{class_region}{Region} $\ast$ $>$ \& \hyperlink{class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7}{get\+Regions} () const 
+\item 
+Q\+Image $\ast$ \hyperlink{class_supervised_image_aaf7160e7c4a85e4c68f36f62e39b6bfa}{get\+Image} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de}{parse\+\_\+xml} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+Polygon \hyperlink{class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e}{extract\+Polygon} (Q\+String Xml)
+\item 
+static Q\+String \hyperlink{class_supervised_image_af603900bba42552e5d8395a5a265907a}{extract\+Label} (Q\+String Xml)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_supervised_image_a39f8b0212d2dae489d7b060b0d8dd1b9}{image\+Path}
+\item 
+Q\+String \hyperlink{class_supervised_image_aeeb634f3804dffba600e6aea71fc353e}{supervised\+Path}
+\item 
+Q\+Image \hyperlink{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}{image}
+\item 
+Q\+List$<$ \hyperlink{class_region}{Region} $\ast$ $>$ \hyperlink{class_supervised_image_a264d8baa97fa79247b310a94e160e7fb}{regions}
+\item 
+Q\+Label $\ast$ \hyperlink{class_supervised_image_a2f1fcadc1267a86ad9d6469b0b2d11b5}{l} =N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_supervised_image_a032c9ef022d741cfb65c683ed11029ed}{\index{Supervised\+Image@{Supervised\+Image}!Supervised\+Image@{Supervised\+Image}}
+\index{Supervised\+Image@{Supervised\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{Supervised\+Image}]{\setlength{\rightskip}{0pt plus 5cm}Supervised\+Image\+::\+Supervised\+Image (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{image\+Path, }
+\item[{Q\+String}]{supervised\+Path}
+\end{DoxyParamCaption}
+)}}\label{class_supervised_image_a032c9ef022d741cfb65c683ed11029ed}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_a032c9ef022d741cfb65c683ed11029ed_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_a4e9cb98175c10635ff6b4aedb578d70e}{\index{Supervised\+Image@{Supervised\+Image}!````~Supervised\+Image@{$\sim$\+Supervised\+Image}}
+\index{````~Supervised\+Image@{$\sim$\+Supervised\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{$\sim$\+Supervised\+Image}]{\setlength{\rightskip}{0pt plus 5cm}Supervised\+Image\+::$\sim$\+Supervised\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_supervised_image_a4e9cb98175c10635ff6b4aedb578d70e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_supervised_image_af603900bba42552e5d8395a5a265907a}{\index{Supervised\+Image@{Supervised\+Image}!extract\+Label@{extract\+Label}}
+\index{extract\+Label@{extract\+Label}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{extract\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Supervised\+Image\+::extract\+Label (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{Xml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_supervised_image_af603900bba42552e5d8395a5a265907a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_af603900bba42552e5d8395a5a265907a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e}{\index{Supervised\+Image@{Supervised\+Image}!extract\+Polygon@{extract\+Polygon}}
+\index{extract\+Polygon@{extract\+Polygon}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{extract\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Polygon Supervised\+Image\+::extract\+Polygon (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{Xml}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_aaf7160e7c4a85e4c68f36f62e39b6bfa}{\index{Supervised\+Image@{Supervised\+Image}!get\+Image@{get\+Image}}
+\index{get\+Image@{get\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{get\+Image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image $\ast$ Supervised\+Image\+::get\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_supervised_image_aaf7160e7c4a85e4c68f36f62e39b6bfa}
+\hypertarget{class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7}{\index{Supervised\+Image@{Supervised\+Image}!get\+Regions@{get\+Regions}}
+\index{get\+Regions@{get\+Regions}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{get\+Regions}]{\setlength{\rightskip}{0pt plus 5cm}const Q\+List$<$ {\bf Region} $\ast$ $>$ \& Supervised\+Image\+::get\+Regions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de}{\index{Supervised\+Image@{Supervised\+Image}!parse\+\_\+xml@{parse\+\_\+xml}}
+\index{parse\+\_\+xml@{parse\+\_\+xml}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{parse\+\_\+xml}]{\setlength{\rightskip}{0pt plus 5cm}void Supervised\+Image\+::parse\+\_\+xml (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_aa2ab17f3c0be74a99858965e2cddb298}{\index{Supervised\+Image@{Supervised\+Image}!show\+\_\+image@{show\+\_\+image}}
+\index{show\+\_\+image@{show\+\_\+image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{show\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}void Supervised\+Image\+::show\+\_\+image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_supervised_image_aa2ab17f3c0be74a99858965e2cddb298}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}{\index{Supervised\+Image@{Supervised\+Image}!image@{image}}
+\index{image@{image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image Supervised\+Image\+::image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}
+\hypertarget{class_supervised_image_a39f8b0212d2dae489d7b060b0d8dd1b9}{\index{Supervised\+Image@{Supervised\+Image}!image\+Path@{image\+Path}}
+\index{image\+Path@{image\+Path}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{image\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Supervised\+Image\+::image\+Path\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a39f8b0212d2dae489d7b060b0d8dd1b9}
+\hypertarget{class_supervised_image_a2f1fcadc1267a86ad9d6469b0b2d11b5}{\index{Supervised\+Image@{Supervised\+Image}!l@{l}}
+\index{l@{l}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{l}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Label$\ast$ Supervised\+Image\+::l =N\+U\+L\+L\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a2f1fcadc1267a86ad9d6469b0b2d11b5}
+\hypertarget{class_supervised_image_a264d8baa97fa79247b310a94e160e7fb}{\index{Supervised\+Image@{Supervised\+Image}!regions@{regions}}
+\index{regions@{regions}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{regions}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<${\bf Region}$\ast$$>$ Supervised\+Image\+::regions\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a264d8baa97fa79247b310a94e160e7fb}
+\hypertarget{class_supervised_image_aeeb634f3804dffba600e6aea71fc353e}{\index{Supervised\+Image@{Supervised\+Image}!supervised\+Path@{supervised\+Path}}
+\index{supervised\+Path@{supervised\+Path}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{supervised\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Supervised\+Image\+::supervised\+Path\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_aeeb634f3804dffba600e6aea71fc353e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_supervised_image_8hpp}{Supervised\+Image.\+hpp}\item 
+src/\hyperlink{_supervised_image_8cpp}{Supervised\+Image.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{class_sun_database_reader}{\section{Sun\+Database\+Reader Class Reference}
+\label{class_sun_database_reader}\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+}
+
+
+{\ttfamily \#include $<$Sun\+Database\+Reader.\+hpp$>$}
+
+
+
+Inheritance diagram for Sun\+Database\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_sun_database_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sun\+Database\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_sun_database_reader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sun_database_reader_a7165e085898b5e329402b8acc17f3e0e}{Sun\+Database\+Reader} (Q\+String \hyperlink{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}{source\+Dir})
+\item 
+\hyperlink{class_supervised_image}{Supervised\+Image} $\ast$ \hyperlink{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}{read\+Next} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_sun_database_reader_aefbdf63eaff6755bb3dee0ef8687b3aa}{discover\+\_\+files} (Q\+String)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Dir \hyperlink{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}{source\+Dir}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_sun_database_reader_a155716f43a3dc33e1a4d0a2a4a9f3ff1}{image\+\_\+files}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_sun_database_reader_ac5afd4950a668e5cff2bc5c6ea024b60}{supervision\+\_\+files}
+\item 
+Q\+List$<$ Q\+String $>$\+::iterator \hyperlink{class_sun_database_reader_a227d88c9c5c3d37b0f27123027c0b00e}{image\+\_\+files\+\_\+it}
+\item 
+Q\+List$<$ Q\+String $>$\+::iterator \hyperlink{class_sun_database_reader_a78e30a0ac9cfa46c23dbdf8d37226b51}{supervision\+\_\+files\+\_\+it}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sun_database_reader_a7165e085898b5e329402b8acc17f3e0e}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{Sun\+Database\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}Sun\+Database\+Reader\+::\+Sun\+Database\+Reader (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{source\+Dir}
+\end{DoxyParamCaption}
+)}}\label{class_sun_database_reader_a7165e085898b5e329402b8acc17f3e0e}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_sun_database_reader_a7165e085898b5e329402b8acc17f3e0e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sun_database_reader_aefbdf63eaff6755bb3dee0ef8687b3aa}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!discover\+\_\+files@{discover\+\_\+files}}
+\index{discover\+\_\+files@{discover\+\_\+files}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{discover\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}void Sun\+Database\+Reader\+::discover\+\_\+files (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_aefbdf63eaff6755bb3dee0ef8687b3aa}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_sun_database_reader_aefbdf63eaff6755bb3dee0ef8687b3aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!read\+Next@{read\+Next}}
+\index{read\+Next@{read\+Next}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} $\ast$ Sun\+Database\+Reader\+::read\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}
+
+
+Implements \hyperlink{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_sun_database_reader_a155716f43a3dc33e1a4d0a2a4a9f3ff1}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!image\+\_\+files@{image\+\_\+files}}
+\index{image\+\_\+files@{image\+\_\+files}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{image\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ Sun\+Database\+Reader\+::image\+\_\+files\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_a155716f43a3dc33e1a4d0a2a4a9f3ff1}
+\hypertarget{class_sun_database_reader_a227d88c9c5c3d37b0f27123027c0b00e}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!image\+\_\+files\+\_\+it@{image\+\_\+files\+\_\+it}}
+\index{image\+\_\+files\+\_\+it@{image\+\_\+files\+\_\+it}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{image\+\_\+files\+\_\+it}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$\+::iterator Sun\+Database\+Reader\+::image\+\_\+files\+\_\+it\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_a227d88c9c5c3d37b0f27123027c0b00e}
+\hypertarget{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!source\+Dir@{source\+Dir}}
+\index{source\+Dir@{source\+Dir}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{source\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Dir Sun\+Database\+Reader\+::source\+Dir\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}
+\hypertarget{class_sun_database_reader_ac5afd4950a668e5cff2bc5c6ea024b60}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!supervision\+\_\+files@{supervision\+\_\+files}}
+\index{supervision\+\_\+files@{supervision\+\_\+files}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{supervision\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ Sun\+Database\+Reader\+::supervision\+\_\+files\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_ac5afd4950a668e5cff2bc5c6ea024b60}
+\hypertarget{class_sun_database_reader_a78e30a0ac9cfa46c23dbdf8d37226b51}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!supervision\+\_\+files\+\_\+it@{supervision\+\_\+files\+\_\+it}}
+\index{supervision\+\_\+files\+\_\+it@{supervision\+\_\+files\+\_\+it}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{supervision\+\_\+files\+\_\+it}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$\+::iterator Sun\+Database\+Reader\+::supervision\+\_\+files\+\_\+it\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_a78e30a0ac9cfa46c23dbdf8d37226b51}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_sun_database_reader_8hpp}{Sun\+Database\+Reader.\+hpp}\item 
+src/\hyperlink{_sun_database_reader_8cpp}{Sun\+Database\+Reader.\+cpp}\end{DoxyCompactItemize}
