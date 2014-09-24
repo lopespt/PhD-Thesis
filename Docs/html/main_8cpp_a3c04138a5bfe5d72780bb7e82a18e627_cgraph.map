@@ -1,9 +1,18 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b" title="FeatureExtractor::setDiscretization" alt="" coords="103,5,313,32"/>
-<area shape="rect" id="node3" href="$class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26" title="SunDatabaseReader::\lreadNext" alt="" coords="132,57,284,98"/>
-<area shape="rect" id="node4" href="$class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7" title="SupervisedImage::getRegions" alt="" coords="113,123,303,149"/>
-<area shape="rect" id="node5" href="$class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0" title="FeatureExtractor::extract\lFeature" alt="" coords="130,174,286,215"/>
-<area shape="rect" id="node8" href="$class_feature.html#a0e73c5cb157120a30704efb4af866ec0" title="Feature::printFeature" alt="" coords="141,240,275,267"/>
-<area shape="rect" id="node6" href="$class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5" title="FeatureExtractor::doExtraction" alt="" coords="371,156,559,183"/>
-<area shape="rect" id="node7" href="$class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f" title="FeatureExtractor::doDiscretization" alt="" coords="361,207,568,233"/>
+<area shape="rect" id="node2" href="$class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b" title="FeatureExtractor::setDiscretization" alt="" coords="103,48,313,75"/>
+<area shape="rect" id="node3" href="$class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="117,99,299,141"/>
+<area shape="rect" id="node4" href="$class_database_reader.html#ae6a76cba6f3d4dad64b70b59c701b9f6" title="DatabaseReader::readNext" alt="" coords="374,5,554,32"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7" title="SupervisedImage::getRegions" alt="" coords="369,56,559,83"/>
+<area shape="rect" id="node6" href="$class_complex_network.html#a41d38294467dd4f5aab8e513803e686a" title="ComplexNetwork::getNumNodes" alt="" coords="361,107,567,133"/>
+<area shape="rect" id="node7" href="$class_complex_network.html#a4a4959ddf1ac3a114a46d86bf46e5701" title="ComplexNetwork::getNumEdges" alt="" coords="361,157,567,184"/>
+<area shape="rect" id="node8" href="$class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="373,209,555,250"/>
+<area shape="rect" id="node9" href="$class_complex_network.html#aadc448d5bea09ee87263256f85207ef3" title="ComplexNetwork::getNode" alt="" coords="617,39,789,65"/>
+<area shape="rect" id="node10" href="$class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180" title="ComplexNetwork::addNode" alt="" coords="615,89,792,116"/>
+<area shape="rect" id="node12" href="$class_complex_network.html#a985d6dc543067794c273f18d87592af4" title="ComplexNetwork::getEdge" alt="" coords="617,140,789,167"/>
+<area shape="rect" id="node13" href="$class_edge.html#a3352ae81439c772a0ebe640f14f8b910" title="Edge::getAttribute" alt="" coords="643,191,763,217"/>
+<area shape="rect" id="node14" href="$class_link.html#af3dac01ac8fb3c9d9637361bab37a8f7" title="Link::getTime" alt="" coords="657,241,750,268"/>
+<area shape="rect" id="node15" href="$class_link.html#aaf7980526f4edf059b27602a7be82b2a" title="Link::getWeight" alt="" coords="650,292,757,319"/>
+<area shape="rect" id="node16" href="$class_edge.html#aa63f7fac23602924d2e19f1389a93620" title="Edge::setAttribute" alt="" coords="643,343,763,369"/>
+<area shape="rect" id="node17" href="$class_complex_network.html#a183168090e8d9446b53643890476b0ba" title="ComplexNetwork::addEdge" alt="" coords="615,393,792,420"/>
+<area shape="rect" id="node11" href="$class_node.html#a1272270025389e601164431b42ab5237" title="Node::getAttribute" alt="" coords="840,89,960,116"/>
 </map>

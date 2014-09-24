@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['feature',['Feature',['../class_feature.html#a81b7327d95ee32b3e8da711aa77b6561',1,'Feature::Feature(float *v, int n)'],['../class_feature.html#afb380f7d2b8fc2d0044a47edf36ea450',1,'Feature::Feature(QVector&lt; float &gt; &amp;other)']]]
+  ['feature',['Feature',['../class_feature.html#a71a84ccca45918ac2019cc2c69fa0e13',1,'Feature::Feature(const char *featureName, float *v, int n)'],['../class_feature.html#a52ff10b6dc6cb67d722289b7b4354924',1,'Feature::Feature(const char *featureName, QVector&lt; float &gt; &amp;other)']]]
 ];

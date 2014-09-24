@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['memoryinuse',['memoryInUse',['../_complex_network_test_8cpp.html#a195ed7b4505b1bb4a2448d71c649fcc1',1,'ComplexNetworkTest.cpp']]]
+  ['link',['Link',['../class_link.html#a1918a8473cee40bbed17b8e926cb85d9',1,'Link::Link()'],['../class_link.html#afc5d636eb34927773121560fcd9a7d99',1,'Link::Link(link_time t, float weight)']]]
 ];

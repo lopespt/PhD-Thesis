@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -88,27 +89,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="_database_reader_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_supervised_image_8hpp.html">SupervisedImage.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_database_reader.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_database_reader.html">DatabaseReader</a>{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef DATABASE_READER__HPP</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define DATABASE_READER__HPP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_supervised_image_8hpp.html">SupervisedImage.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_supervised_image.html">SupervisedImage</a>* <a class="code" href="class_database_reader.html#ae6a76cba6f3d4dad64b70b59c701b9f6">readNext</a>()=0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_database_reader.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_database_reader.html">DatabaseReader</a>{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_supervised_image.html">SupervisedImage</a>* <a class="code" href="class_database_reader.html#ae6a76cba6f3d4dad64b70b59c701b9f6">readNext</a>()=0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="ttc" id="class_database_reader_html"><div class="ttname"><a href="class_database_reader.html">DatabaseReader</a></div><div class="ttdef"><b>Definition:</b> DatabaseReader.hpp:4</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="ttc" id="class_database_reader_html"><div class="ttname"><a href="class_database_reader.html">DatabaseReader</a></div><div class="ttdef"><b>Definition:</b> DatabaseReader.hpp:7</div></div>
 <div class="ttc" id="class_database_reader_html_ae6a76cba6f3d4dad64b70b59c701b9f6"><div class="ttname"><a href="class_database_reader.html#ae6a76cba6f3d4dad64b70b59c701b9f6">DatabaseReader::readNext</a></div><div class="ttdeci">virtual SupervisedImage * readNext()=0</div></div>
 <div class="ttc" id="_supervised_image_8hpp_html"><div class="ttname"><a href="_supervised_image_8hpp.html">SupervisedImage.hpp</a></div></div>
 <div class="ttc" id="class_supervised_image_html"><div class="ttname"><a href="class_supervised_image.html">SupervisedImage</a></div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

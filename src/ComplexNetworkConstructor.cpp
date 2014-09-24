@@ -4,10 +4,10 @@
 ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractor*> extractors):cn(cn), reader(reader), extractors(extractors){
 }
 
-void ComplexNetworkConstructor::analyseNext(){
+void ComplexNetworkConstructor::build(){
     SupervisedImage* img;
     QLinkedList<Feature> features;
-    while( (img = reader.readNext()) !=NULL){
+    while( (img = reader.readNext()) !=NULL && this->time < 5  ){
         features.clear();
         foreach(Region *r, img->getRegions()){
             for(QList<FeatureExtractor*>::iterator i = extractors.begin(); i != extractors.end(); i++){
@@ -25,6 +25,9 @@ void ComplexNetworkConstructor::analyseNext(){
     fflush(stdout);
 }
 
+/** Atualiza os pesos as arestas de acordo com a Equação:
+ * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} + w_{i,j} \right)  \f]
+ */
 void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features){
 
     foreach(const Feature& f, features){
@@ -34,13 +37,17 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features
     }
 
 
+    float delta_t;
+    float weight;
+
     foreach(const Feature& f1, features){
         foreach(const Feature& f2, features){
             Edge<Feature, Link> *e = cn.getEdge(cn.getNode(f1), cn.getNode(f2));
             if(e){
-                float delta_t = e->getAttribute().getTime();
-                float weight = e->getAttribute().getWeight();
-                e->setAttribute( Link(this->time, weight + learningRate*(lambda / delta_t) - weight));
+                delta_t = e->getAttribute().getTime();
+                weight = e->getAttribute().getWeight();
+                e->setAttribute(Link(this->time, weight + learningRate*(1.0 + lambda / delta_t*1.0) - weight));
+                printf("Antes: %.4f\nDepois:%.4f\n", weight, e->getAttribute().getWeight());
             }else{
                 e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
                 cn.addEdge(e);

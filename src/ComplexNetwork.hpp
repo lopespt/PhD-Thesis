@@ -41,6 +41,7 @@ class ComplexNetwork{
         unsigned long int getNumNodes() const;
         unsigned long int getNumEdges() const;
 
+
 };
 
 

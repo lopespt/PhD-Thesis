@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -91,13 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_node_8hpp_source.html">Node.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Node&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_node__coll__graph.png" border="0" usemap="#_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" id="_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map">
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -107,12 +101,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb8f913ce2f995a6a14b9b05c60938f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94263af6c10cc9882d33918080dc722f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node</a> (NODE_TYPE <a class="el" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>)</td></tr>
 <tr class="separator:a94263af6c10cc9882d33918080dc722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e297dd17c704ae72bf1899dbcfcfeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">operator&lt;</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</td></tr>
-<tr class="separator:a81e297dd17c704ae72bf1899dbcfcfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeafeb0e9528fa394a5b8fca4d30070dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">operator==</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</td></tr>
-<tr class="separator:aeafeb0e9528fa394a5b8fca4d30070dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d5b3e98302e3238ef5fc92eb559a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">operator&gt;</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</td></tr>
-<tr class="separator:aa9d5b3e98302e3238ef5fc92eb559a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c948b700aff182cd9dfde8d333f891f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a8c948b700aff182cd9dfde8d333f891f">operator&lt;</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </td></tr>
+<tr class="separator:a8c948b700aff182cd9dfde8d333f891f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebab344b10d7702080189976af90100"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#adebab344b10d7702080189976af90100">operator==</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </td></tr>
+<tr class="separator:adebab344b10d7702080189976af90100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9b552b5f24907591310827434f1097"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a1a9b552b5f24907591310827434f1097">operator&gt;</a> (const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </td></tr>
+<tr class="separator:a1a9b552b5f24907591310827434f1097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -121,6 +115,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a434cad0f70931bc3aaa048d52d0b0ee3"><td class="memItemLeft" align="right" valign="top">NODE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a></td></tr>
 <tr class="separator:a434cad0f70931bc3aaa048d52d0b0ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<div class="dynheader">
+Collaboration diagram for Node&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_node__coll__graph.png" border="0" usemap="#_node_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a94263af6c10cc9882d33918080dc722f"></a>
 <div class="memitem">
@@ -161,13 +160,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_node_a1272270025389e601164431b42ab5237_icgraph.png" border="0" usemap="#class_node_a1272270025389e601164431b42ab5237_icgraph" alt=""/></div>
 <map name="class_node_a1272270025389e601164431b42ab5237_icgraph" id="class_node_a1272270025389e601164431b42ab5237_icgraph">
-<area shape="rect" id="node2" href="class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180" title="ComplexNetwork::addNode" alt="" coords="173,5,351,32"/><area shape="rect" id="node3" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="399,5,459,32"/></map>
+<area shape="rect" id="node2" href="class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180" title="ComplexNetwork::addNode" alt="" coords="173,42,351,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="399,5,581,47"/><area shape="rect" id="node6" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="460,71,520,98"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="629,5,812,47"/><area shape="rect" id="node5" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="860,13,909,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a81e297dd17c704ae72bf1899dbcfcfeb"></a>
+<a class="anchor" id="a8c948b700aff182cd9dfde8d333f891f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -178,14 +177,14 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aeafeb0e9528fa394a5b8fca4d30070dd"></a>
+<a class="anchor" id="adebab344b10d7702080189976af90100"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -196,14 +195,14 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa9d5b3e98302e3238ef5fc92eb559a81"></a>
+<a class="anchor" id="a1a9b552b5f24907591310827434f1097"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -214,7 +213,7 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -290,7 +289,7 @@ template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,0 +1,7 @@
+\form#0:$ w_{i,j} = w_{i,j} + \alpha(\frac{\lambda}{\Delta t} + w_{i,j}) $
+\form#1:\[ w_{i,j} = w_{i,j} + \alpha(\frac{\lambda}{\Delta t} + w_{i,j}) \]
+\form#2:\[ w_{i,j} = w_{i,j} + \alpha\begin(\frac{\lambda}{\Delta t} + w_{i,j}\end) \]
+\form#3:\[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} + w_{i,j} \right) \]
+\form#4:$ \lamda $
+\form#5:$ \lambda $
+\form#6:$ \alpha $

@@ -8,5 +8,6 @@ var searchData=
   ['edges',['edges',['../class_complex_network.html#a4d2f089652d03d9cbca4d77ff04df234',1,'ComplexNetwork']]],
   ['extractfeature',['extractFeature',['../class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0',1,'FeatureExtractor']]],
   ['extractlabel',['extractLabel',['../class_supervised_image.html#af603900bba42552e5d8395a5a265907a',1,'SupervisedImage']]],
+  ['extractors',['extractors',['../class_complex_network_constructor.html#a75c5f820c19bae3cb46671aa89ef348f',1,'ComplexNetworkConstructor']]],
   ['extractpolygon',['extractPolygon',['../class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e',1,'SupervisedImage']]]
 ];

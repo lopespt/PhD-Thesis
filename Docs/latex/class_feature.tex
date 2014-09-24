@@ -5,16 +5,6 @@
 
 {\ttfamily \#include $<$Feature.\+hpp$>$}
 
-
-
-Collaboration diagram for Feature\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=160pt]{class_feature__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,35 +12,48 @@ const Q\+Vector$<$ float $>$ \& \hyperlink{class_feature_ab96106b9d1ba89cfa00ffb
 \item 
 void \hyperlink{class_feature_a0e73c5cb157120a30704efb4af866ec0}{print\+Feature} () const 
 \item 
-bool \hyperlink{class_feature_a5bb49b85cd5b7be97899edf4222f110f}{operator$<$} (const \hyperlink{class_feature}{Feature} \&other)
+bool \hyperlink{class_feature_a46b25bf3494c10b1d130911f07f1a046}{operator$<$} (const \hyperlink{class_feature}{Feature} \&other) const 
 \item 
-\hyperlink{class_feature_a81b7327d95ee32b3e8da711aa77b6561}{Feature} (float $\ast$v, int n)
+\hyperlink{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}{Feature} (const char $\ast$\hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}, float $\ast$v, int n)
 \item 
-\hyperlink{class_feature_afb380f7d2b8fc2d0044a47edf36ea450}{Feature} (Q\+Vector$<$ float $>$ \&other)
+\hyperlink{class_feature_a52ff10b6dc6cb67d722289b7b4354924}{Feature} (const char $\ast$\hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}, Q\+Vector$<$ float $>$ \&other)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}
 \item 
 Q\+Vector$<$ float $>$ \hyperlink{class_feature_a8158dfca752942aeb84f35c363184d95}{vector}
 \end{DoxyCompactItemize}
 
 
+Collaboration diagram for Feature\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_feature__coll__graph}
+\end{center}
+\end{figure}
+
+
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_feature_a81b7327d95ee32b3e8da711aa77b6561}{\index{Feature@{Feature}!Feature@{Feature}}
+\hypertarget{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}{\index{Feature@{Feature}!Feature@{Feature}}
 \index{Feature@{Feature}!Feature@{Feature}}
 \subsubsection[{Feature}]{\setlength{\rightskip}{0pt plus 5cm}Feature\+::\+Feature (
 \begin{DoxyParamCaption}
+\item[{const char $\ast$}]{feature\+Name, }
 \item[{float $\ast$}]{v, }
 \item[{int}]{n}
 \end{DoxyParamCaption}
-)}}\label{class_feature_a81b7327d95ee32b3e8da711aa77b6561}
-\hypertarget{class_feature_afb380f7d2b8fc2d0044a47edf36ea450}{\index{Feature@{Feature}!Feature@{Feature}}
+)}}\label{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}
+\hypertarget{class_feature_a52ff10b6dc6cb67d722289b7b4354924}{\index{Feature@{Feature}!Feature@{Feature}}
 \index{Feature@{Feature}!Feature@{Feature}}
 \subsubsection[{Feature}]{\setlength{\rightskip}{0pt plus 5cm}Feature\+::\+Feature (
 \begin{DoxyParamCaption}
+\item[{const char $\ast$}]{feature\+Name, }
 \item[{Q\+Vector$<$ float $>$ \&}]{other}
 \end{DoxyParamCaption}
-)}}\label{class_feature_afb380f7d2b8fc2d0044a47edf36ea450}
+)}}\label{class_feature_a52ff10b6dc6cb67d722289b7b4354924}
 
 
 \subsection{Member Function Documentation}
@@ -61,13 +64,13 @@ Q\+Vector$<$ float $>$ \hyperlink{class_feature_a8158dfca752942aeb84f35c363184d9
 {}
 \end{DoxyParamCaption}
 ) const}}\label{class_feature_ab96106b9d1ba89cfa00ffb63a26b2130}
-\hypertarget{class_feature_a5bb49b85cd5b7be97899edf4222f110f}{\index{Feature@{Feature}!operator$<$@{operator$<$}}
+\hypertarget{class_feature_a46b25bf3494c10b1d130911f07f1a046}{\index{Feature@{Feature}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!Feature@{Feature}}
 \subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Feature\+::operator$<$ (
 \begin{DoxyParamCaption}
 \item[{const {\bf Feature} \&}]{other}
 \end{DoxyParamCaption}
-)}}\label{class_feature_a5bb49b85cd5b7be97899edf4222f110f}
+) const}}\label{class_feature_a46b25bf3494c10b1d130911f07f1a046}
 \hypertarget{class_feature_a0e73c5cb157120a30704efb4af866ec0}{\index{Feature@{Feature}!print\+Feature@{print\+Feature}}
 \index{print\+Feature@{print\+Feature}!Feature@{Feature}}
 \subsubsection[{print\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}void Feature\+::print\+Feature (
@@ -77,18 +80,10 @@ Q\+Vector$<$ float $>$ \hyperlink{class_feature_a8158dfca752942aeb84f35c363184d9
 ) const}}\label{class_feature_a0e73c5cb157120a30704efb4af866ec0}
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=254pt]{class_feature_a0e73c5cb157120a30704efb4af866ec0_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
 \subsection{Member Data Documentation}
+\hypertarget{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{\index{Feature@{Feature}!feature\+Name@{feature\+Name}}
+\index{feature\+Name@{feature\+Name}!Feature@{Feature}}
+\subsubsection[{feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Feature\+::feature\+Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}
 \hypertarget{class_feature_a8158dfca752942aeb84f35c363184d95}{\index{Feature@{Feature}!vector@{vector}}
 \index{vector@{vector}!Feature@{Feature}}
 \subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$float$>$ Feature\+::vector\hspace{0.3cm}{\ttfamily [private]}}}\label{class_feature_a8158dfca752942aeb84f35c363184d95}

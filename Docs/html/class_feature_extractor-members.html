@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -90,14 +91,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_feature_extractor.html#a76b9438b85a119c2ec4126b75c0486bf">_discretization</a></td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">discretization</a>()</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f">doDiscretization</a>(QVector&lt; float &gt; &amp;feature, int discretization)=0</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5">doExtraction</a>(Region *r)=0</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce">doDiscretization</a>(QVector&lt; float &gt; &amp;, int)</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825">doExtraction</a>(Region *)</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0">extractFeature</a>(Region *r)</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b">setDiscretization</a>(int i)</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f">getFeatureName</a>()</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b">setDiscretization</a>(int i)</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_extractor.html#a6cf7b08d1b50fad5c42bacaa18316f6e">~FeatureExtractor</a>()</td><td class="entry"><a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

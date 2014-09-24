@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -106,9 +107,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        NODE_TYPE <a class="code" href="class_node.html#a1272270025389e601164431b42ab5237">getAttribute</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">setAttribute</a>(NODE_TYPE attr);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node</a>(NODE_TYPE <a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> operator&lt;(const Node&lt;NODE_TYPE, EDGE_TYPE&gt; &amp;other);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">bool</span> operator&lt;(const Node&lt;NODE_TYPE, EDGE_TYPE&gt; &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#adebab344b10d7702080189976af90100">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_node.html#a1a9b552b5f24907591310827434f1097">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
@@ -128,17 +129,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_node.html#a8c948b700aff182cd9dfde8d333f891f">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#a8c948b700aff182cd9dfde8d333f891f">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> this-&gt;attribute &lt; other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">   47</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_node.html#adebab344b10d7702080189976af90100">   47</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#adebab344b10d7702080189976af90100">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator==</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> !((this-&gt;attribute &lt; other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a>) || (other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a> &lt; this-&gt;attribute ));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> NODE_TYPE, <span class="keyword">class</span> EDGE_TYPE&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">   52</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other){</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_node.html#a1a9b552b5f24907591310827434f1097">   52</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_node.html#a1a9b552b5f24907591310827434f1097">Node&lt;NODE_TYPE, EDGE_TYPE&gt;::operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_node.html">Node&lt;NODE_TYPE, EDGE_TYPE&gt;</a> &amp;other)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> other.<a class="code" href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">attribute</a> &lt; this-&gt;attribute;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
@@ -151,16 +152,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_node_html_a94263af6c10cc9882d33918080dc722f"><div class="ttname"><a href="class_node.html#a94263af6c10cc9882d33918080dc722f">Node::Node</a></div><div class="ttdeci">Node(NODE_TYPE attribute)</div><div class="ttdef"><b>Definition:</b> Node.hpp:28</div></div>
 <div class="ttc" id="class_node_html_a1272270025389e601164431b42ab5237"><div class="ttname"><a href="class_node.html#a1272270025389e601164431b42ab5237">Node::getAttribute</a></div><div class="ttdeci">NODE_TYPE getAttribute()</div><div class="ttdef"><b>Definition:</b> Node.hpp:32</div></div>
 <div class="ttc" id="class_node_html_a533ab17912d5b919a37ada31a8a78dc4"><div class="ttname"><a href="class_node.html#a533ab17912d5b919a37ada31a8a78dc4">Node::_id</a></div><div class="ttdeci">int _id</div><div class="ttdef"><b>Definition:</b> Node.hpp:13</div></div>
-<div class="ttc" id="class_node_html_aa9d5b3e98302e3238ef5fc92eb559a81"><div class="ttname"><a href="class_node.html#aa9d5b3e98302e3238ef5fc92eb559a81">Node::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:52</div></div>
 <div class="ttc" id="_edge_8hpp_html"><div class="ttname"><a href="_edge_8hpp.html">Edge.hpp</a></div></div>
-<div class="ttc" id="class_node_html_a81e297dd17c704ae72bf1899dbcfcfeb"><div class="ttname"><a href="class_node.html#a81e297dd17c704ae72bf1899dbcfcfeb">Node::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:42</div></div>
+<div class="ttc" id="class_node_html_a8c948b700aff182cd9dfde8d333f891f"><div class="ttname"><a href="class_node.html#a8c948b700aff182cd9dfde8d333f891f">Node::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </div><div class="ttdef"><b>Definition:</b> Node.hpp:42</div></div>
+<div class="ttc" id="class_node_html_adebab344b10d7702080189976af90100"><div class="ttname"><a href="class_node.html#adebab344b10d7702080189976af90100">Node::operator==</a></div><div class="ttdeci">bool operator==(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </div><div class="ttdef"><b>Definition:</b> Node.hpp:47</div></div>
 <div class="ttc" id="class_node_html_acb8f913ce2f995a6a14b9b05c60938f8"><div class="ttname"><a href="class_node.html#acb8f913ce2f995a6a14b9b05c60938f8">Node::setAttribute</a></div><div class="ttdeci">void setAttribute(NODE_TYPE attr)</div><div class="ttdef"><b>Definition:</b> Node.hpp:37</div></div>
-<div class="ttc" id="class_node_html_aeafeb0e9528fa394a5b8fca4d30070dd"><div class="ttname"><a href="class_node.html#aeafeb0e9528fa394a5b8fca4d30070dd">Node::operator==</a></div><div class="ttdeci">bool operator==(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> Node.hpp:47</div></div>
+<div class="ttc" id="class_node_html_a1a9b552b5f24907591310827434f1097"><div class="ttname"><a href="class_node.html#a1a9b552b5f24907591310827434f1097">Node::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Node&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;other) const </div><div class="ttdef"><b>Definition:</b> Node.hpp:52</div></div>
 <div class="ttc" id="class_node_html_a434cad0f70931bc3aaa048d52d0b0ee3"><div class="ttname"><a href="class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3">Node::attribute</a></div><div class="ttdeci">NODE_TYPE attribute</div><div class="ttdef"><b>Definition:</b> Node.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

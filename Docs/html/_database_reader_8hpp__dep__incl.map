@@ -1,7 +1,7 @@
 <map id="src/DatabaseReader.hpp" name="src/DatabaseReader.hpp">
-<area shape="rect" id="node2" href="$_complex_network_constructor_8hpp.html" title="src/ComplexNetworkConstructor.hpp" alt="" coords="5,80,233,107"/>
-<area shape="rect" id="node4" href="$_sun_database_reader_8hpp.html" title="src/SunDatabaseReader.hpp" alt="" coords="258,80,450,107"/>
-<area shape="rect" id="node3" href="$_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="6,155,233,181"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="281,155,376,181"/>
-<area shape="rect" id="node6" href="$_sun_database_reader_8cpp.html" title="src/SunDatabaseReader.cpp" alt="" coords="400,155,591,181"/>
+<area shape="rect" id="node2" href="$_complex_network_constructor_8hpp.html" title="src/ComplexNetworkConstructor.hpp" alt="" coords="63,80,291,107"/>
+<area shape="rect" id="node5" href="$_sun_database_reader_8hpp.html" title="src/SunDatabaseReader.hpp" alt="" coords="316,80,508,107"/>
+<area shape="rect" id="node3" href="$_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="5,155,232,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="257,155,351,181"/>
+<area shape="rect" id="node6" href="$_sun_database_reader_8cpp.html" title="src/SunDatabaseReader.cpp" alt="" coords="375,155,566,181"/>
 </map>

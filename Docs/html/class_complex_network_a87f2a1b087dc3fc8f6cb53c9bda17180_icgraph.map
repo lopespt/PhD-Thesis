@@ -1,3 +1,6 @@
 <map id="ComplexNetwork::addNode" name="ComplexNetwork::addNode">
-<area shape="rect" id="node2" href="$_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="231,5,291,32"/>
+<area shape="rect" id="node2" href="$class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="231,5,413,47"/>
+<area shape="rect" id="node5" href="$_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="292,71,352,98"/>
+<area shape="rect" id="node3" href="$class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="461,5,644,47"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="692,13,741,39"/>
 </map>

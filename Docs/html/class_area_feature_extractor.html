@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -91,20 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_area_feature_extractor_8hpp_source.html">AreaFeatureExtractor.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for AreaFeatureExtractor:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_area_feature_extractor__inherit__graph.png" border="0" usemap="#_area_feature_extractor_inherit__map" alt="Inheritance graph"/></div>
-<map name="_area_feature_extractor_inherit__map" id="_area_feature_extractor_inherit__map">
-<area shape="rect" id="node2" href="class_feature_extractor.html" title="{FeatureExtractor\n|&#45; _discretization\l|+ extractFeature()\l+ setDiscretization()\l+ discretization()\l# doExtraction()\l# doDiscretization()\l}" alt="" coords="19,5,152,141"/></map>
-</div>
-<div class="dynheader">
-Collaboration diagram for AreaFeatureExtractor:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_area_feature_extractor__coll__graph.png" border="0" usemap="#_area_feature_extractor_coll__map" alt="Collaboration graph"/></div>
-<map name="_area_feature_extractor_coll__map" id="_area_feature_extractor_coll__map">
-<area shape="rect" id="node2" href="class_feature_extractor.html" title="{FeatureExtractor\n|&#45; _discretization\l|+ extractFeature()\l+ setDiscretization()\l+ discretization()\l# doExtraction()\l# doDiscretization()\l}" alt="" coords="19,5,152,141"/></map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -114,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9dfd50444d94b1fd82fdd6ec0f9163c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9969af2ec658c4404651cc13bef00089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_area_feature_extractor.html#a9969af2ec658c4404651cc13bef00089">doDiscretization</a> (QVector&lt; float &gt; &amp;feature, int <a class="el" href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">discretization</a>)</td></tr>
 <tr class="separator:a9969af2ec658c4404651cc13bef00089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d987a1253cadd506280d3c8b99d860"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_area_feature_extractor.html#af4d987a1253cadd506280d3c8b99d860">getFeatureName</a> ()</td></tr>
+<tr class="separator:af4d987a1253cadd506280d3c8b99d860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_feature_extractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_feature_extractor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_feature_extractor.html">FeatureExtractor</a></td></tr>
 <tr class="memitem:a0bcc371c074b3aa6fa54b75b3657ffb0 inherit pub_methods_class_feature_extractor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_feature.html">Feature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0">extractFeature</a> (<a class="el" href="class_region.html">Region</a> *r)</td></tr>
 <tr class="separator:a0bcc371c074b3aa6fa54b75b3657ffb0 inherit pub_methods_class_feature_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a99ef3afd19f932dcb7dbb089e474d41b inherit pub_methods_class_feature_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d800b4e5f3af7c758bfc5f157110681 inherit pub_methods_class_feature_extractor"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">discretization</a> ()</td></tr>
 <tr class="separator:a1d800b4e5f3af7c758bfc5f157110681 inherit pub_methods_class_feature_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf7b08d1b50fad5c42bacaa18316f6e inherit pub_methods_class_feature_extractor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_extractor.html#a6cf7b08d1b50fad5c42bacaa18316f6e">~FeatureExtractor</a> ()</td></tr>
+<tr class="separator:a6cf7b08d1b50fad5c42bacaa18316f6e inherit pub_methods_class_feature_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -130,6 +121,20 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 </table>
+<div class="dynheader">
+Inheritance diagram for AreaFeatureExtractor:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_area_feature_extractor__inherit__graph.png" border="0" usemap="#_area_feature_extractor_inherit__map" alt="Inheritance graph"/></div>
+<map name="_area_feature_extractor_inherit__map" id="_area_feature_extractor_inherit__map">
+<area shape="rect" id="node2" href="class_feature_extractor.html" title="{FeatureExtractor\n|&#45; _discretization\l|+ extractFeature()\l+ setDiscretization()\l+ discretization()\l+ ~FeatureExtractor()\l# doExtraction()\l# doDiscretization()\l# getFeatureName()\l}" alt="" coords="15,5,156,171"/></map>
+</div>
+<div class="dynheader">
+Collaboration diagram for AreaFeatureExtractor:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_area_feature_extractor__coll__graph.png" border="0" usemap="#_area_feature_extractor_coll__map" alt="Collaboration graph"/></div>
+<map name="_area_feature_extractor_coll__map" id="_area_feature_extractor_coll__map">
+<area shape="rect" id="node2" href="class_feature_extractor.html" title="{FeatureExtractor\n|&#45; _discretization\l|+ extractFeature()\l+ setDiscretization()\l+ discretization()\l+ ~FeatureExtractor()\l# doExtraction()\l# doDiscretization()\l# getFeatureName()\l}" alt="" coords="15,5,156,171"/></map>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab183d05cccc841a75b368ce55d2f37bb"></a>
 <div class="memitem">
@@ -203,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f">FeatureExtractor</a>.</p>
+<p>Reimplemented from <a class="el" href="class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce">FeatureExtractor</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -238,7 +243,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5">FeatureExtractor</a>.</p>
+<p>Reimplemented from <a class="el" href="class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825">FeatureExtractor</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -251,6 +256,31 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="af4d987a1253cadd506280d3c8b99d860"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * AreaFeatureExtractor::getFeatureName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f">FeatureExtractor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="_area_feature_extractor_8hpp_source.html">AreaFeatureExtractor.hpp</a></li>
 <li>src/<a class="el" href="_area_feature_extractor_8cpp.html">AreaFeatureExtractor.cpp</a></li>
@@ -258,7 +288,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

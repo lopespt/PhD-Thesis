@@ -10,7 +10,6 @@
 #include "AreaFeatureExtractor.hpp"
 #include <QLinkedList>
 #include "Link.hpp"
-
 typedef ComplexNetwork<Feature, Link> t_cn;
 
 class ComplexNetworkConstructor{
@@ -21,13 +20,14 @@ class ComplexNetworkConstructor{
         QList<FeatureExtractor*> extractors;
         unsigned long long int time=1;
         void makeCoOccurrences(QLinkedList<Feature> &features);
-        float lambda=2;
-        float learningRate=0.2;
-
+        /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
+        float lambda=1; 
+        /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
+        float learningRate=0.3;
 
     public:
         ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractor*> extractors);
-        void analyseNext();
+        void build();
 
 };
 

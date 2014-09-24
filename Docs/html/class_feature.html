@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -91,13 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_feature_8hpp_source.html">Feature.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Feature:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_feature__coll__graph.png" border="0" usemap="#_feature_coll__map" alt="Collaboration graph"/></div>
-<map name="_feature_coll__map" id="_feature_coll__map">
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -105,26 +99,39 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab96106b9d1ba89cfa00ffb63a26b2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e73c5cb157120a30704efb4af866ec0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">printFeature</a> () const </td></tr>
 <tr class="separator:a0e73c5cb157120a30704efb4af866ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bb49b85cd5b7be97899edf4222f110f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a5bb49b85cd5b7be97899edf4222f110f">operator&lt;</a> (const <a class="el" href="class_feature.html">Feature</a> &amp;other)</td></tr>
-<tr class="separator:a5bb49b85cd5b7be97899edf4222f110f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81b7327d95ee32b3e8da711aa77b6561"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a81b7327d95ee32b3e8da711aa77b6561">Feature</a> (float *v, int n)</td></tr>
-<tr class="separator:a81b7327d95ee32b3e8da711aa77b6561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb380f7d2b8fc2d0044a47edf36ea450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#afb380f7d2b8fc2d0044a47edf36ea450">Feature</a> (QVector&lt; float &gt; &amp;other)</td></tr>
-<tr class="separator:afb380f7d2b8fc2d0044a47edf36ea450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b25bf3494c10b1d130911f07f1a046"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a46b25bf3494c10b1d130911f07f1a046">operator&lt;</a> (const <a class="el" href="class_feature.html">Feature</a> &amp;other) const </td></tr>
+<tr class="separator:a46b25bf3494c10b1d130911f07f1a046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a84ccca45918ac2019cc2c69fa0e13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a71a84ccca45918ac2019cc2c69fa0e13">Feature</a> (const char *<a class="el" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a>, float *v, int n)</td></tr>
+<tr class="separator:a71a84ccca45918ac2019cc2c69fa0e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ff10b6dc6cb67d722289b7b4354924"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a52ff10b6dc6cb67d722289b7b4354924">Feature</a> (const char *<a class="el" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a>, QVector&lt; float &gt; &amp;other)</td></tr>
+<tr class="separator:a52ff10b6dc6cb67d722289b7b4354924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aaeb59834a8cafa7a89fc7a02f861f37d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a></td></tr>
+<tr class="separator:aaeb59834a8cafa7a89fc7a02f861f37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8158dfca752942aeb84f35c363184d95"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">vector</a></td></tr>
 <tr class="separator:a8158dfca752942aeb84f35c363184d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<div class="dynheader">
+Collaboration diagram for Feature:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_feature__coll__graph.png" border="0" usemap="#_feature_coll__map" alt="Collaboration graph"/></div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a81b7327d95ee32b3e8da711aa77b6561"></a>
+<a class="anchor" id="a71a84ccca45918ac2019cc2c69fa0e13"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Feature::Feature </td>
           <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>featureName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
@@ -144,16 +151,26 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb380f7d2b8fc2d0044a47edf36ea450"></a>
+<a class="anchor" id="a52ff10b6dc6cb67d722289b7b4354924"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Feature::Feature </td>
           <td>(</td>
-          <td class="paramtype">QVector&lt; float &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>featureName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">QVector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,7 +193,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5bb49b85cd5b7be97899edf4222f110f"></a>
+<a class="anchor" id="a46b25bf3494c10b1d130911f07f1a046"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -185,7 +202,7 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_feature.html">Feature</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,18 +222,29 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_feature_a0e73c5cb157120a30704efb4af866ec0_icgraph.png" border="0" usemap="#class_feature_a0e73c5cb157120a30704efb4af866ec0_icgraph" alt=""/></div>
-<map name="class_feature_a0e73c5cb157120a30704efb4af866ec0_icgraph" id="class_feature_a0e73c5cb157120a30704efb4af866ec0_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="188,5,237,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aaeb59834a8cafa7a89fc7a02f861f37d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* Feature::featureName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8158dfca752942aeb84f35c363184d95"></a>
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +272,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

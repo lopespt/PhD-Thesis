@@ -5,26 +5,6 @@
 
 {\ttfamily \#include $<$Area\+Feature\+Extractor.\+hpp$>$}
 
-
-
-Inheritance diagram for Area\+Feature\+Extractor\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=200pt]{class_area_feature_extractor__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Area\+Feature\+Extractor\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=200pt]{class_area_feature_extractor__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,6 +13,8 @@ Collaboration diagram for Area\+Feature\+Extractor\+:
 Q\+Vector$<$ float $>$ \hyperlink{class_area_feature_extractor_a9dfd50444d94b1fd82fdd6ec0f9163c3}{do\+Extraction} (\hyperlink{class_region}{Region} $\ast$r)
 \item 
 void \hyperlink{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}{do\+Discretization} (Q\+Vector$<$ float $>$ \&feature, int \hyperlink{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{discretization})
+\item 
+const char $\ast$ \hyperlink{class_area_feature_extractor_af4d987a1253cadd506280d3c8b99d860}{get\+Feature\+Name} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -40,6 +22,24 @@ void \hyperlink{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}{
 void \hyperlink{class_area_feature_extractor_a01c1c501f11f6b986e46b7b1fe2d4508}{discretize} (int quantization)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+Inheritance diagram for Area\+Feature\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_area_feature_extractor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Area\+Feature\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_area_feature_extractor__coll__graph}
+\end{center}
+\end{figure}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -70,12 +70,11 @@ void \hyperlink{class_area_feature_extractor_a01c1c501f11f6b986e46b7b1fe2d4508}{
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}
 
 
-Implements \hyperlink{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}{Feature\+Extractor}.
+Reimplemented from \hyperlink{class_feature_extractor_aa72a103a311a391eafdd0916c8ffabce}{Feature\+Extractor}.
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -93,12 +92,11 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_extractor_a9dfd50444d94b1fd82fdd6ec0f9163c3}
 
 
-Implements \hyperlink{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}{Feature\+Extractor}.
+Reimplemented from \hyperlink{class_feature_extractor_af4afca623abc12c0af3572b2189d0825}{Feature\+Extractor}.
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -106,6 +104,17 @@ Here is the call graph for this function\+:
 \end{center}
 \end{figure}
 
+
+\hypertarget{class_area_feature_extractor_af4d987a1253cadd506280d3c8b99d860}{\index{Area\+Feature\+Extractor@{Area\+Feature\+Extractor}!get\+Feature\+Name@{get\+Feature\+Name}}
+\index{get\+Feature\+Name@{get\+Feature\+Name}!Area\+Feature\+Extractor@{Area\+Feature\+Extractor}}
+\subsubsection[{get\+Feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Area\+Feature\+Extractor\+::get\+Feature\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_extractor_af4d987a1253cadd506280d3c8b99d860}
+
+
+Reimplemented from \hyperlink{class_feature_extractor_a12e9b0c683be94146a5c4fbd2d48967f}{Feature\+Extractor}.
 
 
 

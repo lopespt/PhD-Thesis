@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -104,21 +105,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_feature.html">Feature</a> <a class="code" href="class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0">extractFeature</a>(<a class="code" href="class_region.html">Region</a>* r);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b">setDiscretization</a>(<span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">discretization</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">virtual</span> QVector&lt;float&gt; <a class="code" href="class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5">doExtraction</a>(<a class="code" href="class_region.html">Region</a>* r)=0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f">doDiscretization</a>(QVector&lt;float&gt; &amp;feature, <span class="keywordtype">int</span> <a class="code" href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">discretization</a>)=0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_feature_extractor.html#a6cf7b08d1b50fad5c42bacaa18316f6e">   18</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_feature_extractor.html#a6cf7b08d1b50fad5c42bacaa18316f6e">~FeatureExtractor</a>(){};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825">   21</a></span>&#160;        <span class="keyword">virtual</span> QVector&lt;float&gt; <a class="code" href="class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825">doExtraction</a>(<a class="code" href="class_region.html">Region</a>* ){<span class="keywordflow">return</span> QVector&lt;float&gt;();};</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce">   22</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce">doDiscretization</a>(QVector&lt;float&gt; &amp;, <span class="keywordtype">int</span> ){};</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f">   23</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f">getFeatureName</a>(){<span class="keywordflow">return</span> NULL;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="ttc" id="_feature_8hpp_html"><div class="ttname"><a href="_feature_8hpp.html">Feature.hpp</a></div></div>
+<div class="ttc" id="class_feature_extractor_html_a12e9b0c683be94146a5c4fbd2d48967f"><div class="ttname"><a href="class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f">FeatureExtractor::getFeatureName</a></div><div class="ttdeci">virtual const char * getFeatureName()</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:23</div></div>
 <div class="ttc" id="class_feature_extractor_html_a99ef3afd19f932dcb7dbb089e474d41b"><div class="ttname"><a href="class_feature_extractor.html#a99ef3afd19f932dcb7dbb089e474d41b">FeatureExtractor::setDiscretization</a></div><div class="ttdeci">void setDiscretization(int i)</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.cpp:9</div></div>
 <div class="ttc" id="class_feature_html"><div class="ttname"><a href="class_feature.html">Feature</a></div><div class="ttdef"><b>Definition:</b> Feature.hpp:8</div></div>
 <div class="ttc" id="class_feature_extractor_html_a1d800b4e5f3af7c758bfc5f157110681"><div class="ttname"><a href="class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681">FeatureExtractor::discretization</a></div><div class="ttdeci">int discretization()</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.cpp:13</div></div>
 <div class="ttc" id="_region_8hpp_html"><div class="ttname"><a href="_region_8hpp.html">Region.hpp</a></div></div>
-<div class="ttc" id="class_feature_extractor_html_aa5c094d54dc66b517ebde61fc9f1edf5"><div class="ttname"><a href="class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5">FeatureExtractor::doExtraction</a></div><div class="ttdeci">virtual QVector&lt; float &gt; doExtraction(Region *r)=0</div></div>
-<div class="ttc" id="class_feature_extractor_html_ae0501342d6b872870af13cc5cd0a249f"><div class="ttname"><a href="class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f">FeatureExtractor::doDiscretization</a></div><div class="ttdeci">virtual void doDiscretization(QVector&lt; float &gt; &amp;feature, int discretization)=0</div></div>
+<div class="ttc" id="class_feature_extractor_html_a6cf7b08d1b50fad5c42bacaa18316f6e"><div class="ttname"><a href="class_feature_extractor.html#a6cf7b08d1b50fad5c42bacaa18316f6e">FeatureExtractor::~FeatureExtractor</a></div><div class="ttdeci">virtual ~FeatureExtractor()</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:18</div></div>
+<div class="ttc" id="class_feature_extractor_html_aa72a103a311a391eafdd0916c8ffabce"><div class="ttname"><a href="class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce">FeatureExtractor::doDiscretization</a></div><div class="ttdeci">virtual void doDiscretization(QVector&lt; float &gt; &amp;, int)</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:22</div></div>
+<div class="ttc" id="class_feature_extractor_html_af4afca623abc12c0af3572b2189d0825"><div class="ttname"><a href="class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825">FeatureExtractor::doExtraction</a></div><div class="ttdeci">virtual QVector&lt; float &gt; doExtraction(Region *)</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:21</div></div>
 <div class="ttc" id="class_feature_extractor_html"><div class="ttname"><a href="class_feature_extractor.html">FeatureExtractor</a></div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:9</div></div>
 <div class="ttc" id="class_feature_extractor_html_a76b9438b85a119c2ec4126b75c0486bf"><div class="ttname"><a href="class_feature_extractor.html#a76b9438b85a119c2ec4126b75c0486bf">FeatureExtractor::_discretization</a></div><div class="ttdeci">int _discretization</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.hpp:12</div></div>
 <div class="ttc" id="class_feature_extractor_html_a0bcc371c074b3aa6fa54b75b3657ffb0"><div class="ttname"><a href="class_feature_extractor.html#a0bcc371c074b3aa6fa54b75b3657ffb0">FeatureExtractor::extractFeature</a></div><div class="ttdeci">Feature extractFeature(Region *r)</div><div class="ttdef"><b>Definition:</b> FeatureExtractor.cpp:4</div></div>
@@ -126,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

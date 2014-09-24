@@ -1,4 +1,5 @@
 <map id="FeatureExtractor::extractFeature" name="FeatureExtractor::extractFeature">
-<area shape="rect" id="node2" href="$class_feature_extractor.html#aa5c094d54dc66b517ebde61fc9f1edf5" title="FeatureExtractor::doExtraction" alt="" coords="219,5,407,32"/>
-<area shape="rect" id="node3" href="$class_feature_extractor.html#ae0501342d6b872870af13cc5cd0a249f" title="FeatureExtractor::doDiscretization" alt="" coords="209,56,416,83"/>
+<area shape="rect" id="node2" href="$class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825" title="FeatureExtractor::doExtraction" alt="" coords="221,5,409,32"/>
+<area shape="rect" id="node3" href="$class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce" title="FeatureExtractor::doDiscretization" alt="" coords="212,56,419,83"/>
+<area shape="rect" id="node4" href="$class_feature_extractor.html#a12e9b0c683be94146a5c4fbd2d48967f" title="FeatureExtractor::getFeatureName" alt="" coords="209,107,421,133"/>
 </map>

@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -84,7 +85,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">ComplexNetworkConstructor.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -95,19 +97,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="_region_8hpp_source.html">Region.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_supervised_image_8hpp_source.html">SupervisedImage.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_area_feature_extractor_8hpp_source.html">AreaFeatureExtractor.hpp</a>&quot;</code><br />
+<code>#include &lt;QLinkedList&gt;</code><br />
+<code>#include &quot;<a class="el" href="_link_8hpp_source.html">Link.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ComplexNetworkConstructor.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_complex_network_constructor_8hpp__incl.png" border="0" usemap="#src_2_complex_network_constructor_8hpp" alt=""/></div>
 <map name="src_2_complex_network_constructor_8hpp" id="src_2_complex_network_constructor_8hpp">
-<area shape="rect" id="node2" href="_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="169,80,314,107"/><area shape="rect" id="node9" href="_feature_8hpp.html" title="Feature.hpp" alt="" coords="491,229,581,256"/><area shape="rect" id="node11" href="_region_8hpp.html" title="Region.hpp" alt="" coords="589,304,677,331"/><area shape="rect" id="node20" href="_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="851,80,1000,107"/><area shape="rect" id="node21" href="_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="852,229,999,256"/><area shape="rect" id="node27" href="_area_feature_extractor_8hpp.html" title="AreaFeatureExtractor.hpp" alt="" coords="558,80,725,107"/><area shape="rect" id="node4" href="_node_8hpp.html" title="Node.hpp" alt="" coords="163,155,242,181"/><area shape="rect" id="node5" href="_edge_8hpp.html" title="Edge.hpp" alt="" coords="77,229,155,256"/><area shape="rect" id="node28" href="_feature_extractor_8hpp.html" title="FeatureExtractor.hpp" alt="" coords="536,155,675,181"/></map>
+<area shape="rect" id="node2" href="_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="169,80,314,107"/><area shape="rect" id="node9" href="_feature_8hpp.html" title="Feature.hpp" alt="" coords="491,229,581,256"/><area shape="rect" id="node11" href="_region_8hpp.html" title="Region.hpp" alt="" coords="589,304,677,331"/><area shape="rect" id="node20" href="_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="851,80,1000,107"/><area shape="rect" id="node21" href="_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="852,229,999,256"/><area shape="rect" id="node27" href="_area_feature_extractor_8hpp.html" title="AreaFeatureExtractor.hpp" alt="" coords="558,80,725,107"/><area shape="rect" id="node30" href="_link_8hpp.html" title="Link.hpp" alt="" coords="1137,80,1207,107"/><area shape="rect" id="node4" href="_node_8hpp.html" title="Node.hpp" alt="" coords="163,155,242,181"/><area shape="rect" id="node5" href="_edge_8hpp.html" title="Edge.hpp" alt="" coords="77,229,155,256"/><area shape="rect" id="node28" href="_feature_extractor_8hpp.html" title="FeatureExtractor.hpp" alt="" coords="536,155,675,181"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_complex_network_constructor_8hpp__dep__incl.png" border="0" usemap="#src_2_complex_network_constructor_8hppdep" alt=""/></div>
 <map name="src_2_complex_network_constructor_8hppdep" id="src_2_complex_network_constructor_8hppdep">
-<area shape="rect" id="node2" href="_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="6,80,233,107"/></map>
+<area shape="rect" id="node2" href="_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="5,80,232,107"/><area shape="rect" id="node3" href="main_8cpp.html" title="src/main.cpp" alt="" coords="257,80,351,107"/></map>
 </div>
 </div>
 <p><a href="_complex_network_constructor_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -116,11 +120,30 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4f0848d3c2144cac74d7cdb1a6a23c30"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_complex_network.html">ComplexNetwork</a><br class="typebreak" />
+&lt; <a class="el" href="class_feature.html">Feature</a>, <a class="el" href="class_link.html">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_complex_network_constructor_8hpp.html#a4f0848d3c2144cac74d7cdb1a6a23c30">t_cn</a></td></tr>
+<tr class="separator:a4f0848d3c2144cac74d7cdb1a6a23c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a4f0848d3c2144cac74d7cdb1a6a23c30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt;<a class="el" href="class_feature.html">Feature</a>, <a class="el" href="class_link.html">Link</a>&gt; <a class="el" href="_complex_network_constructor_8hpp.html#a4f0848d3c2144cac74d7cdb1a6a23c30">t_cn</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -96,20 +97,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="class_complex_network.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_complex_network__inherit__graph.png" border="0" usemap="#_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map" id="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map">
-<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; Feature,\l float \&gt;\n|&#45; nodes\l&#45; edges\l|+ ComplexNetwork()\l+ ~ComplexNetwork()\l+ addNode()\l+ addEdge()\l+ getEdge()\l+ getNode()\l+ getEdgesFromNode_LowerBound()\l+ getEdgesFromNode_UpperBound()\l&#45; compare()\l}" alt="" coords="5,292,237,516"/></map>
-</div>
-<div class="dynheader">
-Collaboration diagram for ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_complex_network__coll__graph.png" border="0" usemap="#_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" id="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map">
-<area shape="rect" id="node3" href="class_edge.html" title="{Edge\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; from\l&#45; to\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="5,153,195,318"/><area shape="rect" id="node4" title="STL class. " alt="" coords="219,197,359,274"/><area shape="rect" id="node9" title="STL class. " alt="" coords="598,197,714,274"/><area shape="rect" id="node8" href="class_node.html" title="{Node\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Node()\l+ operator\&lt;()\l+ operator==()\l+ operator\&gt;()\l}" alt="" coords="384,145,573,325"/></map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,6 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b10b3b8dd87a9b40413b0aadfa22250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a652f0a532b1d174a0423d2e98ea22c10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a652f0a532b1d174a0423d2e98ea22c10">getEdgesFromNode_UpperBound</a> (<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> n)</td></tr>
 <tr class="separator:a652f0a532b1d174a0423d2e98ea22c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d38294467dd4f5aab8e513803e686a"><td class="memItemLeft" align="right" valign="top">unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a41d38294467dd4f5aab8e513803e686a">getNumNodes</a> () const </td></tr>
+<tr class="separator:a41d38294467dd4f5aab8e513803e686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4959ddf1ac3a114a46d86bf46e5701"><td class="memItemLeft" align="right" valign="top">unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4a4959ddf1ac3a114a46d86bf46e5701">getNumEdges</a> () const </td></tr>
+<tr class="separator:a4a4959ddf1ac3a114a46d86bf46e5701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -165,7 +156,14 @@ class ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;</h3>
 
 <p>Rede Complexa. </p>
 <p>Rede Complexa utilizando listas de adjacências </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+</div><div class="dynheader">
+Collaboration diagram for ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network__coll__graph.png" border="0" usemap="#_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" id="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map">
+<area shape="rect" id="node3" href="class_edge.html" title="{Edge\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; from\l&#45; to\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="5,153,195,318"/><area shape="rect" id="node4" title="STL class. " alt="" coords="219,197,359,274"/><area shape="rect" id="node9" title="STL class. " alt="" coords="598,197,714,274"/><area shape="rect" id="node8" href="class_node.html" title="{Node\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Node()\l+ operator\&lt;()\l+ operator==()\l+ operator\&gt;()\l}" alt="" coords="384,145,573,325"/></map>
+</div>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="af5db8f579c2622ec27f2cfb6835d8466"></a>
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +295,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph.png" border="0" usemap="#class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph" alt=""/></div>
 <map name="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph" id="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph">
-<area shape="rect" id="node2" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="231,5,291,32"/></map>
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="231,5,413,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="292,71,352,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="461,5,644,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="692,13,741,39"/></map>
 </div>
 </p>
 
@@ -333,7 +331,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph.png" border="0" usemap="#class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph" alt=""/></div>
 <map name="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph" id="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph">
-<area shape="rect" id="node2" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="231,5,291,32"/></map>
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="231,5,413,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="292,71,352,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="461,5,644,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="692,13,741,39"/></map>
 </div>
 </p>
 
@@ -401,6 +399,15 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph.png" border="0" usemap="#class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph" alt=""/></div>
+<map name="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph" id="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="225,5,408,47"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="456,5,639,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="687,13,736,39"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a2b10b3b8dd87a9b40413b0aadfa22250"></a>
@@ -460,7 +467,59 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph.png" border="0" usemap="#class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph" alt=""/></div>
 <map name="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph" id="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph">
-<area shape="rect" id="node2" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="225,5,285,32"/></map>
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="225,5,408,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="287,71,347,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="456,5,639,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="687,13,736,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a4959ddf1ac3a114a46d86bf46e5701"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph.png" border="0" usemap="#class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph" alt=""/></div>
+<map name="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph" id="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="259,5,441,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="489,13,539,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a41d38294467dd4f5aab8e513803e686a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumNodes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph.png" border="0" usemap="#class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph" alt=""/></div>
+<map name="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph" id="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="259,5,441,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="489,13,539,39"/></map>
 </div>
 </p>
 
@@ -517,7 +576,7 @@ template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

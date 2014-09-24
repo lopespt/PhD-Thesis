@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -97,29 +98,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_feature.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_feature.html">Feature</a>{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">   11</a></span>&#160;        QVector&lt;float&gt; <a class="code" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">vector</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">const</span> QVector&lt;float&gt; &amp;<a class="code" href="class_feature.html#ab96106b9d1ba89cfa00ffb63a26b2130">getVector</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">printFeature</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_feature.html#a5bb49b85cd5b7be97899edf4222f110f">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_feature.html">Feature</a>&amp; other);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_feature.html#a81b7327d95ee32b3e8da711aa77b6561">Feature</a>(<span class="keywordtype">float</span> *v, <span class="keywordtype">int</span> n);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_feature.html#a81b7327d95ee32b3e8da711aa77b6561">Feature</a>(QVector&lt;float&gt; &amp;other);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_feature_html_a8158dfca752942aeb84f35c363184d95"><div class="ttname"><a href="class_feature.html#a8158dfca752942aeb84f35c363184d95">Feature::vector</a></div><div class="ttdeci">QVector&lt; float &gt; vector</div><div class="ttdef"><b>Definition:</b> Feature.hpp:11</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">   11</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">   12</a></span>&#160;        QVector&lt;float&gt; <a class="code" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">vector</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">const</span> QVector&lt;float&gt; &amp;<a class="code" href="class_feature.html#ab96106b9d1ba89cfa00ffb63a26b2130">getVector</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">printFeature</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_feature.html#a46b25bf3494c10b1d130911f07f1a046">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_feature.html">Feature</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_feature.html#a71a84ccca45918ac2019cc2c69fa0e13">Feature</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a>, <span class="keywordtype">float</span> *v, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_feature.html#a71a84ccca45918ac2019cc2c69fa0e13">Feature</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">featureName</a>, QVector&lt;float&gt; &amp;other);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_feature_html_a8158dfca752942aeb84f35c363184d95"><div class="ttname"><a href="class_feature.html#a8158dfca752942aeb84f35c363184d95">Feature::vector</a></div><div class="ttdeci">QVector&lt; float &gt; vector</div><div class="ttdef"><b>Definition:</b> Feature.hpp:12</div></div>
 <div class="ttc" id="class_feature_html"><div class="ttname"><a href="class_feature.html">Feature</a></div><div class="ttdef"><b>Definition:</b> Feature.hpp:8</div></div>
-<div class="ttc" id="class_feature_html_a81b7327d95ee32b3e8da711aa77b6561"><div class="ttname"><a href="class_feature.html#a81b7327d95ee32b3e8da711aa77b6561">Feature::Feature</a></div><div class="ttdeci">Feature(float *v, int n)</div><div class="ttdef"><b>Definition:</b> Feature.cpp:5</div></div>
 <div class="ttc" id="class_feature_html_a0e73c5cb157120a30704efb4af866ec0"><div class="ttname"><a href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">Feature::printFeature</a></div><div class="ttdeci">void printFeature() const </div><div class="ttdef"><b>Definition:</b> Feature.cpp:21</div></div>
+<div class="ttc" id="class_feature_html_a46b25bf3494c10b1d130911f07f1a046"><div class="ttname"><a href="class_feature.html#a46b25bf3494c10b1d130911f07f1a046">Feature::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Feature &amp;other) const </div><div class="ttdef"><b>Definition:</b> Feature.cpp:32</div></div>
 <div class="ttc" id="_region_8hpp_html"><div class="ttname"><a href="_region_8hpp.html">Region.hpp</a></div></div>
-<div class="ttc" id="class_feature_html_a5bb49b85cd5b7be97899edf4222f110f"><div class="ttname"><a href="class_feature.html#a5bb49b85cd5b7be97899edf4222f110f">Feature::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Feature &amp;other)</div><div class="ttdef"><b>Definition:</b> Feature.cpp:32</div></div>
+<div class="ttc" id="class_feature_html_aaeb59834a8cafa7a89fc7a02f861f37d"><div class="ttname"><a href="class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d">Feature::featureName</a></div><div class="ttdeci">const char * featureName</div><div class="ttdef"><b>Definition:</b> Feature.hpp:11</div></div>
+<div class="ttc" id="class_feature_html_a71a84ccca45918ac2019cc2c69fa0e13"><div class="ttname"><a href="class_feature.html#a71a84ccca45918ac2019cc2c69fa0e13">Feature::Feature</a></div><div class="ttdeci">Feature(const char *featureName, float *v, int n)</div><div class="ttdef"><b>Definition:</b> Feature.cpp:5</div></div>
 <div class="ttc" id="class_feature_html_ab96106b9d1ba89cfa00ffb63a26b2130"><div class="ttname"><a href="class_feature.html#ab96106b9d1ba89cfa00ffb63a26b2130">Feature::getVector</a></div><div class="ttdeci">const QVector&lt; float &gt; &amp; getVector() const </div><div class="ttdef"><b>Definition:</b> Feature.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 14:12:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

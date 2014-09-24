@@ -10,26 +10,6 @@ Rede Complexa.
 
 {\ttfamily \#include $<$Complex\+Network.\+hpp$>$}
 
-
-
-Inheritance diagram for Complex\+Network$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=254pt]{class_complex_network__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Complex\+Network$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_complex_network__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,6 +28,10 @@ void \hyperlink{class_complex_network_a183168090e8d9446b53643890476b0ba}{add\+Ed
 \hyperlink{class_complex_network_af5db8f579c2622ec27f2cfb6835d8466}{edge\+\_\+iterator} \hyperlink{class_complex_network_a2b10b3b8dd87a9b40413b0aadfa22250}{get\+Edges\+From\+Node\+\_\+\+Lower\+Bound} (\hyperlink{class_complex_network_a1a0d11ddc5f0c146a0e921b58bb5eb3e}{Node\+Ptr} n)
 \item 
 \hyperlink{class_complex_network_af5db8f579c2622ec27f2cfb6835d8466}{edge\+\_\+iterator} \hyperlink{class_complex_network_a652f0a532b1d174a0423d2e98ea22c10}{get\+Edges\+From\+Node\+\_\+\+Upper\+Bound} (\hyperlink{class_complex_network_a1a0d11ddc5f0c146a0e921b58bb5eb3e}{Node\+Ptr} n)
+\item 
+unsigned long int \hyperlink{class_complex_network_a41d38294467dd4f5aab8e513803e686a}{get\+Num\+Nodes} () const 
+\item 
+unsigned long int \hyperlink{class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701}{get\+Num\+Edges} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Types}
 \begin{DoxyCompactItemize}
@@ -86,6 +70,15 @@ bool($\ast$)(std\+::pair$<$ \hyperlink{class_complex_network_a1a0d11ddc5f0c146a0
 Rede Complexa. 
 
 Rede Complexa utilizando listas de adjacências 
+
+Collaboration diagram for Complex\+Network$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network__coll__graph}
+\end{center}
+\end{figure}
+
 
 \subsection{Member Typedef Documentation}
 \hypertarget{class_complex_network_af5db8f579c2622ec27f2cfb6835d8466}{\index{Complex\+Network@{Complex\+Network}!edge\+\_\+iterator@{edge\+\_\+iterator}}
@@ -130,7 +123,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph}
+\includegraphics[width=350pt]{class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph}
 \end{center}
 \end{figure}
 
@@ -159,7 +152,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=294pt]{class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph}
+\includegraphics[width=350pt]{class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph}
 \end{center}
 \end{figure}
 
@@ -180,6 +173,17 @@ Here is the caller graph for this function\+:\nopagebreak
 \item[{{\bf Node\+Ptr}}]{b}
 \end{DoxyParamCaption}
 )}}\label{class_complex_network_a985d6dc543067794c273f18d87592af4}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_complex_network_a2b10b3b8dd87a9b40413b0aadfa22250}{\index{Complex\+Network@{Complex\+Network}!get\+Edges\+From\+Node\+\_\+\+Lower\+Bound@{get\+Edges\+From\+Node\+\_\+\+Lower\+Bound}}
 \index{get\+Edges\+From\+Node\+\_\+\+Lower\+Bound@{get\+Edges\+From\+Node\+\_\+\+Lower\+Bound}!Complex\+Network@{Complex\+Network}}
 \subsubsection[{get\+Edges\+From\+Node\+\_\+\+Lower\+Bound}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N\+O\+D\+E\+\_\+\+T\+Y\+P\+E , class E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$ {\bf Complex\+Network}$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+::{\bf edge\+\_\+iterator} {\bf Complex\+Network}$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+::get\+Edges\+From\+Node\+\_\+\+Lower\+Bound (
@@ -207,7 +211,43 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=290pt]{class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph}
+\includegraphics[width=350pt]{class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701}{\index{Complex\+Network@{Complex\+Network}!get\+Num\+Edges@{get\+Num\+Edges}}
+\index{get\+Num\+Edges@{get\+Num\+Edges}!Complex\+Network@{Complex\+Network}}
+\subsubsection[{get\+Num\+Edges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N\+O\+D\+E\+\_\+\+T\+Y\+P\+E , class E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$ unsigned long int {\bf Complex\+Network}$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+::get\+Num\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_a41d38294467dd4f5aab8e513803e686a}{\index{Complex\+Network@{Complex\+Network}!get\+Num\+Nodes@{get\+Num\+Nodes}}
+\index{get\+Num\+Nodes@{get\+Num\+Nodes}!Complex\+Network@{Complex\+Network}}
+\subsubsection[{get\+Num\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class N\+O\+D\+E\+\_\+\+T\+Y\+P\+E , class E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$ unsigned long int {\bf Complex\+Network}$<$ N\+O\+D\+E\+\_\+\+T\+Y\+P\+E, E\+D\+G\+E\+\_\+\+T\+Y\+P\+E $>$\+::get\+Num\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_complex_network_a41d38294467dd4f5aab8e513803e686a}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph}
 \end{center}
 \end{figure}
 

@@ -5,26 +5,6 @@
 
 {\ttfamily \#include $<$Feature\+Extractor.\+hpp$>$}
 
-
-
-Inheritance diagram for Feature\+Extractor\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=200pt]{class_feature_extractor__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Feature\+Extractor\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=180pt]{class_feature_extractor__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,19 +13,51 @@ Collaboration diagram for Feature\+Extractor\+:
 void \hyperlink{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b}{set\+Discretization} (int i)
 \item 
 int \hyperlink{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{discretization} ()
+\item 
+virtual \hyperlink{class_feature_extractor_a6cf7b08d1b50fad5c42bacaa18316f6e}{$\sim$\+Feature\+Extractor} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual Q\+Vector$<$ float $>$ \hyperlink{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}{do\+Extraction} (\hyperlink{class_region}{Region} $\ast$r)=0
+virtual Q\+Vector$<$ float $>$ \hyperlink{class_feature_extractor_af4afca623abc12c0af3572b2189d0825}{do\+Extraction} (\hyperlink{class_region}{Region} $\ast$)
 \item 
-virtual void \hyperlink{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}{do\+Discretization} (Q\+Vector$<$ float $>$ \&feature, int \hyperlink{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}{discretization})=0
+virtual void \hyperlink{class_feature_extractor_aa72a103a311a391eafdd0916c8ffabce}{do\+Discretization} (Q\+Vector$<$ float $>$ \&, int)
+\item 
+virtual const char $\ast$ \hyperlink{class_feature_extractor_a12e9b0c683be94146a5c4fbd2d48967f}{get\+Feature\+Name} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{class_feature_extractor_a76b9438b85a119c2ec4126b75c0486bf}{\+\_\+discretization}
 \end{DoxyCompactItemize}
+
+
+Inheritance diagram for Feature\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_feature_extractor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Feature\+Extractor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_feature_extractor__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_feature_extractor_a6cf7b08d1b50fad5c42bacaa18316f6e}{\index{Feature\+Extractor@{Feature\+Extractor}!````~Feature\+Extractor@{$\sim$\+Feature\+Extractor}}
+\index{````~Feature\+Extractor@{$\sim$\+Feature\+Extractor}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{$\sim$\+Feature\+Extractor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Feature\+Extractor\+::$\sim$\+Feature\+Extractor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_feature_extractor_a6cf7b08d1b50fad5c42bacaa18316f6e}
 
 
 \subsection{Member Function Documentation}
@@ -58,8 +70,7 @@ int \hyperlink{class_feature_extractor_a76b9438b85a119c2ec4126b75c0486bf}{\+\_\+
 )}}\label{class_feature_extractor_a1d800b4e5f3af7c758bfc5f157110681}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -68,49 +79,47 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\hypertarget{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Discretization@{do\+Discretization}}
+\hypertarget{class_feature_extractor_aa72a103a311a391eafdd0916c8ffabce}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Discretization@{do\+Discretization}}
 \index{do\+Discretization@{do\+Discretization}!Feature\+Extractor@{Feature\+Extractor}}
 \subsubsection[{do\+Discretization}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Feature\+Extractor\+::do\+Discretization (
 \begin{DoxyParamCaption}
-\item[{Q\+Vector$<$ float $>$ \&}]{feature, }
-\item[{int}]{discretization}
+\item[{Q\+Vector$<$ float $>$ \&}]{, }
+\item[{int}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_feature_extractor_aa72a103a311a391eafdd0916c8ffabce}
 
 
-Implemented in \hyperlink{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}{Area\+Feature\+Extractor}.
+Reimplemented in \hyperlink{class_area_feature_extractor_a9969af2ec658c4404651cc13bef00089}{Area\+Feature\+Extractor}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_feature_extractor_ae0501342d6b872870af13cc5cd0a249f_icgraph}
+\includegraphics[width=350pt]{class_feature_extractor_aa72a103a311a391eafdd0916c8ffabce_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Extraction@{do\+Extraction}}
+\hypertarget{class_feature_extractor_af4afca623abc12c0af3572b2189d0825}{\index{Feature\+Extractor@{Feature\+Extractor}!do\+Extraction@{do\+Extraction}}
 \index{do\+Extraction@{do\+Extraction}!Feature\+Extractor@{Feature\+Extractor}}
 \subsubsection[{do\+Extraction}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+Vector$<$float$>$ Feature\+Extractor\+::do\+Extraction (
 \begin{DoxyParamCaption}
-\item[{{\bf Region} $\ast$}]{r}
+\item[{{\bf Region} $\ast$}]{}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_feature_extractor_af4afca623abc12c0af3572b2189d0825}
 
 
-Implemented in \hyperlink{class_area_feature_extractor_a9dfd50444d94b1fd82fdd6ec0f9163c3}{Area\+Feature\+Extractor}.
+Reimplemented in \hyperlink{class_area_feature_extractor_a9dfd50444d94b1fd82fdd6ec0f9163c3}{Area\+Feature\+Extractor}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_feature_extractor_aa5c094d54dc66b517ebde61fc9f1edf5_icgraph}
+\includegraphics[width=350pt]{class_feature_extractor_af4afca623abc12c0af3572b2189d0825_icgraph}
 \end{center}
 \end{figure}
 
@@ -124,8 +133,7 @@ Here is the caller graph for this function\+:
 )}}\label{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0}
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -134,14 +142,24 @@ Here is the call graph for this function\+:
 \end{figure}
 
 
+\hypertarget{class_feature_extractor_a12e9b0c683be94146a5c4fbd2d48967f}{\index{Feature\+Extractor@{Feature\+Extractor}!get\+Feature\+Name@{get\+Feature\+Name}}
+\index{get\+Feature\+Name@{get\+Feature\+Name}!Feature\+Extractor@{Feature\+Extractor}}
+\subsubsection[{get\+Feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Feature\+Extractor\+::get\+Feature\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_feature_extractor_a12e9b0c683be94146a5c4fbd2d48967f}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Reimplemented in \hyperlink{class_area_feature_extractor_af4d987a1253cadd506280d3c8b99d860}{Area\+Feature\+Extractor}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=270pt]{class_feature_extractor_a0bcc371c074b3aa6fa54b75b3657ffb0_icgraph}
+\includegraphics[width=350pt]{class_feature_extractor_a12e9b0c683be94146a5c4fbd2d48967f_icgraph}
 \end{center}
 \end{figure}
 
@@ -155,8 +173,7 @@ Here is the caller graph for this function\+:
 )}}\label{class_feature_extractor_a99ef3afd19f932dcb7dbb089e474d41b}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
