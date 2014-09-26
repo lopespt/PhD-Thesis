@@ -9,3 +9,5 @@ build
 CMakeCache.txt
 cmake_install*
 CMakeFiles
+CMakeScripts
+*.xcodeproj
