@@ -1,5 +1,5 @@
 
-#include "ComplexNetworkConstructor.hpp"
+#include <ComplexNetworkConstructor.hpp>
 
 ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractor*> extractors):cn(cn), reader(reader), extractors(extractors){
 }

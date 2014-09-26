@@ -3,7 +3,7 @@
 #define FEATURE_HPP
 
 #include <QVector>
-#include "Region.hpp"
+#include <Region.hpp>
 
 class Feature{
 

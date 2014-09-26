@@ -1,5 +1,5 @@
 
-#include "SunDatabaseReader.hpp"
+#include <SunDatabaseReader.hpp>
 
 SunDatabaseReader::SunDatabaseReader(QString sourceDir):sourceDir(sourceDir){
     assert(this->sourceDir.exists());

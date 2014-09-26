@@ -4,7 +4,7 @@
 #define NODE__H
 template <class NODE_TYPE, class EDGE_TYPE>
 class Node;
-#include "Edge.hpp"
+#include <Edge.hpp>
 #include <list>
 
 template <class NODE_TYPE, class EDGE_TYPE>

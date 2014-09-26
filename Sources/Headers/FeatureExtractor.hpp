@@ -3,8 +3,8 @@
 #ifndef FEATURE_EXTRACTOR__HPP
 #define FEATURE_EXTRACTOR__HPP
 
-#include "Feature.hpp"
-#include "Region.hpp"
+#include <Feature.hpp>
+#include <Region.hpp>
 
 class FeatureExtractor{
 

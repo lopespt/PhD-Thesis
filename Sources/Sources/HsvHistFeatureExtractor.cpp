@@ -1,5 +1,5 @@
 
-#include "HsvHistFeatureExtractor.hpp"
+#include <HsvHistFeatureExtractor.hpp>
 #include <opencv/cv.h>
 
 HsvHistFeatureExtractor::HsvHistFeatureExtractor(){

@@ -5,10 +5,12 @@ SET(CMAKE_CXX_FLAGS
     )
 
 
+INCLUDE_DIRECTORIES(Sources/Headers/)
+
 FIND_PACKAGE( OpenCV REQUIRED )
 FIND_PACKAGE( Qt5Widgets REQUIRED)
 
-FILE(GLOB_RECURSE sources src/*.cpp)
+FILE(GLOB_RECURSE sources Sources/Sources/* Sources/Headers/* )
 
 ADD_EXECUTABLE(PhD ${sources} )
 TARGET_LINK_LIBRARIES(PhD ${Qt5Widgets_LIBRARIES} ${OpenCV_LIBRARIES} )

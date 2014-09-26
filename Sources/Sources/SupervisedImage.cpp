@@ -1,5 +1,5 @@
 
-#include "SupervisedImage.hpp"
+#include <SupervisedImage.hpp>
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
 

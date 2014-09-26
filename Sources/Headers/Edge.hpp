@@ -8,8 +8,8 @@ class Edge;
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork;
 
-#include "Node.hpp"
-#include "ComplexNetwork.hpp"
+#include <Node.hpp>
+#include <ComplexNetwork.hpp>
 
 
 /*

@@ -1,5 +1,5 @@
 
-#include "Region.hpp"
+#include <Region.hpp>
 
 Region::Region(QImage *image, QPolygon boundary, QString label): image(image),boundary(boundary),  label(label){
 }

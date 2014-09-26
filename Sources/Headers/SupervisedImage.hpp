@@ -4,7 +4,7 @@
 
 #include <QList>
 #include <QImage>
-#include "Region.hpp"
+#include <Region.hpp>
 #include <QLabel>
 #include <QPixmap>
 #include <QObject>

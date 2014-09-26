@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <QApplication>
-#include "Link.hpp"
-#include "Feature.hpp"
-#include "SunDatabaseReader.hpp"
-#include "ComplexNetworkConstructor.hpp"
-#include "AreaFeatureExtractor.hpp"
+#include <Link.hpp>
+#include <Feature.hpp>
+#include <SunDatabaseReader.hpp>
+#include <ComplexNetworkConstructor.hpp>
+#include <AreaFeatureExtractor.hpp>
 #include <locale>
 
 
