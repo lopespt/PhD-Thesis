@@ -6,3 +6,6 @@ build
 .DS_Store
 .qmake.stash
 *.swp
+CMakeCache.txt
+cmake_install*
+CMakeFiles

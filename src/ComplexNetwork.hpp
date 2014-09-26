@@ -40,6 +40,7 @@ class ComplexNetwork{
         edge_iterator getEdgesFromNode_UpperBound(NodePtr n);
         unsigned long int getNumNodes() const;
         unsigned long int getNumEdges() const;
+        void save(const char *filename) const;
 
 
 };
@@ -53,7 +54,10 @@ ComplexNetwork<NODE_TYPE,EDGE_TYPE>::ComplexNetwork():edges( ComplexNetwork<NODE
 
 template <class NODE_TYPE, class EDGE_TYPE>
 void ComplexNetwork<NODE_TYPE,EDGE_TYPE>::addNode(NodePtr n){
-    this->nodes[n->getAttribute()]=n;
+    if (this->nodes.find(n->getAttribute()) == this->nodes.end())
+        this->nodes[n->getAttribute()]=n;
+    else 
+        delete n;
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
@@ -142,6 +146,17 @@ unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges() const{
 }
 
 
+template <class NODE_TYPE, class EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::save(const char *filename) const{
+    unsigned long int last_id = 0;
+    std::map< NodePtr, unsigned long int> ids;
+    FILE* f = fopen(filename, "wb");
+    for(auto n=this->nodes.begin(); n != this->nodes.end(); n++){
+        fwrite(n->second, sizeof(Node<NODE_TYPE, EDGE_TYPE>), 1, f);
+        ids[n->second] = last_id++;
+    }
+    fclose(f);
+}
 
 #endif
 

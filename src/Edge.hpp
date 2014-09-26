@@ -24,17 +24,21 @@ class Edge{
         Node<NODE_TYPE, EDGE_TYPE>* from;
         Node<NODE_TYPE, EDGE_TYPE>* to;
         EDGE_TYPE attribute;
+        static unsigned long int num_edges;
 
     public:
         EDGE_TYPE getAttribute();
         void setAttribute(EDGE_TYPE attr);
         Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to);
         Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to, EDGE_TYPE attribute);
-
+        ~Edge();
 
         friend class ComplexNetwork<NODE_TYPE, EDGE_TYPE>;
 };
 
+
+template <class NODE_TYPE, class EDGE_TYPE>
+unsigned long int Edge<NODE_TYPE, EDGE_TYPE>::num_edges=0;
 
 /**
  * Por padrão as arestas são direcionadas
@@ -43,10 +47,18 @@ class Edge{
  */
 template <class NODE_TYPE, class EDGE_TYPE>
 Edge<NODE_TYPE,EDGE_TYPE>::Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to){
+    num_edges++;
+    printf("num_edges = %lu\n", num_edges);
     this->from = from;
     this->to = to;
 }
 
+
+template <class NODE_TYPE, class EDGE_TYPE>
+Edge<NODE_TYPE,EDGE_TYPE>::~Edge(){
+    num_edges--;
+    printf("num_edges = %lu\n", num_edges);
+} 
 /**
  * Por padrão as arestas são direcionadas
  * \param  from Nó de saída
@@ -55,6 +67,8 @@ Edge<NODE_TYPE,EDGE_TYPE>::Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE
  */
 template <class NODE_TYPE, class EDGE_TYPE>
 Edge<NODE_TYPE,EDGE_TYPE>::Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to, EDGE_TYPE attribute){
+    num_edges++;
+    printf("num_edges = %lu\n", num_edges);
     this->from = from;
     this->to = to;
     this->attribute = attribute;

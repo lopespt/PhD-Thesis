@@ -10,6 +10,8 @@
 #include <QColor>
 #include <QPoint>
 #include <QColor>
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
 
 class Region{
 
@@ -27,6 +29,14 @@ class Region{
         QRgb getPixel(int x, int y, bool *insideRegion=NULL) const;
         QRgb getPixelRelative(int x, int y, bool *insideRegion=NULL) const;
         QString getLabel() const;
+
+        /**
+         * Returns an opencv InputArray representing the region of interest in
+         * the original image. The non-zeroed cells are RoI cells.
+         */
+        cv::Mat getMask() const;
+        cv::Mat getCvImage() const;
+
         
 
 };

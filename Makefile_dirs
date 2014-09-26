@@ -1,9 +1,0 @@
-
-CONFIG(debug, debug|release) { 
-    DESTDIR = "debug"
-    OBJECTS_DIR="debug/object_files"
-}
-CONFIG(release, debug|release) { 
-    DESTDIR = "release"
-    OBJECTS_DIR="release/object_files"
-}

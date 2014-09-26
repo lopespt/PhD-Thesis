@@ -6,6 +6,7 @@ AreaFeatureExtractor::AreaFeatureExtractor(){
 
 QVector<float> AreaFeatureExtractor::doExtraction(Region* region){
     QVector<float> vect(1);
+    region->getMask();
     float area = 0;
     bool ok;
     for(int i=0;i<region->getBoundaryRect().width();i++){

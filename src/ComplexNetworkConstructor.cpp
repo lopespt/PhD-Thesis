@@ -55,3 +55,5 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features
         }
     }
 }
+
+
