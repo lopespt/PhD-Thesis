@@ -42,7 +42,12 @@ cv::Mat Region::getCvImage() const{
     return ret;
 }
 
-
+cv::Mat Region::getMask() const{
+    QImage newImg = this->image->convertToFormat(QImage::Format_RGB888);
+    cv::Mat ret= cv::Mat(this->image->height(), this->image->width(), CV_8UC3, newImg.bits(), newImg.bytesPerLine()).clone();
+    cv::cvtColor(ret,ret, CV_RGB2BGR);
+    return ret;
+}
 
 Region::~Region(){
     if(l)

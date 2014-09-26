@@ -11,6 +11,7 @@
 #include <QPoint>
 #include <QColor>
 #include <opencv/cv.h>
+#include <opencv2/imgproc/imgproc_c.h>
 #include <opencv/highgui.h>
 
 class Region{

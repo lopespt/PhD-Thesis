@@ -11,3 +11,5 @@ cmake_install*
 CMakeFiles
 CMakeScripts
 *.xcodeproj
+Debug/
+*.build/
