@@ -73,14 +73,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wachs/Implementacao/CMakeFiles /Users/wachs/Implementacao/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/wachs/Implementacao && $(CMAKE_COMMAND) -E cmake_progress_start /Users/wachs/Implementacao/CMakeFiles /Users/wachs/Implementacao/SOURCES/CMakeFiles/progress.marks
+	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wachs/Implementacao/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/clean
 .PHONY : clean
 
 # The main clean target
@@ -89,44 +89,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/wachs/Implementacao && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named ComplexNetwork
-
-# Build rule for target.
-ComplexNetwork: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ComplexNetwork
-.PHONY : ComplexNetwork
-
-# fast build rule for target.
-ComplexNetwork/fast:
-	$(MAKE) -f SOURCES/ComplexNetwork/CMakeFiles/ComplexNetwork.dir/build.make SOURCES/ComplexNetwork/CMakeFiles/ComplexNetwork.dir/build
-.PHONY : ComplexNetwork/fast
-
-#=============================================================================
-# Target rules for targets named Test1
-
-# Build rule for target.
-Test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Test1
-.PHONY : Test1
-
-# fast build rule for target.
-Test1/fast:
-	$(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/build
-.PHONY : Test1/fast
 
 # Help Target
 help:
@@ -136,8 +110,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ComplexNetwork"
-	@echo "... Test1"
 .PHONY : help
 
 
@@ -149,6 +121,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/wachs/Implementacao && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,10 @@
+
+
+ADD_SUBDIRECTORY(ComplexNetwork)
+FIND_PACKAGE(Qt5Widgets REQUIRED)
+FIND_PACKAGE(OpenCV REQUIRED)
+
+
+INCLUDE_DIRECTORIES(ComplexNetwork FeatureExtractors Utilities)
+ADD_SUBDIRECTORY(Tests)
+
