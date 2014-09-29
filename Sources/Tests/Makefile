@@ -116,245 +116,155 @@ Test1/fast:
 	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/build
 .PHONY : Test1/fast
 
-__/FeatureExtractors/AreaFeatureExtractor.o: __/FeatureExtractors/AreaFeatureExtractor.cpp.o
+# target to build an object file
+__/FeatureExtractors/AreaFeatureExtractor.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.o
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.o
 
-# target to build an object file
-__/FeatureExtractors/AreaFeatureExtractor.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.cpp.o
-.PHONY : __/FeatureExtractors/AreaFeatureExtractor.cpp.o
-
-__/FeatureExtractors/AreaFeatureExtractor.i: __/FeatureExtractors/AreaFeatureExtractor.cpp.i
+# target to preprocess a source file
+__/FeatureExtractors/AreaFeatureExtractor.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.i
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.i
 
-# target to preprocess a source file
-__/FeatureExtractors/AreaFeatureExtractor.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.cpp.i
-.PHONY : __/FeatureExtractors/AreaFeatureExtractor.cpp.i
-
-__/FeatureExtractors/AreaFeatureExtractor.s: __/FeatureExtractors/AreaFeatureExtractor.cpp.s
+# target to generate assembly for a file
+__/FeatureExtractors/AreaFeatureExtractor.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.s
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.s
 
-# target to generate assembly for a file
-__/FeatureExtractors/AreaFeatureExtractor.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.cpp.s
-.PHONY : __/FeatureExtractors/AreaFeatureExtractor.cpp.s
-
-__/FeatureExtractors/FeatureExtractor.o: __/FeatureExtractors/FeatureExtractor.cpp.o
+# target to build an object file
+__/FeatureExtractors/FeatureExtractor.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.o
 .PHONY : __/FeatureExtractors/FeatureExtractor.o
 
-# target to build an object file
-__/FeatureExtractors/FeatureExtractor.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.cpp.o
-.PHONY : __/FeatureExtractors/FeatureExtractor.cpp.o
-
-__/FeatureExtractors/FeatureExtractor.i: __/FeatureExtractors/FeatureExtractor.cpp.i
+# target to preprocess a source file
+__/FeatureExtractors/FeatureExtractor.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.i
 .PHONY : __/FeatureExtractors/FeatureExtractor.i
 
-# target to preprocess a source file
-__/FeatureExtractors/FeatureExtractor.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.cpp.i
-.PHONY : __/FeatureExtractors/FeatureExtractor.cpp.i
-
-__/FeatureExtractors/FeatureExtractor.s: __/FeatureExtractors/FeatureExtractor.cpp.s
+# target to generate assembly for a file
+__/FeatureExtractors/FeatureExtractor.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.s
 .PHONY : __/FeatureExtractors/FeatureExtractor.s
 
-# target to generate assembly for a file
-__/FeatureExtractors/FeatureExtractor.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.cpp.s
-.PHONY : __/FeatureExtractors/FeatureExtractor.cpp.s
-
-__/FeatureExtractors/HsvHistFeatureExtractor.o: __/FeatureExtractors/HsvHistFeatureExtractor.cpp.o
+# target to build an object file
+__/FeatureExtractors/HsvHistFeatureExtractor.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.o
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.o
 
-# target to build an object file
-__/FeatureExtractors/HsvHistFeatureExtractor.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.cpp.o
-.PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.cpp.o
-
-__/FeatureExtractors/HsvHistFeatureExtractor.i: __/FeatureExtractors/HsvHistFeatureExtractor.cpp.i
+# target to preprocess a source file
+__/FeatureExtractors/HsvHistFeatureExtractor.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.i
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.i
 
-# target to preprocess a source file
-__/FeatureExtractors/HsvHistFeatureExtractor.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.cpp.i
-.PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.cpp.i
-
-__/FeatureExtractors/HsvHistFeatureExtractor.s: __/FeatureExtractors/HsvHistFeatureExtractor.cpp.s
+# target to generate assembly for a file
+__/FeatureExtractors/HsvHistFeatureExtractor.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.s
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.s
 
-# target to generate assembly for a file
-__/FeatureExtractors/HsvHistFeatureExtractor.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.cpp.s
-.PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.cpp.s
-
-__/Utilities/ComplexNetworkConstructor.o: __/Utilities/ComplexNetworkConstructor.cpp.o
+# target to build an object file
+__/Utilities/ComplexNetworkConstructor.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.o
 .PHONY : __/Utilities/ComplexNetworkConstructor.o
 
-# target to build an object file
-__/Utilities/ComplexNetworkConstructor.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.cpp.o
-.PHONY : __/Utilities/ComplexNetworkConstructor.cpp.o
-
-__/Utilities/ComplexNetworkConstructor.i: __/Utilities/ComplexNetworkConstructor.cpp.i
+# target to preprocess a source file
+__/Utilities/ComplexNetworkConstructor.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.i
 .PHONY : __/Utilities/ComplexNetworkConstructor.i
 
-# target to preprocess a source file
-__/Utilities/ComplexNetworkConstructor.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.cpp.i
-.PHONY : __/Utilities/ComplexNetworkConstructor.cpp.i
-
-__/Utilities/ComplexNetworkConstructor.s: __/Utilities/ComplexNetworkConstructor.cpp.s
+# target to generate assembly for a file
+__/Utilities/ComplexNetworkConstructor.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.s
 .PHONY : __/Utilities/ComplexNetworkConstructor.s
 
-# target to generate assembly for a file
-__/Utilities/ComplexNetworkConstructor.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.cpp.s
-.PHONY : __/Utilities/ComplexNetworkConstructor.cpp.s
-
-__/Utilities/Feature.o: __/Utilities/Feature.cpp.o
+# target to build an object file
+__/Utilities/Feature.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.o
 .PHONY : __/Utilities/Feature.o
 
-# target to build an object file
-__/Utilities/Feature.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.cpp.o
-.PHONY : __/Utilities/Feature.cpp.o
-
-__/Utilities/Feature.i: __/Utilities/Feature.cpp.i
+# target to preprocess a source file
+__/Utilities/Feature.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.i
 .PHONY : __/Utilities/Feature.i
 
-# target to preprocess a source file
-__/Utilities/Feature.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.cpp.i
-.PHONY : __/Utilities/Feature.cpp.i
-
-__/Utilities/Feature.s: __/Utilities/Feature.cpp.s
+# target to generate assembly for a file
+__/Utilities/Feature.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.s
 .PHONY : __/Utilities/Feature.s
 
-# target to generate assembly for a file
-__/Utilities/Feature.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.cpp.s
-.PHONY : __/Utilities/Feature.cpp.s
-
-__/Utilities/Link.o: __/Utilities/Link.cpp.o
+# target to build an object file
+__/Utilities/Link.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.o
 .PHONY : __/Utilities/Link.o
 
-# target to build an object file
-__/Utilities/Link.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.cpp.o
-.PHONY : __/Utilities/Link.cpp.o
-
-__/Utilities/Link.i: __/Utilities/Link.cpp.i
+# target to preprocess a source file
+__/Utilities/Link.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.i
 .PHONY : __/Utilities/Link.i
 
-# target to preprocess a source file
-__/Utilities/Link.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.cpp.i
-.PHONY : __/Utilities/Link.cpp.i
-
-__/Utilities/Link.s: __/Utilities/Link.cpp.s
+# target to generate assembly for a file
+__/Utilities/Link.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.s
 .PHONY : __/Utilities/Link.s
 
-# target to generate assembly for a file
-__/Utilities/Link.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.cpp.s
-.PHONY : __/Utilities/Link.cpp.s
-
-__/Utilities/Region.o: __/Utilities/Region.cpp.o
+# target to build an object file
+__/Utilities/Region.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.o
 .PHONY : __/Utilities/Region.o
 
-# target to build an object file
-__/Utilities/Region.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.cpp.o
-.PHONY : __/Utilities/Region.cpp.o
-
-__/Utilities/Region.i: __/Utilities/Region.cpp.i
+# target to preprocess a source file
+__/Utilities/Region.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.i
 .PHONY : __/Utilities/Region.i
 
-# target to preprocess a source file
-__/Utilities/Region.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.cpp.i
-.PHONY : __/Utilities/Region.cpp.i
-
-__/Utilities/Region.s: __/Utilities/Region.cpp.s
+# target to generate assembly for a file
+__/Utilities/Region.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.s
 .PHONY : __/Utilities/Region.s
 
-# target to generate assembly for a file
-__/Utilities/Region.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.cpp.s
-.PHONY : __/Utilities/Region.cpp.s
-
-__/Utilities/SunDatabaseReader.o: __/Utilities/SunDatabaseReader.cpp.o
+# target to build an object file
+__/Utilities/SunDatabaseReader.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.o
 .PHONY : __/Utilities/SunDatabaseReader.o
 
-# target to build an object file
-__/Utilities/SunDatabaseReader.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.cpp.o
-.PHONY : __/Utilities/SunDatabaseReader.cpp.o
-
-__/Utilities/SunDatabaseReader.i: __/Utilities/SunDatabaseReader.cpp.i
+# target to preprocess a source file
+__/Utilities/SunDatabaseReader.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.i
 .PHONY : __/Utilities/SunDatabaseReader.i
 
-# target to preprocess a source file
-__/Utilities/SunDatabaseReader.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.cpp.i
-.PHONY : __/Utilities/SunDatabaseReader.cpp.i
-
-__/Utilities/SunDatabaseReader.s: __/Utilities/SunDatabaseReader.cpp.s
+# target to generate assembly for a file
+__/Utilities/SunDatabaseReader.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.s
 .PHONY : __/Utilities/SunDatabaseReader.s
 
-# target to generate assembly for a file
-__/Utilities/SunDatabaseReader.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.cpp.s
-.PHONY : __/Utilities/SunDatabaseReader.cpp.s
-
-__/Utilities/SupervisedImage.o: __/Utilities/SupervisedImage.cpp.o
+# target to build an object file
+__/Utilities/SupervisedImage.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.o
 .PHONY : __/Utilities/SupervisedImage.o
 
-# target to build an object file
-__/Utilities/SupervisedImage.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.cpp.o
-.PHONY : __/Utilities/SupervisedImage.cpp.o
-
-__/Utilities/SupervisedImage.i: __/Utilities/SupervisedImage.cpp.i
+# target to preprocess a source file
+__/Utilities/SupervisedImage.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.i
 .PHONY : __/Utilities/SupervisedImage.i
 
-# target to preprocess a source file
-__/Utilities/SupervisedImage.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.cpp.i
-.PHONY : __/Utilities/SupervisedImage.cpp.i
-
-__/Utilities/SupervisedImage.s: __/Utilities/SupervisedImage.cpp.s
+# target to generate assembly for a file
+__/Utilities/SupervisedImage.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.s
 .PHONY : __/Utilities/SupervisedImage.s
 
-# target to generate assembly for a file
-__/Utilities/SupervisedImage.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.cpp.s
-.PHONY : __/Utilities/SupervisedImage.cpp.s
-
-main.o: main.cpp.o
+# target to build an object file
+main.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cpp.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
+# target to preprocess a source file
+main.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cpp.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
 # target to generate assembly for a file
-main.cpp.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:

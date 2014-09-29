@@ -103,6 +103,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named clean-cmake-files
+
+# Build rule for target.
+clean-cmake-files: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean-cmake-files
+.PHONY : clean-cmake-files
+
+# fast build rule for target.
+clean-cmake-files/fast:
+	$(MAKE) -f CMakeFiles/clean-cmake-files.dir/build.make CMakeFiles/clean-cmake-files.dir/build
+.PHONY : clean-cmake-files/fast
+
+#=============================================================================
 # Target rules for targets named ComplexNetwork
 
 # Build rule for target.
@@ -134,6 +147,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... clean-cmake-files"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ComplexNetwork"
