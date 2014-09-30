@@ -103,168 +103,168 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-SOURCES/Tests/CMakeFiles/Test1.dir/rule:
-	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/Tests/CMakeFiles/Test1.dir/rule
-.PHONY : SOURCES/Tests/CMakeFiles/Test1.dir/rule
+SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/rule:
+	cd /Users/wachs/Implementacao && $(MAKE) -f CMakeFiles/Makefile2 SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/rule
+.PHONY : SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/rule
 
 # Convenience name for target.
-Test1: SOURCES/Tests/CMakeFiles/Test1.dir/rule
-.PHONY : Test1
+NetworkConstructionTest: SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/rule
+.PHONY : NetworkConstructionTest
 
 # fast build rule for target.
-Test1/fast:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/build
-.PHONY : Test1/fast
+NetworkConstructionTest/fast:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build
+.PHONY : NetworkConstructionTest/fast
+
+# target to build an object file
+NetworkConstructionTest.o:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/NetworkConstructionTest.o
+.PHONY : NetworkConstructionTest.o
+
+# target to preprocess a source file
+NetworkConstructionTest.i:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/NetworkConstructionTest.i
+.PHONY : NetworkConstructionTest.i
+
+# target to generate assembly for a file
+NetworkConstructionTest.s:
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/NetworkConstructionTest.s
+.PHONY : NetworkConstructionTest.s
 
 # target to build an object file
 __/FeatureExtractors/AreaFeatureExtractor.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/AreaFeatureExtractor.o
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.o
 
 # target to preprocess a source file
 __/FeatureExtractors/AreaFeatureExtractor.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/AreaFeatureExtractor.i
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.i
 
 # target to generate assembly for a file
 __/FeatureExtractors/AreaFeatureExtractor.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/AreaFeatureExtractor.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/AreaFeatureExtractor.s
 .PHONY : __/FeatureExtractors/AreaFeatureExtractor.s
 
 # target to build an object file
 __/FeatureExtractors/FeatureExtractor.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/FeatureExtractor.o
 .PHONY : __/FeatureExtractors/FeatureExtractor.o
 
 # target to preprocess a source file
 __/FeatureExtractors/FeatureExtractor.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/FeatureExtractor.i
 .PHONY : __/FeatureExtractors/FeatureExtractor.i
 
 # target to generate assembly for a file
 __/FeatureExtractors/FeatureExtractor.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/FeatureExtractor.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/FeatureExtractor.s
 .PHONY : __/FeatureExtractors/FeatureExtractor.s
 
 # target to build an object file
 __/FeatureExtractors/HsvHistFeatureExtractor.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/HsvHistFeatureExtractor.o
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.o
 
 # target to preprocess a source file
 __/FeatureExtractors/HsvHistFeatureExtractor.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/HsvHistFeatureExtractor.i
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.i
 
 # target to generate assembly for a file
 __/FeatureExtractors/HsvHistFeatureExtractor.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/FeatureExtractors/HsvHistFeatureExtractor.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/FeatureExtractors/HsvHistFeatureExtractor.s
 .PHONY : __/FeatureExtractors/HsvHistFeatureExtractor.s
 
 # target to build an object file
 __/Utilities/ComplexNetworkConstructor.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/ComplexNetworkConstructor.o
 .PHONY : __/Utilities/ComplexNetworkConstructor.o
 
 # target to preprocess a source file
 __/Utilities/ComplexNetworkConstructor.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/ComplexNetworkConstructor.i
 .PHONY : __/Utilities/ComplexNetworkConstructor.i
 
 # target to generate assembly for a file
 __/Utilities/ComplexNetworkConstructor.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/ComplexNetworkConstructor.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/ComplexNetworkConstructor.s
 .PHONY : __/Utilities/ComplexNetworkConstructor.s
 
 # target to build an object file
 __/Utilities/Feature.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Feature.o
 .PHONY : __/Utilities/Feature.o
 
 # target to preprocess a source file
 __/Utilities/Feature.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Feature.i
 .PHONY : __/Utilities/Feature.i
 
 # target to generate assembly for a file
 __/Utilities/Feature.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Feature.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Feature.s
 .PHONY : __/Utilities/Feature.s
 
 # target to build an object file
 __/Utilities/Link.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Link.o
 .PHONY : __/Utilities/Link.o
 
 # target to preprocess a source file
 __/Utilities/Link.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Link.i
 .PHONY : __/Utilities/Link.i
 
 # target to generate assembly for a file
 __/Utilities/Link.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Link.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Link.s
 .PHONY : __/Utilities/Link.s
 
 # target to build an object file
 __/Utilities/Region.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Region.o
 .PHONY : __/Utilities/Region.o
 
 # target to preprocess a source file
 __/Utilities/Region.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Region.i
 .PHONY : __/Utilities/Region.i
 
 # target to generate assembly for a file
 __/Utilities/Region.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/Region.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/Region.s
 .PHONY : __/Utilities/Region.s
 
 # target to build an object file
 __/Utilities/SunDatabaseReader.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SunDatabaseReader.o
 .PHONY : __/Utilities/SunDatabaseReader.o
 
 # target to preprocess a source file
 __/Utilities/SunDatabaseReader.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SunDatabaseReader.i
 .PHONY : __/Utilities/SunDatabaseReader.i
 
 # target to generate assembly for a file
 __/Utilities/SunDatabaseReader.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SunDatabaseReader.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SunDatabaseReader.s
 .PHONY : __/Utilities/SunDatabaseReader.s
 
 # target to build an object file
 __/Utilities/SupervisedImage.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.o
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SupervisedImage.o
 .PHONY : __/Utilities/SupervisedImage.o
 
 # target to preprocess a source file
 __/Utilities/SupervisedImage.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.i
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SupervisedImage.i
 .PHONY : __/Utilities/SupervisedImage.i
 
 # target to generate assembly for a file
 __/Utilities/SupervisedImage.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/__/Utilities/SupervisedImage.s
+	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/__/Utilities/SupervisedImage.s
 .PHONY : __/Utilities/SupervisedImage.s
-
-# target to build an object file
-main.o:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.o
-.PHONY : main.o
-
-# target to preprocess a source file
-main.i:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.i
-.PHONY : main.i
-
-# target to generate assembly for a file
-main.s:
-	cd /Users/wachs/Implementacao && $(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/main.s
-.PHONY : main.s
 
 # Help Target
 help:
@@ -272,9 +272,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... Test1"
+	@echo "... NetworkConstructionTest"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... NetworkConstructionTest.o"
+	@echo "... NetworkConstructionTest.i"
+	@echo "... NetworkConstructionTest.s"
 	@echo "... __/FeatureExtractors/AreaFeatureExtractor.o"
 	@echo "... __/FeatureExtractors/AreaFeatureExtractor.i"
 	@echo "... __/FeatureExtractors/AreaFeatureExtractor.s"
@@ -302,9 +305,6 @@ help:
 	@echo "... __/Utilities/SupervisedImage.o"
 	@echo "... __/Utilities/SupervisedImage.i"
 	@echo "... __/Utilities/SupervisedImage.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

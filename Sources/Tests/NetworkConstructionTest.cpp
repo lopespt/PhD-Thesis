@@ -14,6 +14,7 @@ int main(int argc, char **argv){
     QCoreApplication a(argc, argv);
     //QApplication a(argc, argv);
     setlocale(LC_ALL, "C");
+
     AreaFeatureExtractor feat;
     feat.setDiscretization(1000);
     QList<FeatureExtractor*> extractors;
@@ -28,6 +29,5 @@ int main(int argc, char **argv){
     cn.save("complex_network_save.cn");
     fflush(stdout);
 
-        return 0;
-    //return a.exec();
+    return 0;
 }
