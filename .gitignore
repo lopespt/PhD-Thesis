@@ -13,3 +13,5 @@ CMakeScripts
 *.xcodeproj
 Debug/
 *.build/
+bin/
+lib/

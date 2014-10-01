@@ -129,17 +129,17 @@ ComplexNetwork/fast:
 .PHONY : ComplexNetwork/fast
 
 #=============================================================================
-# Target rules for targets named Test1
+# Target rules for targets named NetworkConstructionTest
 
 # Build rule for target.
-Test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Test1
-.PHONY : Test1
+NetworkConstructionTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NetworkConstructionTest
+.PHONY : NetworkConstructionTest
 
 # fast build rule for target.
-Test1/fast:
-	$(MAKE) -f SOURCES/Tests/CMakeFiles/Test1.dir/build.make SOURCES/Tests/CMakeFiles/Test1.dir/build
-.PHONY : Test1/fast
+NetworkConstructionTest/fast:
+	$(MAKE) -f SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build.make SOURCES/Tests/CMakeFiles/NetworkConstructionTest.dir/build
+.PHONY : NetworkConstructionTest/fast
 
 # Help Target
 help:
@@ -151,7 +151,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ComplexNetwork"
-	@echo "... Test1"
+	@echo "... NetworkConstructionTest"
 .PHONY : help
 
 
