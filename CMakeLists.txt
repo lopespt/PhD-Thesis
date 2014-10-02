@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.4)
 
-
+PROJECT(PhDThesis)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -9,10 +9,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 ADD_DEFINITIONS(-std=c++11 -g -O2 -Wall)
 
-ADD_SUBDIRECTORY(SOURCES)
+ADD_SUBDIRECTORY(Sources)
 
-add_custom_target(clean-cmake-files
-    COMMAND ${CMAKE_COMMAND} -P clean-all.cmake
-)
+#add_custom_target(clean-cmake-files
+#    COMMAND ${CMAKE_COMMAND} -P clean-all.cmake
+#)
 
 
