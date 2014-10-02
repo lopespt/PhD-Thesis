@@ -5,7 +5,6 @@
 #include <QList>
 #include <QImage>
 #include <FeatureExtractors/Region.hpp>
-//#include <QLabel>
 #include <QPixmap>
 #include <QObject>
 #include <QRegularExpression>
@@ -32,7 +31,7 @@ class SupervisedImage{
         void show_image();
         ~SupervisedImage();
         const QList<Region*>& getRegions() const;
-        QImage* getImage();
+        const QImage* getImage() const;
 
 };
 

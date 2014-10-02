@@ -11,8 +11,7 @@ class AreaFeatureExtractor:public FeatureExtractor{
         void discretize(int quantization);
     public:
         AreaFeatureExtractor();
-        QVector<float> doExtraction(Region* r);
-        void doDiscretization(QVector<float> &feature, int discretization);
+        QVector<float> doExtraction(Region* r, int discretization);
         const char* getFeatureName();
 
 };

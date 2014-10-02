@@ -1,8 +1,7 @@
 
 #Create ComplexNetwork library
-FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
+FILE(GLOB_RECURSE Source_Files  *.cpp)
 ADD_LIBRARY(ComplexNetwork ${Source_Files})
-
 
 #Copy header files to root include dir
 FILE(GLOB_RECURSE header_files ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp)

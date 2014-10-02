@@ -18,8 +18,7 @@ class FeatureExtractor{
         virtual ~FeatureExtractor(){};
 
     protected:
-        virtual QVector<float> doExtraction(Region* ){return QVector<float>();};
-        virtual void doDiscretization(QVector<float> &, int ){};
+        virtual QVector<float> doExtraction(Region* region, int discretization){return QVector<float>();};
         virtual const char* getFeatureName(){return NULL;};
 
 };

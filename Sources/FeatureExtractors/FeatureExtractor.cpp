@@ -2,8 +2,7 @@
 #include "FeatureExtractor.hpp"
 
 Feature FeatureExtractor::extractFeature(Region* r){
-    QVector<float> f = this->doExtraction(r);
-    this->doDiscretization(f, _discretization);
+    QVector<float> f = this->doExtraction(r, _discretization);
     return Feature(this->getFeatureName(), f);
 }
 void FeatureExtractor::setDiscretization(int i){

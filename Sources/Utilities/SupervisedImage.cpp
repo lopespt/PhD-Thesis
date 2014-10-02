@@ -60,7 +60,7 @@ const QList<Region*>& SupervisedImage::getRegions() const{
 }
 
 
-QImage* SupervisedImage::getImage(){
+const QImage* SupervisedImage::getImage() const{
     return &this->image;
 }
 

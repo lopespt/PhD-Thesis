@@ -7,7 +7,7 @@ ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &r
 void ComplexNetworkConstructor::build(){
     SupervisedImage* img;
     QLinkedList<Feature> features;
-    while( (img = reader.readNext()) !=NULL && this->time < 5  ){
+    while( (img = reader.readNext()) !=NULL ){
         features.clear();
         foreach(Region *r, img->getRegions()){
             for(QList<FeatureExtractor*>::iterator i = extractors.begin(); i != extractors.end(); i++){
@@ -21,7 +21,6 @@ void ComplexNetworkConstructor::build(){
 
         this->time++;
     }
-    printf("Acabou\n");
     fflush(stdout);
 }
 
@@ -47,7 +46,7 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features
                 delta_t = e->getAttribute().getTime();
                 weight = e->getAttribute().getWeight();
                 e->setAttribute(Link(this->time, weight + learningRate*(1.0 + lambda / delta_t*1.0) - weight));
-                printf("Antes: %.4f\nDepois:%.4f\n", weight, e->getAttribute().getWeight());
+                //printf("Antes: %.4f\nDepois:%.4f\n", weight, e->getAttribute().getWeight());
             }else{
                 e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
                 cn.addEdge(e);

@@ -5,7 +5,7 @@
 HsvHistFeatureExtractor::HsvHistFeatureExtractor(){
 }
 
-QVector<float> HsvHistFeatureExtractor::doExtraction(Region* region){
+QVector<float> HsvHistFeatureExtractor::doExtraction(Region* region, int discretization){
     QVector<float> vect(1);
 
 //    cv::calcHist
@@ -13,11 +13,6 @@ QVector<float> HsvHistFeatureExtractor::doExtraction(Region* region){
     return vect;
 }
 
-void HsvHistFeatureExtractor::doDiscretization(QVector<float> &feature, int discretization){
-    for(int i=0;i<feature.size();i++){
-        feature[i] = ((int)(feature[i] * discretization))/(float)discretization;
-    }
-}
 
 const char* HsvHistFeatureExtractor::getFeatureName(){
     return "AreaFeature";
