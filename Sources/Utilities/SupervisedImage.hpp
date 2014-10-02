@@ -4,8 +4,8 @@
 
 #include <QList>
 #include <QImage>
-#include <Region.hpp>
-#include <QLabel>
+#include <FeatureExtractors/Region.hpp>
+//#include <QLabel>
 #include <QPixmap>
 #include <QObject>
 #include <QRegularExpression>
@@ -24,7 +24,7 @@ class SupervisedImage{
         static QPolygon extractPolygon(QString Xml);
         static QString extractLabel(QString Xml);
         void parse_xml();
-        QLabel* l=NULL;
+ //       QLabel* l=NULL;
         
 
     public:

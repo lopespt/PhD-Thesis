@@ -1,5 +1,5 @@
 
-#include <Link.hpp>
+#include "Link.hpp"
 
 Link::Link():time(0), weight(0){
 }

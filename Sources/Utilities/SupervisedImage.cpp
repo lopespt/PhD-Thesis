@@ -1,5 +1,5 @@
 
-#include <SupervisedImage.hpp>
+#include "SupervisedImage.hpp"
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
 
@@ -49,10 +49,10 @@ QString SupervisedImage::extractLabel(QString Xml){
     
 
 void SupervisedImage::show_image(){
-    l=new QLabel();
+/*    l=new QLabel();
     l->setBaseSize(200,200);
     l->setPixmap(QPixmap::fromImage(image));
-    l->setVisible(true);
+    l->setVisible(true);*/
 }
 
 const QList<Region*>& SupervisedImage::getRegions() const{
@@ -67,8 +67,8 @@ QImage* SupervisedImage::getImage(){
 SupervisedImage::~SupervisedImage(){
     foreach(Region* r, regions)
         delete r;
-
+/*
     if(l)
-        l->deleteLater();
+        l->deleteLater();*/
 }
 

@@ -1,14 +1,18 @@
 
 
+#Add ComplexNetwork dir to build ComplexNetwork lib
 ADD_SUBDIRECTORY(ComplexNetwork)
-FIND_PACKAGE(Qt5Widgets REQUIRED)
-FIND_PACKAGE(OpenCV REQUIRED)
+ADD_SUBDIRECTORY(FeatureExtractors)
+
+#Add required packages to build all others executables
+#FIND_PACKAGE(Qt5Widgets REQUIRED)
+#FIND_PACKAGE(OpenCV REQUIRED)
+
+#Set include directory to the root "include" dir
+INCLUDE_DIRECTORIES(${CMAKE_INCLUDE_OUTPUT_DIRECTORY})
 
 
-INCLUDE_DIRECTORIES(${PhDThesis_SOURCE_DIR}/Sources/ComplexNetwork/
-    ${PhDThesis_SOURCE_DIR}/Sources/FeatureExtractors/
-    ${PhDThesis_SOURCE_DIR}/Sources/Utilities/)
-
+ADD_SUBDIRECTORY(Utilities)
 
 FILE(GLOB_RECURSE Utilities_SRC
     ${PhDThesis_SOURCE_DIR}/Sources/Utilities/*.cpp)

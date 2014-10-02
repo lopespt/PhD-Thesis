@@ -2,9 +2,8 @@
 #ifndef COMPLEX_NETWORK__CPP
 #define COMPLEX_NETWORK__CPP
 
-#include <stdio.h>
-#include <Node.hpp>
-#include <Edge.hpp>
+
+#include "Edge.hpp"
 #include <list>
 #include <algorithm>
 #include <map>

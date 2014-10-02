@@ -1,6 +1,7 @@
 
-#ifndef EDGE__H
-#define EDGE__H
+
+#ifndef EDGE__HPP
+#define EDGE__HPP
 
 template <class NODE_TYPE, class EDGE_TYPE>
 class Edge;
@@ -8,8 +9,9 @@ class Edge;
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork;
 
-#include <Node.hpp>
-#include <ComplexNetwork.hpp>
+#include "Node.hpp"
+#include "ComplexNetwork.hpp"
+#include <stdio.h>
 
 
 /*
