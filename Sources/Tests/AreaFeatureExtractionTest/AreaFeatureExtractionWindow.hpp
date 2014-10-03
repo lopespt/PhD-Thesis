@@ -20,7 +20,7 @@ private:
     SunDatabaseReader reader;
 
 public:
-    explicit AreaFeatureExtractionWindow(QWidget *parent = 0);
+    explicit AreaFeatureExtractionWindow(QString databasePath,QWidget *parent = 0);
 
 signals:
 

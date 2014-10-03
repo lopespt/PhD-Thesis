@@ -1,7 +1,7 @@
 #include "AreaFeatureExtractionWindow.hpp"
 
-AreaFeatureExtractionWindow::AreaFeatureExtractionWindow(QWidget *parent) :
-    QWidget(parent), reader("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial/")
+AreaFeatureExtractionWindow::AreaFeatureExtractionWindow(QString databasePath, QWidget *parent) :
+    QWidget(parent), reader(databasePath)
 {
     m_vbox = new QVBoxLayout();
     m_supervisedWidget = new SupervisedImageViewerWidget();

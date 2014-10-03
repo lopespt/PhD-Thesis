@@ -30,5 +30,5 @@ TARGET_LINK_LIBRARIES(SegmenterTest ${Qt5Widgets_LIBRARIES}
 
 #Build AreaFeatureExtractionTest
 FILE(GLOB_RECURSE AreaFeatureExtractionTest_Sources AreaFeatureExtractionTest/*.cpp ${PhDThesis_SOURCE_DIR}/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp)
-ADD_EXECUTABLE(AreaFeatureExtractionTest MACOSX_BUNDLE ${AreaFeatureExtractionTest_Sources})
+ADD_EXECUTABLE(AreaFeatureExtractionTest ${AreaFeatureExtractionTest_Sources})
 TARGET_LINK_LIBRARIES(AreaFeatureExtractionTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)
