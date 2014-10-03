@@ -6,6 +6,7 @@ template <class NODE_TYPE, class EDGE_TYPE>
 class Node;
 #include "Edge.hpp"
 #include <list>
+#include <stdio.h>
 
 template <class NODE_TYPE, class EDGE_TYPE>
 class Node{
