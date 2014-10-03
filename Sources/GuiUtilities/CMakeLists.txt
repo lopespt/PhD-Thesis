@@ -1,19 +1,16 @@
 
 #Create GuiUtilities library
+FIND_PACKAGE(Qt5Core REQUIRED)
 FIND_PACKAGE(Qt5Widgets REQUIRED)
+FIND_PACKAGE(Qt5Gui REQUIRED)
 FIND_PACKAGE(OpenCV REQUIRED)
 
-
-set(AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-
-add_definitions(${Qt5Widgets_DEFINITIONS})
 
 
 FILE(GLOB_RECURSE Source_Files  *.cpp)
 ADD_LIBRARY(GuiUtilities ${Source_Files})
-TARGET_LINK_LIBRARIES(GuiUtilities ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${Qt5Widgets_LIBRARIES} Utilities)
-
+TARGET_LINK_LIBRARIES(GuiUtilities ${Qt5Widgets_LIBRARIES} Utilities)
 
 
 #Copy header files to root include dir
@@ -22,5 +19,5 @@ add_custom_command(
     TARGET GuiUtilities
     POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/GuiUtilities
-    COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/GuiUtilities/
+    COMMAND cp -f ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/GuiUtilities/
 )

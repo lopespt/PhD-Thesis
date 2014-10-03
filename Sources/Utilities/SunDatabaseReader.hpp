@@ -10,6 +10,7 @@
 #include <QList>
 #include <QFileInfoList>
 #include <QFileInfo>
+#include <assert.h>
 
 class SunDatabaseReader:public DatabaseReader{
 
@@ -20,11 +21,15 @@ class SunDatabaseReader:public DatabaseReader{
         void discover_files(QString);
         QList<QString>::iterator image_files_it;
         QList<QString>::iterator supervision_files_it;
+        bool direction_forward;
         
 
     public:
         SunDatabaseReader(QString sourceDir);
-        SupervisedImage* readNext();
+        bool hasNext() const;
+        SupervisedImage readNext();
+        bool hasPrevious() const;
+        SupervisedImage readPrevious();
 
 };
 

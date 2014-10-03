@@ -64,6 +64,14 @@ const QImage* SupervisedImage::getImage() const{
     return &this->image;
 }
 
+QString SupervisedImage::getImagePath() const{
+    return this->imagePath;
+}
+
+QString SupervisedImage::getSupervisedPath() const{
+    return this->supervisedPath;
+}
+
 SupervisedImage::~SupervisedImage(){
     foreach(Region* r, regions)
         delete r;

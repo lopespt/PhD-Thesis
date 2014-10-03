@@ -9,17 +9,37 @@ SunDatabaseReader::SunDatabaseReader(QString sourceDir):sourceDir(sourceDir){
     discover_files(this->sourceDir.absolutePath()+"/Images");
     image_files_it = image_files.begin();
     supervision_files_it = supervision_files.begin();
+    direction_forward = false;
 }
 
-SupervisedImage*  SunDatabaseReader::readNext(){
-    if( image_files_it == image_files.end() )
-        return NULL;
+bool SunDatabaseReader::hasNext() const{
+    return image_files_it != image_files.end();
+}
 
-    SupervisedImage* ret =  new  SupervisedImage(*image_files_it, *supervision_files_it  );
-    image_files_it++;
-    supervision_files_it++;
+SupervisedImage  SunDatabaseReader::readNext() {
+    assert( image_files_it != image_files.end() );
+    if(direction_forward){
+        image_files_it++;
+        supervision_files_it++;
+    }
+    direction_forward=true;
+    SupervisedImage ret(*image_files_it, *supervision_files_it  );
     return ret;
+}
 
+bool SunDatabaseReader::hasPrevious() const{
+    return image_files_it != image_files.begin();
+}
+
+SupervisedImage  SunDatabaseReader::readPrevious() {
+    assert( image_files_it != image_files.begin() );
+    direction_forward = false;
+    SupervisedImage ret(*(image_files_it-1), *(supervision_files_it-1)  );
+    if(image_files_it != image_files.begin()){
+     image_files_it--;
+        supervision_files_it--;
+    }
+    return ret;
 }
 
 void SunDatabaseReader::discover_files(QString path){

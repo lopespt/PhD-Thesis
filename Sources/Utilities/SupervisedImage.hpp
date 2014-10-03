@@ -23,7 +23,6 @@ class SupervisedImage{
         static QPolygon extractPolygon(QString Xml);
         static QString extractLabel(QString Xml);
         void parse_xml();
- //       QLabel* l=NULL;
         
 
     public:
@@ -32,6 +31,8 @@ class SupervisedImage{
         ~SupervisedImage();
         const QList<Region*>& getRegions() const;
         const QImage* getImage() const;
+        QString getImagePath() const;
+        QString getSupervisedPath() const;
 
 };
 

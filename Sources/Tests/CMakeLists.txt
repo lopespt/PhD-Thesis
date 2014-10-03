@@ -1,16 +1,11 @@
 
 #FIND_LIBRARY(ComplexNetwork REQUIRED)
 #FIND_LIBRARY(FeatureExtractors REQUIRED)
-#FIND_LIBRARY(Qt5Core REQUIRED)
 FIND_PACKAGE(Qt5Widgets REQUIRED)
+FIND_PACKAGE(Qt5Gui REQUIRED)
 FIND_PACKAGE(OpenCV REQUIRED)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
-add_definitions(${Qt5Widgets_DEFINITIONS})
-set(CMAKE_CXX_FLAGS "-fPIC")
-set(CMAKE_CXX_FLAGS "${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
-
-
-
+SET(CMAKE_AUTOMOC TRUE)
 
 #Build ResourcesTest
 SET(ResourcesTest_Sources  ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp  )
@@ -34,6 +29,6 @@ TARGET_LINK_LIBRARIES(SegmenterTest ${Qt5Widgets_LIBRARIES}
     ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)
 
 #Build AreaFeatureExtractionTest
-#SET(AreaFeatureExtractionTest_Sources AreaFeatureExtractionTest/AreaFeatureExtractionTest.cpp)
-#ADD_EXECUTABLE(AreaFeatureExtractionTest ${AreaFeatureExtractionTest_Sources})
-#TARGET_LINK_LIBRARIES(AreaFeatureExtractionTest ${Qt5Widgets_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation GuiUtilities)
+FILE(GLOB_RECURSE AreaFeatureExtractionTest_Sources AreaFeatureExtractionTest/*.cpp ${PhDThesis_SOURCE_DIR}/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp)
+ADD_EXECUTABLE(AreaFeatureExtractionTest MACOSX_BUNDLE ${AreaFeatureExtractionTest_Sources})
+TARGET_LINK_LIBRARIES(AreaFeatureExtractionTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)

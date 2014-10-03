@@ -5,17 +5,16 @@ ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &r
 }
 
 void ComplexNetworkConstructor::build(){
-    SupervisedImage* img;
     QLinkedList<Feature> features;
-    while( (img = reader.readNext()) !=NULL ){
+    while(reader.hasNext()){
+        SupervisedImage img = reader.readNext();
         features.clear();
-        foreach(Region *r, img->getRegions()){
+        foreach(Region *r, img.getRegions()){
             for(QList<FeatureExtractor*>::iterator i = extractors.begin(); i != extractors.end(); i++){
                 Feature f = (*i)->extractFeature(r);
                 features.append(f);
             }
         }
-        delete img;
         printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
         makeCoOccurrences(features);
 

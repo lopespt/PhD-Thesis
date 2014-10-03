@@ -9,5 +9,5 @@ add_custom_command(
     TARGET ComplexNetwork 
     POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/ComplexNetwork  
-    COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/ComplexNetwork/
+    COMMAND cp -f ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp ${CMAKE_INCLUDE_OUTPUT_DIRECTORY}/ComplexNetwork/
 )
