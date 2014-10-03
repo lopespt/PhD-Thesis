@@ -7,11 +7,13 @@ FIND_PACKAGE(OpenCV REQUIRED)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 SET(CMAKE_AUTOMOC TRUE)
 
-#Build ResourcesTest
+#Build ResourcesTest only on Posix Platforms
+IF(NOT CMAKE_SYSTEM_NAME MATCHES "Windows")
 SET(ResourcesTest_Sources  ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp  )
 ADD_EXECUTABLE(ComplexNetworkResourcesTest ${ResourcesTest_Sources} )
 TARGET_LINK_LIBRARIES(ComplexNetworkResourcesTest ${Qt5Widgets_LIBRARIES}
     ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities)
+ENDIF()
 
 
 
