@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 
     //AreaFeatureExtractor e;
     //QVector<float> v = e.doExtraction(s.getRegions()[0], 5);
-    AreaFeatureExtractionWindow win(argv[1]);
+    AreaFeatureExtractionWindow win(argv[1], 0);
     win.setVisible(true);
 
     return app.exec();

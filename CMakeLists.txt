@@ -21,4 +21,4 @@ ADD_SUBDIRECTORY(Sources)
 #    COMMAND ${CMAKE_COMMAND} -P clean-all.cmake
 #)
 
-
+INCLUDE(CPACK)

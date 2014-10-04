@@ -7,6 +7,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 SET(CMAKE_AUTOMOC TRUE)
 
+
 #Build ResourcesTest only on Posix Platforms
 IF(NOT CMAKE_SYSTEM_NAME MATCHES "Windows")
 SET(ResourcesTest_Sources  ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp  )
@@ -34,3 +35,8 @@ TARGET_LINK_LIBRARIES(SegmenterTest ${Qt5Widgets_LIBRARIES}
 FILE(GLOB_RECURSE AreaFeatureExtractionTest_Sources AreaFeatureExtractionTest/*.cpp ${PhDThesis_SOURCE_DIR}/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp)
 ADD_EXECUTABLE(AreaFeatureExtractionTest ${AreaFeatureExtractionTest_Sources})
 TARGET_LINK_LIBRARIES(AreaFeatureExtractionTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)
+
+INSTALL(TARGETS AreaFeatureExtractionTest DESTINATION bin)
+
+MESSAGE(STATUS ${CMAKE_INSTALL_PREFIX})
+

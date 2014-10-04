@@ -43,7 +43,7 @@ void SupervisedImageViewerWidget::paintEvent(QPaintEvent *event){
     else
         p = m_original_pixmap.scaledToHeight(paint_pix_height);
     painter.drawPixmap(paint_pix_width/2-p.width()/2,paint_pix_height/2-p.height()/2,p);
-    painter.drawText(0, paint_pix_height, this->width(), this->height()-paint_pix_height, Qt::AlignCenter , m_supervised_image->getImagePath());
+//    painter.drawText(0, paint_pix_height, this->width(), this->height()-paint_pix_height, Qt::AlignCenter, m_supervised_image->getImagePath());
 
 }
 
