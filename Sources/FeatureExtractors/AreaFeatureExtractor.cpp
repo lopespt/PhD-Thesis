@@ -17,8 +17,8 @@ QVector<float> AreaFeatureExtractor::doExtraction(Region* region, int discretiza
         }
     }
     vect[0] = area / (region->getBoundaryRect().width() * region->getBoundaryRect().height());
-
     //Discretization
+
     for(int i=0;i<vect.size();i++)
         vect[i] = ((int)(vect[i] * discretization))/(float)discretization;
     return vect;

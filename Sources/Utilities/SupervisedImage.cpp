@@ -7,6 +7,7 @@ SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imag
     //printf("%s\n%s\n", imagePath.toStdString().c_str(), supervisedPath.toStdString().c_str()); 
 }
 
+
 void SupervisedImage::parse_xml(){
     QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );      
 

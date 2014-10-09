@@ -6,14 +6,21 @@
 #include <QSizePolicy>
 #include <QTransform>
 #include <QPaintEvent>
+#include <stdio.h>
 
 SupervisedImageViewerWidget::SupervisedImageViewerWidget(QWidget *parent): QLabel(), m_supervised_image(NULL), m_showSupervision(true)
 {
     this->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
 }
 
-void SupervisedImageViewerWidget::setSupervisedImage(const SupervisedImage *image){
-    this->m_supervised_image = image;
+void SupervisedImageViewerWidget::setSupervisedImage(const SupervisedImage* image){
+    if(!m_supervised_image){
+        m_supervised_image = new SupervisedImage(*image);
+        printf("New\n");
+    }
+    else
+        *m_supervised_image = *image;
+
     m_original_pixmap = QPixmap::fromImage(*image->getImage());
     QPixmap p;
     for(int i=0;i<image->getRegions().size();i++){
@@ -43,8 +50,9 @@ void SupervisedImageViewerWidget::paintEvent(QPaintEvent *event){
     else
         p = m_original_pixmap.scaledToHeight(paint_pix_height);
     painter.drawPixmap(paint_pix_width/2-p.width()/2,paint_pix_height/2-p.height()/2,p);
-//    painter.drawText(0, paint_pix_height, this->width(), this->height()-paint_pix_height, Qt::AlignCenter, m_supervised_image->getImagePath());
 
+    QString text = painter.fontMetrics().elidedText(m_supervised_image->getImagePath(),Qt::ElideLeft,this->width());
+    painter.drawText(0, paint_pix_height, this->width(), this->height()-paint_pix_height, Qt::AlignCenter, text);
 }
 
 
@@ -52,4 +60,10 @@ QSize SupervisedImageViewerWidget::sizeHint() const{
     if(m_original_pixmap.isNull())
         return QSize(100,166);
     return m_original_pixmap.size();
+}
+
+SupervisedImageViewerWidget::~SupervisedImageViewerWidget(){
+    if(m_supervised_image){
+        //delete m_supervised_image;
+    }
 }

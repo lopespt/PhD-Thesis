@@ -15,7 +15,7 @@ void ComplexNetworkConstructor::build(){
                 features.append(f);
             }
         }
-        printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
+        //printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
         makeCoOccurrences(features);
 
         this->time++;

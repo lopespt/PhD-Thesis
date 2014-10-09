@@ -1,6 +1,6 @@
 
-#ifndef AREA_FEATURE__HPP
-#define AREA_FEATURE__HPP
+#ifndef HSVHISTFEATUREEXTRACTOR__HPP
+#define HSVHISTFEATUREEXTRACTOR__HPP
 
 #include "FeatureExtractor.hpp"
 #include "Region.hpp"

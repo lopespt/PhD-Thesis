@@ -1,6 +1,6 @@
 
 #Create ComplexNetwork library
-FILE(GLOB_RECURSE Source_Files  *.cpp)
+FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 ADD_LIBRARY(ComplexNetwork ${Source_Files})
 
 #Copy header files to root include dir

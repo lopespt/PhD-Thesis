@@ -24,7 +24,10 @@ int main(int argc, char **argv){
     ComplexNetworkConstructor constructor(cn, r, extractors);
     constructor.build();
     
+
     cn.save("complex_network_save.cn");
+
+
     fflush(stdout);
 
     return 0;

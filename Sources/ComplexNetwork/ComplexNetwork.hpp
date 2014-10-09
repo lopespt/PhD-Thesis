@@ -3,10 +3,12 @@
 #define COMPLEX_NETWORK__CPP
 
 
-#include "Edge.hpp"
 #include <list>
 #include <algorithm>
 #include <map>
+#include <cstring>
+#include "Node.hpp"
+#include "Edge.hpp"
 
 /** \brief Rede Complexa
  *  \details Rede Complexa utilizando listas de adjacências
@@ -23,9 +25,27 @@ class ComplexNetwork{
         typedef typename std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr>::iterator edge_iterator;
 
         std::map<NODE_TYPE, NodePtr  > nodes;
+
         std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr, 
             bool(*)(std::pair<NodePtr, NodePtr> , std::pair<NodePtr, NodePtr>) > edges;
         static bool compare(std::pair< NodePtr, NodePtr> a, std::pair< NodePtr, NodePtr> b);
+
+        typedef struct{
+            unsigned int ComplexNetworkFileVersion;
+            unsigned long long int num_nodes;
+            unsigned long long int num_edges;
+        }ComplexNetwordFileHeader;
+
+        typedef struct{
+            unsigned long long int node_from;
+            unsigned long long int node_to;
+            char value[sizeof(EDGE_TYPE)];
+        }edge_data_type;
+        typedef struct{
+            unsigned long long int id;
+            char value[sizeof(NODE_TYPE)];
+        }node_data_type;
+
 
 
     public:
@@ -37,9 +57,11 @@ class ComplexNetwork{
         NodePtr getNode(NODE_TYPE);
         edge_iterator getEdgesFromNode_LowerBound(NodePtr n);
         edge_iterator getEdgesFromNode_UpperBound(NodePtr n);
-        unsigned long int getNumNodes() const;
-        unsigned long int getNumEdges() const;
+        unsigned long int getNodesCount() const;
+        unsigned long int getEdgesCount() const;
         void save(const char *filename) const;
+        void load(const char *filename);
+        void clear();
 
 
 };
@@ -70,20 +92,7 @@ void ComplexNetwork<NODE_TYPE,EDGE_TYPE>::addEdge(EdgePtr e){
 
 template <class NODE_TYPE, class EDGE_TYPE>
 ComplexNetwork<NODE_TYPE, EDGE_TYPE>::~ComplexNetwork(){
-    std::for_each(this->edges.begin(), this->edges.end(), 
-            []( std::pair< std::pair<NodePtr, NodePtr>,  EdgePtr > el ){
-                delete el.second;
-            });
-
-    edges.clear();
-
-
-    std::for_each(nodes.begin(), nodes.end(), 
-            [](std::pair< NODE_TYPE, NodePtr> el){
-                delete el.second;   
-            });
-
-    nodes.clear();
+    clear();
 }
 
 
@@ -134,27 +143,108 @@ typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE
 
 
 template <class NODE_TYPE, class EDGE_TYPE>
-unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumNodes() const{
+unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesCount() const{
     return this->nodes.size();
 }
 
-
+/**
+ * Retorna o numero de arestas do grafo
+ */
 template <class NODE_TYPE, class EDGE_TYPE>
-unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges() const{
+unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesCount() const{
     return this->edges.size();
 }
 
 
 template <class NODE_TYPE, class EDGE_TYPE>
 void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::save(const char *filename) const{
-    unsigned long int last_id = 0;
-    std::map< NodePtr, unsigned long int> ids;
+    unsigned long long int last_id = 0ull;
+    std::map< NodePtr, unsigned long long int> ids;
+    ComplexNetwordFileHeader header;
+    header.ComplexNetworkFileVersion = 1;
+    header.num_nodes = this->getNodesCount();
+    header.num_edges = this->getEdgesCount();
+
+    node_data_type node_data;
+    edge_data_type edge_data;
+
     FILE* f = fopen(filename, "wb");
+
+    //Save the header
+    fwrite(&header,sizeof(ComplexNetwordFileHeader), 1, f);
+
+
     for(auto n=this->nodes.begin(); n != this->nodes.end(); n++){
-        fwrite(n->second, sizeof(Node<NODE_TYPE, EDGE_TYPE>), 1, f);
-        ids[n->second] = last_id++;
+        node_data.id = last_id;
+        memcpy(node_data.value, &(n->second->attribute), sizeof(NODE_TYPE));
+        ids[n->second] = last_id;
+        fwrite(&node_data, sizeof(node_data_type), 1, f);
+        last_id++;
     }
+
+
+    for(auto e = this->edges.begin(); e != this->edges.end(); e++){
+        edge_data.node_from = ids.find(e->second->from)->second;
+        edge_data.node_to = ids.find(e->second->to)->second;
+        memcpy(edge_data.value, &(e->second->attribute), sizeof(EDGE_TYPE));
+        fwrite(&edge_data, sizeof(edge_data_type), 1, f);
+    }
+
     fclose(f);
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char *filename){
+    clear();
+    std::map< unsigned long long int, NodePtr> ids;
+    ComplexNetwordFileHeader header;
+
+    NodePtr newNode;
+    EdgePtr newEdge;
+    FILE* f = fopen(filename, "rb");
+    fread(&header, sizeof(header), 1, f);
+
+    node_data_type node_data;
+    edge_data_type edge_data;
+
+    //Read Nodes
+    for(int i=0;i<header.num_nodes;i++){
+        fread(&node_data, sizeof(node_data), 1, f);
+        newNode = new Node<NODE_TYPE, EDGE_TYPE>;
+        memcpy(&(newNode->attribute), node_data.value, sizeof(NODE_TYPE));
+        this->addNode(newNode);
+        ids[node_data.id] = newNode;
+    }
+
+    for(int i=0;i<header.num_edges;i++){
+        fread(&edge_data, sizeof(edge_data), 1, f);
+        newEdge = new Edge<NODE_TYPE, EDGE_TYPE>;
+        memcpy(&(newEdge->attribute), edge_data.value, sizeof(EDGE_TYPE));
+        newEdge->from = ids[edge_data.node_from];
+        newEdge->to = ids[edge_data.node_to];
+        this->addEdge(newEdge);
+    }
+
+
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::clear(){
+    std::for_each(this->edges.begin(), this->edges.end(),
+            []( std::pair< std::pair<NodePtr, NodePtr>,  EdgePtr > el ){
+                delete el.second;
+            });
+
+    edges.clear();
+
+
+    std::for_each(nodes.begin(), nodes.end(),
+            [](std::pair< NODE_TYPE, NodePtr> el){
+                delete el.second;
+            });
+
+    nodes.clear();
+
 }
 
 #endif
