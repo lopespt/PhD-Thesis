@@ -13,9 +13,9 @@ before_install:
       - sudo apt-get update -qq
       - sudo apt-get install qt5-default
       - mkdir OpenCV
-      - wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip?r=http%3A%2F%2Fopencv.org%2Fdownloads.html&ts=1412950126&use_mirror=ufpr
-      - tar -xvf OpenCV-2.4.2.tar.bz2
-      - cd OpenCV-2.4.2
+      - wget -O OpenCV http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip?r=http%3A%2F%2Fopencv.org%2Fdownloads.html&ts=1412950126&use_mirror=ufpr
+      - tar -xvf OpenCV
+      - cd OpenCV
       - mkdir build
       - cd build
       - cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local
