@@ -1,6 +1,6 @@
 
 #include "HsvHistFeatureExtractor.hpp"
-#include <opencv/cv.h>
+#include <opencv2/core/core_c.h>
 
 HsvHistFeatureExtractor::HsvHistFeatureExtractor(){
 }
