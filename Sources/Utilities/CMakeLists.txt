@@ -9,7 +9,6 @@ ADD_LIBRARY(Utilities ${Source_Files})
 TARGET_LINK_LIBRARIES(Utilities ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES})
 
 
-
 #Copy header files to root include dir
 FILE(GLOB_RECURSE header_files ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp)
 add_custom_command(

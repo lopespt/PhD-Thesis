@@ -6,7 +6,7 @@ ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &r
 
 void ComplexNetworkConstructor::build(){
     QLinkedList<Feature> features;
-    while(reader.hasNext()){
+    while(reader.hasNext() && time < 50){
         SupervisedImage img = reader.readNext();
         features.clear();
         foreach(Region *r, img.getRegions()){

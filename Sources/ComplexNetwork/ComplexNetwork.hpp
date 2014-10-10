@@ -18,24 +18,26 @@
 
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork{
-
-    private:
+    public:
         typedef Node<NODE_TYPE, EDGE_TYPE>* NodePtr;
         typedef Edge<NODE_TYPE, EDGE_TYPE> * EdgePtr;
         typedef typename std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr>::iterator edge_iterator;
+        typedef typename std::map<NODE_TYPE, NodePtr>::iterator node_iterator;
 
-        std::map<NODE_TYPE, NodePtr  > nodes;
+    private:
+
+        std::map<NODE_TYPE, NodePtr> nodes;
 
         std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr, 
-            bool(*)(std::pair<NodePtr, NodePtr> , std::pair<NodePtr, NodePtr>) > edges;
+           bool(*)(std::pair<NodePtr, NodePtr> , std::pair<NodePtr, NodePtr>) > edges;
         static bool compare(std::pair< NodePtr, NodePtr> a, std::pair< NodePtr, NodePtr> b);
 
+        //Type for save and load ComplexNetwork
         typedef struct{
             unsigned int ComplexNetworkFileVersion;
             unsigned long long int num_nodes;
             unsigned long long int num_edges;
         }ComplexNetwordFileHeader;
-
         typedef struct{
             unsigned long long int node_from;
             unsigned long long int node_to;
@@ -51,10 +53,16 @@ class ComplexNetwork{
     public:
         ComplexNetwork();
         virtual ~ComplexNetwork();
+
+
         void addNode(NodePtr);
         void addEdge(EdgePtr);
         EdgePtr getEdge(NodePtr, NodePtr);
         NodePtr getNode(NODE_TYPE);
+        node_iterator getNodesBeginIterator();
+        node_iterator getNodesEndIterator();
+        edge_iterator getEdgesBeginIterator();
+        edge_iterator getEdgesEndIterator();
         edge_iterator getEdgesFromNode_LowerBound(NodePtr n);
         edge_iterator getEdgesFromNode_UpperBound(NodePtr n);
         unsigned long int getNodesCount() const;
@@ -86,13 +94,16 @@ void ComplexNetwork<NODE_TYPE,EDGE_TYPE>::addEdge(EdgePtr e){
     std::pair< std::pair<NodePtr, NodePtr>, EdgePtr > v;
     v.first = std::pair<NodePtr, NodePtr>(e->from, e->to);
     v.second = e;
-    edges.insert(v);
+    if(edges.find(v.first) == edges.end())
+        edges.insert(v);
+    else
+        delete e;
 
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
 ComplexNetwork<NODE_TYPE, EDGE_TYPE>::~ComplexNetwork(){
-    clear();
+    //clear();
 }
 
 
@@ -130,6 +141,27 @@ Node<NODE_TYPE, EDGE_TYPE>* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNode(NODE_T
        return NULL;
 }
 
+
+
+template <class NODE_TYPE, class EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::node_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesBeginIterator(){
+    return nodes.begin();
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::node_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesEndIterator(){
+    return nodes.end();
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesBeginIterator(){
+    return edges.begin();
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesEndIterator(){
+    return edges.end();
+}
 
 template <class NODE_TYPE, class EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesFromNode_LowerBound(NodePtr n){

@@ -30,7 +30,11 @@ class Edge{
         static unsigned long int num_edges;
 
     public:
-        EDGE_TYPE getAttribute();
+        EDGE_TYPE getAttribute() const;
+        EDGE_TYPE& getAttribute();
+        Node<NODE_TYPE, EDGE_TYPE> * getFromNode() ;
+        Node<NODE_TYPE, EDGE_TYPE> * getToNode() ;
+
         void setAttribute(EDGE_TYPE attr);
         Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to);
         Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE, EDGE_TYPE>* to, EDGE_TYPE attribute);
@@ -79,8 +83,23 @@ Edge<NODE_TYPE,EDGE_TYPE>::Edge(Node<NODE_TYPE, EDGE_TYPE>* from, Node<NODE_TYPE
 
 
 template <class NODE_TYPE, class EDGE_TYPE>
-EDGE_TYPE Edge<NODE_TYPE,EDGE_TYPE>::getAttribute(){
+EDGE_TYPE Edge<NODE_TYPE, EDGE_TYPE>::getAttribute() const{
     return this->attribute;
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+EDGE_TYPE& Edge<NODE_TYPE,EDGE_TYPE>::getAttribute(){
+    return this->attribute;
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+Node<NODE_TYPE, EDGE_TYPE>* Edge<NODE_TYPE,EDGE_TYPE>::getFromNode(){
+    return this->from;
+}
+
+template <class NODE_TYPE, class EDGE_TYPE>
+Node<NODE_TYPE, EDGE_TYPE>* Edge<NODE_TYPE,EDGE_TYPE>::getToNode(){
+    return this->to;
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>

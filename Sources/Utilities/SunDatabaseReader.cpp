@@ -18,12 +18,9 @@ bool SunDatabaseReader::hasNext() const{
 
 SupervisedImage  SunDatabaseReader::readNext() {
     assert( image_files_it != image_files.end() );
-    if(direction_forward){
-        image_files_it++;
-        supervision_files_it++;
-    }
-    direction_forward=true;
     SupervisedImage ret(*image_files_it, *supervision_files_it  );
+    image_files_it++;
+    supervision_files_it++;
     return ret;
 }
 
@@ -33,11 +30,10 @@ bool SunDatabaseReader::hasPrevious() const{
 
 SupervisedImage  SunDatabaseReader::readPrevious() {
     assert( image_files_it != image_files.begin() );
-    direction_forward = false;
     SupervisedImage ret(*(image_files_it-1), *(supervision_files_it-1)  );
     if(image_files_it != image_files.begin()){
      image_files_it--;
-        supervision_files_it--;
+     supervision_files_it--;
     }
     return ret;
 }
