@@ -18,13 +18,50 @@
 #include <vtkSmartPointer.h>
 #include <vtkCubeSource.h>
 #include <vtkGenericOpenGLRenderWindow.h>
+#include <ComplexNetwork/ComplexNetwork.hpp>
+#include "LabelsComplexNetworkConstructor.hpp"
+#include <vtkMutableUndirectedGraph.h>
+#include <QMap>
+#include <vtkSimple2DLayoutStrategy.h>
+#include <vtkGraphLayoutStrategy.h>
+#include <vtkGraphLayoutView.h>
+#include <vtkGraphToPolyData.h>
+#include <QVTKGraphicsItem.h>
+#include <vtkSimple3DCirclesStrategy.h>
+#include <vtkFloatArray.h>
+#include <vtkDataSetAttributes.h>
+#include <vtkClustering2DLayoutStrategy.h>
+#include <vtkTreeOrbitLayoutStrategy.h>
+#include <vtkDynamic2DLabelMapper.h>
+#include <vtkActor2D.h>
+#include <vtkTextProperty.h>
+#include <vtkStringArray.h>
+#include <vtkProperty.h>
+#include <vtkCircularLayoutStrategy.h>
+#include <vtkConstrained2DLayoutStrategy.h>
+#include <vtkRenderWindowInteractor.h>
+#include <vtkGraphLayout.h>
+#include <vtkContextTransform.h>
+#include <vtkGraphItem.h>
+#include <vtkContextTransform.h>
+#include <vtkContextActor.h>
+#include <vtkContextScene.h>
+#include <QVTKWidget.h>
+
 class GMainWindow : public QWidget
 {
     Q_OBJECT
 private:
-    QVTKWidget2* wid;
+    ComplexNetwork<NodeString, Link> cn;
+    vtkRenderer* renderer;
+    QVTKWidget* vtk;
+    vtkMutableUndirectedGraph *graph;
+    vtkFloatArray *weights;
+
+    void setVtkGraph();
 public:
-    explicit GMainWindow(QWidget *parent = 0);
+    explicit GMainWindow(ComplexNetwork<NodeString, Link> cn, QWidget *parent = 0);
+    virtual ~GMainWindow();
 
 signals:
 

@@ -14,7 +14,7 @@ int main(int argc, char **argv){
     setlocale(LC_ALL, "C");
 
     AreaFeatureExtractor feat;
-    feat.setDiscretization(1000);
+    feat.setDiscretization(10);
     QList<FeatureExtractor*> extractors;
     extractors.append(&feat);
 

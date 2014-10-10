@@ -1,64 +1,120 @@
 #include "gMainWindow.hpp"
 
-GMainWindow::GMainWindow(QWidget *parent) :
-    QWidget(parent)
+GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link> cn, QWidget *parent):
+    QWidget(parent), cn(cn)
 {
     QVBoxLayout *l = new QVBoxLayout;
     setLayout(l);
 
     resize(500,500);
-    wid = new QVTKWidget2(this);
-    l->addWidget(wid);
+    vtk = new QVTKWidget(this);
+    l->addWidget(vtk);
 
-    // Sphere
-      vtkSmartPointer<vtkSphereSource> sphereSource =
-          vtkSmartPointer<vtkSphereSource>::New();
-      sphereSource->Update();
-      vtkSmartPointer<vtkPolyDataMapper> sphereMapper =
-          vtkSmartPointer<vtkPolyDataMapper>::New();
-      sphereMapper->SetInputConnection(sphereSource->GetOutputPort());
-      vtkSmartPointer<vtkActor> sphereActor =
-          vtkSmartPointer<vtkActor>::New();
-      sphereActor->SetMapper(sphereMapper);
+    renderer = vtkRenderer::New();
+    vtk->GetRenderWindow()->AddRenderer(renderer);
 
-      // Cube
-//      vtkSmartPointer<vtkCubeSource> cubeSource =        vtkSmartPointer<vtkCubeSource>::New();
-      /*
-      vtkCubeSource *cubeSource = vtkCubeSource::New();
-      cubeSource->Update();
-      vtkSmartPointer<vtkPolyDataMapper> cubeMapper =
-          vtkSmartPointer<vtkPolyDataMapper>::New();
-      cubeMapper->SetInputConnection(cubeSource->GetOutputPort());
-      vtkSmartPointer<vtkActor> cubeActor =
-          vtkSmartPointer<vtkActor>::New();
-      cubeActor->SetMapper(cubeMapper);
-*/
-      // VTK Renderer
-      vtkSmartPointer<vtkRenderer> leftRenderer =
-          vtkSmartPointer<vtkRenderer>::New();
-      leftRenderer->AddActor(sphereActor);
+    setVtkGraph();
+    vtkGraphLayoutView *view = vtkGraphLayoutView::New();
+    vtkClustering2DLayoutStrategy *strat = vtkClustering2DLayoutStrategy::New();
+    strat->SetRandomSeed(100);
 
-      // Add Actor to renderer
-      //leftRenderer->AddActor(cubeActor);
+    view->SetLayoutStrategy(strat);
+    view->SetEdgeLabelVisibility(true);
+    view->SetEdgeLabelArrayName("labels");
+    view->SetEdgeLabelVisibility(true);
+    view->SetEdgeLabelArrayName("weights");
 
-      // VTK/Qt wedded
-      this->wid->GetRenderWindow()->AddRenderer(leftRenderer);
-      this->wid->GetRenderWindow()->SetSize(100,100);
-      //wid->GetRenderWindow()->Render();
-      leftRenderer->ResetCamera();
-      //this->qvtkWidgetRight->GetRenderWindow()->AddRenderer(rightRenderer);
+    view->AddRepresentationFromInput(graph);
+    vtkGraphToPolyData* graphToPoly = vtkGraphToPolyData::New();
+    graphToPoly->AddInputData(graph);
 
-    //leftRenderer->ResetCamera();
+    //vtk->GetRenderWindow()->AddRenderer(view->GetRenderer());
+    //view->ResetCamera();
 
-      QSlider *slider = new QSlider(Qt::Horizontal);
-      l->addWidget(slider);
-      slider->setRange(1,100);
-      wid->updateGeometry();
-    QObject::connect(slider, &QSlider::sliderMoved, [=](int pos){
-        double s = pos/100.;
-        sphereSource->SetRadius(s);
-        wid->GetRenderWindow()->Render(); });
+    //view->Render();
+
+    //strat->SetGraph(graph);
+    strat->SetWeightEdges(true);
+    strat->SetEdgeWeightField("weights");
+    strat->SetIterationsPerLayout(100);
+    //strat->Layout();
+
+    vtkGraphLayout *layout = vtkGraphLayout::New();
+    layout->SetInputData(graph);
+    layout->SetLayoutStrategy(strat);
+    layout->Update();
 
 
+    vtkGraphItem *item = vtkGraphItem::New();
+    item->SetGraph(layout->GetOutput());
 
+    vtkContextTransform *trans = vtkContextTransform::New();
+    trans->AddItem(item);
+
+    vtkContextActor *cactor = vtkContextActor::New();
+    cactor->GetScene()->AddItem(trans);
+/*
+
+    vtkPolyDataMapper *mapper = vtkPolyDataMapper::New();
+    mapper->SetInputConnection(graphToPoly->GetOutputPort(0));
+    mapper->Update();
+
+    vtkActor *actor = vtkActor::New();
+    actor->SetMapper(mapper);
+
+    vtkDynamic2DLabelMapper *labels = vtkDynamic2DLabelMapper::New();
+    labels->SetInputConnection(graphToPoly->GetOutputPort());
+    labels->SetLabelModeToLabelFieldData();
+    labels->GetLabelTextProperty()->SetColor(0,0,1);
+    labels->GetLabelTextProperty()->SetFontSize(40);
+    labels->SetFieldDataName("labels");
+
+    vtkActor2D* actor2 = vtkActor2D::New();
+    actor2->SetMapper(labels);
+    actor->GetProperty()->SetColor(0,1,0);
+    actor->GetProperty()->SetOpacity(0.4);
+
+    //renderer->AddActor(actor);
+    //renderer->AddActor(actor2);*/
+    renderer->AddActor(cactor);
+    //item->StartLayoutAnimation(vtk->GetRenderWindow()->GetInteractor());
+    vtk->GetRenderWindow()->Render();
+
+}
+
+void GMainWindow::setVtkGraph(){
+    graph = vtkMutableUndirectedGraph::New();
+    weights = vtkFloatArray::New();
+    weights->SetNumberOfComponents(1);
+    weights->SetName("weights");
+    vtkStringArray *labels = vtkStringArray::New();
+    labels->SetNumberOfComponents(1);
+    labels->SetName("labels");
+
+    QMap<Node<NodeString,Link>*, vtkIdType> map;
+
+    for(ComplexNetwork<NodeString, Link>::node_iterator it=cn.getNodesBeginIterator(); it!=cn.getNodesEndIterator();it++){
+        Node<NodeString,Link>* s = it->second;
+        vtkIdType node_id = graph->AddVertex();
+        map[s] = node_id;
+        labels->InsertValue(node_id, s->getAttribute().text);
+
+    }
+
+    for(ComplexNetwork<NodeString,Link>::edge_iterator it = cn.getEdgesBeginIterator(); it!=cn.getEdgesEndIterator();it++){
+        Edge<NodeString, Link>* e = it->second;
+        printf("%s\t%s\t%f\n", e->getFromNode()->getAttribute().text, e->getToNode()->getAttribute().text, e->getAttribute().getWeight());
+        fflush(stdout);
+        vtkEdgeType edge_id = graph->AddEdge(map[e->getFromNode()], map[e->getToNode()]);
+        weights->InsertValue(edge_id.Id, pow(e->getAttribute().getWeight() , 5));
+        weights->InsertValue(edge_id.Id, 0.5 );
+    }
+
+    graph->GetEdgeData()->AddArray(weights);
+    graph->GetVertexData()->AddArray(labels);
+
+
+}
+
+GMainWindow::~GMainWindow(){
 }
