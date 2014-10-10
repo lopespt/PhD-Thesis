@@ -1,5 +1,12 @@
-language: c++
+language: cpp
 
-script:
-    - cmake .
-    - make -j5
+compiler:
+      - gcc
+
+before_script:
+      - mkdir build
+      - cd build
+      - cmake ..
+
+script: make
+
