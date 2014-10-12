@@ -2,7 +2,7 @@
 #define AREAFEATUREEXTRACTIONWINDOW_HPP
 
 #include <QWidget>
-#include <GuiUtilities/supervisedimageviewerwidget.hpp>
+#include <GuiUtilities/SupervisedImageViewerWidget.hpp>
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QHBoxLayout>

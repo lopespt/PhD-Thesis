@@ -37,7 +37,7 @@ QVector<float> HsvHistFeatureExtractor::doExtraction(Region* region, int discret
             CV_FILLED );
         }
 
-    cv::imwrite("imagem.png", histImg);
+    //cv::imwrite("imagem.png", histImg);
 
     return vect;
 }
