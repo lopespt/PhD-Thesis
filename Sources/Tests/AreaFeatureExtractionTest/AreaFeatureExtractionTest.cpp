@@ -4,7 +4,7 @@
 #include <Utilities/SunDatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <QVector>
-#include <GuiUtilities/supervisedimageviewerwidget.hpp>
+#include <GuiUtilities/SupervisedImageViewerWidget.hpp>
 #include <QApplication>
 #include "AreaFeatureExtractionWindow.hpp"
 #include <FeatureExtractors/HsvHistFeatureExtractor.hpp>
