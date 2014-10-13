@@ -11,6 +11,7 @@ void LabelsComplexNetworkConstructor::build(){
     while(reader.hasNext()){
         try{
             SupervisedImage i = reader.readNext();
+            printf("Reading image(%d/%d): %s%s\n", 0,0, i.getImagePath().size()>60?"...":"",i.getImagePath().right(60).toStdString().c_str());
             Node<NodeString, Link>* n1, *n2;
             Edge<NodeString, Link>* e;
             link_time t=0;
