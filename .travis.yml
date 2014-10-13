@@ -38,6 +38,7 @@ before_install:
       - sudo make install
       - pwd
       - cd ../../
+      - cd ../
       - cd PhD-Thesis
       - pwd
 
