@@ -4,6 +4,10 @@ compiler:
       - gcc
 
 before_install:
+      - pwd
+      - cd ../
+      - pwd
+      - mkdir builds
       - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
       - sudo add-apt-repository --yes 'deb http://ppa.launchpad.net/canonical-x/x-staging/ubuntu precise main'
       - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
@@ -19,8 +23,20 @@ before_install:
       - mkdir build 
       - cd build 
       - cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TESTS=OFF ..
-      - make
+      - make -j10
       - sudo make install
+      - cd ../../
+      - sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev
+      - sudo apt-get install libxt-dev
+      - git clone http://github.com/Kitware/VTK -b v6.1.0
+      - cd VTK
+      - mkdir Build
+      - cd Build
+      - cmake -D BUILD_SHARED_LIBS=OFF -D BUILD_TESTING=OFF -D CMAKE_BUILD_TYPE=RELEASE -D VTK_GROUP_QT=ON -D VTK_QT_VERSION=5
+      - make -j10
+      - sudo make install
+      - pwd
+
 before_script:
       - mkdir build
       - cd build
@@ -28,3 +44,4 @@ before_script:
 
 script: make
 
+cache: apt
