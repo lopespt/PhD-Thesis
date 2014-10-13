@@ -12,10 +12,13 @@ before_install:
       - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa ;
       - sudo apt-get update -qq
       - sudo apt-get install qt5-default
-      - wget -O OpenCV - http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip?r=http%3A%2F%2Fopencv.org%2Fdownloads.html&ts=1412950126&use_mirror=ufpr && unzip OpenCV && cd opencv-2.4.9 && mkdir build && cd build && cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local
-              -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON 
-              -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON 
-              -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
+      - sudo apt-get install cmake
+      - wget -O OpenCV.zip  http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip 
+              unzip OpenCV 
+              cd opencv-2.4.9 
+              mkdir build 
+              cd build 
+              cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TESTS=OFF ..
       - make
       - sudo make install
 before_script:
