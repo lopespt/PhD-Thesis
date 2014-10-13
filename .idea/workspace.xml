@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true">
     <generated>
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
       <config projectName="PhDThesis" targetName="Utilities_automoc" />
       <config projectName="PhDThesis" targetName="FeatureExtractors" />
       <config projectName="PhDThesis" targetName="SegmenterTest" />
@@ -12,21 +12,19 @@
       <config projectName="PhDThesis" targetName="Utilities" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
       <config projectName="PhDThesis" targetName="ComplexNetwork" />
       <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="GuiUtilities" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
     </generated>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvHistFeatureExtractor.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvHistFeatureExtractor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -173,6 +171,20 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -181,6 +193,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Implementacao" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
@@ -195,6 +211,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Implementacao" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
@@ -215,6 +235,10 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -233,6 +257,10 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -249,6 +277,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Implementacao" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
@@ -271,6 +303,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Implementacao" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PhD-Thesis" />
@@ -580,7 +616,7 @@
         <state vertical-scroll-proportion="1.0336658" vertical-offset="2921" max-vertical-offset="4305">
           <caret line="255" column="30" selection-start-line="255" selection-start-column="30" selection-end-line="255" selection-end-column="30" />
           <folding>
-            <element signature="e#8113#8147#0" expanded="true" />
+            <element signature="e#8113#8147#0" expanded="false" />
           </folding>
         </state>
       </provider>

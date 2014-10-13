@@ -6,6 +6,7 @@
 #include <QString>
 #include <Utilities/DatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
+#include <stdio.h>
 class NodeString{
     public:
         char text[50];
