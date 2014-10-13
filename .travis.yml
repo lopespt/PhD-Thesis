@@ -14,11 +14,11 @@ before_install:
       - sudo apt-get install qt5-default
       - sudo apt-get install cmake
       - wget -O OpenCV.zip  http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip 
-              unzip OpenCV 
-              cd opencv-2.4.9 
-              mkdir build 
-              cd build 
-              cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TESTS=OFF ..
+      - unzip OpenCV 
+      - cd opencv-2.4.9 
+      - mkdir build 
+      - cd build 
+      - cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TESTS=OFF ..
       - make
       - sudo make install
 before_script:
