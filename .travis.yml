@@ -31,7 +31,7 @@ before_install:
       - mkdir build 
       - cd build 
       - cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TESTS=OFF ..
-      - make -j10
+      - make -j3
       - sudo make install
       - cd ../../
       - sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev
@@ -41,7 +41,7 @@ before_install:
       - mkdir Build
       - cd Build
       - cmake -D BUILD_SHARED_LIBS=OFF -D BUILD_TESTING=OFF -D CMAKE_BUILD_TYPE=RELEASE -D VTK_GROUP_QT=ON -D VTK_QT_VERSION=5 ..
-      - make -j10
+      - make -j3
       - sudo make install
       - pwd
       - cd ../../
