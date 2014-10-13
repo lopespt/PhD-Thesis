@@ -8,6 +8,7 @@ before_install:
       - cd ../
       - pwd
       - mkdir builds
+      - cd builds
       - wget -O - http://llvm.org/apt/llvm-snapshot.gpg.key|sudo apt-key add -
       - sudo add-apt-repository --yes 'deb http://ppa.launchpad.net/canonical-x/x-staging/ubuntu precise main'
       - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
@@ -32,9 +33,12 @@ before_install:
       - cd VTK
       - mkdir Build
       - cd Build
-      - cmake -D BUILD_SHARED_LIBS=OFF -D BUILD_TESTING=OFF -D CMAKE_BUILD_TYPE=RELEASE -D VTK_GROUP_QT=ON -D VTK_QT_VERSION=5
+      - cmake -D BUILD_SHARED_LIBS=OFF -D BUILD_TESTING=OFF -D CMAKE_BUILD_TYPE=RELEASE -D VTK_GROUP_QT=ON -D VTK_QT_VERSION=5 ..
       - make -j10
       - sudo make install
+      - pwd
+      - cd ../../
+      - cd PhD-Thesis
       - pwd
 
 before_script:
