@@ -9,9 +9,9 @@ void ComplexNetworkConstructor::build(){
     while(reader.hasNext() && time < 50){
         SupervisedImage img = reader.readNext();
         features.clear();
-        foreach(Region *r, img.getRegions()){
+        foreach(Region r, img.getRegions()){
             for(QList<FeatureExtractor*>::iterator i = extractors.begin(); i != extractors.end(); i++){
-                Feature f = (*i)->extractFeature(r);
+                Feature f = (*i)->extractFeature(&r);
                 features.append(f);
             }
         }

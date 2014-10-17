@@ -15,6 +15,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <QCommandLinkButton>
 #include <QStringList>
 
+
 int main(int argc, char **argv){
 
     QCoreApplication app(argc,argv);
@@ -34,11 +35,12 @@ int main(int argc, char **argv){
 
     LabelsComplexNetworkConstructor constructor(labels_cn, reader);
     constructor.build();
+
     labels_cn.save(parser.value("o").toStdString().c_str());
     return 0;
 
 
 
-  }
+}
 
 

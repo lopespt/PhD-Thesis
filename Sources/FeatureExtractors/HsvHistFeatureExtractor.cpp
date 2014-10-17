@@ -5,7 +5,7 @@
 HsvHistFeatureExtractor::HsvHistFeatureExtractor(){
 }
 
-QVector<float> HsvHistFeatureExtractor::doExtraction(Region* region, int discretization){
+QVector<float> HsvHistFeatureExtractor::doExtraction(const Region* region, int discretization){
     QVector<float> vect(1);
 
     cv::Mat hsv, src=region->getCvImage();

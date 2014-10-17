@@ -19,7 +19,7 @@ class SupervisedImage{
         QString imagePath;
         QString supervisedPath;
         QImage image;
-        QList<Region*> regions;
+        QList<Region> regions;
         static QPolygon extractPolygon(QString Xml);
         static QString extractLabel(QString Xml);
         void parse_xml();
@@ -29,7 +29,7 @@ class SupervisedImage{
         SupervisedImage(QString imagePath, QString supervisedPath);
         void show_image();
         ~SupervisedImage();
-        const QList<Region*>& getRegions() const;
+        const QList<Region>& getRegions() const;
         const QImage* getImage() const;
         QString getImagePath() const;
         QString getSupervisedPath() const;

@@ -29,9 +29,9 @@ int main(int argc, char* argv[]){
     SupervisedImage s = reader.readNext();
 
     HsvHistFeatureExtractor hsv;
-    hsv.doExtraction(s.getRegions()[0], 100);
+    hsv.doExtraction(&(s.getRegions()[0]), 100);
 
-    QVector<float> v = e.doExtraction(s.getRegions()[0], 5);
+    QVector<float> v = e.doExtraction(&(s.getRegions()[0]), 5);
     AreaFeatureExtractionWindow win(argv[1], 0);
     win.setVisible(true);
 

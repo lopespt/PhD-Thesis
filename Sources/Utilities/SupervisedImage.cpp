@@ -22,7 +22,7 @@ void SupervisedImage::parse_xml(){
         QPolygon polygon = extractPolygon(regionXml);
         polygon = polygon.intersected(QPolygon(QRect(0,0,image.width()-1, image.height()-1)));
         QString label    = extractLabel(regionXml);
-        this->regions << new Region(&this->image, polygon, label);
+        this->regions << Region(&this->image, polygon, label);
     }
 
 }
@@ -56,7 +56,7 @@ void SupervisedImage::show_image(){
     l->setVisible(true);*/
 }
 
-const QList<Region*>& SupervisedImage::getRegions() const{
+const QList<Region>& SupervisedImage::getRegions() const{
     return this->regions;
 }
 
@@ -74,10 +74,5 @@ QString SupervisedImage::getSupervisedPath() const{
 }
 
 SupervisedImage::~SupervisedImage(){
-    foreach(Region* r, regions)
-        delete r;
-/*
-    if(l)
-        l->deleteLater();*/
 }
 

@@ -9,11 +9,10 @@
 #include <cstring>
 #include "Node.hpp"
 #include "Edge.hpp"
-
+#include <assert.h>
 /** \brief Rede Complexa
  *  \details Rede Complexa utilizando listas de adjacências
  * **/
-
 
 
 template <class NODE_TYPE, class EDGE_TYPE>
@@ -230,18 +229,22 @@ void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char *filename){
     clear();
     std::map< unsigned long long int, NodePtr> ids;
     ComplexNetwordFileHeader header;
+    int leitura_ok;
 
     NodePtr newNode;
     EdgePtr newEdge;
     FILE* f = fopen(filename, "rb");
-    fread(&header, sizeof(header), 1, f);
+    leitura_ok = fread(&header, sizeof(header), 1, f);
+    assert(leitura_ok==1);
 
     node_data_type node_data;
     edge_data_type edge_data;
 
+
     //Read Nodes
     for(int i=0;i<header.num_nodes;i++){
-        fread(&node_data, sizeof(node_data), 1, f);
+        leitura_ok = fread(&node_data, sizeof(node_data), 1, f);
+        assert(leitura_ok==1);
         newNode = new Node<NODE_TYPE, EDGE_TYPE>;
         memcpy(&(newNode->attribute), node_data.value, sizeof(NODE_TYPE));
         this->addNode(newNode);
@@ -249,7 +252,8 @@ void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char *filename){
     }
 
     for(int i=0;i<header.num_edges;i++){
-        fread(&edge_data, sizeof(edge_data), 1, f);
+        leitura_ok = fread(&edge_data, sizeof(edge_data), 1, f);
+        assert(leitura_ok==1);
         newEdge = new Edge<NODE_TYPE, EDGE_TYPE>;
         memcpy(&(newEdge->attribute), edge_data.value, sizeof(EDGE_TYPE));
         newEdge->from = ids[edge_data.node_from];

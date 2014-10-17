@@ -20,7 +20,7 @@ class Node{
     public:
         Node(NODE_TYPE attribute);
         ~Node();
-        NODE_TYPE getAttribute();
+        NODE_TYPE& getAttribute();
         void setAttribute(NODE_TYPE attr);
         int getId() const;
         bool operator<(const Node<NODE_TYPE, EDGE_TYPE> &other) const;
@@ -56,7 +56,7 @@ int Node<NODE_TYPE, EDGE_TYPE>::getId() const{
 }
 
 template <class NODE_TYPE, class EDGE_TYPE>
-NODE_TYPE Node<NODE_TYPE, EDGE_TYPE>::getAttribute(){
+NODE_TYPE& Node<NODE_TYPE, EDGE_TYPE>::getAttribute(){
     return this->attribute;
 }
 

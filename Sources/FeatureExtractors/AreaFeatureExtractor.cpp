@@ -4,7 +4,7 @@
 AreaFeatureExtractor::AreaFeatureExtractor(){
 }
 
-QVector<float> AreaFeatureExtractor::doExtraction(Region* region, int discretization){
+QVector<float> AreaFeatureExtractor::doExtraction(const Region *region, int discretization){
     QVector<float> vect(1);
     region->getMask();
     float area = 0;

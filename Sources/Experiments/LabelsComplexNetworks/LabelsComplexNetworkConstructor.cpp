@@ -16,11 +16,11 @@ void LabelsComplexNetworkConstructor::build(){
             Edge<NodeString, Link>* e;
             link_time t=0;
 
-            foreach(Region* r1, i.getRegions()){
-                foreach(Region* r2, i.getRegions()){
+            foreach(Region r1, i.getRegions()){
+                foreach(Region r2, i.getRegions()){
 
-                    QString label1 = r1->getLabel();
-                    QString label2 = r2->getLabel();
+                    QString label1 = r1.getLabel();
+                    QString label2 = r2.getLabel();
 
                     if( (n1 = cn.getNode(label1)) == NULL){
                         n1=new Node<NodeString, Link>(label1);
