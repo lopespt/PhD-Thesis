@@ -1,7 +1,7 @@
 #ifndef NODESTRING_HPP
 #define NODESTRING_HPP
 
-
+#include <QString>
 class NodeString{
     public:
         char text[50];

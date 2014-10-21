@@ -84,7 +84,7 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     lc->AddHSVPoint(1000,1,1,1);
     edgesMapper->SetColorModeToMapScalars();
     edgesMapper->SetLookupTable(lc);
-    actor->GetProperty()->SetOpacity(0.01);
+    actor->GetProperty()->SetOpacity(0.05);
     actor->GetProperty()->SetColor(0.4,0.6,0);
     //edgesMapper->SetScalarModeToDefault();
 
@@ -107,7 +107,6 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     nodeLabels->SetFieldDataName("nomes");
     nodeLabels->GetLabelTextProperty()->SetFontSize(30);
 
-
     vtkActor *actor2 = vtkActor::New();
     actor2->SetMapper(nodesMapper);
     actor2->GetProperty()->SetColor(1,1,0);
@@ -115,17 +114,6 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     vtkActor2D *actor3 = vtkActor2D::New();
     actor3->SetMapper(nodeLabels);
 
-    /*
-    viewer->AddRepresentationFromInput(this->graph);
-    viewer->GetRenderer()->SetAmbient(0.3,0.4,0.5);
-    viewer->SetLayoutStrategy(lay);
-    viewer->SetEdgeLabelVisibility(true);
-    viewer->SetEdgeLabelArrayName("pesos");
-    viewer->SetRenderWindow(vtkWidget->GetRenderWindow());
-    viewer->ResetCamera();
-    viewer->SetVertexLabelVisibility(true);
-    viewer->SetVertexLabelArrayName("nomes");
-*/
     vRenderer->AddActor(actor);
     vRenderer->AddActor(actor2);
     vRenderer->AddActor2D(actor3);

@@ -10,11 +10,11 @@
 #include "Node.hpp"
 #include "Edge.hpp"
 #include <assert.h>
+
+
 /** \brief Rede Complexa
  *  \details Rede Complexa utilizando listas de adjacências
  * **/
-
-
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork{
     public:

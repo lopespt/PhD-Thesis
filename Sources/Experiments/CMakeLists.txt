@@ -13,3 +13,4 @@ SET(CMAKE_AUTOMOC ON)
 
 ADD_SUBDIRECTORY(LabelsComplexNetworks)
 ADD_SUBDIRECTORY(ComplexNetworkVisualizer)
+ADD_SUBDIRECTORY(ComplexNetworkToMatlabFile)
