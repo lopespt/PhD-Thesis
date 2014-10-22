@@ -20,6 +20,6 @@ cd VTK
 git checkout tags/v6.1.0
 mkdir vtkBuild
 cd vtkBuild
-cmake ..
+cmake -DBUILD-TESTING=OFF ..
 make -j10
 sudo make install
