@@ -5,5 +5,5 @@ tar -xzf cmake.tar.gz
 cd cmake-3.0.2
 ./bootstrap
 make -j5
-make install
+sudo make install
 cd $dir
