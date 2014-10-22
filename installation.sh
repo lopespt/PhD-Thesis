@@ -9,6 +9,10 @@ make -j5
 sudo make install
 cd $dir
 
+#vtk dependencies
+sudo apt-get install libX11-dev libXt-dev libgl1-mesa-dev libosmesa6-dev libglu1-mesa-dev
+
+
 #install vtk v6.1.0
 cd /tmp
 git clone https://github.com/Kitware/VTK.git
