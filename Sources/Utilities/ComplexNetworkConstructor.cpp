@@ -44,10 +44,12 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features
             if(e){
                 delta_t = e->getAttribute().getTime();
                 weight = e->getAttribute().getWeight();
-                e->setAttribute(Link(this->time, weight + learningRate*(1.0 + lambda / delta_t*1.0) - weight));
+                e->setAttribute(Link(0,weight+1));
+                //e->setAttribute(Link(this->time, weight + learningRate*(1.0 + lambda / delta_t*1.0) - weight));
                 //printf("Antes: %.4f\nDepois:%.4f\n", weight, e->getAttribute().getWeight());
             }else{
-                e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
+                e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, 1 ));
+                //e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
                 cn.addEdge(e);
             }
         }
