@@ -12,5 +12,7 @@ ComplexNetworkVisualizer::ComplexNetworkVisualizer(QWidget *parent) :
 
 void ComplexNetworkVisualizer::load(const QString &file){
     cn.load(file.toStdString().c_str());
+    printf("Total Nodes: %lu\n", cn.getNodesCount());
+    printf("Total Edges: %lu\n", cn.getEdgesCount());
     viewer->setComplexNetwork(cn);
 }
