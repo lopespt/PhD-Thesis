@@ -16,3 +16,4 @@ void ComplexNetworkVisualizer::load(const QString &file){
     printf("Total Edges: %lu\n", cn.getEdgesCount());
     viewer->setComplexNetwork(cn);
 }
+
