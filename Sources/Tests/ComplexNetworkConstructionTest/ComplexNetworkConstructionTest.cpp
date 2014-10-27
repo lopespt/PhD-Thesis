@@ -18,7 +18,6 @@ int main(int argc, char **argv){
     QList<FeatureExtractor*> extractors;
     extractors.append(&feat);
 
-
     ComplexNetwork<Feature, Link> cn;
     SunDatabaseReader r("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial/");
     ComplexNetworkConstructor constructor(cn, r, extractors);

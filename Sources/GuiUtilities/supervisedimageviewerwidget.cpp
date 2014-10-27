@@ -14,20 +14,20 @@ SupervisedImageViewerWidget::SupervisedImageViewerWidget(QWidget *parent): QLabe
     this->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
 }
 
-void SupervisedImageViewerWidget::setSupervisedImage(const SupervisedImage* image){
+void SupervisedImageViewerWidget::setSupervisedImage(SupervisedImage image){
     if(!m_supervised_image){
-        m_supervised_image = new SupervisedImage(*image);
+        m_supervised_image = new SupervisedImage(image);
     }
     else
-        *m_supervised_image = *image;
+        *m_supervised_image = image;
 
-    m_original_pixmap = QPixmap::fromImage(*image->getImage());
+    m_original_pixmap = QPixmap::fromImage(*m_supervised_image->getImage());
     QPixmap p;
-    for(int i=0;i<image->getRegions().size();i++){
+    for(int i=0;i<m_supervised_image->getRegions().size();i++){
         QPainter t(&m_original_pixmap);
-        QColor c = QColor::fromHsv(i*255/(image->getRegions().size()-1), 255, 255, 50);
+        QColor c = QColor::fromHsv(i*255/(m_supervised_image->getRegions().size()-1), 255, 255, 50);
         t.setBrush(c);
-        t.drawConvexPolygon(image->getRegions().at(i).getBoundary());
+        t.drawConvexPolygon(m_supervised_image->getRegions().at(i).getBoundary());
     }
     update();
 }
@@ -61,6 +61,8 @@ void SupervisedImageViewerWidget::paintEvent(QPaintEvent *event){
 }
 
 void SupervisedImageViewerWidget::mouseMoveEvent(QMouseEvent *evt){
+    if(!m_original_pixmap)
+        return;
     evt->accept();
     pointer_x = evt->x()-pic_x;
     pointer_y = evt->y()-pic_y;

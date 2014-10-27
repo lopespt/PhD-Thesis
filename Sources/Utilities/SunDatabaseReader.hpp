@@ -21,7 +21,7 @@ class SunDatabaseReader:public DatabaseReader{
         void discover_files(QString);
         QList<QString>::iterator image_files_it;
         QList<QString>::iterator supervision_files_it;
-        bool direction_forward;
+        bool started;
         
 
     public:
@@ -30,6 +30,7 @@ class SunDatabaseReader:public DatabaseReader{
         SupervisedImage readNext();
         bool hasPrevious() const;
         SupervisedImage readPrevious();
+        unsigned int getTotal() const;
 
 };
 

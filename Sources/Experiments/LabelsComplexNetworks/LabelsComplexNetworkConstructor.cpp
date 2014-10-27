@@ -8,17 +8,21 @@ LabelsComplexNetworkConstructor::LabelsComplexNetworkConstructor(ComplexNetwork<
 
 void LabelsComplexNetworkConstructor::build(){
 
-    while(reader.hasNext()){
+    int counter=1;
+    while(reader.hasNext() ){
         try{
             SupervisedImage i = reader.readNext();
-            printf("Reading image(%d/%d): %s%s\n", 0,0, i.getImagePath().size()>60?"...":"",i.getImagePath().right(60).toStdString().c_str());
+            printf("Reading image(%d/%d): %s%s\n", counter, reader.getTotal(), i.getImagePath().size()>60?"...":"",i.getImagePath().right(60).toStdString().c_str());
             Node<NodeString, Link>* n1, *n2;
             Edge<NodeString, Link>* e;
             link_time t=0;
 
-            foreach(Region r1, i.getRegions()){
-                foreach(Region r2, i.getRegions()){
-
+            //foreach(Region r1, i.getRegions()){
+            //foreach(Region r2, i.getRegions()){
+            for(QList<Region>::const_iterator it1=i.getRegions().begin(); it1!=i.getRegions().end(); it1++){
+                for(QList<Region>::const_iterator it2=it1+1; it2!=i.getRegions().end(); it2++){
+                    Region r1 = *it1;
+                    Region r2 = *it2;
                     QString label1 = r1.getLabel();
                     QString label2 = r2.getLabel();
 
@@ -48,5 +52,6 @@ void LabelsComplexNetworkConstructor::build(){
             printf("Exception occurred: %s\n", e.what());
             fflush(stdout);
         }
+        counter++;
     }
 }

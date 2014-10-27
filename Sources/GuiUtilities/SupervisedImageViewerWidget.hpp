@@ -21,7 +21,7 @@ private:
     QPixmap p;
 public:
     SupervisedImageViewerWidget(QWidget *parent = 0);
-    void setSupervisedImage(const SupervisedImage* image);
+    void setSupervisedImage(SupervisedImage image);
     QSize sizeHint() const;
     void paintEvent(QPaintEvent *);
     void mouseMoveEvent(QMouseEvent *);

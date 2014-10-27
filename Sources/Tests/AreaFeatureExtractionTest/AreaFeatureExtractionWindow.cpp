@@ -23,10 +23,10 @@ AreaFeatureExtractionWindow::AreaFeatureExtractionWindow(QString databasePath, Q
 
 void AreaFeatureExtractionWindow::show_previous(){
     SupervisedImage s = reader.readPrevious();
-    m_supervisedWidget->setSupervisedImage(&s);
+    m_supervisedWidget->setSupervisedImage(s);
 }
 
 void AreaFeatureExtractionWindow::show_next(){
     SupervisedImage s = reader.readNext();
-    m_supervisedWidget->setSupervisedImage(&s);
+    m_supervisedWidget->setSupervisedImage(s);
 }

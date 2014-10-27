@@ -12,6 +12,7 @@ class DatabaseReader{
         virtual SupervisedImage readPrevious()=0;
         virtual bool hasNext() const=0;
         virtual bool hasPrevious() const=0;
+        virtual unsigned int getTotal() const=0;
 
 };
 
