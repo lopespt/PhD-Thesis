@@ -9,13 +9,13 @@ LabelsComplexNetworkConstructor::LabelsComplexNetworkConstructor(ComplexNetwork<
 void LabelsComplexNetworkConstructor::build(){
     float alpha = 0.3;
     int counter=1;
+    link_time t=1llu;
     while(reader.hasNext() ){
         try{
             SupervisedImage i = reader.readNext();
             printf("Reading image(%d/%d): %s%s\n", counter, reader.getTotal(), i.getImagePath().size()>60?"...":"",i.getImagePath().right(60).toStdString().c_str());
             Node<NodeString, Link>* n1, *n2;
             Edge<NodeString, Link>* e;
-            link_time t=1;
 
             //foreach(Region r1, i.getRegions()){
             //foreach(Region r2, i.getRegions()){
@@ -41,8 +41,9 @@ void LabelsComplexNetworkConstructor::build(){
                             cn.addEdge(e);
                         }else{
                             Link l = e->getAttribute();
-                            float new_weight = l.getWeight() + alpha*(3.0/(t-l.getTime()+1) - l.getWeight());
-                            printf("%f\n", new_weight);
+                            float delta_t = t-l.getTime();
+                            float new_weight = l.getWeight() + alpha*(3.0/(delta_t) - l.getWeight());
+                            //printf("delta_t = %f \t weight = %f\n", delta_t, new_weight);
                             l.setWeight(new_weight);
                             l.setTime(t);
                             e->setAttribute(l);
