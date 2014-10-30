@@ -11,6 +11,7 @@ int main(int argc, char *argv[]){
 
     QCommandLineParser parser;
     parser.addPositionalArgument("input","Input Complex Network File","input");
+    parser.addPositionalArgument("node_type","One of the following: NodeString, int, float, double","node_type");
 
     parser.addHelpOption();
     parser.process(app);

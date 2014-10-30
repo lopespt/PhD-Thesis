@@ -24,15 +24,16 @@ int main(int argc, char* argv[]){
     }
     QApplication app(argc,argv);
 
-    AreaFeatureExtractor e;
+    int discretization=5;
+    AreaFeatureExtractor e(&discretization);
     SunDatabaseReader reader( (QString(argv[1])) );
     SupervisedImage s = reader.readNext();
 
-    HsvHistFeatureExtractor hsv;
-    hsv.doExtraction(&(s.getRegions()[0]), 100);
+    HsvHistFeatureExtractor hsv(&discretization);
+    hsv.doExtraction(&(s.getRegions()[0]), &discretization);
 
-    QVector<float> v = e.doExtraction(&(s.getRegions()[0]), 5);
-    AreaFeatureExtractionWindow win(argv[1], 0);
+    QVector<float> v = e.doExtraction(&(s.getRegions()[0]), &discretization);
+    AreaFeatureExtractionWindow win(argv[1]);
     win.setVisible(true);
 
 

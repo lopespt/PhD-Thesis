@@ -11,8 +11,8 @@ class HsvHistFeatureExtractor:public FeatureExtractor{
     private:
         void discretize(int quantization);
     public:
-        HsvHistFeatureExtractor();
-        QVector<float> doExtraction(const Region* r, int discretization);
+        HsvHistFeatureExtractor(const int * discretization);
+        QVector<float> doExtraction(const Region* r,const int* discretization);
         const char* getFeatureName();
 
 };

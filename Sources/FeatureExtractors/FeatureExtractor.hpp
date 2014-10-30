@@ -9,16 +9,16 @@
 class FeatureExtractor{
 
     private:
-        int _discretization;
+        const int* _discretization;
 
     public:
+        FeatureExtractor(const int* discretization=NULL);
         Feature extractFeature(Region* r);
-        void setDiscretization(int i);
-        int discretization();
         virtual ~FeatureExtractor(){};
+        const int* discretization() const;
 
     protected:
-        virtual QVector<float> doExtraction(const Region* region, int discretization){return QVector<float>();};
+        virtual QVector<float> doExtraction(const Region* region, const int* discretization){return QVector<float>();};
         virtual const char* getFeatureName(){return NULL;};
 
 };

@@ -10,10 +10,9 @@ class AreaFeatureExtractor:public FeatureExtractor{
     private:
         void discretize(int quantization);
     public:
-        AreaFeatureExtractor();
-        QVector<float> doExtraction(const Region* r, int discretization);
+        AreaFeatureExtractor(const int* discretization=NULL);
+        QVector<float> doExtraction(const Region* r, const int* discretization);
         const char* getFeatureName();
-
 };
 
 #endif

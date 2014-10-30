@@ -2,15 +2,15 @@
 #include "HsvHistFeatureExtractor.hpp"
 #include <opencv2/core/core_c.h>
 
-HsvHistFeatureExtractor::HsvHistFeatureExtractor(){
+HsvHistFeatureExtractor::HsvHistFeatureExtractor(const int *discretization):FeatureExtractor(discretization){
 }
 
-QVector<float> HsvHistFeatureExtractor::doExtraction(const Region* region, int discretization){
+QVector<float> HsvHistFeatureExtractor::doExtraction(const Region* region, const int *discretization){
     QVector<float> vect(1);
 
     cv::Mat hsv, src=region->getCvImage();
     cv::cvtColor(src, hsv, CV_BGR2HSV);
-    int hbins = discretization;
+    int hbins = *discretization;
     int sbins = 3;
     const int channels[] = {0,1};
     cv::MatND hist;

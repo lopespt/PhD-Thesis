@@ -1,10 +1,10 @@
 
 #include "AreaFeatureExtractor.hpp"
 
-AreaFeatureExtractor::AreaFeatureExtractor(){
+AreaFeatureExtractor::AreaFeatureExtractor(const int* discretization):FeatureExtractor(discretization){
 }
 
-QVector<float> AreaFeatureExtractor::doExtraction(const Region *region, int discretization){
+QVector<float> AreaFeatureExtractor::doExtraction(const Region *region,const int* discretization){
     QVector<float> vect(1);
     region->getMask();
     float area = 0;
@@ -20,7 +20,7 @@ QVector<float> AreaFeatureExtractor::doExtraction(const Region *region, int disc
     //Discretization
 
     for(int i=0;i<vect.size();i++)
-        vect[i] = ((int)(vect[i] * discretization))/(float)discretization;
+        vect[i] = ((int)(vect[i] * *discretization))/(float)*discretization;
     return vect;
 }
 

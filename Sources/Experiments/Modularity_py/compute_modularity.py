@@ -105,26 +105,11 @@ def splitCluster(G, partition, x):
     sub_partition = dict({(i[0], i[1]+x) for i in sub_partition.items()})
     return dict({i if i[1] < x else (i[0], sub_partition[i[0]]+1) if i[0] in sub_partition else (i[0], i[1]+
                                                                         max_cluster+x+1) for i in partition.items()})
- #1:0, 2:0, 3:1, 4:1, 5:1, 6:2
-
-def findNode(G, text):
-    for i in G.nbunch_iter():
-        if G.node[i]["text"].strip().lower() == text.strip().lower():
-            return i
-    return None
-
-if __name__ == "__main__":
-    print
-
-    G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full_eq_time.cn')
-    #for i in G1.edges_iter(data=True):
-    #    i[2]["weight"] = i[2]["weight"] ** 3
 
 
-
+def sub_clusterization_experiment(G1):
     p1 = partition(G1)
     print "Modularity: " + str(community.modularity(p1, G1))
-
 
 
     sizes = clustersSizes(p1)
@@ -148,14 +133,63 @@ if __name__ == "__main__":
             pass
 
 
-    exit()
     plt.plot(range(1, len(clustersSizes(p1))+1), sorted(clustersSizes(p1), reverse=True))
     plt.xlabel("No. do Cluster")
     plt.ylabel("Tamanho do Cluster")
     #plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1)")
     plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1 e C2)")
     plt.show()
-    exit(0)
+
+
+def clustering_centrallity_experiment(G):
+    partitions = community.best_partition(G)
+    sizes = clustersSizes(partitions)
+    ordered_sizes = sorted(range(len(sizes)), key=lambda x: sizes[x])
+    for i in ordered_sizes:
+        print "Centralidade do cluster " + str(i) + u" (Tamanho: %s nós)" % str(sizes[i])
+        nodes = [k[0] for k in partitions.items() if k[1] == i]
+        #print "nos" + str(nodes)
+        Gind = G.subgraph(nodes)
+        centr = nx.betweenness_centrality(Gind, weight="weight")
+        order = sorted(centr.keys(), key=lambda x: centr[x], reverse=True)
+        for j in range(min([len(order), 10])):
+            print Gind.node[order[j]]["text"]+", ",
+        print "\n"
+
+def clustering_hubs_experiment(G):
+    partitions = community.best_partition(G)
+    sizes = clustersSizes(partitions)
+    ordered_sizes = sorted(range(len(sizes)), key=lambda x: sizes[x])
+    for i in ordered_sizes:
+        print "Hubs do cluster " + str(i) + u" (Tamanho: %s nós)" % str(sizes[i])
+        nodes = [k[0] for k in partitions.items() if k[1] == i]
+        #print "nos" + str(nodes)
+        Gind = G.subgraph(nodes)
+        hubs = nx.degree(Gind, weight="weight")
+        order = sorted(hubs.keys(), key=lambda x: hubs[x], reverse=True)
+        for j in range(min([len(order), 10])):
+            print "%s (grau: %s), " % (Gind.node[order[j]]["text"], hubs[order[j]]),
+        print "\n"
+
+def findNode(G, text):
+    for i in G.nbunch_iter():
+        if G.node[i]["text"].strip().lower() == text.strip().lower():
+            return i
+    return None
+
+if __name__ == "__main__":
+    print
+
+    G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full.cn')
+
+    #sub_clusterization_experiment(G1)
+    print "========================Hubs Experiment========================"
+    clustering_hubs_experiment(G1)
+    #print "====================Centrallity Experiment====================="
+    #clustering_centrallity_experiment(G1)
+
+
+
 
 
 

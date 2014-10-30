@@ -13,8 +13,8 @@ int main(int argc, char **argv){
     //QApplication a(argc, argv);
     setlocale(LC_ALL, "C");
 
-    AreaFeatureExtractor feat;
-    feat.setDiscretization(10);
+    int discretization=10;
+    AreaFeatureExtractor feat(&discretization);
     QList<FeatureExtractor*> extractors;
     extractors.append(&feat);
 

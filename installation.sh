@@ -23,3 +23,15 @@ cd vtkBuild
 cmake -DBUILD-TESTING=OFF ..
 make -j10
 sudo make install
+
+
+#include opencv
+cd /tmp
+git clone https://github.com/Itseez/opencv.git
+cd opencv
+git checkout tags/2.4.10
+mkdir opencvBuild
+cd opencvBuild
+cmake -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF ..
+make -j5
+sudo make install
