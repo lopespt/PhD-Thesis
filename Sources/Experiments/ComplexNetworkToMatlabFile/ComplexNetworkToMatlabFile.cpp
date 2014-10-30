@@ -1,6 +1,6 @@
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <Utilities/Link.hpp>
-#include <ComplexNetwork/NodeString.hpp>
+#include <Utilities/NodeString.hpp>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 #include <QCoreApplication>

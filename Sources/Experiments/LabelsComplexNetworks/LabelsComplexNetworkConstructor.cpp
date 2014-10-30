@@ -44,6 +44,7 @@ void LabelsComplexNetworkConstructor::build(){
                             float delta_t = t-l.getTime();
                             float new_weight = l.getWeight() + alpha*(3.0/(delta_t) - l.getWeight());
                             //printf("delta_t = %f \t weight = %f\n", delta_t, new_weight);
+
                             l.setWeight(new_weight);
                             l.setTime(t);
                             e->setAttribute(l);

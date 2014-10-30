@@ -3,7 +3,7 @@
 
 #include <QFile>
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include <ComplexNetwork/NodeString.hpp>
+#include <Utilities/NodeString.hpp>
 #include <Utilities/Link.hpp>
 
 class ComplexNetworkToMatlab

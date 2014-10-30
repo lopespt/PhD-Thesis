@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from audioop import reverse
+from mysql.utilities import exception
 
 __author__ = 'wachs'
 
@@ -106,16 +107,26 @@ def splitCluster(G, partition, x):
                                                                         max_cluster+x+1) for i in partition.items()})
  #1:0, 2:0, 3:1, 4:1, 5:1, 6:2
 
-
+def findNode(G, text):
+    for i in G.nbunch_iter():
+        if G.node[i]["text"].strip().lower() == text.strip().lower():
+            return i
+    return None
 
 if __name__ == "__main__":
     print
 
     G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full_eq_time.cn')
+    #for i in G1.edges_iter(data=True):
+    #    i[2]["weight"] = i[2]["weight"] ** 3
+
+
 
     p1 = partition(G1)
     print "Modularity: " + str(community.modularity(p1, G1))
 
+
+
     sizes = clustersSizes(p1)
     ordered = sorted(range(len(sizes)), key=lambda k: sizes[k], reverse=True)
     p1 = splitCluster(G1, p1, ordered[0])
@@ -125,11 +136,27 @@ if __name__ == "__main__":
     p1 = splitCluster(G1, p1, ordered[0])
     print "Modularity: " + str(community.modularity(p1, G1))
 
+    ordered = sorted(range(len(sizes)), key=lambda k: sizes[k])
+    while(True):
+        word = raw_input("palavra: ")
+        s = G1.nbunch_iter([i[0] for i in p1.items() if i[1] == p1[findNode(G1, word)] ])
+        try:
+            for i in s:
+                print G1.node[i]["text"]+", ",
+            print
+        except:
+            pass
 
+
+    exit()
     plt.plot(range(1, len(clustersSizes(p1))+1), sorted(clustersSizes(p1), reverse=True))
     plt.xlabel("No. do Cluster")
     plt.ylabel("Tamanho do Cluster")
     #plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1)")
     plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1 e C2)")
     plt.show()
+    exit(0)
+
+
+
 

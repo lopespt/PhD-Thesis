@@ -7,7 +7,7 @@
 #include <Utilities/DatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <stdio.h>
-#include <ComplexNetwork/NodeString.hpp>
+#include <Utilities/NodeString.hpp>
 
 class LabelsComplexNetworkConstructor
 {

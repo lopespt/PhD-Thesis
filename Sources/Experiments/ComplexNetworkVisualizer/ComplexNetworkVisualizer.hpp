@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include <ComplexNetwork/NodeString.hpp>
+#include <Utilities/NodeString.hpp>
 #include <ComplexNetworkViewerWidget.hpp>
 #include <QVBoxLayout>
 
