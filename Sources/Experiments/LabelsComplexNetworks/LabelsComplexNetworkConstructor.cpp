@@ -41,7 +41,7 @@ void LabelsComplexNetworkConstructor::build(){
                             cn.addEdge(e);
                         }else{
                             Link l = e->getAttribute();
-                            float new_weight = l.getWeight() + alpha*(3.0/(t-l.getTime()) - l.getWeight());
+                            float new_weight = l.getWeight() + alpha*(3.0/(t-l.getTime()+1) - l.getWeight());
                             printf("%f\n", new_weight);
                             l.setWeight(new_weight);
                             l.setTime(t);
