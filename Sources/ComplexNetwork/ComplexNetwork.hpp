@@ -10,11 +10,14 @@
 #include "Node.hpp"
 #include "Edge.hpp"
 #include <assert.h>
-
+#include <armadillo>
 
 /** \brief Rede Complexa
  *  \details Rede Complexa utilizando listas de adjacências
  * **/
+
+using namespace arma;
+
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork{
     public:
@@ -26,7 +29,6 @@ class ComplexNetwork{
     private:
 
         std::map<NODE_TYPE, NodePtr> nodes;
-
         std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr, 
            bool(*)(std::pair<NodePtr, NodePtr> , std::pair<NodePtr, NodePtr>) > edges;
         static bool compare(std::pair< NodePtr, NodePtr> a, std::pair< NodePtr, NodePtr> b);
@@ -76,7 +78,6 @@ class ComplexNetwork{
 
 template <class NODE_TYPE, class EDGE_TYPE>
 ComplexNetwork<NODE_TYPE,EDGE_TYPE>::ComplexNetwork():edges( ComplexNetwork<NODE_TYPE, EDGE_TYPE>::compare ){
-    
 }
 
 
