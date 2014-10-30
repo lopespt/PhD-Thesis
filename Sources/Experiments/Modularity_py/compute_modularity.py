@@ -111,9 +111,11 @@ def splitCluster(G, partition, x):
 if __name__ == "__main__":
     print
 
-    G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full.cn')
+    G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full_eq_time.cn')
 
     p1 = partition(G1)
+    print "Modularity: " + str(community.modularity(p1, G1))
+
     sizes = clustersSizes(p1)
     ordered = sorted(range(len(sizes)), key=lambda k: sizes[k], reverse=True)
     p1 = splitCluster(G1, p1, ordered[0])

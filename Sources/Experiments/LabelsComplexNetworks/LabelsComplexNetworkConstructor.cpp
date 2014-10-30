@@ -15,7 +15,7 @@ void LabelsComplexNetworkConstructor::build(){
             printf("Reading image(%d/%d): %s%s\n", counter, reader.getTotal(), i.getImagePath().size()>60?"...":"",i.getImagePath().right(60).toStdString().c_str());
             Node<NodeString, Link>* n1, *n2;
             Edge<NodeString, Link>* e;
-            link_time t=0;
+            link_time t=1;
 
             //foreach(Region r1, i.getRegions()){
             //foreach(Region r2, i.getRegions()){
@@ -41,7 +41,9 @@ void LabelsComplexNetworkConstructor::build(){
                             cn.addEdge(e);
                         }else{
                             Link l = e->getAttribute();
-                            l.setWeight( l.getWeight() + alpha*(3.0/(t-l.getTime()) - l.getWeight()));
+                            float new_weight = l.getWeight() + alpha*(3.0/(t-l.getTime()) - l.getWeight());
+                            printf("%f\n", new_weight);
+                            l.setWeight(new_weight);
                             l.setTime(t);
                             e->setAttribute(l);
                         }
