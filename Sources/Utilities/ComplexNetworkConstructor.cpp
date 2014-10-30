@@ -24,7 +24,7 @@ void ComplexNetworkConstructor::build(){
 }
 
 /** Atualiza os pesos as arestas de acordo com a Equação:
- * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} + w_{i,j} \right)  \f]
+ * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right)  \f]
  */
 void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<Feature> &features){
 

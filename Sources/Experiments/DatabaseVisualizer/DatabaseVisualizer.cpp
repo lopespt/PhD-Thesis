@@ -13,7 +13,6 @@ int main(int argc, char* argv[]){
     parser.addPositionalArgument("folder","Sun database folder","folder");
     parser.process(app);
 
-
     SunDatabaseReader r(parser.positionalArguments()[0]);
     DatabaseVisualizerWidget w(&r);
     w.setVisible(true);

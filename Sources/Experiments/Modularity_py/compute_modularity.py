@@ -9,8 +9,7 @@ import networkx as nx
 from networkx.algorithms import *
 import community
 import matplotlib.pyplot as plt
-import numpy as np
-import math
+
 
 class Header(Structure):
 
@@ -80,9 +79,12 @@ def partition(G):
     #print(nx.average_clustering(G, G.nodes(), 'weight'))
     partition = community.best_partition(G)
     #print("Partitions: " + str(partition))
-    modularity = community.modularity(partition, G)
-    print("Modularity: " + str(modularity))
+    #modularity = community.modularity(partition, G)
+    #print("Modularity: " + str(modularity))
+    return partition
 
+
+def clustersSizes(partition):
     p = {}
     for i in partition.items():
         if i[1] in p:
@@ -90,51 +92,42 @@ def partition(G):
         else:
             p[i[1]] = list()
             p[i[1]].append(i[0])
-
-    #print "Partitions sizes: "+str([len(p[i]) for i in p.keys()])
-    #print "Partitions: "+str([p[i] for i in p.keys()])
-
-    return sorted([p[i] for i in p.keys()], key=lambda s: len(s), reverse=True)
-
-    #biggest_cluster = p[1];
-    #Gind = G.subgraph(biggest_cluster)
-    #partition = community.best_partition(Gind)
-    #print(partition)
-    #modularity = community.modularity(partition, Gind)
-    #print(modularity)
-    #p = {}
-    #for i in partition.items():
-    #    if i[1] in p:
-    #        p[i[1]].append(i[0])
-    #    else:
-    #        p[i[1]] = list()
-    #        p[i[1]].append(i[0])
-
-    #for i in p.keys():
-    #    print len(p[i])
-
-    #for i in p.keys():
-    #    print [Gind.node[k]["text"] for k in p[i]]
+    return [len(p[i]) for i in p.keys()]
 
 
 
+def splitCluster(G, partition, x):
+    nodes = [i[0] for i in partition.items() if i[1] == x]
+    Gind = G.subgraph(nodes)
+    sub_partition = community.best_partition(Gind)
+    max_cluster = max(sub_partition.values())
+    sub_partition = dict({(i[0], i[1]+x) for i in sub_partition.items()})
+    return dict({i if i[1] < x else (i[0], sub_partition[i[0]]+1) if i[0] in sub_partition else (i[0], i[1]+
+                                                                        max_cluster+x+1) for i in partition.items()})
+ #1:0, 2:0, 3:1, 4:1, 5:1, 6:2
 
-G = read_cn_file('/tmp/Implementation-Build/bin/labels_full.cn')
-#for e in G.edges_iter(data=True):
-#    e[2]["weight"] = ((e[2]["weight"]) ** 2)
-G = G.subgraph(partition(G)[0])
-#print_all_edges(G)
-m = max([i[2]["weight"] for i in G.edges_iter(data=True)])
-#for e in G.edges_iter(data=True):
-#    e[2]["weight"] = ((e[2]["weight"]) ** 2)
 
-p = partition(G)
-print "p[0]"
-print [len(i) for i in p]
-#print_all_edges(G.subgraph(p[0]))
-#print "p[1]"
-#print_all_edges(G.subgraph(p[1]))
-#print "p[2]"
-#print_all_edges(G.subgraph(p[2]))
 
-#print [len(i) for i in partition(G)]
+if __name__ == "__main__":
+    print
+
+    G1 = read_cn_file('/tmp/Implementation-Build/bin/labels_full.cn')
+
+    p1 = partition(G1)
+    sizes = clustersSizes(p1)
+    ordered = sorted(range(len(sizes)), key=lambda k: sizes[k], reverse=True)
+    p1 = splitCluster(G1, p1, ordered[0])
+    print "Modularity: " + str(community.modularity(p1, G1))
+    sizes = clustersSizes(p1)
+    ordered = sorted(range(len(sizes)), key=lambda k: sizes[k], reverse=True)
+    p1 = splitCluster(G1, p1, ordered[0])
+    print "Modularity: " + str(community.modularity(p1, G1))
+
+
+    plt.plot(range(1, len(clustersSizes(p1))+1), sorted(clustersSizes(p1), reverse=True))
+    plt.xlabel("No. do Cluster")
+    plt.ylabel("Tamanho do Cluster")
+    #plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1)")
+    plt.title(u"Quantidade de nós para cada cluster (subclusterizando C1 e C2)")
+    plt.show()
+

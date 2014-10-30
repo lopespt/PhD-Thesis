@@ -7,7 +7,7 @@ LabelsComplexNetworkConstructor::LabelsComplexNetworkConstructor(ComplexNetwork<
 }
 
 void LabelsComplexNetworkConstructor::build(){
-
+    float alpha = 0.3;
     int counter=1;
     while(reader.hasNext() ){
         try{
@@ -41,11 +41,12 @@ void LabelsComplexNetworkConstructor::build(){
                             cn.addEdge(e);
                         }else{
                             Link l = e->getAttribute();
-                            l.setTime(t++);
-                            l.setWeight(l.getWeight()+1);
+                            l.setWeight( l.getWeight() + alpha*(3.0/(t-l.getTime()) - l.getWeight()));
+                            l.setTime(t);
                             e->setAttribute(l);
                         }
                     }
+                    t++;
                 }
             }
         }catch(exception e){
