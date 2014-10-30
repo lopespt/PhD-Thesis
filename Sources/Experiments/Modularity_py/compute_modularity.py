@@ -171,6 +171,7 @@ def clustering_hubs_experiment(G):
             print "%s (grau: %s), " % (Gind.node[order[j]]["text"], hubs[order[j]]),
         print "\n"
 
+
 def findNode(G, text):
     for i in G.nbunch_iter():
         if G.node[i]["text"].strip().lower() == text.strip().lower():

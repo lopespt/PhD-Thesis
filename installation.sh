@@ -1,3 +1,6 @@
+#Enable C++11
+
+echo 2 | sudo update-alternatives --config gcc
 #Install cmake
 dir=$PWD
 cd /tmp

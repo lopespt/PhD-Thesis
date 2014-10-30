@@ -10,13 +10,11 @@
 #include "Node.hpp"
 #include "Edge.hpp"
 #include <assert.h>
-#include <armadillo>
 
 /** \brief Rede Complexa
  *  \details Rede Complexa utilizando listas de adjacências
  * **/
 
-using namespace arma;
 
 template <class NODE_TYPE, class EDGE_TYPE>
 class ComplexNetwork{
