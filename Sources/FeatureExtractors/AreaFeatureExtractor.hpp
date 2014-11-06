@@ -2,17 +2,17 @@
 #ifndef AREA_FEATURE__HPP
 #define AREA_FEATURE__HPP
 
-#include "FeatureExtractor.hpp"
+#include "FeatureExtractorAbstract.hpp"
 #include "Region.hpp"
 
-class AreaFeatureExtractor:public FeatureExtractor{
+class AreaFeatureExtractor:public FeatureExtractorAbstract{
 
     private:
+        int discretization;
         void discretize(int quantization);
     public:
-        AreaFeatureExtractor(const int* discretization=NULL);
-        QVector<float> doExtraction(const Region* r, const int* discretization);
-        const char* getFeatureName();
+        AreaFeatureExtractor(int discretization);
+        FeatureAbstract* doExtraction(const Region* region);
 };
 
 #endif

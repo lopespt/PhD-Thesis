@@ -1,11 +1,12 @@
 
 #include "AreaFeatureExtractor.hpp"
+#include "AreaFeature.hpp"
 
-AreaFeatureExtractor::AreaFeatureExtractor(const int* discretization):FeatureExtractor(discretization){
+AreaFeatureExtractor::AreaFeatureExtractor(int discretization):FeatureExtractorAbstract(), discretization(discretization){
 }
 
-QVector<float> AreaFeatureExtractor::doExtraction(const Region *region,const int* discretization){
-    QVector<float> vect(1);
+FeatureAbstract* AreaFeatureExtractor::doExtraction(const Region* region){
+    float vect;
     region->getMask();
     float area = 0;
     bool ok;
@@ -16,15 +17,10 @@ QVector<float> AreaFeatureExtractor::doExtraction(const Region *region,const int
                area++;
         }
     }
-    vect[0] = area / (region->getBoundaryRect().width() * region->getBoundaryRect().height());
+    vect = area / (region->getBoundaryRect().width() * region->getBoundaryRect().height());
     //Discretization
 
-    for(int i=0;i<vect.size();i++)
-        vect[i] = ((int)(vect[i] * *discretization))/(float)*discretization;
-    return vect;
-}
-
-const char* AreaFeatureExtractor::getFeatureName(){
-    return "AreaFeature";
+    vect = ((int)(vect * discretization))/(float)discretization;
+    return new AreaFeature(vect);
 }
 

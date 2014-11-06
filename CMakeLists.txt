@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 2.4)
 
+if(POLICY CMP0020)
+      cmake_policy(SET CMP0020 NEW) 
+endif()
+
 IF(COMMAND cmake_policy)
       CMAKE_POLICY(SET CMP0003 NEW)
 ENDIF(COMMAND cmake_policy)

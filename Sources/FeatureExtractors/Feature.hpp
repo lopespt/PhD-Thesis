@@ -4,20 +4,32 @@
 
 #include <QVector>
 #include "Region.hpp"
+#include <string.h>
+#include "FeatureAbstract.hpp"
 
-class Feature{
+template <typename T>
+class Feature:public FeatureAbstract{
 
-    private:
-        const char *featureName;
-        QVector<float> vector;
+    protected:
+        T content;
 
     public:
-        const QVector<float> &getVector() const;
-        void printFeature() const;
-        bool operator<(const Feature& other) const;
-        Feature(const char* featureName, float *v, int n);
-        Feature(const char* featureName, QVector<float> &other);
-
+        const T &getContent() const;
+        Feature<T>(T value, const char* featureName);
+        virtual const char* asString(char *buffer) const;
+        virtual ~Feature(){}
 };
+
+template <typename T>
+Feature<T>::Feature(T value, const char* featureName):FeatureAbstract(featureName){
+    this->data = (void*) &content;
+    this->data_size = sizeof(T);
+    this->content = value;
+}
+
+template <typename T>
+const T& Feature<T>::getContent() const {
+    return this->content;
+}
 
 #endif

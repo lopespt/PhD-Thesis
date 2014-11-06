@@ -1,288 +1,211 @@
+#ifndef COMPLEXNETWORK_HPP
+#define COMPLEXNETWORK_HPP
 
-#ifndef COMPLEX_NETWORK__CPP
-#define COMPLEX_NETWORK__CPP
+#include <QHash>
+#include <QPair>
+#include <QMap>
+#include <QFile>
+
+typedef unsigned int node_id;
+typedef unsigned int edge_id;
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+class ComplexNetwork
+{
+private:
+    node_id current_node_id;
+    QHash< node_id, NODE_TYPE> nodes;
+    QHash< QPair< node_id, node_id>, EDGE_TYPE > edges;
+    QPair<node_id, node_id> createEdgeKey(node_id from, node_id to);
+    struct{
+        char description[200];
+        unsigned int num_nodes;
+        unsigned int num_edges;
+    }file_header;
 
 
-#include <list>
-#include <algorithm>
-#include <map>
-#include <cstring>
-#include "Node.hpp"
-#include "Edge.hpp"
-#include <assert.h>
-
-/** \brief Rede Complexa
- *  \details Rede Complexa utilizando listas de adjacências
- * **/
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-class ComplexNetwork{
-    public:
-        typedef Node<NODE_TYPE, EDGE_TYPE>* NodePtr;
-        typedef Edge<NODE_TYPE, EDGE_TYPE> * EdgePtr;
-        typedef typename std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr>::iterator edge_iterator;
-        typedef typename std::map<NODE_TYPE, NodePtr>::iterator node_iterator;
-
+public:
+    ComplexNetwork();
+    node_id addNode(const NODE_TYPE& n);
+    NODE_TYPE* getNode(node_id id);
+    bool removeNode(node_id id);
+    void addEdge(node_id from, node_id to, const EDGE_TYPE& e);
+    EDGE_TYPE* getEdge(node_id from, node_id to);
+    bool removeEdge(node_id from, node_id to);
+    class NodeIterator{
+        friend class ComplexNetwork<NODE_TYPE, EDGE_TYPE>;
     private:
-
-        std::map<NODE_TYPE, NodePtr> nodes;
-        std::multimap< std::pair< NodePtr, NodePtr>, EdgePtr, 
-           bool(*)(std::pair<NodePtr, NodePtr> , std::pair<NodePtr, NodePtr>) > edges;
-        static bool compare(std::pair< NodePtr, NodePtr> a, std::pair< NodePtr, NodePtr> b);
-
-        //Type for save and load ComplexNetwork
-        typedef struct{
-            unsigned int ComplexNetworkFileVersion;
-            unsigned long long int num_nodes;
-            unsigned long long int num_edges;
-        }ComplexNetwordFileHeader;
-        typedef struct{
-            unsigned long long int node_from;
-            unsigned long long int node_to;
-            char value[sizeof(EDGE_TYPE)];
-        }edge_data_type;
-        typedef struct{
-            unsigned long long int id;
-            char value[sizeof(NODE_TYPE)];
-        }node_data_type;
-
-
+        typename QHash< node_id, NODE_TYPE>::iterator iter;
+        NodeIterator(typename QHash< node_id, NODE_TYPE>::iterator iter):iter(iter){}
 
     public:
-        ComplexNetwork();
-        virtual ~ComplexNetwork();
+        NODE_TYPE& operator*(){
+            return iter.value();
+        }
+        NODE_TYPE* operator->(){
+            return &iter.value();
+        }
+        NodeIterator & operator++(){
+            this->iter++;
+            return *this;
+        }
+        NodeIterator & operator++(int i){
+            this->iter++;
+            return *this;
+        }
+        NodeIterator & operator--(){
+            this->iter--;
+            return *this;
+        }
+        bool operator!=(const NodeIterator& other) const{
+            return (this->iter != other.iter);
+        }
 
 
-        void addNode(NodePtr);
-        void addEdge(EdgePtr);
-        EdgePtr getEdge(NodePtr, NodePtr);
-        NodePtr getNode(NODE_TYPE);
-        node_iterator getNodesBeginIterator();
-        node_iterator getNodesEndIterator();
-        edge_iterator getEdgesBeginIterator();
-        edge_iterator getEdgesEndIterator();
-        edge_iterator getEdgesFromNode_LowerBound(NodePtr n);
-        edge_iterator getEdgesFromNode_UpperBound(NodePtr n);
-        unsigned long int getNodesCount() const;
-        unsigned long int getEdgesCount() const;
-        void save(const char *filename) const;
-        void load(const char *filename);
-        void clear();
+        node_id getNodeId() const{
+            return iter.key();
+        }
+    };
 
+    NodeIterator Begin();
+    NodeIterator End();
+
+    void save(const char * filename);
+    void load(const char * filename);
 
 };
 
-
-template <class NODE_TYPE, class EDGE_TYPE>
-ComplexNetwork<NODE_TYPE,EDGE_TYPE>::ComplexNetwork():edges( ComplexNetwork<NODE_TYPE, EDGE_TYPE>::compare ){
-}
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-void ComplexNetwork<NODE_TYPE,EDGE_TYPE>::addNode(NodePtr n){
-    if (this->nodes.find(n->getAttribute()) == this->nodes.end())
-        this->nodes[n->getAttribute()]=n;
-    else 
-        delete n;
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-void ComplexNetwork<NODE_TYPE,EDGE_TYPE>::addEdge(EdgePtr e){
-    std::pair< std::pair<NodePtr, NodePtr>, EdgePtr > v;
-    v.first = std::pair<NodePtr, NodePtr>(e->from, e->to);
-    v.second = e;
-    if(edges.find(v.first) == edges.end())
-        edges.insert(v);
-    else
-        delete e;
+template <typename NODE_TYPE, typename EDGE_TYPE>
+ComplexNetwork<NODE_TYPE, EDGE_TYPE>::ComplexNetwork():current_node_id(0){
 
 }
 
-template <class NODE_TYPE, class EDGE_TYPE>
-ComplexNetwork<NODE_TYPE, EDGE_TYPE>::~ComplexNetwork(){
-    //clear();
+template <typename NODE_TYPE, typename EDGE_TYPE>
+inline QPair<node_id, node_id> ComplexNetwork<NODE_TYPE, EDGE_TYPE>::createEdgeKey(node_id from, node_id to){
+    //TODO: directed and undirected network
+    //if undirected:
+    node_id f = from < to ? from : to;
+    node_id t = from < to ? to : from;
+    return QPair<node_id, node_id>(f,t);
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+node_id ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addNode(const NODE_TYPE& n){
+    node_id new_node_id = current_node_id;
+    current_node_id++;
+    nodes.insert(new_node_id, n);
+    return new_node_id;
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+NODE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNode(node_id id){
+    if(nodes.contains(id))
+        return &nodes[id];
+    return NULL;
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeNode(node_id id){
+    return nodes.remove(id) > 0;
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addEdge(node_id from, node_id to, const EDGE_TYPE &e){
+    edges.insert(createEdgeKey(from, to), e);
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+EDGE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdge(node_id from, node_id to){
+    if(edges.contains(createEdgeKey(from, to)))
+        return &edges[createEdgeKey(from, to)];
+    return NULL;
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeEdge(node_id from, node_id to){
+    return edges.remove(from, to)>0;
 }
 
 
-template <class NODE_TYPE, class EDGE_TYPE>
-bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::compare(std::pair< NodePtr, NodePtr> a, std::pair< NodePtr, NodePtr> b){
-    NodePtr a1 = a.first > a.second ? a.first : a.second;
-    NodePtr a2 = a.first > a.second ? a.second : a.first;
-    NodePtr b1 = b.first > b.second ? b.first : b.second;
-    NodePtr b2 = b.first > b.second ? b.second : b.first;
-    if(a2 == NULL || b2 == NULL)
-        return b1>a1;
+template <typename NODE_TYPE, typename EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::save(const char* filename){
+    QFile f(filename);
+    f.open(QIODevice::WriteOnly);
 
-    if(b1 != a1)
-       return b1>a1;
-    return b2>a2;
-}
+    strcpy(file_header.description,"");
+    file_header.num_nodes = nodes.size();
+    file_header.num_edges = edges.size();
+    f.write((char*)&file_header, sizeof(file_header));
 
+    //save nodes
+    typename QHash< node_id, NODE_TYPE>::iterator nodes_iter;
+    for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++ ){
+        f.write( (char*)&nodes_iter.key(), sizeof(node_id) );
+        f.write( (char*)&(nodes_iter.value()), sizeof(NODE_TYPE) );
+    }
 
-template <class NODE_TYPE, class EDGE_TYPE>
-Edge<NODE_TYPE, EDGE_TYPE>* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdge(NodePtr a, NodePtr b){
-   auto e= edges.find(std::pair<NodePtr, NodePtr>(a, b));
-   if(e != edges.end())
-       return e->second;
-   else 
-       return NULL;
-}
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-Node<NODE_TYPE, EDGE_TYPE>* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNode(NODE_TYPE attribute){
-   auto n = nodes.find(attribute);
-   if(n != nodes.end())
-       return n->second;
-   else 
-       return NULL;
-}
-
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::node_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesBeginIterator(){
-    return nodes.begin();
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::node_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesEndIterator(){
-    return nodes.end();
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesBeginIterator(){
-    return edges.begin();
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesEndIterator(){
-    return edges.end();
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesFromNode_LowerBound(NodePtr n){
-    return edges.lower_bound( std::pair<NodePtr, NodePtr>(n, NULL) );
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::edge_iterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesFromNode_UpperBound(NodePtr n){
-    return edges.upper_bound( std::pair<NodePtr, NodePtr>(n, NULL) );
-}
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNodesCount() const{
-    return this->nodes.size();
-}
-
-/**
- * Retorna o numero de arestas do grafo
- */
-template <class NODE_TYPE, class EDGE_TYPE>
-unsigned long int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgesCount() const{
-    return this->edges.size();
-}
-
-
-template <class NODE_TYPE, class EDGE_TYPE>
-void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::save(const char *filename) const{
-    unsigned long long int last_id = 0ull;
-    std::map< NodePtr, unsigned long long int> ids;
-    ComplexNetwordFileHeader header;
-    header.ComplexNetworkFileVersion = 1;
-    header.num_nodes = this->getNodesCount();
-    header.num_edges = this->getEdgesCount();
-
-    node_data_type node_data;
-    edge_data_type edge_data;
-
-    FILE* f = fopen(filename, "wb");
-
-    //Save the header
-    fwrite(&header,sizeof(ComplexNetwordFileHeader), 1, f);
-
-
-    for(auto n=this->nodes.begin(); n != this->nodes.end(); n++){
-        node_data.id = last_id;
-        memcpy(node_data.value, &(n->second->attribute), sizeof(NODE_TYPE));
-        ids[n->second] = last_id;
-        fwrite(&node_data, sizeof(node_data_type), 1, f);
-        last_id++;
+    //save edges
+    typename QHash< QPair< node_id, node_id>, EDGE_TYPE >::iterator edges_iter;
+    for(edges_iter = edges.begin(); edges_iter!=edges.end();edges_iter++){
+        f.write((char*)&edges_iter.key().first, sizeof(node_id));
+        f.write((char*)&edges_iter.key().second, sizeof(node_id));
+        f.write((char*)&edges_iter.value(), sizeof(EDGE_TYPE));
     }
 
 
-    for(auto e = this->edges.begin(); e != this->edges.end(); e++){
-        edge_data.node_from = ids.find(e->second->from)->second;
-        edge_data.node_to = ids.find(e->second->to)->second;
-        memcpy(edge_data.value, &(e->second->attribute), sizeof(EDGE_TYPE));
-        fwrite(&edge_data, sizeof(edge_data_type), 1, f);
-    }
-
-    fclose(f);
+    f.close();
 }
 
-template <class NODE_TYPE, class EDGE_TYPE>
-void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char *filename){
-    clear();
-    std::map< unsigned long long int, NodePtr> ids;
-    ComplexNetwordFileHeader header;
-    int leitura_ok;
 
-    NodePtr newNode;
-    EdgePtr newEdge;
-    FILE* f = fopen(filename, "rb");
-    leitura_ok = fread(&header, sizeof(header), 1, f);
-    assert(leitura_ok==1);
+template <typename NODE_TYPE, typename EDGE_TYPE>
+void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char* filename){
+    QFile f(filename);
+    f.open(QIODevice::ReadOnly);
 
-    node_data_type node_data;
-    edge_data_type edge_data;
+    current_node_id = 0;
+    f.read( (char*)&file_header, sizeof(file_header) );
 
-
-    //Read Nodes
-    for(int i=0;i<header.num_nodes;i++){
-        leitura_ok = fread(&node_data, sizeof(node_data), 1, f);
-        assert(leitura_ok==1);
-        newNode = new Node<NODE_TYPE, EDGE_TYPE>;
-        memcpy(&(newNode->attribute), node_data.value, sizeof(NODE_TYPE));
-        this->addNode(newNode);
-        ids[node_data.id] = newNode;
+    //save nodes
+    typename QHash< node_id, NODE_TYPE>::iterator nodes_iter;
+    for( unsigned int n = 0; n < file_header.num_nodes; n++ ){
+        node_id id;
+        NODE_TYPE node;
+        f.write( (char*)&id, sizeof(node_id) );
+        f.write( (char*)&(node), sizeof(NODE_TYPE) );
+        nodes.insert(id, node);
+        if(id >= current_node_id)
+            current_node_id = id+1;
     }
 
-    for(int i=0;i<header.num_edges;i++){
-        leitura_ok = fread(&edge_data, sizeof(edge_data), 1, f);
-        assert(leitura_ok==1);
-        newEdge = new Edge<NODE_TYPE, EDGE_TYPE>;
-        memcpy(&(newEdge->attribute), edge_data.value, sizeof(EDGE_TYPE));
-        newEdge->from = ids[edge_data.node_from];
-        newEdge->to = ids[edge_data.node_to];
-        this->addEdge(newEdge);
+    //save edges
+    typename QHash< QPair< node_id, node_id>, EDGE_TYPE >::iterator edges_iter;
+    for(edges_iter = edges.begin(); edges_iter!=edges.end();edges_iter++){
+        node_id from, to;
+        EDGE_TYPE edge;
+        f.write((char*)&(from), sizeof(node_id));
+        f.write((char*)&(to), sizeof(node_id));
+        f.write((char*)&(edge), sizeof(EDGE_TYPE));
+        edges.insert(createEdgeKey(from, to), edge);
     }
 
 
-}
-
-template <class NODE_TYPE, class EDGE_TYPE>
-void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::clear(){
-    std::for_each(this->edges.begin(), this->edges.end(),
-            []( std::pair< std::pair<NodePtr, NodePtr>,  EdgePtr > el ){
-                delete el.second;
-            });
-
-    edges.clear();
-
-
-    std::for_each(nodes.begin(), nodes.end(),
-            [](std::pair< NODE_TYPE, NodePtr> el){
-                delete el.second;
-            });
-
-    nodes.clear();
+    f.close();
 
 }
 
-#endif
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::Begin(){
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.begin());
+}
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::End(){
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.end());
+}
+#endif // COMPLEXNETWORK_HPP
+
+
 
 
 

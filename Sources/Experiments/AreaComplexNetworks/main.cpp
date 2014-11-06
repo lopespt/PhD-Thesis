@@ -11,10 +11,9 @@ int main(int argc, char* argv[]){
 
     SunDatabaseReader reader("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial");
 
-    ComplexNetwork<Feature, Link> cn;
-    int discretization = 5;
-    AreaFeatureExtractor area(&discretization);
-    QList<FeatureExtractor*> features;
+    ComplexNetwork<FeatureAbstract, Link> cn;
+    AreaFeatureExtractor area(5);
+    QList<FeatureExtractorAbstract*> features;
     features.append(&area);
     ComplexNetworkConstructor constructor(cn, reader, features);
     constructor.build();

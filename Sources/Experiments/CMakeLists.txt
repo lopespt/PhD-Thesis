@@ -11,8 +11,8 @@ INCLUDE(${VTK_USE_FILE})
 SET(CMAKE_AUTOMOC ON)
 
 
-ADD_SUBDIRECTORY(LabelsComplexNetworks)
-ADD_SUBDIRECTORY(AreaComplexNetworks)
-ADD_SUBDIRECTORY(ComplexNetworkVisualizer)
-ADD_SUBDIRECTORY(ComplexNetworkToMatlabFile)
-ADD_SUBDIRECTORY(DatabaseVisualizer)
+#ADD_SUBDIRECTORY(LabelsComplexNetworks)
+#ADD_SUBDIRECTORY(AreaComplexNetworks)
+#ADD_SUBDIRECTORY(ComplexNetworkVisualizer)
+#ADD_SUBDIRECTORY(ComplexNetworkToMatlabFile)
+#ADD_SUBDIRECTORY(DatabaseVisualizer)

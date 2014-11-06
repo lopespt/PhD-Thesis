@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include <Utilities/NodeString.hpp>
+#include <FeatureExtractors/FeatureAbstract.hpp>
 #include <QVTKWidget2.h>
 #include <QVTKWidget.h>
 #include <QVBoxLayout>
@@ -38,7 +38,7 @@ class ComplexNetworkViewerWidget : public QWidget
 {
     Q_OBJECT
 private:
-    ComplexNetwork<NodeString, Link> *cn;
+    ComplexNetwork<FeatureAbstract, Link> *cn;
     QVTKWidget2 *vtkWidget;
     vtkRenderer *vRenderer;
     vtkGraphLayoutView *viewer;
@@ -48,7 +48,7 @@ private:
     void createVtkPipeline();
 public:
     explicit ComplexNetworkViewerWidget(QWidget *parent = 0);
-    void setComplexNetwork(ComplexNetwork<NodeString, Link> &cn);
+    void setComplexNetwork(ComplexNetwork<FeatureAbstract, Link> &cn);
     virtual ~ComplexNetworkViewerWidget();
 
 signals:

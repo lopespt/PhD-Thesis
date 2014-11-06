@@ -15,6 +15,7 @@ DatabaseVisualizerWidget::DatabaseVisualizerWidget(DatabaseReader* reader, QWidg
     QVBoxLayout *layout = new QVBoxLayout;
     this->setLayout(layout);
 
+
     this->btnPrevious = new QPushButton("Previous");
     this->btnNext = new QPushButton("Next");
     this->viewer = new SupervisedImageViewerWidget;

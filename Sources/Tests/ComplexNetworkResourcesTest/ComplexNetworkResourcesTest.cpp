@@ -22,7 +22,7 @@ class node_t{
 };
 
 int memoryInUse(){
-    FILE *f = popen("ps -e -o rss -o comm|grep PhD", "r");
+    FILE *f = popen("ps -e -o rss -o comm|grep ComplexNetworkResourcesTest", "r");
     int res;
     fscanf(f, "%d", &res);
     pclose(f);
@@ -32,10 +32,10 @@ int memoryInUse(){
 void initTest(long int num_nodes, long int max_edges){
     
 
-    for(long int nn = 2000; nn <= num_nodes; nn+= 2000){
+    for(long int nn = 2000; nn <= num_nodes; nn+= 20000){
         ComplexNetwork<node_t, int> cn;
         for(int i=0;i< nn;i++){
-            cn.addNode(new Node<node_t, int>(node_t(i,i+1)));
+            cn.addNode(node_t(i,i+1));
         }
 
         std::srand(time(NULL));
@@ -47,7 +47,7 @@ void initTest(long int num_nodes, long int max_edges){
         for(long int  i=0; i < max && density<100  ;i++){
             int a = rand()%nn;
             int b = rand()%nn;
-            cn.addEdge(new Edge<node_t, int>(cn.getNode(node_t(a,a+1)), cn.getNode(node_t(b,b+1)), a+b));
+            cn.addEdge(a, b, a+b);
             density = (i+1)*2./((nn+1)*nn)*100;
             if( density != last_density  ){
                 last_density = density;
@@ -61,6 +61,7 @@ void initTest(long int num_nodes, long int max_edges){
 }
 
 int main(){
+    initTest(5000000, 100000000);
     return 0;
 }
 

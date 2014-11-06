@@ -7,7 +7,6 @@
 #include <GuiUtilities/SupervisedImageViewerWidget.hpp>
 #include <QApplication>
 #include "AreaFeatureExtractionWindow.hpp"
-#include <FeatureExtractors/HsvHistFeatureExtractor.hpp>
 #include <QString>
 
 const char *helpText=\
@@ -24,15 +23,11 @@ int main(int argc, char* argv[]){
     }
     QApplication app(argc,argv);
 
-    int discretization=5;
-    AreaFeatureExtractor e(&discretization);
+    AreaFeatureExtractor e(5);
     SunDatabaseReader reader( (QString(argv[1])) );
     SupervisedImage s = reader.readNext();
 
-    HsvHistFeatureExtractor hsv(&discretization);
-    hsv.doExtraction(&(s.getRegions()[0]), &discretization);
-
-    QVector<float> v = e.doExtraction(&(s.getRegions()[0]), &discretization);
+    FeatureAbstract* v = e.doExtraction(&(s.getRegions()[0]));
     AreaFeatureExtractionWindow win(argv[1]);
     win.setVisible(true);
 

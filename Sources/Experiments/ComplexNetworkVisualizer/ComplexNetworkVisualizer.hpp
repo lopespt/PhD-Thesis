@@ -6,12 +6,13 @@
 #include <Utilities/NodeString.hpp>
 #include <ComplexNetworkViewerWidget.hpp>
 #include <QVBoxLayout>
+#include <FeatureExtractors/FeatureAbstract.hpp>
 
 class ComplexNetworkVisualizer : public QMainWindow
 {
     Q_OBJECT
 private:
-    ComplexNetwork<NodeString, Link> cn;
+    ComplexNetwork<FeatureAbstract, Link> cn;
     ComplexNetworkViewerWidget *viewer;
 public:
     explicit ComplexNetworkVisualizer(QWidget *parent = 0);

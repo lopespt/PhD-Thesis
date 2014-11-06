@@ -2,33 +2,40 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true">
     <generated>
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
-      <config projectName="PhDThesis" targetName="Utilities_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
-      <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
-      <config projectName="PhDThesis" targetName="GuiUtilities" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors" />
-      <config projectName="PhDThesis" targetName="SegmenterTest" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
-      <config projectName="PhDThesis" targetName="Utilities" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
-      <config projectName="PhDThesis" targetName="Segmentation" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetwork" />
       <config projectName="PhDThesis" targetName="Visualizer_automoc" />
-      <config projectName="PhDThesis" targetName="Visualizer" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
+      <config projectName="PhDThesis" targetName="GuiUtilities" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors" />
+      <config projectName="PhDThesis" targetName="Utilities_automoc" />
+      <config projectName="PhDThesis" targetName="DatabaseVisualizer" />
       <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
+      <config projectName="PhDThesis" targetName="Utilities" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
+      <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
+      <config projectName="PhDThesis" targetName="Segmentation" />
+      <config projectName="PhDThesis" targetName="SegmenterTest" />
+      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
+      <config projectName="PhDThesis" targetName="Visualizer" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetwork" />
+      <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
     </generated>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.cpp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureExtractor.cpp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureExtractor.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureExtractor.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -52,118 +59,7 @@
     <favorites_list name="Implementacao" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="LabelsComplexNetworkConstructor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="870">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-              <folding>
-                <marker date="1413561798000" expanded="true" signature="250:1846" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexNetworkViewerWidget.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1980">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <marker date="1413989176000" expanded="true" signature="229:551" placeholder="{...}" />
-                <marker date="1413989176000" expanded="true" signature="4624:4626" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Node.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/Node.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="1395">
-              <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
-              <folding>
-                <element signature="e#1603#1637#0" expanded="true" />
-                <marker date="1413248743000" expanded="true" signature="200:893" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexNetworkToMatlabFile.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlabFile.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="585">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexNetworkToMatlab.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="804">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gMainWindow.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1890">
-              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
-              <caret line="5" column="104" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LabelsComplexNetworkConstructor.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -387,7 +283,23 @@
       <envs />
       <method />
     </configuration>
-    <list size="22">
+    <configuration default="false" name="AreaComplexNetworkExperiment" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="AreaComplexNetworkExperiment" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AreaComplexNetworkExperiment_automoc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="AreaComplexNetworkExperiment_automoc" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DatabaseVisualizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="DatabaseVisualizer" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DatabaseVisualizer_automoc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="DatabaseVisualizer_automoc" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="26">
       <item index="0" class="java.lang.String" itemvalue="Application.AreaFeatureExtractionTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.AreaFeatureExtractionTest_automoc" />
       <item index="2" class="java.lang.String" itemvalue="Application.ComplexNetwork" />
@@ -410,6 +322,10 @@
       <item index="19" class="java.lang.String" itemvalue="Application.Visualizer_automoc" />
       <item index="20" class="java.lang.String" itemvalue="Application.ComplexNetworkToMatlabFile" />
       <item index="21" class="java.lang.String" itemvalue="Application.ComplexNetworkToMatlabFile_automoc" />
+      <item index="22" class="java.lang.String" itemvalue="Application.AreaComplexNetworkExperiment" />
+      <item index="23" class="java.lang.String" itemvalue="Application.AreaComplexNetworkExperiment_automoc" />
+      <item index="24" class="java.lang.String" itemvalue="Application.DatabaseVisualizer" />
+      <item index="25" class="java.lang.String" itemvalue="Application.DatabaseVisualizer_automoc" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -453,22 +369,43 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27228916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26779422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2716346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26779422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3385542" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987952" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27228916" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3385542" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26779422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987952" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -493,14 +430,100 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="870">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <marker date="1414635797000" expanded="true" signature="250:2477" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1980">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1413989176000" expanded="true" signature="229:551" placeholder="{...}" />
+            <marker date="1413989176000" expanded="true" signature="4624:4626" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/Node.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="1395">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <element signature="e#1603#1637#0" expanded="true" />
+            <marker date="1413248743000" expanded="true" signature="200:893" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlabFile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="585">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="765">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1890">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="180">
+          <caret line="5" column="104" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="780">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="e#102#146#0" expanded="true" />
-            <marker date="1413490455000" expanded="true" signature="1157:1163" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -509,7 +532,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="870">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
-            <marker date="1413561798000" expanded="true" signature="250:1846" placeholder="{...}" />
+            <marker date="1414635797000" expanded="true" signature="250:2477" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -590,10 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="780">
           <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#102#146#0" expanded="true" />
-            <marker date="1413490455000" expanded="true" signature="1157:1163" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,7 +628,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="870">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
-            <marker date="1413561798000" expanded="true" signature="250:1846" placeholder="{...}" />
+            <marker date="1414635797000" expanded="true" signature="250:2477" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -721,10 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="780">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="e#102#146#0" expanded="true" />
-            <marker date="1413490455000" expanded="true" signature="1157:1163" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,32 +757,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="5" column="104" selection-start-line="5" selection-start-column="104" selection-end-line="5" selection-end-column="104" />
+        <state vertical-scroll-proportion="0.1119403" vertical-offset="0" max-vertical-offset="804">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state vertical-scroll-proportion="0.41044775" vertical-offset="0" max-vertical-offset="804">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -775,10 +775,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkConstructor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="870">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1020">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
-            <marker date="1413561798000" expanded="true" signature="250:1846" placeholder="{...}" />
+            <marker date="1414635797000" expanded="true" signature="250:2477" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -814,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="465">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -840,8 +840,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29850745" vertical-offset="0" max-vertical-offset="804">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5522388" vertical-offset="666" max-vertical-offset="1890">
+          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
           <folding />
         </state>
       </provider>

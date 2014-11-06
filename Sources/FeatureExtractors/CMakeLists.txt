@@ -5,7 +5,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 
 
 
-FILE(GLOB_RECURSE Source_Files  *.cpp)
+FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 ADD_LIBRARY(FeatureExtractors ${Source_Files})
 TARGET_LINK_LIBRARIES(FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES})
 
