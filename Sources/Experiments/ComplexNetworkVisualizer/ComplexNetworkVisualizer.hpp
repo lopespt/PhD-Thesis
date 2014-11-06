@@ -12,7 +12,7 @@ class ComplexNetworkVisualizer : public QMainWindow
 {
     Q_OBJECT
 private:
-    ComplexNetwork<FeatureAbstract, Link> cn;
+    ComplexNetwork<FeatureAbstract*, Link> cn;
     ComplexNetworkViewerWidget *viewer;
 public:
     explicit ComplexNetworkVisualizer(QWidget *parent = 0);

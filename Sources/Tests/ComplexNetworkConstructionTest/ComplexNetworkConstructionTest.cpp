@@ -6,6 +6,7 @@
 #include <FeatureExtractors/AreaFeatureExtractor.hpp>
 #include <locale>
 #include <FeatureExtractors/FeatureAbstract.hpp>
+#include <Utilities/FeaturesComplexNetwork.hpp>
 
 int main(int argc, char **argv){
 
@@ -19,7 +20,7 @@ int main(int argc, char **argv){
     QList<FeatureExtractorAbstract*> extractors;
     extractors.append(&feat);
 
-    ComplexNetwork<const FeatureAbstract*, Link> cn;
+    FeaturesComplexNetwork cn;
     SunDatabaseReader r("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/Sun1/");
     ComplexNetworkConstructor constructor(cn, r, extractors);
     constructor.build();

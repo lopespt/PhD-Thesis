@@ -48,10 +48,18 @@ cv::Mat Region::getCvImage() const{
 }
 
 cv::Mat Region::getMask() const{
-    QImage newImg = this->image->convertToFormat(QImage::Format_RGB888);
-    cv::Mat ret= cv::Mat(this->image->height(), this->image->width(), CV_8UC3, newImg.bits(), newImg.bytesPerLine()).clone();
-    cv::cvtColor(ret,ret, CV_RGB2BGR);
-    return ret;
+   cv::Mat img(this->image->size().height(), this->image->size().width(), CV_8UC1 );
+   img = cvScalar(0);
+   int size = boundary.size();
+   cv::Point *poly1 = new cv::Point[size];
+   for(int i=0;i<boundary.size();i++){
+       poly1[i].x = boundary[i].x();
+       poly1[i].y = boundary[i].y();
+   }
+   const cv::Point *points[1] = { poly1 };
+   cv::fillPoly(img, points, &size,1, cvScalar(255));
+   delete[] poly1;
+   return img;
 }
 
 Region::~Region(){

@@ -12,7 +12,7 @@ typedef unsigned int edge_id;
 template <typename NODE_TYPE, typename EDGE_TYPE>
 class ComplexNetwork
 {
-private:
+protected:
     node_id current_node_id;
     QHash< node_id, NODE_TYPE> nodes;
     QHash< QPair< node_id, node_id>, EDGE_TYPE > edges;
@@ -166,12 +166,11 @@ void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char* filename){
     f.read( (char*)&file_header, sizeof(file_header) );
 
     //save nodes
-    typename QHash< node_id, NODE_TYPE>::iterator nodes_iter;
     for( unsigned int n = 0; n < file_header.num_nodes; n++ ){
         node_id id;
         NODE_TYPE node;
-        f.write( (char*)&id, sizeof(node_id) );
-        f.write( (char*)&(node), sizeof(NODE_TYPE) );
+        f.read( (char*)&id, sizeof(node_id) );
+        f.read( (char*)&(node), sizeof(NODE_TYPE) );
         nodes.insert(id, node);
         if(id >= current_node_id)
             current_node_id = id+1;

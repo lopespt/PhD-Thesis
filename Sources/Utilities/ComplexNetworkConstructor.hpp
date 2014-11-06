@@ -12,6 +12,7 @@
 #include "Link.hpp"
 #include <QHash>
 #include <unordered_map>
+#include <Utilities/FeaturesComplexNetwork.hpp>
 
 using namespace std;
 
@@ -19,10 +20,9 @@ class ComplexNetworkConstructor{
 
     private:
 
-        typedef ComplexNetwork<const FeatureAbstract*, Link> t_cn;
         QHash<FeatureAbstractKey , node_id> index;
 
-        t_cn &cn;
+        FeaturesComplexNetwork &cn;
         DatabaseReader &reader;
         QList<FeatureExtractorAbstract*> extractors;
         unsigned long long int time=1;
@@ -33,12 +33,12 @@ class ComplexNetworkConstructor{
         float learningRate=0.3;
 
     public:
-        ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract*> extractors);
+        ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract*> extractors);
         void build();
 
 };
 
-ComplexNetworkConstructor::ComplexNetworkConstructor(t_cn &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract *> extractors):cn(cn),
+ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract *> extractors):cn(cn),
     reader(reader),
     extractors(extractors)
 {
@@ -88,8 +88,6 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
     for(QLinkedList<node_id>::const_iterator it1=nodes.begin();  it1!=nodes.end(); it1++){
         for(QLinkedList<node_id>::const_iterator it2=it1+1; it2!=nodes.end(); it2++){
            Link *e = cn.getEdge( *it1, *it2 );
-
-
                 if(e){
                     delta_t = this->time - e->getTime();
                     assert(delta_t>0);

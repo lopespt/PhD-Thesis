@@ -4,6 +4,7 @@
 #include <QtGlobal>
 
 class FeatureAbstractKey;
+class FeaturesComplexNetwork;
 class FeatureAbstract{
     protected:
         const char *featureName;
@@ -22,6 +23,7 @@ class FeatureAbstract{
         bool operator==(const FeatureAbstract& other) const;
 
         friend uint qHash(const FeatureAbstractKey& v);
+        friend class FeaturesComplexNetwork;
 
 };
 
