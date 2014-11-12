@@ -12,8 +12,11 @@ private:
     virtual void load(const char *filename){}
 public:
     FeaturesComplexNetwork();
+    ~FeaturesComplexNetwork();
     void save(const char* filename);
     void load(const char* filename, QList<FeatureFactoryAbstract*>);
+    void clear();
+
 };
 
 #endif // FEATURESCOMPLEXNETWORK_HPP

@@ -50,12 +50,6 @@ int main(int argc, char **argv){
     printf("nodes = %u\n", cn.getNumNodes());
     printf("edges = %u\n", cn.getNumEdges());
 
-    for(i=cn.Begin(); i!=cn.End();i++){
-        for(auto j=cn.edges[i.getNodeId()].begin(); j!= cn.edges[i.getNodeId()].end();j++){
-           printf("peso: %f\n", cn.edge[*j].getWeight());
-        }
-        printf("%s\n",(*i)->asString(buffer));
-    }
 
     fflush(stdout);
 

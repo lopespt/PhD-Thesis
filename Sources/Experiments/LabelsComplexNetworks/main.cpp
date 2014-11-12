@@ -47,6 +47,7 @@ int main(int argc, char **argv){
     printf("%u\n", labels_cn.getNumNodes());
     printf("%u", labels_cn.getNumEdges());
 
+
     labels_cn.save(parser.value("o").toStdString().c_str());
     return 0;
 

@@ -100,3 +100,18 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
 
     f.close();
 }
+
+void FeaturesComplexNetwork::clear(){
+
+    typename QHash<node_id, const FeatureAbstract*>::iterator nodes_iter;
+    for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++ ){
+        delete *nodes_iter;
+    }
+    nodes.clear();
+    edges.clear();
+    edge.clear();
+}
+
+FeaturesComplexNetwork::~FeaturesComplexNetwork(){
+    clear();
+}

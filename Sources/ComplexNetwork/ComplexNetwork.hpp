@@ -19,6 +19,8 @@ protected:
     edge_id current_edge_id;
     bool directed;
     QHash< node_id, NODE_TYPE> nodes;
+    QHash< node_id, QHash<node_id, edge_id> > edges;
+    QHash< edge_id, EDGE_TYPE> edge;
     QPair<node_id, node_id> createEdgeKey(node_id from, node_id to);
     struct{
         char description[200];
@@ -28,8 +30,6 @@ protected:
 
 
 public:
-    QHash< node_id, QHash<node_id, edge_id> > edges;
-    QHash< edge_id, EDGE_TYPE> edge;
     ComplexNetwork(bool directed=false);
     node_id addNode(const NODE_TYPE& n);
     NODE_TYPE* getNode(node_id id);
@@ -37,7 +37,7 @@ public:
     void addEdge(node_id from, node_id to, const EDGE_TYPE& e);
     EDGE_TYPE* getEdge(node_id from, node_id to);
     bool removeEdge(node_id from, node_id to);
-    void clear();
+    virtual void clear();
     unsigned int getNumNodes() const;
     unsigned int getNumEdges() const;
 
