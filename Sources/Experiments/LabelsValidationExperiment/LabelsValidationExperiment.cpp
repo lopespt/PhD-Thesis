@@ -2,7 +2,7 @@
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <QList>
 #include <time.h>
-LabelsValidationExperiment::LabelsValidationExperiment()
+LabelsValidationExperiment::LabelsValidationExperiment(QString sunDatabaseFolder, QString complexNetworkFile):sunDatabaseFolder(sunDatabaseFolder), complexNetworkFile(complexNetworkFile)
 {
 }
 
@@ -10,13 +10,13 @@ void LabelsValidationExperiment::run(){
     QList<FeatureFactoryAbstract*> Factories;
     LabelFeatureFactory labelFactory;
     Factories.append(&labelFactory);
-    cn.load("/tmp/Implementation-Build/bin/complex_network.cn", Factories);
+    cn.load(complexNetworkFile, Factories);
     for(int teste=0;teste<50;teste++){
     qsrand(time(NULL));
     LabelGuesser l(&cn);
     int total=1;
     int acertos = 0;
-    SunDatabaseReader reader("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/SunDatabasePartial/");
+    SunDatabaseReader reader(sunDatabaseFolder);
     while(reader.hasNext()){
         SupervisedImage img = reader.readNext();
         if(l.Guess(&img, qrand()%img.getRegions().size())){

@@ -8,9 +8,10 @@ class LabelsValidationExperiment
 {
 private:
     FeaturesComplexNetwork cn;
+    Qstring sunDatabaseFolder, complexNetworkFile;
 
 public:
-    LabelsValidationExperiment();
+    LabelsValidationExperiment(QString sunDatabaseFolder, QString complexNetworkFile);
     void run();
 };
 
