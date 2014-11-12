@@ -31,6 +31,7 @@ class ComplexNetworkConstructor{
         float lambda=1; 
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
         float learningRate=0.3;
+        float recorrencia(float time);
 
     public:
         ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureFactoryAbstract*> extractors);
@@ -94,8 +95,8 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     weight = e->getWeight();
                     //e->setAttribute(Link(0,weight+1));
                     e->setTime(this->time);
-                    //e->setWeight(weight + learningRate*(1.0 + lambda / delta_t*1.0) - weight);
-                    e->setWeight(weight + 1);
+                    e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                    //e->setWeight(weight + 1);
                 }else{
                     Link l = Link(this->time, 1 );
                     //e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
@@ -105,6 +106,11 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
             this->time++;
         }
     }
+}float ComplexNetworkConstructor::recorrencia(float time){
+    float ma=1;
+    float mi=0.01;
+    float z=8;
+    return (ma-mi)*pow(2,(1-time)/(z-1))+mi;
 }
 
 

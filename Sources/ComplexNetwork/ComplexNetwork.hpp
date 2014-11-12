@@ -156,6 +156,8 @@ public:
     EdgeIterator EdgesBegin();
     EdgeIterator EdgesEnd();
 
+    unsigned int getNumEdges(node_id) const;
+
 
     void save(const char * filename);
     void load(const char * filename);
@@ -348,6 +350,13 @@ template <typename NODE_TYPE, typename EDGE_TYPE>
 unsigned int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges() const{
     return edge.size();
 }
+
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+unsigned int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges(node_id id) const{
+    return edges[id].size();
+}
+
 #endif // COMPLEXNETWORK_HPP
 
 

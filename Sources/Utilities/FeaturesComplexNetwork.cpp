@@ -94,6 +94,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
         f.read((char*)&(edgeid), sizeof(edge_id));
         f.read((char*)&(edge_value), sizeof(Link));
         edges[from].insert(to, edgeid);
+        edges[to].insert(from, edgeid);
         edge.insert(edgeid, edge_value);
     }
 
