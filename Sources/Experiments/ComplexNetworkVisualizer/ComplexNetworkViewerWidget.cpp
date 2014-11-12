@@ -5,6 +5,7 @@
 #include <vtkProperty.h>
 #include <vtkProperty2D.h>
 #include <vtkTextProperty.h>
+#include <FeatureExtractors/FeatureAbstract.hpp>
 ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
     QWidget(parent)
 {
@@ -20,24 +21,27 @@ ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
     vRenderer->SetBackground(0.3,0.4,0.5);
 }
 
-void ComplexNetworkViewerWidget::setComplexNetwork(ComplexNetwork<NodeString, Link> &cn){
+void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn){
     this->cn = &cn;
-    QMap<Node<NodeString, Link>*, vtkIdType> vertices;
+    char buffer[100];
+    QMap<const FeatureAbstract* , vtkIdType> vertices;
     vtkFloatArray *array = vtkFloatArray::New();
     vtkStringArray *array2 = vtkStringArray::New();
     array->SetName("pesos");
     array2->SetName("nomes");
-    for(ComplexNetwork<NodeString, Link>::node_iterator it = this->cn->getNodesBeginIterator(); it!=this->cn->getNodesEndIterator(); it++){
+
+    for(FeaturesComplexNetwork::NodeIterator it = this->cn->Begin(); it!=this->cn->End(); it++){
         vtkIdType node_id = this->graph->AddVertex();
-        vertices[it->second] = node_id;
-        array2->InsertValue(node_id, it->second->getAttribute().text);
+        vertices[*it] = node_id;
+        array2->InsertValue(node_id, (*it)->asString(buffer));
     }
 
-    for(ComplexNetwork<NodeString, Link>::edge_iterator it = this->cn->getEdgesBeginIterator(); it!=this->cn->getEdgesEndIterator(); it++){
-        Edge<NodeString, Link> *edge;
-        edge=it->second;
-        vtkEdgeType edgeId = this->graph->AddEdge(vertices[edge->getFromNode()], vertices[edge->getToNode()]);
-        array->InsertValue(edgeId.Id, edge->getAttribute().getWeight());
+
+    for(FeaturesComplexNetwork::NodeIterator i = this->cn->Begin(); i!=this->cn->End(); i++){
+        for(FeaturesComplexNetwork::EdgeIterator it = this->cn->EdgesBegin(i.getNodeId()); it!=this->cn->EdgesEnd(i.getNodeId()); it++){
+            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ *this->cn->getNode(i.getNodeId())], vertices[*this->cn->getNode(it.getToNodeId())]);
+            array->InsertValue(edgeId.Id, it->getWeight());
+        }
     }
     this->graph->GetEdgeData()->AddArray(array);
     this->graph->GetVertexData()->AddArray(array2);
@@ -84,7 +88,7 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     lc->AddHSVPoint(1000,1,1,1);
     edgesMapper->SetColorModeToMapScalars();
     edgesMapper->SetLookupTable(lc);
-    actor->GetProperty()->SetOpacity(0.05);
+    actor->GetProperty()->SetOpacity(0.5);
     actor->GetProperty()->SetColor(0.4,0.6,0);
     //edgesMapper->SetScalarModeToDefault();
 

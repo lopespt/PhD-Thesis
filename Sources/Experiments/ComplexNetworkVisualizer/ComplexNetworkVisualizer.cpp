@@ -1,7 +1,7 @@
 #include "ComplexNetworkVisualizer.hpp"
 #include <Utilities/ComplexNetworkConstructor.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
-#include "../LabelsComplexNetworks/LabelsComplexNetworkConstructor.cpp"
+
 ComplexNetworkVisualizer::ComplexNetworkVisualizer(QWidget *parent) :
     QMainWindow(parent)
 {
@@ -10,10 +10,10 @@ ComplexNetworkVisualizer::ComplexNetworkVisualizer(QWidget *parent) :
 }
 
 
-void ComplexNetworkVisualizer::load(const QString &file){
-    cn.load(file.toStdString().c_str());
-    printf("Total Nodes: %lu\n", cn.getNodesCount());
-    printf("Total Edges: %lu\n", cn.getEdgesCount());
+void ComplexNetworkVisualizer::load(const QString &file, QList<FeatureFactoryAbstract*> factories){
+    cn.load(file.toStdString().c_str(), factories);
+    printf("Total Nodes: %u\n", cn.getNumNodes());
+    printf("Total Edges: %u\n", cn.getNumEdges());
     viewer->setComplexNetwork(cn);
 }
 

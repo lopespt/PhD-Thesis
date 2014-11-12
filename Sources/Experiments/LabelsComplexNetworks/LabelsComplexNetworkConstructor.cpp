@@ -7,6 +7,7 @@ LabelsComplexNetworkConstructor::LabelsComplexNetworkConstructor(ComplexNetwork<
 }
 
 void LabelsComplexNetworkConstructor::build(){
+    /*
     float alpha = 0.3;
     int counter=1;
     link_time t=1llu;
@@ -59,4 +60,5 @@ void LabelsComplexNetworkConstructor::build(){
         }
         counter++;
     }
+    */
 }

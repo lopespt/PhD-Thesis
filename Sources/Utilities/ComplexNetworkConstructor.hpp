@@ -7,7 +7,7 @@
 #include "DatabaseReader.hpp"
 #include <FeatureExtractors/Region.hpp>
 #include "SupervisedImage.hpp"
-#include <FeatureExtractors/AreaFeatureExtractor.hpp>
+#include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <QLinkedList>
 #include "Link.hpp"
 #include <QHash>
@@ -24,7 +24,7 @@ class ComplexNetworkConstructor{
 
         FeaturesComplexNetwork &cn;
         DatabaseReader &reader;
-        QList<FeatureExtractorAbstract*> extractors;
+        QList<FeatureFactoryAbstract*> extractors;
         unsigned long long int time=1;
         void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
@@ -33,12 +33,12 @@ class ComplexNetworkConstructor{
         float learningRate=0.3;
 
     public:
-        ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract*> extractors);
+        ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureFactoryAbstract*> extractors);
         void build();
 
 };
 
-ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureExtractorAbstract *> extractors):cn(cn),
+ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureFactoryAbstract*> extractors):cn(cn),
     reader(reader),
     extractors(extractors)
 {
@@ -52,8 +52,8 @@ void ComplexNetworkConstructor::build(){
         printf("Reading image(%u/%d): %s%s\n", num, reader.getTotal(), img.getImagePath().size()>60?"...":"",img.getImagePath().right(60).toStdString().c_str());
         features.clear();
         foreach(Region r, img.getRegions()){
-            for(QList<FeatureExtractorAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
-                FeatureAbstract* f = (*i)->doExtraction(&r);
+            for(QList<FeatureFactoryAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
+                FeatureAbstract* f = (*i)->CreateFromRegion(&r);
                 features.append(f);
             }
         }

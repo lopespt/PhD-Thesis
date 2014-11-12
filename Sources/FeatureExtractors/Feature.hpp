@@ -15,13 +15,13 @@ class Feature:public FeatureAbstract{
 
     public:
         const T &getContent() const;
-        Feature<T>(T value, const char* featureName);
-        virtual const char* asString(char *buffer) const;
+        Feature<T>(T value, int type, const char* featureName);
+        virtual const char* asString(char* buffer) const = 0 ;
         virtual ~Feature(){}
 };
 
 template <typename T>
-Feature<T>::Feature(T value, const char* featureName):FeatureAbstract(featureName){
+Feature<T>::Feature(T value, int type, const char* featureName):FeatureAbstract(type, featureName){
     this->data = (void*) &content;
     this->data_size = sizeof(T);
     this->content = value;

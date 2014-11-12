@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include <FeatureExtractors/AreaFeatureExtractor.hpp>
+#include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <QVector>
@@ -23,11 +23,11 @@ int main(int argc, char* argv[]){
     }
     QApplication app(argc,argv);
 
-    AreaFeatureExtractor e(5);
+    AreaFeatureFactory e(5);
     SunDatabaseReader reader( (QString(argv[1])) );
     SupervisedImage s = reader.readNext();
 
-    FeatureAbstract* v = e.doExtraction(&(s.getRegions()[0]));
+    FeatureAbstract* v = e.CreateFromRegion(&(s.getRegions()[0]));
     AreaFeatureExtractionWindow win(argv[1]);
     win.setVisible(true);
 

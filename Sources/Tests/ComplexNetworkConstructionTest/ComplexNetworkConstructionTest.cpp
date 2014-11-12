@@ -3,10 +3,12 @@
 #include <FeatureExtractors/Feature.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
 #include <Utilities/ComplexNetworkConstructor.hpp>
-#include <FeatureExtractors/AreaFeatureExtractor.hpp>
+#include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <locale>
 #include <FeatureExtractors/FeatureAbstract.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
+#include <FeatureExtractors/LabelFeature.hpp>
+#include <FeatureExtractors/LabelFeatureFactory.hpp>
 
 int main(int argc, char **argv){
 
@@ -16,8 +18,8 @@ int main(int argc, char **argv){
     setlocale(LC_ALL, "");
 
     int discretization=10;
-    AreaFeatureExtractor feat(discretization);
-    QList<FeatureExtractorAbstract*> extractors;
+    LabelFeatureFactory feat;
+    QList<FeatureFactoryAbstract*> extractors;
     extractors.append(&feat);
 
     FeaturesComplexNetwork cn;
@@ -25,16 +27,35 @@ int main(int argc, char **argv){
     ComplexNetworkConstructor constructor(cn, r, extractors);
     constructor.build();
 
-
-    ComplexNetwork<const FeatureAbstract*, Link>::NodeIterator i = cn.Begin();
+    FeaturesComplexNetwork::NodeIterator i = cn.Begin();
     char buffer[50];
     for(i=cn.Begin(); i!=cn.End();i++){
         printf("%s\n",(*i)->asString(buffer));
     }
     
-
+    for(i=cn.Begin(); i!=cn.End();i++){
+        for(FeaturesComplexNetwork::EdgeIterator j = cn.EdgesBegin(i.getNodeId()); j != cn.EdgesEnd(i.getNodeId()); j++){
+            printf("peso: %f\n", j->getWeight());
+        }
+        printf("%s\n",(*i)->asString(buffer));
+    }
+    printf("nodes = %u\n", cn.getNumNodes());
+    printf("edges = %u\n", cn.getNumEdges());
     cn.save("complex_network_save.cn");
+    cn.clear();
 
+    printf("nodes = %u\n", cn.getNumNodes());
+    printf("edges = %u\n", cn.getNumEdges());
+    cn.load("complex_network_save.cn", extractors);
+    printf("nodes = %u\n", cn.getNumNodes());
+    printf("edges = %u\n", cn.getNumEdges());
+
+    for(i=cn.Begin(); i!=cn.End();i++){
+        for(auto j=cn.edges[i.getNodeId()].begin(); j!= cn.edges[i.getNodeId()].end();j++){
+           printf("peso: %f\n", cn.edge[*j].getWeight());
+        }
+        printf("%s\n",(*i)->asString(buffer));
+    }
 
     fflush(stdout);
 

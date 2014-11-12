@@ -4,7 +4,7 @@
 #include <QByteArray>
 #include <QString>
 
-FeatureAbstract::FeatureAbstract(const char *featureName):featureName(featureName){
+FeatureAbstract::FeatureAbstract(int type, const char *featureName):type(type), featureName(featureName){
 
 }
 

@@ -1,11 +1,11 @@
 
-#include "AreaFeatureExtractor.hpp"
+#include "AreaFeatureFactory.hpp"
 #include "AreaFeature.hpp"
 
-AreaFeatureExtractor::AreaFeatureExtractor(int discretization):FeatureExtractorAbstract(), discretization(discretization){
+AreaFeatureFactory::AreaFeatureFactory(int discretization):FeatureFactoryAbstract(1), discretization(discretization){
 }
 
-FeatureAbstract* AreaFeatureExtractor::doExtraction(const Region* region){
+FeatureAbstract* AreaFeatureFactory::CreateFromRegion(const Region* region) const{
     float vect;
     region->getMask();
     float area = 0;
@@ -22,5 +22,11 @@ FeatureAbstract* AreaFeatureExtractor::doExtraction(const Region* region){
 
     vect = ((int)(vect * discretization))/(float)discretization;
     return new AreaFeature(vect);
+}
+
+FeatureAbstract* AreaFeatureFactory::CreateFromStream(QDataStream &stream) const{
+    AreaFeature* f=new AreaFeature(0);
+    stream >> f->content;
+    return f;
 }
 

@@ -33,12 +33,13 @@
 #include <vtkRenderedGraphRepresentation.h>
 #include <Utilities/Link.hpp>
 #include <vtkFloatArray.h>
+#include <Utilities/FeaturesComplexNetwork.hpp>
 
 class ComplexNetworkViewerWidget : public QWidget
 {
     Q_OBJECT
 private:
-    ComplexNetwork<FeatureAbstract, Link> *cn;
+    FeaturesComplexNetwork *cn;
     QVTKWidget2 *vtkWidget;
     vtkRenderer *vRenderer;
     vtkGraphLayoutView *viewer;
@@ -48,7 +49,7 @@ private:
     void createVtkPipeline();
 public:
     explicit ComplexNetworkViewerWidget(QWidget *parent = 0);
-    void setComplexNetwork(ComplexNetwork<FeatureAbstract, Link> &cn);
+    void setComplexNetwork(FeaturesComplexNetwork &cn);
     virtual ~ComplexNetworkViewerWidget();
 
 signals:

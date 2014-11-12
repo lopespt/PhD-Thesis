@@ -83,6 +83,7 @@ GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link> cn, QWidget *parent):
 }
 
 void GMainWindow::setVtkGraph(){
+    /*
     graph = vtkMutableUndirectedGraph::New();
     weights = vtkFloatArray::New();
     weights->SetNumberOfComponents(1);
@@ -113,7 +114,7 @@ void GMainWindow::setVtkGraph(){
     graph->GetEdgeData()->AddArray(weights);
     graph->GetVertexData()->AddArray(labels);
 
-
+*/
 }
 
 GMainWindow::~GMainWindow(){

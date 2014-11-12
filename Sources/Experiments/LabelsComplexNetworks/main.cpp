@@ -14,7 +14,11 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <QCommandLineParser>
 #include <QCommandLinkButton>
 #include <QStringList>
-
+#include <Utilities/ComplexNetworkConstructor.hpp>
+#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <FeatureExtractors/LabelFeature.hpp>
+#include <FeatureExtractors/LabelFeatureFactory.hpp>
+#include <QList>
 
 int main(int argc, char **argv){
 
@@ -30,11 +34,18 @@ int main(int argc, char **argv){
     folder = parser.positionalArguments().first();
 
     printf("%s", folder.toStdString().c_str());
-    ComplexNetwork<NodeString, Link> labels_cn;
+    FeaturesComplexNetwork labels_cn;
     SunDatabaseReader reader(folder);
+    QList<FeatureFactoryAbstract*> factories;
+    LabelFeatureFactory labels_factory;
+    factories.append(&labels_factory);
 
-    LabelsComplexNetworkConstructor constructor(labels_cn, reader);
+    //LabelsComplexNetworkConstructor constructor(labels_cn, reader);
+    //constructor.build();
+    ComplexNetworkConstructor constructor(labels_cn,reader,factories);
     constructor.build();
+    printf("%u\n", labels_cn.getNumNodes());
+    printf("%u", labels_cn.getNumEdges());
 
     labels_cn.save(parser.value("o").toStdString().c_str());
     return 0;

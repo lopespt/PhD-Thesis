@@ -7,18 +7,24 @@ class FeatureAbstractKey;
 class FeaturesComplexNetwork;
 class FeatureAbstract{
     protected:
+        int type;
         const char *featureName;
         void* data;
         size_t data_size;
 
     public:
-        FeatureAbstract(const char *featureName="Not Defined");
+        FeatureAbstract(int type, const char *featureName="Not Defined");
+
         virtual bool operator<(const FeatureAbstract& other) const;
-        virtual const char* asString(char *buffer) const=0;
+        virtual const char* asString(char* buffer) const=0;
+        const int getType() const{
+            return type;
+        }
         const char* getFeatureName() const{
             return featureName;
         }
         virtual ~FeatureAbstract(){}
+        virtual void WriteToStream(QDataStream &stream) const = 0;
 
         bool operator==(const FeatureAbstract& other) const;
 
