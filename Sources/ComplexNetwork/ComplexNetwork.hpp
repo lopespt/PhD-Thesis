@@ -227,7 +227,7 @@ bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeEdge(node_id from, node_id to){
         return edges[from].remove(to) && edges[to].remove(from) > 0;
     }
 
-    return edges.remove(from, to)>0;
+    return edges[from].remove(to)>0;
 }
 
 
