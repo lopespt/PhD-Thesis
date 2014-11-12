@@ -26,6 +26,7 @@ void LabelsValidationExperiment::run(){
         total++;
     }
     printf("Acertos: %d | Total: %d | %f%%\n", acertos, total, acertos*100./total);
+    fflush(stdout);
     }
 
 }
