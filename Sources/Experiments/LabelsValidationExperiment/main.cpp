@@ -2,6 +2,7 @@
 #include "LabelsValidationExperiment.hpp"
 #include <QCommandLineParser>
 #include <QCommandLineOption>
+#include <QString>
 int main(int argc, char* argv[]){
     QCoreApplication app(argc, argv);
 

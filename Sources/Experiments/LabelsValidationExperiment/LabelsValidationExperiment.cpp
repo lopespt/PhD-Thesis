@@ -10,7 +10,7 @@ void LabelsValidationExperiment::run(){
     QList<FeatureFactoryAbstract*> Factories;
     LabelFeatureFactory labelFactory;
     Factories.append(&labelFactory);
-    cn.load(complexNetworkFile, Factories);
+    cn.load(complexNetworkFile.toStdString().c_str(), Factories);
     for(int teste=0;teste<50;teste++){
     qsrand(time(NULL));
     LabelGuesser l(&cn);
