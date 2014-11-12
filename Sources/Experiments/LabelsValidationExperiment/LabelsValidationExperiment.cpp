@@ -12,23 +12,22 @@ void LabelsValidationExperiment::run(){
     Factories.append(&labelFactory);
     cn.load(complexNetworkFile.toStdString().c_str(), Factories);
     for(int teste=0;teste<50;teste++){
-    qsrand(time(NULL));
-    LabelGuesser l(&cn);
-    int total=1;
-    int acertos = 0;
-    SunDatabaseReader reader(sunDatabaseFolder);
-    while(reader.hasNext()){
-        SupervisedImage img = reader.readNext();
-        if(l.Guess(&img, qrand()%img.getRegions().size())){
-            acertos++;
-        };
-       // printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
-        total++;
-        printf("%d/%d\r",total, reader.getTotal());
-    }
-    printf("\n");
-    printf("Acertos: %d | Total: %d | %f%%\n", acertos, total, acertos*100./total);
-    fflush(stdout);
+        qsrand(time(NULL));
+        LabelGuesser l(&cn);
+        int total=1;
+        int acertos = 0;
+        SunDatabaseReader reader(sunDatabaseFolder);
+        while(reader.hasNext()){
+            SupervisedImage img = reader.readNext();
+            if(l.Guess(&img, qrand()%img.getRegions().size())){
+                acertos++;
+            };
+           // printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
+            total++;
+            printf("Acertos: %d | Analisadas: %d | Total: %d | %f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
+        }
+        printf("\n");
+        fflush(stdout);
     }
 
 }
