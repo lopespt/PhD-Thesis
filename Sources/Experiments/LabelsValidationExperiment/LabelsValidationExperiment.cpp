@@ -24,7 +24,9 @@ void LabelsValidationExperiment::run(){
         };
        // printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
         total++;
+        printf("%d/%d\r",total, reader.getTotal());
     }
+    printf("\n");
     printf("Acertos: %d | Total: %d | %f%%\n", acertos, total, acertos*100./total);
     fflush(stdout);
     }
