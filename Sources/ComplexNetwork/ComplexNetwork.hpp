@@ -217,8 +217,16 @@ EDGE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdge(node_id from, node_id t
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeEdge(node_id from, node_id to){
-    if (!directed)
-        return edges.remove(from,to) && edges.remove(to,from) > 0;
+    if(edges[from].contains(to)){
+        edges.remove(edges[from][to]);
+    }
+
+    if (!directed){
+        if(edges[to].contains(from))
+            edges.remove(edges[to][from]);
+        return edges[from].remove(to) && edges[to].remove(from) > 0;
+    }
+
     return edges.remove(from, to)>0;
 }
 
