@@ -8,7 +8,6 @@ class LabelsValidationExperiment
 {
 private:
     FeaturesComplexNetwork cn;
-    SunDatabaseReader reader;
 
 public:
     LabelsValidationExperiment();

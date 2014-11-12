@@ -40,7 +40,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
 
     qSort(rank.begin(), rank.end(), [&](QPair<node_id, float> a,
           QPair<node_id, float> b){
-                return a.second*1.0  > b.second*1.0;
+                return a.second*1.0/sqrt(cn->getNumEdges(a.first))  > b.second*1.0/sqrt(cn->getNumEdges(b.first));
           }
     );
 
@@ -52,11 +52,11 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
 
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
-    printf("%s%s%s%s: ", result?"->":"", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
+    //printf("%s%s%s%s: ", result?"->":"", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
     for(int i=0;i<10 && i < rank.size();i++){
-        printf(" %s |", (*cn->getNode(rank[i].first))->asString(buffer) );
+    //    printf(" %s |", (*cn->getNode(rank[i].first))->asString(buffer) );
     }
-    printf("\n");
+    //printf("\n");
     fflush(stdout);
 
     return result;
