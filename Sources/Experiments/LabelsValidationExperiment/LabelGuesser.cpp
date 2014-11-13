@@ -43,18 +43,17 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
+    printf("%s\n", img->getImagePath().toStdString().c_str());
     for(int i=0;i<img->getRegions().size();i++){
         if(i!=guessRegionAt){
             assert(index.contains(img->getRegions().at(i).getLabel()));
             node_id node = index[img->getRegions().at(i).getLabel()];
-            printf("iterar\n");
             for(FeaturesComplexNetwork::EdgeIterator e = cn->EdgesBegin( node ); e != cn->EdgesEnd( node ); e++ ){
                     if (grades.contains(e.getToNodeId()))
                         grades[e.getToNodeId()]+= e->getWeight();
                     else
                         grades[e.getToNodeId()] = e->getWeight();
             }
-            printf("Fim iterar\n");
         }
     }
 
