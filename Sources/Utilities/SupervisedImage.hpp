@@ -10,7 +10,7 @@
 #include <QRegularExpression>
 #include <QFile>
 #include <QtAlgorithms>
-
+#include <QVector>
 using namespace std;
 
 class SupervisedImage{

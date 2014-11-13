@@ -16,7 +16,7 @@ class node_t{
         return other.v2 > this->v1;
     }
 
-    node_t(int v1, int v2):v1(v1), v2(v2){
+    node_t(int v1=0, int v2=0):v1(v1), v2(v2){
     }       
 
 };

@@ -7,7 +7,6 @@
 class LabelsValidationExperiment
 {
 private:
-    FeaturesComplexNetwork cn;
     QString sunDatabaseFolder, complexNetworkFile;
 
 public:

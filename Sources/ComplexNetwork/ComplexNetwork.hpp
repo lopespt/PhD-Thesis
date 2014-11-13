@@ -31,12 +31,12 @@ protected:
 
 public:
     ComplexNetwork(bool directed=false);
-    node_id addNode(const NODE_TYPE& n);
-    NODE_TYPE* getNode(node_id id);
-    bool removeNode(node_id id);
-    void addEdge(node_id from, node_id to, const EDGE_TYPE& e);
-    EDGE_TYPE* getEdge(node_id from, node_id to);
-    bool removeEdge(node_id from, node_id to);
+    virtual node_id addNode(const NODE_TYPE& n);
+    virtual NODE_TYPE* getNode(node_id id);
+    virtual bool removeNode(node_id id);
+    virtual void addEdge(node_id from, node_id to, const EDGE_TYPE& e);
+    virtual EDGE_TYPE* getEdge(node_id from, node_id to);
+    virtual bool removeEdge(node_id from, node_id to);
     virtual void clear();
     unsigned int getNumNodes() const;
     unsigned int getNumEdges() const;
@@ -195,6 +195,14 @@ NODE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNode(node_id id){
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeNode(node_id id){
+    QList<QPair<node_id, node_id>> del;
+    for(auto e = edges[id].begin(); e !=  edges[id].end(); e++){
+        del.append(QPair<node_id, node_id>(id, e.key()));
+    }
+    foreach(auto i, del){
+        removeEdge(i.first, i.second);
+    }
+
     return nodes.remove(id) > 0;
 }
 
@@ -220,7 +228,8 @@ EDGE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdge(node_id from, node_id t
 template <typename NODE_TYPE, typename EDGE_TYPE>
 bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeEdge(node_id from, node_id to){
     if(edges[from].contains(to)){
-        edges.remove(edges[from][to]);
+        if(edge.contains(edges[from][to]))
+            edge.remove(edges[from][to]);
     }
 
     if (!directed){
@@ -356,6 +365,7 @@ template <typename NODE_TYPE, typename EDGE_TYPE>
 unsigned int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges(node_id id) const{
     return edges[id].size();
 }
+
 
 #endif // COMPLEXNETWORK_HPP
 

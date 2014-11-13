@@ -9,11 +9,13 @@ class LabelGuesser
 {
 private:
     FeaturesComplexNetwork *cn;
+    QSet<node_id> hubs;
     QHash<QString, node_id> index;
     void buildIndex();
 public:
     LabelGuesser(FeaturesComplexNetwork *cn);
     bool Guess(SupervisedImage *img, int guessRegionAt);
+    void removeHubs();
 };
 
 #endif // LABELGUESSER_HPP

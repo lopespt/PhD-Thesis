@@ -16,8 +16,15 @@ int main(int argc, char* argv[]){
 
     folder = parser.positionalArguments()[0];
     complex_network = parser.positionalArguments()[1];
+
+
+    //LabelsValidationExperiment
     LabelsValidationExperiment experiment(folder, complex_network);
+
+
+
     experiment.run();
 
     return 0;
 }
+

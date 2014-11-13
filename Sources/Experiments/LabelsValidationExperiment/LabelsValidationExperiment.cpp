@@ -10,10 +10,12 @@ void LabelsValidationExperiment::run(){
     QList<FeatureFactoryAbstract*> Factories;
     LabelFeatureFactory labelFactory;
     Factories.append(&labelFactory);
-    cn.load(complexNetworkFile.toStdString().c_str(), Factories);
     for(int teste=0;teste<50;teste++){
+        FeaturesComplexNetwork cn;
+        cn.load(complexNetworkFile.toStdString().c_str(), Factories);
         qsrand(time(NULL));
         LabelGuesser l(&cn);
+
         int total=1;
         int acertos = 0;
         SunDatabaseReader reader(sunDatabaseFolder);
@@ -22,7 +24,7 @@ void LabelsValidationExperiment::run(){
             if(l.Guess(&img, qrand()%img.getRegions().size())){
                 acertos++;
             };
-           // printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
+            //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
             total++;
             printf("Acertos: %d | Analisadas: %d | Total: %d | %f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
         }

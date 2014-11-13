@@ -55,14 +55,15 @@ void FeaturesComplexNetwork::save(const char* filename){
 }
 
 void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbstract*> featuresConstructors){
+    clear();
     QFile f(filename);
     f.open(QIODevice::ReadOnly);
     QDataStream stream(&f);
 
     current_node_id = 0;
     f.read( (char*)&file_header, sizeof(file_header) );
-    printf("%u\n", file_header.num_nodes);
-    printf("%u\n", file_header.num_edges);
+    //printf("%u\n", file_header.num_nodes);
+    //printf("%u\n", file_header.num_edges);
 
     //load nodes
     for( unsigned int n = 0; n < file_header.num_nodes; n++ ){
@@ -111,8 +112,25 @@ void FeaturesComplexNetwork::clear(){
     nodes.clear();
     edges.clear();
     edge.clear();
+    current_node_id=0;
+    current_edge_id=0;
 }
 
 FeaturesComplexNetwork::~FeaturesComplexNetwork(){
     clear();
+}
+
+float FeaturesComplexNetwork::getOutputDegree(node_id from) const{
+    float total=0;
+    for(auto e = edges[from].begin(); e!=edges[from].end();e++){
+        total += edge[e.value()].getWeight();
+    }
+    return total;
+}
+
+bool FeaturesComplexNetwork::removeNode(node_id id){
+    assert(getNode(id));
+    char buffer[50];
+    delete (*getNode(id));
+    return ComplexNetwork<const FeatureAbstract*, Link>::removeNode(id);
 }

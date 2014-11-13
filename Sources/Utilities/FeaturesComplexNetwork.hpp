@@ -15,7 +15,9 @@ public:
     ~FeaturesComplexNetwork();
     void save(const char* filename);
     void load(const char* filename, QList<FeatureFactoryAbstract*>);
+    float getOutputDegree(node_id) const;
     void clear();
+    bool removeNode(node_id id);
 
 };
 

@@ -10,7 +10,6 @@ SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imag
 
 void SupervisedImage::parse_xml(){
     QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );      
-
     QFile f(this->supervisedPath);
 
     f.open(QFile::ReadOnly);
@@ -22,8 +21,9 @@ void SupervisedImage::parse_xml(){
         QPolygon polygon = extractPolygon(regionXml);
         polygon = polygon.intersected(QPolygon(QRect(0,0,image.width()-1, image.height()-1)));
         QString label    = extractLabel(regionXml);
-        this->regions << Region(&this->image, polygon, label);
+        this->regions << (Region(&this->image, polygon, label));
     }
+
 
 }
 
