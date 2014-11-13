@@ -21,12 +21,14 @@ void LabelsValidationExperiment::run(){
         SunDatabaseReader reader(sunDatabaseFolder);
         while(reader.hasNext()){
             SupervisedImage img = reader.readNext();
-            if(l.Guess(&img, qrand()%img.getRegions().size())){
-                acertos++;
-            };
-            //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
-            total++;
-            printf("Acertos: %d | Analisadas: %d | Total: %d | %f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
+            if(img.getRegions().size()>1){
+                if(l.Guess(&img, qrand()%img.getRegions().size())){
+                    acertos++;
+                };
+                //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
+                total++;
+                printf("Acertos: %d | Analisadas: %d | Total: %d | %f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
+            }
         }
         printf("\n");
         fflush(stdout);

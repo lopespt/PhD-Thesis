@@ -43,7 +43,6 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
-    printf("%s\n", img->getImagePath().toStdString().c_str());
     for(int i=0;i<img->getRegions().size();i++){
         if(i!=guessRegionAt){
             assert(index.contains(img->getRegions().at(i).getLabel()));
