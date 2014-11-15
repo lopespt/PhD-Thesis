@@ -70,17 +70,25 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
 
 
     guessed = rank.first().first;
+    unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
-        if( !hubs.contains(i->first) ){
-            guessed = i->first;
+        if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
+            //printf("%d\n", pos);
             break;
         }
+        pos++;
     }
 
     (*cn->getNode(guessed))->asString(buffer);
-
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
+    for(int k=0;k<rank.size() && k<400;k++){
+        if(rank.size()>1){
+            guessed = rank[k].first;
+            (*cn->getNode(guessed))->asString(buffer);
+            result = result || strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
+        }
+    };
     //printf("%s%s%s%s\n", result ? "acertou":"errou  ", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
     //printf("%s%s%s%s: ", result ? "->":"", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
     //for(int i=0;i<10 && i < rank.size();i++){
@@ -88,6 +96,6 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     //}
     //printf("\n");
     fflush(stdout);
-
     return result;
+    //return QString::fromLocal8Bit(buffer);
 }

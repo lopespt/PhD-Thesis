@@ -4,6 +4,7 @@
 #include <FeatureExtractors/Region.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
+#include <QString>
 
 class LabelGuesser
 {

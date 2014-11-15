@@ -22,7 +22,10 @@ void LabelsValidationExperiment::run(){
         while(reader.hasNext()){
             SupervisedImage img = reader.readNext();
             if(img.getRegions().size()>1){
-                if(l.Guess(&img, qrand()%img.getRegions().size())){
+                unsigned int idx = qrand()%img.getRegions().size();
+                bool guessed = l.Guess(&img, idx) ;
+                //if(guessed == img.getRegions().at(idx).getLabel()){
+                if(guessed){
                     acertos++;
                 };
                 //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");

@@ -17,6 +17,7 @@ class Feature:public FeatureAbstract{
         const T &getContent() const;
         Feature<T>(T value, int type, const char* featureName);
         virtual const char* asString(char* buffer) const = 0 ;
+        virtual void WriteToStream(QDataStream &stream) const = 0;
         virtual ~Feature(){}
 };
 

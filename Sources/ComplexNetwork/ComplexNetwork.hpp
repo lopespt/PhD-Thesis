@@ -80,7 +80,6 @@ public:
         }
 
     };
-
     class EdgeIterator{
         friend class ComplexNetwork<NODE_TYPE, EDGE_TYPE>;
     private:
@@ -158,7 +157,6 @@ public:
 
     unsigned int getNumEdges(node_id) const;
 
-
     void save(const char * filename);
     void load(const char * filename);
 
@@ -208,6 +206,9 @@ bool ComplexNetwork<NODE_TYPE, EDGE_TYPE>::removeNode(node_id id){
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addEdge(node_id from, node_id to, const EDGE_TYPE &e){
+    if(edges.contains(from) && edges[from].contains(to))
+        return;
+
     edge_id new_edge_id = current_edge_id;
     current_edge_id++;
     edge.insert(new_edge_id, e);

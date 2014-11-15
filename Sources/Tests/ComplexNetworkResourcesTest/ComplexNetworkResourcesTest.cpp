@@ -54,14 +54,35 @@ void initTest(long int num_nodes, long int max_edges){
                 last_time = time(NULL);
                 printf("nodes: %-7ld \t edges: %-11ld \t density: %3ld %%  \t memory: %5d Mb  time: %7ld secs \n", nn, i+1, density , memoryInUse()/1024, time(NULL)-initial_time );
             }
-
         }
     }
 
 }
 
+void initTest2(){
+    ComplexNetwork<int, int> a;
+
+    a.addNode(5);
+    a.addNode(3);
+    a.addNode(9);
+    a.addEdge(0,1,5);
+    a.removeNode(2);
+
+    printf("%d\n", a.getNumEdges());
+    for(auto i=a.EdgesBegin(0);i!=a.EdgesEnd(0);i++ ){
+        printf("%d\n", *i);
+    }
+
+
+
+
+
+}
+
 int main(){
-    initTest(5000000, 100000000);
+    initTest2();
+
+    //initTest(5000000, 100000000);
     return 0;
 }
 
