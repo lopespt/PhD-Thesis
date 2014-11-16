@@ -44,7 +44,7 @@ OrientationFeature* OrientationFeatureFactory::discoverOrientation(QList<QPoint>
     float distance=0;
     for(auto p=points.begin();p!=points.end();p++){
         for(auto q=points.begin();q!=points.end();q++){
-            if( distance(*p,*q) > distance){
+            if( this->distance(*p,*q) > distance){
                 p1 = *p;
                 p2 = *q;
             }
@@ -52,9 +52,10 @@ OrientationFeature* OrientationFeatureFactory::discoverOrientation(QList<QPoint>
     }
     QPoint r = (p2 - p1);
     if(r.x()==0){
-
+        return new OrientationFeature(0);
     }
-    atan2( r.y(), r.x() );
+
+    //return atan2( r.y(), r.x() );
 
 }
 

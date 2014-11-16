@@ -2,9 +2,8 @@
 #define ORIENTATIONFEATUREFACTORY_HPP
 
 #include "FeatureFactoryAbstract.hpp"
-
+#include <QList>
 class QPoint;
-class QList<QPoint>;
 class OrientationFeature;
 
 
@@ -12,7 +11,7 @@ class OrientationFeatureFactory:public FeatureFactoryAbstract
 {
 private:
     OrientationFeature* discoverOrientation(QList<QPoint> points) const;
-    inline float distance(QPoint a, QPoint b) const;
+    float distance(QPoint a, QPoint b) const;
 
 public:
     OrientationFeatureFactory();
