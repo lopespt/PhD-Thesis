@@ -6,6 +6,7 @@ typedef unsigned long long int link_time;
 class Link{
     
     private:
+        bool sameLabel;
         link_time time;
         float weight;
         static float max_weight;
@@ -16,9 +17,11 @@ class Link{
         float getWeight() const;
         void setWeight(float weight);
         Link();
-        Link(link_time t, float weight);
+        Link(link_time t, float weight, bool sameLabel=false);
         Link operator+(float) const;
         Link& operator+=(float);
+        bool isSameLabel() const;
+        void isSameLabel(bool);
 
         
 

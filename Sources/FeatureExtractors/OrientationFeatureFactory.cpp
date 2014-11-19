@@ -4,8 +4,9 @@
 #include <QPolygon>
 #include <QPoint>
 #include "OrientationFeature.hpp"
+#include <math.h>
 
-OrientationFeatureFactory::OrientationFeatureFactory():FeatureFactoryAbstract(2)
+OrientationFeatureFactory::OrientationFeatureFactory(int discretization):FeatureFactoryAbstract(2), discretization(discretization)
 {
 }
 
@@ -39,6 +40,20 @@ FeatureAbstract* OrientationFeatureFactory::CreateFromRegion(const Region *r) co
     return discoverOrientation(points);
 }
 
+FeatureAbstract* OrientationFeatureFactory::CreateFromStream(QDataStream &stream) const{
+    unsigned int i;
+    stream.readRawData((char*)&i, sizeof(unsigned int));
+    return new OrientationFeature(i);
+}
+
+int OrientationFeatureFactory::discretize(float min, float max, float d, int val) const{
+    val = val - min;
+    val = (val/(max - min)*d);
+    if(val >= d)
+        val = d-1;
+    return val;
+}
+
 OrientationFeature* OrientationFeatureFactory::discoverOrientation(QList<QPoint> points) const{
     QPoint p1,p2;
     float distance=0;
@@ -51,12 +66,10 @@ OrientationFeature* OrientationFeatureFactory::discoverOrientation(QList<QPoint>
         }
     }
     QPoint r = (p2 - p1);
-    if(r.x()==0){
-        return new OrientationFeature(0);
-    }
-
-    //return atan2( r.y(), r.x() );
-
+    float angle = atan2(r.y(), r.x()) *180. / M_PI + 180;
+    int v = discretize(0,360,discretization, angle);
+    //printf("lbl = %f %d \n", angle, v );
+    return new OrientationFeature(  v);
 }
 
 

@@ -4,7 +4,7 @@
 Link::Link():time(0), weight(0){
 }
 
-Link::Link(link_time t, float weight):time(t), weight(weight){
+Link::Link(link_time t, float weight, bool sameLabel):time(t), weight(weight), sameLabel(sameLabel){
 }
 
 float Link::getWeight() const{
@@ -35,3 +35,10 @@ void Link::setTime(link_time time){
     this->time = time;
 }
 
+bool Link::isSameLabel() const{
+    return this->sameLabel;
+}
+
+void Link::isSameLabel(bool v){
+    this->sameLabel=v;
+}

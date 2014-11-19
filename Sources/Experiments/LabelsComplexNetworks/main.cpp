@@ -18,6 +18,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/LabelFeature.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
+#include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <QList>
 
 int main(int argc, char **argv){
@@ -38,10 +39,10 @@ int main(int argc, char **argv){
     SunDatabaseReader reader(folder);
     QList<FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labels_factory;
+    OrientationFeatureFactory orientation_factory(800);
     factories.append(&labels_factory);
+    factories.append(&orientation_factory);
 
-    //LabelsComplexNetworkConstructor constructor(labels_cn, reader);
-    //constructor.build();
     ComplexNetworkConstructor constructor(labels_cn,reader,factories);
     constructor.build();
     printf("%u\n", labels_cn.getNumNodes());

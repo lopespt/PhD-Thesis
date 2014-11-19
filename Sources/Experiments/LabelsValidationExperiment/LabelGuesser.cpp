@@ -2,9 +2,13 @@
 #include <QString>
 #include <string.h>
 #include <QSet>
+#include <FeatureExtractors/OrientationFeatureFactory.hpp>
+#include <FeatureExtractors/OrientationFeature.hpp>
+#include <FeatureExtractors/LabelFeature.hpp>
 
 LabelGuesser::LabelGuesser(FeaturesComplexNetwork *cn):cn(cn)
 {
+    cn->updateIndex();
     //removeHubs();
     buildIndex();
 }
@@ -32,6 +36,7 @@ void LabelGuesser::removeHubs(){
 }
 
 bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
+
     char buffer[100];
     QHash<node_id, float> grades;
     QSet<node_id> image_nodes;
@@ -56,11 +61,21 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
+    OrientationFeatureFactory orientation_factory(800);
+    OrientationFeature *orientation = (OrientationFeature*)orientation_factory.CreateFromRegion(&img->getRegions()[guessRegionAt]);
+    node_id node_orientation = cn->getNodeFromFeature(orientation);
+    delete orientation;
+    QList<node_id> possible_nodes = cn->getNodesOfSameLabel(node_orientation);
+
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        rank.push_back(QPair<node_id,float>(i.key(),i.value()));
+        if(possible_nodes.contains(i.key()))
+            rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
+
+    LabelFeature lbl(label(img->getRegions()[guessRegionAt].getLabel().toStdString().c_str()));
+    node_id lbl_node = cn->getNodeFromFeature(&lbl);
 
     qSort(rank.begin(), rank.end(), [&](QPair<node_id, float> a,
           QPair<node_id, float> b){
@@ -73,7 +88,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
         if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
-            //printf("%d\n", pos);
+            printf("%d / %d \n", pos, possible_nodes.size());
             break;
         }
         pos++;
@@ -82,7 +97,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     (*cn->getNode(guessed))->asString(buffer);
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
-    for(int k=0;k<rank.size() && k<400;k++){
+    for(int k=0;k<rank.size() && k<50;k++){
         if(rank.size()>1){
             guessed = rank[k].first;
             (*cn->getNode(guessed))->asString(buffer);

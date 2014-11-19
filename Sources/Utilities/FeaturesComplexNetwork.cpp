@@ -2,7 +2,6 @@
 #include <string.h>
 #include <QDataStream>
 #include <FeatureExtractors/FeatureFactoryAbstract.hpp>
-
 FeaturesComplexNetwork::FeaturesComplexNetwork():ComplexNetwork()
 {
 }
@@ -133,4 +132,28 @@ bool FeaturesComplexNetwork::removeNode(node_id id){
     char buffer[50];
     delete (*getNode(id));
     return ComplexNetwork<const FeatureAbstract*, Link>::removeNode(id);
+}
+
+void FeaturesComplexNetwork::updateIndex(){
+    featureIndex.clear();
+    //char buffer[100];
+    for(auto i = Begin(); i!=End();i++){
+        //printf("%s\n", (*i)->asString(buffer) );
+        featureIndex[FeatureAbstractKey(*i)] = i.getNodeId();
+    }
+}
+
+node_id FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstract *f) const{
+    assert(featureIndex.contains(FeatureAbstractKey(f)));
+    return featureIndex[FeatureAbstractKey(f)];
+}
+
+QList<node_id> FeaturesComplexNetwork::getNodesOfSameLabel(node_id id) {
+    QList<node_id> ret;
+    for(auto e = EdgesBegin(id); e != EdgesEnd(id); e++){
+        if(e->isSameLabel()){
+            ret.append(e.getToNodeId());
+        }
+    }
+    return ret;
 }

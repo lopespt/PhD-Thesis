@@ -17,7 +17,11 @@ const char *helpText=\
 
 int main(int argc, char* argv[]){
 
-    printf("%f \n", atan2(1, -1)*360./2/M_PI);
+
+    printf("\n\n%f \n", (atan2(1, 0)*180./M_PI ));
+    printf("%f \n", (atan2(0, 1)*180./M_PI ));
+    printf("%f \n", (atan2(-1, 0)*180./M_PI));
+    printf("%f \n", (atan2(0, -1)*180./M_PI));
     return 0;
 
     if(argc==1){

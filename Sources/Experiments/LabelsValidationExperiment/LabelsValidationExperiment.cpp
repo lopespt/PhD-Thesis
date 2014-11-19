@@ -1,5 +1,6 @@
 #include "LabelsValidationExperiment.hpp"
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
+#include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <QList>
 #include <time.h>
 LabelsValidationExperiment::LabelsValidationExperiment(QString sunDatabaseFolder, QString complexNetworkFile):sunDatabaseFolder(sunDatabaseFolder), complexNetworkFile(complexNetworkFile)
@@ -9,8 +10,10 @@ LabelsValidationExperiment::LabelsValidationExperiment(QString sunDatabaseFolder
 void LabelsValidationExperiment::run(){
     QList<FeatureFactoryAbstract*> Factories;
     LabelFeatureFactory labelFactory;
+    OrientationFeatureFactory featureFactory(800);
     Factories.append(&labelFactory);
-    for(int teste=0;teste<50;teste++){
+    Factories.append(&featureFactory);
+    //for(int teste=0;teste<50;teste++){
         FeaturesComplexNetwork cn;
         cn.load(complexNetworkFile.toStdString().c_str(), Factories);
         qsrand(time(NULL));
@@ -30,11 +33,11 @@ void LabelsValidationExperiment::run(){
                 };
                 //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
                 total++;
-                printf("Acertos: %d | Analisadas: %d | Total: %d | %f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
+                printf("Acertos: %d | Analisadas: %d | Total: %d | %.0f%%\r", acertos, total, reader.getTotal() , acertos*100./total);
             }
         }
         printf("\n");
         fflush(stdout);
-    }
+    //}
 
 }

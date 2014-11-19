@@ -26,7 +26,7 @@ class ComplexNetworkConstructor{
         DatabaseReader &reader;
         QList<FeatureFactoryAbstract*> extractors;
         unsigned long long int time=1;
-        void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features);
+        void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
         float lambda=1; 
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
@@ -47,19 +47,22 @@ ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn,
 
 void ComplexNetworkConstructor::build(){
     QLinkedList<FeatureAbstract*> features;
+    QList<int> regionsIds;
     unsigned int num=1;
     while(reader.hasNext()){
         SupervisedImage img = reader.readNext();
         printf("Reading image(%u/%d): %s%s\n", num, reader.getTotal(), img.getImagePath().size()>60?"...":"",img.getImagePath().right(60).toStdString().c_str());
         features.clear();
-        foreach(Region r, img.getRegions()){
+        for(int idx=0;idx<img.getRegions().size();idx++){
+            Region r = img.getRegions().at(idx);
             for(QList<FeatureFactoryAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
                 FeatureAbstract* f = (*i)->CreateFromRegion(&r);
                 features.append(f);
+                regionsIds.append(idx);
             }
         }
         //printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
-        makeCoOccurrences(features);
+        makeCoOccurrences(features, regionsIds);
         num++;
     }
     fflush(stdout);
@@ -68,7 +71,7 @@ void ComplexNetworkConstructor::build(){
 /** Atualiza os pesos as arestas de acordo com a Equação:
  * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right)  \f]
  */
-void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> &features){
+void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds){
 
     QLinkedList<node_id> nodes;
     foreach(const FeatureAbstract* f, features){
@@ -85,8 +88,9 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
 
     float delta_t;
     float weight;
-
+    unsigned int i=0,j=0;
     for(QLinkedList<node_id>::const_iterator it1=nodes.begin();  it1!=nodes.end(); it1++){
+        j=i+1;
         for(QLinkedList<node_id>::const_iterator it2=it1+1; it2!=nodes.end(); it2++){
            Link *e = cn.getEdge( *it1, *it2 );
                 if(e){
@@ -96,15 +100,21 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     //e->setAttribute(Link(0,weight+1));
                     e->setTime(this->time);
                     e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                    if(regionsIds[i] == regionsIds[j])
+                        e->isSameLabel(true);
                     //e->setWeight(weight + 1);
                 }else{
                     Link l = Link(this->time, 1 );
                     //e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
+                    if(regionsIds[i] == regionsIds[j])
+                        l.isSameLabel(true);
                     cn.addEdge(*it1, *it2,  l);
                     //printf("opa novo\n");
                 }
             this->time++;
+            j++;
         }
+        i++;
     }
 }float ComplexNetworkConstructor::recorrencia(float time){
     float ma=1;
