@@ -74,7 +74,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        //if( possible_nodes.contains(i.key()))
+        if( possible_nodes.contains(i.key()))
             rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
 
@@ -98,7 +98,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     (*cn->getNode(guessed))->asString(buffer);
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
-    for(int k=0;k<rank.size() && k< 2;k++){
+    for(int k=0;k<rank.size() && k< 50;k++){
         if(rank.size()>1){
             guessed = rank[k].first;
             (*cn->getNode(guessed))->asString(buffer);

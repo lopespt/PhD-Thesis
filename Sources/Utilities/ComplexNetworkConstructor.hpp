@@ -28,7 +28,7 @@ class ComplexNetworkConstructor{
         unsigned long long int time=1;
         void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
-        float lambda=8;
+        float lambda=80;
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
         float learningRate=0.3;
         float recorrencia(float time);
@@ -97,19 +97,16 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     delta_t = this->time - e->getTime();
                     assert(delta_t>0);
                     weight = e->getWeight();
-                    //e->setAttribute(Link(0,weight+1));
                     e->setTime(this->time);
-                    //e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
-                    e->setWeight(weight + 1);
+                    e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                    //e->setWeight(weight + 1);
                     if(regionsIds[i] == regionsIds[j])
                         e->isSameLabel(true);
                 }else{
-                    Link l = Link(this->time, 1 );
-                    //e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
+                    Link l = Link(this->time, 0.01 );
                     if(regionsIds[i] == regionsIds[j])
                         l.isSameLabel(true);
                     cn.addEdge(*it1, *it2,  l);
-                    //printf("opa novo\n");
                 }
             this->time++;
             j++;
