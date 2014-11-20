@@ -62,7 +62,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
-    OrientationFeatureFactory orientation_factory(40);
+    OrientationFeatureFactory orientation_factory(120);
     OrientationFeature *orientation = (OrientationFeature*)orientation_factory.CreateFromRegion(&img->getRegions()[guessRegionAt]);
     node_id node_orientation = cn->getNodeFromFeature(orientation);
     delete orientation;
