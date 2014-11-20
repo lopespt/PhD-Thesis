@@ -89,16 +89,16 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
         if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
-            printf("%d \n", pos);
+            //printf("%d \n", pos);
             break;
         }
         pos++;
     }
 
     (*cn->getNode(guessed))->asString(buffer);
-    bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
-
-    for(int k=0;k<rank.size() && k< 50;k++){
+    //bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
+    return pos < 50;
+    /*for(int k=0;k<rank.size() && k< 50;k++){
         if(rank.size()>1){
             guessed = rank[k].first;
             (*cn->getNode(guessed))->asString(buffer);
@@ -114,5 +114,5 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     //printf("\n");
     fflush(stdout);
     return result;
-    //return QString::fromLocal8Bit(buffer);
+    //return QString::fromLocal8Bit(buffer);*/
 }

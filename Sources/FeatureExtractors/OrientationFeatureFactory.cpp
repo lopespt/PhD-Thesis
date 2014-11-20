@@ -69,7 +69,7 @@ OrientationFeature* OrientationFeatureFactory::discoverOrientation(QList<QPoint>
     float angle = atan2(r.y(), r.x()) *180. / M_PI + 180;
     int v = discretize(0,360,discretization, angle);
     //printf("lbl = %f %d \n", angle, v );
-    return new OrientationFeature(  v);
+    return new OrientationFeature(v);
 }
 
 
