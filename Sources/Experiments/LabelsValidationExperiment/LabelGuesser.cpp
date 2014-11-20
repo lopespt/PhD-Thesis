@@ -55,7 +55,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
             node_id node = index[img->getRegions().at(i).getLabel()];
             for(FeaturesComplexNetwork::EdgeIterator e = cn->EdgesBegin( node ); e != cn->EdgesEnd( node ); e++ ){
                     if (grades.contains(e.getToNodeId()))
-                        grades[e.getToNodeId()]+= e->getWeight();
+                        grades[e.getToNodeId()] += e->getWeight();
                     else
                         grades[e.getToNodeId()] = e->getWeight();
             }

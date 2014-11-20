@@ -99,10 +99,10 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     weight = e->getWeight();
                     //e->setAttribute(Link(0,weight+1));
                     e->setTime(this->time);
-                    e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                    //e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                    e->setWeight(weight + 1);
                     if(regionsIds[i] == regionsIds[j])
                         e->isSameLabel(true);
-                    //e->setWeight(weight + 1);
                 }else{
                     Link l = Link(this->time, 1 );
                     //e = new Edge<Feature, Link>(cn.getNode(f1), cn.getNode(f2), Link(this->time, this->learningRate*lambda/this->time  ));
