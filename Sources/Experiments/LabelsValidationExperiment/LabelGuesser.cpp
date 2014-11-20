@@ -73,7 +73,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        //if(node_orientation == -1 || possible_nodes.contains(i.key()))
+        if(node_orientation == -1 || possible_nodes.contains(i.key()))
             rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
 
@@ -88,7 +88,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
         if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
-            printf("%d / %d (%s) \n", pos, possible_nodes.size(), node_orientation != -1 ? "Utilizou" : "Nao Utilizou");
+            //printf("%d / %d (%s) \n", pos, possible_nodes.size(), node_orientation != -1 ? "Utilizou" : "Nao Utilizou");
             break;
         }
         pos++;
