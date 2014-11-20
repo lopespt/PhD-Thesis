@@ -45,7 +45,7 @@ void LabelsValidationExperiment::run(){
         int total=0;
         int acertos = 0;
         SunDatabaseReader reader(sunDatabaseFolder);
-        KFoldDatabaseReader kfold(reader, 0.5);
+        KFoldDatabaseReader kfold(reader, 0.75);
         auto trainReader = kfold.getTrainReader();
         auto testReader = kfold.getTestReader();
 
