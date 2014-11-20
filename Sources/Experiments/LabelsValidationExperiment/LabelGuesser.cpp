@@ -69,12 +69,12 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     QList<node_id> possible_nodes;
     //if(node_orientation != -1)
     possible_nodes = cn->getNodesOfSameLabel(node_orientation);
-    printf("\nsize: %d  -  %d \n", possible_nodes.size(), grades.size());
+    //printf("\nsize: %d  -  %d \n", possible_nodes.size(), grades.size());
 
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        if( possible_nodes.contains(i.key()))
+        //if( possible_nodes.contains(i.key()))
             rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
 
@@ -89,7 +89,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
         if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
-            //printf("%d / %d (%s) \n", pos, possible_nodes.size(), node_orientation != -1 ? "Utilizou" : "Nao Utilizou");
+            printf("%d \n", pos);
             break;
         }
         pos++;
@@ -98,12 +98,13 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     (*cn->getNode(guessed))->asString(buffer);
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
-    for(int k=0;k<rank.size() && k< 20;k++){
+    for(int k=0;k<rank.size() && k< 2;k++){
         if(rank.size()>1){
             guessed = rank[k].first;
             (*cn->getNode(guessed))->asString(buffer);
-            result = result || strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
+            result = result || (strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0);
         }
+
     };
     //printf("%s%s%s%s\n", result ? "acertou":"errou  ", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
     //printf("%s%s%s%s: ", result ? "->":"", buffer, result ? "==":"!=" ,img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() );
