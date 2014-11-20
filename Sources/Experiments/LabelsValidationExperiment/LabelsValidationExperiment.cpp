@@ -32,7 +32,11 @@ void LabelsValidationExperiment::run(){
     OrientationFeatureFactory featureFactory(40);
     Factories.append(&labelFactory);
     Factories.append(&featureFactory);
-    //for(int teste=0;teste<50;teste++){
+
+    QFile resultados("resultados.txt");
+    resultados.open(QIODevice::WriteOnly | QIODevice::Text);
+
+    for(int teste=0;teste<10;teste++){
         FeaturesComplexNetwork cn;
         //cn.load(complexNetworkFile.toStdString().c_str(), Factories);
         qsrand(time(NULL));
@@ -63,8 +67,12 @@ void LabelsValidationExperiment::run(){
                 printf("Acertos: %d | Analisadas: %d | Total: %d | %.0f%%\r", acertos, total+1, testReader.getTotal() , acertos*100./total);
             }
         }
+        resultados.write(QString("%1\t%2\t%3\n").arg(acertos).arg(total+1).arg(acertos*100./total).toLocal8Bit());
+        resultados.flush();
+
         printf("\n");
         fflush(stdout);
-    //}
+    }
+    resultados.close();
 
 }
