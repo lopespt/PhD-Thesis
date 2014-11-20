@@ -38,23 +38,19 @@ void LabelsValidationExperiment::run(){
 
     for(int teste=0;teste<10;teste++){
         FeaturesComplexNetwork cn;
-        //cn.load(complexNetworkFile.toStdString().c_str(), Factories);
+        cn.load(complexNetworkFile.toStdString().c_str(), Factories);
         qsrand(time(NULL));
         LabelGuesser l(&cn);
 
         int total=0;
         int acertos = 0;
         SunDatabaseReader reader(sunDatabaseFolder);
-        KFoldDatabaseReader kfold(reader, 0.75);
-        auto trainReader = kfold.getTrainReader();
-        auto testReader = kfold.getTestReader();
+        //KFoldDatabaseReader kfold(reader, 0.75);
+        //auto trainReader = kfold.getTrainReader();
+        //auto testReader = kfold.getTestReader();
 
-        buildComplexNetwork(trainReader);
-        cn.load("complex_network_tmp.cn", Factories);
-        cn.updateIndex();
-
-        while(testReader.hasNext()){
-            SupervisedImage img = testReader.readNext();
+        while(reader.hasNext()){
+            SupervisedImage img = reader.readNext();
             if(img.getRegions().size()>1){
                 unsigned int idx = qrand()%img.getRegions().size();
                 bool guessed = l.Guess(&img, idx) ;
@@ -64,7 +60,7 @@ void LabelsValidationExperiment::run(){
                 };
                 //printf("%s: \n", l.Guess(&img, qrand()%img.getRegions().size()) ? "Acertou": "Errou");
                 total++;
-                printf("Acertos: %d | Analisadas: %d | Total: %d | %.0f%%\r", acertos, total+1, testReader.getTotal() , acertos*100./total);
+                printf("Acertos: %d | Analisadas: %d | Total: %d | %.0f%%\r", acertos, total+1, reader.getTotal() , acertos*100./total);
             }
         }
         resultados.write(QString("%1\t%2\t%3\n").arg(acertos).arg(total+1).arg(acertos*100./total).toLocal8Bit());
