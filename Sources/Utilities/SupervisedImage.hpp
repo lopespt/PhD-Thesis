@@ -3,14 +3,11 @@
 #define SUPERVISED_IMAGE__H
 
 #include <QList>
-#include <QImage>
 #include <FeatureExtractors/Region.hpp>
-#include <QPixmap>
-#include <QObject>
-#include <QRegularExpression>
-#include <QFile>
-#include <QtAlgorithms>
-#include <QVector>
+#include <QString>
+#include <QImage>
+
+
 using namespace std;
 
 class SupervisedImage{

@@ -34,7 +34,6 @@ int main(int argc, char* argv[]){
     SunDatabaseReader reader( (QString(argv[1])) );
     SupervisedImage s = reader.readNext();
 
-    FeatureAbstract* v = e.CreateFromRegion(&(s.getRegions()[0]));
     AreaFeatureExtractionWindow win(argv[1]);
     win.setVisible(true);
 

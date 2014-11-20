@@ -6,9 +6,9 @@ typedef unsigned long long int link_time;
 class Link{
     
     private:
-        bool sameLabel;
         link_time time;
         float weight;
+        bool sameLabel;
         static float max_weight;
         
     public:

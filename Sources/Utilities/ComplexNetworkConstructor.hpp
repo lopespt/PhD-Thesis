@@ -28,7 +28,7 @@ class ComplexNetworkConstructor{
         unsigned long long int time=1;
         void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
-        float lambda=1; 
+        float lambda=8;
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
         float learningRate=0.3;
         float recorrencia(float time);
@@ -119,7 +119,7 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
 }float ComplexNetworkConstructor::recorrencia(float time){
     float ma=1;
     float mi=0.01;
-    float z=8;
+    float z=lambda;
     return (ma-mi)*pow(2,(1-time)/(z-1))+mi;
 }
 

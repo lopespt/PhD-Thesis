@@ -2,24 +2,26 @@
 #include <string.h>
 #include <QDataStream>
 #include <FeatureExtractors/FeatureFactoryAbstract.hpp>
+
+
 FeaturesComplexNetwork::FeaturesComplexNetwork():ComplexNetwork()
 {
 }
 
 void FeaturesComplexNetwork::save(const char* filename){
-    file_header.num_nodes = this->nodes.size();
-    file_header.num_edges = this->edges.size();
-    strcpy(file_header.description, "");
-
     QFile f(filename);
     f.open(QIODevice::WriteOnly);
     QDataStream stream(&f);
 
 
-    strcpy(file_header.description,"");
-    file_header.num_nodes = nodes.size();
-    file_header.num_edges = edge.size();
-    f.write((char*)&file_header, sizeof(file_header));
+
+    header f_header;
+    strcpy(f_header.description,"");
+    f_header.num_nodes = nodes.size();
+    f_header.num_edges = edge.size();
+    f.write((char*)&f_header, sizeof(header));
+
+
 
     //save nodes
     typename QHash< node_id, const FeatureAbstract*>::iterator nodes_iter;
@@ -59,13 +61,15 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
     f.open(QIODevice::ReadOnly);
     QDataStream stream(&f);
 
+     header f_header;
+
     current_node_id = 0;
-    f.read( (char*)&file_header, sizeof(file_header) );
+    f.read( (char*)&f_header, sizeof(header) );
     //printf("%u\n", file_header.num_nodes);
     //printf("%u\n", file_header.num_edges);
 
     //load nodes
-    for( unsigned int n = 0; n < file_header.num_nodes; n++ ){
+    for( unsigned int n = 0; n < f_header.num_nodes; n++ ){
         node_id id;
         f.read( (char*)&id, sizeof(node_id) );
         int type;
@@ -85,7 +89,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
     }
 
     //load edges links
-    for(unsigned int e = 0; e < file_header.num_edges; e++){
+    for(unsigned int e = 0; e < f_header.num_edges; e++){
         node_id from, to;
         edge_id edgeid;
         Link edge_value;
@@ -144,8 +148,10 @@ void FeaturesComplexNetwork::updateIndex(){
 }
 
 node_id FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstract *f) const{
-    assert(featureIndex.contains(FeatureAbstractKey(f)));
-    return featureIndex[FeatureAbstractKey(f)];
+    if(featureIndex.contains(FeatureAbstractKey(f))){
+        return featureIndex[FeatureAbstractKey(f)];
+    }
+    return -1;
 }
 
 QList<node_id> FeaturesComplexNetwork::getNodesOfSameLabel(node_id id) {
@@ -157,3 +163,4 @@ QList<node_id> FeaturesComplexNetwork::getNodesOfSameLabel(node_id id) {
     }
     return ret;
 }
+

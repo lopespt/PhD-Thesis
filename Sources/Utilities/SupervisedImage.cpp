@@ -1,6 +1,12 @@
 
 #include "SupervisedImage.hpp"
 #include <FeatureExtractors/Region.hpp>
+#include <QImage>
+#include <QPixmap>
+#include <QObject>
+#include <QRegularExpression>
+#include <QFile>
+#include <QtAlgorithms>
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
 

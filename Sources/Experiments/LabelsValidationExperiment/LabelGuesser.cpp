@@ -41,6 +41,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     QHash<node_id, float> grades;
     QSet<node_id> image_nodes;
 
+
     for(int i=0;i<img->getRegions().size();i++){
         if(i!=guessRegionAt){
             node_id node = index[img->getRegions().at(i).getLabel()];
@@ -61,21 +62,20 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
-    OrientationFeatureFactory orientation_factory(800);
+    OrientationFeatureFactory orientation_factory(40);
     OrientationFeature *orientation = (OrientationFeature*)orientation_factory.CreateFromRegion(&img->getRegions()[guessRegionAt]);
     node_id node_orientation = cn->getNodeFromFeature(orientation);
     delete orientation;
-    QList<node_id> possible_nodes = cn->getNodesOfSameLabel(node_orientation);
+    QList<node_id> possible_nodes;
+    if(node_orientation != -1)
+    possible_nodes = cn->getNodesOfSameLabel(node_orientation);
 
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        if(possible_nodes.contains(i.key()))
+        if(node_orientation == -1 || possible_nodes.contains(i.key()))
             rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
-
-    LabelFeature lbl(label(img->getRegions()[guessRegionAt].getLabel().toStdString().c_str()));
-    node_id lbl_node = cn->getNodeFromFeature(&lbl);
 
     qSort(rank.begin(), rank.end(), [&](QPair<node_id, float> a,
           QPair<node_id, float> b){
@@ -88,7 +88,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
         if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
-            printf("%d / %d \n", pos, possible_nodes.size());
+            printf("\n %d / %d (%s) \n", pos, possible_nodes.size(), node_orientation != -1 ? "Utilizou" : "Nao Utilizou");
             break;
         }
         pos++;

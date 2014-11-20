@@ -10,6 +10,7 @@ private:
     QString sunDatabaseFolder, complexNetworkFile;
 
 public:
+    void buildComplexNetwork(DatabaseReader &reader);
     LabelsValidationExperiment(QString sunDatabaseFolder, QString complexNetworkFile);
     void run();
 };

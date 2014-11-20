@@ -17,7 +17,6 @@ int main(int argc, char **argv){
     //QApplication a(argc, argv);
     setlocale(LC_ALL, "");
 
-    int discretization=10;
     LabelFeatureFactory feat;
     QList<FeatureFactoryAbstract*> extractors;
     extractors.append(&feat);

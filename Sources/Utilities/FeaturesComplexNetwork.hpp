@@ -2,6 +2,7 @@
 #define FEATURESCOMPLEXNETWORK_HPP
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <FeatureExtractors/FeatureAbstract.hpp>
+#include <FeatureExtractors/FeatureFactoryAbstract.hpp>
 #include "Link.hpp"
 #include <QHash>
 #include<QList>
@@ -13,6 +14,13 @@ class FeaturesComplexNetwork:public ComplexNetwork<const FeatureAbstract*, Link>
 private:
     QHash<FeatureAbstractKey, node_id> featureIndex;
     virtual void load(const char *filename){}
+
+    typedef struct{
+        char description[200];
+        unsigned int num_nodes;
+        unsigned int num_edges;
+    }header;
+
 public:
     FeaturesComplexNetwork();
     ~FeaturesComplexNetwork();

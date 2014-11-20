@@ -19,7 +19,8 @@
 #include <vtkCubeSource.h>
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include "LabelsComplexNetworkConstructor.hpp"
+#include <Utilities/NodeString.hpp>
+#include <Utilities/Link.hpp>
 #include <vtkMutableUndirectedGraph.h>
 #include <QMap>
 #include <vtkSimple2DLayoutStrategy.h>
