@@ -12,7 +12,7 @@ void LabelsValidationExperiment::buildComplexNetwork(DatabaseReader &reader){
     FeaturesComplexNetwork labels_cn;
     QList<FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labels_factory;
-    OrientationFeatureFactory orientation_factory(120);
+    OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
     factories.append(&orientation_factory);
 
@@ -29,7 +29,7 @@ void LabelsValidationExperiment::buildComplexNetwork(DatabaseReader &reader){
 void LabelsValidationExperiment::run(){
     QList<FeatureFactoryAbstract*> Factories;
     LabelFeatureFactory labelFactory;
-    OrientationFeatureFactory featureFactory(120);
+    OrientationFeatureFactory featureFactory(2000);
     Factories.append(&labelFactory);
     Factories.append(&featureFactory);
 

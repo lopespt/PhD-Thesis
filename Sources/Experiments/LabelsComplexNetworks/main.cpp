@@ -38,7 +38,7 @@ int main(int argc, char **argv){
     SunDatabaseReader reader(folder);
     QList<FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labels_factory;
-    OrientationFeatureFactory orientation_factory(120);
+    OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
     factories.append(&orientation_factory);
 

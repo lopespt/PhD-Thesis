@@ -62,18 +62,19 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
         }
     }
 
-    OrientationFeatureFactory orientation_factory(120);
+    OrientationFeatureFactory orientation_factory(2000);
     OrientationFeature *orientation = (OrientationFeature*)orientation_factory.CreateFromRegion(&img->getRegions()[guessRegionAt]);
     node_id node_orientation = cn->getNodeFromFeature(orientation);
     delete orientation;
     QList<node_id> possible_nodes;
-    if(node_orientation != -1)
+    //if(node_orientation != -1)
     possible_nodes = cn->getNodesOfSameLabel(node_orientation);
+    printf("\nsize: %d  -  %d \n", possible_nodes.size(), grades.size());
 
     QList<QPair<node_id, float>> rank;
     node_id guessed;
     for(auto i = grades.begin(); i != grades.end(); i++){
-        if(node_orientation == -1 || possible_nodes.contains(i.key()))
+        if( possible_nodes.contains(i.key()))
             rank.push_back(QPair<node_id,float>(i.key(),i.value()));
     }
 
@@ -97,7 +98,7 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     (*cn->getNode(guessed))->asString(buffer);
     bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
 
-    for(int k=0;k<rank.size() && k< 100;k++){
+    for(int k=0;k<rank.size() && k< 20;k++){
         if(rank.size()>1){
             guessed = rank[k].first;
             (*cn->getNode(guessed))->asString(buffer);

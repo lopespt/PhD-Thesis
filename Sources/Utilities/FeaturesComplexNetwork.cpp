@@ -151,6 +151,7 @@ node_id FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstract *f) con
     if(featureIndex.contains(FeatureAbstractKey(f))){
         return featureIndex[FeatureAbstractKey(f)];
     }
+    assert(true);
     return -1;
 }
 
