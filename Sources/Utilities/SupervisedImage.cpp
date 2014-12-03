@@ -8,14 +8,14 @@
 #include <QFile>
 #include <QtAlgorithms>
 
-SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
-
-    parse_xml();
-    //printf("%s\n%s\n", imagePath.toStdString().c_str(), supervisedPath.toStdString().c_str()); 
+SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
 }
 
 
 void SupervisedImage::parse_xml(){
+    if(alreadyParsed)
+        return;
+
     QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );      
     QFile f(this->supervisedPath);
 
@@ -30,7 +30,7 @@ void SupervisedImage::parse_xml(){
         QString label    = extractLabel(regionXml);
         this->regions << (Region(&this->image, polygon, label));
     }
-
+    alreadyParsed=true;
 
 }
 
@@ -56,19 +56,14 @@ QString SupervisedImage::extractLabel(QString Xml){
 }
     
 
-void SupervisedImage::show_image(){
-/*    l=new QLabel();
-    l->setBaseSize(200,200);
-    l->setPixmap(QPixmap::fromImage(image));
-    l->setVisible(true);*/
-}
-
-const QList<Region>& SupervisedImage::getRegions() const{
+const QList<Region>& SupervisedImage::getRegions() {
+    parse_xml();
     return this->regions;
 }
 
 
-const QImage* SupervisedImage::getImage() const{
+const QImage* SupervisedImage::getImage() {
+    parse_xml();
     return &this->image;
 }
 

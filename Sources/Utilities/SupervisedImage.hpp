@@ -13,6 +13,7 @@ using namespace std;
 class SupervisedImage{
     
     private:
+        bool alreadyParsed;
         QString imagePath;
         QString supervisedPath;
         QImage image;
@@ -24,10 +25,9 @@ class SupervisedImage{
 
     public:
         SupervisedImage(QString imagePath, QString supervisedPath);
-        void show_image();
         ~SupervisedImage();
-        const QList<Region>& getRegions() const;
-        const QImage* getImage() const;
+        const QList<Region>& getRegions();
+        const QImage* getImage() ;
         QString getImagePath() const;
         QString getSupervisedPath() const;
 

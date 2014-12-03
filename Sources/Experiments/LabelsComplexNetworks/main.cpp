@@ -21,7 +21,6 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <QList>
 
 int main(int argc, char **argv){
-
     QCoreApplication app(argc,argv);
     QCommandLineParser parser;
     parser.addPositionalArgument("folder", "SUN Database Folder","folder");
@@ -40,7 +39,7 @@ int main(int argc, char **argv){
     LabelFeatureFactory labels_factory;
     OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
-    factories.append(&orientation_factory);
+    //factories.append(&orientation_factory);
 
     ComplexNetworkConstructor constructor(labels_cn,reader,factories);
     constructor.build();

@@ -9,7 +9,6 @@ class Link{
         link_time time;
         float weight;
         bool sameLabel;
-        static float max_weight;
         
     public:
         link_time getTime() const;

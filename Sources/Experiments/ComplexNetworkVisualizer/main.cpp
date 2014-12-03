@@ -7,6 +7,7 @@
 #include <QList>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
+#include <FeatureExtractors/OrientationFeatureFactory.hpp>
 int main(int argc, char *argv[]){
 
     QVTKApplication app(argc, argv);
@@ -20,7 +21,9 @@ int main(int argc, char *argv[]){
 
     QList<FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labelFactory;
+    OrientationFeatureFactory orientationFactory(40);
     factories.append(&labelFactory);
+    factories.append(&orientationFactory);
 
 
     ComplexNetworkVisualizer visualizer;

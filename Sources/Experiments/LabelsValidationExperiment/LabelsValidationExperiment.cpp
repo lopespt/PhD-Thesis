@@ -16,6 +16,7 @@ void LabelsValidationExperiment::buildComplexNetwork(DatabaseReader &reader){
     factories.append(&labels_factory);
     factories.append(&orientation_factory);
 
+
     ComplexNetworkConstructor constructor(labels_cn,reader,factories);
     constructor.build();
     printf("%u\n", labels_cn.getNumNodes());

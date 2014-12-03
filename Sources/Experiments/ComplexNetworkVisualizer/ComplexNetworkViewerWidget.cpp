@@ -6,6 +6,7 @@
 #include <vtkProperty2D.h>
 #include <vtkTextProperty.h>
 #include <FeatureExtractors/FeatureAbstract.hpp>
+#include <vtkInteractorStyleFlight.h>
 ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
     QWidget(parent)
 {
@@ -50,7 +51,7 @@ void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn){
    this->vRenderer->ResetCamera();
    this->vtkWidget->GetRenderWindow()->GetInteractor()->EnableRenderOn();
    this->vtkWidget->GetRenderWindow()->Render();
-   //this->viewer->SetInteractorStyle(vtkInteractorStyleFlight::New());
+   this->viewer->SetInteractorStyle(vtkInteractorStyleFlight::New());
    //this->viewer->GetInteractor()->Start();
    //this->viewer->GetInteractor()->Start();
    //this->vRenderer->Render();
