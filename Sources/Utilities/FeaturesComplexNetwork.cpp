@@ -24,7 +24,7 @@ void FeaturesComplexNetwork::save(const char* filename){
 
 
     //save nodes
-    typename QHash< node_id, const FeatureAbstract*>::iterator nodes_iter;
+    QHash< node_id, const FeatureAbstract*>::iterator nodes_iter;
     //char buffer[50];
     for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++ ){
         f.write( (char*)&nodes_iter.key(), sizeof(node_id) );
@@ -35,8 +35,8 @@ void FeaturesComplexNetwork::save(const char* filename){
 
     //save edges links
     QSet<edge_id> writed;
-    typename QHash< node_id, QHash<node_id, edge_id>>::iterator from_iter;
-    typename QHash<node_id, edge_id>::iterator to_iter;
+     QHash< node_id, QHash<node_id, edge_id>>::iterator from_iter;
+     QHash<node_id, edge_id>::iterator to_iter;
     for(from_iter = edges.begin(); from_iter!=edges.end();from_iter++){
         for(to_iter = from_iter->begin(); to_iter!=from_iter->end();to_iter++){
             if(!writed.contains(to_iter.value())){
@@ -108,7 +108,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
 
 void FeaturesComplexNetwork::clear(){
 
-    typename QHash<node_id, const FeatureAbstract*>::iterator nodes_iter;
+     QHash<node_id, const FeatureAbstract*>::iterator nodes_iter;
     for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++){
         delete *nodes_iter;
     }

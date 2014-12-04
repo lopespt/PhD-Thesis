@@ -1,10 +1,11 @@
 #include "OrientationFeatureFactory.hpp"
-
+#define _USE_MATH_DEFINES
 #include "OrientationFeature.hpp"
 #include <QPolygon>
 #include <QPoint>
 #include "OrientationFeature.hpp"
-#include <math.h>
+#include <cmath>
+
 
 OrientationFeatureFactory::OrientationFeatureFactory(int discretization):FeatureFactoryAbstract(2), discretization(discretization)
 {

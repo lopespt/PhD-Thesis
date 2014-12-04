@@ -8,6 +8,8 @@
 #include <QApplication>
 #include "AreaFeatureExtractionWindow.hpp"
 #include <QString>
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 const char *helpText=\
         "usage: AreaFeatureExtractionTest <pathToSunDatabase>\n"\
