@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 2.4)
+add_definitions( -DUSE_MATH_DEFINES )
+
 
 if(POLICY CMP0020)
       cmake_policy(SET CMP0020 NEW) 
