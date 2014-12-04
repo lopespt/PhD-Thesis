@@ -33,14 +33,14 @@ void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn){
 
     for(FeaturesComplexNetwork::NodeIterator it = this->cn->Begin(); it!=this->cn->End(); it++){
         vtkIdType node_id = this->graph->AddVertex();
-        vertices[*it] = node_id;
-        array2->InsertValue(node_id, (*it)->asString(buffer));
+        vertices[it->get()] = node_id;
+        array2->InsertValue(node_id, (it->get())->asString(buffer));
     }
 
 
     for(FeaturesComplexNetwork::NodeIterator i = this->cn->Begin(); i!=this->cn->End(); i++){
         for(FeaturesComplexNetwork::EdgeIterator it = this->cn->EdgesBegin(i.getNodeId()); it!=this->cn->EdgesEnd(i.getNodeId()); it++){
-            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ *this->cn->getNode(i.getNodeId())], vertices[*this->cn->getNode(it.getToNodeId())]);
+            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ this->cn->getNode(i.getNodeId())->get()], vertices[this->cn->getNode(it.getToNodeId())->get()]);
             array->InsertValue(edgeId.Id, it->getWeight());
         }
     }

@@ -77,7 +77,7 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
     foreach(const FeatureAbstract* f, features){
         node_id id;
         if(!index.contains(FeatureAbstractKey(f))){
-            id= cn.addNode(f);
+            id= cn.addNode(shared_ptr<const FeatureAbstract>(f));
             index[FeatureAbstractKey(f)]=id;
         }else{
             id = index[FeatureAbstractKey(f)];

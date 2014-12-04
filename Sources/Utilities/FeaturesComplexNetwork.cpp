@@ -3,6 +3,7 @@
 #include <QDataStream>
 #include <FeatureExtractors/FeatureFactoryAbstract.hpp>
 
+using namespace std;
 
 FeaturesComplexNetwork::FeaturesComplexNetwork():ComplexNetwork()
 {
@@ -24,11 +25,11 @@ void FeaturesComplexNetwork::save(const char* filename){
 
 
     //save nodes
-    QHash< node_id, const FeatureAbstract*>::iterator nodes_iter;
+    QHash< node_id, shared_ptr<const FeatureAbstract> >::iterator nodes_iter;
     //char buffer[50];
     for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++ ){
         f.write( (char*)&nodes_iter.key(), sizeof(node_id) );
-        int type = nodes_iter.value()->getType();
+        int type = (nodes_iter.value())->getType();
         f.write( (char*)&type, sizeof(int) );
         nodes_iter.value()->WriteToStream(stream);
     }
@@ -82,7 +83,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
             }
         }
         assert(feature!=NULL);
-        nodes.insert(id, feature);
+        nodes.insert(id, shared_ptr<const FeatureAbstract>(feature));
 
         if(id >= current_node_id)
             current_node_id = id+1;
@@ -108,10 +109,10 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
 
 void FeaturesComplexNetwork::clear(){
 
-     QHash<node_id, const FeatureAbstract*>::iterator nodes_iter;
+     /*QHash<node_id, shared_ptr<const FeatureAbstract*> >::iterator nodes_iter;
     for(nodes_iter=nodes.begin(); nodes_iter!=nodes.end();nodes_iter++){
         delete *nodes_iter;
-    }
+    }*/
     nodes.clear();
     edges.clear();
     edge.clear();
@@ -120,7 +121,7 @@ void FeaturesComplexNetwork::clear(){
 }
 
 FeaturesComplexNetwork::~FeaturesComplexNetwork(){
-    clear();
+    //clear();
 }
 
 float FeaturesComplexNetwork::getOutputDegree(node_id from) const{
@@ -131,19 +132,19 @@ float FeaturesComplexNetwork::getOutputDegree(node_id from) const{
     return total;
 }
 
+/*
 bool FeaturesComplexNetwork::removeNode(node_id id){
     assert(getNode(id));
-    char buffer[50];
-    delete (*getNode(id));
-    return ComplexNetwork<const FeatureAbstract*, Link>::removeNode(id);
-}
+    //delete (*getNode(id));
+    return ComplexNetwork<shared_ptr<const FeatureAbstract*>, Link>::removeNode(id);
+}*/
 
 void FeaturesComplexNetwork::updateIndex(){
     featureIndex.clear();
     //char buffer[100];
     for(auto i = Begin(); i!=End();i++){
         //printf("%s\n", (*i)->asString(buffer) );
-        featureIndex[FeatureAbstractKey(*i)] = i.getNodeId();
+        featureIndex[FeatureAbstractKey( i->get() )] = i.getNodeId();
     }
 }
 
@@ -151,7 +152,6 @@ node_id FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstract *f) con
     if(featureIndex.contains(FeatureAbstractKey(f))){
         return featureIndex[FeatureAbstractKey(f)];
     }
-    assert(true);
     return -1;
 }
 

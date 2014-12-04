@@ -16,7 +16,7 @@ LabelGuesser::LabelGuesser(FeaturesComplexNetwork *cn):cn(cn)
 void LabelGuesser::buildIndex(){
     char buffer[100];
     for(FeaturesComplexNetwork::NodeIterator i = cn->Begin(); i != cn->End() ; i++ ){
-        QString key = QString::fromLocal8Bit((*i)->asString(buffer));
+        QString key = QString::fromLocal8Bit((i->get())->asString(buffer));
         index.insert(key, i.getNodeId());
     }
 }
@@ -88,14 +88,14 @@ bool LabelGuesser::Guess(SupervisedImage *img, int guessRegionAt){
     guessed = rank.first().first;
     unsigned int pos=1;
     for(auto i = rank.begin(); i != rank.end(); i++){
-        if( strcmp((*cn->getNode(i->first))->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
+        if( strcmp((cn->getNode(i->first))->get()->asString(buffer), img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str() )==0 ){
             //printf("%d \n", pos);
             break;
         }
         pos++;
     }
 
-    (*cn->getNode(guessed))->asString(buffer);
+    (cn->getNode(guessed))->get()->asString(buffer);
     //bool result = strcmp(buffer, img->getRegions().at(guessRegionAt).getLabel().toStdString().c_str())==0;
     return pos < 50;
     /*for(int k=0;k<rank.size() && k< 50;k++){

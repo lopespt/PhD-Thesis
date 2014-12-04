@@ -41,14 +41,16 @@ public:
     unsigned int getNumNodes() const;
     unsigned int getNumEdges() const;
 
-
+    class EdgeIterator;
     class NodeIterator{
         friend class ComplexNetwork<NODE_TYPE, EDGE_TYPE>;
     private:
         typename QHash< node_id, NODE_TYPE>::iterator iter;
-        NodeIterator(typename QHash< node_id, NODE_TYPE>::iterator iter):iter(iter){}
+        ComplexNetwork<NODE_TYPE, EDGE_TYPE> *cn;
+        NodeIterator(typename QHash< node_id, NODE_TYPE>::iterator iter, ComplexNetwork<NODE_TYPE, EDGE_TYPE> *cn):iter(iter), cn(cn){}
 
     public:
+        NodeIterator():cn(NULL){}
         NODE_TYPE& operator*(){
             return iter.value();
         }
@@ -74,6 +76,14 @@ public:
             return (this->iter == other.iter);
         }
 
+        EdgeIterator EdgesBegin(){
+            return EdgeIterator(cn,cn->edges[this->getNodeId()].begin());
+        }
+
+        EdgeIterator EdgesEnd(){
+            return EdgeIterator(cn,cn->edges[this->getNodeId()].end());
+        }
+
 
         node_id getNodeId() const{
             return iter.key();
@@ -92,6 +102,7 @@ public:
         EdgeIterator(typename QHash<edge_id, EDGE_TYPE>::iterator iter2):iter2(iter2), allEdges(true){}
 
      public:
+        EdgeIterator():cn(NULL){}
         EDGE_TYPE& operator*(){
             if(allEdges){
                 return iter2.value();
@@ -159,6 +170,8 @@ public:
 
     void save(const char * filename);
     void load(const char * filename);
+
+    ComplexNetwork<NODE_TYPE, EDGE_TYPE>& operator =(const ComplexNetwork<NODE_TYPE, EDGE_TYPE> &cn);
 
 };
 
@@ -315,12 +328,12 @@ void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char* filename){
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::Begin(){
-    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.begin());
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.begin(), this);
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::End(){
-    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.end());
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator(nodes.end(), this);
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
@@ -368,6 +381,16 @@ unsigned int ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNumEdges(node_id id) const
 }
 
 
+template <typename NODE_TYPE, typename EDGE_TYPE>
+ComplexNetwork<NODE_TYPE, EDGE_TYPE>& ComplexNetwork<NODE_TYPE, EDGE_TYPE>::operator =(const ComplexNetwork<NODE_TYPE, EDGE_TYPE> &cn){
+    this->nodes = cn.nodes;
+    this->edges = cn.edges;
+    this->current_edge_id = cn.current_edge_id;
+    this->current_node_id = cn.current_node_id;
+    this->directed = cn.directed;
+    this->edge = cn.edge;
+    return *this;
+}
 #endif // COMPLEXNETWORK_HPP
 
 

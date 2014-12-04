@@ -6,10 +6,10 @@
 #include "Link.hpp"
 #include <QHash>
 #include<QList>
-
+#include <memory>
 class FeatureFactoryAbstract;
 
-class FeaturesComplexNetwork:public ComplexNetwork<const FeatureAbstract*, Link>
+class FeaturesComplexNetwork:public ComplexNetwork< std::shared_ptr<const FeatureAbstract> , Link>
 {
 private:
     QHash<FeatureAbstractKey, node_id> featureIndex;
@@ -28,10 +28,9 @@ public:
     void load(const char* filename, QList<FeatureFactoryAbstract*>);
     float getOutputDegree(node_id) const;
     void clear();
-    bool removeNode(node_id id);
+    //bool removeNode(node_id id);
     void updateIndex();
     node_id getNodeFromFeature(const FeatureAbstract* f) const;
     QList<node_id> getNodesOfSameLabel(node_id);
 };
-
 #endif // FEATURESCOMPLEXNETWORK_HPP
