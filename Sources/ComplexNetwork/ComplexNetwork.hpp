@@ -7,7 +7,7 @@
 #include <QFile>
 #include <QSet>
 #include <assert.h>
-
+#include "unordered_pair.hpp"
 typedef unsigned int node_id;
 typedef unsigned int edge_id;
 
@@ -15,10 +15,12 @@ template <typename NODE_TYPE, typename EDGE_TYPE>
 class ComplexNetwork
 {
 protected:
+    //typedef unordered_pair<node_id, node_id>
     node_id current_node_id;
     edge_id current_edge_id;
     bool directed;
     QHash< node_id, NODE_TYPE> nodes;
+    //QHash< unordered_pair<node_id, node_id> , edge_id> edges;
     QHash< node_id, QHash<node_id, edge_id> > edges;
     QHash< edge_id, EDGE_TYPE> edge;
     QPair<node_id, node_id> createEdgeKey(node_id from, node_id to);
@@ -78,13 +80,12 @@ public:
         }
 
         EdgeIterator EdgesBegin(){
-            return EdgeIterator(cn,cn->edges[this->getNodeId()].begin());
+            return EdgeIterator(cn, this->getNodeId(),cn->edges[this->getNodeId()].begin());
         }
 
         EdgeIterator EdgesEnd(){
-            return EdgeIterator(cn,cn->edges[this->getNodeId()].end());
+            return EdgeIterator(cn, this->getNodeId(), cn->edges[this->getNodeId()].end());
         }
-
 
         node_id getNodeId() const{
             return iter.key();
@@ -95,68 +96,103 @@ public:
         friend class ComplexNetwork<NODE_TYPE, EDGE_TYPE>;
     private:
         typename QHash<node_id, edge_id>::iterator iter;
-        typename QHash<edge_id, EDGE_TYPE>::iterator iter2;
         ComplexNetwork<NODE_TYPE, EDGE_TYPE>* cn;
+        QList<node_id> nodes;
+        QList<node_id>::iterator nodes_iter;
+        node_id from;
         bool allEdges=false;
 
-        EdgeIterator(ComplexNetwork<NODE_TYPE, EDGE_TYPE> *cn, typename QHash<node_id, edge_id>::iterator iter):iter(iter),cn(cn), allEdges(false){}
-        EdgeIterator(typename QHash<edge_id, EDGE_TYPE>::iterator iter2):iter2(iter2), allEdges(true){}
+        EdgeIterator(ComplexNetwork<NODE_TYPE, EDGE_TYPE> *cn, node_id from, typename QHash<node_id, edge_id>::iterator iter):iter(iter),cn(cn),from(from), allEdges(false){}
+        EdgeIterator(ComplexNetwork<NODE_TYPE, EDGE_TYPE> *cn, QList<node_id> nodes_list, typename QHash<node_id, edge_id>::iterator iter):iter(iter),cn(cn),nodes(nodes_list),nodes_iter(nodes.begin()), allEdges(true){}
 
      public:
         EdgeIterator():cn(NULL){}
         EDGE_TYPE& operator*(){
-            if(allEdges){
-                return iter2.value();
-            }
             assert(cn->edge.contains(iter.value()));
             return cn->edge[iter.value()];
         }
         EDGE_TYPE* operator->(){
-            if(allEdges)
-                return &iter2.value();
             return &cn->edge[iter.value()];
         }
         EdgeIterator & operator++(){
-            if(allEdges)
-                this->iter2++;
+            if(allEdges){
+                if(this->iter+1 == cn->edges[*nodes_iter].end() && nodes_iter != nodes.end()){
+                    nodes_iter++;
+                    if(nodes_iter != nodes.end()){
+                        from = *nodes_iter;
+                        iter = cn->edges[from].begin();
+                    }
+                }else{
+                    iter++;
+                }
+                return *this;
+            }
+
             this->iter++;
             return *this;
         }
         EdgeIterator & operator++(int i){
-            if(allEdges)
-                this->iter2++;
+            if(allEdges){
+                if(this->iter+1 == cn->edges[*nodes_iter].end() && nodes_iter != nodes.end()-1){
+                    nodes_iter++;
+                    from = *nodes_iter;
+                    iter = cn->edges[from].begin();
+                    return *this;
+                }
+            }
+
             this->iter++;
             return *this;
         }
         EdgeIterator & operator--(){
-            if(allEdges)
-                this->iter2--;
+            if(allEdges){
+                if(this->iter == cn->edges[*nodes_iter].begin()){
+                    nodes_iter--;
+                    if(nodes_iter != nodes.end()){
+                        from = *nodes_iter;
+                        iter = cn->edges[from].end()-1;
+                    }
+                }
+                return *this;
+            }
             this->iter--;
             return *this;
         }
+        EdgeIterator & operator--(int){
+            if(allEdges){
+                if(this->iter == cn->edges[*nodes_iter].begin()){
+                    nodes_iter--;
+                    if(nodes_iter != nodes.end()){
+                        from = *nodes_iter;
+                        iter = cn->edges[from].end()-1;
+                    }
+                }
+                return *this;
+            }
+            this->iter--;
+            return *this;
+        }
+
         bool operator!=(const EdgeIterator& other) const{
-            if(allEdges)
-                return (this->iter2 != other.iter2);
             return (this->iter != other.iter);
         }
         bool operator==(const EdgeIterator& other) const{
-            if(allEdges)
-                return (this->iter2 == other.iter2);
             return (this->iter == other.iter);
         }
 
-
         edge_id getEdgeId() const{
-            if(allEdges)
-                return iter2.key();
             return iter.value();
         }
 
         node_id getToNodeId() const{
-            assert(allEdges==false);
             return iter.key();
         }
 
+        node_id getFromNodeId() const{
+            if(allEdges)
+                return *nodes_iter;
+            return from;
+        }
     };
 
 
@@ -183,10 +219,8 @@ ComplexNetwork<NODE_TYPE, EDGE_TYPE>::ComplexNetwork(bool directed):current_node
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 inline QPair<node_id, node_id> ComplexNetwork<NODE_TYPE, EDGE_TYPE>::createEdgeKey(node_id from, node_id to){
-    //TODO: directed and undirected network
+    node_id f=from, t=to;
     //if undirected:
-    node_id f = from < to ? from : to;
-    node_id t = from < to ? to : from;
     return QPair<node_id, node_id>(f,t);
 }
 
@@ -318,7 +352,7 @@ void ComplexNetwork<NODE_TYPE, EDGE_TYPE>::load(const char* filename){
         f.read((char*)&(from), sizeof(node_id));
         f.read((char*)&(to), sizeof(node_id));
         f.read((char*)&(edge), sizeof(EDGE_TYPE));
-        edges.insert(createEdgeKey(from, to), edge);
+        edges.insert(from, to, edge);
     }
 
 
@@ -340,23 +374,23 @@ typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::NodeIterator ComplexNetwork<NODE_
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgesBegin(node_id node_from){
     //assert(edges.contains(node_from));
-    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, edges[node_from].begin());
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, node_from, edges[node_from].begin());
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgesEnd(node_id node_from){
     //assert(edges.contains(node_from));
-    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, edges[node_from].end());
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, node_from, edges[node_from].end());
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgesBegin(){
-    return edge.begin();
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, edges.keys(), edges.begin().value().begin() );
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgesEnd(){
-    return edge.end();
+    return typename ComplexNetwork<NODE_TYPE, EDGE_TYPE>::EdgeIterator(this, edges.keys(), (edges.end()-1).value().end() );
 }
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
