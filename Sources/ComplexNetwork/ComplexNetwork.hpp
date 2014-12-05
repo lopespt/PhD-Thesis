@@ -22,6 +22,7 @@ protected:
     QHash< node_id, QHash<node_id, edge_id> > edges;
     QHash< edge_id, EDGE_TYPE> edge;
     QPair<node_id, node_id> createEdgeKey(node_id from, node_id to);
+
     struct{
         char description[200];
         unsigned int num_nodes;

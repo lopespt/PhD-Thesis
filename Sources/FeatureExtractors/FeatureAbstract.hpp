@@ -23,7 +23,8 @@ class FeatureAbstract{
         const char* getFeatureName() const{
             return featureName;
         }
-        virtual ~FeatureAbstract(){}
+        virtual ~FeatureAbstract(){
+        }
         virtual void WriteToStream(QDataStream &stream) const = 0;
 
         bool operator==(const FeatureAbstract& other) const;

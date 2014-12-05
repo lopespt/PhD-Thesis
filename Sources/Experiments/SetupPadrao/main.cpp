@@ -17,12 +17,21 @@ int main(int argc, char* argv[]){
     FeaturesComplexNetwork net;
     net.load("/tmp/Implementation-Build/bin/labelsNetwork.cn", feat);
 
-    FeaturesComplexNetwork net2;
-    net2 = net;
-    printf("%f\n",net2.getEdge(10 , 100)->getWeight());
+    CachedComplexNetwork<int, double> net2(true);
+    net2 = RandomWalk::convertToWalkNetwork(net);
 
-    //RandomWalk::normalizeGraph(net);
+    CachedComplexNetwork<int, double> net3;
+    net3 = RandomWalk::normalizeGraph(net2);
+    net3 = RandomWalk::walkOneStep(net3);
+    printf("%.2f\n", *net2.getEdge(net2.getNodeId(1), net2.getNodeId(3)));
+    printf("%.2f\n", *net3.getEdge(net3.getNodeId(1), net3.getNodeId(3)));
 
+    float w = 0;
+    for(auto n = net3.EdgesBegin(net3.getNodeId(1)); n != net3.EdgesEnd(net3.getNodeId(1)); n++){
+        printf("%d->%.2f\n", *net3.getNode(n.getToNodeId()), *n );
+        w += *n;
+    }
+    printf("%.2f\n", w);
 
 
 /*
