@@ -7,7 +7,6 @@
 #include <QFile>
 #include <QSet>
 #include <assert.h>
-#include "unordered_pair.hpp"
 typedef unsigned int node_id;
 typedef unsigned int edge_id;
 
@@ -15,12 +14,10 @@ template <typename NODE_TYPE, typename EDGE_TYPE>
 class ComplexNetwork
 {
 protected:
-    //typedef unordered_pair<node_id, node_id>
     node_id current_node_id;
     edge_id current_edge_id;
     bool directed;
     QHash< node_id, NODE_TYPE> nodes;
-    //QHash< unordered_pair<node_id, node_id> , edge_id> edges;
     QHash< node_id, QHash<node_id, edge_id> > edges;
     QHash< edge_id, EDGE_TYPE> edge;
     QPair<node_id, node_id> createEdgeKey(node_id from, node_id to);
@@ -33,12 +30,13 @@ protected:
 
 
 public:
-    ComplexNetwork(bool directed=false);
+    ComplexNetwork(bool directed=true);
     virtual node_id addNode(const NODE_TYPE& n);
     virtual NODE_TYPE* getNode(node_id id);
     virtual bool removeNode(node_id id);
     virtual void addEdge(node_id from, node_id to, const EDGE_TYPE& e);
     virtual EDGE_TYPE* getEdge(node_id from, node_id to);
+    virtual EDGE_TYPE* getEdgeFromEdgeId(edge_id id);
     virtual bool removeEdge(node_id from, node_id to);
     virtual void clear();
     unsigned int getNumNodes() const;
@@ -232,6 +230,7 @@ node_id ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addNode(const NODE_TYPE& n){
     return new_node_id;
 }
 
+
 template <typename NODE_TYPE, typename EDGE_TYPE>
 NODE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getNode(node_id id){
     if(nodes.contains(id))
@@ -271,6 +270,14 @@ template <typename NODE_TYPE, typename EDGE_TYPE>
 EDGE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdge(node_id from, node_id to){
     if(edges.contains(from) && edges[from].contains(to))
         return &edge[edges[from][to]];
+    return NULL;
+}
+
+
+template <typename NODE_TYPE, typename EDGE_TYPE>
+EDGE_TYPE* ComplexNetwork<NODE_TYPE, EDGE_TYPE>::getEdgeFromEdgeId(edge_id id){
+    if(edge.contains(id))
+        return &edge[id];
     return NULL;
 }
 

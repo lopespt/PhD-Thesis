@@ -22,7 +22,7 @@ CachedComplexNetwork<NODE_TYPE, EDGE_TYPE>::CachedComplexNetwork(bool directed):
 
 template <typename NODE_TYPE, typename EDGE_TYPE>
 node_id CachedComplexNetwork<NODE_TYPE, EDGE_TYPE>::addNode(const NODE_TYPE &n){
-    node_id id = ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addNode(n);
+    node_id id = ComplexNetwork<NODE_TYPE, EDGE_TYPE>::addNode( n);
     this->cache.insert(n, id);
     return id;
 }

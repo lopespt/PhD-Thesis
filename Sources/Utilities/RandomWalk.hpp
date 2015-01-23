@@ -12,6 +12,7 @@ public:
     static CachedComplexNetwork<int, double> walkOneStep(CachedComplexNetwork<int, double> cn);
     static CachedComplexNetwork<int, double> convertToWalkNetwork(FeaturesComplexNetwork cn);
     static CachedComplexNetwork<int, double> normalizeGraph(CachedComplexNetwork<int, double> cn);
+    static CachedComplexNetwork<int, double> addAutoLoop(CachedComplexNetwork<int, double> cn);
 
 };
 

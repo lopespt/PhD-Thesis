@@ -62,8 +62,8 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     assert(delta_t>0);
                     weight = e->getWeight();
                     e->setTime(this->time);
-                    e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
-                    //e->setWeight(weight + 1);
+                    //e->setWeight(weight + learningRate*(recorrencia(delta_t)) - weight);
+                        e->setWeight(weight + 1);
                     if(regionsIds[i] == regionsIds[j])
                         e->isSameLabel(true);
                 }else{
@@ -71,6 +71,7 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     if(regionsIds[i] == regionsIds[j])
                         l.isSameLabel(true);
                     cn.addEdge(*it1, *it2,  l);
+                    cn.addEdge(*it2, *it1,  l);
                 }
             this->time++;
             j++;

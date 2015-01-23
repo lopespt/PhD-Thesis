@@ -41,5 +41,13 @@ TARGET_LINK_LIBRARIES(AreaFeatureExtractionTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui
 
 INSTALL(TARGETS AreaFeatureExtractionTest DESTINATION bin)
 
+
+
+#Build RandomWalkTest
+FILE(GLOB_RECURSE RandomWalkTest_Sources RandomWalkTest/*.cpp)
+ADD_EXECUTABLE(RandomWalkTest ${RandomWalkTest_Sources})
+TARGET_LINK_LIBRARIES(RandomWalkTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)
+
+
 MESSAGE(STATUS ${CMAKE_INSTALL_PREFIX})
 

@@ -66,3 +66,12 @@ CachedComplexNetwork<int, double> RandomWalk::normalizeGraph(CachedComplexNetwor
     }
     return cn;
 }
+
+CachedComplexNetwork<int, double> RandomWalk::addAutoLoop(CachedComplexNetwork<int, double> cn){
+    for(auto n = cn.Begin(); n != cn.End(); n++){
+        if(cn.getEdge(n.getNodeId(), n.getNodeId()) == NULL){
+            cn.addEdge(n.getNodeId(), n.getNodeId(), 1);
+        }
+    }
+    return cn;
+}
