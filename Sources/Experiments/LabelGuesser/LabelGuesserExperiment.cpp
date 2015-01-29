@@ -103,7 +103,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     ComplexNetworkConstructor constructor(cn, train, factories);
     constructor.build();
     cn.save("train.cn");
-    cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
+    //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
     //cn.load("train.cn", factories);
     cn.updateIndex();
     IterativeRandomWalk walk(&cn);
