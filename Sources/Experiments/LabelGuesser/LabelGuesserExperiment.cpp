@@ -101,9 +101,9 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     factories.append(&lblFactory);
     FeaturesComplexNetwork cn;
     ComplexNetworkConstructor constructor(cn, train, factories);
-//    constructor.build();
-    //cn.save("train.cn");
-    cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
+    constructor.build();
+    cn.save("train.cn");
+    //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
     //cn.load("train.cn", factories);
     cn.updateIndex();
     IterativeRandomWalk walk(&cn);
