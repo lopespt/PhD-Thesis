@@ -1,0 +1,200 @@
+\hypertarget{class_feature_abstract}{\section{Feature\+Abstract Class Reference}
+\label{class_feature_abstract}\index{Feature\+Abstract@{Feature\+Abstract}}
+}
+
+
+{\ttfamily \#include $<$Feature\+Abstract.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_feature_abstract_afb925654d107910da20b213080e8a013}{Feature\+Abstract} (int \hyperlink{class_feature_abstract_acab3574e41f892ae811b4adac8f5840a}{type}, const char $\ast$\hyperlink{class_feature_abstract_ae11ff57d87c0e49cf1cf95d71f407979}{feature\+Name}=\char`\"{}Not Defined\char`\"{})
+\item 
+virtual bool \hyperlink{class_feature_abstract_a88fb78d10c6f5395c88ff0ae23fe8b8f}{operator$<$} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} \&other) const 
+\item 
+virtual const char $\ast$ \hyperlink{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd}{as\+String} (char $\ast$buffer) const =0
+\item 
+const int \hyperlink{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf}{get\+Type} () const 
+\item 
+const char $\ast$ \hyperlink{class_feature_abstract_a4b12b0d228da1c7e21429f263bef004e}{get\+Feature\+Name} () const 
+\item 
+virtual \hyperlink{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}{$\sim$\+Feature\+Abstract} ()
+\item 
+virtual void \hyperlink{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}{Write\+To\+Stream} (Q\+Data\+Stream \&stream) const =0
+\item 
+bool \hyperlink{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}{operator==} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} \&other) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_feature_abstract_acab3574e41f892ae811b4adac8f5840a}{type}
+\item 
+const char $\ast$ \hyperlink{class_feature_abstract_ae11ff57d87c0e49cf1cf95d71f407979}{feature\+Name}
+\item 
+void $\ast$ \hyperlink{class_feature_abstract_a088a09441e0d60ad556c37910e51e8a6}{data}
+\item 
+size\+\_\+t \hyperlink{class_feature_abstract_a99b0e94ca4cdf08688924517946b5743}{data\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_feature_abstract_ac83197c9714439d51f43440c042625e7}{Features\+Complex\+Network}
+\item 
+uint \hyperlink{class_feature_abstract_aca59f644613693185e40001464f20995}{q\+Hash} (const \hyperlink{class_feature_abstract_key}{Feature\+Abstract\+Key} \&v)
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Feature\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_abstract__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Feature\+Abstract\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_feature_abstract__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_feature_abstract_afb925654d107910da20b213080e8a013}{\index{Feature\+Abstract@{Feature\+Abstract}!Feature\+Abstract@{Feature\+Abstract}}
+\index{Feature\+Abstract@{Feature\+Abstract}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{Feature\+Abstract}]{\setlength{\rightskip}{0pt plus 5cm}Feature\+Abstract\+::\+Feature\+Abstract (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{const char $\ast$}]{feature\+Name = {\ttfamily \char`\"{}Not~Defined\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_feature_abstract_afb925654d107910da20b213080e8a013}
+\hypertarget{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}{\index{Feature\+Abstract@{Feature\+Abstract}!````~Feature\+Abstract@{$\sim$\+Feature\+Abstract}}
+\index{````~Feature\+Abstract@{$\sim$\+Feature\+Abstract}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{$\sim$\+Feature\+Abstract}]{\setlength{\rightskip}{0pt plus 5cm}virtual Feature\+Abstract\+::$\sim$\+Feature\+Abstract (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd}{\index{Feature\+Abstract@{Feature\+Abstract}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{as\+String}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Feature\+Abstract\+::as\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd}
+
+
+Implemented in \hyperlink{class_label_feature_acad3108c7016d5d82ffea0b07ac9911e}{Label\+Feature}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ T $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ float $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ label $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{Area\+Feature}, and \hyperlink{class_orientation_feature_a181ee73c51e33108e21a52c6b95e81e7}{Orientation\+Feature}.
+
+\hypertarget{class_feature_abstract_a4b12b0d228da1c7e21429f263bef004e}{\index{Feature\+Abstract@{Feature\+Abstract}!get\+Feature\+Name@{get\+Feature\+Name}}
+\index{get\+Feature\+Name@{get\+Feature\+Name}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{get\+Feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Feature\+Abstract\+::get\+Feature\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_feature_abstract_a4b12b0d228da1c7e21429f263bef004e}
+\hypertarget{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf}{\index{Feature\+Abstract@{Feature\+Abstract}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{get\+Type}]{\setlength{\rightskip}{0pt plus 5cm}const int Feature\+Abstract\+::get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_abstract_a88fb78d10c6f5395c88ff0ae23fe8b8f}{\index{Feature\+Abstract@{Feature\+Abstract}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Feature\+Abstract\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Abstract} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_feature_abstract_a88fb78d10c6f5395c88ff0ae23fe8b8f}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_abstract_a88fb78d10c6f5395c88ff0ae23fe8b8f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}{\index{Feature\+Abstract@{Feature\+Abstract}!operator==@{operator==}}
+\index{operator==@{operator==}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Feature\+Abstract\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Abstract} \&}]{other}
+\end{DoxyParamCaption}
+) const}}\label{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}{\index{Feature\+Abstract@{Feature\+Abstract}!Write\+To\+Stream@{Write\+To\+Stream}}
+\index{Write\+To\+Stream@{Write\+To\+Stream}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{Write\+To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Feature\+Abstract\+::\+Write\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{Q\+Data\+Stream \&}]{stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}
+
+
+Implemented in \hyperlink{class_label_feature_a2c30c826c770d0c5892b99bea90010f1}{Label\+Feature}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ T $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ float $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ label $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}{Area\+Feature}, and \hyperlink{class_orientation_feature_a6d8d3934b981be06db8d7191c6ffdbf1}{Orientation\+Feature}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_feature_abstract_ac83197c9714439d51f43440c042625e7}{\index{Feature\+Abstract@{Feature\+Abstract}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\index{Features\+Complex\+Network@{Features\+Complex\+Network}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{Features\+Complex\+Network}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Features\+Complex\+Network}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_feature_abstract_ac83197c9714439d51f43440c042625e7}
+\hypertarget{class_feature_abstract_aca59f644613693185e40001464f20995}{\index{Feature\+Abstract@{Feature\+Abstract}!q\+Hash@{q\+Hash}}
+\index{q\+Hash@{q\+Hash}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{q\+Hash}]{\setlength{\rightskip}{0pt plus 5cm}uint q\+Hash (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Abstract\+Key} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_feature_abstract_aca59f644613693185e40001464f20995}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_feature_abstract_a088a09441e0d60ad556c37910e51e8a6}{\index{Feature\+Abstract@{Feature\+Abstract}!data@{data}}
+\index{data@{data}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Feature\+Abstract\+::data\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_feature_abstract_a088a09441e0d60ad556c37910e51e8a6}
+\hypertarget{class_feature_abstract_a99b0e94ca4cdf08688924517946b5743}{\index{Feature\+Abstract@{Feature\+Abstract}!data\+\_\+size@{data\+\_\+size}}
+\index{data\+\_\+size@{data\+\_\+size}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{data\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Feature\+Abstract\+::data\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_feature_abstract_a99b0e94ca4cdf08688924517946b5743}
+\hypertarget{class_feature_abstract_ae11ff57d87c0e49cf1cf95d71f407979}{\index{Feature\+Abstract@{Feature\+Abstract}!feature\+Name@{feature\+Name}}
+\index{feature\+Name@{feature\+Name}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Feature\+Abstract\+::feature\+Name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_feature_abstract_ae11ff57d87c0e49cf1cf95d71f407979}
+\hypertarget{class_feature_abstract_acab3574e41f892ae811b4adac8f5840a}{\index{Feature\+Abstract@{Feature\+Abstract}!type@{type}}
+\index{type@{type}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Feature\+Abstract\+::type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_feature_abstract_acab3574e41f892ae811b4adac8f5840a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Feature\+Extractors/\hyperlink{_feature_abstract_8hpp}{Feature\+Abstract.\+hpp}\item 
+Sources/\+Feature\+Extractors/\hyperlink{_feature_abstract_8cpp}{Feature\+Abstract.\+cpp}\end{DoxyCompactItemize}

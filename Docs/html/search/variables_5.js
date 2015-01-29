@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['featurename',['featureName',['../class_feature.html#aaeb59834a8cafa7a89fc7a02f861f37d',1,'Feature']]],
-  ['from',['from',['../class_edge.html#a1bffa41df2941b7d55c59a5031f78e14',1,'Edge']]]
+  ['edge',['edge',['../class_complex_network.html#a666bb7ad7f5ab90416f037aeb1ba11d0',1,'ComplexNetwork']]],
+  ['edges',['edges',['../class_complex_network.html#adbdf613ffde926399cd5f6e7b8c09536',1,'ComplexNetwork']]],
+  ['extractors',['extractors',['../class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a',1,'ComplexNetworkConstructor']]]
 ];

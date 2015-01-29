@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['edge_5fiterator',['edge_iterator',['../class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466',1,'ComplexNetwork']]],
-  ['edgeptr',['EdgePtr',['../class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206',1,'ComplexNetwork']]]
+  ['edge_5fid',['edge_id',['../_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0',1,'ComplexNetwork.hpp']]]
 ];

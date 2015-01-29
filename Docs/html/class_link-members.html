@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,11 +92,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_link.html#af3dac01ac8fb3c9d9637361bab37a8f7">getTime</a>() const </td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_link.html#aaf7980526f4edf059b27602a7be82b2a">getWeight</a>() const </td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0">isSameLabel</a>() const </td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_link.html#a8270edfed8ba5ace14c55393282cf77a">isSameLabel</a>(bool)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_link.html#a1918a8473cee40bbed17b8e926cb85d9">Link</a>()</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_link.html#afc5d636eb34927773121560fcd9a7d99">Link</a>(link_time t, float weight)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_link.html#af1f0e693d5e0f5f8cf39947d09c84251">max_weight</a></td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_link.html#ae3cc4f9078e2f6f1b642667d49b9dc02">operator+</a>(float) const </td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_link.html#a71e54bce5f5f7244144c7f7cf4b826a6">operator+=</a>(float)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_link.html#ae744492cec1a0e4dac79070ab7beb3d3">Link</a>(link_time t, float weight, bool sameLabel=false)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_link.html#ae3cc4f9078e2f6f1b642667d49b9dc02">operator+</a>(float) const </td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_link.html#a71e54bce5f5f7244144c7f7cf4b826a6">operator+=</a>(float)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">sameLabel</a></td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_link.html#af8b4ae699e66876e9fe933b0d979838f">setTime</a>(link_time time)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_link.html#add219a5edb1c6a97ae46f5f1ab360a22">setWeight</a>(float weight)</td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_link.html#acb992140e3cf154c36fd94ab8184e00e">time</a></td><td class="entry"><a class="el" href="class_link.html">Link</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
@@ -103,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

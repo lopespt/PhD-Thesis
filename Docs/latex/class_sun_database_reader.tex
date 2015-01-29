@@ -10,7 +10,15 @@
 \item 
 \hyperlink{class_sun_database_reader_a7165e085898b5e329402b8acc17f3e0e}{Sun\+Database\+Reader} (Q\+String \hyperlink{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}{source\+Dir})
 \item 
-\hyperlink{class_supervised_image}{Supervised\+Image} $\ast$ \hyperlink{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}{read\+Next} ()
+bool \hyperlink{class_sun_database_reader_a5530b88632379c373b592d5128c2999f}{has\+Next} () const 
+\item 
+\hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_sun_database_reader_a92a92483d9b4eadc4008f29a89068e71}{read\+Next} ()
+\item 
+bool \hyperlink{class_sun_database_reader_abe3da501f9df416baf1b077e4d4eadb8}{has\+Previous} () const 
+\item 
+\hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_sun_database_reader_a8109235f5d4a3e7763afe22f4c8c37a0}{read\+Previous} ()
+\item 
+unsigned int \hyperlink{class_sun_database_reader_a8d704a7121e1babebe4673049d37a095}{get\+Total} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -29,6 +37,8 @@ Q\+List$<$ Q\+String $>$ \hyperlink{class_sun_database_reader_ac5afd4950a668e5cf
 Q\+List$<$ Q\+String $>$\+::iterator \hyperlink{class_sun_database_reader_a227d88c9c5c3d37b0f27123027c0b00e}{image\+\_\+files\+\_\+it}
 \item 
 Q\+List$<$ Q\+String $>$\+::iterator \hyperlink{class_sun_database_reader_a78e30a0ac9cfa46c23dbdf8d37226b51}{supervision\+\_\+files\+\_\+it}
+\item 
+bool \hyperlink{class_sun_database_reader_aa0b0c1f783f4382a9c8b10a1de1fec71}{started}
 \end{DoxyCompactItemize}
 
 
@@ -90,16 +100,106 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!read\+Next@{read\+Next}}
-\index{read\+Next@{read\+Next}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
-\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} $\ast$ Sun\+Database\+Reader\+::read\+Next (
+\hypertarget{class_sun_database_reader_a8d704a7121e1babebe4673049d37a095}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!get\+Total@{get\+Total}}
+\index{get\+Total@{get\+Total}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{get\+Total}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Sun\+Database\+Reader\+::get\+Total (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_a8d704a7121e1babebe4673049d37a095}
 
 
-Implements \hyperlink{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{Database\+Reader}.
+Implements \hyperlink{class_database_reader_abd37fa505553101bd8e18fd52547b7ee}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sun_database_reader_a8d704a7121e1babebe4673049d37a095_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_sun_database_reader_a5530b88632379c373b592d5128c2999f}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{has\+Next}]{\setlength{\rightskip}{0pt plus 5cm}bool Sun\+Database\+Reader\+::has\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_a5530b88632379c373b592d5128c2999f}
+
+
+Implements \hyperlink{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sun_database_reader_a5530b88632379c373b592d5128c2999f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_sun_database_reader_abe3da501f9df416baf1b077e4d4eadb8}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!has\+Previous@{has\+Previous}}
+\index{has\+Previous@{has\+Previous}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{has\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}bool Sun\+Database\+Reader\+::has\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_abe3da501f9df416baf1b077e4d4eadb8}
+
+
+Implements \hyperlink{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506}{Database\+Reader}.
+
+\hypertarget{class_sun_database_reader_a92a92483d9b4eadc4008f29a89068e71}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!read\+Next@{read\+Next}}
+\index{read\+Next@{read\+Next}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} Sun\+Database\+Reader\+::read\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_a92a92483d9b4eadc4008f29a89068e71}
+
+
+Implements \hyperlink{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sun_database_reader_a92a92483d9b4eadc4008f29a89068e71_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_sun_database_reader_a8109235f5d4a3e7763afe22f4c8c37a0}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!read\+Previous@{read\+Previous}}
+\index{read\+Previous@{read\+Previous}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{read\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} Sun\+Database\+Reader\+::read\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_sun_database_reader_a8109235f5d4a3e7763afe22f4c8c37a0}
+
+
+Implements \hyperlink{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sun_database_reader_a8109235f5d4a3e7763afe22f4c8c37a0_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -113,6 +213,9 @@ Implements \hyperlink{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{D
 \hypertarget{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!source\+Dir@{source\+Dir}}
 \index{source\+Dir@{source\+Dir}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
 \subsubsection[{source\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Dir Sun\+Database\+Reader\+::source\+Dir\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_a6bfc31b2ba24be2b3e18c32e0d343d70}
+\hypertarget{class_sun_database_reader_aa0b0c1f783f4382a9c8b10a1de1fec71}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!started@{started}}
+\index{started@{started}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
+\subsubsection[{started}]{\setlength{\rightskip}{0pt plus 5cm}bool Sun\+Database\+Reader\+::started\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_aa0b0c1f783f4382a9c8b10a1de1fec71}
 \hypertarget{class_sun_database_reader_ac5afd4950a668e5cff2bc5c6ea024b60}{\index{Sun\+Database\+Reader@{Sun\+Database\+Reader}!supervision\+\_\+files@{supervision\+\_\+files}}
 \index{supervision\+\_\+files@{supervision\+\_\+files}!Sun\+Database\+Reader@{Sun\+Database\+Reader}}
 \subsubsection[{supervision\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ Sun\+Database\+Reader\+::supervision\+\_\+files\hspace{0.3cm}{\ttfamily [private]}}}\label{class_sun_database_reader_ac5afd4950a668e5cff2bc5c6ea024b60}
@@ -123,5 +226,5 @@ Implements \hyperlink{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{D
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_sun_database_reader_8hpp}{Sun\+Database\+Reader.\+hpp}\item 
-src/\hyperlink{_sun_database_reader_8cpp}{Sun\+Database\+Reader.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Utilities/\hyperlink{_sun_database_reader_8hpp}{Sun\+Database\+Reader.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_sun_database_reader_8cpp}{Sun\+Database\+Reader.\+cpp}\end{DoxyCompactItemize}

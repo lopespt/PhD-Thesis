@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,17 +91,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#aefbdf63eaff6755bb3dee0ef8687b3aa">discover_files</a>(QString)</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a155716f43a3dc33e1a4d0a2a4a9f3ff1">image_files</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a227d88c9c5c3d37b0f27123027c0b00e">image_files_it</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26">readNext</a>()</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a8d704a7121e1babebe4673049d37a095">getTotal</a>() const </td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a5530b88632379c373b592d5128c2999f">hasNext</a>() const </td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#abe3da501f9df416baf1b077e4d4eadb8">hasPrevious</a>() const </td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a155716f43a3dc33e1a4d0a2a4a9f3ff1">image_files</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a227d88c9c5c3d37b0f27123027c0b00e">image_files_it</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a92a92483d9b4eadc4008f29a89068e71">readNext</a>()</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a8109235f5d4a3e7763afe22f4c8c37a0">readPrevious</a>()</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a6bfc31b2ba24be2b3e18c32e0d343d70">sourceDir</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a7165e085898b5e329402b8acc17f3e0e">SunDatabaseReader</a>(QString sourceDir)</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#ac5afd4950a668e5cff2bc5c6ea024b60">supervision_files</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#a78e30a0ac9cfa46c23dbdf8d37226b51">supervision_files_it</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#aa0b0c1f783f4382a9c8b10a1de1fec71">started</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a7165e085898b5e329402b8acc17f3e0e">SunDatabaseReader</a>(QString sourceDir)</td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_sun_database_reader.html#ac5afd4950a668e5cff2bc5c6ea024b60">supervision_files</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_sun_database_reader.html#a78e30a0ac9cfa46c23dbdf8d37226b51">supervision_files_it</a></td><td class="entry"><a class="el" href="class_sun_database_reader.html">SunDatabaseReader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

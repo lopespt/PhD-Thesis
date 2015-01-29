@@ -14,6 +14,7 @@
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -37,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,17 +90,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_area_feature.html">AreaFeature</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_area_feature.html#a295bc97816226bf5913649a3cc58d151">AreaFeature</a>(Region *region)</td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_area_feature.html#a076f7a3918e7aa54e64b7e45733ad63d">extractFeature</a>()</td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_feature.html#a4129c864c4c97078084332515f6f20d1">Feature</a>(Region *region)</td><td class="entry"><a class="el" href="class_feature.html">Feature</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_feature.html#ab96106b9d1ba89cfa00ffb63a26b2130">getVector</a>() const </td><td class="entry"><a class="el" href="class_feature.html">Feature</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_feature.html#a0e73c5cb157120a30704efb4af866ec0">printFeature</a>() const </td><td class="entry"><a class="el" href="class_feature.html">Feature</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_feature.html#a134c6b5022108c2a1000c7c88c40f352">region</a></td><td class="entry"><a class="el" href="class_feature.html">Feature</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_feature.html#a8158dfca752942aeb84f35c363184d95">vector</a></td><td class="entry"><a class="el" href="class_feature.html">Feature</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_area_feature.html#af65d43c5c868babfb6c429464f36a898">AreaFeature</a>(float value)</td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_area_feature.html#acf274ff5848a30a105c61f0e1c56cf7e">AreaFeatureFactory</a> class</td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_area_feature.html#a6c0a6e3346ba2ddaa4a50cb957f08ab2">asString</a>(char *buffer) const </td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature.html#a4379bdef5cd2e91346a780210c6984d9">content</a></td><td class="entry"><a class="el" href="class_feature.html">Feature&lt; float &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_abstract.html#a088a09441e0d60ad556c37910e51e8a6">data</a></td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_abstract.html#a99b0e94ca4cdf08688924517946b5743">data_size</a></td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature.html#a35e604731c88fd1aa8e8a36c87a1ce23">Feature</a>(floatvalue, int type, const char *featureName)</td><td class="entry"><a class="el" href="class_feature.html">Feature&lt; float &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_abstract.html#afb925654d107910da20b213080e8a013">FeatureAbstract</a>(int type, const char *featureName=&quot;Not Defined&quot;)</td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_abstract.html#ae11ff57d87c0e49cf1cf95d71f407979">featureName</a></td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature.html#a646c111235f484dd0ca89d122b2aac42">getContent</a>() const</td><td class="entry"><a class="el" href="class_feature.html">Feature&lt; float &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_abstract.html#a4b12b0d228da1c7e21429f263bef004e">getFeatureName</a>() const </td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_abstract.html#a4cb21d5a97d7f537cda3c919c266a6cf">getType</a>() const </td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_abstract.html#a88fb78d10c6f5395c88ff0ae23fe8b8f">operator&lt;</a>(const FeatureAbstract &amp;other) const </td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_abstract.html#a8a2253d5e532ba6c95fe3653558c30c5">operator==</a>(const FeatureAbstract &amp;other) const </td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature_abstract.html#acab3574e41f892ae811b4adac8f5840a">type</a></td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_area_feature.html#a8d2f99d3cc8ff64b90c2eb8a4c97a72f">WriteToStream</a>(QDataStream &amp;stream) const </td><td class="entry"><a class="el" href="class_area_feature.html">AreaFeature</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_feature.html#a93090fa295d12d22fff7c9de84d0ab20">~Feature</a>()</td><td class="entry"><a class="el" href="class_feature.html">Feature&lt; float &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_feature_abstract.html#ad4a51a8818f23596fc88ef89a79ff125">~FeatureAbstract</a>()</td><td class="entry"><a class="el" href="class_feature_abstract.html">FeatureAbstract</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 21 2014 23:49:35 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

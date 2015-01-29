@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['addedge',['addEdge',['../class_complex_network.html#a183168090e8d9446b53643890476b0ba',1,'ComplexNetwork']]],
-  ['addnode',['addNode',['../class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180',1,'ComplexNetwork']]],
-  ['analysenext',['analyseNext',['../class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f',1,'ComplexNetworkConstructor']]],
-  ['areafeatureextractor',['AreaFeatureExtractor',['../class_area_feature_extractor.html',1,'AreaFeatureExtractor'],['../class_area_feature_extractor.html#ab183d05cccc841a75b368ce55d2f37bb',1,'AreaFeatureExtractor::AreaFeatureExtractor()']]],
-  ['areafeatureextractor_2ecpp',['AreaFeatureExtractor.cpp',['../_area_feature_extractor_8cpp.html',1,'']]],
-  ['areafeatureextractor_2ehpp',['AreaFeatureExtractor.hpp',['../_area_feature_extractor_8hpp.html',1,'']]],
-  ['attribute',['attribute',['../class_edge.html#ae49cc056dfa848b0a1beef821d81a31d',1,'Edge::attribute()'],['../class_node.html#a434cad0f70931bc3aaa048d52d0b0ee3',1,'Node::attribute()']]]
+  ['addautoloop',['addAutoLoop',['../class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752',1,'RandomWalk']]],
+  ['addedge',['addEdge',['../class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d',1,'ComplexNetwork']]],
+  ['addnode',['addNode',['../class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f',1,'ComplexNetwork::addNode()'],['../class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c',1,'CachedComplexNetwork::addNode()']]],
+  ['alledges',['allEdges',['../class_complex_network_1_1_edge_iterator.html#a068bdce3c6e9cd86518aee5104e2fe64',1,'ComplexNetwork::EdgeIterator']]],
+  ['alreadyparsed',['alreadyParsed',['../class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f',1,'SupervisedImage']]],
+  ['areafeature',['AreaFeature',['../class_area_feature.html',1,'AreaFeature'],['../class_area_feature.html#af65d43c5c868babfb6c429464f36a898',1,'AreaFeature::AreaFeature()']]],
+  ['areafeature_2ecpp',['AreaFeature.cpp',['../_area_feature_8cpp.html',1,'']]],
+  ['areafeature_2ehpp',['AreaFeature.hpp',['../_area_feature_8hpp.html',1,'']]],
+  ['areafeatureextractiontest_2ecpp',['AreaFeatureExtractionTest.cpp',['../_area_feature_extraction_test_8cpp.html',1,'']]],
+  ['areafeatureextractionwindow',['AreaFeatureExtractionWindow',['../class_area_feature_extraction_window.html',1,'AreaFeatureExtractionWindow'],['../class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b',1,'AreaFeatureExtractionWindow::AreaFeatureExtractionWindow()']]],
+  ['areafeatureextractionwindow_2ecpp',['AreaFeatureExtractionWindow.cpp',['../_area_feature_extraction_window_8cpp.html',1,'']]],
+  ['areafeatureextractionwindow_2ehpp',['AreaFeatureExtractionWindow.hpp',['../_area_feature_extraction_window_8hpp.html',1,'']]],
+  ['areafeaturefactory',['AreaFeatureFactory',['../class_area_feature_factory.html',1,'AreaFeatureFactory'],['../class_area_feature.html#acf274ff5848a30a105c61f0e1c56cf7e',1,'AreaFeature::AreaFeatureFactory()'],['../class_area_feature_factory.html#a1299cd28490bc46f5ee66e16b712e37d',1,'AreaFeatureFactory::AreaFeatureFactory()']]],
+  ['areafeaturefactory_2ecpp',['AreaFeatureFactory.cpp',['../_area_feature_factory_8cpp.html',1,'']]],
+  ['areafeaturefactory_2ehpp',['AreaFeatureFactory.hpp',['../_area_feature_factory_8hpp.html',1,'']]],
+  ['asstring',['asString',['../class_area_feature.html#a6c0a6e3346ba2ddaa4a50cb957f08ab2',1,'AreaFeature::asString()'],['../class_feature.html#abdd71dfec0efebf4ff17aeb2bee257c3',1,'Feature::asString()'],['../class_feature_abstract.html#af9ffe853716e6a28135ae1c33fafeafd',1,'FeatureAbstract::asString()'],['../class_label_feature.html#acad3108c7016d5d82ffea0b07ac9911e',1,'LabelFeature::asString()'],['../class_orientation_feature.html#a181ee73c51e33108e21a52c6b95e81e7',1,'OrientationFeature::asString()']]]
 ];

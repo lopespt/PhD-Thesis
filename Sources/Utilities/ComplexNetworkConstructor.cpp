@@ -67,7 +67,8 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> 
                     if(regionsIds[i] == regionsIds[j])
                         e->isSameLabel(true);
                 }else{
-                    Link l = Link(this->time, 0.01 );
+                    //Link l = Link(this->time, 0.01 );
+                    Link l = Link(this->time, 1 );
                     if(regionsIds[i] == regionsIds[j])
                         l.isSameLabel(true);
                     cn.addEdge(*it1, *it2,  l);

@@ -18,7 +18,6 @@ bool FeatureAbstract::operator <(const FeatureAbstract& other) const{
 bool FeatureAbstract::operator==(const FeatureAbstract& other) const{
     if(this->getType() != other.getType())
         return false;
-
     return memcmp(this->data, other.data, this->data_size)==0;
 
 }

@@ -8,7 +8,8 @@
 #include <QFile>
 #include <QtAlgorithms>
 
-SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath), image(imagePath){
+SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath){
+
 }
 
 
@@ -16,7 +17,8 @@ void SupervisedImage::parse_xml(){
     if(alreadyParsed)
         return;
 
-    QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );      
+    image.load(this->imagePath);
+    QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );
     QFile f(this->supervisedPath);
 
     f.open(QFile::ReadOnly);

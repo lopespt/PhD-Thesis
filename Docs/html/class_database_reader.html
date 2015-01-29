@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,8 +95,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae6a76cba6f3d4dad64b70b59c701b9f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#ae6a76cba6f3d4dad64b70b59c701b9f6">readNext</a> ()=0</td></tr>
-<tr class="separator:ae6a76cba6f3d4dad64b70b59c701b9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf8a5faaaeaa057050e9c7ca4370081"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081">readNext</a> ()=0</td></tr>
+<tr class="separator:a4bf8a5faaaeaa057050e9c7ca4370081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762e5d499c9d60e5ba85344c1c7c2c8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#a762e5d499c9d60e5ba85344c1c7c2c8c">readPrevious</a> ()=0</td></tr>
+<tr class="separator:a762e5d499c9d60e5ba85344c1c7c2c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406c8a783b41f31a273ed9c761bf33fe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe">hasNext</a> () const =0</td></tr>
+<tr class="separator:a406c8a783b41f31a273ed9c761bf33fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc71ed6c7af71bdc66b4b6eee3598506"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#acc71ed6c7af71bdc66b4b6eee3598506">hasPrevious</a> () const =0</td></tr>
+<tr class="separator:acc71ed6c7af71bdc66b4b6eee3598506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd37fa505553101bd8e18fd52547b7ee"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_database_reader.html#abd37fa505553101bd8e18fd52547b7ee">getTotal</a> () const =0</td></tr>
+<tr class="separator:abd37fa505553101bd8e18fd52547b7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <div class="dynheader">
 Inheritance diagram for DatabaseReader:</div>
@@ -110,7 +119,7 @@ Collaboration diagram for DatabaseReader:</div>
 <div class="center"><img src="class_database_reader__coll__graph.png" border="0" usemap="#_database_reader_coll__map" alt="Collaboration graph"/></div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae6a76cba6f3d4dad64b70b59c701b9f6"></a>
+<a class="anchor" id="abd37fa505553101bd8e18fd52547b7ee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -118,7 +127,109 @@ Collaboration diagram for DatabaseReader:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a>* DatabaseReader::readNext </td>
+          <td class="memname">virtual unsigned int DatabaseReader::getTotal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_sun_database_reader.html#a8d704a7121e1babebe4673049d37a095">SunDatabaseReader</a>, and <a class="el" href="class_k_fold_database_reader_1_1_path_database_reader.html#ad92c0ac794e71748a01e7e6f8103342a">KFoldDatabaseReader::PathDatabaseReader</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_database_reader_abd37fa505553101bd8e18fd52547b7ee_icgraph.png" border="0" usemap="#class_database_reader_abd37fa505553101bd8e18fd52547b7ee_icgraph" alt=""/></div>
+<map name="class_database_reader_abd37fa505553101bd8e18fd52547b7ee_icgraph" id="class_database_reader_abd37fa505553101bd8e18fd52547b7ee_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="232,57,424,98"/><area shape="rect" id="node7" href="class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="245,122,411,163"/><area shape="rect" id="node3" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="540,5,591,32"/><area shape="rect" id="node4" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="479,57,651,98"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="472,122,659,163"/><area shape="rect" id="node5" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="707,64,757,91"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a406c8a783b41f31a273ed9c761bf33fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DatabaseReader::hasNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_sun_database_reader.html#a5530b88632379c373b592d5128c2999f">SunDatabaseReader</a>, and <a class="el" href="class_k_fold_database_reader_1_1_path_database_reader.html#ac6c27452f10e49e7d0d425a56926277c">KFoldDatabaseReader::PathDatabaseReader</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_database_reader_a406c8a783b41f31a273ed9c761bf33fe_icgraph.png" border="0" usemap="#class_database_reader_a406c8a783b41f31a273ed9c761bf33fe_icgraph" alt=""/></div>
+<map name="class_database_reader_a406c8a783b41f31a273ed9c761bf33fe_icgraph" id="class_database_reader_a406c8a783b41f31a273ed9c761bf33fe_icgraph">
+<area shape="rect" id="node2" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="239,19,417,60"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="232,109,424,151"/><area shape="rect" id="node9" href="class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="245,175,411,216"/><area shape="rect" id="node3" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="473,5,658,47"/><area shape="rect" id="node5" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="540,71,591,98"/><area shape="rect" id="node6" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="479,123,651,164"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="472,188,659,229"/><area shape="rect" id="node7" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="707,130,757,157"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc71ed6c7af71bdc66b4b6eee3598506"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DatabaseReader::hasPrevious </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_sun_database_reader.html#abe3da501f9df416baf1b077e4d4eadb8">SunDatabaseReader</a>, and <a class="el" href="class_k_fold_database_reader_1_1_path_database_reader.html#a6f635a1836b5f7dfc23b23ac2ef99cc6">KFoldDatabaseReader::PathDatabaseReader</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506_icgraph.png" border="0" usemap="#class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506_icgraph" alt=""/></div>
+<map name="class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506_icgraph" id="class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506_icgraph">
+<area shape="rect" id="node2" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="257,5,436,47"/><area shape="rect" id="node3" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="484,5,669,47"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bf8a5faaaeaa057050e9c7ca4370081"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a> DatabaseReader::readNext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -131,26 +242,60 @@ Collaboration diagram for DatabaseReader:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_sun_database_reader.html#aadf059f614225be059e05a7c3a75fb26">SunDatabaseReader</a>.</p>
+<p>Implemented in <a class="el" href="class_sun_database_reader.html#a92a92483d9b4eadc4008f29a89068e71">SunDatabaseReader</a>, and <a class="el" href="class_k_fold_database_reader_1_1_path_database_reader.html#a3ec743925701640642ef69b1731d21ea">KFoldDatabaseReader::PathDatabaseReader</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6_icgraph.png" border="0" usemap="#class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6_icgraph" alt=""/></div>
-<map name="class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6_icgraph" id="class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="233,5,416,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="464,13,513,39"/></map>
+<div class="center"><img src="class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081_icgraph.png" border="0" usemap="#class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081_icgraph" alt=""/></div>
+<map name="class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081_icgraph" id="class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081_icgraph">
+<area shape="rect" id="node2" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="244,19,423,60"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="237,109,429,151"/><area shape="rect" id="node9" href="class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="251,175,416,216"/><area shape="rect" id="node3" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="478,5,663,47"/><area shape="rect" id="node5" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="545,71,596,98"/><area shape="rect" id="node6" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="485,123,657,164"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="477,188,664,229"/><area shape="rect" id="node7" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="712,130,763,157"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a762e5d499c9d60e5ba85344c1c7c2c8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_supervised_image.html">SupervisedImage</a> DatabaseReader::readPrevious </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_sun_database_reader.html#a8109235f5d4a3e7763afe22f4c8c37a0">SunDatabaseReader</a>, and <a class="el" href="class_k_fold_database_reader_1_1_path_database_reader.html#a9f9e600aed16157680c6b4b402e9f764">KFoldDatabaseReader::PathDatabaseReader</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c_icgraph.png" border="0" usemap="#class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c_icgraph" alt=""/></div>
+<map name="class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c_icgraph" id="class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c_icgraph">
+<area shape="rect" id="node2" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="263,5,441,47"/><area shape="rect" id="node3" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="489,5,675,47"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="_database_reader_8hpp_source.html">DatabaseReader.hpp</a></li>
+<li>Sources/Utilities/<a class="el" href="_database_reader_8hpp_source.html">DatabaseReader.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

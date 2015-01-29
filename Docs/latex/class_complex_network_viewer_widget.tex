@@ -1,0 +1,148 @@
+\hypertarget{class_complex_network_viewer_widget}{\section{Complex\+Network\+Viewer\+Widget Class Reference}
+\label{class_complex_network_viewer_widget}\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+}
+
+
+{\ttfamily \#include $<$Complex\+Network\+Viewer\+Widget.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_complex_network_viewer_widget_ae7e02bf71c0236ba409e32dd5ef662d9}{Complex\+Network\+Viewer\+Widget} (Q\+Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_complex_network_viewer_widget_aed1e7ad3c16aaf0d744a6eee287e94b8}{set\+Complex\+Network} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \&\hyperlink{class_complex_network_viewer_widget_a589b99afee6ab49d60e94922546c38fc}{cn})
+\item 
+virtual \hyperlink{class_complex_network_viewer_widget_a93e1496e8c5f5cd7e7e12243fdf14103}{$\sim$\+Complex\+Network\+Viewer\+Widget} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_complex_network_viewer_widget_a7c6835fe215bf07b7586fe1f328ec0e5}{create\+Vtk\+Pipeline} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$ \hyperlink{class_complex_network_viewer_widget_a589b99afee6ab49d60e94922546c38fc}{cn}
+\item 
+Q\+V\+T\+K\+Widget2 $\ast$ \hyperlink{class_complex_network_viewer_widget_a3cc8ef618cd408d81e936c3a65e093cb}{vtk\+Widget}
+\item 
+vtk\+Renderer $\ast$ \hyperlink{class_complex_network_viewer_widget_a37cb73cbf45ace9c67986fb29c0d44d7}{v\+Renderer}
+\item 
+vtk\+Graph\+Layout\+View $\ast$ \hyperlink{class_complex_network_viewer_widget_aa9af3e2514822eb4c0fb42da84f33470}{viewer}
+\item 
+vtk\+Mutable\+Undirected\+Graph $\ast$ \hyperlink{class_complex_network_viewer_widget_a2ccd74a17620352941b4b19b97b20550}{graph}
+\item 
+Q\+V\+T\+K\+Interactor $\ast$ \hyperlink{class_complex_network_viewer_widget_a7d25bd2946c21efa67c5c216eecaf410}{interactor}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Complex\+Network\+Viewer\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_complex_network_viewer_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Complex\+Network\+Viewer\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_complex_network_viewer_widget__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_complex_network_viewer_widget_ae7e02bf71c0236ba409e32dd5ef662d9}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{Complex\+Network\+Viewer\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Complex\+Network\+Viewer\+Widget\+::\+Complex\+Network\+Viewer\+Widget (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_complex_network_viewer_widget_ae7e02bf71c0236ba409e32dd5ef662d9}
+\hypertarget{class_complex_network_viewer_widget_a93e1496e8c5f5cd7e7e12243fdf14103}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!````~Complex\+Network\+Viewer\+Widget@{$\sim$\+Complex\+Network\+Viewer\+Widget}}
+\index{````~Complex\+Network\+Viewer\+Widget@{$\sim$\+Complex\+Network\+Viewer\+Widget}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{$\sim$\+Complex\+Network\+Viewer\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Complex\+Network\+Viewer\+Widget\+::$\sim$\+Complex\+Network\+Viewer\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_viewer_widget_a93e1496e8c5f5cd7e7e12243fdf14103}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_complex_network_viewer_widget_a7c6835fe215bf07b7586fe1f328ec0e5}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!create\+Vtk\+Pipeline@{create\+Vtk\+Pipeline}}
+\index{create\+Vtk\+Pipeline@{create\+Vtk\+Pipeline}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{create\+Vtk\+Pipeline}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\+Network\+Viewer\+Widget\+::create\+Vtk\+Pipeline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a7c6835fe215bf07b7586fe1f328ec0e5}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_viewer_widget_a7c6835fe215bf07b7586fe1f328ec0e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_viewer_widget_aed1e7ad3c16aaf0d744a6eee287e94b8}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!set\+Complex\+Network@{set\+Complex\+Network}}
+\index{set\+Complex\+Network@{set\+Complex\+Network}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{set\+Complex\+Network}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\+Network\+Viewer\+Widget\+::set\+Complex\+Network (
+\begin{DoxyParamCaption}
+\item[{{\bf Features\+Complex\+Network} \&}]{cn}
+\end{DoxyParamCaption}
+)}}\label{class_complex_network_viewer_widget_aed1e7ad3c16aaf0d744a6eee287e94b8}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_viewer_widget_aed1e7ad3c16aaf0d744a6eee287e94b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_viewer_widget_aed1e7ad3c16aaf0d744a6eee287e94b8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_complex_network_viewer_widget_a589b99afee6ab49d60e94922546c38fc}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!cn@{cn}}
+\index{cn@{cn}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{cn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Features\+Complex\+Network}$\ast$ Complex\+Network\+Viewer\+Widget\+::cn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a589b99afee6ab49d60e94922546c38fc}
+\hypertarget{class_complex_network_viewer_widget_a2ccd74a17620352941b4b19b97b20550}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!graph@{graph}}
+\index{graph@{graph}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{graph}]{\setlength{\rightskip}{0pt plus 5cm}vtk\+Mutable\+Undirected\+Graph$\ast$ Complex\+Network\+Viewer\+Widget\+::graph\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a2ccd74a17620352941b4b19b97b20550}
+\hypertarget{class_complex_network_viewer_widget_a7d25bd2946c21efa67c5c216eecaf410}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!interactor@{interactor}}
+\index{interactor@{interactor}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{interactor}]{\setlength{\rightskip}{0pt plus 5cm}Q\+V\+T\+K\+Interactor$\ast$ Complex\+Network\+Viewer\+Widget\+::interactor\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a7d25bd2946c21efa67c5c216eecaf410}
+\hypertarget{class_complex_network_viewer_widget_aa9af3e2514822eb4c0fb42da84f33470}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!viewer@{viewer}}
+\index{viewer@{viewer}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{viewer}]{\setlength{\rightskip}{0pt plus 5cm}vtk\+Graph\+Layout\+View$\ast$ Complex\+Network\+Viewer\+Widget\+::viewer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_aa9af3e2514822eb4c0fb42da84f33470}
+\hypertarget{class_complex_network_viewer_widget_a37cb73cbf45ace9c67986fb29c0d44d7}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!v\+Renderer@{v\+Renderer}}
+\index{v\+Renderer@{v\+Renderer}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{v\+Renderer}]{\setlength{\rightskip}{0pt plus 5cm}vtk\+Renderer$\ast$ Complex\+Network\+Viewer\+Widget\+::v\+Renderer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a37cb73cbf45ace9c67986fb29c0d44d7}
+\hypertarget{class_complex_network_viewer_widget_a3cc8ef618cd408d81e936c3a65e093cb}{\index{Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}!vtk\+Widget@{vtk\+Widget}}
+\index{vtk\+Widget@{vtk\+Widget}!Complex\+Network\+Viewer\+Widget@{Complex\+Network\+Viewer\+Widget}}
+\subsubsection[{vtk\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\+V\+T\+K\+Widget2$\ast$ Complex\+Network\+Viewer\+Widget\+::vtk\+Widget\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_viewer_widget_a3cc8ef618cd408d81e936c3a65e093cb}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Experiments/\+Complex\+Network\+Visualizer/\hyperlink{_complex_network_viewer_widget_8hpp}{Complex\+Network\+Viewer\+Widget.\+hpp}\item 
+Sources/\+Experiments/\+Complex\+Network\+Visualizer/\hyperlink{_complex_network_viewer_widget_8cpp}{Complex\+Network\+Viewer\+Widget.\+cpp}\end{DoxyCompactItemize}

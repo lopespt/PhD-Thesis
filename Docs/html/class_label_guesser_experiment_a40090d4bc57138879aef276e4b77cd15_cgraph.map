@@ -1,0 +1,8 @@
+<map id="LabelGuesserExperiment::getLabelsHints" name="LabelGuesserExperiment::getLabelsHints">
+<area shape="rect" id="node2" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="225,46,425,73"/>
+<area shape="rect" id="node6" href="$class_label_feature_factory.html#abd2653fa523f2dc26a07e9cc04d9052a" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="253,97,398,139"/>
+<area shape="rect" id="node3" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="473,46,668,73"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="716,5,889,47"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="716,71,889,112"/>
+<area shape="rect" id="node7" href="$class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="509,105,632,131"/>
+</map>

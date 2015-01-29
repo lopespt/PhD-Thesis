@@ -1,0 +1,269 @@
+\hypertarget{class_features_complex_network}{\section{Features\+Complex\+Network Class Reference}
+\label{class_features_complex_network}\index{Features\+Complex\+Network@{Features\+Complex\+Network}}
+}
+
+
+{\ttfamily \#include $<$Features\+Complex\+Network.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_features_complex_network_1_1header}{header}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_features_complex_network_ad251cdf2e827d41e10c7b3fb1b2d8a22}{Features\+Complex\+Network} ()
+\item 
+\hyperlink{class_features_complex_network_a784109c6f62a250154d4b9add25b6409}{$\sim$\+Features\+Complex\+Network} ()
+\item 
+void \hyperlink{class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0}{save} (const char $\ast$filename)
+\item 
+void \hyperlink{class_features_complex_network_a3f1fcc25a95cde233fecef194033497f}{load} (const char $\ast$filename, Q\+List$<$ \hyperlink{class_feature_factory_abstract}{Feature\+Factory\+Abstract} $\ast$ $>$)
+\item 
+float \hyperlink{class_features_complex_network_af275d9272ee96f6aee40af802c2c119f}{get\+Output\+Degree} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id}) const 
+\item 
+void \hyperlink{class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59}{clear} ()
+\item 
+void \hyperlink{class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261}{update\+Index} ()
+\item 
+\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} \hyperlink{class_features_complex_network_a064dc6f506b11a04f3174810da085d60}{get\+Node\+From\+Feature} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$f) const 
+\item 
+Q\+List$<$ \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} $>$ \hyperlink{class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53}{get\+Nodes\+Of\+Same\+Label} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_features_complex_network_a122860a57231cd14eca3add9c482290e}{load} (const char $\ast$filename)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Hash$<$ \hyperlink{class_feature_abstract_key}{Feature\+Abstract\+Key}, \\*
+\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} $>$ \hyperlink{class_features_complex_network_a0ae97c0bad2fcba543df55522c46242e}{feature\+Index}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+Inheritance diagram for Features\+Complex\+Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_features_complex_network__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Features\+Complex\+Network\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_features_complex_network__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_features_complex_network_ad251cdf2e827d41e10c7b3fb1b2d8a22}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\index{Features\+Complex\+Network@{Features\+Complex\+Network}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{Features\+Complex\+Network}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Complex\+Network\+::\+Features\+Complex\+Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_ad251cdf2e827d41e10c7b3fb1b2d8a22}
+\hypertarget{class_features_complex_network_a784109c6f62a250154d4b9add25b6409}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!````~Features\+Complex\+Network@{$\sim$\+Features\+Complex\+Network}}
+\index{````~Features\+Complex\+Network@{$\sim$\+Features\+Complex\+Network}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{$\sim$\+Features\+Complex\+Network}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Complex\+Network\+::$\sim$\+Features\+Complex\+Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_a784109c6f62a250154d4b9add25b6409}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!clear@{clear}}
+\index{clear@{clear}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Complex\+Network\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59}
+
+
+Reimplemented from \hyperlink{class_complex_network_a64db5949375a84eba3d9ff559d68fc6e}{Complex\+Network$<$ std\+::shared\+\_\+ptr$<$ const Feature\+Abstract $>$, Link $>$}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a064dc6f506b11a04f3174810da085d60}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!get\+Node\+From\+Feature@{get\+Node\+From\+Feature}}
+\index{get\+Node\+From\+Feature@{get\+Node\+From\+Feature}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{get\+Node\+From\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf node\+\_\+id} Features\+Complex\+Network\+::get\+Node\+From\+Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Abstract} $\ast$}]{f}
+\end{DoxyParamCaption}
+) const}}\label{class_features_complex_network_a064dc6f506b11a04f3174810da085d60}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a064dc6f506b11a04f3174810da085d60_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!get\+Nodes\+Of\+Same\+Label@{get\+Nodes\+Of\+Same\+Label}}
+\index{get\+Nodes\+Of\+Same\+Label@{get\+Nodes\+Of\+Same\+Label}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{get\+Nodes\+Of\+Same\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf node\+\_\+id} $>$ Features\+Complex\+Network\+::get\+Nodes\+Of\+Same\+Label (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_af275d9272ee96f6aee40af802c2c119f}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!get\+Output\+Degree@{get\+Output\+Degree}}
+\index{get\+Output\+Degree@{get\+Output\+Degree}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{get\+Output\+Degree}]{\setlength{\rightskip}{0pt plus 5cm}float Features\+Complex\+Network\+::get\+Output\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{from}
+\end{DoxyParamCaption}
+) const}}\label{class_features_complex_network_af275d9272ee96f6aee40af802c2c119f}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_af275d9272ee96f6aee40af802c2c119f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a122860a57231cd14eca3add9c482290e}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!load@{load}}
+\index{load@{load}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Features\+Complex\+Network\+::load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}}\label{class_features_complex_network_a122860a57231cd14eca3add9c482290e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a122860a57231cd14eca3add9c482290e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a3f1fcc25a95cde233fecef194033497f}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!load@{load}}
+\index{load@{load}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Complex\+Network\+::load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{Q\+List$<$ {\bf Feature\+Factory\+Abstract} $\ast$ $>$}]{features\+Constructors}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_a3f1fcc25a95cde233fecef194033497f}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a3f1fcc25a95cde233fecef194033497f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!save@{save}}
+\index{save@{save}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Complex\+Network\+::save (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!update\+Index@{update\+Index}}
+\index{update\+Index@{update\+Index}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{update\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Complex\+Network\+::update\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_features_complex_network_a0ae97c0bad2fcba543df55522c46242e}{\index{Features\+Complex\+Network@{Features\+Complex\+Network}!feature\+Index@{feature\+Index}}
+\index{feature\+Index@{feature\+Index}!Features\+Complex\+Network@{Features\+Complex\+Network}}
+\subsubsection[{feature\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Hash$<${\bf Feature\+Abstract\+Key}, {\bf node\+\_\+id}$>$ Features\+Complex\+Network\+::feature\+Index\hspace{0.3cm}{\ttfamily [private]}}}\label{class_features_complex_network_a0ae97c0bad2fcba543df55522c46242e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\hyperlink{_features_complex_network_8hpp}{Features\+Complex\+Network.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_features_complex_network_8cpp}{Features\+Complex\+Network.\+cpp}\end{DoxyCompactItemize}

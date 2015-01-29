@@ -1,0 +1,186 @@
+\hypertarget{class_orientation_feature_factory}{\section{Orientation\+Feature\+Factory Class Reference}
+\label{class_orientation_feature_factory}\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+}
+
+
+{\ttfamily \#include $<$Orientation\+Feature\+Factory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_orientation_feature_factory_ad78c564940442d3c76db9ef03d6c8a03}{Orientation\+Feature\+Factory} (int \hyperlink{class_orientation_feature_factory_abcd8932fe77877dff6657e4070882015}{discretization})
+\item 
+\hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const 
+\item 
+virtual \hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_orientation_feature}{Orientation\+Feature} $\ast$ \hyperlink{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e}{discover\+Orientation} (Q\+List$<$ Q\+Point $>$ points) const 
+\item 
+float \hyperlink{class_orientation_feature_factory_a68e87a390c95060cac05065757daa18d}{distance} (Q\+Point a, Q\+Point b) const 
+\item 
+int \hyperlink{class_orientation_feature_factory_a280c15eebea7646e9b602c36979b8b16}{discretize} (float min, float max, float d, int val) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_orientation_feature_factory_abcd8932fe77877dff6657e4070882015}{discretization}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Orientation\+Feature\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_orientation_feature_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Orientation\+Feature\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_orientation_feature_factory__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_orientation_feature_factory_ad78c564940442d3c76db9ef03d6c8a03}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{Orientation\+Feature\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}Orientation\+Feature\+Factory\+::\+Orientation\+Feature\+Factory (
+\begin{DoxyParamCaption}
+\item[{int}]{discretization}
+\end{DoxyParamCaption}
+)}}\label{class_orientation_feature_factory_ad78c564940442d3c76db9ef03d6c8a03}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
+\index{Create\+From\+Region@{Create\+From\+Region}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Orientation\+Feature\+Factory\+::\+Create\+From\+Region (
+\begin{DoxyParamCaption}
+\item[{const {\bf Region} $\ast$}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}
+
+
+Implements \hyperlink{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}{Feature\+Factory\+Abstract}.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
+\index{Create\+From\+Stream@{Create\+From\+Stream}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Orientation\+Feature\+Factory\+::\+Create\+From\+Stream (
+\begin{DoxyParamCaption}
+\item[{Q\+Data\+Stream \&}]{stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}
+
+
+Implements \hyperlink{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}{Feature\+Factory\+Abstract}.
+
+\hypertarget{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!discover\+Orientation@{discover\+Orientation}}
+\index{discover\+Orientation@{discover\+Orientation}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{discover\+Orientation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Orientation\+Feature} $\ast$ Orientation\+Feature\+Factory\+::discover\+Orientation (
+\begin{DoxyParamCaption}
+\item[{Q\+List$<$ Q\+Point $>$}]{points}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_orientation_feature_factory_a280c15eebea7646e9b602c36979b8b16}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!discretize@{discretize}}
+\index{discretize@{discretize}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{discretize}]{\setlength{\rightskip}{0pt plus 5cm}int Orientation\+Feature\+Factory\+::discretize (
+\begin{DoxyParamCaption}
+\item[{float}]{min, }
+\item[{float}]{max, }
+\item[{float}]{d, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_orientation_feature_factory_a280c15eebea7646e9b602c36979b8b16}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_a280c15eebea7646e9b602c36979b8b16_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_orientation_feature_factory_a68e87a390c95060cac05065757daa18d}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!distance@{distance}}
+\index{distance@{distance}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}float Orientation\+Feature\+Factory\+::distance (
+\begin{DoxyParamCaption}
+\item[{Q\+Point}]{a, }
+\item[{Q\+Point}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_orientation_feature_factory_a68e87a390c95060cac05065757daa18d}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_orientation_feature_factory_a68e87a390c95060cac05065757daa18d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_orientation_feature_factory_abcd8932fe77877dff6657e4070882015}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!discretization@{discretization}}
+\index{discretization@{discretization}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
+\subsubsection[{discretization}]{\setlength{\rightskip}{0pt plus 5cm}int Orientation\+Feature\+Factory\+::discretization\hspace{0.3cm}{\ttfamily [private]}}}\label{class_orientation_feature_factory_abcd8932fe77877dff6657e4070882015}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Feature\+Extractors/\hyperlink{_orientation_feature_factory_8hpp}{Orientation\+Feature\+Factory.\+hpp}\item 
+Sources/\+Feature\+Extractors/\hyperlink{_orientation_feature_factory_8cpp}{Orientation\+Feature\+Factory.\+cpp}\end{DoxyCompactItemize}

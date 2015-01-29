@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['feature',['Feature',['../class_feature.html',1,'']]],
-  ['featureextractor',['FeatureExtractor',['../class_feature_extractor.html',1,'']]]
+  ['databasereader',['DatabaseReader',['../class_database_reader.html',1,'']]],
+  ['databasevisualizerwidget',['DatabaseVisualizerWidget',['../class_database_visualizer_widget.html',1,'']]]
 ];

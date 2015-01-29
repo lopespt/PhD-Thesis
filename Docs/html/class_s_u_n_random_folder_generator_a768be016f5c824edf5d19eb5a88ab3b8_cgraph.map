@@ -1,0 +1,9 @@
+<map id="SUNRandomFolderGenerator::run" name="SUNRandomFolderGenerator::run">
+<area shape="rect" id="node2" href="$class_sun_database_reader.html#a8d704a7121e1babebe4673049d37a095" title="SunDatabaseReader::\lgetTotal" alt="" coords="325,5,478,47"/>
+<area shape="rect" id="node3" href="$class_s_u_n_random_folder_generator.html#a515728ee2e168336b2e0e0f72cc86813" title="SUNRandomFolderGenerator\l::shuffledList" alt="" coords="302,71,501,112"/>
+<area shape="rect" id="node4" href="$class_sun_database_reader.html#a5530b88632379c373b592d5128c2999f" title="SunDatabaseReader::\lhasNext" alt="" coords="325,136,478,177"/>
+<area shape="rect" id="node5" href="$class_sun_database_reader.html#a92a92483d9b4eadc4008f29a89068e71" title="SunDatabaseReader::\lreadNext" alt="" coords="325,201,478,243"/>
+<area shape="rect" id="node6" href="$class_s_u_n_random_folder_generator.html#a2e06d62fb796eb5222e79a8068593b8d" title="SUNRandomFolderGenerator\l::copy" alt="" coords="302,267,501,308"/>
+<area shape="rect" id="node7" href="$class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="293,333,509,359"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#a7accd41406835fc82dbeaf783ab2acaf" title="SupervisedImage::getSupervisedPath" alt="" coords="279,383,524,410"/>
+</map>

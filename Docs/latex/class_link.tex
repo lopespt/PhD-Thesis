@@ -18,11 +18,15 @@ void \hyperlink{class_link_add219a5edb1c6a97ae46f5f1ab360a22}{set\+Weight} (floa
 \item 
 \hyperlink{class_link_a1918a8473cee40bbed17b8e926cb85d9}{Link} ()
 \item 
-\hyperlink{class_link_afc5d636eb34927773121560fcd9a7d99}{Link} (\hyperlink{_link_8hpp_aaf44f94a2cc67ec8ddd81004137e8369}{link\+\_\+time} t, float \hyperlink{class_link_a61f8b4a76aa028011dbe75affc1b44f7}{weight})
+\hyperlink{class_link_ae744492cec1a0e4dac79070ab7beb3d3}{Link} (\hyperlink{_link_8hpp_aaf44f94a2cc67ec8ddd81004137e8369}{link\+\_\+time} t, float \hyperlink{class_link_a61f8b4a76aa028011dbe75affc1b44f7}{weight}, bool \hyperlink{class_link_ae5f10e1961b948c4a5e71e6702c68de0}{same\+Label}=false)
 \item 
 \hyperlink{class_link}{Link} \hyperlink{class_link_ae3cc4f9078e2f6f1b642667d49b9dc02}{operator+} (float) const 
 \item 
 \hyperlink{class_link}{Link} \& \hyperlink{class_link_a71e54bce5f5f7244144c7f7cf4b826a6}{operator+=} (float)
+\item 
+bool \hyperlink{class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0}{is\+Same\+Label} () const 
+\item 
+void \hyperlink{class_link_a8270edfed8ba5ace14c55393282cf77a}{is\+Same\+Label} (bool)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -30,11 +34,8 @@ void \hyperlink{class_link_add219a5edb1c6a97ae46f5f1ab360a22}{set\+Weight} (floa
 \hyperlink{_link_8hpp_aaf44f94a2cc67ec8ddd81004137e8369}{link\+\_\+time} \hyperlink{class_link_acb992140e3cf154c36fd94ab8184e00e}{time}
 \item 
 float \hyperlink{class_link_a61f8b4a76aa028011dbe75affc1b44f7}{weight}
-\end{DoxyCompactItemize}
-\subsection*{Static Private Attributes}
-\begin{DoxyCompactItemize}
 \item 
-static float \hyperlink{class_link_af1f0e693d5e0f5f8cf39947d09c84251}{max\+\_\+weight}
+bool \hyperlink{class_link_ae5f10e1961b948c4a5e71e6702c68de0}{same\+Label}
 \end{DoxyCompactItemize}
 
 
@@ -55,14 +56,15 @@ Collaboration diagram for Link\+:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )}}\label{class_link_a1918a8473cee40bbed17b8e926cb85d9}
-\hypertarget{class_link_afc5d636eb34927773121560fcd9a7d99}{\index{Link@{Link}!Link@{Link}}
+\hypertarget{class_link_ae744492cec1a0e4dac79070ab7beb3d3}{\index{Link@{Link}!Link@{Link}}
 \index{Link@{Link}!Link@{Link}}
 \subsubsection[{Link}]{\setlength{\rightskip}{0pt plus 5cm}Link\+::\+Link (
 \begin{DoxyParamCaption}
 \item[{{\bf link\+\_\+time}}]{t, }
-\item[{float}]{weight}
+\item[{float}]{weight, }
+\item[{bool}]{same\+Label = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{class_link_afc5d636eb34927773121560fcd9a7d99}
+)}}\label{class_link_ae744492cec1a0e4dac79070ab7beb3d3}
 
 
 \subsection{Member Function Documentation}
@@ -75,7 +77,8 @@ Collaboration diagram for Link\+:\nopagebreak
 ) const}}\label{class_link_af3dac01ac8fb3c9d9637361bab37a8f7}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -93,7 +96,8 @@ Here is the caller graph for this function\+:\nopagebreak
 ) const}}\label{class_link_aaf7980526f4edf059b27602a7be82b2a}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -102,6 +106,32 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
+\hypertarget{class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0}{\index{Link@{Link}!is\+Same\+Label@{is\+Same\+Label}}
+\index{is\+Same\+Label@{is\+Same\+Label}!Link@{Link}}
+\subsubsection[{is\+Same\+Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Link\+::is\+Same\+Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_link_a8270edfed8ba5ace14c55393282cf77a}{\index{Link@{Link}!is\+Same\+Label@{is\+Same\+Label}}
+\index{is\+Same\+Label@{is\+Same\+Label}!Link@{Link}}
+\subsubsection[{is\+Same\+Label}]{\setlength{\rightskip}{0pt plus 5cm}void Link\+::is\+Same\+Label (
+\begin{DoxyParamCaption}
+\item[{bool}]{v}
+\end{DoxyParamCaption}
+)}}\label{class_link_a8270edfed8ba5ace14c55393282cf77a}
 \hypertarget{class_link_ae3cc4f9078e2f6f1b642667d49b9dc02}{\index{Link@{Link}!operator+@{operator+}}
 \index{operator+@{operator+}!Link@{Link}}
 \subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Link} Link\+::operator+ (
@@ -123,6 +153,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \item[{{\bf link\+\_\+time}}]{time}
 \end{DoxyParamCaption}
 )}}\label{class_link_af8b4ae699e66876e9fe933b0d979838f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_link_af8b4ae699e66876e9fe933b0d979838f_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_link_add219a5edb1c6a97ae46f5f1ab360a22}{\index{Link@{Link}!set\+Weight@{set\+Weight}}
 \index{set\+Weight@{set\+Weight}!Link@{Link}}
 \subsubsection[{set\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void Link\+::set\+Weight (
@@ -132,10 +174,22 @@ Here is the caller graph for this function\+:\nopagebreak
 )}}\label{class_link_add219a5edb1c6a97ae46f5f1ab360a22}
 
 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_link_add219a5edb1c6a97ae46f5f1ab360a22_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
 \subsection{Member Data Documentation}
-\hypertarget{class_link_af1f0e693d5e0f5f8cf39947d09c84251}{\index{Link@{Link}!max\+\_\+weight@{max\+\_\+weight}}
-\index{max\+\_\+weight@{max\+\_\+weight}!Link@{Link}}
-\subsubsection[{max\+\_\+weight}]{\setlength{\rightskip}{0pt plus 5cm}float Link\+::max\+\_\+weight\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_link_af1f0e693d5e0f5f8cf39947d09c84251}
+\hypertarget{class_link_ae5f10e1961b948c4a5e71e6702c68de0}{\index{Link@{Link}!same\+Label@{same\+Label}}
+\index{same\+Label@{same\+Label}!Link@{Link}}
+\subsubsection[{same\+Label}]{\setlength{\rightskip}{0pt plus 5cm}bool Link\+::same\+Label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_link_ae5f10e1961b948c4a5e71e6702c68de0}
 \hypertarget{class_link_acb992140e3cf154c36fd94ab8184e00e}{\index{Link@{Link}!time@{time}}
 \index{time@{time}!Link@{Link}}
 \subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf link\+\_\+time} Link\+::time\hspace{0.3cm}{\ttfamily [private]}}}\label{class_link_acb992140e3cf154c36fd94ab8184e00e}
@@ -146,5 +200,5 @@ Here is the caller graph for this function\+:\nopagebreak
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_link_8hpp}{Link.\+hpp}\item 
-src/\hyperlink{_link_8cpp}{Link.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Utilities/\hyperlink{_link_8hpp}{Link.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_link_8cpp}{Link.\+cpp}\end{DoxyCompactItemize}

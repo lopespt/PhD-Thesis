@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,14 +100,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a032c9ef022d741cfb65c683ed11029ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a032c9ef022d741cfb65c683ed11029ed">SupervisedImage</a> (QString <a class="el" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">imagePath</a>, QString <a class="el" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">supervisedPath</a>)</td></tr>
 <tr class="separator:a032c9ef022d741cfb65c683ed11029ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ab17f3c0be74a99858965e2cddb298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#aa2ab17f3c0be74a99858965e2cddb298">show_image</a> ()</td></tr>
-<tr class="separator:aa2ab17f3c0be74a99858965e2cddb298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9cb98175c10635ff6b4aedb578d70e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a4e9cb98175c10635ff6b4aedb578d70e">~SupervisedImage</a> ()</td></tr>
 <tr class="separator:a4e9cb98175c10635ff6b4aedb578d70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ffbba524b28567da37e849f5bb5dbf7"><td class="memItemLeft" align="right" valign="top">const QList&lt; <a class="el" href="class_region.html">Region</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a1ffbba524b28567da37e849f5bb5dbf7">getRegions</a> () const </td></tr>
-<tr class="separator:a1ffbba524b28567da37e849f5bb5dbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf7160e7c4a85e4c68f36f62e39b6bfa"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#aaf7160e7c4a85e4c68f36f62e39b6bfa">getImage</a> ()</td></tr>
-<tr class="separator:aaf7160e7c4a85e4c68f36f62e39b6bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19120479bf06cc96df0eb2aea5f0e205"><td class="memItemLeft" align="right" valign="top">const QList&lt; <a class="el" href="class_region.html">Region</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205">getRegions</a> ()</td></tr>
+<tr class="separator:a19120479bf06cc96df0eb2aea5f0e205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a87d87ce7a8f21f5269f29e0d637290"><td class="memItemLeft" align="right" valign="top">const QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290">getImage</a> ()</td></tr>
+<tr class="separator:a0a87d87ce7a8f21f5269f29e0d637290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c35e83075edcb7ca58bd708b198a4b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b">getImagePath</a> () const </td></tr>
+<tr class="separator:af3c35e83075edcb7ca58bd708b198a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7accd41406835fc82dbeaf783ab2acaf"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a7accd41406835fc82dbeaf783ab2acaf">getSupervisedPath</a> () const </td></tr>
+<tr class="separator:a7accd41406835fc82dbeaf783ab2acaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -122,16 +125,16 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a9a749e02a7d0f6ba28725465e5f7a29f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">alreadyParsed</a></td></tr>
+<tr class="separator:a9a749e02a7d0f6ba28725465e5f7a29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f8b0212d2dae489d7b060b0d8dd1b9"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">imagePath</a></td></tr>
 <tr class="separator:a39f8b0212d2dae489d7b060b0d8dd1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb634f3804dffba600e6aea71fc353e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">supervisedPath</a></td></tr>
 <tr class="separator:aeeb634f3804dffba600e6aea71fc353e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0641d3087990ef954a6d5e88e927bbc5"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">image</a></td></tr>
 <tr class="separator:a0641d3087990ef954a6d5e88e927bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a264d8baa97fa79247b310a94e160e7fb"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_region.html">Region</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a264d8baa97fa79247b310a94e160e7fb">regions</a></td></tr>
-<tr class="separator:a264d8baa97fa79247b310a94e160e7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f1fcadc1267a86ad9d6469b0b2d11b5"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a2f1fcadc1267a86ad9d6469b0b2d11b5">l</a> =NULL</td></tr>
-<tr class="separator:a2f1fcadc1267a86ad9d6469b0b2d11b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2113ab863b2253b37dab1d7b575e8b10"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_region.html">Region</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">regions</a></td></tr>
+<tr class="separator:a2113ab863b2253b37dab1d7b575e8b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <div class="dynheader">
 Collaboration diagram for SupervisedImage:</div>
@@ -162,15 +165,6 @@ Collaboration diagram for SupervisedImage:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_supervised_image_a032c9ef022d741cfb65c683ed11029ed_cgraph.png" border="0" usemap="#class_supervised_image_a032c9ef022d741cfb65c683ed11029ed_cgraph" alt=""/></div>
-<map name="class_supervised_image_a032c9ef022d741cfb65c683ed11029ed_cgraph" id="class_supervised_image_a032c9ef022d741cfb65c683ed11029ed_cgraph">
-<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="244,46,431,73"/><area shape="rect" id="node3" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="479,5,643,47"/><area shape="rect" id="node4" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="479,71,643,112"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -217,7 +211,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_supervised_image_af603900bba42552e5d8395a5a265907a_icgraph.png" border="0" usemap="#class_supervised_image_af603900bba42552e5d8395a5a265907a_icgraph" alt=""/></div>
 <map name="class_supervised_image_af603900bba42552e5d8395a5a265907a_icgraph" id="class_supervised_image_af603900bba42552e5d8395a5a265907a_icgraph">
-<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="217,13,404,39"/><area shape="rect" id="node3" href="class_supervised_image.html#a032c9ef022d741cfb65c683ed11029ed" title="SupervisedImage::Supervised\lImage" alt="" coords="452,5,643,47"/></map>
+<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="227,308,421,335"/><area shape="rect" id="node3" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="469,264,669,291"/><area shape="rect" id="node21" href="class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="475,351,664,377"/><area shape="rect" id="node4" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="735,122,907,163"/><area shape="rect" id="node5" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="994,122,1166,163"/><area shape="rect" id="node7" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="746,239,897,265"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="973,264,1187,291"/><area shape="rect" id="node10" href="class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="717,406,925,447"/><area shape="rect" id="node17" href="class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="717,341,925,382"/><area shape="rect" id="node18" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="725,57,917,98"/><area shape="rect" id="node6" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1315,129,1365,156"/><area shape="rect" id="node9" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1315,264,1365,291"/><area shape="rect" id="node11" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="991,458,1169,499"/><area shape="rect" id="node13" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="991,523,1169,565"/><area shape="rect" id="node14" href="class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="979,327,1181,369"/><area shape="rect" id="node16" href="class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="979,393,1181,434"/><area shape="rect" id="node12" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="1247,474,1433,515"/><area shape="rect" id="node15" href="class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="1235,377,1445,418"/><area shape="rect" id="node19" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1055,5,1105,32"/><area shape="rect" id="node20" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="987,57,1173,98"/></map>
 </div>
 </p>
 
@@ -250,18 +244,18 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e_icgraph.png" border="0" usemap="#class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e_icgraph" alt=""/></div>
 <map name="class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e_icgraph" id="class_supervised_image_aaeaaf36c52ed6317d547461d39a57b4e_icgraph">
-<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="217,13,404,39"/><area shape="rect" id="node3" href="class_supervised_image.html#a032c9ef022d741cfb65c683ed11029ed" title="SupervisedImage::Supervised\lImage" alt="" coords="452,5,643,47"/></map>
+<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="227,308,421,335"/><area shape="rect" id="node3" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="469,264,669,291"/><area shape="rect" id="node21" href="class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="475,351,664,377"/><area shape="rect" id="node4" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="735,122,907,163"/><area shape="rect" id="node5" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="994,122,1166,163"/><area shape="rect" id="node7" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="746,239,897,265"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="973,264,1187,291"/><area shape="rect" id="node10" href="class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="717,406,925,447"/><area shape="rect" id="node17" href="class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="717,341,925,382"/><area shape="rect" id="node18" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="725,57,917,98"/><area shape="rect" id="node6" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1315,129,1365,156"/><area shape="rect" id="node9" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1315,264,1365,291"/><area shape="rect" id="node11" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="991,458,1169,499"/><area shape="rect" id="node13" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="991,523,1169,565"/><area shape="rect" id="node14" href="class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="979,327,1181,369"/><area shape="rect" id="node16" href="class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="979,393,1181,434"/><area shape="rect" id="node12" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="1247,474,1433,515"/><area shape="rect" id="node15" href="class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="1235,377,1445,418"/><area shape="rect" id="node19" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1055,5,1105,32"/><area shape="rect" id="node20" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="987,57,1173,98"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aaf7160e7c4a85e4c68f36f62e39b6bfa"></a>
+<a class="anchor" id="a0a87d87ce7a8f21f5269f29e0d637290"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QImage * SupervisedImage::getImage </td>
+          <td class="memname">const QImage * SupervisedImage::getImage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -269,14 +263,32 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_cgraph.png" border="0" usemap="#class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_cgraph" alt=""/></div>
+<map name="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_cgraph" id="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_cgraph">
+<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="243,46,437,73"/><area shape="rect" id="node3" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="485,5,659,47"/><area shape="rect" id="node4" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="485,71,659,112"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_icgraph.png" border="0" usemap="#class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_icgraph" alt=""/></div>
+<map name="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_icgraph" id="class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_icgraph">
+<area shape="rect" id="node2" href="class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="243,104,451,145"/><area shape="rect" id="node3" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="511,5,689,47"/><area shape="rect" id="node5" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="511,71,689,112"/><area shape="rect" id="node6" href="class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="499,136,701,177"/><area shape="rect" id="node8" href="class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="499,201,701,243"/><area shape="rect" id="node4" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="762,55,947,96"/><area shape="rect" id="node7" href="class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="749,152,960,193"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a1ffbba524b28567da37e849f5bb5dbf7"></a>
+<a class="anchor" id="af3c35e83075edcb7ca58bd708b198a4b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const QList&lt; <a class="el" href="class_region.html">Region</a> * &gt; &amp; SupervisedImage::getRegions </td>
+          <td class="memname">QString SupervisedImage::getImagePath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -287,9 +299,66 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7_icgraph.png" border="0" usemap="#class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7_icgraph" alt=""/></div>
-<map name="class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7_icgraph" id="class_supervised_image_a1ffbba524b28567da37e849f5bb5dbf7_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="244,5,427,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="475,13,524,39"/></map>
+<div class="center"><img src="class_supervised_image_af3c35e83075edcb7ca58bd708b198a4b_icgraph.png" border="0" usemap="#class_supervised_image_af3c35e83075edcb7ca58bd708b198a4b_icgraph" alt=""/></div>
+<map name="class_supervised_image_af3c35e83075edcb7ca58bd708b198a4b_icgraph" id="class_supervised_image_af3c35e83075edcb7ca58bd708b198a4b_icgraph">
+<area shape="rect" id="node2" href="class_s_u_n_random_folder_generator.html#a768be016f5c824edf5d19eb5a88ab3b8" title="SUNRandomFolderGenerator::run" alt="" coords="269,5,495,32"/><area shape="rect" id="node4" href="class_supervised_image_viewer_widget.html#a2fd955c04cc44507f6c9d0b3fc43538c" title="SupervisedImageViewerWidget\l::paintEvent" alt="" coords="278,57,486,98"/><area shape="rect" id="node5" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="286,122,478,163"/><area shape="rect" id="node10" href="class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="299,187,465,229"/><area shape="rect" id="node3" href="_experiments_2_sun_random_folder_generator_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="611,5,661,32"/><area shape="rect" id="node6" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="611,71,661,97"/><area shape="rect" id="node7" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="550,122,722,163"/><area shape="rect" id="node9" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="543,187,729,229"/><area shape="rect" id="node8" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="777,129,828,156"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19120479bf06cc96df0eb2aea5f0e205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QList&lt; <a class="el" href="class_region.html">Region</a> &gt; &amp; SupervisedImage::getRegions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_cgraph.png" border="0" usemap="#class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_cgraph" alt=""/></div>
+<map name="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_cgraph" id="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_cgraph">
+<area shape="rect" id="node2" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="253,46,448,73"/><area shape="rect" id="node3" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="496,5,669,47"/><area shape="rect" id="node4" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="496,71,669,112"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_icgraph.png" border="0" usemap="#class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_icgraph" alt=""/></div>
+<map name="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_icgraph" id="class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205_icgraph">
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="271,57,443,99"/><area shape="rect" id="node3" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="530,5,702,47"/><area shape="rect" id="node5" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="282,239,433,266"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="509,189,723,215"/><area shape="rect" id="node8" href="class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="253,297,461,339"/><area shape="rect" id="node15" href="class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="253,363,461,404"/><area shape="rect" id="node16" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="261,123,453,164"/><area shape="rect" id="node4" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="851,13,901,39"/><area shape="rect" id="node7" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="851,189,901,215"/><area shape="rect" id="node9" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="527,240,705,281"/><area shape="rect" id="node11" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="527,305,705,347"/><area shape="rect" id="node12" href="class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="515,371,717,412"/><area shape="rect" id="node14" href="class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="515,436,717,477"/><area shape="rect" id="node10" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="783,289,969,331"/><area shape="rect" id="node13" href="class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="771,387,981,428"/><area shape="rect" id="node17" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="591,71,641,98"/><area shape="rect" id="node18" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="523,123,709,164"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7accd41406835fc82dbeaf783ab2acaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString SupervisedImage::getSupervisedPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf_icgraph.png" border="0" usemap="#class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf_icgraph" alt=""/></div>
+<map name="class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf_icgraph" id="class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf_icgraph">
+<area shape="rect" id="node2" href="class_s_u_n_random_folder_generator.html#a768be016f5c824edf5d19eb5a88ab3b8" title="SUNRandomFolderGenerator::run" alt="" coords="299,5,524,32"/><area shape="rect" id="node3" href="_experiments_2_sun_random_folder_generator_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="572,5,623,32"/></map>
 </div>
 </p>
 
@@ -330,28 +399,33 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_icgraph.png" border="0" usemap="#class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_icgraph" alt=""/></div>
 <map name="class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_icgraph" id="class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de_icgraph">
-<area shape="rect" id="node2" href="class_supervised_image.html#a032c9ef022d741cfb65c683ed11029ed" title="SupervisedImage::Supervised\lImage" alt="" coords="240,5,431,47"/></map>
+<area shape="rect" id="node2" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="248,264,448,291"/><area shape="rect" id="node20" href="class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="253,351,443,377"/><area shape="rect" id="node3" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="514,122,686,163"/><area shape="rect" id="node4" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="773,122,945,163"/><area shape="rect" id="node6" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="525,239,675,265"/><area shape="rect" id="node7" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="752,264,965,291"/><area shape="rect" id="node9" href="class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="496,406,704,447"/><area shape="rect" id="node16" href="class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="496,341,704,382"/><area shape="rect" id="node17" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="504,57,696,98"/><area shape="rect" id="node5" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1093,129,1144,156"/><area shape="rect" id="node8" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1093,264,1144,291"/><area shape="rect" id="node10" href="class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="769,458,948,499"/><area shape="rect" id="node12" href="class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="769,523,948,565"/><area shape="rect" id="node13" href="class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="757,327,960,369"/><area shape="rect" id="node15" href="class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="757,393,960,434"/><area shape="rect" id="node11" href="class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="1026,474,1211,515"/><area shape="rect" id="node14" href="class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="1013,377,1224,418"/><area shape="rect" id="node18" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="833,5,884,32"/><area shape="rect" id="node19" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="765,57,952,98"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa2ab17f3c0be74a99858965e2cddb298"></a>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9a749e02a7d0f6ba28725465e5f7a29f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SupervisedImage::show_image </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">bool SupervisedImage::alreadyParsed</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a0641d3087990ef954a6d5e88e927bbc5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +466,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2f1fcadc1267a86ad9d6469b0b2d11b5"></a>
+<a class="anchor" id="a2113ab863b2253b37dab1d7b575e8b10"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -400,27 +474,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QLabel* SupervisedImage::l =NULL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a264d8baa97fa79247b310a94e160e7fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QList&lt;<a class="el" href="class_region.html">Region</a>*&gt; SupervisedImage::regions</td>
+          <td class="memname">QList&lt;<a class="el" href="class_region.html">Region</a>&gt; SupervisedImage::regions</td>
         </tr>
       </table>
   </td>
@@ -453,13 +507,13 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/<a class="el" href="_supervised_image_8hpp_source.html">SupervisedImage.hpp</a></li>
-<li>src/<a class="el" href="_supervised_image_8cpp.html">SupervisedImage.cpp</a></li>
+<li>Sources/Utilities/<a class="el" href="_supervised_image_8hpp_source.html">SupervisedImage.hpp</a></li>
+<li>Sources/Utilities/<a class="el" href="_supervised_image_8cpp.html">SupervisedImage.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

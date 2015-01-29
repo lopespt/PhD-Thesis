@@ -1,0 +1,9 @@
+<map id="AreaFeatureExtractionWindow::show_previous" name="AreaFeatureExtractionWindow::show_previous">
+<area shape="rect" id="node2" href="$class_sun_database_reader.html#a8109235f5d4a3e7763afe22f4c8c37a0" title="SunDatabaseReader::\lreadPrevious" alt="" coords="283,5,437,47"/>
+<area shape="rect" id="node3" href="$class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="256,71,464,112"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="517,53,707,79"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="512,103,712,130"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="760,78,955,105"/>
+<area shape="rect" id="node6" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="1003,37,1176,79"/>
+<area shape="rect" id="node7" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="1003,103,1176,144"/>
+</map>

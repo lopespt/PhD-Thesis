@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>PhdThesis: src/ComplexNetworkConstructor.hpp File Reference</title>
+<title>PhdThesis: Sources/Utilities/ComplexNetworkConstructor.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,37 +81,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_93b987d198776efab1b0e70f5d4d3726.html">Utilities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">ComplexNetworkConstructor.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_feature_8hpp_source.html">Feature.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork/ComplexNetwork.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_feature_8hpp_source.html">FeatureExtractors/Feature.hpp</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="_database_reader_8hpp_source.html">DatabaseReader.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_region_8hpp_source.html">Region.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="_region_8hpp_source.html">FeatureExtractors/Region.hpp</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="_supervised_image_8hpp_source.html">SupervisedImage.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_area_feature_extractor_8hpp_source.html">AreaFeatureExtractor.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="_area_feature_factory_8hpp_source.html">FeatureExtractors/AreaFeatureFactory.hpp</a>&gt;</code><br />
 <code>#include &lt;QLinkedList&gt;</code><br />
 <code>#include &quot;<a class="el" href="_link_8hpp_source.html">Link.hpp</a>&quot;</code><br />
+<code>#include &lt;QHash&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;<a class="el" href="_features_complex_network_8hpp_source.html">Utilities/FeaturesComplexNetwork.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ComplexNetworkConstructor.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_complex_network_constructor_8hpp__incl.png" border="0" usemap="#src_2_complex_network_constructor_8hpp" alt=""/></div>
-<map name="src_2_complex_network_constructor_8hpp" id="src_2_complex_network_constructor_8hpp">
+<div class="center"><img src="_complex_network_constructor_8hpp__incl.png" border="0" usemap="#_sources_2_utilities_2_complex_network_constructor_8hpp" alt=""/></div>
+<map name="_sources_2_utilities_2_complex_network_constructor_8hpp" id="_sources_2_utilities_2_complex_network_constructor_8hpp">
 <area shape="rect" id="node2" href="_complex_network_8hpp.html" title="ComplexNetwork.hpp" alt="" coords="169,80,314,107"/><area shape="rect" id="node9" href="_feature_8hpp.html" title="Feature.hpp" alt="" coords="491,229,581,256"/><area shape="rect" id="node11" href="_region_8hpp.html" title="Region.hpp" alt="" coords="589,304,677,331"/><area shape="rect" id="node20" href="_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="851,80,1000,107"/><area shape="rect" id="node21" href="_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="852,229,999,256"/><area shape="rect" id="node27" href="_area_feature_extractor_8hpp.html" title="AreaFeatureExtractor.hpp" alt="" coords="558,80,725,107"/><area shape="rect" id="node30" href="_link_8hpp.html" title="Link.hpp" alt="" coords="1137,80,1207,107"/><area shape="rect" id="node4" href="_node_8hpp.html" title="Node.hpp" alt="" coords="163,155,242,181"/><area shape="rect" id="node5" href="_edge_8hpp.html" title="Edge.hpp" alt="" coords="77,229,155,256"/><area shape="rect" id="node28" href="_feature_extractor_8hpp.html" title="FeatureExtractor.hpp" alt="" coords="536,155,675,181"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_complex_network_constructor_8hpp__dep__incl.png" border="0" usemap="#src_2_complex_network_constructor_8hppdep" alt=""/></div>
-<map name="src_2_complex_network_constructor_8hppdep" id="src_2_complex_network_constructor_8hppdep">
+<div class="center"><img src="_complex_network_constructor_8hpp__dep__incl.png" border="0" usemap="#_sources_2_utilities_2_complex_network_constructor_8hppdep" alt=""/></div>
+<map name="_sources_2_utilities_2_complex_network_constructor_8hppdep" id="_sources_2_utilities_2_complex_network_constructor_8hppdep">
 <area shape="rect" id="node2" href="_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="5,80,232,107"/><area shape="rect" id="node3" href="main_8cpp.html" title="src/main.cpp" alt="" coords="257,80,351,107"/></map>
 </div>
 </div>
@@ -120,30 +123,11 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a4f0848d3c2144cac74d7cdb1a6a23c30"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_complex_network.html">ComplexNetwork</a><br class="typebreak" />
-&lt; <a class="el" href="class_feature.html">Feature</a>, <a class="el" href="class_link.html">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_complex_network_constructor_8hpp.html#a4f0848d3c2144cac74d7cdb1a6a23c30">t_cn</a></td></tr>
-<tr class="separator:a4f0848d3c2144cac74d7cdb1a6a23c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a4f0848d3c2144cac74d7cdb1a6a23c30"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt;<a class="el" href="class_feature.html">Feature</a>, <a class="el" href="class_link.html">Link</a>&gt; <a class="el" href="_complex_network_constructor_8hpp.html#a4f0848d3c2144cac74d7cdb1a6a23c30">t_cn</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

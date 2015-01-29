@@ -1,0 +1,8 @@
+<map id="ComplexNetworkViewerWidget::setComplexNetwork" name="ComplexNetworkViewerWidget::setComplexNetwork">
+<area shape="rect" id="node2" href="$class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork::Begin" alt="" coords="279,5,444,32"/>
+<area shape="rect" id="node3" href="$class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork::End" alt="" coords="284,56,439,83"/>
+<area shape="rect" id="node4" href="$class_complex_network.html#a2167b224079f5c0b44443959ad0b6440" title="ComplexNetwork::EdgesBegin" alt="" coords="260,107,463,133"/>
+<area shape="rect" id="node5" href="$class_complex_network.html#ad806138ea94ec18ed17f4681ab731208" title="ComplexNetwork::EdgesEnd" alt="" coords="265,157,457,184"/>
+<area shape="rect" id="node6" href="$class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="271,208,452,235"/>
+<area shape="rect" id="node7" href="$class_complex_network_viewer_widget.html#a7c6835fe215bf07b7586fe1f328ec0e5" title="ComplexNetworkViewerWidget\l::createVtkPipeline" alt="" coords="259,259,464,301"/>
+</map>

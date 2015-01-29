@@ -1,0 +1,5 @@
+<map id="FeatureFactoryAbstract" name="FeatureFactoryAbstract">
+<area shape="rect" id="node2" href="$class_area_feature_factory.html" title="{AreaFeatureFactory\n|&#45; discretization\l|+ AreaFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discretize()\l}" alt="" coords="5,189,167,311"/>
+<area shape="rect" id="node3" href="$class_label_feature_factory.html" title="{LabelFeatureFactory\n||+ LabelFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l}" alt="" coords="191,197,357,303"/>
+<area shape="rect" id="node4" href="$class_orientation_feature_factory.html" title="{OrientationFeatureFactory\n|&#45; discretization\l|+ OrientationFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discoverOrientation()\l&#45; distance()\l&#45; discretize()\l}" alt="" coords="381,175,578,325"/>
+</map>

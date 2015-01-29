@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sundatabasereader',['SunDatabaseReader',['../class_sun_database_reader.html',1,'']]],
-  ['supervisedimage',['SupervisedImage',['../class_supervised_image.html',1,'']]]
+  ['header',['Header',['../classcompute__modularity_1_1_header.html',1,'compute_modularity']]],
+  ['header',['header',['../struct_features_complex_network_1_1header.html',1,'FeaturesComplexNetwork']]]
 ];

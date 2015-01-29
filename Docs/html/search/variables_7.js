@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['l',['l',['../class_region.html#a31cb137d1eab434b70aaa95633e704fe',1,'Region::l()'],['../class_supervised_image.html#a2f1fcadc1267a86ad9d6469b0b2d11b5',1,'SupervisedImage::l()']]],
-  ['label',['label',['../class_region.html#afcc063386e02be883d71eaf5bcef2a55',1,'Region']]],
-  ['lambda',['lambda',['../class_complex_network_constructor.html#a9d3e346719dc1f8f3093a48b8d44e669',1,'ComplexNetworkConstructor']]],
-  ['learningrate',['learningRate',['../class_complex_network_constructor.html#aa7fe374b9733338b8176708f77d29c55',1,'ComplexNetworkConstructor']]]
+  ['g1',['G1',['../namespacecompute__modularity.html#abec964e45de0bde923285855ae074cff',1,'compute_modularity']]],
+  ['graph',['graph',['../class_complex_network_viewer_widget.html#a2ccd74a17620352941b4b19b97b20550',1,'ComplexNetworkViewerWidget::graph()'],['../class_g_main_window.html#ab97c0cde05fda7d301306e82daaeab57',1,'GMainWindow::graph()']]]
 ];

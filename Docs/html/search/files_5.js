@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['link_2ecpp',['Link.cpp',['../_link_8cpp.html',1,'']]],
-  ['link_2ehpp',['Link.hpp',['../_link_8hpp.html',1,'']]]
+  ['iterativerandomwalk_2ecpp',['IterativeRandomWalk.cpp',['../_iterative_random_walk_8cpp.html',1,'']]],
+  ['iterativerandomwalk_2ehpp',['IterativeRandomWalk.hpp',['../_iterative_random_walk_8hpp.html',1,'']]]
 ];

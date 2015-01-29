@@ -1,0 +1,3 @@
+<map id="CachedComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;" name="CachedComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;">
+<area shape="rect" id="node2" href="$class_complex_network.html" title="{ComplexNetwork\&lt; NODE\l_TYPE, EDGE_TYPE \&gt;\n|+ description\l+ num_nodes\l+ num_edges\l# current_node_id\l# current_edge_id\l# directed\l# nodes\l# edges\l# edge\l# file_header\l|+ ComplexNetwork()\l+ addNode()\l+ getNode()\l+ removeNode()\l+ addEdge()\l+ getEdge()\l+ getEdgeFromEdgeId()\l+ removeEdge()\l+ clear()\l+ getNumNodes()\land 11 more...\l# createEdgeKey()\l}" alt="" coords="25,5,199,391"/>
+</map>

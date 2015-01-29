@@ -1,0 +1,161 @@
+\hypertarget{class_iterative_random_walk}{\section{Iterative\+Random\+Walk Class Reference}
+\label{class_iterative_random_walk}\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+}
+
+
+{\ttfamily \#include $<$Iterative\+Random\+Walk.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_iterative_random_walk_1_1edges__list}{edges\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_iterative_random_walk_a7b012f39baa0fc34f0275a3ff9f91895}{Iterative\+Random\+Walk} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$\hyperlink{class_iterative_random_walk_ab63a2f748e5f6a9753697259cbfa2c6f}{cn})
+\item 
+\hyperlink{class_iterative_random_walk_a5f2c5b8b0fea93b099552fe4349c4663}{Iterative\+Random\+Walk} (\hyperlink{class_cached_complex_network}{Cached\+Complex\+Network}$<$ int, double $>$ $\ast$\hyperlink{class_iterative_random_walk_ab63a2f748e5f6a9753697259cbfa2c6f}{cn})
+\item 
+void \hyperlink{class_iterative_random_walk_a7f87d1012ed90935145b4df1f869b643}{Execute} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} start\+\_\+node, unsigned int max\+\_\+path\+\_\+length)
+\item 
+float \hyperlink{class_iterative_random_walk_a653857e8ad309943cbdb9e6a2f994f59}{get\+Probability} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} node)
+\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_iterative_random_walk_a621c72b1e287ed0a36b301493b2f5f70}{get\+All\+Probs} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cached_complex_network}{Cached\+Complex\+Network}$<$ int, double $>$ \hyperlink{class_iterative_random_walk_ab63a2f748e5f6a9753697259cbfa2c6f}{cn}
+\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_iterative_random_walk_a843b2d9703e20d3f7ef7e13b3be53d17}{probs}
+\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_iterative_random_walk_a5db3cabf3a85df747c80b2c826d60ca7}{probs2}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for Iterative\+Random\+Walk\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_iterative_random_walk__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_iterative_random_walk_a7b012f39baa0fc34f0275a3ff9f91895}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{Iterative\+Random\+Walk}]{\setlength{\rightskip}{0pt plus 5cm}Iterative\+Random\+Walk\+::\+Iterative\+Random\+Walk (
+\begin{DoxyParamCaption}
+\item[{{\bf Features\+Complex\+Network} $\ast$}]{cn}
+\end{DoxyParamCaption}
+)}}\label{class_iterative_random_walk_a7b012f39baa0fc34f0275a3ff9f91895}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_iterative_random_walk_a7b012f39baa0fc34f0275a3ff9f91895_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_iterative_random_walk_a5f2c5b8b0fea93b099552fe4349c4663}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{Iterative\+Random\+Walk}]{\setlength{\rightskip}{0pt plus 5cm}Iterative\+Random\+Walk\+::\+Iterative\+Random\+Walk (
+\begin{DoxyParamCaption}
+\item[{{\bf Cached\+Complex\+Network}$<$ int, double $>$ $\ast$}]{cn}
+\end{DoxyParamCaption}
+)}}\label{class_iterative_random_walk_a5f2c5b8b0fea93b099552fe4349c4663}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_iterative_random_walk_a7f87d1012ed90935145b4df1f869b643}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!Execute@{Execute}}
+\index{Execute@{Execute}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{Execute}]{\setlength{\rightskip}{0pt plus 5cm}void Iterative\+Random\+Walk\+::\+Execute (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{start\+\_\+node, }
+\item[{unsigned int}]{max\+\_\+path\+\_\+length}
+\end{DoxyParamCaption}
+)}}\label{class_iterative_random_walk_a7f87d1012ed90935145b4df1f869b643}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_iterative_random_walk_a7f87d1012ed90935145b4df1f869b643_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_iterative_random_walk_a7f87d1012ed90935145b4df1f869b643_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_iterative_random_walk_a621c72b1e287ed0a36b301493b2f5f70}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!get\+All\+Probs@{get\+All\+Probs}}
+\index{get\+All\+Probs@{get\+All\+Probs}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{get\+All\+Probs}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$ double $>$ Iterative\+Random\+Walk\+::get\+All\+Probs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_iterative_random_walk_a621c72b1e287ed0a36b301493b2f5f70}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_iterative_random_walk_a621c72b1e287ed0a36b301493b2f5f70_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_iterative_random_walk_a653857e8ad309943cbdb9e6a2f994f59}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!get\+Probability@{get\+Probability}}
+\index{get\+Probability@{get\+Probability}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{get\+Probability}]{\setlength{\rightskip}{0pt plus 5cm}float Iterative\+Random\+Walk\+::get\+Probability (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{node}
+\end{DoxyParamCaption}
+)}}\label{class_iterative_random_walk_a653857e8ad309943cbdb9e6a2f994f59}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_iterative_random_walk_a653857e8ad309943cbdb9e6a2f994f59_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_iterative_random_walk_ab63a2f748e5f6a9753697259cbfa2c6f}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!cn@{cn}}
+\index{cn@{cn}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{cn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cached\+Complex\+Network}$<$int, double$>$ Iterative\+Random\+Walk\+::cn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_iterative_random_walk_ab63a2f748e5f6a9753697259cbfa2c6f}
+\hypertarget{class_iterative_random_walk_a843b2d9703e20d3f7ef7e13b3be53d17}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!probs@{probs}}
+\index{probs@{probs}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{probs}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$double$>$ Iterative\+Random\+Walk\+::probs\hspace{0.3cm}{\ttfamily [private]}}}\label{class_iterative_random_walk_a843b2d9703e20d3f7ef7e13b3be53d17}
+\hypertarget{class_iterative_random_walk_a5db3cabf3a85df747c80b2c826d60ca7}{\index{Iterative\+Random\+Walk@{Iterative\+Random\+Walk}!probs2@{probs2}}
+\index{probs2@{probs2}!Iterative\+Random\+Walk@{Iterative\+Random\+Walk}}
+\subsubsection[{probs2}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$double$>$ Iterative\+Random\+Walk\+::probs2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_iterative_random_walk_a5db3cabf3a85df747c80b2c826d60ca7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\hyperlink{_iterative_random_walk_8hpp}{Iterative\+Random\+Walk.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_iterative_random_walk_8cpp}{Iterative\+Random\+Walk.\+cpp}\end{DoxyCompactItemize}

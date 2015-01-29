@@ -8,7 +8,15 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{class_supervised_image}{Supervised\+Image} $\ast$ \hyperlink{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{read\+Next} ()=0
+virtual \hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081}{read\+Next} ()=0
+\item 
+virtual \hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c}{read\+Previous} ()=0
+\item 
+virtual bool \hyperlink{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe}{has\+Next} () const =0
+\item 
+virtual bool \hyperlink{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506}{has\+Previous} () const =0
+\item 
+virtual unsigned int \hyperlink{class_database_reader_abd37fa505553101bd8e18fd52547b7ee}{get\+Total} () const =0
 \end{DoxyCompactItemize}
 
 
@@ -31,16 +39,62 @@ Collaboration diagram for Database\+Reader\+:\nopagebreak
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}{\index{Database\+Reader@{Database\+Reader}!read\+Next@{read\+Next}}
-\index{read\+Next@{read\+Next}!Database\+Reader@{Database\+Reader}}
-\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Supervised\+Image}$\ast$ Database\+Reader\+::read\+Next (
+\hypertarget{class_database_reader_abd37fa505553101bd8e18fd52547b7ee}{\index{Database\+Reader@{Database\+Reader}!get\+Total@{get\+Total}}
+\index{get\+Total@{get\+Total}!Database\+Reader@{Database\+Reader}}
+\subsubsection[{get\+Total}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int Database\+Reader\+::get\+Total (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_abd37fa505553101bd8e18fd52547b7ee}
 
 
-Implemented in \hyperlink{class_sun_database_reader_aadf059f614225be059e05a7c3a75fb26}{Sun\+Database\+Reader}.
+Implemented in \hyperlink{class_sun_database_reader_a8d704a7121e1babebe4673049d37a095}{Sun\+Database\+Reader}, and \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_ad92c0ac794e71748a01e7e6f8103342a}{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_reader_abd37fa505553101bd8e18fd52547b7ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe}{\index{Database\+Reader@{Database\+Reader}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!Database\+Reader@{Database\+Reader}}
+\subsubsection[{has\+Next}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Reader\+::has\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe}
+
+
+Implemented in \hyperlink{class_sun_database_reader_a5530b88632379c373b592d5128c2999f}{Sun\+Database\+Reader}, and \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_ac6c27452f10e49e7d0d425a56926277c}{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506}{\index{Database\+Reader@{Database\+Reader}!has\+Previous@{has\+Previous}}
+\index{has\+Previous@{has\+Previous}!Database\+Reader@{Database\+Reader}}
+\subsubsection[{has\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Reader\+::has\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506}
+
+
+Implemented in \hyperlink{class_sun_database_reader_abe3da501f9df416baf1b077e4d4eadb8}{Sun\+Database\+Reader}, and \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a6f635a1836b5f7dfc23b23ac2ef99cc6}{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}.
 
 
 
@@ -48,7 +102,52 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_database_reader_ae6a76cba6f3d4dad64b70b59c701b9f6_icgraph}
+\includegraphics[width=350pt]{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081}{\index{Database\+Reader@{Database\+Reader}!read\+Next@{read\+Next}}
+\index{read\+Next@{read\+Next}!Database\+Reader@{Database\+Reader}}
+\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Supervised\+Image} Database\+Reader\+::read\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081}
+
+
+Implemented in \hyperlink{class_sun_database_reader_a92a92483d9b4eadc4008f29a89068e71}{Sun\+Database\+Reader}, and \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a3ec743925701640642ef69b1731d21ea}{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c}{\index{Database\+Reader@{Database\+Reader}!read\+Previous@{read\+Previous}}
+\index{read\+Previous@{read\+Previous}!Database\+Reader@{Database\+Reader}}
+\subsubsection[{read\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Supervised\+Image} Database\+Reader\+::read\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c}
+
+
+Implemented in \hyperlink{class_sun_database_reader_a8109235f5d4a3e7763afe22f4c8c37a0}{Sun\+Database\+Reader}, and \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a9f9e600aed16157680c6b4b402e9f764}{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c_icgraph}
 \end{center}
 \end{figure}
 
@@ -57,4 +156,4 @@ Here is the caller graph for this function\+:\nopagebreak
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_database_reader_8hpp}{Database\+Reader.\+hpp}\end{DoxyCompactItemize}
+Sources/\+Utilities/\hyperlink{_database_reader_8hpp}{Database\+Reader.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,158 @@
+\hypertarget{class_label_guesser}{\section{Label\+Guesser Class Reference}
+\label{class_label_guesser}\index{Label\+Guesser@{Label\+Guesser}}
+}
+
+
+{\ttfamily \#include $<$Label\+Guesser.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_label_guesser_ad40858173b453bf95a7cd9798ff6a941}{Label\+Guesser} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$\hyperlink{class_label_guesser_acdd5ba09b2a6aa6fadc4b64798bd4e75}{cn})
+\item 
+bool \hyperlink{class_label_guesser_a83c7361e8308a2347814a418c6165615}{Guess} (\hyperlink{class_supervised_image}{Supervised\+Image} $\ast$img, int guess\+Region\+At)
+\item 
+void \hyperlink{class_label_guesser_a34aabd99a651c08cd66df1ffa27767e5}{remove\+Hubs} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_label_guesser_a28aeaaf6c7b4d8faeed2cd2f69da49a3}{build\+Index} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$ \hyperlink{class_label_guesser_acdd5ba09b2a6aa6fadc4b64798bd4e75}{cn}
+\item 
+Q\+Set$<$ \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} $>$ \hyperlink{class_label_guesser_a9a1306e306ecf90e6d886a45a1ed16f7}{hubs}
+\item 
+Q\+Hash$<$ Q\+String, \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} $>$ \hyperlink{class_label_guesser_ae88b5f0ad103084c7c8d7326c4bd7251}{index}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for Label\+Guesser\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_label_guesser__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_label_guesser_ad40858173b453bf95a7cd9798ff6a941}{\index{Label\+Guesser@{Label\+Guesser}!Label\+Guesser@{Label\+Guesser}}
+\index{Label\+Guesser@{Label\+Guesser}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{Label\+Guesser}]{\setlength{\rightskip}{0pt plus 5cm}Label\+Guesser\+::\+Label\+Guesser (
+\begin{DoxyParamCaption}
+\item[{{\bf Features\+Complex\+Network} $\ast$}]{cn}
+\end{DoxyParamCaption}
+)}}\label{class_label_guesser_ad40858173b453bf95a7cd9798ff6a941}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_ad40858173b453bf95a7cd9798ff6a941_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_label_guesser_a28aeaaf6c7b4d8faeed2cd2f69da49a3}{\index{Label\+Guesser@{Label\+Guesser}!build\+Index@{build\+Index}}
+\index{build\+Index@{build\+Index}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{build\+Index}]{\setlength{\rightskip}{0pt plus 5cm}void Label\+Guesser\+::build\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_a28aeaaf6c7b4d8faeed2cd2f69da49a3}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_a28aeaaf6c7b4d8faeed2cd2f69da49a3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_a28aeaaf6c7b4d8faeed2cd2f69da49a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_label_guesser_a83c7361e8308a2347814a418c6165615}{\index{Label\+Guesser@{Label\+Guesser}!Guess@{Guess}}
+\index{Guess@{Guess}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{Guess}]{\setlength{\rightskip}{0pt plus 5cm}bool Label\+Guesser\+::\+Guess (
+\begin{DoxyParamCaption}
+\item[{{\bf Supervised\+Image} $\ast$}]{img, }
+\item[{int}]{guess\+Region\+At}
+\end{DoxyParamCaption}
+)}}\label{class_label_guesser_a83c7361e8308a2347814a418c6165615}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_a83c7361e8308a2347814a418c6165615_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_a83c7361e8308a2347814a418c6165615_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_label_guesser_a34aabd99a651c08cd66df1ffa27767e5}{\index{Label\+Guesser@{Label\+Guesser}!remove\+Hubs@{remove\+Hubs}}
+\index{remove\+Hubs@{remove\+Hubs}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{remove\+Hubs}]{\setlength{\rightskip}{0pt plus 5cm}void Label\+Guesser\+::remove\+Hubs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_label_guesser_a34aabd99a651c08cd66df1ffa27767e5}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_label_guesser_a34aabd99a651c08cd66df1ffa27767e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_label_guesser_acdd5ba09b2a6aa6fadc4b64798bd4e75}{\index{Label\+Guesser@{Label\+Guesser}!cn@{cn}}
+\index{cn@{cn}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{cn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Features\+Complex\+Network}$\ast$ Label\+Guesser\+::cn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_acdd5ba09b2a6aa6fadc4b64798bd4e75}
+\hypertarget{class_label_guesser_a9a1306e306ecf90e6d886a45a1ed16f7}{\index{Label\+Guesser@{Label\+Guesser}!hubs@{hubs}}
+\index{hubs@{hubs}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{hubs}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Set$<${\bf node\+\_\+id}$>$ Label\+Guesser\+::hubs\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_a9a1306e306ecf90e6d886a45a1ed16f7}
+\hypertarget{class_label_guesser_ae88b5f0ad103084c7c8d7326c4bd7251}{\index{Label\+Guesser@{Label\+Guesser}!index@{index}}
+\index{index@{index}!Label\+Guesser@{Label\+Guesser}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Hash$<$Q\+String, {\bf node\+\_\+id}$>$ Label\+Guesser\+::index\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_ae88b5f0ad103084c7c8d7326c4bd7251}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Experiments/\+Labels\+Validation\+Experiment/\hyperlink{_label_guesser_8hpp}{Label\+Guesser.\+hpp}\item 
+Sources/\+Experiments/\+Labels\+Validation\+Experiment/\hyperlink{_label_guesser_8cpp}{Label\+Guesser.\+cpp}\end{DoxyCompactItemize}

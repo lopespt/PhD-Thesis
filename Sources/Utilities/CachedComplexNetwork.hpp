@@ -9,7 +9,7 @@ class CachedComplexNetwork:public ComplexNetwork<NODE_TYPE, EDGE_TYPE>
 private:
     QHash<NODE_TYPE, node_id> cache;
 public:
-    CachedComplexNetwork(bool directed=false);
+    CachedComplexNetwork(bool directed=true);
     node_id addNode(const NODE_TYPE &n);
     bool removeNode(node_id id);
     node_id getNodeId(const NODE_TYPE &n);

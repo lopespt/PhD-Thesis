@@ -1,0 +1,8 @@
+<map id="SupervisedImageViewerWidget::mouseMoveEvent" name="SupervisedImageViewerWidget::mouseMoveEvent">
+<area shape="rect" id="node2" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="261,46,461,73"/>
+<area shape="rect" id="node6" href="$class_region.html#a0c258b6ce768a3df3d0260c2ab19c343" title="Region::getBoundary" alt="" coords="288,97,435,123"/>
+<area shape="rect" id="node7" href="$class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="300,147,423,174"/>
+<area shape="rect" id="node3" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="509,46,704,73"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="752,5,925,47"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="752,71,925,112"/>
+</map>

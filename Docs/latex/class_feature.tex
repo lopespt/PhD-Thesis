@@ -1,5 +1,5 @@
-\hypertarget{class_feature}{\section{Feature Class Reference}
-\label{class_feature}\index{Feature@{Feature}}
+\hypertarget{class_feature}{\section{Feature$<$ T $>$ Class Template Reference}
+\label{class_feature}\index{Feature$<$ T $>$@{Feature$<$ T $>$}}
 }
 
 
@@ -8,26 +8,33 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-const Q\+Vector$<$ float $>$ \& \hyperlink{class_feature_ab96106b9d1ba89cfa00ffb63a26b2130}{get\+Vector} () const 
+const T \& \hyperlink{class_feature_a646c111235f484dd0ca89d122b2aac42}{get\+Content} () const 
 \item 
-void \hyperlink{class_feature_a0e73c5cb157120a30704efb4af866ec0}{print\+Feature} () const 
+\hyperlink{class_feature_a35e604731c88fd1aa8e8a36c87a1ce23}{Feature} (T value, int \hyperlink{class_feature_abstract_acab3574e41f892ae811b4adac8f5840a}{type}, const char $\ast$\hyperlink{class_feature_abstract_ae11ff57d87c0e49cf1cf95d71f407979}{feature\+Name})
 \item 
-bool \hyperlink{class_feature_a46b25bf3494c10b1d130911f07f1a046}{operator$<$} (const \hyperlink{class_feature}{Feature} \&other) const 
+virtual const char $\ast$ \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{as\+String} (char $\ast$buffer) const =0
 \item 
-\hyperlink{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}{Feature} (const char $\ast$\hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}, float $\ast$v, int n)
+virtual void \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Write\+To\+Stream} (Q\+Data\+Stream \&stream) const =0
 \item 
-\hyperlink{class_feature_a52ff10b6dc6cb67d722289b7b4354924}{Feature} (const char $\ast$\hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}, Q\+Vector$<$ float $>$ \&other)
+virtual \hyperlink{class_feature_a93090fa295d12d22fff7c9de84d0ab20}{$\sim$\+Feature} ()
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const char $\ast$ \hyperlink{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{feature\+Name}
-\item 
-Q\+Vector$<$ float $>$ \hyperlink{class_feature_a8158dfca752942aeb84f35c363184d95}{vector}
+T \hyperlink{class_feature_a4379bdef5cd2e91346a780210c6984d9}{content}
 \end{DoxyCompactItemize}
 
 
-Collaboration diagram for Feature\+:\nopagebreak
+Inheritance diagram for Feature$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_feature__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Feature$<$ T $>$\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -37,59 +44,70 @@ Collaboration diagram for Feature\+:\nopagebreak
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}{\index{Feature@{Feature}!Feature@{Feature}}
+\hypertarget{class_feature_a35e604731c88fd1aa8e8a36c87a1ce23}{\index{Feature@{Feature}!Feature@{Feature}}
 \index{Feature@{Feature}!Feature@{Feature}}
-\subsubsection[{Feature}]{\setlength{\rightskip}{0pt plus 5cm}Feature\+::\+Feature (
+\subsubsection[{Feature}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Feature}$<$ T $>$\+::{\bf Feature} (
 \begin{DoxyParamCaption}
-\item[{const char $\ast$}]{feature\+Name, }
-\item[{float $\ast$}]{v, }
-\item[{int}]{n}
+\item[{T}]{value, }
+\item[{int}]{type, }
+\item[{const char $\ast$}]{feature\+Name}
 \end{DoxyParamCaption}
-)}}\label{class_feature_a71a84ccca45918ac2019cc2c69fa0e13}
-\hypertarget{class_feature_a52ff10b6dc6cb67d722289b7b4354924}{\index{Feature@{Feature}!Feature@{Feature}}
-\index{Feature@{Feature}!Feature@{Feature}}
-\subsubsection[{Feature}]{\setlength{\rightskip}{0pt plus 5cm}Feature\+::\+Feature (
+)}}\label{class_feature_a35e604731c88fd1aa8e8a36c87a1ce23}
+\hypertarget{class_feature_a93090fa295d12d22fff7c9de84d0ab20}{\index{Feature@{Feature}!````~Feature@{$\sim$\+Feature}}
+\index{````~Feature@{$\sim$\+Feature}!Feature@{Feature}}
+\subsubsection[{$\sim$\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf Feature}$<$ T $>$\+::$\sim${\bf Feature} (
 \begin{DoxyParamCaption}
-\item[{const char $\ast$}]{feature\+Name, }
-\item[{Q\+Vector$<$ float $>$ \&}]{other}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_feature_a52ff10b6dc6cb67d722289b7b4354924}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_feature_a93090fa295d12d22fff7c9de84d0ab20}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_feature_ab96106b9d1ba89cfa00ffb63a26b2130}{\index{Feature@{Feature}!get\+Vector@{get\+Vector}}
-\index{get\+Vector@{get\+Vector}!Feature@{Feature}}
-\subsubsection[{get\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}const Q\+Vector$<$ float $>$ \& Feature\+::get\+Vector (
+\hypertarget{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{\index{Feature@{Feature}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Feature@{Feature}}
+\subsubsection[{as\+String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual const char$\ast$ {\bf Feature}$<$ T $>$\+::as\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}
+
+
+Implements \hyperlink{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd}{Feature\+Abstract}.
+
+
+
+Implemented in \hyperlink{class_label_feature_acad3108c7016d5d82ffea0b07ac9911e}{Label\+Feature}, \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{Area\+Feature}, and \hyperlink{class_orientation_feature_a181ee73c51e33108e21a52c6b95e81e7}{Orientation\+Feature}.
+
+\hypertarget{class_feature_a646c111235f484dd0ca89d122b2aac42}{\index{Feature@{Feature}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Feature@{Feature}}
+\subsubsection[{get\+Content}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const T \& {\bf Feature}$<$ T $>$\+::get\+Content (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{class_feature_ab96106b9d1ba89cfa00ffb63a26b2130}
-\hypertarget{class_feature_a46b25bf3494c10b1d130911f07f1a046}{\index{Feature@{Feature}!operator$<$@{operator$<$}}
-\index{operator$<$@{operator$<$}!Feature@{Feature}}
-\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Feature\+::operator$<$ (
+) const}}\label{class_feature_a646c111235f484dd0ca89d122b2aac42}
+\hypertarget{class_feature_a75f94882fda85bc2632620ad2555c510}{\index{Feature@{Feature}!Write\+To\+Stream@{Write\+To\+Stream}}
+\index{Write\+To\+Stream@{Write\+To\+Stream}!Feature@{Feature}}
+\subsubsection[{Write\+To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual void {\bf Feature}$<$ T $>$\+::Write\+To\+Stream (
 \begin{DoxyParamCaption}
-\item[{const {\bf Feature} \&}]{other}
+\item[{Q\+Data\+Stream \&}]{stream}
 \end{DoxyParamCaption}
-) const}}\label{class_feature_a46b25bf3494c10b1d130911f07f1a046}
-\hypertarget{class_feature_a0e73c5cb157120a30704efb4af866ec0}{\index{Feature@{Feature}!print\+Feature@{print\+Feature}}
-\index{print\+Feature@{print\+Feature}!Feature@{Feature}}
-\subsubsection[{print\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}void Feature\+::print\+Feature (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{class_feature_a0e73c5cb157120a30704efb4af866ec0}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_a75f94882fda85bc2632620ad2555c510}
+
+
+Implements \hyperlink{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}{Feature\+Abstract}.
+
+
+
+Implemented in \hyperlink{class_label_feature_a2c30c826c770d0c5892b99bea90010f1}{Label\+Feature}, \hyperlink{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}{Area\+Feature}, and \hyperlink{class_orientation_feature_a6d8d3934b981be06db8d7191c6ffdbf1}{Orientation\+Feature}.
+
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}{\index{Feature@{Feature}!feature\+Name@{feature\+Name}}
-\index{feature\+Name@{feature\+Name}!Feature@{Feature}}
-\subsubsection[{feature\+Name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Feature\+::feature\+Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_feature_aaeb59834a8cafa7a89fc7a02f861f37d}
-\hypertarget{class_feature_a8158dfca752942aeb84f35c363184d95}{\index{Feature@{Feature}!vector@{vector}}
-\index{vector@{vector}!Feature@{Feature}}
-\subsubsection[{vector}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$float$>$ Feature\+::vector\hspace{0.3cm}{\ttfamily [private]}}}\label{class_feature_a8158dfca752942aeb84f35c363184d95}
+\hypertarget{class_feature_a4379bdef5cd2e91346a780210c6984d9}{\index{Feature@{Feature}!content@{content}}
+\index{content@{content}!Feature@{Feature}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf Feature}$<$ T $>$\+::content\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_feature_a4379bdef5cd2e91346a780210c6984d9}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_feature_8hpp}{Feature.\+hpp}\item 
-src/\hyperlink{_feature_8cpp}{Feature.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Feature\+Extractors/\hyperlink{_feature_8hpp}{Feature.\+hpp}\end{DoxyCompactItemize}

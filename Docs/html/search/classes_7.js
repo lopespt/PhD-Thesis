@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['region',['Region',['../class_region.html',1,'']]]
+  ['getweight',['getWeight',['../classget_weight.html',1,'']]],
+  ['gmainwindow',['GMainWindow',['../class_g_main_window.html',1,'']]]
 ];

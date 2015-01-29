@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,164 +84,127 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_complex_network-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Rede Complexa.  
- <a href="class_complex_network.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network_1_1_node_iterator.html">NodeIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e33a5505e7a856076cd7d982a165348"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a8e33a5505e7a856076cd7d982a165348">ComplexNetwork</a> ()</td></tr>
-<tr class="separator:a8e33a5505e7a856076cd7d982a165348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a266ec2df18b6408115ebd48f0cee9454"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a266ec2df18b6408115ebd48f0cee9454">~ComplexNetwork</a> ()</td></tr>
-<tr class="separator:a266ec2df18b6408115ebd48f0cee9454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87f2a1b087dc3fc8f6cb53c9bda17180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a87f2a1b087dc3fc8f6cb53c9bda17180">addNode</a> (<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>)</td></tr>
-<tr class="separator:a87f2a1b087dc3fc8f6cb53c9bda17180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183168090e8d9446b53643890476b0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a183168090e8d9446b53643890476b0ba">addEdge</a> (<a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>)</td></tr>
-<tr class="separator:a183168090e8d9446b53643890476b0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985d6dc543067794c273f18d87592af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a985d6dc543067794c273f18d87592af4">getEdge</a> (<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>)</td></tr>
-<tr class="separator:a985d6dc543067794c273f18d87592af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc448d5bea09ee87263256f85207ef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#aadc448d5bea09ee87263256f85207ef3">getNode</a> (NODE_TYPE)</td></tr>
-<tr class="separator:aadc448d5bea09ee87263256f85207ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b10b3b8dd87a9b40413b0aadfa22250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2b10b3b8dd87a9b40413b0aadfa22250">getEdgesFromNode_LowerBound</a> (<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> n)</td></tr>
-<tr class="separator:a2b10b3b8dd87a9b40413b0aadfa22250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652f0a532b1d174a0423d2e98ea22c10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a652f0a532b1d174a0423d2e98ea22c10">getEdgesFromNode_UpperBound</a> (<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> n)</td></tr>
-<tr class="separator:a652f0a532b1d174a0423d2e98ea22c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d38294467dd4f5aab8e513803e686a"><td class="memItemLeft" align="right" valign="top">unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a41d38294467dd4f5aab8e513803e686a">getNumNodes</a> () const </td></tr>
-<tr class="separator:a41d38294467dd4f5aab8e513803e686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4959ddf1ac3a114a46d86bf46e5701"><td class="memItemLeft" align="right" valign="top">unsigned long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4a4959ddf1ac3a114a46d86bf46e5701">getNumEdges</a> () const </td></tr>
-<tr class="separator:a4a4959ddf1ac3a114a46d86bf46e5701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a16e825e1d8b487067ca21d677617a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4a16e825e1d8b487067ca21d677617a3">ComplexNetwork</a> (bool <a class="el" href="class_complex_network.html#ae1f8a32f89d84aab42475d8fe46dfa09">directed</a>=true)</td></tr>
+<tr class="separator:a4a16e825e1d8b487067ca21d677617a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c31ca0d2142dafa1d88ca3ff22356f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f">addNode</a> (const NODE_TYPE &amp;n)</td></tr>
+<tr class="separator:af2c31ca0d2142dafa1d88ca3ff22356f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3711aff250a942a9ad61d0571be82c43"><td class="memItemLeft" align="right" valign="top">virtual NODE_TYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a3711aff250a942a9ad61d0571be82c43">getNode</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> id)</td></tr>
+<tr class="separator:a3711aff250a942a9ad61d0571be82c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f2b4528cc31296ede98be7e6dcd600"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600">removeNode</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> id)</td></tr>
+<tr class="separator:a33f2b4528cc31296ede98be7e6dcd600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c25eb9c9c642a39681e4040fc0a17d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d">addEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to, const EDGE_TYPE &amp;e)</td></tr>
+<tr class="separator:a52c25eb9c9c642a39681e4040fc0a17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1c638e4604efe06c12ce3065020ec1"><td class="memItemLeft" align="right" valign="top">virtual EDGE_TYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1">getEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
+<tr class="separator:a6a1c638e4604efe06c12ce3065020ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad440008416fc33500754d77b2532560f"><td class="memItemLeft" align="right" valign="top">virtual EDGE_TYPE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ad440008416fc33500754d77b2532560f">getEdgeFromEdgeId</a> (<a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a> id)</td></tr>
+<tr class="separator:ad440008416fc33500754d77b2532560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2c7df561a2ad5fc14b04a5c5c56828"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828">removeEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
+<tr class="separator:a9b2c7df561a2ad5fc14b04a5c5c56828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64db5949375a84eba3d9ff559d68fc6e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a64db5949375a84eba3d9ff559d68fc6e">clear</a> ()</td></tr>
+<tr class="separator:a64db5949375a84eba3d9ff559d68fc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee98f26ceed674c17be01a740787170"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#afee98f26ceed674c17be01a740787170">getNumNodes</a> () const </td></tr>
+<tr class="separator:afee98f26ceed674c17be01a740787170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720cb4e40342648d394792cc693d29a5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a720cb4e40342648d394792cc693d29a5">getNumEdges</a> () const </td></tr>
+<tr class="separator:a720cb4e40342648d394792cc693d29a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02bc6912437322f146f6ce98b415759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_node_iterator.html">NodeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759">Begin</a> ()</td></tr>
+<tr class="separator:ab02bc6912437322f146f6ce98b415759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c90f4efd046776d7a53776b24daae0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_node_iterator.html">NodeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f">End</a> ()</td></tr>
+<tr class="separator:a2c90f4efd046776d7a53776b24daae0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2167b224079f5c0b44443959ad0b6440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2167b224079f5c0b44443959ad0b6440">EdgesBegin</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> node_from)</td></tr>
+<tr class="separator:a2167b224079f5c0b44443959ad0b6440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad806138ea94ec18ed17f4681ab731208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ad806138ea94ec18ed17f4681ab731208">EdgesEnd</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> node_from)</td></tr>
+<tr class="separator:ad806138ea94ec18ed17f4681ab731208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a228b9a9497db2b9385deb4eb39f1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a3a228b9a9497db2b9385deb4eb39f1e1">EdgesBegin</a> ()</td></tr>
+<tr class="separator:a3a228b9a9497db2b9385deb4eb39f1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7d628b66a815d97afbf5373640d12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#afa7d628b66a815d97afbf5373640d12b">EdgesEnd</a> ()</td></tr>
+<tr class="separator:afa7d628b66a815d97afbf5373640d12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4036d2cda2dc5596d03e164c3455aff6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4036d2cda2dc5596d03e164c3455aff6">getNumEdges</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>) const </td></tr>
+<tr class="separator:a4036d2cda2dc5596d03e164c3455aff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d127d4296808b7ccdadccaa58084e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5d127d4296808b7ccdadccaa58084e96">save</a> (const char *filename)</td></tr>
+<tr class="separator:a5d127d4296808b7ccdadccaa58084e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fbdb35418f424e8dad0dbc5dc16bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a54fbdb35418f424e8dad0dbc5dc16bee">load</a> (const char *filename)</td></tr>
+<tr class="separator:a54fbdb35418f424e8dad0dbc5dc16bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8b07f5ca5d247e13a2e2bc5ac75de1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, <br class="typebreak" />
+EDGE_TYPE &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5a8b07f5ca5d247e13a2e2bc5ac75de1">operator=</a> (const <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;cn)</td></tr>
+<tr class="separator:a5a8b07f5ca5d247e13a2e2bc5ac75de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a1a0d11ddc5f0c146a0e921b58bb5eb3e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, <br class="typebreak" />
-EDGE_TYPE &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a></td></tr>
-<tr class="separator:a1a0d11ddc5f0c146a0e921b58bb5eb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af07ec30729e69a40c4c5ac2e98381206"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_edge.html">Edge</a>&lt; NODE_TYPE, <br class="typebreak" />
-EDGE_TYPE &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a></td></tr>
-<tr class="separator:af07ec30729e69a40c4c5ac2e98381206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5db8f579c2622ec27f2cfb6835d8466"><td class="memItemLeft" align="right" valign="top">typedef std::multimap<br class="typebreak" />
-&lt; std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;<br class="typebreak" />
-, <a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a></td></tr>
-<tr class="separator:af5db8f579c2622ec27f2cfb6835d8466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a982b0db93143ff949025e326794af02d"><td class="memItemLeft" align="right" valign="top">QPair&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a982b0db93143ff949025e326794af02d">createEdgeKey</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
+<tr class="separator:a982b0db93143ff949025e326794af02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a8bf5d81ac027456c5578a3ef7f499a4b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a8bf5d81ac027456c5578a3ef7f499a4b">compare</a> (std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt; a, std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt; b)</td></tr>
-<tr class="separator:a8bf5d81ac027456c5578a3ef7f499a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7f4748e1353c022d91092892977ad0c4"><td class="memItemLeft" align="right" valign="top">std::map&lt; NODE_TYPE, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a7f4748e1353c022d91092892977ad0c4">nodes</a></td></tr>
-<tr class="separator:a7f4748e1353c022d91092892977ad0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2f089652d03d9cbca4d77ff04df234"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; std::pair<br class="typebreak" />
-&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;, <a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>, <br class="typebreak" />
-bool(*)(std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <br class="typebreak" />
-<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;, std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <br class="typebreak" />
-<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4d2f089652d03d9cbca4d77ff04df234">edges</a></td></tr>
-<tr class="separator:a4d2f089652d03d9cbca4d77ff04df234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab71dc127e36a989049df28f58f2c315a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab71dc127e36a989049df28f58f2c315a">current_node_id</a></td></tr>
+<tr class="separator:ab71dc127e36a989049df28f58f2c315a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5305dba65a6d949064e46a6729c39e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5305dba65a6d949064e46a6729c39e53">current_edge_id</a></td></tr>
+<tr class="separator:a5305dba65a6d949064e46a6729c39e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f8a32f89d84aab42475d8fe46dfa09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ae1f8a32f89d84aab42475d8fe46dfa09">directed</a></td></tr>
+<tr class="separator:ae1f8a32f89d84aab42475d8fe46dfa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0ecc57af689b9ba9f8855132d1c275"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, NODE_TYPE &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a6b0ecc57af689b9ba9f8855132d1c275">nodes</a></td></tr>
+<tr class="separator:a6b0ecc57af689b9ba9f8855132d1c275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdf613ffde926399cd5f6e7b8c09536"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <br class="typebreak" />
+<a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#adbdf613ffde926399cd5f6e7b8c09536">edges</a></td></tr>
+<tr class="separator:adbdf613ffde926399cd5f6e7b8c09536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666bb7ad7f5ab90416f037aeb1ba11d0"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>, EDGE_TYPE &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a666bb7ad7f5ab90416f037aeb1ba11d0">edge</a></td></tr>
+<tr class="separator:a666bb7ad7f5ab90416f037aeb1ba11d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ab3dbbbcd8dd173ec40938391c0fc4"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a05f560bd7b056e99816f20aa909fe1bb"><td class="memItemLeft" >&#160;&#160;&#160;char&#160;&#160;&#160;<a class="el" href="class_complex_network.html#abc2c2def62701d56ec56c8b0accbedb9">description</a> [200]</td></tr>
+<tr class="separator:a05f560bd7b056e99816f20aa909fe1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a9b07284bddbc9df7e8ad0519f30b5"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="class_complex_network.html#a6c8777ba48e68c02d2d523abe904b6b1">num_nodes</a></td></tr>
+<tr class="separator:a62a9b07284bddbc9df7e8ad0519f30b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c0c40cd8fdfde56358cd5c435e2555"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="class_complex_network.html#ac4a7f179af0187eb3071969642b445cc">num_edges</a></td></tr>
+<tr class="separator:a47c0c40cd8fdfde56358cd5c435e2555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ab3dbbbcd8dd173ec40938391c0fc4"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab9ab3dbbbcd8dd173ec40938391c0fc4">file_header</a></td></tr>
+<tr class="separator:ab9ab3dbbbcd8dd173ec40938391c0fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class NODE_TYPE, class EDGE_TYPE&gt;<br />
-class ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;</h3>
-
-<p>Rede Complexa. </p>
-<p>Rede Complexa utilizando listas de adjacências </p>
-</div><div class="dynheader">
+<div class="dynheader">
+Inheritance diagram for ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network__inherit__graph.png" border="0" usemap="#_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map" id="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_inherit__map">
+<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; Feature,\l float \&gt;\n|&#45; nodes\l&#45; edges\l|+ ComplexNetwork()\l+ ~ComplexNetwork()\l+ addNode()\l+ addEdge()\l+ getEdge()\l+ getNode()\l+ getEdgesFromNode_LowerBound()\l+ getEdgesFromNode_UpperBound()\l&#45; compare()\l}" alt="" coords="5,292,237,516"/></map>
+</div>
+<div class="dynheader">
 Collaboration diagram for ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_complex_network__coll__graph.png" border="0" usemap="#_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map" id="_complex_network_3_01_n_o_d_e___t_y_p_e_00_01_e_d_g_e___t_y_p_e_01_4_coll__map">
 <area shape="rect" id="node3" href="class_edge.html" title="{Edge\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; from\l&#45; to\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="5,153,195,318"/><area shape="rect" id="node4" title="STL class. " alt="" coords="219,197,359,274"/><area shape="rect" id="node9" title="STL class. " alt="" coords="598,197,714,274"/><area shape="rect" id="node8" href="class_node.html" title="{Node\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Node()\l+ operator\&lt;()\l+ operator==()\l+ operator\&gt;()\l}" alt="" coords="384,145,573,325"/></map>
 </div>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="af5db8f579c2622ec27f2cfb6835d8466"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::multimap&lt; std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&gt;, <a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>&gt;::iterator <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af07ec30729e69a40c4c5ac2e98381206"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_edge.html">Edge</a>&lt;NODE_TYPE, EDGE_TYPE&gt;* <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1a0d11ddc5f0c146a0e921b58bb5eb3e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_node.html">Node</a>&lt;NODE_TYPE, EDGE_TYPE&gt;* <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a8e33a5505e7a856076cd7d982a165348"></a>
+<a class="anchor" id="a4a16e825e1d8b487067ca21d677617a3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html">ComplexNetwork</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>directed</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -248,17 +212,132 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a266ec2df18b6408115ebd48f0cee9454"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a52c25eb9c9c642a39681e4040fc0a17d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::~<a class="el" href="class_complex_network.html">ComplexNetwork</a> </td>
+          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::addEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EDGE_TYPE &amp;&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a52c25eb9c9c642a39681e4040fc0a17d_icgraph.png" border="0" usemap="#class_complex_network_a52c25eb9c9c642a39681e4040fc0a17d_icgraph" alt=""/></div>
+<map name="class_complex_network_a52c25eb9c9c642a39681e4040fc0a17d_icgraph" id="class_complex_network_a52c25eb9c9c642a39681e4040fc0a17d_icgraph">
+<area shape="rect" id="node2" href="_complex_network_resources_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="304,5,369,32"/><area shape="rect" id="node3" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="301,56,373,83"/><area shape="rect" id="node5" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="485,224,675,251"/><area shape="rect" id="node6" href="class_complex_network_constructor.html#aa41263b4bf0e157d451652d772f84ef7" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="241,107,433,149"/><area shape="rect" id="node12" href="class_random_walk.html#a17eddb07d64f4ad98649605be957dde9" title="RandomWalk::walkOneStep" alt="" coords="242,224,431,251"/><area shape="rect" id="node13" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="237,326,436,367"/><area shape="rect" id="node15" href="class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752" title="RandomWalk::addAutoLoop" alt="" coords="242,275,431,301"/><area shape="rect" id="node4" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="555,56,605,83"/><area shape="rect" id="node7" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="484,107,676,149"/><area shape="rect" id="node8" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="792,56,843,83"/><area shape="rect" id="node9" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="731,107,903,149"/><area shape="rect" id="node11" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="724,173,911,214"/><area shape="rect" id="node10" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="959,115,1009,141"/><area shape="rect" id="node14" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="501,326,659,367"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af2c31ca0d2142dafa1d88ca3ff22356f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::addNode </td>
+          <td>(</td>
+          <td class="paramtype">const NODE_TYPE &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c">CachedComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;</a>, and <a class="el" href="class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c">CachedComplexNetwork&lt; int, double &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_af2c31ca0d2142dafa1d88ca3ff22356f_icgraph.png" border="0" usemap="#class_complex_network_af2c31ca0d2142dafa1d88ca3ff22356f_icgraph" alt=""/></div>
+<map name="class_complex_network_af2c31ca0d2142dafa1d88ca3ff22356f_icgraph" id="class_complex_network_af2c31ca0d2142dafa1d88ca3ff22356f_icgraph">
+<area shape="rect" id="node2" href="_complex_network_resources_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="302,5,367,32"/><area shape="rect" id="node3" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="299,56,371,83"/><area shape="rect" id="node5" href="class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c" title="CachedComplexNetwork\l::addNode" alt="" coords="250,107,419,149"/><area shape="rect" id="node9" href="class_complex_network_constructor.html#aa41263b4bf0e157d451652d772f84ef7" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="239,198,431,239"/><area shape="rect" id="node4" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="553,5,603,32"/><area shape="rect" id="node6" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="483,56,673,83"/><area shape="rect" id="node7" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="479,107,677,149"/><area shape="rect" id="node8" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="740,101,897,142"/><area shape="rect" id="node10" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="482,211,674,253"/><area shape="rect" id="node11" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="793,167,844,193"/><area shape="rect" id="node12" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="733,218,905,259"/><area shape="rect" id="node14" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="725,283,912,325"/><area shape="rect" id="node13" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="960,225,1011,252"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab02bc6912437322f146f6ce98b415759"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_node_iterator.html">NodeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::Begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_ab02bc6912437322f146f6ce98b415759_icgraph.png" border="0" usemap="#class_complex_network_ab02bc6912437322f146f6ce98b415759_icgraph" alt=""/></div>
+<map name="class_complex_network_ab02bc6912437322f146f6ce98b415759_icgraph" id="class_complex_network_ab02bc6912437322f146f6ce98b415759_icgraph">
+<area shape="rect" id="node2" href="_experiments_2_setup_padrao_2main_8cpp.html#a5e7ad02a34a7bdc94866662c051c98a7" title="main1" alt="" coords="292,5,351,32"/><area shape="rect" id="node3" href="_experiments_2_setup_padrao_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="296,56,347,83"/><area shape="rect" id="node4" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="219,107,424,149"/><area shape="rect" id="node7" href="class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179" title="LabelGuesserExperiment\l::printLabels" alt="" coords="235,173,407,214"/><area shape="rect" id="node8" href="class_label_guesser.html#a28aeaaf6c7b4d8faeed2cd2f69da49a3" title="LabelGuesser::buildIndex" alt="" coords="235,239,408,265"/><area shape="rect" id="node10" href="class_label_guesser.html#a34aabd99a651c08cd66df1ffa27767e5" title="LabelGuesser::removeHubs" alt="" coords="227,289,415,316"/><area shape="rect" id="node11" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="485,340,667,367"/><area shape="rect" id="node13" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="481,508,671,535"/><area shape="rect" id="node14" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="247,391,396,433"/><area shape="rect" id="node18" href="class_random_walk.html#a17eddb07d64f4ad98649605be957dde9" title="RandomWalk::walkOneStep" alt="" coords="227,508,416,535"/><area shape="rect" id="node19" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="222,661,421,702"/><area shape="rect" id="node21" href="class_random_walk.html#a109a954297bccef967459d6dc1e9d98a" title="RandomWalk::normalizeGraph" alt="" coords="219,609,423,636"/><area shape="rect" id="node22" href="class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752" title="RandomWalk::addAutoLoop" alt="" coords="227,559,416,585"/><area shape="rect" id="node5" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="485,107,667,149"/><area shape="rect" id="node6" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="789,115,839,141"/><area shape="rect" id="node9" href="class_label_guesser.html#ad40858173b453bf95a7cd9798ff6a941" title="LabelGuesser::LabelGuesser" alt="" coords="478,239,674,265"/><area shape="rect" id="node12" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="789,340,839,367"/><area shape="rect" id="node15" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="472,391,680,433"/><area shape="rect" id="node16" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="728,391,900,433"/><area shape="rect" id="node17" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="948,399,999,425"/><area shape="rect" id="node20" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="497,635,655,677"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a64db5949375a84eba3d9ff559d68fc6e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -271,92 +350,30 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Reimplemented in <a class="el" href="class_features_complex_network.html#a747eba83de2a19a39e3d9f230d055d59">FeaturesComplexNetwork</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a183168090e8d9446b53643890476b0ba"></a>
+<a class="anchor" id="a982b0db93143ff949025e326794af02d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::addEdge </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>&#160;</td>
-          <td class="paramname"><em>e</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph.png" border="0" usemap="#class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph" alt=""/></div>
-<map name="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph" id="class_complex_network_a183168090e8d9446b53643890476b0ba_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="231,5,413,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="292,71,352,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="461,5,644,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="692,13,741,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a87f2a1b087dc3fc8f6cb53c9bda17180"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::addNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_cgraph.png" border="0" usemap="#class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_cgraph" alt=""/></div>
-<map name="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_cgraph" id="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_cgraph">
-<area shape="rect" id="node2" href="class_node.html#a1272270025389e601164431b42ab5237" title="Node::getAttribute" alt="" coords="231,5,351,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph.png" border="0" usemap="#class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph" alt=""/></div>
-<map name="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph" id="class_complex_network_a87f2a1b087dc3fc8f6cb53c9bda17180_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="231,5,413,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="292,71,352,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="461,5,644,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="692,13,741,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8bf5d81ac027456c5578a3ef7f499a4b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::compare </td>
+          <td class="memname">QPair&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::createEdgeKey </td>
           <td>(</td>
-          <td class="paramtype">std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,30 +383,147 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a985d6dc543067794c273f18d87592af4"></a>
+<a class="anchor" id="a2167b224079f5c0b44443959ad0b6440"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_edge.html">Edge</a>&lt; NODE_TYPE, EDGE_TYPE &gt; * <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getEdge </td>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::EdgesBegin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>node_from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a2167b224079f5c0b44443959ad0b6440_icgraph.png" border="0" usemap="#class_complex_network_a2167b224079f5c0b44443959ad0b6440_icgraph" alt=""/></div>
+<map name="class_complex_network_a2167b224079f5c0b44443959ad0b6440_icgraph" id="class_complex_network_a2167b224079f5c0b44443959ad0b6440_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="256,5,461,47"/><area shape="rect" id="node5" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="283,71,434,98"/><area shape="rect" id="node8" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="333,122,384,149"/><area shape="rect" id="node9" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="323,173,395,199"/><area shape="rect" id="node11" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="259,224,458,265"/><area shape="rect" id="node13" href="class_random_walk.html#a109a954297bccef967459d6dc1e9d98a" title="RandomWalk::normalizeGraph" alt="" coords="257,290,461,317"/><area shape="rect" id="node3" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="525,5,707,47"/><area shape="rect" id="node4" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="771,13,821,39"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="509,71,723,98"/><area shape="rect" id="node7" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="771,71,821,98"/><area shape="rect" id="node10" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="591,173,641,199"/><area shape="rect" id="node12" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="537,224,695,265"/><area shape="rect" id="node14" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="521,290,711,317"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a228b9a9497db2b9385deb4eb39f1e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::EdgesBegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad806138ea94ec18ed17f4681ab731208"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::EdgesEnd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>node_from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_ad806138ea94ec18ed17f4681ab731208_icgraph.png" border="0" usemap="#class_complex_network_ad806138ea94ec18ed17f4681ab731208_icgraph" alt=""/></div>
+<map name="class_complex_network_ad806138ea94ec18ed17f4681ab731208_icgraph" id="class_complex_network_ad806138ea94ec18ed17f4681ab731208_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="245,5,451,47"/><area shape="rect" id="node5" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="273,71,423,98"/><area shape="rect" id="node8" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="323,122,373,149"/><area shape="rect" id="node9" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="312,173,384,199"/><area shape="rect" id="node11" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="249,224,447,265"/><area shape="rect" id="node13" href="class_random_walk.html#a109a954297bccef967459d6dc1e9d98a" title="RandomWalk::normalizeGraph" alt="" coords="246,290,450,317"/><area shape="rect" id="node3" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="515,5,696,47"/><area shape="rect" id="node4" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="760,13,811,39"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="499,71,712,98"/><area shape="rect" id="node7" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="760,71,811,98"/><area shape="rect" id="node10" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="580,173,631,199"/><area shape="rect" id="node12" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="527,224,684,265"/><area shape="rect" id="node14" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="511,290,700,317"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afa7d628b66a815d97afbf5373640d12b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_edge_iterator.html">EdgeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::EdgesEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c90f4efd046776d7a53776b24daae0f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network_1_1_node_iterator.html">NodeIterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::End </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a2c90f4efd046776d7a53776b24daae0f_icgraph.png" border="0" usemap="#class_complex_network_a2c90f4efd046776d7a53776b24daae0f_icgraph" alt=""/></div>
+<map name="class_complex_network_a2c90f4efd046776d7a53776b24daae0f_icgraph" id="class_complex_network_a2c90f4efd046776d7a53776b24daae0f_icgraph">
+<area shape="rect" id="node2" href="_experiments_2_setup_padrao_2main_8cpp.html#a5e7ad02a34a7bdc94866662c051c98a7" title="main1" alt="" coords="281,5,340,32"/><area shape="rect" id="node3" href="_experiments_2_setup_padrao_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="285,56,336,83"/><area shape="rect" id="node4" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="208,107,413,149"/><area shape="rect" id="node7" href="class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179" title="LabelGuesserExperiment\l::printLabels" alt="" coords="225,173,397,214"/><area shape="rect" id="node8" href="class_label_guesser.html#a28aeaaf6c7b4d8faeed2cd2f69da49a3" title="LabelGuesser::buildIndex" alt="" coords="224,239,397,265"/><area shape="rect" id="node10" href="class_label_guesser.html#a34aabd99a651c08cd66df1ffa27767e5" title="LabelGuesser::removeHubs" alt="" coords="217,289,405,316"/><area shape="rect" id="node11" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="474,340,657,367"/><area shape="rect" id="node13" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="471,508,660,535"/><area shape="rect" id="node14" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="236,391,385,433"/><area shape="rect" id="node18" href="class_random_walk.html#a17eddb07d64f4ad98649605be957dde9" title="RandomWalk::walkOneStep" alt="" coords="216,508,405,535"/><area shape="rect" id="node19" href="class_random_walk.html#a1977261ae7d29ca259c8f32109865ece" title="RandomWalk::convertToWalk\lNetwork" alt="" coords="211,661,410,702"/><area shape="rect" id="node21" href="class_random_walk.html#a109a954297bccef967459d6dc1e9d98a" title="RandomWalk::normalizeGraph" alt="" coords="209,609,413,636"/><area shape="rect" id="node22" href="class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752" title="RandomWalk::addAutoLoop" alt="" coords="216,559,405,585"/><area shape="rect" id="node5" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="475,107,656,149"/><area shape="rect" id="node6" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="778,115,829,141"/><area shape="rect" id="node9" href="class_label_guesser.html#ad40858173b453bf95a7cd9798ff6a941" title="LabelGuesser::LabelGuesser" alt="" coords="467,239,663,265"/><area shape="rect" id="node12" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="778,340,829,367"/><area shape="rect" id="node15" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="461,391,669,433"/><area shape="rect" id="node16" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="717,391,889,433"/><area shape="rect" id="node17" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="937,399,988,425"/><area shape="rect" id="node20" href="class_iterative_random_walk.html#a7b012f39baa0fc34f0275a3ff9f91895" title="IterativeRandomWalk\l::IterativeRandomWalk" alt="" coords="487,635,644,677"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a1c638e4604efe06c12ce3065020ec1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EDGE_TYPE * <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -397,90 +531,93 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph.png" border="0" usemap="#class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph" alt=""/></div>
-<map name="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph" id="class_complex_network_a985d6dc543067794c273f18d87592af4_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="225,5,408,47"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="456,5,639,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="687,13,736,39"/></map>
+<div class="center"><img src="class_complex_network_a6a1c638e4604efe06c12ce3065020ec1_icgraph.png" border="0" usemap="#class_complex_network_a6a1c638e4604efe06c12ce3065020ec1_icgraph" alt=""/></div>
+<map name="class_complex_network_a6a1c638e4604efe06c12ce3065020ec1_icgraph" id="class_complex_network_a6a1c638e4604efe06c12ce3065020ec1_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_to_matlab.html#a8d0d921690e8d376364c733c45c0f777" title="ComplexNetworkToMatlab\l::convert" alt="" coords="240,5,419,47"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#aa41263b4bf0e157d451652d772f84ef7" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="233,71,425,112"/><area shape="rect" id="node10" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="255,136,404,177"/><area shape="rect" id="node15" href="class_random_walk.html#a17eddb07d64f4ad98649605be957dde9" title="RandomWalk::walkOneStep" alt="" coords="235,202,424,229"/><area shape="rect" id="node16" href="class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752" title="RandomWalk::addAutoLoop" alt="" coords="235,253,424,279"/><area shape="rect" id="node3" href="_complex_network_to_matlab_file_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="552,13,603,39"/><area shape="rect" id="node5" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="481,71,673,112"/><area shape="rect" id="node6" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="797,19,848,46"/><area shape="rect" id="node7" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="737,136,909,177"/><area shape="rect" id="node9" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="729,71,916,112"/><area shape="rect" id="node8" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="964,143,1015,170"/><area shape="rect" id="node11" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="473,136,681,177"/><area shape="rect" id="node12" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="486,202,669,229"/><area shape="rect" id="node14" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="483,253,672,279"/><area shape="rect" id="node13" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="797,202,848,229"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a2b10b3b8dd87a9b40413b0aadfa22250"></a>
+<a class="anchor" id="ad440008416fc33500754d77b2532560f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getEdgesFromNode_LowerBound </td>
+          <td class="memname">EDGE_TYPE * <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getEdgeFromEdgeId </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a652f0a532b1d174a0423d2e98ea22c10"></a>
+<a class="anchor" id="a3711aff250a942a9ad61d0571be82c43"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::<a class="el" href="class_complex_network.html#af5db8f579c2622ec27f2cfb6835d8466">edge_iterator</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getEdgesFromNode_UpperBound </td>
+          <td class="memname">NODE_TYPE * <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aadc448d5bea09ee87263256f85207ef3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_node.html">Node</a>&lt; NODE_TYPE, EDGE_TYPE &gt; * <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNode </td>
-          <td>(</td>
-          <td class="paramtype">NODE_TYPE&#160;</td>
-          <td class="paramname"><em>attribute</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph.png" border="0" usemap="#class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph" alt=""/></div>
-<map name="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph" id="class_complex_network_aadc448d5bea09ee87263256f85207ef3_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="225,5,408,47"/><area shape="rect" id="node5" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494" title="initTest" alt="" coords="287,71,347,98"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="456,5,639,47"/><area shape="rect" id="node4" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="687,13,736,39"/></map>
+<div class="center"><img src="class_complex_network_a3711aff250a942a9ad61d0571be82c43_icgraph.png" border="0" usemap="#class_complex_network_a3711aff250a942a9ad61d0571be82c43_icgraph" alt=""/></div>
+<map name="class_complex_network_a3711aff250a942a9ad61d0571be82c43_icgraph" id="class_complex_network_a3711aff250a942a9ad61d0571be82c43_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="235,5,440,47"/><area shape="rect" id="node5" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="491,123,699,164"/><area shape="rect" id="node8" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="262,71,413,98"/><area shape="rect" id="node11" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="503,239,686,266"/><area shape="rect" id="node13" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="263,173,412,215"/><area shape="rect" id="node3" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="504,5,685,47"/><area shape="rect" id="node4" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="810,13,861,39"/><area shape="rect" id="node6" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="749,123,921,164"/><area shape="rect" id="node7" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="969,130,1020,157"/><area shape="rect" id="node9" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="488,71,701,98"/><area shape="rect" id="node10" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="810,71,861,98"/><area shape="rect" id="node12" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="810,239,861,266"/><area shape="rect" id="node14" href="class_random_walk_test2.html#a4b0cf0e933d73d383dcbece468e35985" title="RandomWalkTest2::execute" alt="" coords="500,189,689,215"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4a4959ddf1ac3a114a46d86bf46e5701"></a>
+<a class="anchor" id="a720cb4e40342648d394792cc693d29a5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumEdges </td>
+          <td class="memname">unsigned int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumEdges </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -491,22 +628,40 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph.png" border="0" usemap="#class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph" alt=""/></div>
-<map name="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph" id="class_complex_network_a4a4959ddf1ac3a114a46d86bf46e5701_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="259,5,441,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="489,13,539,39"/></map>
+<div class="center"><img src="class_complex_network_a720cb4e40342648d394792cc693d29a5_icgraph.png" border="0" usemap="#class_complex_network_a720cb4e40342648d394792cc693d29a5_icgraph" alt=""/></div>
+<map name="class_complex_network_a720cb4e40342648d394792cc693d29a5_icgraph" id="class_complex_network_a720cb4e40342648d394792cc693d29a5_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="272,5,453,47"/><area shape="rect" id="node4" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="269,71,456,112"/><area shape="rect" id="node5" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="337,137,388,163"/><area shape="rect" id="node6" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="327,187,399,214"/><area shape="rect" id="node3" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="504,13,555,39"/><area shape="rect" id="node7" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="504,187,555,214"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a41d38294467dd4f5aab8e513803e686a"></a>
+<a class="anchor" id="a4036d2cda2dc5596d03e164c3455aff6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumNodes </td>
+          <td class="memname">unsigned int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumEdges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afee98f26ceed674c17be01a740787170"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::getNumNodes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -517,66 +672,371 @@ template&lt;class NODE_TYPE , class EDGE_TYPE &gt; </div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph.png" border="0" usemap="#class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph" alt=""/></div>
-<map name="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph" id="class_complex_network_a41d38294467dd4f5aab8e513803e686a_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#abab51d7158c40ee03e6d1fa1bf09af3f" title="ComplexNetworkConstructor\l::analyseNext" alt="" coords="259,5,441,47"/><area shape="rect" id="node3" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="489,13,539,39"/></map>
+<div class="center"><img src="class_complex_network_afee98f26ceed674c17be01a740787170_icgraph.png" border="0" usemap="#class_complex_network_afee98f26ceed674c17be01a740787170_icgraph" alt=""/></div>
+<map name="class_complex_network_afee98f26ceed674c17be01a740787170_icgraph" id="class_complex_network_afee98f26ceed674c17be01a740787170_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="283,5,464,47"/><area shape="rect" id="node4" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="269,71,477,112"/><area shape="rect" id="node7" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="280,136,467,177"/><area shape="rect" id="node8" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="348,202,399,229"/><area shape="rect" id="node9" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="282,253,465,279"/><area shape="rect" id="node3" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="586,13,637,39"/><area shape="rect" id="node5" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="525,71,697,112"/><area shape="rect" id="node6" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="745,78,796,105"/><area shape="rect" id="node10" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="586,253,637,279"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a54fbdb35418f424e8dad0dbc5dc16bee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a54fbdb35418f424e8dad0dbc5dc16bee_icgraph.png" border="0" usemap="#class_complex_network_a54fbdb35418f424e8dad0dbc5dc16bee_icgraph" alt=""/></div>
+<map name="class_complex_network_a54fbdb35418f424e8dad0dbc5dc16bee_icgraph" id="class_complex_network_a54fbdb35418f424e8dad0dbc5dc16bee_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_to_matlab.html#a8d0d921690e8d376364c733c45c0f777" title="ComplexNetworkToMatlab\l::convert" alt="" coords="209,5,388,47"/><area shape="rect" id="node3" href="_complex_network_to_matlab_file_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="436,13,487,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a8b07f5ca5d247e13a2e2bc5ac75de1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b2c7df561a2ad5fc14b04a5c5c56828"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::removeEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a9b2c7df561a2ad5fc14b04a5c5c56828_icgraph.png" border="0" usemap="#class_complex_network_a9b2c7df561a2ad5fc14b04a5c5c56828_icgraph" alt=""/></div>
+<map name="class_complex_network_a9b2c7df561a2ad5fc14b04a5c5c56828_icgraph" id="class_complex_network_a9b2c7df561a2ad5fc14b04a5c5c56828_icgraph">
+<area shape="rect" id="node2" href="class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600" title="ComplexNetwork::removeNode" alt="" coords="260,35,467,61"/><area shape="rect" id="node3" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="563,5,635,32"/><area shape="rect" id="node5" href="class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf" title="CachedComplexNetwork\l::removeNode" alt="" coords="515,57,684,98"/><area shape="rect" id="node4" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="732,5,783,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a33f2b4528cc31296ede98be7e6dcd600"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::removeNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf">CachedComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;</a>, and <a class="el" href="class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf">CachedComplexNetwork&lt; int, double &gt;</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_cgraph.png" border="0" usemap="#class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_cgraph" alt=""/></div>
+<map name="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_cgraph" id="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_cgraph">
+<area shape="rect" id="node2" href="class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828" title="ComplexNetwork::removeEdge" alt="" coords="260,5,467,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_icgraph.png" border="0" usemap="#class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_icgraph" alt=""/></div>
+<map name="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_icgraph" id="class_complex_network_a33f2b4528cc31296ede98be7e6dcd600_icgraph">
+<area shape="rect" id="node2" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30" title="initTest2" alt="" coords="309,5,381,32"/><area shape="rect" id="node4" href="class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf" title="CachedComplexNetwork\l::removeNode" alt="" coords="260,57,429,98"/><area shape="rect" id="node3" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="477,5,528,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d127d4296808b7ccdadccaa58084e96"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE , typename EDGE_TYPE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_complex_network_a5d127d4296808b7ccdadccaa58084e96_icgraph.png" border="0" usemap="#class_complex_network_a5d127d4296808b7ccdadccaa58084e96_icgraph" alt=""/></div>
+<map name="class_complex_network_a5d127d4296808b7ccdadccaa58084e96_icgraph" id="class_complex_network_a5d127d4296808b7ccdadccaa58084e96_icgraph">
+<area shape="rect" id="node2" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="212,5,263,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4d2f089652d03d9cbca4d77ff04df234"></a>
+<a class="anchor" id="a5305dba65a6d949064e46a6729c39e53"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt; std::pair&lt; <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&gt;, <a class="el" href="class_complex_network.html#af07ec30729e69a40c4c5ac2e98381206">EdgePtr</a>, bool(*)(std::pair&lt;<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&gt; , std::pair&lt;<a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a>&gt;) &gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::edges</td>
+          <td class="memname"><a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::current_edge_id</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a7f4748e1353c022d91092892977ad0c4"></a>
+<a class="anchor" id="ab71dc127e36a989049df28f58f2c315a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class NODE_TYPE, class EDGE_TYPE&gt; </div>
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;NODE_TYPE, <a class="el" href="class_complex_network.html#a1a0d11ddc5f0c146a0e921b58bb5eb3e">NodePtr</a> &gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::nodes</td>
+          <td class="memname"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::current_node_id</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc2c2def62701d56ec56c8b0accbedb9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::description[200]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1f8a32f89d84aab42475d8fe46dfa09"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::directed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a666bb7ad7f5ab90416f037aeb1ba11d0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHash&lt; <a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>, EDGE_TYPE&gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::edge</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adbdf613ffde926399cd5f6e7b8c09536"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, QHash&lt;<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>&gt; &gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::edges</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9ab3dbbbcd8dd173ec40938391c0fc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::file_header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b0ecc57af689b9ba9f8855132d1c275"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, NODE_TYPE&gt; <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::nodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4a7f179af0187eb3071969642b445cc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::num_edges</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6c8777ba48e68c02d2d523abe904b6b1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename NODE_TYPE, typename EDGE_TYPE&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; NODE_TYPE, EDGE_TYPE &gt;::num_nodes</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a></li>
+<li>Sources/ComplexNetwork/<a class="el" href="_complex_network_8hpp_source.html">ComplexNetwork.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

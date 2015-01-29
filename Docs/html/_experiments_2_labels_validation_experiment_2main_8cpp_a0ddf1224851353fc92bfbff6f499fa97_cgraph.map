@@ -1,0 +1,24 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="104,173,317,199"/>
+<area shape="rect" id="node3" href="$class_features_complex_network.html#a122860a57231cd14eca3add9c482290e" title="FeaturesComplexNetwork\l::load" alt="" coords="365,5,541,47"/>
+<area shape="rect" id="node4" href="$class_sun_database_reader.html#a5530b88632379c373b592d5128c2999f" title="SunDatabaseReader::\lhasNext" alt="" coords="377,71,530,112"/>
+<area shape="rect" id="node5" href="$class_sun_database_reader.html#a92a92483d9b4eadc4008f29a89068e71" title="SunDatabaseReader::\lreadNext" alt="" coords="377,136,530,177"/>
+<area shape="rect" id="node6" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="591,122,791,149"/>
+<area shape="rect" id="node10" href="$class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="378,253,529,279"/>
+<area shape="rect" id="node23" href="$class_sun_database_reader.html#a8d704a7121e1babebe4673049d37a095" title="SunDatabaseReader::\lgetTotal" alt="" coords="377,304,530,345"/>
+<area shape="rect" id="node7" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="840,122,1035,149"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="1085,77,1258,119"/>
+<area shape="rect" id="node9" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="1085,143,1258,184"/>
+<area shape="rect" id="node11" href="$class_complex_network.html#a2167b224079f5c0b44443959ad0b6440" title="ComplexNetwork::EdgesBegin" alt="" coords="589,173,792,199"/>
+<area shape="rect" id="node12" href="$class_complex_network.html#ad806138ea94ec18ed17f4681ab731208" title="ComplexNetwork::EdgesEnd" alt="" coords="595,223,787,250"/>
+<area shape="rect" id="node13" href="$class_orientation_feature_factory.html#ace31b961efc6bdfa405effffd7d63c96" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="602,275,779,316"/>
+<area shape="rect" id="node18" href="$class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60" title="FeaturesComplexNetwork\l::getNodeFromFeature" alt="" coords="603,340,779,381"/>
+<area shape="rect" id="node19" href="$class_features_complex_network.html#a06275636cdb560a44d9cc4d82b47ce53" title="FeaturesComplexNetwork\l::getNodesOfSameLabel" alt="" coords="603,405,779,447"/>
+<area shape="rect" id="node22" href="$class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="600,471,781,498"/>
+<area shape="rect" id="node14" href="$class_region.html#a0c258b6ce768a3df3d0260c2ab19c343" title="Region::getBoundary" alt="" coords="864,241,1011,267"/>
+<area shape="rect" id="node15" href="$class_orientation_feature_factory.html#a3ba5ebad39d7b2b6d1065208ee2fb60e" title="OrientationFeatureFactory\l::discoverOrientation" alt="" coords="849,292,1026,333"/>
+<area shape="rect" id="node16" href="$class_orientation_feature_factory.html#a68e87a390c95060cac05065757daa18d" title="OrientationFeatureFactory\l::distance" alt="" coords="1083,236,1260,277"/>
+<area shape="rect" id="node17" href="$class_orientation_feature_factory.html#a280c15eebea7646e9b602c36979b8b16" title="OrientationFeatureFactory\l::discretize" alt="" coords="1083,301,1260,343"/>
+<area shape="rect" id="node20" href="$class_complex_network.html#a3a228b9a9497db2b9385deb4eb39f1e1" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::EdgesBegin" alt="" coords="855,373,1019,444"/>
+<area shape="rect" id="node21" href="$class_complex_network.html#afa7d628b66a815d97afbf5373640d12b" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::EdgesEnd" alt="" coords="855,468,1019,539"/>
+</map>

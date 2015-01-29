@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['areafeatureextractor',['AreaFeatureExtractor',['../class_area_feature_extractor.html',1,'']]]
+  ['_5flabel',['_label',['../struct__label.html',1,'']]]
 ];

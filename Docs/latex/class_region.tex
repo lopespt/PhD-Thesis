@@ -8,7 +8,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_region_a0e9c8974b3be20ce12a4b823f9f3f636}{Region} (Q\+Image $\ast$\hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image}, Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}, Q\+String \hyperlink{class_region_afcc063386e02be883d71eaf5bcef2a55}{label})
+\hyperlink{class_region_a0e9c8974b3be20ce12a4b823f9f3f636}{Region} (Q\+Image $\ast$\hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image}, Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}, Q\+String \hyperlink{_label_feature_8hpp_a331f639078ba664b292b59c4032245e1}{label})
 \item 
 void \hyperlink{class_region_ad2572028c1a4653a14dbfb1b622aa03e}{show\+\_\+region} ()
 \item 
@@ -16,11 +16,17 @@ void \hyperlink{class_region_ad2572028c1a4653a14dbfb1b622aa03e}{show\+\_\+region
 \item 
 Q\+Rect \hyperlink{class_region_a12c653b5aa89c899e2680c9dc1bbf46d}{get\+Boundary\+Rect} () const 
 \item 
+Q\+Polygon \hyperlink{class_region_a0c258b6ce768a3df3d0260c2ab19c343}{get\+Boundary} () const 
+\item 
 Q\+Rgb \hyperlink{class_region_acc0edaac14854ccc448f419844a722bf}{get\+Pixel} (int x, int y, bool $\ast$inside\+Region=N\+U\+L\+L) const 
 \item 
 Q\+Rgb \hyperlink{class_region_a421786f57555f6348ece3fa33eb86594}{get\+Pixel\+Relative} (int x, int y, bool $\ast$inside\+Region=N\+U\+L\+L) const 
 \item 
 Q\+String \hyperlink{class_region_a69d5acb5d1d81b50f225817217f60fdd}{get\+Label} () const 
+\item 
+cv\+::\+Mat \hyperlink{class_region_add72dd82adb6ee0d5822b250c3ac07e8}{get\+Mask} () const 
+\item 
+cv\+::\+Mat \hyperlink{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}{get\+Cv\+Image} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -30,8 +36,6 @@ Q\+Image $\ast$ \hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image
 Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}
 \item 
 Q\+String \hyperlink{class_region_afcc063386e02be883d71eaf5bcef2a55}{label}
-\item 
-Q\+Label $\ast$ \hyperlink{class_region_a31cb137d1eab434b70aaa95633e704fe}{l} =N\+U\+L\+L
 \end{DoxyCompactItemize}
 
 
@@ -64,6 +68,24 @@ Collaboration diagram for Region\+:\nopagebreak
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_region_a0c258b6ce768a3df3d0260c2ab19c343}{\index{Region@{Region}!get\+Boundary@{get\+Boundary}}
+\index{get\+Boundary@{get\+Boundary}!Region@{Region}}
+\subsubsection[{get\+Boundary}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Polygon Region\+::get\+Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_a0c258b6ce768a3df3d0260c2ab19c343}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_a0c258b6ce768a3df3d0260c2ab19c343_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_region_a12c653b5aa89c899e2680c9dc1bbf46d}{\index{Region@{Region}!get\+Boundary\+Rect@{get\+Boundary\+Rect}}
 \index{get\+Boundary\+Rect@{get\+Boundary\+Rect}!Region@{Region}}
 \subsubsection[{get\+Boundary\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Rect Region\+::get\+Boundary\+Rect (
@@ -82,6 +104,13 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
+\hypertarget{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}{\index{Region@{Region}!get\+Cv\+Image@{get\+Cv\+Image}}
+\index{get\+Cv\+Image@{get\+Cv\+Image}!Region@{Region}}
+\subsubsection[{get\+Cv\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Region\+::get\+Cv\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}
 \hypertarget{class_region_a69d5acb5d1d81b50f225817217f60fdd}{\index{Region@{Region}!get\+Label@{get\+Label}}
 \index{get\+Label@{get\+Label}!Region@{Region}}
 \subsubsection[{get\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Region\+::get\+Label (
@@ -89,6 +118,36 @@ Here is the caller graph for this function\+:\nopagebreak
 {}
 \end{DoxyParamCaption}
 ) const}}\label{class_region_a69d5acb5d1d81b50f225817217f60fdd}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_a69d5acb5d1d81b50f225817217f60fdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_add72dd82adb6ee0d5822b250c3ac07e8}{\index{Region@{Region}!get\+Mask@{get\+Mask}}
+\index{get\+Mask@{get\+Mask}!Region@{Region}}
+\subsubsection[{get\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Region\+::get\+Mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_add72dd82adb6ee0d5822b250c3ac07e8}
+Returns an opencv Input\+Array representing the region of interest in the original image. The non-\/zeroed cells are Ro\+I cells. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_region_add72dd82adb6ee0d5822b250c3ac07e8_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_region_acc0edaac14854ccc448f419844a722bf}{\index{Region@{Region}!get\+Pixel@{get\+Pixel}}
 \index{get\+Pixel@{get\+Pixel}!Region@{Region}}
 \subsubsection[{get\+Pixel}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Rgb Region\+::get\+Pixel (
@@ -156,9 +215,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \hypertarget{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{\index{Region@{Region}!image@{image}}
 \index{image@{image}!Region@{Region}}
 \subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image$\ast$ Region\+::image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_a090b8bc9a8c73f8f874d8d439a0843be}
-\hypertarget{class_region_a31cb137d1eab434b70aaa95633e704fe}{\index{Region@{Region}!l@{l}}
-\index{l@{l}!Region@{Region}}
-\subsubsection[{l}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Label$\ast$ Region\+::l =N\+U\+L\+L\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_a31cb137d1eab434b70aaa95633e704fe}
 \hypertarget{class_region_afcc063386e02be883d71eaf5bcef2a55}{\index{Region@{Region}!label@{label}}
 \index{label@{label}!Region@{Region}}
 \subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Region\+::label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_afcc063386e02be883d71eaf5bcef2a55}
@@ -166,5 +222,5 @@ Here is the caller graph for this function\+:\nopagebreak
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_region_8hpp}{Region.\+hpp}\item 
-src/\hyperlink{_region_8cpp}{Region.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Feature\+Extractors/\hyperlink{_region_8hpp}{Region.\+hpp}\item 
+Sources/\+Feature\+Extractors/\hyperlink{_region_8cpp}{Region.\+cpp}\end{DoxyCompactItemize}

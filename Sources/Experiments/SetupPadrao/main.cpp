@@ -8,7 +8,6 @@
 #include <Utilities/RandomWalk.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <QList>
-#include <ComplexNetwork/BreadFirstRandomWalk.hpp>
 #include <Utilities/RandomWalk.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
@@ -105,7 +104,7 @@ int main1(int argc, char* argv[]){
 
 int main(int argc, char* argv[]){
 
-    char buffer[100];
+//    char buffer[100];
     QList<FeatureFactoryAbstract*> features;
     LabelFeatureFactory label;
     features.append(&label);

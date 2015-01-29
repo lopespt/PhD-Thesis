@@ -1,0 +1,3 @@
+<map id="SupervisedImageViewerWidget" name="SupervisedImageViewerWidget">
+<area shape="rect" id="node3" href="$class_supervised_image.html" title="{SupervisedImage\n|&#45; alreadyParsed\l&#45; imagePath\l&#45; supervisedPath\l&#45; image\l&#45; regions\l|+ SupervisedImage()\l+ ~SupervisedImage()\l+ getRegions()\l+ getImage()\l+ getImagePath()\l+ getSupervisedPath()\l&#45; parse_xml()\l&#45; extractPolygon()\l&#45; extractLabel()\l}" alt="" coords="114,5,269,259"/>
+</map>

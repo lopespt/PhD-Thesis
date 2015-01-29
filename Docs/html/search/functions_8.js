@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main.cpp']]],
-  ['makecooccurrences',['makeCoOccurrences',['../class_complex_network_constructor.html#ab240a904e7da7bbd5bfd776b5b9176df',1,'ComplexNetworkConstructor']]],
-  ['memoryinuse',['memoryInUse',['../_complex_network_test_8cpp.html#a195ed7b4505b1bb4a2448d71c649fcc1',1,'ComplexNetworkTest.cpp']]]
+  ['hasnext',['hasNext',['../class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe',1,'DatabaseReader::hasNext()'],['../class_k_fold_database_reader_1_1_path_database_reader.html#ac6c27452f10e49e7d0d425a56926277c',1,'KFoldDatabaseReader::PathDatabaseReader::hasNext()'],['../class_sun_database_reader.html#a5530b88632379c373b592d5128c2999f',1,'SunDatabaseReader::hasNext()']]],
+  ['hasprevious',['hasPrevious',['../class_database_reader.html#acc71ed6c7af71bdc66b4b6eee3598506',1,'DatabaseReader::hasPrevious()'],['../class_k_fold_database_reader_1_1_path_database_reader.html#a6f635a1836b5f7dfc23b23ac2ef99cc6',1,'KFoldDatabaseReader::PathDatabaseReader::hasPrevious()'],['../class_sun_database_reader.html#abe3da501f9df416baf1b077e4d4eadb8',1,'SunDatabaseReader::hasPrevious()']]]
 ];

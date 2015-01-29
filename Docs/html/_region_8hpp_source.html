@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>PhdThesis: src/Region.hpp Source File</title>
+<title>PhdThesis: Sources/FeatureExtractors/Region.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_b694f56cd4abe353e5ec575229becc70.html">FeatureExtractors</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -94,50 +95,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QPolygon&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QLabel&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QPoint&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_region.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QPixmap&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QPoint&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;opencv/cv.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;opencv2/imgproc/imgproc.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;opencv/highgui.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">   17</a></span>&#160;        QImage *<a class="code" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">   18</a></span>&#160;        QPolygon <a class="code" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">   19</a></span>&#160;        QString <a class="code" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_region.html#a31cb137d1eab434b70aaa95633e704fe">   20</a></span>&#160;        QLabel *<a class="code" href="class_region.html#a31cb137d1eab434b70aaa95633e704fe">l</a>=NULL;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_region.html#a0e9c8974b3be20ce12a4b823f9f3f636">Region</a>(QImage *<a class="code" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a>, QPolygon <a class="code" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a>, QString <a class="code" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_region.html#ad2572028c1a4653a14dbfb1b622aa03e">show_region</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">~Region</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        QRect <a class="code" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        QRgb <a class="code" href="class_region.html#acc0edaac14854ccc448f419844a722bf">getPixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> *insideRegion=NULL) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        QRgb <a class="code" href="class_region.html#a421786f57555f6348ece3fa33eb86594">getPixelRelative</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> *insideRegion=NULL) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        QString <a class="code" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">getLabel</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_region.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">   19</a></span>&#160;        QImage *<a class="code" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">   20</a></span>&#160;        QPolygon <a class="code" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">   21</a></span>&#160;        QString <a class="code" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//QLabel *l=NULL;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_region.html#a0e9c8974b3be20ce12a4b823f9f3f636">Region</a>(QImage *<a class="code" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a>, QPolygon <a class="code" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a>, QString <a class="code" href="struct__label.html">label</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_region.html#ad2572028c1a4653a14dbfb1b622aa03e">show_region</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">~Region</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        QRect <a class="code" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        QPolygon <a class="code" href="class_region.html#a0c258b6ce768a3df3d0260c2ab19c343">getBoundary</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        QRgb <a class="code" href="class_region.html#acc0edaac14854ccc448f419844a722bf">getPixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> *insideRegion=NULL) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        QRgb <a class="code" href="class_region.html#a421786f57555f6348ece3fa33eb86594">getPixelRelative</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">bool</span> *insideRegion=NULL) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        QString <a class="code" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">getLabel</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_region_html_a090b8bc9a8c73f8f874d8d439a0843be"><div class="ttname"><a href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">Region::image</a></div><div class="ttdeci">QImage * image</div><div class="ttdef"><b>Definition:</b> Region.hpp:17</div></div>
-<div class="ttc" id="class_region_html_a69d5acb5d1d81b50f225817217f60fdd"><div class="ttname"><a href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">Region::getLabel</a></div><div class="ttdeci">QString getLabel() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:35</div></div>
-<div class="ttc" id="class_region_html_a421786f57555f6348ece3fa33eb86594"><div class="ttname"><a href="class_region.html#a421786f57555f6348ece3fa33eb86594">Region::getPixelRelative</a></div><div class="ttdeci">QRgb getPixelRelative(int x, int y, bool *insideRegion=NULL) const </div><div class="ttdef"><b>Definition:</b> Region.cpp:28</div></div>
-<div class="ttc" id="class_region_html_acc0edaac14854ccc448f419844a722bf"><div class="ttname"><a href="class_region.html#acc0edaac14854ccc448f419844a722bf">Region::getPixel</a></div><div class="ttdeci">QRgb getPixel(int x, int y, bool *insideRegion=NULL) const </div><div class="ttdef"><b>Definition:</b> Region.cpp:21</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        cv::Mat <a class="code" href="class_region.html#add72dd82adb6ee0d5822b250c3ac07e8">getMask</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        cv::Mat <a class="code" href="class_region.html#ab7a8b431bfb87b6ed067915a6637cf8a">getCvImage</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_region_html_a090b8bc9a8c73f8f874d8d439a0843be"><div class="ttname"><a href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">Region::image</a></div><div class="ttdeci">QImage * image</div><div class="ttdef"><b>Definition:</b> Region.hpp:19</div></div>
+<div class="ttc" id="class_region_html_a69d5acb5d1d81b50f225817217f60fdd"><div class="ttname"><a href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">Region::getLabel</a></div><div class="ttdeci">QString getLabel() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:38</div></div>
+<div class="ttc" id="class_region_html_a421786f57555f6348ece3fa33eb86594"><div class="ttname"><a href="class_region.html#a421786f57555f6348ece3fa33eb86594">Region::getPixelRelative</a></div><div class="ttdeci">QRgb getPixelRelative(int x, int y, bool *insideRegion=NULL) const </div><div class="ttdef"><b>Definition:</b> Region.cpp:32</div></div>
+<div class="ttc" id="class_region_html_a0c258b6ce768a3df3d0260c2ab19c343"><div class="ttname"><a href="class_region.html#a0c258b6ce768a3df3d0260c2ab19c343">Region::getBoundary</a></div><div class="ttdeci">QPolygon getBoundary() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:21</div></div>
+<div class="ttc" id="class_region_html_acc0edaac14854ccc448f419844a722bf"><div class="ttname"><a href="class_region.html#acc0edaac14854ccc448f419844a722bf">Region::getPixel</a></div><div class="ttdeci">QRgb getPixel(int x, int y, bool *insideRegion=NULL) const </div><div class="ttdef"><b>Definition:</b> Region.cpp:25</div></div>
 <div class="ttc" id="class_region_html_a0e9c8974b3be20ce12a4b823f9f3f636"><div class="ttname"><a href="class_region.html#a0e9c8974b3be20ce12a4b823f9f3f636">Region::Region</a></div><div class="ttdeci">Region(QImage *image, QPolygon boundary, QString label)</div><div class="ttdef"><b>Definition:</b> Region.cpp:4</div></div>
-<div class="ttc" id="class_region_html_a4a59ef37013f3a6515a79317b0f0b4c0"><div class="ttname"><a href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">Region::boundary</a></div><div class="ttdeci">QPolygon boundary</div><div class="ttdef"><b>Definition:</b> Region.hpp:18</div></div>
-<div class="ttc" id="class_region_html_a31cb137d1eab434b70aaa95633e704fe"><div class="ttname"><a href="class_region.html#a31cb137d1eab434b70aaa95633e704fe">Region::l</a></div><div class="ttdeci">QLabel * l</div><div class="ttdef"><b>Definition:</b> Region.hpp:20</div></div>
-<div class="ttc" id="class_region_html_a3c3670fff78f7511d156e3b2f0bc6266"><div class="ttname"><a href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">Region::~Region</a></div><div class="ttdeci">~Region()</div><div class="ttdef"><b>Definition:</b> Region.cpp:39</div></div>
-<div class="ttc" id="class_region_html_afcc063386e02be883d71eaf5bcef2a55"><div class="ttname"><a href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">Region::label</a></div><div class="ttdeci">QString label</div><div class="ttdef"><b>Definition:</b> Region.hpp:19</div></div>
+<div class="ttc" id="class_region_html_a4a59ef37013f3a6515a79317b0f0b4c0"><div class="ttname"><a href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">Region::boundary</a></div><div class="ttdeci">QPolygon boundary</div><div class="ttdef"><b>Definition:</b> Region.hpp:20</div></div>
+<div class="ttc" id="class_region_html_add72dd82adb6ee0d5822b250c3ac07e8"><div class="ttname"><a href="class_region.html#add72dd82adb6ee0d5822b250c3ac07e8">Region::getMask</a></div><div class="ttdeci">cv::Mat getMask() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:50</div></div>
+<div class="ttc" id="class_region_html_a3c3670fff78f7511d156e3b2f0bc6266"><div class="ttname"><a href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">Region::~Region</a></div><div class="ttdeci">~Region()</div><div class="ttdef"><b>Definition:</b> Region.cpp:65</div></div>
+<div class="ttc" id="class_region_html_afcc063386e02be883d71eaf5bcef2a55"><div class="ttname"><a href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">Region::label</a></div><div class="ttdeci">QString label</div><div class="ttdef"><b>Definition:</b> Region.hpp:21</div></div>
+<div class="ttc" id="struct__label_html"><div class="ttname"><a href="struct__label.html">_label</a></div><div class="ttdef"><b>Definition:</b> LabelFeature.hpp:10</div></div>
+<div class="ttc" id="class_region_html_ab7a8b431bfb87b6ed067915a6637cf8a"><div class="ttname"><a href="class_region.html#ab7a8b431bfb87b6ed067915a6637cf8a">Region::getCvImage</a></div><div class="ttdeci">cv::Mat getCvImage() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:42</div></div>
 <div class="ttc" id="class_region_html_a12c653b5aa89c899e2680c9dc1bbf46d"><div class="ttname"><a href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">Region::getBoundaryRect</a></div><div class="ttdeci">QRect getBoundaryRect() const </div><div class="ttdef"><b>Definition:</b> Region.cpp:17</div></div>
 <div class="ttc" id="class_region_html_ad2572028c1a4653a14dbfb1b622aa03e"><div class="ttname"><a href="class_region.html#ad2572028c1a4653a14dbfb1b622aa03e">Region::show_region</a></div><div class="ttdeci">void show_region()</div><div class="ttdef"><b>Definition:</b> Region.cpp:7</div></div>
-<div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:14</div></div>
+<div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:11 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

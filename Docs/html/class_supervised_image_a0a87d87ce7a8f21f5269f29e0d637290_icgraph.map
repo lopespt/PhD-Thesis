@@ -1,0 +1,9 @@
+<map id="SupervisedImage::getImage" name="SupervisedImage::getImage">
+<area shape="rect" id="node2" href="$class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="243,104,451,145"/>
+<area shape="rect" id="node3" href="$class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="511,5,689,47"/>
+<area shape="rect" id="node5" href="$class_database_visualizer_widget.html#a89569bc1d41a136296036764ecd3ca8d" title="DatabaseVisualizerWidget\l::goPrevious" alt="" coords="511,71,689,112"/>
+<area shape="rect" id="node6" href="$class_area_feature_extraction_window.html#ab0f1fc10645d98e916faea9a94cf2a15" title="AreaFeatureExtractionWindow\l::show_previous" alt="" coords="499,136,701,177"/>
+<area shape="rect" id="node8" href="$class_area_feature_extraction_window.html#aa478c08abe712412d90fa48936c05fa1" title="AreaFeatureExtractionWindow\l::show_next" alt="" coords="499,201,701,243"/>
+<area shape="rect" id="node4" href="$class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="762,55,947,96"/>
+<area shape="rect" id="node7" href="$class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b" title="AreaFeatureExtractionWindow\l::AreaFeatureExtractionWindow" alt="" coords="749,152,960,193"/>
+</map>

@@ -1,0 +1,138 @@
+\hypertarget{class_k_fold_database_reader}{\section{K\+Fold\+Database\+Reader Class Reference}
+\label{class_k_fold_database_reader}\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+}
+
+
+{\ttfamily \#include $<$K\+Fold\+Database\+Reader.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_k_fold_database_reader_1_1_path_database_reader}{Path\+Database\+Reader}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_k_fold_database_reader_a50c775127f0a9decc8d7f275005cd437}{K\+Fold\+Database\+Reader} (\hyperlink{class_database_reader}{Database\+Reader} \&reader, float train\+Ratio)
+\item 
+\hyperlink{class_k_fold_database_reader_1_1_path_database_reader}{Path\+Database\+Reader} \hyperlink{class_k_fold_database_reader_a2a94b70899a67487649330c72a545e5a}{get\+Train\+Reader} () const 
+\item 
+\hyperlink{class_k_fold_database_reader_1_1_path_database_reader}{Path\+Database\+Reader} \hyperlink{class_k_fold_database_reader_a5a39e6986d09d77427d98c2ba7a25131}{get\+Test\+Reader} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+List$<$ int $>$ \hyperlink{class_k_fold_database_reader_a2f8223aae421c533d260b5d6e65c09e8}{random\+Permutation} (int n)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_k_fold_database_reader_a93461f0d927f76d6dad7af885e16b172}{train\+Images}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_k_fold_database_reader_a224507fbe965e1fb12089fb572d72681}{test\+Images}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for K\+Fold\+Database\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_k_fold_database_reader__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_k_fold_database_reader_a50c775127f0a9decc8d7f275005cd437}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{K\+Fold\+Database\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}K\+Fold\+Database\+Reader\+::\+K\+Fold\+Database\+Reader (
+\begin{DoxyParamCaption}
+\item[{{\bf Database\+Reader} \&}]{reader, }
+\item[{float}]{train\+Ratio}
+\end{DoxyParamCaption}
+)}}\label{class_k_fold_database_reader_a50c775127f0a9decc8d7f275005cd437}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_a50c775127f0a9decc8d7f275005cd437_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_k_fold_database_reader_a5a39e6986d09d77427d98c2ba7a25131}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!get\+Test\+Reader@{get\+Test\+Reader}}
+\index{get\+Test\+Reader@{get\+Test\+Reader}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{get\+Test\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader} K\+Fold\+Database\+Reader\+::get\+Test\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_k_fold_database_reader_a5a39e6986d09d77427d98c2ba7a25131}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_a5a39e6986d09d77427d98c2ba7a25131_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_fold_database_reader_a2a94b70899a67487649330c72a545e5a}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!get\+Train\+Reader@{get\+Train\+Reader}}
+\index{get\+Train\+Reader@{get\+Train\+Reader}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{get\+Train\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader} K\+Fold\+Database\+Reader\+::get\+Train\+Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_k_fold_database_reader_a2a94b70899a67487649330c72a545e5a}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_a2a94b70899a67487649330c72a545e5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_fold_database_reader_a2f8223aae421c533d260b5d6e65c09e8}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!random\+Permutation@{random\+Permutation}}
+\index{random\+Permutation@{random\+Permutation}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{random\+Permutation}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ int $>$ K\+Fold\+Database\+Reader\+::random\+Permutation (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_k_fold_database_reader_a2f8223aae421c533d260b5d6e65c09e8}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_a2f8223aae421c533d260b5d6e65c09e8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_k_fold_database_reader_a224507fbe965e1fb12089fb572d72681}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!test\+Images@{test\+Images}}
+\index{test\+Images@{test\+Images}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{test\+Images}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ K\+Fold\+Database\+Reader\+::test\+Images\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_a224507fbe965e1fb12089fb572d72681}
+\hypertarget{class_k_fold_database_reader_a93461f0d927f76d6dad7af885e16b172}{\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!train\+Images@{train\+Images}}
+\index{train\+Images@{train\+Images}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\subsubsection[{train\+Images}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ K\+Fold\+Database\+Reader\+::train\+Images\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_a93461f0d927f76d6dad7af885e16b172}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\hyperlink{_k_fold_database_reader_8hpp}{K\+Fold\+Database\+Reader.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_k_fold_database_reader_8cpp}{K\+Fold\+Database\+Reader.\+cpp}\end{DoxyCompactItemize}

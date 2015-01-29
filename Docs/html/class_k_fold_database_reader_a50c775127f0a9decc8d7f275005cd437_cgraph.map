@@ -1,0 +1,7 @@
+<map id="KFoldDatabaseReader::KFoldDatabaseReader" name="KFoldDatabaseReader::KFoldDatabaseReader">
+<area shape="rect" id="node2" href="$class_k_fold_database_reader.html#a2f8223aae421c533d260b5d6e65c09e8" title="KFoldDatabaseReader\l::randomPermutation" alt="" coords="248,5,405,47"/>
+<area shape="rect" id="node3" href="$class_database_reader.html#abd37fa505553101bd8e18fd52547b7ee" title="DatabaseReader::getTotal" alt="" coords="237,71,416,98"/>
+<area shape="rect" id="node4" href="$class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe" title="DatabaseReader::hasNext" alt="" coords="237,122,416,149"/>
+<area shape="rect" id="node5" href="$class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081" title="DatabaseReader::readNext" alt="" coords="235,173,419,199"/>
+<area shape="rect" id="node6" href="$class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="219,223,435,250"/>
+</map>

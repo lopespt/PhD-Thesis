@@ -1,0 +1,6 @@
+<map id="LabelFeature" name="LabelFeature">
+<area shape="rect" id="node2" href="$class_feature.html" title="{Feature\&lt; label \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,491,248,627"/>
+<area shape="rect" id="node3" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ ~FeatureAbstract()\l+ WriteToStream()\l+ operator==()\l}" alt="" coords="5,5,151,229"/>
+<area shape="rect" id="node5" href="$class_feature.html" title="{Feature\&lt; T \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,292,248,428"/>
+<area shape="rect" id="node4" href="$struct__label.html" title="{_label\n|+ value\l|+ _label()\l+ _label()\l}" alt="" coords="273,314,350,406"/>
+</map>

@@ -5,10 +5,24 @@
 
 {\ttfamily \#include $<$Area\+Feature.\+hpp$>$}
 
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_area_feature_af65d43c5c868babfb6c429464f36a898}{Area\+Feature} (float value)
+\item 
+const char $\ast$ \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{as\+String} (char $\ast$buffer) const 
+\item 
+void \hyperlink{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}{Write\+To\+Stream} (Q\+Data\+Stream \&stream) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_area_feature_acf274ff5848a30a105c61f0e1c56cf7e}{Area\+Feature\+Factory}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
-Inheritance diagram for Area\+Feature\+:
-\nopagebreak
+Inheritance diagram for Area\+Feature\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,73 +31,57 @@ Inheritance diagram for Area\+Feature\+:
 \end{figure}
 
 
-Collaboration diagram for Area\+Feature\+:
-\nopagebreak
+Collaboration diagram for Area\+Feature\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=185pt]{class_area_feature__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{class_area_feature_a295bc97816226bf5913649a3cc58d151}{Area\+Feature} (\hyperlink{class_region}{Region} $\ast$\hyperlink{class_feature_a134c6b5022108c2a1000c7c88c40f352}{region})
-\item 
-void \hyperlink{class_area_feature_a076f7a3918e7aa54e64b7e45733ad63d}{extract\+Feature} ()
-\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_area_feature_a295bc97816226bf5913649a3cc58d151}{\index{Area\+Feature@{Area\+Feature}!Area\+Feature@{Area\+Feature}}
+\hypertarget{class_area_feature_af65d43c5c868babfb6c429464f36a898}{\index{Area\+Feature@{Area\+Feature}!Area\+Feature@{Area\+Feature}}
 \index{Area\+Feature@{Area\+Feature}!Area\+Feature@{Area\+Feature}}
 \subsubsection[{Area\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}Area\+Feature\+::\+Area\+Feature (
 \begin{DoxyParamCaption}
-\item[{{\bf Region} $\ast$}]{region}
+\item[{float}]{value}
 \end{DoxyParamCaption}
-)}}\label{class_area_feature_a295bc97816226bf5913649a3cc58d151}
+)}}\label{class_area_feature_af65d43c5c868babfb6c429464f36a898}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_area_feature_a076f7a3918e7aa54e64b7e45733ad63d}{\index{Area\+Feature@{Area\+Feature}!extract\+Feature@{extract\+Feature}}
-\index{extract\+Feature@{extract\+Feature}!Area\+Feature@{Area\+Feature}}
-\subsubsection[{extract\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}void Area\+Feature\+::extract\+Feature (
+\hypertarget{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{\index{Area\+Feature@{Area\+Feature}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Area\+Feature@{Area\+Feature}}
+\subsubsection[{as\+String}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Area\+Feature\+::as\+String (
 \begin{DoxyParamCaption}
-{}
+\item[{char $\ast$}]{buffer}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_a076f7a3918e7aa54e64b7e45733ad63d}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}
 
 
-Implements \hyperlink{class_feature_a6ce2b27ca0932c42b99c41c3d1d20366}{Feature}.
+Implements \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ float $>$}.
+
+\hypertarget{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}{\index{Area\+Feature@{Area\+Feature}!Write\+To\+Stream@{Write\+To\+Stream}}
+\index{Write\+To\+Stream@{Write\+To\+Stream}!Area\+Feature@{Area\+Feature}}
+\subsubsection[{Write\+To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}void Area\+Feature\+::\+Write\+To\+Stream (
+\begin{DoxyParamCaption}
+\item[{Q\+Data\+Stream \&}]{stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}
+
+
+Implements \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ float $>$}.
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_area_feature_a076f7a3918e7aa54e64b7e45733ad63d_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=285pt]{class_area_feature_a076f7a3918e7aa54e64b7e45733ad63d_icgraph}
-\end{center}
-\end{figure}
-
-
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_area_feature_acf274ff5848a30a105c61f0e1c56cf7e}{\index{Area\+Feature@{Area\+Feature}!Area\+Feature\+Factory@{Area\+Feature\+Factory}}
+\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!Area\+Feature@{Area\+Feature}}
+\subsubsection[{Area\+Feature\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Area\+Feature\+Factory}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_area_feature_acf274ff5848a30a105c61f0e1c56cf7e}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/\hyperlink{_area_feature_8hpp}{Area\+Feature.\+hpp}\item 
-src/\hyperlink{_area_feature_8cpp}{Area\+Feature.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Feature\+Extractors/\hyperlink{_area_feature_8hpp}{Area\+Feature.\+hpp}\item 
+Sources/\+Feature\+Extractors/\hyperlink{_area_feature_8cpp}{Area\+Feature.\+cpp}\end{DoxyCompactItemize}

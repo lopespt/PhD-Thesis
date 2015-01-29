@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.7"/>
-<title>PhdThesis: src/Link.hpp Source File</title>
+<title>PhdThesis: Sources/Utilities/Link.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a class="el" href="dir_93b987d198776efab1b0e70f5d4d3726.html">Utilities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_link.html#acb992140e3cf154c36fd94ab8184e00e">    9</a></span>&#160;        <a class="code" href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">link_time</a> <a class="code" href="class_link.html#acb992140e3cf154c36fd94ab8184e00e">time</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">   10</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">weight</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_link.html#af1f0e693d5e0f5f8cf39947d09c84251">   11</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_link.html#af1f0e693d5e0f5f8cf39947d09c84251">max_weight</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">   11</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">sameLabel</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">link_time</a> <a class="code" href="class_link.html#af3dac01ac8fb3c9d9637361bab37a8f7">getTime</a>() <span class="keyword">const</span>;</div>
@@ -106,19 +107,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_link.html#aaf7980526f4edf059b27602a7be82b2a">getWeight</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_link.html#add219a5edb1c6a97ae46f5f1ab360a22">setWeight</a>(<span class="keywordtype">float</span> <a class="code" href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">weight</a>);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_link.html#a1918a8473cee40bbed17b8e926cb85d9">Link</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_link.html#a1918a8473cee40bbed17b8e926cb85d9">Link</a>(<a class="code" href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">link_time</a> t, <span class="keywordtype">float</span> <a class="code" href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">weight</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_link.html#a1918a8473cee40bbed17b8e926cb85d9">Link</a>(<a class="code" href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">link_time</a> t, <span class="keywordtype">float</span> <a class="code" href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">weight</a>, <span class="keywordtype">bool</span> <a class="code" href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">sameLabel</a>=<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_link.html">Link</a> <a class="code" href="class_link.html#ae3cc4f9078e2f6f1b642667d49b9dc02">operator+</a>(<span class="keywordtype">float</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_link.html">Link</a>&amp; <a class="code" href="class_link.html#a71e54bce5f5f7244144c7f7cf4b826a6">operator+=</a>(<span class="keywordtype">float</span>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0">isSameLabel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0">isSameLabel</a>(<span class="keywordtype">bool</span>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_link_html_acb992140e3cf154c36fd94ab8184e00e"><div class="ttname"><a href="class_link.html#acb992140e3cf154c36fd94ab8184e00e">Link::time</a></div><div class="ttdeci">link_time time</div><div class="ttdef"><b>Definition:</b> Link.hpp:9</div></div>
+<div class="ttc" id="class_link_html_ae5f10e1961b948c4a5e71e6702c68de0"><div class="ttname"><a href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">Link::sameLabel</a></div><div class="ttdeci">bool sameLabel</div><div class="ttdef"><b>Definition:</b> Link.hpp:11</div></div>
 <div class="ttc" id="class_link_html_add219a5edb1c6a97ae46f5f1ab360a22"><div class="ttname"><a href="class_link.html#add219a5edb1c6a97ae46f5f1ab360a22">Link::setWeight</a></div><div class="ttdeci">void setWeight(float weight)</div><div class="ttdef"><b>Definition:</b> Link.cpp:14</div></div>
 <div class="ttc" id="class_link_html_a61f8b4a76aa028011dbe75affc1b44f7"><div class="ttname"><a href="class_link.html#a61f8b4a76aa028011dbe75affc1b44f7">Link::weight</a></div><div class="ttdeci">float weight</div><div class="ttdef"><b>Definition:</b> Link.hpp:10</div></div>
+<div class="ttc" id="class_link_html_a1eaa1a41eb1bcc0563786d60d7eb45c0"><div class="ttname"><a href="class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0">Link::isSameLabel</a></div><div class="ttdeci">bool isSameLabel() const </div><div class="ttdef"><b>Definition:</b> Link.cpp:38</div></div>
 <div class="ttc" id="class_link_html_ae3cc4f9078e2f6f1b642667d49b9dc02"><div class="ttname"><a href="class_link.html#ae3cc4f9078e2f6f1b642667d49b9dc02">Link::operator+</a></div><div class="ttdeci">Link operator+(float) const </div><div class="ttdef"><b>Definition:</b> Link.cpp:18</div></div>
 <div class="ttc" id="class_link_html_a1918a8473cee40bbed17b8e926cb85d9"><div class="ttname"><a href="class_link.html#a1918a8473cee40bbed17b8e926cb85d9">Link::Link</a></div><div class="ttdeci">Link()</div><div class="ttdef"><b>Definition:</b> Link.cpp:4</div></div>
 <div class="ttc" id="class_link_html_aaf7980526f4edf059b27602a7be82b2a"><div class="ttname"><a href="class_link.html#aaf7980526f4edf059b27602a7be82b2a">Link::getWeight</a></div><div class="ttdeci">float getWeight() const </div><div class="ttdef"><b>Definition:</b> Link.cpp:10</div></div>
@@ -126,12 +131,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="_link_8hpp_html_aaf44f94a2cc67ec8ddd81004137e8369"><div class="ttname"><a href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">link_time</a></div><div class="ttdeci">unsigned long long int link_time</div><div class="ttdef"><b>Definition:</b> Link.hpp:4</div></div>
 <div class="ttc" id="class_link_html_af3dac01ac8fb3c9d9637361bab37a8f7"><div class="ttname"><a href="class_link.html#af3dac01ac8fb3c9d9637361bab37a8f7">Link::getTime</a></div><div class="ttdeci">link_time getTime() const </div><div class="ttdef"><b>Definition:</b> Link.cpp:30</div></div>
 <div class="ttc" id="class_link_html_af8b4ae699e66876e9fe933b0d979838f"><div class="ttname"><a href="class_link.html#af8b4ae699e66876e9fe933b0d979838f">Link::setTime</a></div><div class="ttdeci">void setTime(link_time time)</div><div class="ttdef"><b>Definition:</b> Link.cpp:34</div></div>
-<div class="ttc" id="class_link_html_af1f0e693d5e0f5f8cf39947d09c84251"><div class="ttname"><a href="class_link.html#af1f0e693d5e0f5f8cf39947d09c84251">Link::max_weight</a></div><div class="ttdeci">static float max_weight</div><div class="ttdef"><b>Definition:</b> Link.hpp:11</div></div>
 <div class="ttc" id="class_link_html"><div class="ttname"><a href="class_link.html">Link</a></div><div class="ttdef"><b>Definition:</b> Link.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

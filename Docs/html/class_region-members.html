@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,12 +91,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="class_region.html">Region</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a0c258b6ce768a3df3d0260c2ab19c343">getBoundary</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#ab7a8b431bfb87b6ed067915a6637cf8a">getCvImage</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">getLabel</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#acc0edaac14854ccc448f419844a722bf">getPixel</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a421786f57555f6348ece3fa33eb86594">getPixelRelative</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a31cb137d1eab434b70aaa95633e704fe">l</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#add72dd82adb6ee0d5822b250c3ac07e8">getMask</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#acc0edaac14854ccc448f419844a722bf">getPixel</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a421786f57555f6348ece3fa33eb86594">getPixelRelative</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#a0e9c8974b3be20ce12a4b823f9f3f636">Region</a>(QImage *image, QPolygon boundary, QString label)</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_region.html#ad2572028c1a4653a14dbfb1b622aa03e">show_region</a>()</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
@@ -103,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:00 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

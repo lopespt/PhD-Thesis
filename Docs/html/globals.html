@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +69,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
+      <li><a href="globals_vars.html"><span>Variables</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -77,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Friends</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,26 +91,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="contents">
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div><ul>
+<li>_USE_MATH_DEFINES
+: <a class="el" href="_orientation_feature_factory_8cpp.html#a525335710b53cb064ca56b936120431e">OrientationFeatureFactory.cpp</a>
+, <a class="el" href="_area_feature_extraction_test_8cpp.html#a525335710b53cb064ca56b936120431e">AreaFeatureExtractionTest.cpp</a>
+</li>
+<li>edge_id
+: <a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">ComplexNetwork.hpp</a>
+</li>
+<li>helpText
+: <a class="el" href="_area_feature_extraction_test_8cpp.html#a9160a48e6a232b9d0b922e9405e0a148">AreaFeatureExtractionTest.cpp</a>
+</li>
 <li>initTest()
-: <a class="el" href="_complex_network_test_8cpp.html#a44c863752027beb05708a22dd44fc494">ComplexNetworkTest.cpp</a>
+: <a class="el" href="_complex_network_resources_test_8cpp.html#a44c863752027beb05708a22dd44fc494">ComplexNetworkResourcesTest.cpp</a>
+</li>
+<li>initTest2()
+: <a class="el" href="_complex_network_resources_test_8cpp.html#a1233431a72862ce1851078f5c209ce30">ComplexNetworkResourcesTest.cpp</a>
+</li>
+<li>label
+: <a class="el" href="_label_feature_8hpp.html#a331f639078ba664b292b59c4032245e1">LabelFeature.hpp</a>
 </li>
 <li>link_time
 : <a class="el" href="_link_8hpp.html#aaf44f94a2cc67ec8ddd81004137e8369">Link.hpp</a>
 </li>
 <li>main()
-: <a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main.cpp</a>
+: <a class="el" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
+, <a class="el" href="_complex_network_to_matlab_file_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">ComplexNetworkToMatlabFile.cpp</a>
+, <a class="el" href="_database_visualizer_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">DatabaseVisualizer.cpp</a>
+, <a class="el" href="_segmenter_test_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">SegmenterTest.cpp</a>
+, <a class="el" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a>
+, <a class="el" href="_area_feature_extraction_test_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">AreaFeatureExtractionTest.cpp</a>
+, <a class="el" href="_experiments_2_setup_padrao_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main.cpp</a>
+, <a class="el" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">ComplexNetworkConstructionTest.cpp</a>
+, <a class="el" href="_complex_network_resources_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">ComplexNetworkResourcesTest.cpp</a>
+, <a class="el" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.cpp</a>
+</li>
+<li>main1()
+: <a class="el" href="_experiments_2_setup_padrao_2main_8cpp.html#a5e7ad02a34a7bdc94866662c051c98a7">main.cpp</a>
 </li>
 <li>memoryInUse()
-: <a class="el" href="_complex_network_test_8cpp.html#a195ed7b4505b1bb4a2448d71c649fcc1">ComplexNetworkTest.cpp</a>
+: <a class="el" href="_complex_network_resources_test_8cpp.html#a195ed7b4505b1bb4a2448d71c649fcc1">ComplexNetworkResourcesTest.cpp</a>
 </li>
-<li>t_cn
-: <a class="el" href="_complex_network_constructor_8hpp.html#a4f0848d3c2144cac74d7cdb1a6a23c30">ComplexNetworkConstructor.hpp</a>
+<li>node_id
+: <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">ComplexNetwork.hpp</a>
+</li>
+<li>printMatlab()
+: <a class="el" href="_random_walk_test_8cpp.html#ae3fd3fc3da851113974fb178ecf6a367">RandomWalkTest.cpp</a>
+</li>
+<li>qHash()
+: <a class="el" href="_feature_abstract_8cpp.html#aca59f644613693185e40001464f20995">FeatureAbstract.cpp</a>
+, <a class="el" href="_feature_abstract_8hpp.html#aca59f644613693185e40001464f20995">FeatureAbstract.hpp</a>
+</li>
+<li>VTK_MODULE_INIT()
+: <a class="el" href="_experiments_2_labels_complex_networks_2main_8cpp.html#ad70cab22f8facc5d8880524c3327990b">main.cpp</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 22 2014 20:39:01 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

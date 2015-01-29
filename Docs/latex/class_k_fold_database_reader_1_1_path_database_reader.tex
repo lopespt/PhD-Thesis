@@ -1,0 +1,189 @@
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader}{\section{K\+Fold\+Database\+Reader\+:\+:Path\+Database\+Reader Class Reference}
+\label{class_k_fold_database_reader_1_1_path_database_reader}\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+}
+
+
+{\ttfamily \#include $<$K\+Fold\+Database\+Reader.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a3ec743925701640642ef69b1731d21ea}{read\+Next} ()
+\item 
+virtual \hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a9f9e600aed16157680c6b4b402e9f764}{read\+Previous} ()
+\item 
+virtual bool \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_ac6c27452f10e49e7d0d425a56926277c}{has\+Next} () const 
+\item 
+virtual bool \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a6f635a1836b5f7dfc23b23ac2ef99cc6}{has\+Previous} () const 
+\item 
+virtual unsigned int \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_ad92c0ac794e71748a01e7e6f8103342a}{get\+Total} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_supervised_image}{Supervised\+Image} \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a929e9feb24e5247e307573ad735c2870}{read\+At} (unsigned int i)
+\item 
+\hyperlink{class_k_fold_database_reader_1_1_path_database_reader_ac09c594260a18ec32f65a9f8d9daf61b}{Path\+Database\+Reader} (Q\+List$<$ Q\+String $>$ \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a9b8942b3921fcc44a115fb1d4eb6b49c}{images})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+String $>$ \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a9b8942b3921fcc44a115fb1d4eb6b49c}{images}
+\item 
+unsigned int \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a2e6d3113ba8d5a4d1f48103a9219fcc7}{current}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_k_fold_database_reader_1_1_path_database_reader_a7da6633b773512a4b2c2d543b8797b09}{K\+Fold\+Database\+Reader}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for K\+Fold\+Database\+Reader\+:\+:Path\+Database\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_k_fold_database_reader_1_1_path_database_reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for K\+Fold\+Database\+Reader\+:\+:Path\+Database\+Reader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_k_fold_database_reader_1_1_path_database_reader__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_ac09c594260a18ec32f65a9f8d9daf61b}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!Path\+Database\+Reader@{Path\+Database\+Reader}}
+\index{Path\+Database\+Reader@{Path\+Database\+Reader}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{Path\+Database\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::\+Path\+Database\+Reader (
+\begin{DoxyParamCaption}
+\item[{Q\+List$<$ Q\+String $>$}]{images}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_ac09c594260a18ec32f65a9f8d9daf61b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_ad92c0ac794e71748a01e7e6f8103342a}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!get\+Total@{get\+Total}}
+\index{get\+Total@{get\+Total}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{get\+Total}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::get\+Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_ad92c0ac794e71748a01e7e6f8103342a}
+
+
+Implements \hyperlink{class_database_reader_abd37fa505553101bd8e18fd52547b7ee}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_1_1_path_database_reader_ad92c0ac794e71748a01e7e6f8103342a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_ac6c27452f10e49e7d0d425a56926277c}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!has\+Next@{has\+Next}}
+\index{has\+Next@{has\+Next}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{has\+Next}]{\setlength{\rightskip}{0pt plus 5cm}bool K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::has\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_ac6c27452f10e49e7d0d425a56926277c}
+
+
+Implements \hyperlink{class_database_reader_a406c8a783b41f31a273ed9c761bf33fe}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_1_1_path_database_reader_ac6c27452f10e49e7d0d425a56926277c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a6f635a1836b5f7dfc23b23ac2ef99cc6}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!has\+Previous@{has\+Previous}}
+\index{has\+Previous@{has\+Previous}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{has\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}bool K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::has\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a6f635a1836b5f7dfc23b23ac2ef99cc6}
+
+
+Implements \hyperlink{class_database_reader_acc71ed6c7af71bdc66b4b6eee3598506}{Database\+Reader}.
+
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a929e9feb24e5247e307573ad735c2870}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!read\+At@{read\+At}}
+\index{read\+At@{read\+At}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{read\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::read\+At (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a929e9feb24e5247e307573ad735c2870}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a3ec743925701640642ef69b1731d21ea}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!read\+Next@{read\+Next}}
+\index{read\+Next@{read\+Next}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{read\+Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::read\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a3ec743925701640642ef69b1731d21ea}
+
+
+Implements \hyperlink{class_database_reader_a4bf8a5faaaeaa057050e9c7ca4370081}{Database\+Reader}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_k_fold_database_reader_1_1_path_database_reader_a3ec743925701640642ef69b1731d21ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a9f9e600aed16157680c6b4b402e9f764}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!read\+Previous@{read\+Previous}}
+\index{read\+Previous@{read\+Previous}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{read\+Previous}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image} K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::read\+Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a9f9e600aed16157680c6b4b402e9f764}
+
+
+Implements \hyperlink{class_database_reader_a762e5d499c9d60e5ba85344c1c7c2c8c}{Database\+Reader}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a7da6633b773512a4b2c2d543b8797b09}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}}
+\index{K\+Fold\+Database\+Reader@{K\+Fold\+Database\+Reader}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{K\+Fold\+Database\+Reader}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf K\+Fold\+Database\+Reader}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a7da6633b773512a4b2c2d543b8797b09}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a2e6d3113ba8d5a4d1f48103a9219fcc7}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!current@{current}}
+\index{current@{current}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::current\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a2e6d3113ba8d5a4d1f48103a9219fcc7}
+\hypertarget{class_k_fold_database_reader_1_1_path_database_reader_a9b8942b3921fcc44a115fb1d4eb6b49c}{\index{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}!images@{images}}
+\index{images@{images}!K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader@{K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader}}
+\subsubsection[{images}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$Q\+String$>$ K\+Fold\+Database\+Reader\+::\+Path\+Database\+Reader\+::images\hspace{0.3cm}{\ttfamily [private]}}}\label{class_k_fold_database_reader_1_1_path_database_reader_a9b8942b3921fcc44a115fb1d4eb6b49c}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\hyperlink{_k_fold_database_reader_8hpp}{K\+Fold\+Database\+Reader.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_k_fold_database_reader_8cpp}{K\+Fold\+Database\+Reader.\+cpp}\end{DoxyCompactItemize}

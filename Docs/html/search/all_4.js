@@ -1,10 +1,19 @@
 var searchData=
 [
+  ['d',['d',['../namespacecompute__modularity.html#ad4ed0b5425c72d4dce599bc986780466',1,'compute_modularity']]],
+  ['data',['data',['../class_feature_abstract.html#a088a09441e0d60ad556c37910e51e8a6',1,'FeatureAbstract']]],
+  ['data_5fsize',['data_size',['../class_feature_abstract.html#a99b0e94ca4cdf08688924517946b5743',1,'FeatureAbstract']]],
   ['databasereader',['DatabaseReader',['../class_database_reader.html',1,'']]],
   ['databasereader_2ehpp',['DatabaseReader.hpp',['../_database_reader_8hpp.html',1,'']]],
+  ['databasevisualizer_2ecpp',['DatabaseVisualizer.cpp',['../_database_visualizer_8cpp.html',1,'']]],
+  ['databasevisualizerwidget',['DatabaseVisualizerWidget',['../class_database_visualizer_widget.html',1,'DatabaseVisualizerWidget'],['../class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df',1,'DatabaseVisualizerWidget::DatabaseVisualizerWidget()']]],
+  ['databasevisualizerwidget_2ecpp',['DatabaseVisualizerWidget.cpp',['../_database_visualizer_widget_8cpp.html',1,'']]],
+  ['databasevisualizerwidget_2ehpp',['DatabaseVisualizerWidget.hpp',['../_database_visualizer_widget_8hpp.html',1,'']]],
+  ['description',['description',['../class_complex_network.html#abc2c2def62701d56ec56c8b0accbedb9',1,'ComplexNetwork::description()'],['../struct_features_complex_network_1_1header.html#a945df90d139764d666deaa9d97a773ff',1,'FeaturesComplexNetwork::header::description()']]],
+  ['directed',['directed',['../class_complex_network.html#ae1f8a32f89d84aab42475d8fe46dfa09',1,'ComplexNetwork']]],
   ['discover_5ffiles',['discover_files',['../class_sun_database_reader.html#aefbdf63eaff6755bb3dee0ef8687b3aa',1,'SunDatabaseReader']]],
-  ['discretization',['discretization',['../class_feature_extractor.html#a1d800b4e5f3af7c758bfc5f157110681',1,'FeatureExtractor']]],
-  ['discretize',['discretize',['../class_area_feature_extractor.html#a01c1c501f11f6b986e46b7b1fe2d4508',1,'AreaFeatureExtractor']]],
-  ['dodiscretization',['doDiscretization',['../class_area_feature_extractor.html#a9969af2ec658c4404651cc13bef00089',1,'AreaFeatureExtractor::doDiscretization()'],['../class_feature_extractor.html#aa72a103a311a391eafdd0916c8ffabce',1,'FeatureExtractor::doDiscretization()']]],
-  ['doextraction',['doExtraction',['../class_area_feature_extractor.html#a9dfd50444d94b1fd82fdd6ec0f9163c3',1,'AreaFeatureExtractor::doExtraction()'],['../class_feature_extractor.html#af4afca623abc12c0af3572b2189d0825',1,'FeatureExtractor::doExtraction()']]]
+  ['discoverorientation',['discoverOrientation',['../class_orientation_feature_factory.html#a3ba5ebad39d7b2b6d1065208ee2fb60e',1,'OrientationFeatureFactory']]],
+  ['discretization',['discretization',['../class_area_feature_factory.html#a77f36879829aeb6c25e7da509649b1ef',1,'AreaFeatureFactory::discretization()'],['../class_orientation_feature_factory.html#abcd8932fe77877dff6657e4070882015',1,'OrientationFeatureFactory::discretization()']]],
+  ['discretize',['discretize',['../class_area_feature_factory.html#a9e08ded8fb8dcf407edd0d7ec328129b',1,'AreaFeatureFactory::discretize()'],['../class_orientation_feature_factory.html#a280c15eebea7646e9b602c36979b8b16',1,'OrientationFeatureFactory::discretize()']]],
+  ['distance',['distance',['../class_orientation_feature_factory.html#a68e87a390c95060cac05065757daa18d',1,'OrientationFeatureFactory']]]
 ];

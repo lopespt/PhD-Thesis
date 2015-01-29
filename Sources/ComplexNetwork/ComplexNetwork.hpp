@@ -125,7 +125,6 @@ public:
                 }
                 return *this;
             }
-
             this->iter++;
             return *this;
         }

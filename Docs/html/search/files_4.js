@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['feature_2ecpp',['Feature.cpp',['../_feature_8cpp.html',1,'']]],
-  ['feature_2ehpp',['Feature.hpp',['../_feature_8hpp.html',1,'']]],
-  ['featureextractor_2ecpp',['FeatureExtractor.cpp',['../_feature_extractor_8cpp.html',1,'']]],
-  ['featureextractor_2ehpp',['FeatureExtractor.hpp',['../_feature_extractor_8hpp.html',1,'']]]
+  ['gmainwindow_2ecpp',['gMainWindow.cpp',['../g_main_window_8cpp.html',1,'']]],
+  ['gmainwindow_2ehpp',['gMainWindow.hpp',['../g_main_window_8hpp.html',1,'']]]
 ];

@@ -10,7 +10,7 @@
 class getWeight{
 public:
  float operator ()(ComplexNetwork< shared_ptr<const FeatureAbstract>, Link> *cn, node_id from, node_id to){
-    return 0.5;//cn->getEdge(from, to)->getWeight();
+    return cn->getEdge(from, to)->getWeight();
  }
 };
 
@@ -36,7 +36,7 @@ void RandomWalkTest::execute(){
     facts.append(&factory);
     cn.load("/tmp/Implementation-Build/bin/labels.cn", facts);
     IterativeRandomWalk walk(&cn);
-    walk.Execute(566, 2);
+    walk.Execute(566, 1);
     QVector<double> v(cn.getNumNodes());
     for(auto n = cn.Begin(); n != cn.End(); n++){
         v[n.getNodeId()] = walk.getProbability(n.getNodeId());
@@ -49,16 +49,15 @@ void RandomWalkTest::execute(){
     printf("};\n");
 
     printMatlab("A", v);
-    v.fill(0);
 
-    walk.Execute(28, 2);
+    walk.Execute(28, 1);
     for(auto n = cn.Begin(); n != cn.End(); n++){
         v[n.getNodeId()] = walk.getProbability(n.getNodeId());
     }
    printMatlab("B", v);
 
 
-    walk.Execute(5, 2);
+    walk.Execute(5, 1);
     for(auto n = cn.Begin(); n != cn.End(); n++){
         v[n.getNodeId()] = walk.getProbability(n.getNodeId());
     }
