@@ -2,13 +2,14 @@
 #define LABELFEATUREFACTORY_HPP
 
 #include "FeatureFactoryAbstract.hpp"
-
+#include <memory>
+using namespace std;
 class LabelFeatureFactory:public FeatureFactoryAbstract
 {
 public:
     LabelFeatureFactory();
-    FeatureAbstract* CreateFromRegion(const Region* region) const;
-    FeatureAbstract* CreateFromStream(QDataStream &stream) const;
+    shared_ptr<FeatureAbstract> CreateFromRegion(const Region* region) const;
+    shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const;
 
 };
 

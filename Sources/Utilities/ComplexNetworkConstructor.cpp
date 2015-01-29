@@ -10,18 +10,19 @@ ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn,
 }
 
 void ComplexNetworkConstructor::build(){
-    QLinkedList<FeatureAbstract*> features;
+
+
     QList<int> regionsIds;
     unsigned int num=1;
     while(reader.hasNext()){
+        QLinkedList< shared_ptr<const FeatureAbstract> > features;
         SupervisedImage img = reader.readNext();
         printf("Reading image(%u/%d): %s%s\n", num, reader.getTotal(), img.getImagePath().size()>60?"...":"",img.getImagePath().right(60).toStdString().c_str());
-        features.clear();
+        
         for(int idx=0;idx<img.getRegions().size();idx++){
             Region r = img.getRegions().at(idx);
             for(QList<FeatureFactoryAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
-                FeatureAbstract* f = (*i)->CreateFromRegion(&r);
-                features.append(f);
+                features.append((*i)->CreateFromRegion(&r));
                 regionsIds.append(idx);
             }
         }
@@ -35,17 +36,16 @@ void ComplexNetworkConstructor::build(){
 /** Atualiza os pesos as arestas de acordo com a Equação:
  * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right)  \f]
  */
-void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds){
+void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<shared_ptr<const FeatureAbstract> > features, QList<int> &regionsIds){
 
     QLinkedList<node_id> nodes;
-    foreach(const FeatureAbstract* f, features){
+    for(auto f: features){
         node_id id;
-        if(!index.contains(FeatureAbstractKey(f))){
-            id= cn.addNode(shared_ptr<const FeatureAbstract>(f));
-            index[FeatureAbstractKey(f)]=id;
+        if(!index.contains(FeatureAbstractKey(f.get()))){
+            id= cn.addNode(f);
+            index[FeatureAbstractKey(f.get())]=id;
         }else{
-            id = index[FeatureAbstractKey(f)];
-            delete f;
+            id = index[FeatureAbstractKey(f.get())];
         }
         nodes.append(id);
     }

@@ -4,9 +4,12 @@
 
 #include "Region.hpp"
 #include "FeatureFactoryAbstract.hpp"
+#include <memory>
 
 class QDataStream;
 
+
+using namespace std;
 class AreaFeatureFactory:public FeatureFactoryAbstract{
 
     private:
@@ -15,8 +18,8 @@ class AreaFeatureFactory:public FeatureFactoryAbstract{
     public:
 
         AreaFeatureFactory(int discretization);
-        FeatureAbstract* CreateFromRegion(const Region* region) const;
-        FeatureAbstract* CreateFromStream(QDataStream &stream) const;
+        shared_ptr<FeatureAbstract> CreateFromRegion(const Region* region) const;
+        shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const;
 };
 
 #endif

@@ -75,7 +75,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
         f.read( (char*)&id, sizeof(node_id) );
         int type;
         f.read( (char*)&type, sizeof(int) );
-        FeatureAbstract *feature = NULL;
+        shared_ptr<FeatureAbstract> feature;
         foreach(FeatureFactoryAbstract* constructor, featuresConstructors ){
             if(constructor->getType() == type){
                 feature = constructor->CreateFromStream(stream);
@@ -83,7 +83,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList<FeatureFactoryAbst
             }
         }
         assert(feature!=NULL);
-        nodes.insert(id, shared_ptr<const FeatureAbstract>(feature));
+        nodes.insert(id, shared_ptr<const FeatureAbstract>((feature)));
 
         if(id >= current_node_id)
             current_node_id = id+1;

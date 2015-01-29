@@ -13,6 +13,7 @@
 #include <QHash>
 #include <unordered_map>
 #include <Utilities/FeaturesComplexNetwork.hpp>
+#include <memory>
 
 using namespace std;
 
@@ -26,7 +27,7 @@ class ComplexNetworkConstructor{
         DatabaseReader &reader;
         QList<FeatureFactoryAbstract*> extractors;
         unsigned long long int time=1;
-        void makeCoOccurrences(QLinkedList<FeatureAbstract*> &features, QList<int> &regionsIds);
+        void makeCoOccurrences(QLinkedList< shared_ptr<const FeatureAbstract>> features, QList<int> &regionsIds);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
         float lambda=80;
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */

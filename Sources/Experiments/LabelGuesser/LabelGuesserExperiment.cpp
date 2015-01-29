@@ -16,8 +16,8 @@ LabelGuesserExperiment::LabelGuesserExperiment()
 {
 }
 
-QList<FeatureAbstract*> LabelGuesserExperiment::getLabelsHints(SupervisedImage &img, unsigned int hide_idx){
-    QList<FeatureAbstract *> ret;
+QList<std::shared_ptr<FeatureAbstract>> LabelGuesserExperiment::getLabelsHints(SupervisedImage &img, unsigned int hide_idx){
+    QList< std::shared_ptr<FeatureAbstract> > ret;
     LabelFeatureFactory fact;
     //char buffer[100];
     for(int i=0;i<img.getRegions().size();i++){
@@ -29,16 +29,14 @@ QList<FeatureAbstract*> LabelGuesserExperiment::getLabelsHints(SupervisedImage &
     return ret;
 }
 
-QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn, QList<FeatureAbstract*> hints){
-//    IterativeRandomWalk walk(&cn);
+QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn, QList<shared_ptr<FeatureAbstract> > hints){
     setlocale(LC_ALL, "en_US");
 
     QList<node_id> ids;
-    foreach(FeatureAbstract* s, hints){
-        node_id id = cn.getNodeFromFeature(s);
+    for(shared_ptr<FeatureAbstract> &s: hints){
+        node_id id = cn.getNodeFromFeature(s.get());
         if(id != -1)
             ids.append(id);
-        delete s;
     }
 
     QVector<double> final;
@@ -123,14 +121,14 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
         }
         QList<Region> regs = img.getRegions();
         unsigned int choosen = rand() % regs.size();
-        QList<FeatureAbstract*> hints = getLabelsHints(img, choosen);
+        QList<shared_ptr<FeatureAbstract>> hints = getLabelsHints(img, choosen);
 
         QList<QString> guessed = guessByIterativeRandomWalk(walk,cn, hints);
         QString hidden = img.getRegions()[choosen].getLabel();
 
         fprintf(file, "%s\t", hidden.toStdString().c_str());
         for(int i=0;i<10;i++){
-          //  fprintf(file, "%s ", guessed[i].toStdString().c_str());
+            fprintf(file, "%s ", guessed[i].toStdString().c_str());
         }
         fprintf(file, "\t%d\n", getPosition(guessed, hidden));
         printf("%-3d %-20s %-20s\n", getPosition(guessed, hidden), hidden.toStdString().c_str(), guessed.first().toStdString().c_str() );

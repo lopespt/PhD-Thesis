@@ -3,10 +3,12 @@
 
 #include "FeatureFactoryAbstract.hpp"
 #include <QList>
+#include <memory>
+
 class QPoint;
 class OrientationFeature;
 
-
+using namespace std;
 class OrientationFeatureFactory:public FeatureFactoryAbstract
 {
 private:
@@ -17,8 +19,8 @@ private:
 
 public:
     OrientationFeatureFactory(int discretization);
-    FeatureAbstract* CreateFromRegion(const Region *r) const;
-    virtual FeatureAbstract *CreateFromStream(QDataStream &stream) const;
+    shared_ptr<FeatureAbstract> CreateFromRegion(const Region *r) const;
+    virtual shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const;
 };
 
 #endif // ORIENTATIONFEATUREFACTORY_HPP

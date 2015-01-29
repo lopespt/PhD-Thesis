@@ -7,12 +7,13 @@ class SupervisedImage;
 class FeaturesComplexNetwork;
 class FeatureAbstract;
 class IterativeRandomWalk;
-class LabelGuesserExperiment
 
+using namespace std;
+class LabelGuesserExperiment
 {
 private:
-    QList<FeatureAbstract *> getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
-    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn,  QList<FeatureAbstract*> hints);
+    QList<shared_ptr<FeatureAbstract> > getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
+    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn,  QList<shared_ptr<FeatureAbstract> > hints);
     int getPosition(QList<QString>, QString);
     void printLabels(FeaturesComplexNetwork *cn);
 

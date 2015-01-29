@@ -5,7 +5,7 @@
 AreaFeatureFactory::AreaFeatureFactory(int discretization):FeatureFactoryAbstract(1), discretization(discretization){
 }
 
-FeatureAbstract* AreaFeatureFactory::CreateFromRegion(const Region* region) const{
+shared_ptr<FeatureAbstract> AreaFeatureFactory::CreateFromRegion(const Region* region) const{
     float vect;
     region->getMask();
     float area = 0;
@@ -21,12 +21,12 @@ FeatureAbstract* AreaFeatureFactory::CreateFromRegion(const Region* region) cons
     //Discretization
 
     vect = ((int)(vect * discretization))/(float)discretization;
-    return new AreaFeature(vect);
+    return shared_ptr<FeatureAbstract>(new AreaFeature(vect));
 }
 
-FeatureAbstract* AreaFeatureFactory::CreateFromStream(QDataStream &stream) const{
-    AreaFeature* f=new AreaFeature(0);
-    stream >> f->content;
+shared_ptr<FeatureAbstract> AreaFeatureFactory::CreateFromStream(QDataStream &stream) const{
+    shared_ptr<FeatureAbstract> f= shared_ptr<FeatureAbstract>(new AreaFeature(0));
+    stream >> ((AreaFeature*)f.get())->content;
     return f;
 }
 

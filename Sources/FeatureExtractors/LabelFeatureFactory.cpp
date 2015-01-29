@@ -1,22 +1,20 @@
 #include "LabelFeatureFactory.hpp"
-
 #include "LabelFeature.hpp"
-
 LabelFeatureFactory::LabelFeatureFactory():FeatureFactoryAbstract(0)
 {
 }
 
 
-FeatureAbstract* LabelFeatureFactory::CreateFromRegion(const Region* region) const{
+shared_ptr<FeatureAbstract> LabelFeatureFactory::CreateFromRegion(const Region* region) const{
     label l;
     strcpy(l.value,region->getLabel().toStdString().c_str());
-    LabelFeature* feature = new LabelFeature(l);
+    auto feature = make_shared<LabelFeature>(l);
     return feature;
 }
 
-FeatureAbstract* LabelFeatureFactory::CreateFromStream(QDataStream &stream) const{
+shared_ptr<FeatureAbstract> LabelFeatureFactory::CreateFromStream(QDataStream &stream) const{
     label l;
     stream.readRawData((char*)&l, sizeof(label));
-    LabelFeature* feature = new LabelFeature(l);
+    auto feature = make_shared<LabelFeature>(l);
     return feature;
 }
