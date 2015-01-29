@@ -21,7 +21,7 @@ public:
 
 
 
-    void execute(QString);
+    void execute(QString, QString);
 
 
 

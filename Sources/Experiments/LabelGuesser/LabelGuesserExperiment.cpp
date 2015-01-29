@@ -88,9 +88,9 @@ void LabelGuesserExperiment::printLabels(FeaturesComplexNetwork *cn){
     }
 }
 
-void LabelGuesserExperiment::execute(QString outputFile){
+void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     srand(time(0));
-    SunDatabaseReader r = SunDatabaseReader("/Users/wachs/SUN/") ;
+    SunDatabaseReader r = SunDatabaseReader(inputFolder) ;
     KFoldDatabaseReader kfold(r, 0.7);
     KFoldDatabaseReader::PathDatabaseReader train = kfold.getTrainReader();
     KFoldDatabaseReader::PathDatabaseReader test = kfold.getTestReader();
