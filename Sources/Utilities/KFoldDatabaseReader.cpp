@@ -60,7 +60,9 @@ KFoldDatabaseReader::PathDatabaseReader::PathDatabaseReader(QList<QString> image
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readAt(unsigned int i){
-    return SupervisedImage(images[i], images[i].replace("/Images/","/Annotations/").replace(".jpg", ".xml"));
+    QString supervision = QString(images[i]);
+    supervision = supervision.replace("/Images/","/Annotations/").replace(".jpg", ".xml");
+    return SupervisedImage(images[i], supervision);
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readNext(){

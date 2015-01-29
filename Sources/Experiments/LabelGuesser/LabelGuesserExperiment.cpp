@@ -114,7 +114,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     fprintf(file, "%%Escondido %%Top10Escolhidos %%posicaoEscolhido\n");
     //"%%Escondido %%Top10Escolhidos  %%posEscolhido\n";
     int position = 1;
-    while(test.hasNext() ){
+    while(test.hasNext()){
         printf("%d (%d) ", position, test.getTotal());
         fflush(stdout);
         SupervisedImage img = test.readNext();

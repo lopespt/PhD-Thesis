@@ -7,6 +7,7 @@
 #include <QRegularExpression>
 #include <QFile>
 #include <QtAlgorithms>
+#include <assert.h>
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath){
 
@@ -17,7 +18,9 @@ void SupervisedImage::parse_xml(){
     if(alreadyParsed)
         return;
 
-    image.load(this->imagePath);
+    if(!image.load(this->imagePath)){
+        printf("Error reading image: %s\n", this->imagePath.toStdString().c_str());
+    }
     QRegularExpression exp("<object>.*?</object>", QRegularExpression::DotMatchesEverythingOption );
     QFile f(this->supervisedPath);
 
