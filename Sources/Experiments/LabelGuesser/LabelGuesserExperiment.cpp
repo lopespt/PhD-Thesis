@@ -103,7 +103,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     ComplexNetworkConstructor constructor(cn, train, factories);
     constructor.build();
     cn.save("train.cn");
-    //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
+    cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
     //cn.load("train.cn", factories);
     cn.updateIndex();
     IterativeRandomWalk walk(&cn);
@@ -114,8 +114,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     fprintf(file, "%%Escondido %%Top10Escolhidos %%posicaoEscolhido\n");
     //"%%Escondido %%Top10Escolhidos  %%posEscolhido\n";
     int position = 1;
-    printf("teste");
-    while(test.hasNext() && position < 10){
+    while(test.hasNext() ){
         printf("%d (%d) ", position, test.getTotal());
         fflush(stdout);
         SupervisedImage img = test.readNext();
