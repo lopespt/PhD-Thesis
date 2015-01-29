@@ -3,9 +3,10 @@
 #include <locale.h>
 #include <QString>
 
-int main(){
+int main(int argc, char *argv[]){
     LabelGuesserExperiment exp;
-    exp.execute("/tmp/saida.txt");
+
+    exp.execute(argv[1]);
 
     return 0;
 }
