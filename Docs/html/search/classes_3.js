@@ -8,6 +8,7 @@ var searchData=
   ['complexnetwork_3c_20std_3a_3ashared_5fptr_3c_20const_20featureabstract_20_3e_2c_20link_20_3e',['ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;',['../class_complex_network.html',1,'']]],
   ['complexnetworkconstructor',['ComplexNetworkConstructor',['../class_complex_network_constructor.html',1,'']]],
   ['complexnetworktomatlab',['ComplexNetworkToMatlab',['../class_complex_network_to_matlab.html',1,'']]],
+  ['complexnetworkv2',['ComplexNetworkV2',['../class_complex_network_v2.html',1,'']]],
   ['complexnetworkviewerwidget',['ComplexNetworkViewerWidget',['../class_complex_network_viewer_widget.html',1,'']]],
   ['complexnetworkvisualizer',['ComplexNetworkVisualizer',['../class_complex_network_visualizer.html',1,'']]]
 ];

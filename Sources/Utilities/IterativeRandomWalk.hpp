@@ -1,30 +1,28 @@
 #ifndef ITERATIVERANDOMWALK_HPP
 #define ITERATIVERANDOMWALK_HPP
 
-#include <ComplexNetwork/ComplexNetwork.hpp>
-#include <Utilities/CachedComplexNetwork.hpp>
-#include "RandomWalk.hpp"
 #include <stdlib.h>
 #include <QVector>
 #include <set>
+#include <lemon/list_graph.h>
 using namespace std;
+using namespace lemon;
+
 class IterativeRandomWalk
 {
 private:
-    CachedComplexNetwork<int, double> cn;
-    QVector<double> probs;
-    QVector<double> probs2;
-    typedef struct{
-        node_id from;
-        node_id to;
-    }edges_list;
+    ListDigraph& cn;
+    ListDigraph::ArcMap<double> weights;
+    ListDigraph::NodeMap<double> probs;
+    ListDigraph::NodeMap<double> probs2;
+
+    void clearMap(ListDigraph::NodeMap<double> &map);
 
 public:
-    IterativeRandomWalk(FeaturesComplexNetwork *cn);
-    IterativeRandomWalk(CachedComplexNetwork<int, double> *cn);
-    void Execute(node_id start_node, unsigned int max_path_length);
-    float getProbability(node_id node);
-    QVector<double> getAllProbs();
+    IterativeRandomWalk(ListDigraph &cn,const ListDigraph::ArcMap<double>& weights);
+    void Execute(ListDigraph::Node start_node, unsigned int max_path_length);
+    double getProbability(ListDigraph::Node node);
+    void getAllProbs(ListDigraph::NodeMap<double> &map);
 };
 
 #endif // ITERATIVERANDOMWALK_HPP

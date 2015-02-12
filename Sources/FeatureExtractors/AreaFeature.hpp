@@ -11,7 +11,7 @@ class AreaFeature:public Feature<float>
 public:
     AreaFeature(float value);
     const char* asString(char *buffer) const;
-    void WriteToStream(QDataStream &stream) const;
+    void WriteToStream(std::ostream &stream) const;
 
     friend class AreaFeatureFactory;
 

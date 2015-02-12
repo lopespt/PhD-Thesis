@@ -33,7 +33,7 @@ void SupervisedImage::parse_xml(){
         QPolygon polygon = extractPolygon(regionXml);
         polygon = polygon.intersected(QPolygon(QRect(0,0,image.width()-1, image.height()-1)));
         QString label    = extractLabel(regionXml);
-        if(polygon.size() != 0)
+        if(polygon.size() != 0 && label.size() > 1)
             this->regions << (Region(&this->image, polygon, label));
     }
     alreadyParsed=true;

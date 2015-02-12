@@ -39,12 +39,12 @@ int main(int argc, char **argv){
     LabelFeatureFactory labels_factory;
     OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
-    //factories.append(&orientation_factory);
+    ///factories.append(&orientation_factory);
 
     ComplexNetworkConstructor constructor(labels_cn,reader,factories);
     constructor.build();
-    printf("%u\n", labels_cn.getNumNodes());
-    printf("%u", labels_cn.getNumEdges());
+    printf("Nodes: %u\n", labels_cn.getNumNodes());
+    printf("Edges: %u", labels_cn.getNumArcs());
 
 
     labels_cn.save(parser.value("o").toStdString().c_str());

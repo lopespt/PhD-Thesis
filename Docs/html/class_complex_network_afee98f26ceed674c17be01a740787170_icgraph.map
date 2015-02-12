@@ -1,11 +1,11 @@
 <map id="ComplexNetwork::getNumNodes" name="ComplexNetwork::getNumNodes">
 <area shape="rect" id="node2" href="$class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="283,5,464,47"/>
-<area shape="rect" id="node4" href="$class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="269,71,477,112"/>
+<area shape="rect" id="node4" href="$class_label_guesser_experiment.html#a0305abdcc36d592d5e92187b35be9169" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="269,71,477,112"/>
 <area shape="rect" id="node7" href="$class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="280,136,467,177"/>
 <area shape="rect" id="node8" href="$_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="348,202,399,229"/>
 <area shape="rect" id="node9" href="$class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="282,253,465,279"/>
 <area shape="rect" id="node3" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="586,13,637,39"/>
-<area shape="rect" id="node5" href="$class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="525,71,697,112"/>
-<area shape="rect" id="node6" href="$_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="745,78,796,105"/>
+<area shape="rect" id="node5" href="$class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="525,71,697,112"/>
+<area shape="rect" id="node6" href="$_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="745,78,796,105"/>
 <area shape="rect" id="node10" href="$_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="586,253,637,279"/>
 </map>

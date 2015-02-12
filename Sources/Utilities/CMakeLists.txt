@@ -4,7 +4,17 @@ FIND_PACKAGE(Qt5Core REQUIRED)
 FIND_PACKAGE(OpenCV REQUIRED)
 
 
-FILE(GLOB_RECURSE Source_Files  *.cpp DatabaseReader.hpp)
+FILE(GLOB_RECURSE Source_Files
+    DatabaseReader.cpp
+    SunDatabaseReader.cpp
+    SupervisedImage.cpp
+    ComplexNetworkConstructor.cpp
+    FeaturesComplexNetwork.cpp
+    Link.cpp
+    GraphUtilities.cpp
+    IterativeRandomWalk.cpp
+    KFoldDatabaseReader.cpp
+)
 ADD_LIBRARY(Utilities ${Source_Files})
 TARGET_LINK_LIBRARIES(Utilities FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork)
 

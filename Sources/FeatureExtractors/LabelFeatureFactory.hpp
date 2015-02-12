@@ -8,9 +8,8 @@ class LabelFeatureFactory:public FeatureFactoryAbstract
 {
 public:
     LabelFeatureFactory();
-    shared_ptr<FeatureAbstract> CreateFromRegion(const Region* region) const;
-    shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const;
-
+    FeatureAbstractPtr CreateFromRegion(const Region* region) const;
+    FeatureAbstractPtr CreateFromStream(istream &stream) const;
 };
 
 #endif // LABELFEATUREFACTORY_HPP

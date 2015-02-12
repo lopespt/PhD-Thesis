@@ -8,7 +8,7 @@ class OrientationFeature:public Feature<unsigned int>
 public:
     OrientationFeature(unsigned int value);
     const char * asString(char *buffer) const;
-    void WriteToStream(QDataStream &stream) const;
+    void WriteToStream(std::ostream &stream) const;
 };
 
 #endif // ORIENTATIONFEATURE_HPP

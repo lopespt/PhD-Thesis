@@ -2,23 +2,38 @@
 #define LABELGUESSEREXPERIMENT_HPP
 
 #include <QList>
-class QString;
+#include <memory>
+#include <QString>
 class SupervisedImage;
 class FeaturesComplexNetwork;
-class FeatureAbstract;
+class FeatureAbstractPtr;
 class IterativeRandomWalk;
 
+
 using namespace std;
+
 class LabelGuesserExperiment
 {
+public:
+     typedef enum{
+        MultProbabilities,
+        SumProbabilities,
+        XorProbabilities
+    }method;
+
 private:
-    QList<shared_ptr<FeatureAbstract> > getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
-    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn,  QList<shared_ptr<FeatureAbstract> > hints);
+    QList<FeatureAbstractPtr > getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
+    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn,  QList<FeatureAbstractPtr > hints);
     int getPosition(QList<QString>, QString);
     void printLabels(FeaturesComplexNetwork *cn);
 
+    float trainPerc;
+    int walkLenght;
+    method m;
+
 public:
-    LabelGuesserExperiment();
+
+    LabelGuesserExperiment(float trainPerc,int walkLenght, method m);
 
 
 

@@ -1,16 +1,17 @@
 <map id="Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" name="Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp">
-<area shape="rect" id="node4" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="281,206,485,233"/>
-<area shape="rect" id="node18" href="$_feature_abstract_8hpp.html" title="FeatureAbstract.hpp" alt="" coords="382,288,525,315"/>
-<area shape="rect" id="node20" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="1704,117,1923,143"/>
-<area shape="rect" id="node28" href="$_complex_network_constructor_8hpp.html" title="Utilities/ComplexNetwork\lConstructor.hpp" alt="" coords="1057,109,1228,151"/>
-<area shape="rect" id="node35" href="$_area_feature_factory_8hpp.html" title="FeatureExtractors/AreaFeature\lFactory.hpp" alt="" coords="627,199,832,240"/>
-<area shape="rect" id="node40" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="907,199,1080,240"/>
-<area shape="rect" id="node43" href="$_label_feature_8hpp.html" title="FeatureExtractors/LabelFeature.hpp" alt="" coords="265,117,501,143"/>
-<area shape="rect" id="node44" href="$_label_feature_factory_8hpp.html" title="FeatureExtractors/LabelFeature\lFactory.hpp" alt="" coords="576,109,787,151"/>
-<area shape="rect" id="node6" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="900,363,991,389"/>
-<area shape="rect" id="node21" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="1615,206,1764,233"/>
-<area shape="rect" id="node22" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="1615,288,1767,315"/>
-<area shape="rect" id="node29" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="1206,288,1461,315"/>
-<area shape="rect" id="node38" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="1059,288,1131,315"/>
-<area shape="rect" id="node36" href="$_feature_factory_abstract_8hpp.html" title="FeatureFactoryAbstract.hpp" alt="" coords="600,288,787,315"/>
+<area shape="rect" id="node4" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="265,206,469,233"/>
+<area shape="rect" id="node18" href="$_feature_abstract_8hpp.html" title="FeatureAbstract.hpp" alt="" coords="165,295,307,322"/>
+<area shape="rect" id="node20" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="665,117,884,143"/>
+<area shape="rect" id="node28" href="$_complex_network_constructor_8hpp.html" title="Utilities/ComplexNetwork\lConstructor.hpp" alt="" coords="1304,109,1475,151"/>
+<area shape="rect" id="node35" href="$_area_feature_factory_8hpp.html" title="FeatureExtractors/AreaFeature\lFactory.hpp" alt="" coords="2144,199,2349,240"/>
+<area shape="rect" id="node41" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="1576,199,1749,240"/>
+<area shape="rect" id="node46" href="$_label_feature_8hpp.html" title="FeatureExtractors/LabelFeature.hpp" alt="" coords="405,117,641,143"/>
+<area shape="rect" id="node47" href="$_label_feature_factory_8hpp.html" title="FeatureExtractors/LabelFeature\lFactory.hpp" alt="" coords="2373,199,2584,240"/>
+<area shape="rect" id="node6" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="1137,377,1228,404"/>
+<area shape="rect" id="node21" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="943,206,1092,233"/>
+<area shape="rect" id="node22" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="943,295,1095,322"/>
+<area shape="rect" id="node29" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="1570,295,1825,322"/>
+<area shape="rect" id="node39" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="1321,295,1393,322"/>
+<area shape="rect" id="node36" href="$_feature_factory_abstract_8hpp.html" title="FeatureFactoryAbstract.hpp" alt="" coords="2204,295,2391,322"/>
+<area shape="rect" id="node42" href="$_complex_network_v2_8hpp.html" title="ComplexNetwork/ComplexNetwork\lV2.hpp" alt="" coords="1849,288,2079,329"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="LabelFeatureFactory" name="LabelFeatureFactory">
-<area shape="rect" id="node2" href="$class_feature_factory_abstract.html" title="{FeatureFactoryAbstract\n|&#45; type\l|+ FeatureFactoryAbstract()\l+ CreateFromRegion()\l+ CreateFromStream()\l+ getType()\l}" alt="" coords="5,5,187,127"/>
+<area shape="rect" id="node2" href="$class_feature_factory_abstract.html" title="{FeatureFactoryAbstract\n|&#45; type\l|+ FeatureFactoryAbstract()\l+ CreateFromRegion()\l+ CreateFromStream()\l+ getType()\l+ ~FeatureFactoryAbstract()\l}" alt="" coords="5,5,195,141"/>
 </map>

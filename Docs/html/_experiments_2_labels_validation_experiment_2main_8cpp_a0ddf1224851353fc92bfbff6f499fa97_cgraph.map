@@ -11,7 +11,7 @@
 <area shape="rect" id="node9" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="1085,143,1258,184"/>
 <area shape="rect" id="node11" href="$class_complex_network.html#a2167b224079f5c0b44443959ad0b6440" title="ComplexNetwork::EdgesBegin" alt="" coords="589,173,792,199"/>
 <area shape="rect" id="node12" href="$class_complex_network.html#ad806138ea94ec18ed17f4681ab731208" title="ComplexNetwork::EdgesEnd" alt="" coords="595,223,787,250"/>
-<area shape="rect" id="node13" href="$class_orientation_feature_factory.html#ace31b961efc6bdfa405effffd7d63c96" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="602,275,779,316"/>
+<area shape="rect" id="node13" href="$class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="602,275,779,316"/>
 <area shape="rect" id="node18" href="$class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60" title="FeaturesComplexNetwork\l::getNodeFromFeature" alt="" coords="603,340,779,381"/>
 <area shape="rect" id="node19" href="$class_features_complex_network.html#a06275636cdb560a44d9cc4d82b47ce53" title="FeaturesComplexNetwork\l::getNodesOfSameLabel" alt="" coords="603,405,779,447"/>
 <area shape="rect" id="node22" href="$class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="600,471,781,498"/>

@@ -53,7 +53,7 @@ class GMainWindow : public QWidget
 {
     Q_OBJECT
 private:
-    ComplexNetwork<NodeString, Link> cn;
+    ComplexNetwork<NodeString, Link>& cn;
     vtkRenderer* renderer;
     QVTKWidget* vtk;
     vtkMutableUndirectedGraph *graph;
@@ -61,7 +61,7 @@ private:
 
     void setVtkGraph();
 public:
-    explicit GMainWindow(ComplexNetwork<NodeString, Link> cn, QWidget *parent = 0);
+    explicit GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent = 0);
     virtual ~GMainWindow();
 
 signals:

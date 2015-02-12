@@ -42,3 +42,15 @@ bool Link::isSameLabel() const{
 void Link::isSameLabel(bool v){
     this->sameLabel=v;
 }
+
+std::ostream& operator<<(std::ostream& os, const Link& dt){
+    os << dt.getWeight() << " " << dt.getTime() << " " << dt.isSameLabel();
+    return os;
+}
+
+std::istream& operator>>(std::istream& is, Link& dt){
+    is >> dt.weight >> dt.time >> dt.sameLabel;
+    return is;
+}
+
+

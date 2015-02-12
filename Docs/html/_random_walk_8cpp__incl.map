@@ -1,9 +1,10 @@
 <map id="Sources/Utilities/RandomWalk.cpp" name="Sources/Utilities/RandomWalk.cpp">
-<area shape="rect" id="node2" href="$_random_walk_8hpp.html" title="RandomWalk.hpp" alt="" coords="719,95,847,121"/>
-<area shape="rect" id="node18" href="$_cached_complex_network_8hpp.html" title="Utilities/CachedComplexNetwork.hpp" alt="" coords="791,177,1034,203"/>
-<area shape="rect" id="node3" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="677,266,932,293"/>
-<area shape="rect" id="node10" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="457,169,630,211"/>
-<area shape="rect" id="node11" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="381,259,559,300"/>
-<area shape="rect" id="node14" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="5,259,183,300"/>
-<area shape="rect" id="node15" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="207,266,279,293"/>
+<area shape="rect" id="node2" href="$_random_walk_8hpp.html" title="RandomWalk.hpp" alt="" coords="929,95,1057,121"/>
+<area shape="rect" id="node21" href="$_cached_complex_network_8hpp.html" title="Utilities/CachedComplexNetwork.hpp" alt="" coords="1001,177,1244,203"/>
+<area shape="rect" id="node3" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="887,266,1142,293"/>
+<area shape="rect" id="node10" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="663,169,836,211"/>
+<area shape="rect" id="node11" href="$_complex_network_v2_8hpp.html" title="ComplexNetwork/ComplexNetwork\lV2.hpp" alt="" coords="5,259,235,300"/>
+<area shape="rect" id="node15" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="511,259,689,300"/>
+<area shape="rect" id="node18" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="310,259,487,300"/>
+<area shape="rect" id="node19" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="713,266,785,293"/>
 </map>

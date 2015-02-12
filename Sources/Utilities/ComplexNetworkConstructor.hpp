@@ -21,18 +21,19 @@ class ComplexNetworkConstructor{
 
     private:
 
-        QHash<FeatureAbstractKey , node_id> index;
+        QHash<FeatureAbstractKey, FeaturesComplexNetwork::Node> index;
 
         FeaturesComplexNetwork &cn;
         DatabaseReader &reader;
         QList<FeatureFactoryAbstract*> extractors;
         unsigned long long int time=1;
-        void makeCoOccurrences(QLinkedList< shared_ptr<const FeatureAbstract>> features, QList<int> &regionsIds);
+        void makeCoOccurrences(QLinkedList<FeatureAbstractPtr> features, QList<int> &regionsIds);
         /** Esta é a influência do tempo na aprendizagem \f$ \lambda  \f$ */
         float lambda=80;
         /** Esta é a taxa de aprendizagem \f$ \alpha  \f$ */
         float learningRate=0.3;
         float recorrencia(float time);
+        void reinforceLink(const FeaturesComplexNetwork::Node& a,const FeaturesComplexNetwork::Node& b, bool isSameLabel);
 
     public:
         ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureFactoryAbstract*> extractors);

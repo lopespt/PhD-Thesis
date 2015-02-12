@@ -1,41 +1,49 @@
 #include "IterativeRandomWalk.hpp"
+#include "GraphUtilities.hpp"
+#include <math.h>
 
+IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn, const ListDigraph::ArcMap<double>& weights):
+    cn(cn), weights(cn), probs(cn), probs2(cn){
 
-IterativeRandomWalk::IterativeRandomWalk(FeaturesComplexNetwork *cn):
-    probs(cn->getNumNodes()){
-    for(int i=0;i<probs.size();i++)
-        probs[i] = 0;
-   this->cn = RandomWalk::convertToWalkNetwork(*cn);
-   //this->cn = RandomWalk::addAutoLoop(this->cn);
-   this->cn = RandomWalk::normalizeGraph(this->cn);
+   clearMap(probs);
+
+   GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
+   GraphUtilities::addAutoLoop(this->cn, this->weights);
+   GraphUtilities::normalizeOutDegrees(this->cn, this->weights, this->weights);
+
 }
 
-IterativeRandomWalk::IterativeRandomWalk(CachedComplexNetwork<int, double> *cn):cn(*cn),probs(cn->getNumNodes()+1){
-
-}
-
-
-void IterativeRandomWalk::Execute(node_id start_node, unsigned int max_path_length){
-    probs.fill(0);
-    probs2 = probs;
-    probs[start_node] = 1;
-    for(int i=0; i<max_path_length; i++){
-        probs2.fill(0);
-        for(auto node = cn.Begin(); node != cn.End(); node++){
-            if( probs[*node] ){
-                for(auto edge=node.EdgesBegin(); edge != node.EdgesEnd(); edge++){
-                    probs2[  *cn.getNode(edge.getToNodeId()) ] += probs[*node] * (*cn.getEdge(node.getNodeId(),  edge.getToNodeId() ));
-                }
-            }
-        }
-        probs = probs2;
+void IterativeRandomWalk::clearMap(ListDigraph::NodeMap<double> &map){
+    for(ListDigraph::NodeIt it(cn); it != INVALID; ++it){
+        map[it] = 0;
     }
 }
 
-float IterativeRandomWalk::getProbability(node_id node){
+
+
+void IterativeRandomWalk::Execute(ListDigraph::Node start_node, unsigned int max_path_length){
+    clearMap(probs);
+
+    probs[start_node] = 1;
+    for(int i=0; i<max_path_length; i++){
+        clearMap(probs2);
+        for(ListDigraph::NodeIt node(cn); node != INVALID; ++node){
+            if( probs[node] ){
+                for(ListDigraph::OutArcIt edge(cn, node); edge != INVALID; ++edge){
+                    probs2[ cn.target(edge) ] += probs[node] * weights[edge];
+                }
+            }
+        }
+
+        GraphUtilities::copyMap(cn, probs2, probs);
+    }
+    //probs[start_node] = 0;
+}
+
+double IterativeRandomWalk::getProbability(ListDigraph::Node node){
     return probs[node];
 }
 
-QVector<double> IterativeRandomWalk::getAllProbs(){
-    return probs;
+void IterativeRandomWalk::getAllProbs(ListDigraph::NodeMap<double> &map){
+    GraphUtilities::copyMap(cn, probs, map);
 }

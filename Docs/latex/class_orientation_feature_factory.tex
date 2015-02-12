@@ -10,9 +10,10 @@
 \item 
 \hyperlink{class_orientation_feature_factory_ad78c564940442d3c76db9ef03d6c8a03}{Orientation\+Feature\+Factory} (int \hyperlink{class_orientation_feature_factory_abcd8932fe77877dff6657e4070882015}{discretization})
 \item 
-\hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const 
+shared\+\_\+ptr$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const 
 \item 
-virtual \hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const 
+virtual shared\+\_\+ptr\\*
+$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_orientation_feature_factory_a00bccb3e3b4f551374f7f3e0a80e9837}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const 
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -59,16 +60,16 @@ Collaboration diagram for Orientation\+Feature\+Factory\+:\nopagebreak
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
+\hypertarget{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
 \index{Create\+From\+Region@{Create\+From\+Region}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
-\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Orientation\+Feature\+Factory\+::\+Create\+From\+Region (
+\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Feature\+Abstract} $>$ Orientation\+Feature\+Factory\+::\+Create\+From\+Region (
 \begin{DoxyParamCaption}
 \item[{const {\bf Region} $\ast$}]{r}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee}
 
 
-Implements \hyperlink{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}{Feature\+Factory\+Abstract}.
+Implements \hyperlink{class_feature_factory_abstract_a62446de90f18d896ff650871d94bf9b7}{Feature\+Factory\+Abstract}.
 
 
 
@@ -76,7 +77,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96_cgraph}
+\includegraphics[width=350pt]{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee_cgraph}
 \end{center}
 \end{figure}
 
@@ -87,21 +88,21 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96_icgraph}
+\includegraphics[width=350pt]{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
+\hypertarget{class_orientation_feature_factory_a00bccb3e3b4f551374f7f3e0a80e9837}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
 \index{Create\+From\+Stream@{Create\+From\+Stream}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}
-\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Orientation\+Feature\+Factory\+::\+Create\+From\+Stream (
+\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Feature\+Abstract} $>$ Orientation\+Feature\+Factory\+::\+Create\+From\+Stream (
 \begin{DoxyParamCaption}
 \item[{Q\+Data\+Stream \&}]{stream}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_orientation_feature_factory_a00bccb3e3b4f551374f7f3e0a80e9837}
 
 
-Implements \hyperlink{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}{Feature\+Factory\+Abstract}.
+Implements \hyperlink{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52}{Feature\+Factory\+Abstract}.
 
 \hypertarget{class_orientation_feature_factory_a3ba5ebad39d7b2b6d1065208ee2fb60e}{\index{Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}!discover\+Orientation@{discover\+Orientation}}
 \index{discover\+Orientation@{discover\+Orientation}!Orientation\+Feature\+Factory@{Orientation\+Feature\+Factory}}

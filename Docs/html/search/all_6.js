@@ -19,5 +19,5 @@ var searchData=
   ['featurescomplexnetwork_2ehpp',['FeaturesComplexNetwork.hpp',['../_features_complex_network_8hpp.html',1,'']]],
   ['file_5fheader',['file_header',['../class_complex_network.html#ab9ab3dbbbcd8dd173ec40938391c0fc4',1,'ComplexNetwork']]],
   ['findnode',['findNode',['../namespacecompute__modularity.html#a03524b2cf695fb83898425ff0f804750',1,'compute_modularity']]],
-  ['from',['from',['../class_complex_network_1_1_edge_iterator.html#a380ccd02563bb5192f6b1e81409d6559',1,'ComplexNetwork::EdgeIterator::from()'],['../struct_iterative_random_walk_1_1edges__list.html#a939cd47cfe0fc7d91ff26f1072546f0e',1,'IterativeRandomWalk::edges_list::from()']]]
+  ['from',['from',['../class_complex_network_1_1_edge_iterator.html#a380ccd02563bb5192f6b1e81409d6559',1,'ComplexNetwork::EdgeIterator::from()'],['../class_complex_network_v2_1_1_edge_iterator.html#a9c12853c790c6168d6439e84f9093e61',1,'ComplexNetworkV2::EdgeIterator::from()'],['../struct_iterative_random_walk_1_1edges__list.html#a939cd47cfe0fc7d91ff26f1072546f0e',1,'IterativeRandomWalk::edges_list::from()']]]
 ];

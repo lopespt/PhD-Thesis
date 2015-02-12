@@ -10,9 +10,9 @@
 \item 
 \hyperlink{class_area_feature_factory_a1299cd28490bc46f5ee66e16b712e37d}{Area\+Feature\+Factory} (int \hyperlink{class_area_feature_factory_a77f36879829aeb6c25e7da509649b1ef}{discretization})
 \item 
-\hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_area_feature_factory_a33051f7cf7d2e89a0e50c63dff2e26c6}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$region) const 
+shared\+\_\+ptr$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_area_feature_factory_aebaa392a4f7bba61c02edda7f932ee9c}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$region) const 
 \item 
-\hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_area_feature_factory_a80529ff42d772a30fbcc930bd203b03d}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const 
+shared\+\_\+ptr$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_area_feature_factory_ad2145ad17552e13fa4879dfed65816d1}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const 
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -30,7 +30,7 @@ Inheritance diagram for Area\+Feature\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=216pt]{class_area_feature_factory__inherit__graph}
+\includegraphics[width=222pt]{class_area_feature_factory__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -39,7 +39,7 @@ Collaboration diagram for Area\+Feature\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=216pt]{class_area_feature_factory__coll__graph}
+\includegraphics[width=222pt]{class_area_feature_factory__coll__graph}
 \end{center}
 \end{figure}
 
@@ -55,16 +55,16 @@ Collaboration diagram for Area\+Feature\+Factory\+:\nopagebreak
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_area_feature_factory_a33051f7cf7d2e89a0e50c63dff2e26c6}{\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
+\hypertarget{class_area_feature_factory_aebaa392a4f7bba61c02edda7f932ee9c}{\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
 \index{Create\+From\+Region@{Create\+From\+Region}!Area\+Feature\+Factory@{Area\+Feature\+Factory}}
-\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Area\+Feature\+Factory\+::\+Create\+From\+Region (
+\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Feature\+Abstract} $>$ Area\+Feature\+Factory\+::\+Create\+From\+Region (
 \begin{DoxyParamCaption}
 \item[{const {\bf Region} $\ast$}]{region}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_factory_a33051f7cf7d2e89a0e50c63dff2e26c6}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_factory_aebaa392a4f7bba61c02edda7f932ee9c}
 
 
-Implements \hyperlink{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}{Feature\+Factory\+Abstract}.
+Implements \hyperlink{class_feature_factory_abstract_a62446de90f18d896ff650871d94bf9b7}{Feature\+Factory\+Abstract}.
 
 
 
@@ -72,21 +72,21 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_area_feature_factory_a33051f7cf7d2e89a0e50c63dff2e26c6_cgraph}
+\includegraphics[width=350pt]{class_area_feature_factory_aebaa392a4f7bba61c02edda7f932ee9c_cgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_area_feature_factory_a80529ff42d772a30fbcc930bd203b03d}{\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
+\hypertarget{class_area_feature_factory_ad2145ad17552e13fa4879dfed65816d1}{\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
 \index{Create\+From\+Stream@{Create\+From\+Stream}!Area\+Feature\+Factory@{Area\+Feature\+Factory}}
-\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract} $\ast$ Area\+Feature\+Factory\+::\+Create\+From\+Stream (
+\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}shared\+\_\+ptr$<$ {\bf Feature\+Abstract} $>$ Area\+Feature\+Factory\+::\+Create\+From\+Stream (
 \begin{DoxyParamCaption}
 \item[{Q\+Data\+Stream \&}]{stream}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_factory_a80529ff42d772a30fbcc930bd203b03d}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_area_feature_factory_ad2145ad17552e13fa4879dfed65816d1}
 
 
-Implements \hyperlink{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}{Feature\+Factory\+Abstract}.
+Implements \hyperlink{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52}{Feature\+Factory\+Abstract}.
 
 \hypertarget{class_area_feature_factory_a9e08ded8fb8dcf407edd0d7ec328129b}{\index{Area\+Feature\+Factory@{Area\+Feature\+Factory}!discretize@{discretize}}
 \index{discretize@{discretize}!Area\+Feature\+Factory@{Area\+Feature\+Factory}}

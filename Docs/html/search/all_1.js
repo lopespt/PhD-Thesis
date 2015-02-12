@@ -1,8 +1,8 @@
 var searchData=
 [
   ['addautoloop',['addAutoLoop',['../class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752',1,'RandomWalk']]],
-  ['addedge',['addEdge',['../class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d',1,'ComplexNetwork']]],
-  ['addnode',['addNode',['../class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f',1,'ComplexNetwork::addNode()'],['../class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c',1,'CachedComplexNetwork::addNode()']]],
+  ['addedge',['addEdge',['../class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d',1,'ComplexNetwork::addEdge()'],['../class_complex_network_v2.html#ac846f08c3e92c642aa887801adee6aec',1,'ComplexNetworkV2::addEdge()']]],
+  ['addnode',['addNode',['../class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f',1,'ComplexNetwork::addNode()'],['../class_complex_network_v2.html#ac63bea705ca74ac77cee3344e3f9609e',1,'ComplexNetworkV2::addNode()'],['../class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c',1,'CachedComplexNetwork::addNode()']]],
   ['alledges',['allEdges',['../class_complex_network_1_1_edge_iterator.html#a068bdce3c6e9cd86518aee5104e2fe64',1,'ComplexNetwork::EdgeIterator']]],
   ['alreadyparsed',['alreadyParsed',['../class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f',1,'SupervisedImage']]],
   ['areafeature',['AreaFeature',['../class_area_feature.html',1,'AreaFeature'],['../class_area_feature.html#af65d43c5c868babfb6c429464f36a898',1,'AreaFeature::AreaFeature()']]],

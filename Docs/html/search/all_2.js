@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['begin',['Begin',['../class_complex_network.html#ab02bc6912437322f146f6ce98b415759',1,'ComplexNetwork']]],
+  ['begin',['Begin',['../class_complex_network.html#ab02bc6912437322f146f6ce98b415759',1,'ComplexNetwork::Begin()'],['../class_complex_network_v2.html#ad7bfe6bd62d583f42f541f959ecc05f5',1,'ComplexNetworkV2::Begin()']]],
   ['boundary',['boundary',['../class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0',1,'Region']]],
   ['bt',['Bt',['../classcompute__modularity_1_1_bt.html',1,'compute_modularity']]],
   ['btnnext',['btnNext',['../class_database_visualizer_widget.html#ab1fc33de442247d3e112b84cde259b24',1,'DatabaseVisualizerWidget']]],

@@ -6,6 +6,7 @@
 #include <Utilities/SupervisedImage.hpp>
 #include <QMouseEvent>
 
+
 class SupervisedImageViewerWidget: public QLabel
 {
     Q_OBJECT

@@ -1,0 +1,16 @@
+repMult1 = readReport('/tmp/Implementation-Build/bin/guess_70p_1w_Mult.txt');
+disp('Mult 1 walk')
+disp(['mean = ', num2str(mean(repMult1.posicoes))]);
+disp(['std  = ', num2str(std(repMult1.posicoes))]);
+disp(['not identified  = ', num2str( max(size(  std(repMult1.posicoes))]);
+    
+
+
+
+%repMult2 = readReport('/tmp/Implementation-Build/bin/guess_70p_2w_Mult.txt');
+
+
+
+%repXor1 = readReport('/tmp/Implementation-Build/bin/guess_70p_1w_Xor.txt');
+%repXor2 = readReport('/tmp/Implementation-Build/bin/guess_70p_2w_Xor.txt');
+

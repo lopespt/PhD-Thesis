@@ -3,6 +3,11 @@
 #include <QHash>
 #include <QByteArray>
 #include <QString>
+#include <iostream>
+#include <vector>
+#include "AreaFeatureFactory.hpp"
+#include "LabelFeatureFactory.hpp"
+#include "OrientationFeatureFactory.hpp"
 
 FeatureAbstract::FeatureAbstract(int type, const char *featureName):type(type), featureName(featureName){
 
@@ -22,7 +27,12 @@ bool FeatureAbstract::operator==(const FeatureAbstract& other) const{
 
 }
 
-
 uint qHash(const FeatureAbstractKey& v){
     return qHash(QString(v.pointer->getType()).append(QByteArray( (const char*)v.pointer->data, v.pointer->data_size )));
 }
+
+std::ostream & operator<<(ostream& os, const FeatureAbstractPtr& node){
+    node.get()->WriteToStream(os);
+    return os;
+}
+

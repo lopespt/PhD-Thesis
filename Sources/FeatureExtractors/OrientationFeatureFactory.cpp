@@ -11,7 +11,7 @@ OrientationFeatureFactory::OrientationFeatureFactory(int discretization):Feature
 {
 }
 
-shared_ptr<FeatureAbstract> OrientationFeatureFactory::CreateFromRegion(const Region *r) const{
+FeatureAbstractPtr OrientationFeatureFactory::CreateFromRegion(const Region *r) const{
     QPolygon bond = r->getBoundary();
     QPoint leftMost=bond.first();
     QPoint rightMost=bond.first();
@@ -38,13 +38,13 @@ shared_ptr<FeatureAbstract> OrientationFeatureFactory::CreateFromRegion(const Re
     points.append(topMost);
     points.append(lowerMost);
 
-    return shared_ptr<FeatureAbstract>(discoverOrientation(points));
+    return FeatureAbstractPtr(discoverOrientation(points));
 }
 
-shared_ptr<FeatureAbstract> OrientationFeatureFactory::CreateFromStream(QDataStream &stream) const{
+FeatureAbstractPtr OrientationFeatureFactory::CreateFromStream(istream &stream) const{
     unsigned int i;
-    stream.readRawData((char*)&i, sizeof(unsigned int));
-    return shared_ptr<FeatureAbstract>(new OrientationFeature(i));
+    stream.read((char*)&i, sizeof(unsigned int));
+    return FeatureAbstractPtr(new OrientationFeature(i));
 }
 
 int OrientationFeatureFactory::discretize(float min, float max, float d, int val) const{

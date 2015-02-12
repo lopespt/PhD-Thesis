@@ -98,12 +98,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4b115dcdef61da4220ddfeef13f098f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#ad4b115dcdef61da4220ddfeef13f098f">FeatureFactoryAbstract</a> (int <a class="el" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>)</td></tr>
 <tr class="separator:ad4b115dcdef61da4220ddfeef13f098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5447f78c29f0ec2ad5b1fe65679381cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#a5447f78c29f0ec2ad5b1fe65679381cd">CreateFromRegion</a> (const <a class="el" href="class_region.html">Region</a> *r) const =0</td></tr>
-<tr class="separator:a5447f78c29f0ec2ad5b1fe65679381cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c49610f1851cda0a4f072427786362"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#ab6c49610f1851cda0a4f072427786362">CreateFromStream</a> (QDataStream &amp;stream) const =0</td></tr>
-<tr class="separator:ab6c49610f1851cda0a4f072427786362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62446de90f18d896ff650871d94bf9b7"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr<br class="typebreak" />
+&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#a62446de90f18d896ff650871d94bf9b7">CreateFromRegion</a> (const <a class="el" href="class_region.html">Region</a> *r) const =0</td></tr>
+<tr class="separator:a62446de90f18d896ff650871d94bf9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71cd5e5cadad3945fd7a1561d28bd52"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr<br class="typebreak" />
+&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#aa71cd5e5cadad3945fd7a1561d28bd52">CreateFromStream</a> (QDataStream &amp;stream) const =0</td></tr>
+<tr class="separator:aa71cd5e5cadad3945fd7a1561d28bd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d13b663824c6e49c8d195344b934a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3">getType</a> () const </td></tr>
 <tr class="separator:ab8d13b663824c6e49c8d195344b934a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af219e0ee978f0d7bf87761471a1ff96d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">~FeatureFactoryAbstract</a> ()</td></tr>
+<tr class="separator:af219e0ee978f0d7bf87761471a1ff96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -115,7 +119,7 @@ Inheritance diagram for FeatureFactoryAbstract:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_feature_factory_abstract__inherit__graph.png" border="0" usemap="#_feature_factory_abstract_inherit__map" alt="Inheritance graph"/></div>
 <map name="_feature_factory_abstract_inherit__map" id="_feature_factory_abstract_inherit__map">
-<area shape="rect" id="node2" href="class_area_feature_factory.html" title="{AreaFeatureFactory\n|&#45; discretization\l|+ AreaFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discretize()\l}" alt="" coords="5,189,167,311"/><area shape="rect" id="node3" href="class_label_feature_factory.html" title="{LabelFeatureFactory\n||+ LabelFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l}" alt="" coords="191,197,357,303"/><area shape="rect" id="node4" href="class_orientation_feature_factory.html" title="{OrientationFeatureFactory\n|&#45; discretization\l|+ OrientationFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discoverOrientation()\l&#45; distance()\l&#45; discretize()\l}" alt="" coords="381,175,578,325"/></map>
+<area shape="rect" id="node2" href="class_area_feature_factory.html" title="{AreaFeatureFactory\n|&#45; discretization\l|+ AreaFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discretize()\l}" alt="" coords="5,204,167,325"/><area shape="rect" id="node3" href="class_label_feature_factory.html" title="{LabelFeatureFactory\n||+ LabelFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l}" alt="" coords="191,211,357,318"/><area shape="rect" id="node4" href="class_orientation_feature_factory.html" title="{OrientationFeatureFactory\n|&#45; discretization\l|+ OrientationFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discoverOrientation()\l&#45; distance()\l&#45; discretize()\l}" alt="" coords="381,189,578,340"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for FeatureFactoryAbstract:</div>
@@ -139,8 +143,7 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5447f78c29f0ec2ad5b1fe65679381cd"></a>
+<a class="anchor" id="af219e0ee978f0d7bf87761471a1ff96d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -148,7 +151,31 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_feature_abstract.html">FeatureAbstract</a>* FeatureFactoryAbstract::CreateFromRegion </td>
+          <td class="memname">virtual FeatureFactoryAbstract::~FeatureFactoryAbstract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a62446de90f18d896ff650871d94bf9b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual shared_ptr&lt;<a class="el" href="class_feature_abstract.html">FeatureAbstract</a>&gt; FeatureFactoryAbstract::CreateFromRegion </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_region.html">Region</a> *&#160;</td>
           <td class="paramname"><em>r</em></td><td>)</td>
@@ -162,11 +189,11 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#ace31b961efc6bdfa405effffd7d63c96">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#a33051f7cf7d2e89a0e50c63dff2e26c6">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#abd2653fa523f2dc26a07e9cc04d9052a">LabelFeatureFactory</a>.</p>
+<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#aebaa392a4f7bba61c02edda7f932ee9c">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#a3d893ad35ccb2b7eb64dad199cbf9bc1">LabelFeatureFactory</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab6c49610f1851cda0a4f072427786362"></a>
+<a class="anchor" id="aa71cd5e5cadad3945fd7a1561d28bd52"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -174,7 +201,7 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_feature_abstract.html">FeatureAbstract</a>* FeatureFactoryAbstract::CreateFromStream </td>
+          <td class="memname">virtual shared_ptr&lt;<a class="el" href="class_feature_abstract.html">FeatureAbstract</a>&gt; FeatureFactoryAbstract::CreateFromStream </td>
           <td>(</td>
           <td class="paramtype">QDataStream &amp;&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
@@ -188,13 +215,13 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a5b208e0c81ee1a3062c0b00e48967914">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#a80529ff42d772a30fbcc930bd203b03d">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#aa13d40899e9b323c3785187a7dcfd842">LabelFeatureFactory</a>.</p>
+<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a00bccb3e3b4f551374f7f3e0a80e9837">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#ad2145ad17552e13fa4879dfed65816d1">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#a9dfd71aec20d35ab08ba42d547530b81">LabelFeatureFactory</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362_icgraph.png" border="0" usemap="#class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362_icgraph" alt=""/></div>
-<map name="class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362_icgraph" id="class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362_icgraph">
+<div class="center"><img src="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph.png" border="0" usemap="#class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph" alt=""/></div>
+<map name="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph" id="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph">
 <area shape="rect" id="node2" href="class_features_complex_network.html#a3f1fcc25a95cde233fecef194033497f" title="FeaturesComplexNetwork\l::load" alt="" coords="215,5,391,47"/></map>
 </div>
 </p>
@@ -253,7 +280,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

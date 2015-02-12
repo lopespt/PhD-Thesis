@@ -20,9 +20,9 @@ var searchData=
   ['region_2ecpp',['Region.cpp',['../_region_8cpp.html',1,'']]],
   ['region_2ehpp',['Region.hpp',['../_region_8hpp.html',1,'']]],
   ['regions',['regions',['../class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10',1,'SupervisedImage']]],
-  ['removeedge',['removeEdge',['../class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828',1,'ComplexNetwork']]],
+  ['removeedge',['removeEdge',['../class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828',1,'ComplexNetwork::removeEdge()'],['../class_complex_network_v2.html#ab35860c7516d18a06d08ca926d24d49d',1,'ComplexNetworkV2::removeEdge()']]],
   ['removehubs',['removeHubs',['../class_label_guesser.html#a34aabd99a651c08cd66df1ffa27767e5',1,'LabelGuesser']]],
-  ['removenode',['removeNode',['../class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600',1,'ComplexNetwork::removeNode()'],['../class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf',1,'CachedComplexNetwork::removeNode()']]],
+  ['removenode',['removeNode',['../class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600',1,'ComplexNetwork::removeNode()'],['../class_complex_network_v2.html#a8b1b3944a3e616e722322575a6a6562b',1,'ComplexNetworkV2::removeNode()'],['../class_cached_complex_network.html#a800aa02b94aa4bb73227e139cb246ddf',1,'CachedComplexNetwork::removeNode()']]],
   ['renderer',['renderer',['../class_g_main_window.html#a691d66ce40f6c4782519f50be5e70654',1,'GMainWindow']]],
   ['run',['run',['../class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011',1,'LabelsValidationExperiment::run()'],['../class_s_u_n_random_folder_generator.html#a768be016f5c824edf5d19eb5a88ab3b8',1,'SUNRandomFolderGenerator::run()']]]
 ];

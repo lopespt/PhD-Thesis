@@ -19,13 +19,6 @@ const char *helpText=\
 
 int main(int argc, char* argv[]){
 
-
-    printf("\n\n%f \n", (atan2(1, 0)*180./M_PI ));
-    printf("%f \n", (atan2(0, 1)*180./M_PI ));
-    printf("%f \n", (atan2(-1, 0)*180./M_PI));
-    printf("%f \n", (atan2(0, -1)*180./M_PI));
-    return 0;
-
     if(argc==1){
         printf("%s", helpText);
         return 0;
@@ -38,8 +31,6 @@ int main(int argc, char* argv[]){
 
     AreaFeatureExtractionWindow win(argv[1]);
     win.setVisible(true);
-
-
 
 
     return app.exec();

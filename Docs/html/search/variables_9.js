@@ -8,5 +8,5 @@ var searchData=
   ['index',['index',['../class_label_guesser.html#ae88b5f0ad103084c7c8d7326c4bd7251',1,'LabelGuesser::index()'],['../class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7',1,'ComplexNetworkConstructor::index()']]],
   ['inputfolder',['inputFolder',['../class_s_u_n_random_folder_generator.html#a3f9525ed0cca76258f89630fa1b23512',1,'SUNRandomFolderGenerator']]],
   ['interactor',['interactor',['../class_complex_network_viewer_widget.html#a7d25bd2946c21efa67c5c216eecaf410',1,'ComplexNetworkViewerWidget']]],
-  ['iter',['iter',['../class_complex_network_1_1_node_iterator.html#af7716e564d8333613a93bdd821ad6a97',1,'ComplexNetwork::NodeIterator::iter()'],['../class_complex_network_1_1_edge_iterator.html#aec1de93d958a15dbb9ee5c142a18f271',1,'ComplexNetwork::EdgeIterator::iter()']]]
+  ['iter',['iter',['../class_complex_network_1_1_node_iterator.html#af7716e564d8333613a93bdd821ad6a97',1,'ComplexNetwork::NodeIterator::iter()'],['../class_complex_network_1_1_edge_iterator.html#aec1de93d958a15dbb9ee5c142a18f271',1,'ComplexNetwork::EdgeIterator::iter()'],['../class_complex_network_v2_1_1_node_iterator.html#a0adc6d6ed60285560415c59e3e21fba8',1,'ComplexNetworkV2::NodeIterator::iter()']]]
 ];

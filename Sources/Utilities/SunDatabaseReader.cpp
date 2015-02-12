@@ -10,7 +10,6 @@ SunDatabaseReader::SunDatabaseReader(QString sourceDir):sourceDir(sourceDir){
     image_files_it = image_files.begin();
     supervision_files_it = supervision_files.begin();
     started = false;
-    
 }
 
 bool SunDatabaseReader::hasNext() const{

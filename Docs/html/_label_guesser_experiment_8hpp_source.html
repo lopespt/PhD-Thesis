@@ -93,45 +93,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LABELGUESSEREXPERIMENT_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QList&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span>QString;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_supervised_image.html">SupervisedImage</a>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract.html">FeatureAbstract</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_label_guesser_experiment.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_label_guesser_experiment.html">LabelGuesserExperiment</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    QList&lt;FeatureAbstract *&gt; <a class="code" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15">getLabelsHints</a>(<a class="code" href="class_supervised_image.html">SupervisedImage</a> &amp;img, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hide_idx );</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    QList&lt;QString&gt; <a class="code" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198">guessByIterativeRandomWalk</a>(<a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn,  QList&lt;FeatureAbstract*&gt; hints);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_label_guesser_experiment.html#ae0a57bb59569d9bc69363a68f888f646">getPosition</a>(QList&lt;QString&gt;, QString);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179">printLabels</a>(<a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> *cn);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_label_guesser_experiment.html#a7977b88b6e11448ed975f4b9cea368dc">LabelGuesserExperiment</a>();</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>QString;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_supervised_image.html">SupervisedImage</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract.html">FeatureAbstract</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_iterative_random_walk.html">IterativeRandomWalk</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_label_guesser_experiment.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_label_guesser_experiment.html">LabelGuesserExperiment</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QList&lt;shared_ptr&lt;const FeatureAbstract&gt; &gt; getLabelsHints(<a class="code" href="class_supervised_image.html">SupervisedImage</a> &amp;img, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hide_idx );</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    QList&lt;QString&gt; guessByIterativeRandomWalk(<a class="code" href="class_iterative_random_walk.html">IterativeRandomWalk</a> &amp;walk, <a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn,  QList&lt;shared_ptr&lt;const FeatureAbstract&gt; &gt; hints);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> getPosition(QList&lt;QString&gt;, QString);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> printLabels(<a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> *cn);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c">execute</a>(QString);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_label_guesser_experiment.html">LabelGuesserExperiment</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> execute(QString, QString);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // LABELGUESSEREXPERIMENT_HPP</span></div>
-<div class="ttc" id="class_label_guesser_experiment_html_a5d44dce75f708a361446e8c87545d198"><div class="ttname"><a href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198">LabelGuesserExperiment::guessByIterativeRandomWalk</a></div><div class="ttdeci">QList&lt; QString &gt; guessByIterativeRandomWalk(FeaturesComplexNetwork &amp;cn, QList&lt; FeatureAbstract * &gt; hints)</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:32</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html_a7977b88b6e11448ed975f4b9cea368dc"><div class="ttname"><a href="class_label_guesser_experiment.html#a7977b88b6e11448ed975f4b9cea368dc">LabelGuesserExperiment::LabelGuesserExperiment</a></div><div class="ttdeci">LabelGuesserExperiment()</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:15</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html"><div class="ttname"><a href="class_label_guesser_experiment.html">LabelGuesserExperiment</a></div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.hpp:9</div></div>
-<div class="ttc" id="class_features_complex_network_html"><div class="ttname"><a href="class_features_complex_network.html">FeaturesComplexNetwork</a></div><div class="ttdef"><b>Definition:</b> FeaturesComplexNetwork.hpp:12</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html_a835363da6b06ec1402823493ef933179"><div class="ttname"><a href="class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179">LabelGuesserExperiment::printLabels</a></div><div class="ttdeci">void printLabels(FeaturesComplexNetwork *cn)</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:83</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // LABELGUESSEREXPERIMENT_HPP</span></div>
+<div class="ttc" id="class_label_guesser_experiment_html"><div class="ttname"><a href="class_label_guesser_experiment.html">LabelGuesserExperiment</a></div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.hpp:13</div></div>
+<div class="ttc" id="class_features_complex_network_html"><div class="ttname"><a href="class_features_complex_network.html">FeaturesComplexNetwork</a></div><div class="ttdef"><b>Definition:</b> FeaturesComplexNetwork.hpp:13</div></div>
+<div class="ttc" id="class_iterative_random_walk_html"><div class="ttname"><a href="class_iterative_random_walk.html">IterativeRandomWalk</a></div><div class="ttdef"><b>Definition:</b> IterativeRandomWalk.hpp:11</div></div>
 <div class="ttc" id="class_feature_abstract_html"><div class="ttname"><a href="class_feature_abstract.html">FeatureAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureAbstract.hpp:8</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html_a6fef3579411d12ac3bfa27f7cff5e71c"><div class="ttname"><a href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c">LabelGuesserExperiment::execute</a></div><div class="ttdeci">void execute(QString)</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:91</div></div>
 <div class="ttc" id="class_supervised_image_html"><div class="ttname"><a href="class_supervised_image.html">SupervisedImage</a></div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:13</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html_a40090d4bc57138879aef276e4b77cd15"><div class="ttname"><a href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15">LabelGuesserExperiment::getLabelsHints</a></div><div class="ttdeci">QList&lt; FeatureAbstract * &gt; getLabelsHints(SupervisedImage &amp;img, unsigned int hide_idx)</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:19</div></div>
-<div class="ttc" id="class_label_guesser_experiment_html_ae0a57bb59569d9bc69363a68f888f646"><div class="ttname"><a href="class_label_guesser_experiment.html#ae0a57bb59569d9bc69363a68f888f646">LabelGuesserExperiment::getPosition</a></div><div class="ttdeci">int getPosition(QList&lt; QString &gt;, QString)</div><div class="ttdef"><b>Definition:</b> LabelGuesserExperiment.cpp:79</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 28 2015 09:04:11 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 13:14:47 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

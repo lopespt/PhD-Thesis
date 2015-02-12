@@ -2,6 +2,7 @@
 
 FeatureFactoryAbstract::FeatureFactoryAbstract(int type):type(type)
 {
+
 }
 
 int FeatureFactoryAbstract::getType() const{

@@ -1,11 +1,12 @@
 
 FIND_PACKAGE(Qt5Core REQUIRED)
-
+FIND_PACKAGE(lemon)
+INCLUDE_DIRECTORIES(${LEMON_INCLUDE_DIRS})
 
 #Create ComplexNetwork library
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 ADD_LIBRARY(ComplexNetwork ${Source_Files})
-TARGET_LINK_LIBRARIES(ComplexNetwork ${Qt5Core_LIBRARIES})
+TARGET_LINK_LIBRARIES(ComplexNetwork ${Qt5Core_LIBRARIES} ${LEMON_LIBRARIES})
 #SET_TARGET_PROPERTIES(ComplexNetwork PROPERTIES LINKER_LANGUAGE CXX)
 
 #Copy header files to root include dir

@@ -25,23 +25,23 @@ ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
 void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn){
     this->cn = &cn;
     char buffer[100];
-    QMap<const FeatureAbstract* , vtkIdType> vertices;
+    QMap<FeatureAbstractPtr , vtkIdType> vertices;
     vtkFloatArray *array = vtkFloatArray::New();
     vtkStringArray *array2 = vtkStringArray::New();
     array->SetName("pesos");
     array2->SetName("nomes");
 
-    for(FeaturesComplexNetwork::NodeIterator it = this->cn->Begin(); it!=this->cn->End(); it++){
+    for(FeaturesComplexNetwork::NodeIt it(cn); it!=INVALID; ++it){
         vtkIdType node_id = this->graph->AddVertex();
-        vertices[it->get()] = node_id;
-        array2->InsertValue(node_id, (it->get())->asString(buffer));
+        vertices[ cn.getNode(it) ] = node_id;
+        array2->InsertValue(node_id, cn.getNode(it)->asString(buffer));
     }
 
 
-    for(FeaturesComplexNetwork::NodeIterator i = this->cn->Begin(); i!=this->cn->End(); i++){
-        for(FeaturesComplexNetwork::EdgeIterator it = this->cn->EdgesBegin(i.getNodeId()); it!=this->cn->EdgesEnd(i.getNodeId()); it++){
-            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ this->cn->getNode(i.getNodeId())->get()], vertices[this->cn->getNode(it.getToNodeId())->get()]);
-            array->InsertValue(edgeId.Id, it->getWeight());
+    for(FeaturesComplexNetwork::NodeIt i(cn); i!=INVALID; ++i){
+        for(FeaturesComplexNetwork::OutArcIt it(cn, i); it!= INVALID; ++it){
+            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ this->cn->getNode(i)], vertices[this->cn->getNode( cn.target(it))]);
+            array->InsertValue(edgeId.Id, cn.getArcValue(it).getWeight());
         }
     }
     this->graph->GetEdgeData()->AddArray(array);

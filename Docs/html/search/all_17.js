@@ -3,6 +3,7 @@ var searchData=
   ['_7ecomplexnetworkviewerwidget',['~ComplexNetworkViewerWidget',['../class_complex_network_viewer_widget.html#a93e1496e8c5f5cd7e7e12243fdf14103',1,'ComplexNetworkViewerWidget']]],
   ['_7efeature',['~Feature',['../class_feature.html#a93090fa295d12d22fff7c9de84d0ab20',1,'Feature']]],
   ['_7efeatureabstract',['~FeatureAbstract',['../class_feature_abstract.html#ad4a51a8818f23596fc88ef89a79ff125',1,'FeatureAbstract']]],
+  ['_7efeaturefactoryabstract',['~FeatureFactoryAbstract',['../class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d',1,'FeatureFactoryAbstract']]],
   ['_7efeaturescomplexnetwork',['~FeaturesComplexNetwork',['../class_features_complex_network.html#a784109c6f62a250154d4b9add25b6409',1,'FeaturesComplexNetwork']]],
   ['_7egmainwindow',['~GMainWindow',['../class_g_main_window.html#a828128107557ff68eb709fd416b77cb2',1,'GMainWindow']]],
   ['_7eregion',['~Region',['../class_region.html#a3c3670fff78f7511d156e3b2f0bc6266',1,'Region']]],

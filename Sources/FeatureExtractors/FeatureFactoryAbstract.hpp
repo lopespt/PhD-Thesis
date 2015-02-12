@@ -2,11 +2,11 @@
 #define FEATUREFACTORYABSTRACT_HPP
 
 #include <memory>
-
+#include <vector>
 class FeatureAbstract;
 class QDataStream;
 class Region;
-
+class FeatureAbstractPtr;
 
 using namespace std;
 class FeatureFactoryAbstract
@@ -14,11 +14,13 @@ class FeatureFactoryAbstract
 private:
     int type;
 public:
+
     FeatureFactoryAbstract(int type);
-    virtual shared_ptr<FeatureAbstract> CreateFromRegion(const Region *r) const = 0;
-    virtual shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const = 0 ;
+    virtual FeatureAbstractPtr CreateFromRegion(const Region *r) const = 0;
+    virtual FeatureAbstractPtr CreateFromStream(istream &stream) const = 0 ;
     int getType() const;
     virtual ~FeatureFactoryAbstract(){}
 };
+
 
 #endif // FEATUREFACTORYABSTRACT_HPP

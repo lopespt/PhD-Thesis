@@ -18,9 +18,13 @@ private:
     int discretize(float min, float max, float d, int val) const;
 
 public:
+    OrientationFeatureFactory():OrientationFeatureFactory(10){
+
+    }
+
     OrientationFeatureFactory(int discretization);
-    shared_ptr<FeatureAbstract> CreateFromRegion(const Region *r) const;
-    virtual shared_ptr<FeatureAbstract> CreateFromStream(QDataStream &stream) const;
+    FeatureAbstractPtr CreateFromRegion(const Region *r) const;
+    FeatureAbstractPtr CreateFromStream(istream &stream) const;
 };
 
 #endif // ORIENTATIONFEATUREFACTORY_HPP

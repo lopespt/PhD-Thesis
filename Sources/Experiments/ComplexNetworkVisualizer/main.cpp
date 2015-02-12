@@ -22,9 +22,16 @@ int main(int argc, char *argv[]){
     QList<FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labelFactory;
     OrientationFeatureFactory orientationFactory(40);
+    AreaFeatureFactory areaFactory(10);
     factories.append(&labelFactory);
     factories.append(&orientationFactory);
+    factories.append(&areaFactory);
 
+    //FeaturesComplexNetwork cn;
+    //cn.load(parser.positionalArguments().first().toStdString().c_str(), factories);
+    //printf("%d\n", cn.getNumNodes());
+    //printf("%d\n", cn.getNumArcs());
+    //fflush(stdout);
 
     ComplexNetworkVisualizer visualizer;
     visualizer.load(parser.positionalArguments().first(), factories);

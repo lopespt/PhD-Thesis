@@ -14,7 +14,7 @@
 <area shape="rect" id="node5" href="$class_database_reader.html#abd37fa505553101bd8e18fd52547b7ee" title="DatabaseReader::getTotal" alt="" coords="387,107,565,133"/>
 <area shape="rect" id="node6" href="$class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="368,157,584,184"/>
 <area shape="rect" id="node7" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="376,208,576,235"/>
-<area shape="rect" id="node11" href="$class_complex_network_constructor.html#aa41263b4bf0e157d451652d772f84ef7" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="380,331,572,373"/>
+<area shape="rect" id="node11" href="$class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="380,331,572,373"/>
 <area shape="rect" id="node8" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="632,136,827,163"/>
 <area shape="rect" id="node9" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="875,95,1048,137"/>
 <area shape="rect" id="node10" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="875,161,1048,202"/>

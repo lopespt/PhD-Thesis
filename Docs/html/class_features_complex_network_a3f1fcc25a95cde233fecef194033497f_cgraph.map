@@ -1,5 +1,5 @@
 <map id="FeaturesComplexNetwork::load" name="FeaturesComplexNetwork::load">
 <area shape="rect" id="node2" href="$class_features_complex_network.html#a747eba83de2a19a39e3d9f230d055d59" title="FeaturesComplexNetwork\l::clear" alt="" coords="229,5,405,47"/>
 <area shape="rect" id="node3" href="$class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3" title="FeatureFactoryAbstract\l::getType" alt="" coords="237,71,398,112"/>
-<area shape="rect" id="node4" href="$class_feature_factory_abstract.html#ab6c49610f1851cda0a4f072427786362" title="FeatureFactoryAbstract\l::CreateFromStream" alt="" coords="237,136,398,177"/>
+<area shape="rect" id="node4" href="$class_feature_factory_abstract.html#aa71cd5e5cadad3945fd7a1561d28bd52" title="FeatureFactoryAbstract\l::CreateFromStream" alt="" coords="237,136,398,177"/>
 </map>

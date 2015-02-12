@@ -5,10 +5,10 @@ OrientationFeature::OrientationFeature(unsigned int value):Feature<unsigned int>
 }
 
 const char* OrientationFeature::asString(char *buffer) const{
-    sprintf(buffer,"|%u|", this->content);
+    sprintf(buffer,"ori(%u)", this->content);
     return buffer;
 }
 
-void OrientationFeature::WriteToStream(QDataStream &stream) const{
-    stream.writeRawData((char*)&this->content, sizeof(unsigned int));
+void OrientationFeature::WriteToStream(std::ostream &stream) const{
+    stream << type << "," << this->content;
 }

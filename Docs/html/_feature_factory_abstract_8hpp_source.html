@@ -92,34 +92,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="_feature_factory_abstract_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FEATUREFACTORYABSTRACT_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FEATUREFACTORYABSTRACT_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract.html">FeatureAbstract</a>;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span>QDataStream;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_feature_factory_abstract.html#ad4b115dcdef61da4220ddfeef13f098f">FeatureFactoryAbstract</a>(<span class="keywordtype">int</span> <a class="code" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_abstract.html">FeatureAbstract</a> *<a class="code" href="class_feature_factory_abstract.html#a5447f78c29f0ec2ad5b1fe65679381cd">CreateFromRegion</a>(<span class="keyword">const</span> <a class="code" href="class_region.html">Region</a> *r) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_abstract.html">FeatureAbstract</a> *<a class="code" href="class_feature_factory_abstract.html#ab6c49610f1851cda0a4f072427786362">CreateFromStream</a>(QDataStream &amp;stream) <span class="keyword">const</span> = 0 ;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3">getType</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif // FEATUREFACTORYABSTRACT_HPP</span></div>
-<div class="ttc" id="class_feature_factory_abstract_html_ab6c49610f1851cda0a4f072427786362"><div class="ttname"><a href="class_feature_factory_abstract.html#ab6c49610f1851cda0a4f072427786362">FeatureFactoryAbstract::CreateFromStream</a></div><div class="ttdeci">virtual FeatureAbstract * CreateFromStream(QDataStream &amp;stream) const =0</div></div>
-<div class="ttc" id="class_feature_factory_abstract_html"><div class="ttname"><a href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:8</div></div>
-<div class="ttc" id="class_feature_factory_abstract_html_ad4b115dcdef61da4220ddfeef13f098f"><div class="ttname"><a href="class_feature_factory_abstract.html#ad4b115dcdef61da4220ddfeef13f098f">FeatureFactoryAbstract::FeatureFactoryAbstract</a></div><div class="ttdeci">FeatureFactoryAbstract(int type)</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.cpp:3</div></div>
-<div class="ttc" id="class_feature_factory_abstract_html_acdc4ca5ce9d35423f420c53081f0f238"><div class="ttname"><a href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">FeatureFactoryAbstract::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:11</div></div>
-<div class="ttc" id="class_feature_factory_abstract_html_ab8d13b663824c6e49c8d195344b934a3"><div class="ttname"><a href="class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3">FeatureFactoryAbstract::getType</a></div><div class="ttdeci">int getType() const </div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.cpp:7</div></div>
-<div class="ttc" id="class_feature_factory_abstract_html_a5447f78c29f0ec2ad5b1fe65679381cd"><div class="ttname"><a href="class_feature_factory_abstract.html#a5447f78c29f0ec2ad5b1fe65679381cd">FeatureFactoryAbstract::CreateFromRegion</a></div><div class="ttdeci">virtual FeatureAbstract * CreateFromRegion(const Region *r) const =0</div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract.html">FeatureAbstract</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>QDataStream;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a>(<span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> shared_ptr&lt;FeatureAbstract&gt; CreateFromRegion(<span class="keyword">const</span> <a class="code" href="class_region.html">Region</a> *r) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> shared_ptr&lt;FeatureAbstract&gt; CreateFromStream(QDataStream &amp;stream) <span class="keyword">const</span> = 0 ;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> getType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">   21</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">~FeatureFactoryAbstract</a>(){}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // FEATUREFACTORYABSTRACT_HPP</span></div>
+<div class="ttc" id="class_feature_factory_abstract_html_af219e0ee978f0d7bf87761471a1ff96d"><div class="ttname"><a href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">FeatureFactoryAbstract::~FeatureFactoryAbstract</a></div><div class="ttdeci">virtual ~FeatureFactoryAbstract()</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:21</div></div>
+<div class="ttc" id="class_feature_factory_abstract_html"><div class="ttname"><a href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:12</div></div>
+<div class="ttc" id="class_feature_factory_abstract_html_acdc4ca5ce9d35423f420c53081f0f238"><div class="ttname"><a href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">FeatureFactoryAbstract::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:15</div></div>
 <div class="ttc" id="class_feature_abstract_html"><div class="ttname"><a href="class_feature_abstract.html">FeatureAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureAbstract.hpp:8</div></div>
 <div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 28 2015 09:04:11 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 13:14:47 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

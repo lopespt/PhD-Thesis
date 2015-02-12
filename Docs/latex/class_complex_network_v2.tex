@@ -1,0 +1,218 @@
+\hypertarget{class_complex_network_v2}{\section{Complex\+Network\+V2$<$ N, E $>$ Class Template Reference}
+\label{class_complex_network_v2}\index{Complex\+Network\+V2$<$ N, E $>$@{Complex\+Network\+V2$<$ N, E $>$}}
+}
+
+
+{\ttfamily \#include $<$Complex\+Network\+V2.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_complex_network_v2_1_1_edge_iterator}{Edge\+Iterator}
+\item 
+class \hyperlink{class_complex_network_v2_1_1_node_iterator}{Node\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_complex_network_v2_ad0bc60844e1006779e826217958f9eb3}{Complex\+Network\+V2} (bool directed=true)
+\item 
+virtual \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} \hyperlink{class_complex_network_v2_ac63bea705ca74ac77cee3344e3f9609e}{add\+Node} (const N \&n)
+\item 
+virtual N $\ast$ \hyperlink{class_complex_network_v2_a608da16787ef57d7ae965e33ffa87469}{get\+Node} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} id)
+\item 
+virtual bool \hyperlink{class_complex_network_v2_a8b1b3944a3e616e722322575a6a6562b}{remove\+Node} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} id)
+\item 
+virtual void \hyperlink{class_complex_network_v2_ac846f08c3e92c642aa887801adee6aec}{add\+Edge} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} from, \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} to, const E \&e)
+\item 
+virtual E $\ast$ \hyperlink{class_complex_network_v2_a8eb2185022509ed813a330a9c90897b8}{get\+Edge} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} from, \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} to)
+\item 
+virtual E $\ast$ \hyperlink{class_complex_network_v2_a2379e544ee9681a2003504eb5630e3a3}{get\+Edge\+From\+Edge\+Id} (\hyperlink{_complex_network_8hpp_ad7d18d7b90a45b6625704e92d10aa3a0}{edge\+\_\+id} id)
+\item 
+virtual bool \hyperlink{class_complex_network_v2_ab35860c7516d18a06d08ca926d24d49d}{remove\+Edge} (\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} from, \hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} to)
+\item 
+virtual void \hyperlink{class_complex_network_v2_a85ae14174dbd7f18e652495dea73e5fe}{clear} ()
+\item 
+unsigned int \hyperlink{class_complex_network_v2_a62d987623c1335d7b93b3f00e266e576}{get\+Num\+Nodes} () const 
+\item 
+unsigned int \hyperlink{class_complex_network_v2_ae434858a60a9dde2227c596ff000e5df}{get\+Num\+Edges} () const 
+\item 
+\hyperlink{class_complex_network_v2_1_1_node_iterator}{Node\+Iterator} \hyperlink{class_complex_network_v2_ad7bfe6bd62d583f42f541f959ecc05f5}{Begin} ()
+\item 
+\hyperlink{class_complex_network_v2_1_1_node_iterator}{Node\+Iterator} \hyperlink{class_complex_network_v2_a3a82c4a7d3579015eaf4a0c064ff7738}{End} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ unique\+\_\+ptr$<$ E $>$ $>$ $>$ \hyperlink{class_complex_network_v2_acc11e6426cbfd381b54ee764dd6846df}{edges}
+\item 
+vector$<$ unique\+\_\+ptr$<$ N $>$ $>$ \hyperlink{class_complex_network_v2_a8b02e8553951e064475a31e5e01c9186}{nodes}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for Complex\+Network\+V2$<$ N, E $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_complex_network_v2__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_complex_network_v2_ad0bc60844e1006779e826217958f9eb3}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\index{Complex\+Network\+V2@{Complex\+Network\+V2}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{Complex\+Network\+V2}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::{\bf Complex\+Network\+V2} (
+\begin{DoxyParamCaption}
+\item[{bool}]{directed = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_complex_network_v2_ad0bc60844e1006779e826217958f9eb3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_complex_network_v2_ac846f08c3e92c642aa887801adee6aec}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{add\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ void {\bf Complex\+Network\+V2}$<$ N, E $>$\+::add\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{from, }
+\item[{{\bf node\+\_\+id}}]{to, }
+\item[{const E \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_ac846f08c3e92c642aa887801adee6aec}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_complex_network_v2_ac846f08c3e92c642aa887801adee6aec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_v2_ac63bea705ca74ac77cee3344e3f9609e}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{add\+Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ {\bf node\+\_\+id} {\bf Complex\+Network\+V2}$<$ N, E $>$\+::add\+Node (
+\begin{DoxyParamCaption}
+\item[{const N \&}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_ac63bea705ca74ac77cee3344e3f9609e}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_complex_network_v2_ac63bea705ca74ac77cee3344e3f9609e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_v2_ad7bfe6bd62d583f42f541f959ecc05f5}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!Begin@{Begin}}
+\index{Begin@{Begin}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{Begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::{\bf Node\+Iterator} {\bf Complex\+Network\+V2}$<$ N, E $>$\+::Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_network_v2_ad7bfe6bd62d583f42f541f959ecc05f5}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_complex_network_v2_ad7bfe6bd62d583f42f541f959ecc05f5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_v2_a85ae14174dbd7f18e652495dea73e5fe}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!clear@{clear}}
+\index{clear@{clear}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ void {\bf Complex\+Network\+V2}$<$ N, E $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_a85ae14174dbd7f18e652495dea73e5fe}
+\hypertarget{class_complex_network_v2_a3a82c4a7d3579015eaf4a0c064ff7738}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!End@{End}}
+\index{End@{End}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{End}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::{\bf Node\+Iterator} {\bf Complex\+Network\+V2}$<$ N, E $>$\+::End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_network_v2_a3a82c4a7d3579015eaf4a0c064ff7738}
+\hypertarget{class_complex_network_v2_a8eb2185022509ed813a330a9c90897b8}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!get\+Edge@{get\+Edge}}
+\index{get\+Edge@{get\+Edge}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{get\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ E $\ast$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::get\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{from, }
+\item[{{\bf node\+\_\+id}}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_a8eb2185022509ed813a330a9c90897b8}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_complex_network_v2_a8eb2185022509ed813a330a9c90897b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_complex_network_v2_a2379e544ee9681a2003504eb5630e3a3}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!get\+Edge\+From\+Edge\+Id@{get\+Edge\+From\+Edge\+Id}}
+\index{get\+Edge\+From\+Edge\+Id@{get\+Edge\+From\+Edge\+Id}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{get\+Edge\+From\+Edge\+Id}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N, typename E$>$ virtual E$\ast$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::get\+Edge\+From\+Edge\+Id (
+\begin{DoxyParamCaption}
+\item[{{\bf edge\+\_\+id}}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_complex_network_v2_a2379e544ee9681a2003504eb5630e3a3}
+\hypertarget{class_complex_network_v2_a608da16787ef57d7ae965e33ffa87469}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{get\+Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ N $\ast$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::get\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_a608da16787ef57d7ae965e33ffa87469}
+\hypertarget{class_complex_network_v2_ae434858a60a9dde2227c596ff000e5df}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!get\+Num\+Edges@{get\+Num\+Edges}}
+\index{get\+Num\+Edges@{get\+Num\+Edges}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{get\+Num\+Edges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ unsigned int {\bf Complex\+Network\+V2}$<$ N, E $>$\+::get\+Num\+Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_complex_network_v2_ae434858a60a9dde2227c596ff000e5df}
+\hypertarget{class_complex_network_v2_a62d987623c1335d7b93b3f00e266e576}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!get\+Num\+Nodes@{get\+Num\+Nodes}}
+\index{get\+Num\+Nodes@{get\+Num\+Nodes}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{get\+Num\+Nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ unsigned int {\bf Complex\+Network\+V2}$<$ N, E $>$\+::get\+Num\+Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_complex_network_v2_a62d987623c1335d7b93b3f00e266e576}
+\hypertarget{class_complex_network_v2_ab35860c7516d18a06d08ca926d24d49d}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!remove\+Edge@{remove\+Edge}}
+\index{remove\+Edge@{remove\+Edge}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{remove\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ bool {\bf Complex\+Network\+V2}$<$ N, E $>$\+::remove\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{from, }
+\item[{{\bf node\+\_\+id}}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_ab35860c7516d18a06d08ca926d24d49d}
+\hypertarget{class_complex_network_v2_a8b1b3944a3e616e722322575a6a6562b}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!remove\+Node@{remove\+Node}}
+\index{remove\+Node@{remove\+Node}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{remove\+Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N , typename E $>$ bool {\bf Complex\+Network\+V2}$<$ N, E $>$\+::remove\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf node\+\_\+id}}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_complex_network_v2_a8b1b3944a3e616e722322575a6a6562b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_complex_network_v2_acc11e6426cbfd381b54ee764dd6846df}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!edges@{edges}}
+\index{edges@{edges}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N, typename E$>$ vector$<$ vector$<$ unique\+\_\+ptr$<$E$>$ $>$ $>$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::edges\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_v2_acc11e6426cbfd381b54ee764dd6846df}
+\hypertarget{class_complex_network_v2_a8b02e8553951e064475a31e5e01c9186}{\index{Complex\+Network\+V2@{Complex\+Network\+V2}!nodes@{nodes}}
+\index{nodes@{nodes}!Complex\+Network\+V2@{Complex\+Network\+V2}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename N, typename E$>$ vector$<$ unique\+\_\+ptr$<$N$>$ $>$ {\bf Complex\+Network\+V2}$<$ N, E $>$\+::nodes\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_v2_a8b02e8553951e064475a31e5e01c9186}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Complex\+Network/\hyperlink{_complex_network_v2_8hpp}{Complex\+Network\+V2.\+hpp}\end{DoxyCompactItemize}

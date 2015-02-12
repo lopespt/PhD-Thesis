@@ -1,8 +1,9 @@
 <map id="Sources/Utilities/RandomWalk.hpp" name="Sources/Utilities/RandomWalk.hpp">
-<area shape="rect" id="node2" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="110,191,365,218"/>
-<area shape="rect" id="node9" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="635,95,808,136"/>
-<area shape="rect" id="node17" href="$_cached_complex_network_8hpp.html" title="Utilities/CachedComplexNetwork.hpp" alt="" coords="279,102,521,129"/>
-<area shape="rect" id="node10" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="963,184,1141,225"/>
-<area shape="rect" id="node13" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="441,184,618,225"/>
-<area shape="rect" id="node14" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="643,191,715,218"/>
+<area shape="rect" id="node2" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="989,191,1244,218"/>
+<area shape="rect" id="node9" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="459,95,633,136"/>
+<area shape="rect" id="node20" href="$_cached_complex_network_8hpp.html" title="Utilities/CachedComplexNetwork.hpp" alt="" coords="833,102,1075,129"/>
+<area shape="rect" id="node10" href="$_complex_network_v2_8hpp.html" title="ComplexNetwork/ComplexNetwork\lV2.hpp" alt="" coords="431,184,661,225"/>
+<area shape="rect" id="node14" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="685,184,863,225"/>
+<area shape="rect" id="node17" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="5,184,183,225"/>
+<area shape="rect" id="node18" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="207,191,279,218"/>
 </map>

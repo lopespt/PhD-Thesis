@@ -2,10 +2,11 @@
 #include "AreaFeatureFactory.hpp"
 #include "AreaFeature.hpp"
 
+
 AreaFeatureFactory::AreaFeatureFactory(int discretization):FeatureFactoryAbstract(1), discretization(discretization){
 }
 
-shared_ptr<FeatureAbstract> AreaFeatureFactory::CreateFromRegion(const Region* region) const{
+FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region* region) const{
     float vect;
     region->getMask();
     float area = 0;
@@ -21,12 +22,16 @@ shared_ptr<FeatureAbstract> AreaFeatureFactory::CreateFromRegion(const Region* r
     //Discretization
 
     vect = ((int)(vect * discretization))/(float)discretization;
-    return shared_ptr<FeatureAbstract>(new AreaFeature(vect));
+    return FeatureAbstractPtr(new AreaFeature(vect));
 }
 
-shared_ptr<FeatureAbstract> AreaFeatureFactory::CreateFromStream(QDataStream &stream) const{
-    shared_ptr<FeatureAbstract> f= shared_ptr<FeatureAbstract>(new AreaFeature(0));
-    stream >> ((AreaFeature*)f.get())->content;
+FeatureAbstractPtr AreaFeatureFactory::CreateFromStream(istream &stream) const{
+    AreaFeature* temp = new AreaFeature(0);
+    int type;
+    stream >> type;
+    stream.ignore();
+    stream >> temp->content;
+    FeatureAbstractPtr f= FeatureAbstractPtr(move(temp));
     return f;
 }
 

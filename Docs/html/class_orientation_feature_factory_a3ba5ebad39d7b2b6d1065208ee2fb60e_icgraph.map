@@ -1,5 +1,5 @@
 <map id="OrientationFeatureFactory::discoverOrientation" name="OrientationFeatureFactory::discoverOrientation">
-<area shape="rect" id="node2" href="$class_orientation_feature_factory.html#ace31b961efc6bdfa405effffd7d63c96" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="231,5,408,47"/>
+<area shape="rect" id="node2" href="$class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="231,5,408,47"/>
 <area shape="rect" id="node3" href="$class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="456,13,607,39"/>
 <area shape="rect" id="node4" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="655,13,868,39"/>
 <area shape="rect" id="node5" href="$_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="916,13,967,39"/>

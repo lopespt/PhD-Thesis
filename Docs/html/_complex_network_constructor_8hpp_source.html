@@ -104,50 +104,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QHash&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_features_complex_network_8hpp.html">Utilities/FeaturesComplexNetwork.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">   23</a></span>&#160;        QHash&lt;FeatureAbstractKey , node_id&gt; <a class="code" href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">index</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">   25</a></span>&#160;        <a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;<a class="code" href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">cn</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">   26</a></span>&#160;        <a class="code" href="class_database_reader.html">DatabaseReader</a> &amp;<a class="code" href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">reader</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">   27</a></span>&#160;        QList&lt;FeatureFactoryAbstract*&gt; <a class="code" href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">extractors</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#afc016404ca7dda4b05807e3ca004c308">   28</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> time=1;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> makeCoOccurrences(QLinkedList&lt;FeatureAbstract*&gt; &amp;features, QList&lt;int&gt; &amp;regionsIds);</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#a9d3e346719dc1f8f3093a48b8d44e669">   31</a></span>&#160;        <span class="keywordtype">float</span> lambda=80;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#aa7fe374b9733338b8176708f77d29c55">   33</a></span>&#160;        <span class="keywordtype">float</span> learningRate=0.3;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">float</span> recorrencia(<span class="keywordtype">float</span> time);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a>(<a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn, <a class="code" href="class_database_reader.html">DatabaseReader</a> &amp;reader, QList&lt;FeatureFactoryAbstract*&gt; extractors);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> build();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_complex_network_constructor_html_aa099456a58edc5c1885323061206b3e6"><div class="ttname"><a href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">ComplexNetworkConstructor::cn</a></div><div class="ttdeci">FeaturesComplexNetwork &amp; cn</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:25</div></div>
-<div class="ttc" id="class_complex_network_constructor_html"><div class="ttname"><a href="class_complex_network_constructor.html">ComplexNetworkConstructor</a></div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:19</div></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">   24</a></span>&#160;        QHash&lt;FeatureAbstractKey , node_id&gt; <a class="code" href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">index</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">   26</a></span>&#160;        <a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;<a class="code" href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">cn</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">   27</a></span>&#160;        <a class="code" href="class_database_reader.html">DatabaseReader</a> &amp;<a class="code" href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">reader</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">   28</a></span>&#160;        QList&lt;FeatureFactoryAbstract*&gt; <a class="code" href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">extractors</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#afc016404ca7dda4b05807e3ca004c308">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> time=1;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> makeCoOccurrences(QLinkedList&lt; shared_ptr&lt;const FeatureAbstract&gt;&gt; features, QList&lt;int&gt; &amp;regionsIds);</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#a9d3e346719dc1f8f3093a48b8d44e669">   32</a></span>&#160;        <span class="keywordtype">float</span> lambda=80;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_complex_network_constructor.html#aa7fe374b9733338b8176708f77d29c55">   34</a></span>&#160;        <span class="keywordtype">float</span> learningRate=0.3;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">float</span> recorrencia(<span class="keywordtype">float</span> time);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_complex_network_constructor.html">ComplexNetworkConstructor</a>(<a class="code" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn, <a class="code" href="class_database_reader.html">DatabaseReader</a> &amp;reader, QList&lt;FeatureFactoryAbstract*&gt; extractors);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> build();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_complex_network_constructor_html_aa099456a58edc5c1885323061206b3e6"><div class="ttname"><a href="class_complex_network_constructor.html#aa099456a58edc5c1885323061206b3e6">ComplexNetworkConstructor::cn</a></div><div class="ttdeci">FeaturesComplexNetwork &amp; cn</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:26</div></div>
+<div class="ttc" id="class_complex_network_constructor_html"><div class="ttname"><a href="class_complex_network_constructor.html">ComplexNetworkConstructor</a></div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:20</div></div>
 <div class="ttc" id="_feature_8hpp_html"><div class="ttname"><a href="_feature_8hpp.html">Feature.hpp</a></div></div>
 <div class="ttc" id="_database_reader_8hpp_html"><div class="ttname"><a href="_database_reader_8hpp.html">DatabaseReader.hpp</a></div></div>
-<div class="ttc" id="class_features_complex_network_html"><div class="ttname"><a href="class_features_complex_network.html">FeaturesComplexNetwork</a></div><div class="ttdef"><b>Definition:</b> FeaturesComplexNetwork.hpp:12</div></div>
+<div class="ttc" id="class_features_complex_network_html"><div class="ttname"><a href="class_features_complex_network.html">FeaturesComplexNetwork</a></div><div class="ttdef"><b>Definition:</b> FeaturesComplexNetwork.hpp:13</div></div>
 <div class="ttc" id="_features_complex_network_8hpp_html"><div class="ttname"><a href="_features_complex_network_8hpp.html">FeaturesComplexNetwork.hpp</a></div></div>
 <div class="ttc" id="_link_8hpp_html"><div class="ttname"><a href="_link_8hpp.html">Link.hpp</a></div></div>
 <div class="ttc" id="class_database_reader_html"><div class="ttname"><a href="class_database_reader.html">DatabaseReader</a></div><div class="ttdef"><b>Definition:</b> DatabaseReader.hpp:7</div></div>
 <div class="ttc" id="_region_8hpp_html"><div class="ttname"><a href="_region_8hpp.html">Region.hpp</a></div></div>
-<div class="ttc" id="class_complex_network_constructor_html_ae79b538a8b9253cd71de5fef1be1c18a"><div class="ttname"><a href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">ComplexNetworkConstructor::extractors</a></div><div class="ttdeci">QList&lt; FeatureFactoryAbstract * &gt; extractors</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:27</div></div>
-<div class="ttc" id="class_complex_network_constructor_html_ad616573ee07edff462c552d3fc2bfce7"><div class="ttname"><a href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">ComplexNetworkConstructor::index</a></div><div class="ttdeci">QHash&lt; FeatureAbstractKey, node_id &gt; index</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:23</div></div>
-<div class="ttc" id="class_complex_network_constructor_html_ad223ad7e464ff159d91a89deb4e943cc"><div class="ttname"><a href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">ComplexNetworkConstructor::reader</a></div><div class="ttdeci">DatabaseReader &amp; reader</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:26</div></div>
+<div class="ttc" id="class_complex_network_constructor_html_ae79b538a8b9253cd71de5fef1be1c18a"><div class="ttname"><a href="class_complex_network_constructor.html#ae79b538a8b9253cd71de5fef1be1c18a">ComplexNetworkConstructor::extractors</a></div><div class="ttdeci">QList&lt; FeatureFactoryAbstract * &gt; extractors</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:28</div></div>
+<div class="ttc" id="class_complex_network_constructor_html_ad616573ee07edff462c552d3fc2bfce7"><div class="ttname"><a href="class_complex_network_constructor.html#ad616573ee07edff462c552d3fc2bfce7">ComplexNetworkConstructor::index</a></div><div class="ttdeci">QHash&lt; FeatureAbstractKey, node_id &gt; index</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:24</div></div>
+<div class="ttc" id="class_complex_network_constructor_html_ad223ad7e464ff159d91a89deb4e943cc"><div class="ttname"><a href="class_complex_network_constructor.html#ad223ad7e464ff159d91a89deb4e943cc">ComplexNetworkConstructor::reader</a></div><div class="ttdeci">DatabaseReader &amp; reader</div><div class="ttdef"><b>Definition:</b> ComplexNetworkConstructor.hpp:27</div></div>
 <div class="ttc" id="_supervised_image_8hpp_html"><div class="ttname"><a href="_supervised_image_8hpp.html">SupervisedImage.hpp</a></div></div>
 <div class="ttc" id="_area_feature_factory_8hpp_html"><div class="ttname"><a href="_area_feature_factory_8hpp.html">AreaFeatureFactory.hpp</a></div></div>
 <div class="ttc" id="_complex_network_8hpp_html"><div class="ttname"><a href="_complex_network_8hpp.html">ComplexNetwork.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 28 2015 09:04:12 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 13:14:47 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

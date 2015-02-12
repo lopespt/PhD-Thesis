@@ -13,6 +13,6 @@ const char* LabelFeature::asString(char *buffer) const{
     return buffer;
 }
 
-void LabelFeature::WriteToStream(QDataStream &stream) const{
-    stream.writeRawData((char*)&this->content, sizeof(label));
+void LabelFeature::WriteToStream(std::ostream &stream) const{
+    stream << type << "," << content.value;
 }

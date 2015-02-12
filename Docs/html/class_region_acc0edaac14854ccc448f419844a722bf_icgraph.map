@@ -1,4 +1,4 @@
 <map id="Region::getPixel" name="Region::getPixel">
-<area shape="rect" id="node2" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="165,13,324,39"/>
-<area shape="rect" id="node3" href="$class_area_feature_extractor.html#a9dfd50444d94b1fd82fdd6ec0f9163c3" title="AreaFeatureExtractor\l::doExtraction" alt="" coords="372,5,512,47"/>
+<area shape="rect" id="node2" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="172,13,339,39"/>
+<area shape="rect" id="node3" href="$class_area_feature_factory.html#aebaa392a4f7bba61c02edda7f932ee9c" title="AreaFeatureFactory\l::CreateFromRegion" alt="" coords="387,5,529,47"/>
 </map>

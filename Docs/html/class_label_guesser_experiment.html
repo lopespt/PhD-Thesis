@@ -98,15 +98,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7977b88b6e11448ed975f4b9cea368dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a7977b88b6e11448ed975f4b9cea368dc">LabelGuesserExperiment</a> ()</td></tr>
 <tr class="separator:a7977b88b6e11448ed975f4b9cea368dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fef3579411d12ac3bfa27f7cff5e71c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c">execute</a> (QString)</td></tr>
-<tr class="separator:a6fef3579411d12ac3bfa27f7cff5e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59f249adb0e74044f30f2847006743f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f">execute</a> (QString, QString)</td></tr>
+<tr class="separator:ac59f249adb0e74044f30f2847006743f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a40090d4bc57138879aef276e4b77cd15"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15">getLabelsHints</a> (<a class="el" href="class_supervised_image.html">SupervisedImage</a> &amp;img, unsigned int hide_idx)</td></tr>
-<tr class="separator:a40090d4bc57138879aef276e4b77cd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d44dce75f708a361446e8c87545d198"><td class="memItemLeft" align="right" valign="top">QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198">guessByIterativeRandomWalk</a> (<a class="el" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn, QList&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> * &gt; hints)</td></tr>
-<tr class="separator:a5d44dce75f708a361446e8c87545d198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff519caff30a7cfe4962b6645788577c"><td class="memItemLeft" align="right" valign="top">QList&lt; shared_ptr&lt; const <br class="typebreak" />
+<a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#aff519caff30a7cfe4962b6645788577c">getLabelsHints</a> (<a class="el" href="class_supervised_image.html">SupervisedImage</a> &amp;img, unsigned int hide_idx)</td></tr>
+<tr class="separator:aff519caff30a7cfe4962b6645788577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0305abdcc36d592d5e92187b35be9169"><td class="memItemLeft" align="right" valign="top">QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a0305abdcc36d592d5e92187b35be9169">guessByIterativeRandomWalk</a> (<a class="el" href="class_iterative_random_walk.html">IterativeRandomWalk</a> &amp;walk, <a class="el" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;cn, QList&lt; shared_ptr&lt; const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &gt; hints)</td></tr>
+<tr class="separator:a0305abdcc36d592d5e92187b35be9169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a57bb59569d9bc69363a68f888f646"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#ae0a57bb59569d9bc69363a68f888f646">getPosition</a> (QList&lt; QString &gt;, QString)</td></tr>
 <tr class="separator:ae0a57bb59569d9bc69363a68f888f646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835363da6b06ec1402823493ef933179"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179">printLabels</a> (<a class="el" href="class_features_complex_network.html">FeaturesComplexNetwork</a> *cn)</td></tr>
@@ -116,8 +117,6 @@ Private Member Functions</h2></td></tr>
 Collaboration diagram for LabelGuesserExperiment:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_label_guesser_experiment__coll__graph.png" border="0" usemap="#_label_guesser_experiment_coll__map" alt="Collaboration graph"/></div>
-<map name="_label_guesser_experiment_coll__map" id="_label_guesser_experiment_coll__map">
-</map>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7977b88b6e11448ed975f4b9cea368dc"></a>
@@ -136,7 +135,7 @@ Collaboration diagram for LabelGuesserExperiment:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6fef3579411d12ac3bfa27f7cff5e71c"></a>
+<a class="anchor" id="ac59f249adb0e74044f30f2847006743f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -144,8 +143,18 @@ Collaboration diagram for LabelGuesserExperiment:</div>
           <td class="memname">void LabelGuesserExperiment::execute </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>outputFile</em></td><td>)</td>
+          <td class="paramname"><em>inputFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>outputFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,24 +162,24 @@ Collaboration diagram for LabelGuesserExperiment:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_cgraph.png" border="0" usemap="#class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_cgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_cgraph" id="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_cgraph">
-<area shape="rect" id="node2" href="class_k_fold_database_reader.html#a2a94b70899a67487649330c72a545e5a" title="KFoldDatabaseReader\l::getTrainReader" alt="" coords="251,121,408,162"/><area shape="rect" id="node3" href="class_k_fold_database_reader.html#a5a39e6986d09d77427d98c2ba7a25131" title="KFoldDatabaseReader\l::getTestReader" alt="" coords="251,186,408,227"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="233,251,425,293"/><area shape="rect" id="node9" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="489,317,689,344"/><area shape="rect" id="node22" href="class_features_complex_network.html#a8e1b87e9664a72c2062aae67bad94261" title="FeaturesComplexNetwork\l::updateIndex" alt="" coords="501,734,677,775"/><area shape="rect" id="node25" href="class_k_fold_database_reader_1_1_path_database_reader.html#ac6c27452f10e49e7d0d425a56926277c" title="KFoldDatabaseReader\l::PathDatabaseReader\l::hasNext" alt="" coords="251,551,408,607"/><area shape="rect" id="node26" href="class_k_fold_database_reader_1_1_path_database_reader.html#ad92c0ac794e71748a01e7e6f8103342a" title="KFoldDatabaseReader\l::PathDatabaseReader\l::getTotal" alt="" coords="251,631,408,687"/><area shape="rect" id="node27" href="class_k_fold_database_reader_1_1_path_database_reader.html#a3ec743925701640642ef69b1731d21ea" title="KFoldDatabaseReader\l::PathDatabaseReader\l::readNext" alt="" coords="251,711,408,767"/><area shape="rect" id="node28" href="class_label_guesser_experiment.html#a40090d4bc57138879aef276e4b77cd15" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="243,369,415,410"/><area shape="rect" id="node31" href="class_label_guesser_experiment.html#a5d44dce75f708a361446e8c87545d198" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="225,434,433,475"/><area shape="rect" id="node37" href="class_label_guesser_experiment.html#ae0a57bb59569d9bc69363a68f888f646" title="LabelGuesserExperiment\l::getPosition" alt="" coords="243,791,415,833"/><area shape="rect" id="node5" href="class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe" title="DatabaseReader::hasNext" alt="" coords="500,267,679,293"/><area shape="rect" id="node6" href="class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081" title="DatabaseReader::readNext" alt="" coords="497,48,681,75"/><area shape="rect" id="node7" href="class_database_reader.html#abd37fa505553101bd8e18fd52547b7ee" title="DatabaseReader::getTotal" alt="" coords="500,99,679,125"/><area shape="rect" id="node8" href="class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="481,149,697,176"/><area shape="rect" id="node13" href="class_complex_network_constructor.html#aa41263b4bf0e157d451652d772f84ef7" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="493,201,685,242"/><area shape="rect" id="node10" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="745,360,940,387"/><area shape="rect" id="node11" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="988,319,1161,361"/><area shape="rect" id="node12" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="988,385,1161,426"/><area shape="rect" id="node14" href="class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f" title="ComplexNetwork::addNode" alt="" coords="750,208,935,235"/><area shape="rect" id="node15" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1" title="ComplexNetwork::getEdge" alt="" coords="753,411,933,437"/><area shape="rect" id="node16" href="class_link.html#af3dac01ac8fb3c9d9637361bab37a8f7" title="Link::getTime" alt="" coords="791,259,894,285"/><area shape="rect" id="node17" href="class_link.html#aaf7980526f4edf059b27602a7be82b2a" title="Link::getWeight" alt="" coords="786,309,899,336"/><area shape="rect" id="node18" href="class_link.html#af8b4ae699e66876e9fe933b0d979838f" title="Link::setTime" alt="" coords="792,5,893,32"/><area shape="rect" id="node19" href="class_link.html#add219a5edb1c6a97ae46f5f1ab360a22" title="Link::setWeight" alt="" coords="786,56,899,83"/><area shape="rect" id="node20" href="class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0" title="Link::isSameLabel" alt="" coords="777,107,908,133"/><area shape="rect" id="node21" href="class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d" title="ComplexNetwork::addEdge" alt="" coords="751,157,935,184"/><area shape="rect" id="node23" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::Begin" alt="" coords="761,734,925,805"/><area shape="rect" id="node24" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::End" alt="" coords="761,639,925,710"/><area shape="rect" id="node29" href="class_label_feature_factory.html#abd2653fa523f2dc26a07e9cc04d9052a" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="517,369,662,410"/><area shape="rect" id="node30" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="781,461,904,488"/><area shape="rect" id="node32" href="class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60" title="FeaturesComplexNetwork\l::getNodeFromFeature" alt="" coords="501,551,677,593"/><area shape="rect" id="node33" href="class_complex_network.html#afee98f26ceed674c17be01a740787170" title="ComplexNetwork::getNumNodes" alt="" coords="481,617,697,644"/><area shape="rect" id="node34" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="515,669,664,710"/><area shape="rect" id="node35" href="class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="752,549,933,576"/><area shape="rect" id="node36" href="class_iterative_random_walk.html#a621c72b1e287ed0a36b301493b2f5f70" title="IterativeRandomWalk\l::getAllProbs" alt="" coords="515,434,664,475"/></map>
+<div class="center"><img src="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_cgraph.png" border="0" usemap="#class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_cgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_cgraph" id="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_cgraph">
+<area shape="rect" id="node2" href="class_k_fold_database_reader.html#a2a94b70899a67487649330c72a545e5a" title="KFoldDatabaseReader\l::getTrainReader" alt="" coords="251,5,408,47"/><area shape="rect" id="node3" href="class_k_fold_database_reader.html#a5a39e6986d09d77427d98c2ba7a25131" title="KFoldDatabaseReader\l::getTestReader" alt="" coords="251,71,408,112"/><area shape="rect" id="node4" href="class_features_complex_network.html#a122860a57231cd14eca3add9c482290e" title="FeaturesComplexNetwork\l::load" alt="" coords="241,136,417,177"/><area shape="rect" id="node5" href="class_features_complex_network.html#a8e1b87e9664a72c2062aae67bad94261" title="FeaturesComplexNetwork\l::updateIndex" alt="" coords="501,93,677,135"/><area shape="rect" id="node8" href="class_k_fold_database_reader_1_1_path_database_reader.html#ac6c27452f10e49e7d0d425a56926277c" title="KFoldDatabaseReader\l::PathDatabaseReader\l::hasNext" alt="" coords="251,319,408,375"/><area shape="rect" id="node9" href="class_k_fold_database_reader_1_1_path_database_reader.html#ad92c0ac794e71748a01e7e6f8103342a" title="KFoldDatabaseReader\l::PathDatabaseReader\l::getTotal" alt="" coords="251,399,408,455"/><area shape="rect" id="node10" href="class_k_fold_database_reader_1_1_path_database_reader.html#a3ec743925701640642ef69b1731d21ea" title="KFoldDatabaseReader\l::PathDatabaseReader\l::readNext" alt="" coords="251,479,408,535"/><area shape="rect" id="node11" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="489,559,689,586"/><area shape="rect" id="node15" href="class_label_guesser_experiment.html#aff519caff30a7cfe4962b6645788577c" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="243,611,415,652"/><area shape="rect" id="node18" href="class_label_guesser_experiment.html#a0305abdcc36d592d5e92187b35be9169" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="225,253,433,295"/><area shape="rect" id="node25" href="class_label_guesser_experiment.html#ae0a57bb59569d9bc69363a68f888f646" title="LabelGuesserExperiment\l::getPosition" alt="" coords="243,676,415,717"/><area shape="rect" id="node6" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::Begin" alt="" coords="761,49,925,120"/><area shape="rect" id="node7" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::End" alt="" coords="761,144,925,215"/><area shape="rect" id="node12" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="745,559,940,586"/><area shape="rect" id="node13" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="988,519,1161,560"/><area shape="rect" id="node14" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="988,584,1161,625"/><area shape="rect" id="node16" href="class_label_feature_factory.html#a3d893ad35ccb2b7eb64dad199cbf9bc1" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="517,611,662,652"/><area shape="rect" id="node17" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="781,618,904,645"/><area shape="rect" id="node19" href="class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60" title="FeaturesComplexNetwork\l::getNodeFromFeature" alt="" coords="501,224,677,265"/><area shape="rect" id="node20" href="class_complex_network.html#afee98f26ceed674c17be01a740787170" title="ComplexNetwork::getNumNodes" alt="" coords="481,290,697,317"/><area shape="rect" id="node21" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="515,159,664,200"/><area shape="rect" id="node22" href="class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="752,349,933,375"/><area shape="rect" id="node24" href="class_iterative_random_walk.html#a621c72b1e287ed0a36b301493b2f5f70" title="IterativeRandomWalk\l::getAllProbs" alt="" coords="515,341,664,383"/><area shape="rect" id="node23" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1" title="ComplexNetwork::getEdge" alt="" coords="753,239,933,266"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_icgraph.png" border="0" usemap="#class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_icgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_icgraph" id="class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_icgraph">
-<area shape="rect" id="node2" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="225,13,276,39"/></map>
+<div class="center"><img src="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_icgraph.png" border="0" usemap="#class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_icgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_icgraph" id="class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_icgraph">
+<area shape="rect" id="node2" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="225,13,276,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a40090d4bc57138879aef276e4b77cd15"></a>
+<a class="anchor" id="aff519caff30a7cfe4962b6645788577c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -178,7 +187,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QList&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> * &gt; LabelGuesserExperiment::getLabelsHints </td>
+          <td class="memname">QList&lt; std::shared_ptr&lt; const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &gt; LabelGuesserExperiment::getLabelsHints </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_supervised_image.html">SupervisedImage</a> &amp;&#160;</td>
           <td class="paramname"><em>img</em>, </td>
@@ -205,18 +214,18 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_cgraph.png" border="0" usemap="#class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_cgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_cgraph" id="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_cgraph">
-<area shape="rect" id="node2" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="225,46,425,73"/><area shape="rect" id="node6" href="class_label_feature_factory.html#abd2653fa523f2dc26a07e9cc04d9052a" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="253,97,398,139"/><area shape="rect" id="node3" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="473,46,668,73"/><area shape="rect" id="node4" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="716,5,889,47"/><area shape="rect" id="node5" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="716,71,889,112"/><area shape="rect" id="node7" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="509,105,632,131"/></map>
+<div class="center"><img src="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_cgraph.png" border="0" usemap="#class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_cgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_cgraph" id="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_cgraph">
+<area shape="rect" id="node2" href="class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="225,46,425,73"/><area shape="rect" id="node6" href="class_label_feature_factory.html#a3d893ad35ccb2b7eb64dad199cbf9bc1" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="253,97,398,139"/><area shape="rect" id="node3" href="class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="473,46,668,73"/><area shape="rect" id="node4" href="class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="716,5,889,47"/><area shape="rect" id="node5" href="class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="716,71,889,112"/><area shape="rect" id="node7" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd" title="Region::getLabel" alt="" coords="509,105,632,131"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_icgraph.png" border="0" usemap="#class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_icgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_icgraph" id="class_label_guesser_experiment_a40090d4bc57138879aef276e4b77cd15_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="225,5,397,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="445,13,496,39"/></map>
+<div class="center"><img src="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_icgraph.png" border="0" usemap="#class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_icgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_icgraph" id="class_label_guesser_experiment_aff519caff30a7cfe4962b6645788577c_icgraph">
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="225,5,397,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="445,13,496,39"/></map>
 </div>
 </p>
 
@@ -259,13 +268,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646_icgraph.png" border="0" usemap="#class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646_icgraph" alt=""/></div>
 <map name="class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646_icgraph" id="class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="225,5,397,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="445,13,496,39"/></map>
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="225,5,397,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="445,13,496,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5d44dce75f708a361446e8c87545d198"></a>
+<a class="anchor" id="a0305abdcc36d592d5e92187b35be9169"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -275,13 +284,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">QList&lt; QString &gt; LabelGuesserExperiment::guessByIterativeRandomWalk </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_iterative_random_walk.html">IterativeRandomWalk</a> &amp;&#160;</td>
+          <td class="paramname"><em>walk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="class_features_complex_network.html">FeaturesComplexNetwork</a> &amp;&#160;</td>
           <td class="paramname"><em>cn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QList&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> * &gt;&#160;</td>
+          <td class="paramtype">QList&lt; shared_ptr&lt; const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &gt;&#160;</td>
           <td class="paramname"><em>hints</em>&#160;</td>
         </tr>
         <tr>
@@ -300,8 +315,8 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_cgraph.png" border="0" usemap="#class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_cgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_cgraph" id="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_cgraph">
+<div class="center"><img src="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_cgraph.png" border="0" usemap="#class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_cgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_cgraph" id="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_cgraph">
 <area shape="rect" id="node2" href="class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60" title="FeaturesComplexNetwork\l::getNodeFromFeature" alt="" coords="281,5,457,47"/><area shape="rect" id="node3" href="class_complex_network.html#afee98f26ceed674c17be01a740787170" title="ComplexNetwork::getNumNodes" alt="" coords="261,71,477,98"/><area shape="rect" id="node4" href="class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="295,123,444,164"/><area shape="rect" id="node7" href="class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="525,189,707,215"/><area shape="rect" id="node9" href="class_iterative_random_walk.html#a621c72b1e287ed0a36b301493b2f5f70" title="IterativeRandomWalk\l::getAllProbs" alt="" coords="295,240,444,281"/><area shape="rect" id="node5" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork::Begin" alt="" coords="533,37,699,63"/><area shape="rect" id="node6" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork::End" alt="" coords="539,87,693,114"/><area shape="rect" id="node8" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1" title="ComplexNetwork::getEdge" alt="" coords="526,138,706,165"/></map>
 </div>
 </p>
@@ -309,9 +324,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_icgraph.png" border="0" usemap="#class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_icgraph" alt=""/></div>
-<map name="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_icgraph" id="class_label_guesser_experiment_a5d44dce75f708a361446e8c87545d198_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="261,5,433,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="481,13,532,39"/></map>
+<div class="center"><img src="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_icgraph.png" border="0" usemap="#class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_icgraph" alt=""/></div>
+<map name="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_icgraph" id="class_label_guesser_experiment_a0305abdcc36d592d5e92187b35be9169_icgraph">
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="261,5,433,47"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="481,13,532,39"/></map>
 </div>
 </p>
 
@@ -357,7 +372,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 28 2015 09:04:13 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -20,9 +20,12 @@ class LabelFeature:public Feature<label>
 public:
     LabelFeature(label value);
     const char* asString(char *buffer) const;
-    void WriteToStream(QDataStream &stream) const;
+    void WriteToStream(std::ostream &stream) const;
 
     friend class LabelFeatureFactory;
+
+    virtual ~LabelFeature(){
+    }
 };
 
 #endif // LABELFEATURE_HPP

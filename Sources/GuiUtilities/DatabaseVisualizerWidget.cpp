@@ -8,6 +8,9 @@
 #include <assert.h>
 #include <QObject>
 
+
+
+
 DatabaseVisualizerWidget::DatabaseVisualizerWidget(DatabaseReader* reader, QWidget *parent) :
     QWidget(parent), reader(reader)
 {

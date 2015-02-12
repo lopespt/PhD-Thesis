@@ -1,6 +1,6 @@
 #include "gMainWindow.hpp"
 
-GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link> cn, QWidget *parent):
+GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent):
     QWidget(parent), cn(cn)
 {
     QVBoxLayout *l = new QVBoxLayout;

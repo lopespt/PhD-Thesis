@@ -1,5 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_features_complex_network.html#a122860a57231cd14eca3add9c482290e" title="FeaturesComplexNetwork\l::load" alt="" coords="104,5,280,47"/>
-<area shape="rect" id="node3" href="$class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork::Begin" alt="" coords="109,71,275,98"/>
-<area shape="rect" id="node4" href="$class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork::End" alt="" coords="115,122,269,149"/>
+<area shape="rect" id="node2" href="$class_complex_network_v2.html#ad7bfe6bd62d583f42f541f959ecc05f5" title="ComplexNetworkV2::Begin" alt="" coords="114,5,295,32"/>
+<area shape="rect" id="node3" href="$class_complex_network_v2.html#ac63bea705ca74ac77cee3344e3f9609e" title="ComplexNetworkV2::addNode" alt="" coords="104,56,305,83"/>
+<area shape="rect" id="node4" href="$class_complex_network_v2.html#ac846f08c3e92c642aa887801adee6aec" title="ComplexNetworkV2::addEdge" alt="" coords="105,107,305,133"/>
+<area shape="rect" id="node5" href="$class_complex_network_v2.html#a8eb2185022509ed813a330a9c90897b8" title="ComplexNetworkV2::getEdge" alt="" coords="106,157,303,184"/>
 </map>

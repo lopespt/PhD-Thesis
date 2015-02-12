@@ -10,11 +10,15 @@
 \item 
 \hyperlink{class_feature_factory_abstract_ad4b115dcdef61da4220ddfeef13f098f}{Feature\+Factory\+Abstract} (int \hyperlink{class_feature_factory_abstract_acdc4ca5ce9d35423f420c53081f0f238}{type})
 \item 
-virtual \hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const =0
+virtual shared\+\_\+ptr\\*
+$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_feature_factory_abstract_a62446de90f18d896ff650871d94bf9b7}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const =0
 \item 
-virtual \hyperlink{class_feature_abstract}{Feature\+Abstract} $\ast$ \hyperlink{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const =0
+virtual shared\+\_\+ptr\\*
+$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \hyperlink{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52}{Create\+From\+Stream} (Q\+Data\+Stream \&stream) const =0
 \item 
 int \hyperlink{class_feature_factory_abstract_ab8d13b663824c6e49c8d195344b934a3}{get\+Type} () const 
+\item 
+virtual \hyperlink{class_feature_factory_abstract_af219e0ee978f0d7bf87761471a1ff96d}{$\sim$\+Feature\+Factory\+Abstract} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -36,7 +40,7 @@ Collaboration diagram for Feature\+Factory\+Abstract\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=216pt]{class_feature_factory_abstract__coll__graph}
+\includegraphics[width=222pt]{class_feature_factory_abstract__coll__graph}
 \end{center}
 \end{figure}
 
@@ -49,30 +53,37 @@ Collaboration diagram for Feature\+Factory\+Abstract\+:\nopagebreak
 \item[{int}]{type}
 \end{DoxyParamCaption}
 )}}\label{class_feature_factory_abstract_ad4b115dcdef61da4220ddfeef13f098f}
+\hypertarget{class_feature_factory_abstract_af219e0ee978f0d7bf87761471a1ff96d}{\index{Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}!````~Feature\+Factory\+Abstract@{$\sim$\+Feature\+Factory\+Abstract}}
+\index{````~Feature\+Factory\+Abstract@{$\sim$\+Feature\+Factory\+Abstract}!Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}}
+\subsubsection[{$\sim$\+Feature\+Factory\+Abstract}]{\setlength{\rightskip}{0pt plus 5cm}virtual Feature\+Factory\+Abstract\+::$\sim$\+Feature\+Factory\+Abstract (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_feature_factory_abstract_af219e0ee978f0d7bf87761471a1ff96d}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}{\index{Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}!Create\+From\+Region@{Create\+From\+Region}}
+\hypertarget{class_feature_factory_abstract_a62446de90f18d896ff650871d94bf9b7}{\index{Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}!Create\+From\+Region@{Create\+From\+Region}}
 \index{Create\+From\+Region@{Create\+From\+Region}!Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}}
-\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Feature\+Abstract}$\ast$ Feature\+Factory\+Abstract\+::\+Create\+From\+Region (
+\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}virtual shared\+\_\+ptr$<${\bf Feature\+Abstract}$>$ Feature\+Factory\+Abstract\+::\+Create\+From\+Region (
 \begin{DoxyParamCaption}
 \item[{const {\bf Region} $\ast$}]{r}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_factory_abstract_a5447f78c29f0ec2ad5b1fe65679381cd}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_factory_abstract_a62446de90f18d896ff650871d94bf9b7}
 
 
-Implemented in \hyperlink{class_orientation_feature_factory_ace31b961efc6bdfa405effffd7d63c96}{Orientation\+Feature\+Factory}, \hyperlink{class_area_feature_factory_a33051f7cf7d2e89a0e50c63dff2e26c6}{Area\+Feature\+Factory}, and \hyperlink{class_label_feature_factory_abd2653fa523f2dc26a07e9cc04d9052a}{Label\+Feature\+Factory}.
+Implemented in \hyperlink{class_orientation_feature_factory_a63e1b4d41e32beb17f523a04479785ee}{Orientation\+Feature\+Factory}, \hyperlink{class_area_feature_factory_aebaa392a4f7bba61c02edda7f932ee9c}{Area\+Feature\+Factory}, and \hyperlink{class_label_feature_factory_a3d893ad35ccb2b7eb64dad199cbf9bc1}{Label\+Feature\+Factory}.
 
-\hypertarget{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}{\index{Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}!Create\+From\+Stream@{Create\+From\+Stream}}
+\hypertarget{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52}{\index{Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}!Create\+From\+Stream@{Create\+From\+Stream}}
 \index{Create\+From\+Stream@{Create\+From\+Stream}!Feature\+Factory\+Abstract@{Feature\+Factory\+Abstract}}
-\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Feature\+Abstract}$\ast$ Feature\+Factory\+Abstract\+::\+Create\+From\+Stream (
+\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual shared\+\_\+ptr$<${\bf Feature\+Abstract}$>$ Feature\+Factory\+Abstract\+::\+Create\+From\+Stream (
 \begin{DoxyParamCaption}
 \item[{Q\+Data\+Stream \&}]{stream}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52}
 
 
-Implemented in \hyperlink{class_orientation_feature_factory_a5b208e0c81ee1a3062c0b00e48967914}{Orientation\+Feature\+Factory}, \hyperlink{class_area_feature_factory_a80529ff42d772a30fbcc930bd203b03d}{Area\+Feature\+Factory}, and \hyperlink{class_label_feature_factory_aa13d40899e9b323c3785187a7dcfd842}{Label\+Feature\+Factory}.
+Implemented in \hyperlink{class_orientation_feature_factory_a00bccb3e3b4f551374f7f3e0a80e9837}{Orientation\+Feature\+Factory}, \hyperlink{class_area_feature_factory_ad2145ad17552e13fa4879dfed65816d1}{Area\+Feature\+Factory}, and \hyperlink{class_label_feature_factory_a9dfd71aec20d35ab08ba42d547530b81}{Label\+Feature\+Factory}.
 
 
 
@@ -80,7 +91,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_feature_factory_abstract_ab6c49610f1851cda0a4f072427786362_icgraph}
+\includegraphics[width=350pt]{class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph}
 \end{center}
 \end{figure}
 
