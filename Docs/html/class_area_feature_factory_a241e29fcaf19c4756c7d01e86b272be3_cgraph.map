@@ -1,0 +1,6 @@
+<map id="AreaFeatureFactory::CreateFromRegion" name="AreaFeatureFactory::CreateFromRegion">
+<area shape="rect" id="node2" href="$class_region.html#add72dd82adb6ee0d5822b250c3ac07e8" title="Region::getMask" alt="" coords="222,5,345,32"/>
+<area shape="rect" id="node3" href="$class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d" title="Region::getBoundaryRect" alt="" coords="196,56,371,83"/>
+<area shape="rect" id="node4" href="$class_region.html#a421786f57555f6348ece3fa33eb86594" title="Region::getPixelRelative" alt="" coords="200,107,367,133"/>
+<area shape="rect" id="node5" href="$class_region.html#acc0edaac14854ccc448f419844a722bf" title="Region::getPixel" alt="" coords="419,107,537,133"/>
+</map>

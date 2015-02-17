@@ -1,0 +1,4 @@
+<map id="CoOcurrenceEquation" name="CoOcurrenceEquation">
+<area shape="rect" id="node2" href="$class_add_one_co_ocurrence_equation.html" title="{AddOneCoOcurrenceEquation\n|&#45; time\l|+ reWeight()\l+ AddOneCoOcurrenceEquation()\l+ ~AddOneCoOcurrenceEquation()\l}" alt="" coords="5,226,236,333"/>
+<area shape="rect" id="node3" href="$class_reinforcement_co_ocurrence_equation.html" title="{ReinforcementCoOcurrence\lEquation\n|&#45; time\l&#45; learningRate\l&#45; lambda\l&#45; ma\l&#45; mi\l|+ reWeight()\l+ firstWeight()\l+ ReinforcementCoOcurrence\lEquation()\l+ ~ReinforcementCoOcurrence\lEquation()\l&#45; strength()\l}" alt="" coords="260,160,467,399"/>
+</map>

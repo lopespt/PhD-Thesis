@@ -1,0 +1,6 @@
+<map id="OrientationFeatureFactory::CreateFromRegion" name="OrientationFeatureFactory::CreateFromRegion">
+<area shape="rect" id="node2" href="$class_region.html#a0c258b6ce768a3df3d0260c2ab19c343" title="Region::getBoundary" alt="" coords="246,5,393,32"/>
+<area shape="rect" id="node3" href="$class_orientation_feature_factory.html#a3ba5ebad39d7b2b6d1065208ee2fb60e" title="OrientationFeatureFactory\l::discoverOrientation" alt="" coords="231,57,408,98"/>
+<area shape="rect" id="node4" href="$class_orientation_feature_factory.html#a68e87a390c95060cac05065757daa18d" title="OrientationFeatureFactory\l::distance" alt="" coords="456,23,633,65"/>
+<area shape="rect" id="node5" href="$class_orientation_feature_factory.html#a280c15eebea7646e9b602c36979b8b16" title="OrientationFeatureFactory\l::discretize" alt="" coords="456,89,633,130"/>
+</map>

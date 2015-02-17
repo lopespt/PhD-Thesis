@@ -10,7 +10,7 @@ LabelFeatureFactory::LabelFeatureFactory():FeatureFactoryAbstract(0)
 
 FeatureAbstractPtr LabelFeatureFactory::CreateFromRegion(const Region* region) const{
     label l;
-    QString labelStr = region->getLabel().prepend('\"').append('\"');
+    QString labelStr = region->getLabel();
     strcpy(l.value, labelStr.toStdString().c_str());
     FeatureAbstractPtr feature = FeatureAbstractPtr( new LabelFeature(l));
     fflush(stdout);

@@ -126,7 +126,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     ComplexNetworkConstructor constructor(cn, train, factories, &reinf);
     constructor.build();
     cn.refreshCache();
-    cn.save(outputFile.append(".cn").toStdString().c_str());
+    cn.save(QString("").append(outputFile).append(".cn").toStdString().c_str());
     //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
     //cn.load("train.cn", factories);
 
@@ -164,7 +164,6 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
         printf("%-3d %-20s %-20s\n", getPosition(guessed, hidden), hidden.toStdString().c_str(), guessed.first().toStdString().c_str() );
         fflush(file);
         position++;
-
     }
     fclose(file);
 }

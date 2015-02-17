@@ -15,6 +15,12 @@ int main(int argc, char *argv[]){
 
     LabelGuesserExperimentThread l2(0.7,1, LabelGuesserExperiment::MultProbabilities,"/Users/wachs/SUN/", "guess_reinf_70p_1w_Mult.txt");
     l2.start();
+
+    LabelGuesserExperimentThread l3(0.7,2, LabelGuesserExperiment::XorProbabilities,"/Users/wachs/SUN/", "guess_reinf_70p_2w_Xor.txt");
+    l3.start();
+
+    LabelGuesserExperimentThread l4(0.7,2, LabelGuesserExperiment::MultProbabilities,"/Users/wachs/SUN/", "guess_reinf_70p_2w_Mult.txt");
+    l4.start();
 /*
     LabelGuesserExperiment exp(0.7, 1, LabelGuesserExperiment::XorProbabilities);
     exp.execute("/Users/wachs/SUN/", "guess_reinf_70p_1w_Xor.txt");
@@ -28,5 +34,8 @@ int main(int argc, char *argv[]){
     LabelGuesserExperiment exp4(0.7, 2, LabelGuesserExperiment::MultProbabilities);
     exp4.execute("/Users/wachs/SUN/", "guess_reinf_70p_2w_Mult.txt");
 */
-    return app.exec();
+    l1.wait();
+    l2.wait();
+    l3.wait();
+    return 0;
 }

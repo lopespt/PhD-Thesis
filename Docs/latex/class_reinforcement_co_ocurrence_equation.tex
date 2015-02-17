@@ -1,0 +1,166 @@
+\hypertarget{class_reinforcement_co_ocurrence_equation}{\section{Reinforcement\+Co\+Ocurrence\+Equation Class Reference}
+\label{class_reinforcement_co_ocurrence_equation}\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+}
+
+
+{\ttfamily \#include $<$Reinforcement\+Co\+Ocurrence\+Equation.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reinforcement_co_ocurrence_equation_ace1a78861a38cfc6ad58584b8f73a846}{re\+Weight} (\hyperlink{class_link}{Link} \&l)
+\item 
+void \hyperlink{class_reinforcement_co_ocurrence_equation_ad9ffd4f4ad94858a2522c2e5c519920f}{first\+Weight} (\hyperlink{class_link}{Link} \&l)
+\item 
+\hyperlink{class_reinforcement_co_ocurrence_equation_af926a0673e23f1d9d301ad10295632ea}{Reinforcement\+Co\+Ocurrence\+Equation} (float \hyperlink{class_reinforcement_co_ocurrence_equation_a643eafe5a80172a58cd54512e57d3421}{learning\+Rate}=0.\+3, float \hyperlink{class_reinforcement_co_ocurrence_equation_a698939519d58a0da4a079822a1d65e87}{lambda}=80)
+\item 
+\hyperlink{class_reinforcement_co_ocurrence_equation_a5c45438e0ac763a2376cf4ec22a4b62c}{$\sim$\+Reinforcement\+Co\+Ocurrence\+Equation} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_reinforcement_co_ocurrence_equation_aea34a3a75518f1a404a9ee192feb2709}{strength} (float last\+Time\+Occurrence)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long long int \hyperlink{class_reinforcement_co_ocurrence_equation_a12eb56a8fb3b21e292b9cd5030efda0f}{time}
+\item 
+float \hyperlink{class_reinforcement_co_ocurrence_equation_a643eafe5a80172a58cd54512e57d3421}{learning\+Rate}
+\item 
+float \hyperlink{class_reinforcement_co_ocurrence_equation_a698939519d58a0da4a079822a1d65e87}{lambda}
+\item 
+float \hyperlink{class_reinforcement_co_ocurrence_equation_ac25055b41571d4b146d2fd0695e642ba}{ma} = 1
+\item 
+float \hyperlink{class_reinforcement_co_ocurrence_equation_a31a1e4a2ba8239ddb2c08f7d24f30e29}{mi} = 0.\+01
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Reinforcement\+Co\+Ocurrence\+Equation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_reinforcement_co_ocurrence_equation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reinforcement\+Co\+Ocurrence\+Equation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_reinforcement_co_ocurrence_equation__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_reinforcement_co_ocurrence_equation_af926a0673e23f1d9d301ad10295632ea}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{Reinforcement\+Co\+Ocurrence\+Equation}]{\setlength{\rightskip}{0pt plus 5cm}Reinforcement\+Co\+Ocurrence\+Equation\+::\+Reinforcement\+Co\+Ocurrence\+Equation (
+\begin{DoxyParamCaption}
+\item[{float}]{learning\+Rate = {\ttfamily 0.3}, }
+\item[{float}]{lambda = {\ttfamily 80}}
+\end{DoxyParamCaption}
+)}}\label{class_reinforcement_co_ocurrence_equation_af926a0673e23f1d9d301ad10295632ea}
+\hypertarget{class_reinforcement_co_ocurrence_equation_a5c45438e0ac763a2376cf4ec22a4b62c}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!````~Reinforcement\+Co\+Ocurrence\+Equation@{$\sim$\+Reinforcement\+Co\+Ocurrence\+Equation}}
+\index{````~Reinforcement\+Co\+Ocurrence\+Equation@{$\sim$\+Reinforcement\+Co\+Ocurrence\+Equation}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{$\sim$\+Reinforcement\+Co\+Ocurrence\+Equation}]{\setlength{\rightskip}{0pt plus 5cm}Reinforcement\+Co\+Ocurrence\+Equation\+::$\sim$\+Reinforcement\+Co\+Ocurrence\+Equation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_reinforcement_co_ocurrence_equation_a5c45438e0ac763a2376cf4ec22a4b62c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_reinforcement_co_ocurrence_equation_ad9ffd4f4ad94858a2522c2e5c519920f}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!first\+Weight@{first\+Weight}}
+\index{first\+Weight@{first\+Weight}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{first\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void Reinforcement\+Co\+Ocurrence\+Equation\+::first\+Weight (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reinforcement_co_ocurrence_equation_ad9ffd4f4ad94858a2522c2e5c519920f}
+
+
+Implements \hyperlink{class_co_ocurrence_equation_adeb923a945b5e070d226003f1e247dc1}{Co\+Ocurrence\+Equation}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_reinforcement_co_ocurrence_equation_ad9ffd4f4ad94858a2522c2e5c519920f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_reinforcement_co_ocurrence_equation_ace1a78861a38cfc6ad58584b8f73a846}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!re\+Weight@{re\+Weight}}
+\index{re\+Weight@{re\+Weight}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{re\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}void Reinforcement\+Co\+Ocurrence\+Equation\+::re\+Weight (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_reinforcement_co_ocurrence_equation_ace1a78861a38cfc6ad58584b8f73a846}
+
+
+Implements \hyperlink{class_co_ocurrence_equation_a9e274e5677044b1d9deb8d5ce649eea3}{Co\+Ocurrence\+Equation}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reinforcement_co_ocurrence_equation_ace1a78861a38cfc6ad58584b8f73a846_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_reinforcement_co_ocurrence_equation_aea34a3a75518f1a404a9ee192feb2709}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!strength@{strength}}
+\index{strength@{strength}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{strength}]{\setlength{\rightskip}{0pt plus 5cm}float Reinforcement\+Co\+Ocurrence\+Equation\+::strength (
+\begin{DoxyParamCaption}
+\item[{float}]{last\+Time\+Occurrence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_aea34a3a75518f1a404a9ee192feb2709}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reinforcement_co_ocurrence_equation_aea34a3a75518f1a404a9ee192feb2709_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_reinforcement_co_ocurrence_equation_a698939519d58a0da4a079822a1d65e87}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!lambda@{lambda}}
+\index{lambda@{lambda}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{lambda}]{\setlength{\rightskip}{0pt plus 5cm}float Reinforcement\+Co\+Ocurrence\+Equation\+::lambda\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_a698939519d58a0da4a079822a1d65e87}
+Esta é a influência do tempo na aprendizagem $ \lambda $ \hypertarget{class_reinforcement_co_ocurrence_equation_a643eafe5a80172a58cd54512e57d3421}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!learning\+Rate@{learning\+Rate}}
+\index{learning\+Rate@{learning\+Rate}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}float Reinforcement\+Co\+Ocurrence\+Equation\+::learning\+Rate\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_a643eafe5a80172a58cd54512e57d3421}
+Esta é a taxa de aprendizagem $ \alpha $ \hypertarget{class_reinforcement_co_ocurrence_equation_ac25055b41571d4b146d2fd0695e642ba}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!ma@{ma}}
+\index{ma@{ma}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{ma}]{\setlength{\rightskip}{0pt plus 5cm}float Reinforcement\+Co\+Ocurrence\+Equation\+::ma = 1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_ac25055b41571d4b146d2fd0695e642ba}
+\hypertarget{class_reinforcement_co_ocurrence_equation_a31a1e4a2ba8239ddb2c08f7d24f30e29}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!mi@{mi}}
+\index{mi@{mi}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{mi}]{\setlength{\rightskip}{0pt plus 5cm}float Reinforcement\+Co\+Ocurrence\+Equation\+::mi = 0.\+01\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_a31a1e4a2ba8239ddb2c08f7d24f30e29}
+\hypertarget{class_reinforcement_co_ocurrence_equation_a12eb56a8fb3b21e292b9cd5030efda0f}{\index{Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}!time@{time}}
+\index{time@{time}!Reinforcement\+Co\+Ocurrence\+Equation@{Reinforcement\+Co\+Ocurrence\+Equation}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int Reinforcement\+Co\+Ocurrence\+Equation\+::time\hspace{0.3cm}{\ttfamily [private]}}}\label{class_reinforcement_co_ocurrence_equation_a12eb56a8fb3b21e292b9cd5030efda0f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\+Complex\+Network\+Constructor/\hyperlink{_reinforcement_co_ocurrence_equation_8hpp}{Reinforcement\+Co\+Ocurrence\+Equation.\+hpp}\item 
+Sources/\+Utilities/\+Complex\+Network\+Constructor/\hyperlink{_reinforcement_co_ocurrence_equation_8cpp}{Reinforcement\+Co\+Ocurrence\+Equation.\+cpp}\end{DoxyCompactItemize}

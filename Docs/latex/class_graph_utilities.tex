@@ -1,0 +1,192 @@
+\hypertarget{class_graph_utilities}{\section{Graph\+Utilities Class Reference}
+\label{class_graph_utilities}\index{Graph\+Utilities@{Graph\+Utilities}}
+}
+
+
+{\ttfamily \#include $<$Graph\+Utilities.\+hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\static List\+Digraph\+::\+Node\+Map$<$ T $>$ \& \hyperlink{class_graph_utilities_afd29a289301241336d141052471225b0}{copy\+Map} (const List\+Digraph \&graph, const List\+Digraph\+::\+Node\+Map$<$ T $>$ \&from, List\+Digraph\+::\+Node\+Map$<$ T $>$ \&to)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static List\+Digraph\+::\+Arc\+Map$<$ T $>$ \& \hyperlink{class_graph_utilities_a28df2e4c3b6e6b3dd50f4224aa9e6af4}{copy\+Map} (const List\+Digraph \&graph, const List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&from, List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&to)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static List\+Digraph\+::\+Node\+Map$<$ T $>$ \& \hyperlink{class_graph_utilities_ae00cf745ed72f71835147a83f3a8111f}{fill\+Map} (const List\+Digraph \&graph, List\+Digraph\+::\+Node\+Map$<$ T $>$ \&map, const T \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\static List\+Digraph\+::\+Arc\+Map$<$ T $>$ \& \hyperlink{class_graph_utilities_afcd9e859008f3023f75a1c1b9972cfd6}{fill\+Map} (const List\+Digraph \&graph, List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&map, const T \&value)
+\item 
+static void \hyperlink{class_graph_utilities_ad092c90863dca74df15d6ed201c6e985}{get\+Weights} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \&cn, List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&weights)
+\item 
+static void \hyperlink{class_graph_utilities_ae41ba7e07c1c11adf48583de7f72e8a8}{normalize\+Out\+Degrees} (List\+Digraph \&complex\+Network, const List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&weights, List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&output)
+\item 
+static void \hyperlink{class_graph_utilities_ac336fc79436ed71a0c604bb2a35f8b23}{add\+Auto\+Loop} (List\+Digraph \&cn, List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&arcs, double value=1)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graph_utilities_a8e3420b184809a8e50bc922772cbf597}{Graph\+Utilities} ()
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for Graph\+Utilities\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_graph_utilities__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graph_utilities_a8e3420b184809a8e50bc922772cbf597}{\index{Graph\+Utilities@{Graph\+Utilities}!Graph\+Utilities@{Graph\+Utilities}}
+\index{Graph\+Utilities@{Graph\+Utilities}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{Graph\+Utilities}]{\setlength{\rightskip}{0pt plus 5cm}Graph\+Utilities\+::\+Graph\+Utilities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_graph_utilities_a8e3420b184809a8e50bc922772cbf597}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graph_utilities_ac336fc79436ed71a0c604bb2a35f8b23}{\index{Graph\+Utilities@{Graph\+Utilities}!add\+Auto\+Loop@{add\+Auto\+Loop}}
+\index{add\+Auto\+Loop@{add\+Auto\+Loop}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{add\+Auto\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\+Utilities\+::add\+Auto\+Loop (
+\begin{DoxyParamCaption}
+\item[{List\+Digraph \&}]{cn, }
+\item[{List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&}]{arcs, }
+\item[{double}]{value = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_ac336fc79436ed71a0c604bb2a35f8b23}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_ac336fc79436ed71a0c604bb2a35f8b23_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_utilities_afd29a289301241336d141052471225b0}{\index{Graph\+Utilities@{Graph\+Utilities}!copy\+Map@{copy\+Map}}
+\index{copy\+Map@{copy\+Map}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{copy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ List\+Digraph\+::\+Node\+Map$<$ T $>$ \& Graph\+Utilities\+::copy\+Map (
+\begin{DoxyParamCaption}
+\item[{const List\+Digraph \&}]{graph, }
+\item[{const List\+Digraph\+::\+Node\+Map$<$ T $>$ \&}]{from, }
+\item[{List\+Digraph\+::\+Node\+Map$<$ T $>$ \&}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_afd29a289301241336d141052471225b0}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_afd29a289301241336d141052471225b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_utilities_a28df2e4c3b6e6b3dd50f4224aa9e6af4}{\index{Graph\+Utilities@{Graph\+Utilities}!copy\+Map@{copy\+Map}}
+\index{copy\+Map@{copy\+Map}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{copy\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ List\+Digraph\+::\+Arc\+Map$<$ T $>$ \& Graph\+Utilities\+::copy\+Map (
+\begin{DoxyParamCaption}
+\item[{const List\+Digraph \&}]{graph, }
+\item[{const List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&}]{from, }
+\item[{List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_a28df2e4c3b6e6b3dd50f4224aa9e6af4}
+\hypertarget{class_graph_utilities_ae00cf745ed72f71835147a83f3a8111f}{\index{Graph\+Utilities@{Graph\+Utilities}!fill\+Map@{fill\+Map}}
+\index{fill\+Map@{fill\+Map}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{fill\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ List\+Digraph\+::\+Node\+Map$<$ T $>$ \& Graph\+Utilities\+::fill\+Map (
+\begin{DoxyParamCaption}
+\item[{const List\+Digraph \&}]{graph, }
+\item[{List\+Digraph\+::\+Node\+Map$<$ T $>$ \&}]{map, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_ae00cf745ed72f71835147a83f3a8111f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_ae00cf745ed72f71835147a83f3a8111f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_utilities_afcd9e859008f3023f75a1c1b9972cfd6}{\index{Graph\+Utilities@{Graph\+Utilities}!fill\+Map@{fill\+Map}}
+\index{fill\+Map@{fill\+Map}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{fill\+Map}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ List\+Digraph\+::\+Arc\+Map$<$ T $>$ \& Graph\+Utilities\+::fill\+Map (
+\begin{DoxyParamCaption}
+\item[{const List\+Digraph \&}]{graph, }
+\item[{List\+Digraph\+::\+Arc\+Map$<$ T $>$ \&}]{map, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_afcd9e859008f3023f75a1c1b9972cfd6}
+\hypertarget{class_graph_utilities_ad092c90863dca74df15d6ed201c6e985}{\index{Graph\+Utilities@{Graph\+Utilities}!get\+Weights@{get\+Weights}}
+\index{get\+Weights@{get\+Weights}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{get\+Weights}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\+Utilities\+::get\+Weights (
+\begin{DoxyParamCaption}
+\item[{{\bf Features\+Complex\+Network} \&}]{cn, }
+\item[{List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&}]{weights}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_ad092c90863dca74df15d6ed201c6e985}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_ad092c90863dca74df15d6ed201c6e985_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_ad092c90863dca74df15d6ed201c6e985_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_graph_utilities_ae41ba7e07c1c11adf48583de7f72e8a8}{\index{Graph\+Utilities@{Graph\+Utilities}!normalize\+Out\+Degrees@{normalize\+Out\+Degrees}}
+\index{normalize\+Out\+Degrees@{normalize\+Out\+Degrees}!Graph\+Utilities@{Graph\+Utilities}}
+\subsubsection[{normalize\+Out\+Degrees}]{\setlength{\rightskip}{0pt plus 5cm}void Graph\+Utilities\+::normalize\+Out\+Degrees (
+\begin{DoxyParamCaption}
+\item[{List\+Digraph \&}]{complex\+Network, }
+\item[{const List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&}]{weights, }
+\item[{List\+Digraph\+::\+Arc\+Map$<$ double $>$ \&}]{output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_graph_utilities_ae41ba7e07c1c11adf48583de7f72e8a8}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_utilities_ae41ba7e07c1c11adf48583de7f72e8a8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\hyperlink{_graph_utilities_8hpp}{Graph\+Utilities.\+hpp}\item 
+Sources/\+Utilities/\hyperlink{_graph_utilities_8cpp}{Graph\+Utilities.\+cpp}\end{DoxyCompactItemize}

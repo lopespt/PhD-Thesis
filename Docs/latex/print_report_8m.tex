@@ -1,0 +1,98 @@
+\hypertarget{print_report_8m}{\section{Sources/\+Experiments/\+Label\+Guesser/print\+Report.m File Reference}
+\label{print_report_8m}\index{Sources/\+Experiments/\+Label\+Guesser/print\+Report.\+m@{Sources/\+Experiments/\+Label\+Guesser/print\+Report.\+m}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{print_report_8m_adcfa4be589b2ba044935ede685d7eb3e}{print\+Report} (filename) rep
+\item 
+\hyperlink{print_report_8m_acc2fc5d5c0810b09213e951b5be6d9df}{disp} ('======================================================')
+\item 
+\hyperlink{print_report_8m_a4acea53239e42d172977653f13423517}{disp} (\hyperlink{print_report_8m_a21c87b43c890389947373b311d2b8c13}{testname}) disp(\mbox{[}'mean
+\item 
+\hyperlink{print_report_8m_aa693c10f70708c977147409c65267a50}{num2str} (mean(\hyperlink{read_report_8m_afc6520cf57104f69a056301abcf0a8c6}{rep.\+posicoes}))\mbox{]})
+\item 
+\hyperlink{print_report_8m_ac25369172c2e158172d30adb02050fb0}{disp} (\mbox{[}'std= ', \hyperlink{print_report_8m_aa693c10f70708c977147409c65267a50}{num2str}(std(\hyperlink{read_report_8m_afc6520cf57104f69a056301abcf0a8c6}{rep.\+posicoes}))\mbox{]})
+\item 
+\hyperlink{print_report_8m_a8c47e18da84838983e4feca93ec874ab}{plot} (sort(\hyperlink{read_report_8m_afc6520cf57104f69a056301abcf0a8c6}{rep.\+posicoes}))
+\item 
+\hyperlink{print_report_8m_ab9c89176a192d126cb540b822e8d8ea0}{disp} ('Hidden Rank List Top 10 First Guesses') for i
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{print_report_8m_a21c87b43c890389947373b311d2b8c13}{testname} = regexprep(filename, '.+/','')
+\item 
+\hyperlink{print_report_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n} = 30
+\item 
+\hyperlink{print_report_8m_a82375b31054e0cd35a3e4740a50d27c0}{rep\+Xor1} = read\+Report('/tmp/Implementation-\/Build/bin/guess\+\_\+70p\+\_\+1w\+\_\+\+Xor.\+txt')
+\item 
+\hyperlink{print_report_8m_a4c01674a21f8dc403df37734d56181fe}{rep\+Xor2} = read\+Report('/tmp/Implementation-\/Build/bin/guess\+\_\+70p\+\_\+2w\+\_\+\+Xor.\+txt')
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{print_report_8m_acc2fc5d5c0810b09213e951b5be6d9df}{\index{print\+Report.\+m@{print\+Report.\+m}!disp@{disp}}
+\index{disp@{disp}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{disp}]{\setlength{\rightskip}{0pt plus 5cm}disp (
+\begin{DoxyParamCaption}
+\item[{'}]{ = {\ttfamily ====================================================='}}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_acc2fc5d5c0810b09213e951b5be6d9df}
+\hypertarget{print_report_8m_a4acea53239e42d172977653f13423517}{\index{print\+Report.\+m@{print\+Report.\+m}!disp@{disp}}
+\index{disp@{disp}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{disp}]{\setlength{\rightskip}{0pt plus 5cm}disp (
+\begin{DoxyParamCaption}
+\item[{{\bf testname}}]{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_a4acea53239e42d172977653f13423517}
+\hypertarget{print_report_8m_ac25369172c2e158172d30adb02050fb0}{\index{print\+Report.\+m@{print\+Report.\+m}!disp@{disp}}
+\index{disp@{disp}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{disp}]{\setlength{\rightskip}{0pt plus 5cm}disp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_ac25369172c2e158172d30adb02050fb0}
+\hypertarget{print_report_8m_ab9c89176a192d126cb540b822e8d8ea0}{\index{print\+Report.\+m@{print\+Report.\+m}!disp@{disp}}
+\index{disp@{disp}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{disp}]{\setlength{\rightskip}{0pt plus 5cm}disp (
+\begin{DoxyParamCaption}
+\item[{'Hidden Rank List Top 10 First Guesses'}]{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_ab9c89176a192d126cb540b822e8d8ea0}
+\hypertarget{print_report_8m_aa693c10f70708c977147409c65267a50}{\index{print\+Report.\+m@{print\+Report.\+m}!num2str@{num2str}}
+\index{num2str@{num2str}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{num2str}]{\setlength{\rightskip}{0pt plus 5cm}num2str (
+\begin{DoxyParamCaption}
+\item[{mean({\bf rep.\+posicoes})}]{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_aa693c10f70708c977147409c65267a50}
+\hypertarget{print_report_8m_a8c47e18da84838983e4feca93ec874ab}{\index{print\+Report.\+m@{print\+Report.\+m}!plot@{plot}}
+\index{plot@{plot}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}plot (
+\begin{DoxyParamCaption}
+\item[{sort({\bf rep.\+posicoes})}]{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_a8c47e18da84838983e4feca93ec874ab}
+\hypertarget{print_report_8m_adcfa4be589b2ba044935ede685d7eb3e}{\index{print\+Report.\+m@{print\+Report.\+m}!print\+Report@{print\+Report}}
+\index{print\+Report@{print\+Report}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{print\+Report}]{\setlength{\rightskip}{0pt plus 5cm}function print\+Report (
+\begin{DoxyParamCaption}
+\item[{filename}]{}
+\end{DoxyParamCaption}
+)}}\label{print_report_8m_adcfa4be589b2ba044935ede685d7eb3e}
+
+
+\subsection{Variable Documentation}
+\hypertarget{print_report_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{\index{print\+Report.\+m@{print\+Report.\+m}!n@{n}}
+\index{n@{n}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}n = 30}}\label{print_report_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}
+\hypertarget{print_report_8m_a82375b31054e0cd35a3e4740a50d27c0}{\index{print\+Report.\+m@{print\+Report.\+m}!rep\+Xor1@{rep\+Xor1}}
+\index{rep\+Xor1@{rep\+Xor1}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{rep\+Xor1}]{\setlength{\rightskip}{0pt plus 5cm}rep\+Xor1 = read\+Report('/tmp/Implementation-\/Build/bin/guess\+\_\+70p\+\_\+1w\+\_\+\+Xor.\+txt')}}\label{print_report_8m_a82375b31054e0cd35a3e4740a50d27c0}
+\hypertarget{print_report_8m_a4c01674a21f8dc403df37734d56181fe}{\index{print\+Report.\+m@{print\+Report.\+m}!rep\+Xor2@{rep\+Xor2}}
+\index{rep\+Xor2@{rep\+Xor2}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{rep\+Xor2}]{\setlength{\rightskip}{0pt plus 5cm}rep\+Xor2 = read\+Report('/tmp/Implementation-\/Build/bin/guess\+\_\+70p\+\_\+2w\+\_\+\+Xor.\+txt')}}\label{print_report_8m_a4c01674a21f8dc403df37734d56181fe}
+\hypertarget{print_report_8m_a21c87b43c890389947373b311d2b8c13}{\index{print\+Report.\+m@{print\+Report.\+m}!testname@{testname}}
+\index{testname@{testname}!print\+Report.\+m@{print\+Report.\+m}}
+\subsubsection[{testname}]{\setlength{\rightskip}{0pt plus 5cm}testname = regexprep(filename, '.+/','')}}\label{print_report_8m_a21c87b43c890389947373b311d2b8c13}
