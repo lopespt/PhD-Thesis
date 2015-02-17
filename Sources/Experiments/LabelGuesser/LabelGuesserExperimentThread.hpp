@@ -16,6 +16,7 @@ public:
     LabelGuesserExperimentThread(float trainSize, int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile );
     void run();
     ~LabelGuesserExperimentThread();
+
 };
 
 #endif // LABELGUESSEREXPERIMENTTHREAD_HPP

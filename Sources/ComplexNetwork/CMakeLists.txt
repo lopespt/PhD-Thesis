@@ -1,6 +1,5 @@
 
 FIND_PACKAGE(Qt5Core REQUIRED)
-FIND_PACKAGE(lemon)
 INCLUDE_DIRECTORIES(${LEMON_INCLUDE_DIRS})
 
 #Create ComplexNetwork library

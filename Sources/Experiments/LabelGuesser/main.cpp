@@ -13,6 +13,7 @@ int main(int argc, char *argv[]){
     LabelGuesserExperimentThread l1(0.7,1, LabelGuesserExperiment::XorProbabilities,"/Users/wachs/SUN/", "guess_reinf_70p_1w_Xor.txt");
     l1.start();
 
+
     LabelGuesserExperimentThread l2(0.7,1, LabelGuesserExperiment::MultProbabilities,"/Users/wachs/SUN/", "guess_reinf_70p_1w_Mult.txt");
     l2.start();
 
