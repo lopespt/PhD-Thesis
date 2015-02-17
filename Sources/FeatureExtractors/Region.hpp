@@ -1,17 +1,15 @@
 #ifndef REGION__H
 #define REGION__H
 
-#include <QPolygon>
+
 #include <QImage>
+#include <QPolygon>
 #include <QString>
-#include <QPixmap>
-#include <QPainter>
-#include <QColor>
-#include <QPoint>
-#include <QColor>
-#include <opencv/cv.h>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv/highgui.h>
+
+class QRect;
+namespace cv{
+    class Mat;
+}
 
 class Region{
 

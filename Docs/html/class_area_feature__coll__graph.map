@@ -1,4 +1,5 @@
 <map id="AreaFeature" name="AreaFeature">
-<area shape="rect" id="node2" href="$class_feature.html" title="{Feature\n|# vector\l|+ getVector()\l+ extractFeature()\l+ printFeature()\l# Feature()\l}" alt="" coords="15,277,136,399"/>
-<area shape="rect" id="node3" href="$class_region.html" title="{Region\n|&#45; image\l&#45; boundary\l&#45; label\l&#45; l\l|+ Region()\l+ show_region()\l+ ~Region()\l+ getBoundaryRect()\l+ getPixel()\l+ getPixelRelative()\l+ getLabel()\l}" alt="" coords="5,5,145,215"/>
+<area shape="rect" id="node2" href="$class_feature.html" title="{Feature\&lt; float \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="48,491,180,627"/>
+<area shape="rect" id="node3" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="5,5,151,229"/>
+<area shape="rect" id="node4" href="$class_feature.html" title="{Feature\&lt; T \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,292,248,428"/>
 </map>

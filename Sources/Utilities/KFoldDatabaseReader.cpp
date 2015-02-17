@@ -6,6 +6,7 @@
 #include <QSet>
 #include <QList>
 #include <QString>
+#include <assert.h>
 
 KFoldDatabaseReader::KFoldDatabaseReader(DatabaseReader &reader, float trainRatio)
 {

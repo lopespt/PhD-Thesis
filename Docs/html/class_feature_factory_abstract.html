@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -98,12 +98,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad4b115dcdef61da4220ddfeef13f098f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#ad4b115dcdef61da4220ddfeef13f098f">FeatureFactoryAbstract</a> (int <a class="el" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>)</td></tr>
 <tr class="separator:ad4b115dcdef61da4220ddfeef13f098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62446de90f18d896ff650871d94bf9b7"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#a62446de90f18d896ff650871d94bf9b7">CreateFromRegion</a> (const <a class="el" href="class_region.html">Region</a> *r) const =0</td></tr>
-<tr class="separator:a62446de90f18d896ff650871d94bf9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa71cd5e5cadad3945fd7a1561d28bd52"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr<br class="typebreak" />
-&lt; <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#aa71cd5e5cadad3945fd7a1561d28bd52">CreateFromStream</a> (QDataStream &amp;stream) const =0</td></tr>
-<tr class="separator:aa71cd5e5cadad3945fd7a1561d28bd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1aca909574b1828c8b019056656036"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#a2b1aca909574b1828c8b019056656036">CreateFromRegion</a> (const <a class="el" href="class_region.html">Region</a> *r) const =0</td></tr>
+<tr class="separator:a2b1aca909574b1828c8b019056656036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e7b404d34169840dae5ff1839da705"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#a32e7b404d34169840dae5ff1839da705">CreateFromStream</a> (istream &amp;stream) const =0</td></tr>
+<tr class="separator:a32e7b404d34169840dae5ff1839da705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d13b663824c6e49c8d195344b934a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3">getType</a> () const </td></tr>
 <tr class="separator:ab8d13b663824c6e49c8d195344b934a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af219e0ee978f0d7bf87761471a1ff96d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">~FeatureFactoryAbstract</a> ()</td></tr>
@@ -119,7 +117,7 @@ Inheritance diagram for FeatureFactoryAbstract:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_feature_factory_abstract__inherit__graph.png" border="0" usemap="#_feature_factory_abstract_inherit__map" alt="Inheritance graph"/></div>
 <map name="_feature_factory_abstract_inherit__map" id="_feature_factory_abstract_inherit__map">
-<area shape="rect" id="node2" href="class_area_feature_factory.html" title="{AreaFeatureFactory\n|&#45; discretization\l|+ AreaFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discretize()\l}" alt="" coords="5,204,167,325"/><area shape="rect" id="node3" href="class_label_feature_factory.html" title="{LabelFeatureFactory\n||+ LabelFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l}" alt="" coords="191,211,357,318"/><area shape="rect" id="node4" href="class_orientation_feature_factory.html" title="{OrientationFeatureFactory\n|&#45; discretization\l|+ OrientationFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discoverOrientation()\l&#45; distance()\l&#45; discretize()\l}" alt="" coords="381,189,578,340"/></map>
+<area shape="rect" id="node2" href="class_area_feature_factory.html" title="{AreaFeatureFactory\n|&#45; discretization\l|+ AreaFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discretize()\l}" alt="" coords="5,211,167,333"/><area shape="rect" id="node3" href="class_label_feature_factory.html" title="{LabelFeatureFactory\n||+ LabelFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l}" alt="" coords="191,219,357,325"/><area shape="rect" id="node4" href="class_orientation_feature_factory.html" title="{OrientationFeatureFactory\n|&#45; discretization\l|+ OrientationFeatureFactory()\l+ OrientationFeatureFactory()\l+ CreateFromRegion()\l+ CreateFromStream()\l&#45; discoverOrientation()\l&#45; distance()\l&#45; discretize()\l}" alt="" coords="381,189,578,355"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for FeatureFactoryAbstract:</div>
@@ -167,7 +165,7 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a62446de90f18d896ff650871d94bf9b7"></a>
+<a class="anchor" id="a2b1aca909574b1828c8b019056656036"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,7 +173,7 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual shared_ptr&lt;<a class="el" href="class_feature_abstract.html">FeatureAbstract</a>&gt; FeatureFactoryAbstract::CreateFromRegion </td>
+          <td class="memname">virtual <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> FeatureFactoryAbstract::CreateFromRegion </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_region.html">Region</a> *&#160;</td>
           <td class="paramname"><em>r</em></td><td>)</td>
@@ -189,11 +187,11 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#aebaa392a4f7bba61c02edda7f932ee9c">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#a3d893ad35ccb2b7eb64dad199cbf9bc1">LabelFeatureFactory</a>.</p>
+<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a979d7a274a149c806bd3d0fd2066d3ce">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#a241e29fcaf19c4756c7d01e86b272be3">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#af0032431002f8af5c9ddd3d4a20dff6a">LabelFeatureFactory</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa71cd5e5cadad3945fd7a1561d28bd52"></a>
+<a class="anchor" id="a32e7b404d34169840dae5ff1839da705"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -201,9 +199,9 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual shared_ptr&lt;<a class="el" href="class_feature_abstract.html">FeatureAbstract</a>&gt; FeatureFactoryAbstract::CreateFromStream </td>
+          <td class="memname">virtual <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> FeatureFactoryAbstract::CreateFromStream </td>
           <td>(</td>
-          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramtype">istream &amp;&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -215,16 +213,7 @@ Collaboration diagram for FeatureFactoryAbstract:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a00bccb3e3b4f551374f7f3e0a80e9837">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#ad2145ad17552e13fa4879dfed65816d1">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#a9dfd71aec20d35ab08ba42d547530b81">LabelFeatureFactory</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph.png" border="0" usemap="#class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph" alt=""/></div>
-<map name="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph" id="class_feature_factory_abstract_aa71cd5e5cadad3945fd7a1561d28bd52_icgraph">
-<area shape="rect" id="node2" href="class_features_complex_network.html#a3f1fcc25a95cde233fecef194033497f" title="FeaturesComplexNetwork\l::load" alt="" coords="215,5,391,47"/></map>
-</div>
-</p>
+<p>Implemented in <a class="el" href="class_orientation_feature_factory.html#a65efa6b91ca535b2a47d5c9e972fd120">OrientationFeatureFactory</a>, <a class="el" href="class_area_feature_factory.html#ab8d7d3ebe9a928d340b4215d872e51ec">AreaFeatureFactory</a>, and <a class="el" href="class_label_feature_factory.html#a1308774f27afba555af8162e7e6d33ad">LabelFeatureFactory</a>.</p>
 
 </div>
 </div>
@@ -240,15 +229,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_feature_factory_abstract_ab8d13b663824c6e49c8d195344b934a3_icgraph.png" border="0" usemap="#class_feature_factory_abstract_ab8d13b663824c6e49c8d195344b934a3_icgraph" alt=""/></div>
-<map name="class_feature_factory_abstract_ab8d13b663824c6e49c8d195344b934a3_icgraph" id="class_feature_factory_abstract_ab8d13b663824c6e49c8d195344b934a3_icgraph">
-<area shape="rect" id="node2" href="class_features_complex_network.html#a3f1fcc25a95cde233fecef194033497f" title="FeaturesComplexNetwork\l::load" alt="" coords="215,5,391,47"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -280,7 +260,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

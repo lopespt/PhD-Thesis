@@ -1,3 +1,9 @@
-<map id="Feature" name="Feature">
-<area shape="rect" id="node2" href="$class_area_feature.html" title="{AreaFeature\n||+ AreaFeature()\l+ extractFeature()\l}" alt="" coords="5,189,127,281"/>
+<map id="Feature&lt; T &gt;" name="Feature&lt; T &gt;">
+<area shape="rect" id="node3" href="$class_feature.html" title="{Feature\&lt; float \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="5,477,137,613"/>
+<area shape="rect" id="node5" href="$class_feature.html" title="{Feature\&lt; label \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="161,477,293,613"/>
+<area shape="rect" id="node7" href="$class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="318,477,481,613"/>
+<area shape="rect" id="node2" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="155,5,300,229"/>
+<area shape="rect" id="node4" href="$class_area_feature.html" title="{AreaFeature\n||+ AreaFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="5,670,137,777"/>
+<area shape="rect" id="node6" href="$class_label_feature.html" title="{LabelFeature\n||+ LabelFeature()\l+ asString()\l+ WriteToStream()\l+ ~LabelFeature()\l}" alt="" coords="161,663,293,784"/>
+<area shape="rect" id="node8" href="$class_orientation_feature.html" title="{OrientationFeature\n||+ OrientationFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="323,670,476,777"/>
 </map>

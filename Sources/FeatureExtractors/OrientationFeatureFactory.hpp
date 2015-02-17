@@ -3,7 +3,6 @@
 
 #include "FeatureFactoryAbstract.hpp"
 #include <QList>
-#include <memory>
 
 class QPoint;
 class OrientationFeature;

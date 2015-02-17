@@ -1,8 +1,32 @@
-<map id="src/ComplexNetwork.hpp" name="src/ComplexNetwork.hpp">
-<area shape="rect" id="node2" href="$_edge_8hpp.html" title="src/Edge.hpp" alt="" coords="409,87,508,114"/>
-<area shape="rect" id="node4" href="$_complex_network_constructor_8hpp.html" title="src/ComplexNetworkConstructor.hpp" alt="" coords="157,87,385,114"/>
-<area shape="rect" id="node7" href="$_complex_network_test_8cpp.html" title="src/tests/ComplexNetwork\lTest.cpp" alt="" coords="532,80,703,121"/>
-<area shape="rect" id="node3" href="$_node_8hpp.html" title="src/Node.hpp" alt="" coords="409,169,508,196"/>
-<area shape="rect" id="node5" href="$_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="5,169,232,196"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="257,169,351,196"/>
+<map id="Sources/ComplexNetwork/ComplexNetwork.hpp" name="Sources/ComplexNetwork/ComplexNetwork.hpp">
+<area shape="rect" id="node2" href="$_complex_network_8cpp.html" title="Sources/ComplexNetwork\l/ComplexNetwork.cpp" alt="" coords="5,102,181,143"/>
+<area shape="rect" id="node3" href="$_experiments_2_area_complex_networks_2main_8cpp.html" title="Sources/Experiments\l/AreaComplexNetworks\l/main.cpp" alt="" coords="205,95,368,151"/>
+<area shape="rect" id="node4" href="$_complex_network_to_matlab_8hpp.html" title="Sources/Experiments\l/ComplexNetworkToMatlabFile\l/ComplexNetworkToMatlab.hpp" alt="" coords="393,95,602,151"/>
+<area shape="rect" id="node6" href="$_complex_network_to_matlab_file_8cpp.html" title="Sources/Experiments\l/ComplexNetworkToMatlabFile\l/ComplexNetworkToMatlabFile.cpp" alt="" coords="403,199,632,255"/>
+<area shape="rect" id="node7" href="$_complex_network_viewer_widget_8hpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/ComplexNetworkViewerWidget.hpp" alt="" coords="1006,199,1242,255"/>
+<area shape="rect" id="node10" href="$g_main_window_8hpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/gMainWindow.hpp" alt="" coords="831,95,1004,151"/>
+<area shape="rect" id="node12" href="$_experiments_2_labels_complex_networks_2main_8cpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/main.cpp" alt="" coords="587,303,760,359"/>
+<area shape="rect" id="node13" href="$_experiments_2_setup_padrao_2main_8cpp.html" title="Sources/Experiments\l/SetupPadrao/main.cpp" alt="" coords="3131,310,3293,351"/>
+<area shape="rect" id="node14" href="$_complex_network_resources_test_8cpp.html" title="Sources/Tests/ComplexNetwork\lResourcesTest/ComplexNetworkResources\lTest.cpp" alt="" coords="2904,95,3184,151"/>
+<area shape="rect" id="node15" href="$_random_walk_test_8cpp.html" title="Sources/Tests/RandomWalk\lTest/RandomWalkTest.cpp" alt="" coords="2638,206,2829,247"/>
+<area shape="rect" id="node16" href="$_features_complex_network_8hpp.html" title="Sources/Utilities/Features\lComplexNetwork.hpp" alt="" coords="1785,102,1959,143"/>
+<area shape="rect" id="node29" href="$_graph_utilities_8hpp.html" title="Sources/Utilities/GraphUtilities.hpp" alt="" coords="2387,213,2613,240"/>
+<area shape="rect" id="node5" href="$_complex_network_to_matlab_8cpp.html" title="Sources/Experiments\l/ComplexNetworkToMatlabFile\l/ComplexNetworkToMatlab.cpp" alt="" coords="171,199,379,255"/>
+<area shape="rect" id="node8" href="$_complex_network_viewer_widget_8cpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/ComplexNetworkViewerWidget.cpp" alt="" coords="784,303,1019,359"/>
+<area shape="rect" id="node9" href="$_complex_network_visualizer_8cpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/ComplexNetworkVisualizer.cpp" alt="" coords="1253,303,1464,359"/>
+<area shape="rect" id="node11" href="$g_main_window_8cpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/gMainWindow.cpp" alt="" coords="707,199,880,255"/>
+<area shape="rect" id="node17" href="$_complex_network_visualizer_8hpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/ComplexNetworkVisualizer.hpp" alt="" coords="1464,199,1675,255"/>
+<area shape="rect" id="node19" href="$_label_guesser_experiment_8cpp.html" title="Sources/Experiments\l/LabelGuesser/LabelGuesser\lExperiment.cpp" alt="" coords="2466,303,2662,359"/>
+<area shape="rect" id="node20" href="$_label_guesser_8hpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelGuesser.hpp" alt="" coords="2121,199,2311,255"/>
+<area shape="rect" id="node22" href="$_labels_validation_experiment_8hpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelsValidationExperiment.hpp" alt="" coords="2010,303,2227,359"/>
+<area shape="rect" id="node25" href="$_complex_network_construction_test_8cpp.html" title="Sources/Tests/ComplexNetwork\lConstructionTest/ComplexNetwork\lConstructionTest.cpp" alt="" coords="1758,303,1986,359"/>
+<area shape="rect" id="node26" href="$_complex_network_constructor_8hpp.html" title="Sources/Utilities/Complex\lNetworkConstructor/ComplexNetwork\lConstructor.hpp" alt="" coords="1749,199,1995,255"/>
+<area shape="rect" id="node28" href="$_features_complex_network_8cpp.html" title="Sources/Utilities/Features\lComplexNetwork.cpp" alt="" coords="1267,206,1440,247"/>
+<area shape="rect" id="node18" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/main.cpp" alt="" coords="1043,303,1229,359"/>
+<area shape="rect" id="node21" href="$_label_guesser_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelGuesser.cpp" alt="" coords="2251,303,2442,359"/>
+<area shape="rect" id="node23" href="$_labels_validation_experiment_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelsValidationExperiment.cpp" alt="" coords="1896,407,2112,463"/>
+<area shape="rect" id="node24" href="$_experiments_2_labels_validation_experiment_2main_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/main.cpp" alt="" coords="2137,407,2327,463"/>
+<area shape="rect" id="node27" href="$_complex_network_constructor_8cpp.html" title="Sources/Utilities/Complex\lNetworkConstructor/ComplexNetwork\lConstructor.cpp" alt="" coords="1488,303,1733,359"/>
+<area shape="rect" id="node30" href="$_graph_utilities_8cpp.html" title="Sources/Utilities/GraphUtilities.cpp" alt="" coords="2687,317,2913,344"/>
+<area shape="rect" id="node31" href="$_iterative_random_walk_8cpp.html" title="Sources/Utilities/Iterative\lRandomWalk.cpp" alt="" coords="2938,310,3107,351"/>
 </map>

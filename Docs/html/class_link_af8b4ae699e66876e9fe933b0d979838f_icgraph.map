@@ -1,6 +1,5 @@
 <map id="Link::setTime" name="Link::setTime">
-<area shape="rect" id="node2" href="$class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="155,27,347,69"/>
-<area shape="rect" id="node3" href="$class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="395,27,587,69"/>
-<area shape="rect" id="node4" href="$_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="703,5,753,32"/>
-<area shape="rect" id="node5" href="$class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="635,57,821,98"/>
+<area shape="rect" id="node2" href="$class_add_one_co_ocurrence_equation.html#ad75e50bbad4ba1f6c160e3a7059c1aca" title="AddOneCoOcurrenceEquation\l::reWeight" alt="" coords="155,5,357,47"/>
+<area shape="rect" id="node3" href="$class_reinforcement_co_ocurrence_equation.html#ace1a78861a38cfc6ad58584b8f73a846" title="ReinforcementCoOcurrence\lEquation::reWeight" alt="" coords="162,71,350,112"/>
+<area shape="rect" id="node4" href="$class_reinforcement_co_ocurrence_equation.html#ad9ffd4f4ad94858a2522c2e5c519920f" title="ReinforcementCoOcurrence\lEquation::firstWeight" alt="" coords="162,136,350,177"/>
 </map>

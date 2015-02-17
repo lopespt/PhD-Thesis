@@ -1,12 +1,11 @@
 <map id="ComplexNetworkVisualizer::load" name="ComplexNetworkVisualizer::load">
-<area shape="rect" id="node2" href="$class_features_complex_network.html#a122860a57231cd14eca3add9c482290e" title="FeaturesComplexNetwork\l::load" alt="" coords="255,5,431,47"/>
-<area shape="rect" id="node3" href="$class_complex_network.html#afee98f26ceed674c17be01a740787170" title="ComplexNetwork::getNumNodes" alt="" coords="235,71,451,98"/>
-<area shape="rect" id="node4" href="$class_complex_network.html#a720cb4e40342648d394792cc693d29a5" title="ComplexNetwork::getNumEdges" alt="" coords="235,122,451,149"/>
+<area shape="rect" id="node2" href="$class_features_complex_network.html#ade08f031abd3843ca83e9b29ee138a43" title="FeaturesComplexNetwork\l::load" alt="" coords="255,5,431,47"/>
+<area shape="rect" id="node3" href="$class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da" title="ComplexNetwork::getNumNodes" alt="" coords="235,71,451,98"/>
+<area shape="rect" id="node4" href="$class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb" title="ComplexNetwork::getNumArcs" alt="" coords="241,122,445,149"/>
 <area shape="rect" id="node5" href="$class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="240,173,445,215"/>
-<area shape="rect" id="node6" href="$class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork::Begin" alt="" coords="519,54,684,81"/>
-<area shape="rect" id="node7" href="$class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork::End" alt="" coords="524,105,679,131"/>
-<area shape="rect" id="node8" href="$class_complex_network.html#a2167b224079f5c0b44443959ad0b6440" title="ComplexNetwork::EdgesBegin" alt="" coords="500,155,703,182"/>
-<area shape="rect" id="node9" href="$class_complex_network.html#ad806138ea94ec18ed17f4681ab731208" title="ComplexNetwork::EdgesEnd" alt="" coords="505,206,697,233"/>
-<area shape="rect" id="node10" href="$class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="511,257,692,283"/>
-<area shape="rect" id="node11" href="$class_complex_network_viewer_widget.html#a7c6835fe215bf07b7586fe1f328ec0e5" title="ComplexNetworkViewerWidget\l::createVtkPipeline" alt="" coords="499,308,704,349"/>
+<area shape="rect" id="node6" href="$class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62" title="ComplexNetwork::getNode" alt="" coords="511,79,692,106"/>
+<area shape="rect" id="node7" href="$class_feature_abstract.html#af9ffe853716e6a28135ae1c33fafeafd" title="FeatureAbstract::asString" alt="" coords="515,130,688,157"/>
+<area shape="rect" id="node8" href="$class_complex_network.html#acec7daa653363b1a7f7835258eeef198" title="ComplexNetwork::getArcValue" alt="" coords="499,181,703,207"/>
+<area shape="rect" id="node9" href="$class_link.html#aaf7980526f4edf059b27602a7be82b2a" title="Link::getWeight" alt="" coords="545,231,658,258"/>
+<area shape="rect" id="node10" href="$class_complex_network_viewer_widget.html#a7c6835fe215bf07b7586fe1f328ec0e5" title="ComplexNetworkViewerWidget\l::createVtkPipeline" alt="" coords="499,283,704,324"/>
 </map>

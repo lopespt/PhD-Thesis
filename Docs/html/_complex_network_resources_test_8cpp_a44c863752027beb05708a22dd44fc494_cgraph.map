@@ -1,5 +1,5 @@
 <map id="initTest" name="initTest">
-<area shape="rect" id="node2" href="$class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f" title="ComplexNetwork::addNode" alt="" coords="119,5,304,32"/>
-<area shape="rect" id="node3" href="$class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d" title="ComplexNetwork::addEdge" alt="" coords="119,56,303,83"/>
+<area shape="rect" id="node2" href="$class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461" title="ComplexNetwork::addNode" alt="" coords="119,5,304,32"/>
+<area shape="rect" id="node3" href="$class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c" title="ComplexNetwork::addArc" alt="" coords="125,56,298,83"/>
 <area shape="rect" id="node4" href="$_complex_network_resources_test_8cpp.html#a195ed7b4505b1bb4a2448d71c649fcc1" title="memoryInUse" alt="" coords="159,107,264,133"/>
 </map>

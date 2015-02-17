@@ -3,6 +3,9 @@
 
 #include "FeatureFactoryAbstract.hpp"
 #include <memory>
+
+class Region;
+
 using namespace std;
 class LabelFeatureFactory:public FeatureFactoryAbstract
 {

@@ -1,4 +1,6 @@
 #include "OrientationFeature.hpp"
+#include <memory>
+#include <ostream>
 
 OrientationFeature::OrientationFeature(unsigned int value):Feature<unsigned int>(value, 2, "Orientation")
 {

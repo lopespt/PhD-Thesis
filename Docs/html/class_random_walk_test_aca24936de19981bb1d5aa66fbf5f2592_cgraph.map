@@ -1,11 +1,10 @@
 <map id="RandomWalkTest::execute" name="RandomWalkTest::execute">
-<area shape="rect" id="node2" href="$class_features_complex_network.html#a122860a57231cd14eca3add9c482290e" title="FeaturesComplexNetwork\l::load" alt="" coords="256,5,432,47"/>
-<area shape="rect" id="node3" href="$class_iterative_random_walk.html#a7f87d1012ed90935145b4df1f869b643" title="IterativeRandomWalk\l::Execute" alt="" coords="269,173,419,215"/>
-<area shape="rect" id="node4" href="$class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork::Begin" alt="" coords="508,74,673,101"/>
-<area shape="rect" id="node5" href="$class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork::End" alt="" coords="513,126,668,153"/>
-<area shape="rect" id="node6" href="$class_complex_network.html#a3711aff250a942a9ad61d0571be82c43" title="ComplexNetwork::getNode" alt="" coords="500,235,681,262"/>
-<area shape="rect" id="node8" href="$class_complex_network.html#afee98f26ceed674c17be01a740787170" title="ComplexNetwork::getNumNodes" alt="" coords="236,290,452,317"/>
-<area shape="rect" id="node9" href="$class_iterative_random_walk.html#a653857e8ad309943cbdb9e6a2f994f59" title="IterativeRandomWalk\l::getProbability" alt="" coords="269,341,419,383"/>
-<area shape="rect" id="node10" href="$_random_walk_test_8cpp.html#ae3fd3fc3da851113974fb178ecf6a367" title="printMatlab" alt="" coords="300,407,388,434"/>
-<area shape="rect" id="node7" href="$class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1" title="ComplexNetwork::getEdge" alt="" coords="501,181,681,207"/>
+<area shape="rect" id="node2" href="$class_features_complex_network.html#ade08f031abd3843ca83e9b29ee138a43" title="FeaturesComplexNetwork\l::load" alt="" coords="256,5,432,47"/>
+<area shape="rect" id="node3" href="$class_iterative_random_walk.html#a32a6e92c66551180eee6678b3950fbde" title="IterativeRandomWalk\l::Execute" alt="" coords="269,71,419,112"/>
+<area shape="rect" id="node6" href="$class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da" title="ComplexNetwork::getNumNodes" alt="" coords="236,137,452,163"/>
+<area shape="rect" id="node7" href="$class_iterative_random_walk.html#ab93a43e6a33a6e5c2d2481a96b009f78" title="IterativeRandomWalk\l::getProbability" alt="" coords="269,188,419,229"/>
+<area shape="rect" id="node8" href="$class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62" title="ComplexNetwork::getNode" alt="" coords="253,254,435,281"/>
+<area shape="rect" id="node9" href="$_random_walk_test_8cpp.html#ae3fd3fc3da851113974fb178ecf6a367" title="printMatlab" alt="" coords="300,305,388,331"/>
+<area shape="rect" id="node4" href="$class_iterative_random_walk.html#adda57dd53cc3646676815dc7d783c51e" title="IterativeRandomWalk\l::clearMap" alt="" coords="507,41,657,83"/>
+<area shape="rect" id="node5" href="$class_graph_utilities.html#afd29a289301241336d141052471225b0" title="GraphUtilities::copyMap" alt="" coords="500,107,664,134"/>
 </map>

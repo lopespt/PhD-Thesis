@@ -1,7 +1,6 @@
 #ifndef FEATURESCOMPLEXNETWORK_HPP
 #define FEATURESCOMPLEXNETWORK_HPP
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include <ComplexNetwork/ComplexNetworkV2.hpp>
 #include <FeatureExtractors/FeatureAbstract.hpp>
 #include <FeatureExtractors/FeatureFactoryAbstract.hpp>
 #include "Link.hpp"
@@ -37,25 +36,9 @@ public:
     private:
         QList<FeatureFactoryAbstract*> &factories;
     public:
-        NodeReader(QList< FeatureFactoryAbstract* > &factories):factories(factories){
+        NodeReader(QList< FeatureFactoryAbstract* > &factories):factories(factories){}
 
-        }
-
-        FeatureAbstractPtr operator()(const string& str){
-            std::stringstream stream;
-            stream << str;
-            int type;
-            sscanf(str.c_str(), "%d", &type);
-            for(FeatureFactoryAbstract* f : factories){
-                if(f->getType() == type){
-                    FeatureAbstractPtr feat= f->CreateFromStream(stream);
-                    return feat;
-                }
-            }
-            throw new runtime_error("No FeatureFactory Found");
-            return FeatureAbstractPtr();
-        }
-
+        FeatureAbstractPtr operator()(const string& str);
     };
 };
 #endif // FEATURESCOMPLEXNETWORK_HPP

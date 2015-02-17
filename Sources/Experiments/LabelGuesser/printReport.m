@@ -20,6 +20,7 @@ function printReport(filename)
        disp([rep.Escondido(b(i),:), '  ', num2str(rep.posicaoRankCorreto(b(i))) ,'  ', rep.Top10Escolhidos(b(i),:)])
     end
     
+    
 end
 
 

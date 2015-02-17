@@ -1,5 +1,5 @@
 <map id="Sources/Utilities/KFoldDatabaseReader.hpp" name="Sources/Utilities/KFoldDatabaseReader.hpp">
-<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="303,95,452,121"/>
-<area shape="rect" id="node4" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="303,169,455,196"/>
-<area shape="rect" id="node5" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="367,244,567,271"/>
+<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="93,95,243,121"/>
+<area shape="rect" id="node4" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="93,169,245,196"/>
+<area shape="rect" id="node5" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="157,244,357,271"/>
 </map>

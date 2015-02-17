@@ -1,5 +1,5 @@
 <map id="Region::getBoundary" name="Region::getBoundary">
-<area shape="rect" id="node2" href="$class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="215,5,393,47"/>
+<area shape="rect" id="node2" href="$class_orientation_feature_factory.html#a979d7a274a149c806bd3d0fd2066d3ce" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="215,5,393,47"/>
 <area shape="rect" id="node6" href="$class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="200,71,408,112"/>
 <area shape="rect" id="node3" href="$class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="456,13,607,39"/>
 <area shape="rect" id="node4" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="655,13,868,39"/>

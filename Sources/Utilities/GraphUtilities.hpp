@@ -3,7 +3,6 @@
 
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
-#include <Utilities/CachedComplexNetwork.hpp>
 class GraphUtilities
 {
 private:

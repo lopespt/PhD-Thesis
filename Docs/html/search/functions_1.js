@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['addautoloop',['addAutoLoop',['../class_random_walk.html#a135ac9a96a3d7d21f9c3e75298974752',1,'RandomWalk']]],
-  ['addedge',['addEdge',['../class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d',1,'ComplexNetwork::addEdge()'],['../class_complex_network_v2.html#ac846f08c3e92c642aa887801adee6aec',1,'ComplexNetworkV2::addEdge()']]],
-  ['addnode',['addNode',['../class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f',1,'ComplexNetwork::addNode()'],['../class_complex_network_v2.html#ac63bea705ca74ac77cee3344e3f9609e',1,'ComplexNetworkV2::addNode()'],['../class_cached_complex_network.html#ad6e24699a050f5f2d7f908aba40b931c',1,'CachedComplexNetwork::addNode()']]],
+  ['addarc',['addArc',['../class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c',1,'ComplexNetwork::addArc(ListDigraph::Node f, ListDigraph::Node t)'],['../class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff',1,'ComplexNetwork::addArc(ListDigraph::Node f, ListDigraph::Node t, const E &amp;val)']]],
+  ['addautoloop',['addAutoLoop',['../class_graph_utilities.html#ac336fc79436ed71a0c604bb2a35f8b23',1,'GraphUtilities']]],
+  ['addedge',['addEdge',['../class_complex_network_v2.html#ac846f08c3e92c642aa887801adee6aec',1,'ComplexNetworkV2']]],
+  ['addnode',['addNode',['../class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461',1,'ComplexNetwork::addNode()'],['../class_complex_network.html#add76e54a672f7489ec0fc03e720b2040',1,'ComplexNetwork::addNode(const N &amp;val)'],['../class_complex_network_v2.html#ac63bea705ca74ac77cee3344e3f9609e',1,'ComplexNetworkV2::addNode()']]],
+  ['addonecoocurrenceequation',['AddOneCoOcurrenceEquation',['../class_add_one_co_ocurrence_equation.html#a13fb88aa8f85bbed226e660cfdb4108c',1,'AddOneCoOcurrenceEquation']]],
+  ['arcexists',['arcExists',['../class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74',1,'ComplexNetwork']]],
   ['areafeature',['AreaFeature',['../class_area_feature.html#af65d43c5c868babfb6c429464f36a898',1,'AreaFeature']]],
   ['areafeatureextractionwindow',['AreaFeatureExtractionWindow',['../class_area_feature_extraction_window.html#abcf541b8a70c5122524facefd7fc3f4b',1,'AreaFeatureExtractionWindow']]],
   ['areafeaturefactory',['AreaFeatureFactory',['../class_area_feature_factory.html#a1299cd28490bc46f5ee66e16b712e37d',1,'AreaFeatureFactory']]],

@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,11 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FEATUREFACTORYABSTRACT_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract.html">FeatureAbstract</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>QDataStream;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div>
@@ -105,23 +105,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">type</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a>(<span class="keywordtype">int</span> type);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> shared_ptr&lt;FeatureAbstract&gt; CreateFromRegion(<span class="keyword">const</span> <a class="code" href="class_region.html">Region</a> *r) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> shared_ptr&lt;FeatureAbstract&gt; CreateFromStream(QDataStream &amp;stream) <span class="keyword">const</span> = 0 ;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> getType() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">   21</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">~FeatureFactoryAbstract</a>(){}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // FEATUREFACTORYABSTRACT_HPP</span></div>
-<div class="ttc" id="class_feature_factory_abstract_html_af219e0ee978f0d7bf87761471a1ff96d"><div class="ttname"><a href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">FeatureFactoryAbstract::~FeatureFactoryAbstract</a></div><div class="ttdeci">virtual ~FeatureFactoryAbstract()</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:21</div></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a>(<span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> CreateFromRegion(<span class="keyword">const</span> <a class="code" href="class_region.html">Region</a> *r) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> CreateFromStream(istream &amp;stream) <span class="keyword">const</span> = 0 ;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> getType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">   22</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">~FeatureFactoryAbstract</a>(){}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // FEATUREFACTORYABSTRACT_HPP</span></div>
+<div class="ttc" id="class_feature_factory_abstract_html_af219e0ee978f0d7bf87761471a1ff96d"><div class="ttname"><a href="class_feature_factory_abstract.html#af219e0ee978f0d7bf87761471a1ff96d">FeatureFactoryAbstract::~FeatureFactoryAbstract</a></div><div class="ttdeci">virtual ~FeatureFactoryAbstract()</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:22</div></div>
 <div class="ttc" id="class_feature_factory_abstract_html"><div class="ttname"><a href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:12</div></div>
 <div class="ttc" id="class_feature_factory_abstract_html_acdc4ca5ce9d35423f420c53081f0f238"><div class="ttname"><a href="class_feature_factory_abstract.html#acdc4ca5ce9d35423f420c53081f0f238">FeatureFactoryAbstract::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> FeatureFactoryAbstract.hpp:15</div></div>
-<div class="ttc" id="class_feature_abstract_html"><div class="ttname"><a href="class_feature_abstract.html">FeatureAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureAbstract.hpp:8</div></div>
-<div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:16</div></div>
+<div class="ttc" id="class_feature_abstract_ptr_html"><div class="ttname"><a href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a></div><div class="ttdef"><b>Definition:</b> FeatureAbstract.hpp:43</div></div>
+<div class="ttc" id="class_feature_abstract_html"><div class="ttname"><a href="class_feature_abstract.html">FeatureAbstract</a></div><div class="ttdef"><b>Definition:</b> FeatureAbstract.hpp:10</div></div>
+<div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:47 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

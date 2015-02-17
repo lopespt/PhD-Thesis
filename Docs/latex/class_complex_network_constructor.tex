@@ -8,22 +8,24 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_complex_network_constructor_afe14ec2655225f646877381c87b86df3}{Complex\+Network\+Constructor} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \&\hyperlink{class_complex_network_constructor_aa099456a58edc5c1885323061206b3e6}{cn}, \hyperlink{class_database_reader}{Database\+Reader} \&\hyperlink{class_complex_network_constructor_ad223ad7e464ff159d91a89deb4e943cc}{reader}, Q\+List$<$ \hyperlink{class_feature_factory_abstract}{Feature\+Factory\+Abstract} $\ast$ $>$ \hyperlink{class_complex_network_constructor_ae79b538a8b9253cd71de5fef1be1c18a}{extractors})
+\hyperlink{class_complex_network_constructor_a10da7003e46cb43db8f284470b3d493b}{Complex\+Network\+Constructor} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \&\hyperlink{class_complex_network_constructor_aa099456a58edc5c1885323061206b3e6}{cn}, \hyperlink{class_database_reader}{Database\+Reader} \&\hyperlink{class_complex_network_constructor_ad223ad7e464ff159d91a89deb4e943cc}{reader}, Q\+List$<$ \hyperlink{class_feature_factory_abstract}{Feature\+Factory\+Abstract} $\ast$ $>$ \hyperlink{class_complex_network_constructor_ae79b538a8b9253cd71de5fef1be1c18a}{extractors}, \hyperlink{class_co_ocurrence_equation}{Co\+Ocurrence\+Equation} $\ast$co\+Ocurrence\+Equation\+Policy=N\+U\+L\+L)
+\item 
+\hyperlink{class_complex_network_constructor_aef380b5364cb293471de5ab8a710e2db}{$\sim$\+Complex\+Network\+Constructor} ()
 \item 
 void \hyperlink{class_complex_network_constructor_a19d313488e2c19172e362b521f53e329}{build} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{class_complex_network_constructor_a66d2992250ffcc2e4c9721a840f81378}{make\+Co\+Occurrences} (Q\+Linked\+List$<$ shared\+\_\+ptr$<$ const \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$$>$ features, Q\+List$<$ int $>$ \&regions\+Ids)
+void \hyperlink{class_complex_network_constructor_acfcdef7c4ba88191a98d2e94c456a371}{make\+Co\+Occurrences} (Q\+Linked\+List$<$ \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} $>$ features, Q\+List$<$ int $>$ \&regions\+Ids)
 \item 
-float \hyperlink{class_complex_network_constructor_a8c4875120270d689a5fd08e47a6b4b59}{recorrencia} (float \hyperlink{class_complex_network_constructor_afc016404ca7dda4b05807e3ca004c308}{time})
+void \hyperlink{class_complex_network_constructor_ad92ef615d6881fa178124b424deff23d}{reinforce\+Link} (const Features\+Complex\+Network\+::\+Node \&a, const Features\+Complex\+Network\+::\+Node \&b, bool is\+Same\+Label)
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 Q\+Hash$<$ \hyperlink{class_feature_abstract_key}{Feature\+Abstract\+Key}, \\*
-\hyperlink{_complex_network_8hpp_a8323334ca788fde39682469321590d52}{node\+\_\+id} $>$ \hyperlink{class_complex_network_constructor_ad616573ee07edff462c552d3fc2bfce7}{index}
+Features\+Complex\+Network\+::\+Node $>$ \hyperlink{class_complex_network_constructor_a1eb20c95af12f063ecbc3052eb03a00a}{index}
 \item 
 \hyperlink{class_features_complex_network}{Features\+Complex\+Network} \& \hyperlink{class_complex_network_constructor_aa099456a58edc5c1885323061206b3e6}{cn}
 \item 
@@ -31,33 +33,42 @@ Q\+Hash$<$ \hyperlink{class_feature_abstract_key}{Feature\+Abstract\+Key}, \\*
 \item 
 Q\+List$<$ \hyperlink{class_feature_factory_abstract}{Feature\+Factory\+Abstract} $\ast$ $>$ \hyperlink{class_complex_network_constructor_ae79b538a8b9253cd71de5fef1be1c18a}{extractors}
 \item 
+\hyperlink{class_co_ocurrence_equation}{Co\+Ocurrence\+Equation} $\ast$ \hyperlink{class_complex_network_constructor_a1048d40ab65e87ad58267144642b66cd}{reinforce\+Policy}
+\item 
+bool \hyperlink{class_complex_network_constructor_a56a1a391bdbd14e4f9a9c19125205bf9}{\+\_\+co\+Ocurrence\+Strategy\+Created}
+\item 
 unsigned long long int \hyperlink{class_complex_network_constructor_afc016404ca7dda4b05807e3ca004c308}{time} =1
-\item 
-float \hyperlink{class_complex_network_constructor_a9d3e346719dc1f8f3093a48b8d44e669}{lambda} =80
-\item 
-float \hyperlink{class_complex_network_constructor_aa7fe374b9733338b8176708f77d29c55}{learning\+Rate} =0.\+3
 \end{DoxyCompactItemize}
 
 
-Collaboration diagram for Complex\+Network\+Constructor\+:\nopagebreak
+Collaboration diagram for Complex\+Network\+Constructor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_complex_network_constructor__coll__graph}
+\includegraphics[height=550pt]{class_complex_network_constructor__coll__graph}
 \end{center}
 \end{figure}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_complex_network_constructor_afe14ec2655225f646877381c87b86df3}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
+\hypertarget{class_complex_network_constructor_a10da7003e46cb43db8f284470b3d493b}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{Complex\+Network\+Constructor}]{\setlength{\rightskip}{0pt plus 5cm}Complex\+Network\+Constructor\+::\+Complex\+Network\+Constructor (
 \begin{DoxyParamCaption}
 \item[{{\bf Features\+Complex\+Network} \&}]{cn, }
 \item[{{\bf Database\+Reader} \&}]{reader, }
-\item[{Q\+List$<$ {\bf Feature\+Factory\+Abstract} $\ast$ $>$}]{extractors}
+\item[{Q\+List$<$ {\bf Feature\+Factory\+Abstract} $\ast$ $>$}]{extractors, }
+\item[{{\bf Co\+Ocurrence\+Equation} $\ast$}]{co\+Ocurrence\+Equation\+Policy = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}}\label{class_complex_network_constructor_afe14ec2655225f646877381c87b86df3}
+)}}\label{class_complex_network_constructor_a10da7003e46cb43db8f284470b3d493b}
+\hypertarget{class_complex_network_constructor_aef380b5364cb293471de5ab8a710e2db}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!````~Complex\+Network\+Constructor@{$\sim$\+Complex\+Network\+Constructor}}
+\index{````~Complex\+Network\+Constructor@{$\sim$\+Complex\+Network\+Constructor}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
+\subsubsection[{$\sim$\+Complex\+Network\+Constructor}]{\setlength{\rightskip}{0pt plus 5cm}Complex\+Network\+Constructor\+::$\sim$\+Complex\+Network\+Constructor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_network_constructor_aef380b5364cb293471de5ab8a710e2db}
 
 
 \subsection{Member Function Documentation}
@@ -70,7 +81,8 @@ Collaboration diagram for Complex\+Network\+Constructor\+:\nopagebreak
 )}}\label{class_complex_network_constructor_a19d313488e2c19172e362b521f53e329}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -81,7 +93,8 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -90,64 +103,92 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{class_complex_network_constructor_a66d2992250ffcc2e4c9721a840f81378}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!make\+Co\+Occurrences@{make\+Co\+Occurrences}}
+\hypertarget{class_complex_network_constructor_acfcdef7c4ba88191a98d2e94c456a371}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!make\+Co\+Occurrences@{make\+Co\+Occurrences}}
 \index{make\+Co\+Occurrences@{make\+Co\+Occurrences}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{make\+Co\+Occurrences}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\+Network\+Constructor\+::make\+Co\+Occurrences (
 \begin{DoxyParamCaption}
-\item[{Q\+Linked\+List$<$ shared\+\_\+ptr$<$ const {\bf Feature\+Abstract} $>$$>$}]{features, }
+\item[{Q\+Linked\+List$<$ {\bf Feature\+Abstract\+Ptr} $>$}]{features, }
 \item[{Q\+List$<$ int $>$ \&}]{regions\+Ids}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a66d2992250ffcc2e4c9721a840f81378}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_acfcdef7c4ba88191a98d2e94c456a371}
 Atualiza os pesos as arestas de acordo com a Equação\+: \[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right) \] 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_complex_network_constructor_a66d2992250ffcc2e4c9721a840f81378_cgraph}
+\includegraphics[width=350pt]{class_complex_network_constructor_acfcdef7c4ba88191a98d2e94c456a371_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_complex_network_constructor_a66d2992250ffcc2e4c9721a840f81378_icgraph}
+\includegraphics[width=350pt]{class_complex_network_constructor_acfcdef7c4ba88191a98d2e94c456a371_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{class_complex_network_constructor_a8c4875120270d689a5fd08e47a6b4b59}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!recorrencia@{recorrencia}}
-\index{recorrencia@{recorrencia}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
-\subsubsection[{recorrencia}]{\setlength{\rightskip}{0pt plus 5cm}float Complex\+Network\+Constructor\+::recorrencia (
+\hypertarget{class_complex_network_constructor_ad92ef615d6881fa178124b424deff23d}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!reinforce\+Link@{reinforce\+Link}}
+\index{reinforce\+Link@{reinforce\+Link}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
+\subsubsection[{reinforce\+Link}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\+Network\+Constructor\+::reinforce\+Link (
 \begin{DoxyParamCaption}
-\item[{float}]{time}
+\item[{const Features\+Complex\+Network\+::\+Node \&}]{a, }
+\item[{const Features\+Complex\+Network\+::\+Node \&}]{b, }
+\item[{bool}]{is\+Same\+Label}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a8c4875120270d689a5fd08e47a6b4b59}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_ad92ef615d6881fa178124b424deff23d}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_constructor_ad92ef615d6881fa178124b424deff23d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_complex_network_constructor_ad92ef615d6881fa178124b424deff23d_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_complex_network_constructor_a56a1a391bdbd14e4f9a9c19125205bf9}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!\+\_\+co\+Ocurrence\+Strategy\+Created@{\+\_\+co\+Ocurrence\+Strategy\+Created}}
+\index{\+\_\+co\+Ocurrence\+Strategy\+Created@{\+\_\+co\+Ocurrence\+Strategy\+Created}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
+\subsubsection[{\+\_\+co\+Ocurrence\+Strategy\+Created}]{\setlength{\rightskip}{0pt plus 5cm}bool Complex\+Network\+Constructor\+::\+\_\+co\+Ocurrence\+Strategy\+Created\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a56a1a391bdbd14e4f9a9c19125205bf9}
 \hypertarget{class_complex_network_constructor_aa099456a58edc5c1885323061206b3e6}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!cn@{cn}}
 \index{cn@{cn}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{cn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Features\+Complex\+Network}\& Complex\+Network\+Constructor\+::cn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_aa099456a58edc5c1885323061206b3e6}
 \hypertarget{class_complex_network_constructor_ae79b538a8b9253cd71de5fef1be1c18a}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!extractors@{extractors}}
 \index{extractors@{extractors}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{extractors}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<${\bf Feature\+Factory\+Abstract}$\ast$$>$ Complex\+Network\+Constructor\+::extractors\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_ae79b538a8b9253cd71de5fef1be1c18a}
-\hypertarget{class_complex_network_constructor_ad616573ee07edff462c552d3fc2bfce7}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!index@{index}}
+\hypertarget{class_complex_network_constructor_a1eb20c95af12f063ecbc3052eb03a00a}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!index@{index}}
 \index{index@{index}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
-\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Hash$<${\bf Feature\+Abstract\+Key} , {\bf node\+\_\+id}$>$ Complex\+Network\+Constructor\+::index\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_ad616573ee07edff462c552d3fc2bfce7}
-\hypertarget{class_complex_network_constructor_a9d3e346719dc1f8f3093a48b8d44e669}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!lambda@{lambda}}
-\index{lambda@{lambda}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
-\subsubsection[{lambda}]{\setlength{\rightskip}{0pt plus 5cm}float Complex\+Network\+Constructor\+::lambda =80\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a9d3e346719dc1f8f3093a48b8d44e669}
-Esta é a influência do tempo na aprendizagem $ \lambda $ \hypertarget{class_complex_network_constructor_aa7fe374b9733338b8176708f77d29c55}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!learning\+Rate@{learning\+Rate}}
-\index{learning\+Rate@{learning\+Rate}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
-\subsubsection[{learning\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}float Complex\+Network\+Constructor\+::learning\+Rate =0.\+3\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_aa7fe374b9733338b8176708f77d29c55}
-Esta é a taxa de aprendizagem $ \alpha $ \hypertarget{class_complex_network_constructor_ad223ad7e464ff159d91a89deb4e943cc}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!reader@{reader}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Hash$<${\bf Feature\+Abstract\+Key}, Features\+Complex\+Network\+::\+Node$>$ Complex\+Network\+Constructor\+::index\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a1eb20c95af12f063ecbc3052eb03a00a}
+\hypertarget{class_complex_network_constructor_ad223ad7e464ff159d91a89deb4e943cc}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!reader@{reader}}
 \index{reader@{reader}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database\+Reader}\& Complex\+Network\+Constructor\+::reader\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_ad223ad7e464ff159d91a89deb4e943cc}
+\hypertarget{class_complex_network_constructor_a1048d40ab65e87ad58267144642b66cd}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!reinforce\+Policy@{reinforce\+Policy}}
+\index{reinforce\+Policy@{reinforce\+Policy}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
+\subsubsection[{reinforce\+Policy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Co\+Ocurrence\+Equation}$\ast$ Complex\+Network\+Constructor\+::reinforce\+Policy\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_a1048d40ab65e87ad58267144642b66cd}
 \hypertarget{class_complex_network_constructor_afc016404ca7dda4b05807e3ca004c308}{\index{Complex\+Network\+Constructor@{Complex\+Network\+Constructor}!time@{time}}
 \index{time@{time}!Complex\+Network\+Constructor@{Complex\+Network\+Constructor}}
 \subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int Complex\+Network\+Constructor\+::time =1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_complex_network_constructor_afc016404ca7dda4b05807e3ca004c308}
@@ -155,5 +196,5 @@ Esta é a taxa de aprendizagem $ \alpha $ \hypertarget{class_complex_network_con
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Sources/\+Utilities/\hyperlink{_complex_network_constructor_8hpp}{Complex\+Network\+Constructor.\+hpp}\item 
-Sources/\+Utilities/\hyperlink{_complex_network_constructor_8cpp}{Complex\+Network\+Constructor.\+cpp}\end{DoxyCompactItemize}
+Sources/\+Utilities/\+Complex\+Network\+Constructor/\hyperlink{_complex_network_constructor_8hpp}{Complex\+Network\+Constructor.\+hpp}\item 
+Sources/\+Utilities/\+Complex\+Network\+Constructor/\hyperlink{_complex_network_constructor_8cpp}{Complex\+Network\+Constructor.\+cpp}\end{DoxyCompactItemize}

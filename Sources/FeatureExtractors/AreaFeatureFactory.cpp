@@ -2,6 +2,7 @@
 #include "AreaFeatureFactory.hpp"
 #include "AreaFeature.hpp"
 
+#include <opencv/cv.h>
 
 AreaFeatureFactory::AreaFeatureFactory(int discretization):FeatureFactoryAbstract(1), discretization(discretization){
 }

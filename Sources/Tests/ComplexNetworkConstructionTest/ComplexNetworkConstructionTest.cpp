@@ -2,7 +2,7 @@
 #include <QApplication>
 #include <FeatureExtractors/Feature.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
-#include <Utilities/ComplexNetworkConstructor.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <locale>
 #include <FeatureExtractors/FeatureAbstract.hpp>

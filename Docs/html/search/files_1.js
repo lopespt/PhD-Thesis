@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['cachedcomplexnetwork_2ecpp',['CachedComplexNetwork.cpp',['../_cached_complex_network_8cpp.html',1,'']]],
-  ['cachedcomplexnetwork_2ehpp',['CachedComplexNetwork.hpp',['../_cached_complex_network_8hpp.html',1,'']]],
   ['complexnetwork_2ecpp',['ComplexNetwork.cpp',['../_complex_network_8cpp.html',1,'']]],
   ['complexnetwork_2ehpp',['ComplexNetwork.hpp',['../_complex_network_8hpp.html',1,'']]],
   ['complexnetworkconstructiontest_2ecpp',['ComplexNetworkConstructionTest.cpp',['../_complex_network_construction_test_8cpp.html',1,'']]],
@@ -16,5 +14,7 @@ var searchData=
   ['complexnetworkviewerwidget_2ehpp',['ComplexNetworkViewerWidget.hpp',['../_complex_network_viewer_widget_8hpp.html',1,'']]],
   ['complexnetworkvisualizer_2ecpp',['ComplexNetworkVisualizer.cpp',['../_complex_network_visualizer_8cpp.html',1,'']]],
   ['complexnetworkvisualizer_2ehpp',['ComplexNetworkVisualizer.hpp',['../_complex_network_visualizer_8hpp.html',1,'']]],
-  ['compute_5fmodularity_2epy',['compute_modularity.py',['../compute__modularity_8py.html',1,'']]]
+  ['compute_5fmodularity_2epy',['compute_modularity.py',['../compute__modularity_8py.html',1,'']]],
+  ['coocurrenceequation_2ecpp',['CoOcurrenceEquation.cpp',['../_co_ocurrence_equation_8cpp.html',1,'']]],
+  ['coocurrenceequation_2ehpp',['CoOcurrenceEquation.hpp',['../_co_ocurrence_equation_8hpp.html',1,'']]]
 ];

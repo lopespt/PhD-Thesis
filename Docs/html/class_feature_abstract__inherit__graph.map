@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$class_feature.html" title="{Feature\&lt; float \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="5,477,137,613"/>
 <area shape="rect" id="node5" href="$class_feature.html" title="{Feature\&lt; label \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="368,477,500,613"/>
 <area shape="rect" id="node7" href="$class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="163,477,326,613"/>
-<area shape="rect" id="node4" href="$class_area_feature.html" title="{AreaFeature\n||+ AreaFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="5,663,137,769"/>
-<area shape="rect" id="node6" href="$class_label_feature.html" title="{LabelFeature\n||+ LabelFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="368,663,500,769"/>
-<area shape="rect" id="node8" href="$class_orientation_feature.html" title="{OrientationFeature\n||+ OrientationFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="168,663,321,769"/>
+<area shape="rect" id="node4" href="$class_area_feature.html" title="{AreaFeature\n||+ AreaFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="5,670,137,777"/>
+<area shape="rect" id="node6" href="$class_label_feature.html" title="{LabelFeature\n||+ LabelFeature()\l+ asString()\l+ WriteToStream()\l+ ~LabelFeature()\l}" alt="" coords="368,663,500,784"/>
+<area shape="rect" id="node8" href="$class_orientation_feature.html" title="{OrientationFeature\n||+ OrientationFeature()\l+ asString()\l+ WriteToStream()\l}" alt="" coords="168,670,321,777"/>
 </map>

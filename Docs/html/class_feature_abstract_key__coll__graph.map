@@ -1,3 +1,3 @@
 <map id="FeatureAbstractKey" name="FeatureAbstractKey">
-<area shape="rect" id="node2" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ ~FeatureAbstract()\l+ WriteToStream()\l+ operator==()\l}" alt="" coords="13,5,158,229"/>
+<area shape="rect" id="node2" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="13,5,158,229"/>
 </map>

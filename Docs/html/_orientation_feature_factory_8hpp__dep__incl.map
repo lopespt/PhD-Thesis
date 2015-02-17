@@ -3,5 +3,7 @@
 <area shape="rect" id="node3" href="$_experiments_2_labels_complex_networks_2main_8cpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/main.cpp" alt="" coords="215,95,389,151"/>
 <area shape="rect" id="node4" href="$_label_guesser_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelGuesser.cpp" alt="" coords="413,95,604,151"/>
 <area shape="rect" id="node5" href="$_labels_validation_experiment_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelsValidationExperiment.cpp" alt="" coords="629,95,845,151"/>
-<area shape="rect" id="node6" href="$_orientation_feature_factory_8cpp.html" title="Sources/FeatureExtractors\l/OrientationFeatureFactory.cpp" alt="" coords="869,102,1076,143"/>
+<area shape="rect" id="node6" href="$_experiments_2_setup_padrao_2main_8cpp.html" title="Sources/Experiments\l/SetupPadrao/main.cpp" alt="" coords="869,102,1031,143"/>
+<area shape="rect" id="node7" href="$_feature_abstract_8cpp.html" title="Sources/FeatureExtractors\l/FeatureAbstract.cpp" alt="" coords="1055,102,1235,143"/>
+<area shape="rect" id="node8" href="$_orientation_feature_factory_8cpp.html" title="Sources/FeatureExtractors\l/OrientationFeatureFactory.cpp" alt="" coords="1259,102,1465,143"/>
 </map>

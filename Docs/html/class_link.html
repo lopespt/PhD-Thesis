@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_link-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Link Class Reference</div>  </div>
@@ -125,6 +126,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a61f8b4a76aa028011dbe75affc1b44f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f10e1961b948c4a5e71e6702c68de0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#ae5f10e1961b948c4a5e71e6702c68de0">sameLabel</a></td></tr>
 <tr class="separator:ae5f10e1961b948c4a5e71e6702c68de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a7bf934f67abd8e74c78d5fbfadc427db"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#a7bf934f67abd8e74c78d5fbfadc427db">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_link.html">Link</a> &amp;dt)</td></tr>
+<tr class="separator:a7bf934f67abd8e74c78d5fbfadc427db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5bf13913ca69fd9b3b8fde3e7cc953"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_link.html#a6a5bf13913ca69fd9b3b8fde3e7cc953">operator&gt;&gt;</a> (std::istream &amp;os, <a class="el" href="class_link.html">Link</a> &amp;dt)</td></tr>
+<tr class="separator:a6a5bf13913ca69fd9b3b8fde3e7cc953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <div class="dynheader">
 Collaboration diagram for Link:</div>
@@ -198,7 +206,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_link_af3dac01ac8fb3c9d9637361bab37a8f7_icgraph.png" border="0" usemap="#class_link_af3dac01ac8fb3c9d9637361bab37a8f7_icgraph" alt=""/></div>
 <map name="class_link_af3dac01ac8fb3c9d9637361bab37a8f7_icgraph" id="class_link_af3dac01ac8fb3c9d9637361bab37a8f7_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="156,27,348,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="396,27,588,69"/><area shape="rect" id="node4" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="704,5,755,32"/><area shape="rect" id="node5" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="636,57,823,98"/></map>
+<area shape="rect" id="node2" href="class_reinforcement_co_ocurrence_equation.html#ace1a78861a38cfc6ad58584b8f73a846" title="ReinforcementCoOcurrence\lEquation::reWeight" alt="" coords="156,5,344,47"/><area shape="rect" id="node3" href="_link_8cpp.html#a7bf934f67abd8e74c78d5fbfadc427db" title="operator\&lt;\&lt;" alt="" coords="207,71,293,98"/></map>
 </div>
 </p>
 
@@ -222,7 +230,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_link_aaf7980526f4edf059b27602a7be82b2a_icgraph.png" border="0" usemap="#class_link_aaf7980526f4edf059b27602a7be82b2a_icgraph" alt=""/></div>
 <map name="class_link_aaf7980526f4edf059b27602a7be82b2a_icgraph" id="class_link_aaf7980526f4edf059b27602a7be82b2a_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="167,27,359,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="407,27,599,69"/><area shape="rect" id="node4" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="715,5,765,32"/><area shape="rect" id="node5" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="647,57,833,98"/></map>
+<area shape="rect" id="node2" href="class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="167,5,372,47"/><area shape="rect" id="node5" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="244,71,295,98"/><area shape="rect" id="node6" href="class_add_one_co_ocurrence_equation.html#ad75e50bbad4ba1f6c160e3a7059c1aca" title="AddOneCoOcurrenceEquation\l::reWeight" alt="" coords="168,123,371,164"/><area shape="rect" id="node7" href="class_reinforcement_co_ocurrence_equation.html#ace1a78861a38cfc6ad58584b8f73a846" title="ReinforcementCoOcurrence\lEquation::reWeight" alt="" coords="175,188,363,229"/><area shape="rect" id="node8" href="class_graph_utilities.html#ad092c90863dca74df15d6ed201c6e985" title="GraphUtilities::getWeights" alt="" coords="181,254,357,281"/><area shape="rect" id="node12" href="_link_8cpp.html#a7bf934f67abd8e74c78d5fbfadc427db" title="operator\&lt;\&lt;" alt="" coords="226,305,313,331"/><area shape="rect" id="node3" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="420,5,601,47"/><area shape="rect" id="node4" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="649,13,700,39"/><area shape="rect" id="node9" href="_experiments_2_setup_padrao_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="485,225,536,251"/><area shape="rect" id="node10" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="425,276,597,317"/><area shape="rect" id="node11" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="649,283,700,310"/></map>
 </div>
 </p>
 
@@ -246,7 +254,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0_icgraph.png" border="0" usemap="#class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0_icgraph" alt=""/></div>
 <map name="class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0_icgraph" id="class_link_a1eaa1a41eb1bcc0563786d60d7eb45c0_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="184,27,376,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="424,27,616,69"/><area shape="rect" id="node4" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="732,5,783,32"/><area shape="rect" id="node5" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="664,57,851,98"/></map>
+<area shape="rect" id="node2" href="class_complex_network_constructor.html#ad92ef615d6881fa178124b424deff23d" title="ComplexNetworkConstructor\l::reinforceLink" alt="" coords="184,57,376,98"/><area shape="rect" id="node9" href="_link_8cpp.html#a7bf934f67abd8e74c78d5fbfadc427db" title="operator\&lt;\&lt;" alt="" coords="237,123,323,149"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#acfcdef7c4ba88191a98d2e94c456a371" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="424,57,616,98"/><area shape="rect" id="node4" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="664,57,856,98"/><area shape="rect" id="node5" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="972,5,1023,32"/><area shape="rect" id="node6" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="911,57,1083,98"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="904,122,1091,163"/><area shape="rect" id="node7" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1139,64,1189,91"/></map>
 </div>
 </p>
 
@@ -319,7 +327,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_link_af8b4ae699e66876e9fe933b0d979838f_icgraph.png" border="0" usemap="#class_link_af8b4ae699e66876e9fe933b0d979838f_icgraph" alt=""/></div>
 <map name="class_link_af8b4ae699e66876e9fe933b0d979838f_icgraph" id="class_link_af8b4ae699e66876e9fe933b0d979838f_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="155,27,347,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="395,27,587,69"/><area shape="rect" id="node4" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="703,5,753,32"/><area shape="rect" id="node5" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="635,57,821,98"/></map>
+<area shape="rect" id="node2" href="class_add_one_co_ocurrence_equation.html#ad75e50bbad4ba1f6c160e3a7059c1aca" title="AddOneCoOcurrenceEquation\l::reWeight" alt="" coords="155,5,357,47"/><area shape="rect" id="node3" href="class_reinforcement_co_ocurrence_equation.html#ace1a78861a38cfc6ad58584b8f73a846" title="ReinforcementCoOcurrence\lEquation::reWeight" alt="" coords="162,71,350,112"/><area shape="rect" id="node4" href="class_reinforcement_co_ocurrence_equation.html#ad9ffd4f4ad94858a2522c2e5c519920f" title="ReinforcementCoOcurrence\lEquation::firstWeight" alt="" coords="162,136,350,177"/></map>
 </div>
 </p>
 
@@ -344,9 +352,78 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_link_add219a5edb1c6a97ae46f5f1ab360a22_icgraph.png" border="0" usemap="#class_link_add219a5edb1c6a97ae46f5f1ab360a22_icgraph" alt=""/></div>
 <map name="class_link_add219a5edb1c6a97ae46f5f1ab360a22_icgraph" id="class_link_add219a5edb1c6a97ae46f5f1ab360a22_icgraph">
-<area shape="rect" id="node2" href="class_complex_network_constructor.html#a66d2992250ffcc2e4c9721a840f81378" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="167,27,359,69"/><area shape="rect" id="node3" href="class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="407,27,599,69"/><area shape="rect" id="node4" href="_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="715,5,765,32"/><area shape="rect" id="node5" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="647,57,833,98"/></map>
+<area shape="rect" id="node2" href="class_add_one_co_ocurrence_equation.html#ad75e50bbad4ba1f6c160e3a7059c1aca" title="AddOneCoOcurrenceEquation\l::reWeight" alt="" coords="167,5,369,47"/><area shape="rect" id="node3" href="class_reinforcement_co_ocurrence_equation.html#ace1a78861a38cfc6ad58584b8f73a846" title="ReinforcementCoOcurrence\lEquation::reWeight" alt="" coords="174,71,362,112"/><area shape="rect" id="node4" href="class_reinforcement_co_ocurrence_equation.html#ad9ffd4f4ad94858a2522c2e5c519920f" title="ReinforcementCoOcurrence\lEquation::firstWeight" alt="" coords="174,136,362,177"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a7bf934f67abd8e74c78d5fbfadc427db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_link.html">Link</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a5bf13913ca69fd9b3b8fde3e7cc953"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_link.html">Link</a> &amp;&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -418,7 +495,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,6 +100,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_features_complex_network_1_1header.html">header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network_1_1_node_reader.html">NodeReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -109,125 +111,78 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a784109c6f62a250154d4b9add25b6409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59981f76044a2b98eda4e69a20844ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0">save</a> (const char *filename)</td></tr>
 <tr class="separator:a59981f76044a2b98eda4e69a20844ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f1fcc25a95cde233fecef194033497f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a3f1fcc25a95cde233fecef194033497f">load</a> (const char *filename, QList&lt; <a class="el" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a> * &gt;)</td></tr>
-<tr class="separator:a3f1fcc25a95cde233fecef194033497f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af275d9272ee96f6aee40af802c2c119f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#af275d9272ee96f6aee40af802c2c119f">getOutputDegree</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>) const </td></tr>
-<tr class="separator:af275d9272ee96f6aee40af802c2c119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747eba83de2a19a39e3d9f230d055d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a747eba83de2a19a39e3d9f230d055d59">clear</a> ()</td></tr>
-<tr class="separator:a747eba83de2a19a39e3d9f230d055d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1b87e9664a72c2062aae67bad94261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a8e1b87e9664a72c2062aae67bad94261">updateIndex</a> ()</td></tr>
-<tr class="separator:a8e1b87e9664a72c2062aae67bad94261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a064dc6f506b11a04f3174810da085d60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a064dc6f506b11a04f3174810da085d60">getNodeFromFeature</a> (const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> *f) const </td></tr>
-<tr class="separator:a064dc6f506b11a04f3174810da085d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06275636cdb560a44d9cc4d82b47ce53"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a06275636cdb560a44d9cc4d82b47ce53">getNodesOfSameLabel</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>)</td></tr>
-<tr class="separator:a06275636cdb560a44d9cc4d82b47ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;</a></td></tr>
-<tr class="memitem:a4a16e825e1d8b487067ca21d677617a3 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4a16e825e1d8b487067ca21d677617a3">ComplexNetwork</a> (bool <a class="el" href="class_complex_network.html#ae1f8a32f89d84aab42475d8fe46dfa09">directed</a>=true)</td></tr>
-<tr class="separator:a4a16e825e1d8b487067ca21d677617a3 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c31ca0d2142dafa1d88ca3ff22356f inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f">addNode</a> (const std::shared_ptr&lt; const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &amp;n)</td></tr>
-<tr class="separator:af2c31ca0d2142dafa1d88ca3ff22356f inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3711aff250a942a9ad61d0571be82c43 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; const <br class="typebreak" />
-<a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a3711aff250a942a9ad61d0571be82c43">getNode</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> id)</td></tr>
-<tr class="separator:a3711aff250a942a9ad61d0571be82c43 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f2b4528cc31296ede98be7e6dcd600 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600">removeNode</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> id)</td></tr>
-<tr class="separator:a33f2b4528cc31296ede98be7e6dcd600 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c25eb9c9c642a39681e4040fc0a17d inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d">addEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to, const <a class="el" href="class_link.html">Link</a> &amp;e)</td></tr>
-<tr class="separator:a52c25eb9c9c642a39681e4040fc0a17d inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a1c638e4604efe06c12ce3065020ec1 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_link.html">Link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1">getEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
-<tr class="separator:a6a1c638e4604efe06c12ce3065020ec1 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad440008416fc33500754d77b2532560f inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_link.html">Link</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ad440008416fc33500754d77b2532560f">getEdgeFromEdgeId</a> (<a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a> id)</td></tr>
-<tr class="separator:ad440008416fc33500754d77b2532560f inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2c7df561a2ad5fc14b04a5c5c56828 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828">removeEdge</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
-<tr class="separator:a9b2c7df561a2ad5fc14b04a5c5c56828 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee98f26ceed674c17be01a740787170 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#afee98f26ceed674c17be01a740787170">getNumNodes</a> () const</td></tr>
-<tr class="separator:afee98f26ceed674c17be01a740787170 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a720cb4e40342648d394792cc693d29a5 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a720cb4e40342648d394792cc693d29a5">getNumEdges</a> () const</td></tr>
-<tr class="separator:a720cb4e40342648d394792cc693d29a5 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4036d2cda2dc5596d03e164c3455aff6 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a4036d2cda2dc5596d03e164c3455aff6">getNumEdges</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>) const</td></tr>
-<tr class="separator:a4036d2cda2dc5596d03e164c3455aff6 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02bc6912437322f146f6ce98b415759 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">NodeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759">Begin</a> ()</td></tr>
-<tr class="separator:ab02bc6912437322f146f6ce98b415759 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c90f4efd046776d7a53776b24daae0f inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">NodeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f">End</a> ()</td></tr>
-<tr class="separator:a2c90f4efd046776d7a53776b24daae0f inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2167b224079f5c0b44443959ad0b6440 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">EdgeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2167b224079f5c0b44443959ad0b6440">EdgesBegin</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> node_from)</td></tr>
-<tr class="separator:a2167b224079f5c0b44443959ad0b6440 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a228b9a9497db2b9385deb4eb39f1e1 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">EdgeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a3a228b9a9497db2b9385deb4eb39f1e1">EdgesBegin</a> ()</td></tr>
-<tr class="separator:a3a228b9a9497db2b9385deb4eb39f1e1 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad806138ea94ec18ed17f4681ab731208 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">EdgeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ad806138ea94ec18ed17f4681ab731208">EdgesEnd</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> node_from)</td></tr>
-<tr class="separator:ad806138ea94ec18ed17f4681ab731208 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7d628b66a815d97afbf5373640d12b inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">EdgeIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#afa7d628b66a815d97afbf5373640d12b">EdgesEnd</a> ()</td></tr>
-<tr class="separator:afa7d628b66a815d97afbf5373640d12b inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d127d4296808b7ccdadccaa58084e96 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5d127d4296808b7ccdadccaa58084e96">save</a> (const char *filename)</td></tr>
-<tr class="separator:a5d127d4296808b7ccdadccaa58084e96 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54fbdb35418f424e8dad0dbc5dc16bee inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a54fbdb35418f424e8dad0dbc5dc16bee">load</a> (const char *filename)</td></tr>
-<tr class="separator:a54fbdb35418f424e8dad0dbc5dc16bee inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8b07f5ca5d247e13a2e2bc5ac75de1 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_complex_network.html">ComplexNetwork</a><br class="typebreak" />
-&lt; std::shared_ptr&lt; const <br class="typebreak" />
-<a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;, <a class="el" href="class_link.html">Link</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5a8b07f5ca5d247e13a2e2bc5ac75de1">operator=</a> (const <a class="el" href="class_complex_network.html">ComplexNetwork</a>&lt; std::shared_ptr&lt; const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt;, <a class="el" href="class_link.html">Link</a> &gt; &amp;cn)</td></tr>
-<tr class="separator:a5a8b07f5ca5d247e13a2e2bc5ac75de1 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a902200cb91800ddf8d4526914e4e5990"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a902200cb91800ddf8d4526914e4e5990">load</a> (const char *filename, QList&lt; <a class="el" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a> * &gt; &amp;l)</td></tr>
+<tr class="separator:a902200cb91800ddf8d4526914e4e5990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8333b1bff644f2b8792bd4d033f89ece"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a8333b1bff644f2b8792bd4d033f89ece">getOutputDegree</a> (Node) const </td></tr>
+<tr class="separator:a8333b1bff644f2b8792bd4d033f89ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ac6a8c3d892a95c1183ee933ec51d3"><td class="memItemLeft" align="right" valign="top">Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a87ac6a8c3d892a95c1183ee933ec51d3">getNodeFromFeature</a> (const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> *f) const </td></tr>
+<tr class="separator:a87ac6a8c3d892a95c1183ee933ec51d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae09eedea29313658b2158196d18967bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#ae09eedea29313658b2158196d18967bb">refreshCache</a> ()</td></tr>
+<tr class="separator:ae09eedea29313658b2158196d18967bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; FeatureAbstractPtr, Link &gt;</a></td></tr>
+<tr class="memitem:aeaa6515a7b2b14f58391d3ea96f8ba1c inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">ComplexNetwork</a> ()</td></tr>
+<tr class="separator:aeaa6515a7b2b14f58391d3ea96f8ba1c inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94dc0dc077369f49fcf6010236c6e461 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">addNode</a> ()</td></tr>
+<tr class="separator:a94dc0dc077369f49fcf6010236c6e461 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add76e54a672f7489ec0fc03e720b2040 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">addNode</a> (const <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> &amp;val)</td></tr>
+<tr class="separator:add76e54a672f7489ec0fc03e720b2040 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad257925d1fe72a1512c43d83a5c02c6c inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::Arc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">addArc</a> (ListDigraph::Node f, ListDigraph::Node t)</td></tr>
+<tr class="separator:ad257925d1fe72a1512c43d83a5c02c6c inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac295c2bb486f33b91761f58d727f87ff inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::Arc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">addArc</a> (ListDigraph::Node f, ListDigraph::Node t, const <a class="el" href="class_link.html">Link</a> &amp;val)</td></tr>
+<tr class="separator:ac295c2bb486f33b91761f58d727f87ff inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8a94ddb234a3be1c8f6395879120ea inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">Arc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">getArc</a> (Node a, Node b)</td></tr>
+<tr class="separator:a0b8a94ddb234a3be1c8f6395879120ea inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec7daa653363b1a7f7835258eeef198 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_link.html">Link</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">getArcValue</a> (Arc a)</td></tr>
+<tr class="separator:acec7daa653363b1a7f7835258eeef198 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fcc4be3ca83cd6afb5865bff245321b inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_link.html">Link</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">getArcValue</a> (int a)</td></tr>
+<tr class="separator:a9fcc4be3ca83cd6afb5865bff245321b inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a43744eca534a8b2090ceb11f97be2c inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_link.html">Link</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">getArcValue</a> (Node a, Node b)</td></tr>
+<tr class="separator:a2a43744eca534a8b2090ceb11f97be2c inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2631cf373b8711f9e6ab7fb0636b6f62 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">getNode</a> (Node <a class="el" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="separator:a2631cf373b8711f9e6ab7fb0636b6f62 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b0160abb78c53260c9e77dece41b74 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">arcExists</a> (Node a, Node b)</td></tr>
+<tr class="separator:ac3b0160abb78c53260c9e77dece41b74 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82c570ef1bbe0db0751554ed7bec9da inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">getNumNodes</a> ()</td></tr>
+<tr class="separator:af82c570ef1bbe0db0751554ed7bec9da inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5810b5e82898b9f7b8ea22d68835bfb inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">getNumArcs</a> ()</td></tr>
+<tr class="separator:aa5810b5e82898b9f7b8ea22d68835bfb inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c67bb0a664e9ffe1607609718f21d16 inherit pub_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">const ListDigraph::ArcMap&lt; <a class="el" href="class_link.html">Link</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">getArcMap</a> () const</td></tr>
+<tr class="separator:a5c67bb0a664e9ffe1607609718f21d16 inherit pub_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a122860a57231cd14eca3add9c482290e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a122860a57231cd14eca3add9c482290e">load</a> (const char *filename)</td></tr>
-<tr class="separator:a122860a57231cd14eca3add9c482290e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade08f031abd3843ca83e9b29ee138a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#ade08f031abd3843ca83e9b29ee138a43">load</a> (const char *filename)</td></tr>
+<tr class="separator:ade08f031abd3843ca83e9b29ee138a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0ae97c0bad2fcba543df55522c46242e"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="class_feature_abstract_key.html">FeatureAbstractKey</a>, <br class="typebreak" />
-<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a0ae97c0bad2fcba543df55522c46242e">featureIndex</a></td></tr>
-<tr class="separator:a0ae97c0bad2fcba543df55522c46242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7564b04733dffbb9176281c6d87722da"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="class_feature_abstract_key.html">FeatureAbstractKey</a>, Node &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_features_complex_network.html#a7564b04733dffbb9176281c6d87722da">featureIndex</a></td></tr>
+<tr class="separator:a7564b04733dffbb9176281c6d87722da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;</a></td></tr>
-<tr class="memitem:abc2c2def62701d56ec56c8b0accbedb9 inherit pub_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#abc2c2def62701d56ec56c8b0accbedb9">description</a> [200]</td></tr>
-<tr class="separator:abc2c2def62701d56ec56c8b0accbedb9 inherit pub_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8777ba48e68c02d2d523abe904b6b1 inherit pub_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a6c8777ba48e68c02d2d523abe904b6b1">num_nodes</a></td></tr>
-<tr class="separator:a6c8777ba48e68c02d2d523abe904b6b1 inherit pub_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a7f179af0187eb3071969642b445cc inherit pub_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ac4a7f179af0187eb3071969642b445cc">num_edges</a></td></tr>
-<tr class="separator:ac4a7f179af0187eb3071969642b445cc inherit pub_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;</a></td></tr>
-<tr class="memitem:a982b0db93143ff949025e326794af02d inherit pro_methods_class_complex_network"><td class="memItemLeft" align="right" valign="top">QPair&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a982b0db93143ff949025e326794af02d">createEdgeKey</a> (<a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> from, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> to)</td></tr>
-<tr class="separator:a982b0db93143ff949025e326794af02d inherit pro_methods_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;</a></td></tr>
-<tr class="memitem:ab71dc127e36a989049df28f58f2c315a inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab71dc127e36a989049df28f58f2c315a">current_node_id</a></td></tr>
-<tr class="separator:ab71dc127e36a989049df28f58f2c315a inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5305dba65a6d949064e46a6729c39e53 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5305dba65a6d949064e46a6729c39e53">current_edge_id</a></td></tr>
-<tr class="separator:a5305dba65a6d949064e46a6729c39e53 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f8a32f89d84aab42475d8fe46dfa09 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ae1f8a32f89d84aab42475d8fe46dfa09">directed</a></td></tr>
-<tr class="separator:ae1f8a32f89d84aab42475d8fe46dfa09 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0ecc57af689b9ba9f8855132d1c275 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <br class="typebreak" />
-std::shared_ptr&lt; const <br class="typebreak" />
-<a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a6b0ecc57af689b9ba9f8855132d1c275">nodes</a></td></tr>
-<tr class="separator:a6b0ecc57af689b9ba9f8855132d1c275 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbdf613ffde926399cd5f6e7b8c09536 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, QHash&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>, <br class="typebreak" />
-<a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#adbdf613ffde926399cd5f6e7b8c09536">edges</a></td></tr>
-<tr class="separator:adbdf613ffde926399cd5f6e7b8c09536 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a666bb7ad7f5ab90416f037aeb1ba11d0 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">QHash&lt; <a class="el" href="_complex_network_8hpp.html#ad7d18d7b90a45b6625704e92d10aa3a0">edge_id</a>, <a class="el" href="class_link.html">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a666bb7ad7f5ab90416f037aeb1ba11d0">edge</a></td></tr>
-<tr class="separator:a666bb7ad7f5ab90416f037aeb1ba11d0 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ab3dbbbcd8dd173ec40938391c0fc4 inherit pro_attribs_class_complex_network"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a05f560bd7b056e99816f20aa909fe1bb inherit pro_attribs_class_complex_network"><td class="memItemLeft" >&#160;&#160;&#160;char&#160;&#160;&#160;<a class="el" href="class_complex_network.html#abc2c2def62701d56ec56c8b0accbedb9">description</a> [200]</td></tr>
-<tr class="separator:a05f560bd7b056e99816f20aa909fe1bb inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62a9b07284bddbc9df7e8ad0519f30b5 inherit pro_attribs_class_complex_network"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="class_complex_network.html#a6c8777ba48e68c02d2d523abe904b6b1">num_nodes</a></td></tr>
-<tr class="separator:a62a9b07284bddbc9df7e8ad0519f30b5 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c0c40cd8fdfde56358cd5c435e2555 inherit pro_attribs_class_complex_network"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="class_complex_network.html#ac4a7f179af0187eb3071969642b445cc">num_edges</a></td></tr>
-<tr class="separator:a47c0c40cd8fdfde56358cd5c435e2555 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ab3dbbbcd8dd173ec40938391c0fc4 inherit pro_attribs_class_complex_network"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab9ab3dbbbcd8dd173ec40938391c0fc4">file_header</a></td></tr>
-<tr class="separator:ab9ab3dbbbcd8dd173ec40938391c0fc4 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_complex_network"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_complex_network')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_complex_network.html">ComplexNetwork&lt; FeatureAbstractPtr, Link &gt;</a></td></tr>
+<tr class="memitem:ab859f9614083b288b3353962c99681cd inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::NodeMap<br class="typebreak" />
+&lt; <a class="el" href="class_feature_abstract_ptr.html">FeatureAbstractPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#ab859f9614083b288b3353962c99681cd">nodes</a></td></tr>
+<tr class="separator:ab859f9614083b288b3353962c99681cd inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d466d263d5013364c264497a0c797a8 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">ListDigraph::ArcMap&lt; <a class="el" href="class_link.html">Link</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a5d466d263d5013364c264497a0c797a8">arcs</a></td></tr>
+<tr class="separator:a5d466d263d5013364c264497a0c797a8 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c45cf68f6d708af9ca46a1a155a115 inherit pro_attribs_class_complex_network"><td class="memItemLeft" align="right" valign="top">DynArcLookUp&lt; ListDigraph &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_complex_network.html#a15c45cf68f6d708af9ca46a1a155a115">lookup</a></td></tr>
+<tr class="separator:a15c45cf68f6d708af9ca46a1a155a115 inherit pro_attribs_class_complex_network"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <div class="dynheader">
 Inheritance diagram for FeaturesComplexNetwork:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_features_complex_network__inherit__graph.png" border="0" usemap="#_features_complex_network_inherit__map" alt="Inheritance graph"/></div>
 <map name="_features_complex_network_inherit__map" id="_features_complex_network_inherit__map">
-<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link \&gt;\n|+ description\l+ num_nodes\l+ num_edges\l# current_node_id\l# current_edge_id\l# directed\l# nodes\l# edges\l# edge\l# file_header\l|+ ComplexNetwork()\l+ addNode()\l+ getNode()\l+ removeNode()\l+ addEdge()\l+ getEdge()\l+ getEdgeFromEdgeId()\l+ removeEdge()\l+ clear()\l+ getNumNodes()\land 11 more...\l# createEdgeKey()\l}" alt="" coords="19,483,195,883"/><area shape="rect" id="node3" href="class_complex_network.html" title="{ComplexNetwork\&lt; NODE\l_TYPE, EDGE_TYPE \&gt;\n|+ description\l+ num_nodes\l+ num_edges\l# current_node_id\l# current_edge_id\l# directed\l# nodes\l# edges\l# edge\l# file_header\l|+ ComplexNetwork()\l+ addNode()\l+ getNode()\l+ removeNode()\l+ addEdge()\l+ getEdge()\l+ getEdgeFromEdgeId()\l+ removeEdge()\l+ clear()\l+ getNumNodes()\land 11 more...\l# createEdgeKey()\l}" alt="" coords="21,5,194,391"/></map>
+<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; FeatureAbstract\lPtr, Link \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="5,507,235,819"/><area shape="rect" id="node4" href="class_complex_network.html" title="{ComplexNetwork\&lt; N, E \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="137,132,309,429"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for FeaturesComplexNetwork:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_features_complex_network__coll__graph.png" border="0" usemap="#_features_complex_network_coll__map" alt="Collaboration graph"/></div>
 <map name="_features_complex_network_coll__map" id="_features_complex_network_coll__map">
-<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link \&gt;\n|+ description\l+ num_nodes\l+ num_edges\l# current_node_id\l# current_edge_id\l# directed\l# nodes\l# edges\l# edge\l# file_header\l|+ ComplexNetwork()\l+ addNode()\l+ getNode()\l+ removeNode()\l+ addEdge()\l+ getEdge()\l+ getEdgeFromEdgeId()\l+ removeEdge()\l+ clear()\l+ getNumNodes()\land 11 more...\l# createEdgeKey()\l}" alt="" coords="19,483,195,883"/><area shape="rect" id="node3" href="class_complex_network.html" title="{ComplexNetwork\&lt; NODE\l_TYPE, EDGE_TYPE \&gt;\n|+ description\l+ num_nodes\l+ num_edges\l# current_node_id\l# current_edge_id\l# directed\l# nodes\l# edges\l# edge\l# file_header\l|+ ComplexNetwork()\l+ addNode()\l+ getNode()\l+ removeNode()\l+ addEdge()\l+ getEdge()\l+ getEdgeFromEdgeId()\l+ removeEdge()\l+ clear()\l+ getNumNodes()\land 11 more...\l# createEdgeKey()\l}" alt="" coords="21,5,194,391"/></map>
+<area shape="rect" id="node2" href="class_complex_network.html" title="{ComplexNetwork\&lt; FeatureAbstract\lPtr, Link \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="5,507,235,819"/><area shape="rect" id="node4" href="class_complex_network.html" title="{ComplexNetwork\&lt; N, E \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="137,132,309,429"/></map>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad251cdf2e827d41e10c7b3fb1b2d8a22"></a>
@@ -261,46 +216,12 @@ Collaboration diagram for FeaturesComplexNetwork:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a747eba83de2a19a39e3d9f230d055d59"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FeaturesComplexNetwork::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="class_complex_network.html#a64db5949375a84eba3d9ff559d68fc6e">ComplexNetwork&lt; std::shared_ptr&lt; const FeatureAbstract &gt;, Link &gt;</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59_icgraph.png" border="0" usemap="#class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59_icgraph" alt=""/></div>
-<map name="class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59_icgraph" id="class_features_complex_network_a747eba83de2a19a39e3d9f230d055d59_icgraph">
-<area shape="rect" id="node2" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="292,5,343,32"/><area shape="rect" id="node3" href="class_features_complex_network.html#a3f1fcc25a95cde233fecef194033497f" title="FeaturesComplexNetwork\l::load" alt="" coords="229,57,405,98"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a064dc6f506b11a04f3174810da085d60"></a>
+<a class="anchor" id="a87ac6a8c3d892a95c1183ee933ec51d3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> FeaturesComplexNetwork::getNodeFromFeature </td>
+          <td class="memname">FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> *&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
@@ -312,56 +233,22 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a064dc6f506b11a04f3174810da085d60_icgraph.png" border="0" usemap="#class_features_complex_network_a064dc6f506b11a04f3174810da085d60_icgraph" alt=""/></div>
-<map name="class_features_complex_network_a064dc6f506b11a04f3174810da085d60_icgraph" id="class_features_complex_network_a064dc6f506b11a04f3174810da085d60_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a0305abdcc36d592d5e92187b35be9169" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="229,5,437,47"/><area shape="rect" id="node5" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="258,71,409,98"/><area shape="rect" id="node3" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="506,5,678,47"/><area shape="rect" id="node4" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="747,13,797,39"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="485,71,699,98"/><area shape="rect" id="node7" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="747,71,797,98"/></map>
+<div class="center"><img src="class_features_complex_network_a87ac6a8c3d892a95c1183ee933ec51d3_icgraph.png" border="0" usemap="#class_features_complex_network_a87ac6a8c3d892a95c1183ee933ec51d3_icgraph" alt=""/></div>
+<map name="class_features_complex_network_a87ac6a8c3d892a95c1183ee933ec51d3_icgraph" id="class_features_complex_network_a87ac6a8c3d892a95c1183ee933ec51d3_icgraph">
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#a917b9b6d0fe6b874a60307e02a74de8e" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="229,5,437,47"/><area shape="rect" id="node5" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="258,71,409,98"/><area shape="rect" id="node3" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="506,5,678,47"/><area shape="rect" id="node4" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="747,13,797,39"/><area shape="rect" id="node6" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="485,71,699,98"/><area shape="rect" id="node7" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="747,71,797,98"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a06275636cdb560a44d9cc4d82b47ce53"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QList&lt; <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a> &gt; FeaturesComplexNetwork::getNodesOfSameLabel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_cgraph.png" border="0" usemap="#class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_cgraph" alt=""/></div>
-<map name="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_cgraph" id="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_cgraph">
-<area shape="rect" id="node2" href="class_complex_network.html#a3a228b9a9497db2b9385deb4eb39f1e1" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::EdgesBegin" alt="" coords="229,5,393,76"/><area shape="rect" id="node3" href="class_complex_network.html#afa7d628b66a815d97afbf5373640d12b" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::EdgesEnd" alt="" coords="229,100,393,171"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_icgraph.png" border="0" usemap="#class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_icgraph" alt=""/></div>
-<map name="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_icgraph" id="class_features_complex_network_a06275636cdb560a44d9cc4d82b47ce53_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="229,13,380,39"/><area shape="rect" id="node3" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="428,13,641,39"/><area shape="rect" id="node4" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="689,13,740,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af275d9272ee96f6aee40af802c2c119f"></a>
+<a class="anchor" id="a8333b1bff644f2b8792bd4d033f89ece"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">float FeaturesComplexNetwork::getOutputDegree </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&#160;</td>
+          <td class="paramtype">Node&#160;</td>
           <td class="paramname"><em>from</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -371,15 +258,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_af275d9272ee96f6aee40af802c2c119f_icgraph.png" border="0" usemap="#class_features_complex_network_af275d9272ee96f6aee40af802c2c119f_icgraph" alt=""/></div>
-<map name="class_features_complex_network_af275d9272ee96f6aee40af802c2c119f_icgraph" id="class_features_complex_network_af275d9272ee96f6aee40af802c2c119f_icgraph">
+<div class="center"><img src="class_features_complex_network_a8333b1bff644f2b8792bd4d033f89ece_icgraph.png" border="0" usemap="#class_features_complex_network_a8333b1bff644f2b8792bd4d033f89ece_icgraph" alt=""/></div>
+<map name="class_features_complex_network_a8333b1bff644f2b8792bd4d033f89ece_icgraph" id="class_features_complex_network_a8333b1bff644f2b8792bd4d033f89ece_icgraph">
 <area shape="rect" id="node2" href="class_label_guesser.html#a34aabd99a651c08cd66df1ffa27767e5" title="LabelGuesser::removeHubs" alt="" coords="229,13,417,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a122860a57231cd14eca3add9c482290e"></a>
+<a class="anchor" id="ade08f031abd3843ca83e9b29ee138a43"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -387,7 +274,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void FeaturesComplexNetwork::load </td>
+          <td class="memname">void FeaturesComplexNetwork::load </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -396,7 +283,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -404,15 +291,15 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a122860a57231cd14eca3add9c482290e_icgraph.png" border="0" usemap="#class_features_complex_network_a122860a57231cd14eca3add9c482290e_icgraph" alt=""/></div>
-<map name="class_features_complex_network_a122860a57231cd14eca3add9c482290e_icgraph" id="class_features_complex_network_a122860a57231cd14eca3add9c482290e_icgraph">
-<area shape="rect" id="node2" href="_experiments_2_setup_padrao_2main_8cpp.html#a5e7ad02a34a7bdc94866662c051c98a7" title="main1" alt="" coords="307,5,365,32"/><area shape="rect" id="node3" href="_experiments_2_setup_padrao_2main_8cpp.html#a75c2e94360fa8e46050b4f66fe444d6b" title="main2" alt="" coords="307,56,365,83"/><area shape="rect" id="node4" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="245,107,427,149"/><area shape="rect" id="node6" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="250,173,422,214"/><area shape="rect" id="node8" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="229,239,443,265"/><area shape="rect" id="node10" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="311,289,361,316"/><area shape="rect" id="node11" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="245,340,427,367"/><area shape="rect" id="node5" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,115,541,141"/><area shape="rect" id="node7" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,180,541,207"/><area shape="rect" id="node9" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,239,541,265"/><area shape="rect" id="node12" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="491,340,541,367"/></map>
+<div class="center"><img src="class_features_complex_network_ade08f031abd3843ca83e9b29ee138a43_icgraph.png" border="0" usemap="#class_features_complex_network_ade08f031abd3843ca83e9b29ee138a43_icgraph" alt=""/></div>
+<map name="class_features_complex_network_ade08f031abd3843ca83e9b29ee138a43_icgraph" id="class_features_complex_network_ade08f031abd3843ca83e9b29ee138a43_icgraph">
+<area shape="rect" id="node2" href="class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="245,5,427,47"/><area shape="rect" id="node4" href="class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="229,71,443,98"/><area shape="rect" id="node6" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="311,122,361,149"/><area shape="rect" id="node7" href="class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="245,173,427,199"/><area shape="rect" id="node3" href="_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,13,541,39"/><area shape="rect" id="node5" href="_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,71,541,98"/><area shape="rect" id="node8" href="_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="491,173,541,199"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3f1fcc25a95cde233fecef194033497f"></a>
+<a class="anchor" id="a902200cb91800ddf8d4526914e4e5990"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -425,8 +312,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QList&lt; <a class="el" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a> * &gt;&#160;</td>
-          <td class="paramname"><em>featuresConstructors</em>&#160;</td>
+          <td class="paramtype">QList&lt; <a class="el" href="class_feature_factory_abstract.html">FeatureFactoryAbstract</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -439,9 +326,33 @@ Here is the caller graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a3f1fcc25a95cde233fecef194033497f_cgraph.png" border="0" usemap="#class_features_complex_network_a3f1fcc25a95cde233fecef194033497f_cgraph" alt=""/></div>
-<map name="class_features_complex_network_a3f1fcc25a95cde233fecef194033497f_cgraph" id="class_features_complex_network_a3f1fcc25a95cde233fecef194033497f_cgraph">
-<area shape="rect" id="node2" href="class_features_complex_network.html#a747eba83de2a19a39e3d9f230d055d59" title="FeaturesComplexNetwork\l::clear" alt="" coords="229,5,405,47"/><area shape="rect" id="node3" href="class_feature_factory_abstract.html#ab8d13b663824c6e49c8d195344b934a3" title="FeatureFactoryAbstract\l::getType" alt="" coords="237,71,398,112"/><area shape="rect" id="node4" href="class_feature_factory_abstract.html#aa71cd5e5cadad3945fd7a1561d28bd52" title="FeatureFactoryAbstract\l::CreateFromStream" alt="" coords="237,136,398,177"/></map>
+<div class="center"><img src="class_features_complex_network_a902200cb91800ddf8d4526914e4e5990_cgraph.png" border="0" usemap="#class_features_complex_network_a902200cb91800ddf8d4526914e4e5990_cgraph" alt=""/></div>
+<map name="class_features_complex_network_a902200cb91800ddf8d4526914e4e5990_cgraph" id="class_features_complex_network_a902200cb91800ddf8d4526914e4e5990_cgraph">
+<area shape="rect" id="node2" href="class_features_complex_network.html#ae09eedea29313658b2158196d18967bb" title="FeaturesComplexNetwork\l::refreshCache" alt="" coords="229,5,405,47"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae09eedea29313658b2158196d18967bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FeaturesComplexNetwork::refreshCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_features_complex_network_ae09eedea29313658b2158196d18967bb_icgraph.png" border="0" usemap="#class_features_complex_network_ae09eedea29313658b2158196d18967bb_icgraph" alt=""/></div>
+<map name="class_features_complex_network_ae09eedea29313658b2158196d18967bb_icgraph" id="class_features_complex_network_ae09eedea29313658b2158196d18967bb_icgraph">
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="231,5,403,47"/><area shape="rect" id="node4" href="class_features_complex_network.html#a902200cb91800ddf8d4526914e4e5990" title="FeaturesComplexNetwork\l::load" alt="" coords="229,71,405,112"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="453,13,504,39"/></map>
 </div>
 </p>
 
@@ -466,47 +377,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0_icgraph.png" border="0" usemap="#class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0_icgraph" alt=""/></div>
 <map name="class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0_icgraph" id="class_features_complex_network_a59981f76044a2b98eda4e69a20844ba0_icgraph">
-<area shape="rect" id="node2" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="229,5,416,47"/><area shape="rect" id="node3" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="297,71,348,98"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a8e1b87e9664a72c2062aae67bad94261"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FeaturesComplexNetwork::updateIndex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_cgraph.png" border="0" usemap="#class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_cgraph" alt=""/></div>
-<map name="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_cgraph" id="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_cgraph">
-<area shape="rect" id="node2" href="class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::Begin" alt="" coords="229,5,393,76"/><area shape="rect" id="node3" href="class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::End" alt="" coords="229,100,393,171"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_icgraph.png" border="0" usemap="#class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_icgraph" alt=""/></div>
-<map name="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_icgraph" id="class_features_complex_network_a8e1b87e9664a72c2062aae67bad94261_icgraph">
-<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="241,5,413,47"/><area shape="rect" id="node4" href="class_label_guesser.html#ad40858173b453bf95a7cd9798ff6a941" title="LabelGuesser::LabelGuesser" alt="" coords="229,71,425,98"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="473,13,524,39"/></map>
+<area shape="rect" id="node2" href="class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="237,5,409,47"/><area shape="rect" id="node4" href="class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="229,71,416,112"/><area shape="rect" id="node5" href="_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="297,137,348,163"/><area shape="rect" id="node3" href="_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="464,13,515,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0ae97c0bad2fcba543df55522c46242e"></a>
+<a class="anchor" id="a7564b04733dffbb9176281c6d87722da"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -514,7 +392,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QHash&lt;<a class="el" href="class_feature_abstract_key.html">FeatureAbstractKey</a>, <a class="el" href="_complex_network_8hpp.html#a8323334ca788fde39682469321590d52">node_id</a>&gt; FeaturesComplexNetwork::featureIndex</td>
+          <td class="memname">QHash&lt;<a class="el" href="class_feature_abstract_key.html">FeatureAbstractKey</a>, Node&gt; FeaturesComplexNetwork::featureIndex</td>
         </tr>
       </table>
   </td>
@@ -533,7 +411,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

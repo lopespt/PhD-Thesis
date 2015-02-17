@@ -5,14 +5,14 @@
 #include <Utilities/KFoldDatabaseReader.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
-#include <Utilities/ComplexNetworkConstructor.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <FeatureExtractors/LabelFeature.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <QList>
 #include <QString>
 #include <stdio.h>
 #include <Utilities/GraphUtilities.hpp>
-
+#include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 
 LabelGuesserExperiment::LabelGuesserExperiment(float trainPerc, int walkLenght, method m):
     trainPerc(trainPerc), walkLenght(walkLenght), m(m)
@@ -121,10 +121,12 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     LabelFeatureFactory lblFactory;
     factories.append(&lblFactory);
     FeaturesComplexNetwork cn;
-    ComplexNetworkConstructor constructor(cn, train, factories);
+    ReinforcementCoOcurrenceEquation reinf(0.3, 80);
+
+    ComplexNetworkConstructor constructor(cn, train, factories, &reinf);
     constructor.build();
     cn.refreshCache();
-    cn.save("train.cn");
+    cn.save(outputFile.append(".cn").toStdString().c_str());
     //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
     //cn.load("train.cn", factories);
 
@@ -133,6 +135,7 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     IterativeRandomWalk walk(cn, weights);
 
     FILE* file = fopen(outputFile.toStdString().c_str(), "w");
+    assert( file );
     
     fprintf(file, "posicaoRankCorreto \t Escondido \t Top10Escolhidos \n");
     int position = 1;

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -99,8 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a314e2759927f7c3c625e298ab1f7e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181ee73c51e33108e21a52c6b95e81e7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orientation_feature.html#a181ee73c51e33108e21a52c6b95e81e7">asString</a> (char *buffer) const </td></tr>
 <tr class="separator:a181ee73c51e33108e21a52c6b95e81e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8d3934b981be06db8d7191c6ffdbf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orientation_feature.html#a6d8d3934b981be06db8d7191c6ffdbf1">WriteToStream</a> (QDataStream &amp;stream) const </td></tr>
-<tr class="separator:a6d8d3934b981be06db8d7191c6ffdbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c992dc7d54fc6e4558046142ddb881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_orientation_feature.html#ac0c992dc7d54fc6e4558046142ddb881">WriteToStream</a> (std::ostream &amp;stream) const </td></tr>
+<tr class="separator:ac0c992dc7d54fc6e4558046142ddb881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_feature"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_feature')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_feature.html">Feature&lt; unsigned int &gt;</a></td></tr>
 <tr class="memitem:a646c111235f484dd0ca89d122b2aac42 inherit pub_methods_class_feature"><td class="memItemLeft" align="right" valign="top">const unsigned int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature.html#a646c111235f484dd0ca89d122b2aac42">getContent</a> () const</td></tr>
 <tr class="separator:a646c111235f484dd0ca89d122b2aac42 inherit pub_methods_class_feature"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,10 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4cb21d5a97d7f537cda3c919c266a6cf inherit pub_methods_class_feature_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b12b0d228da1c7e21429f263bef004e inherit pub_methods_class_feature_abstract"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_abstract.html#a4b12b0d228da1c7e21429f263bef004e">getFeatureName</a> () const </td></tr>
 <tr class="separator:a4b12b0d228da1c7e21429f263bef004e inherit pub_methods_class_feature_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a51a8818f23596fc88ef89a79ff125 inherit pub_methods_class_feature_abstract"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_abstract.html#ad4a51a8818f23596fc88ef89a79ff125">~FeatureAbstract</a> ()</td></tr>
-<tr class="separator:ad4a51a8818f23596fc88ef89a79ff125 inherit pub_methods_class_feature_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2253d5e532ba6c95fe3653558c30c5 inherit pub_methods_class_feature_abstract"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_abstract.html#a8a2253d5e532ba6c95fe3653558c30c5">operator==</a> (const <a class="el" href="class_feature_abstract.html">FeatureAbstract</a> &amp;other) const </td></tr>
 <tr class="separator:a8a2253d5e532ba6c95fe3653558c30c5 inherit pub_methods_class_feature_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a51a8818f23596fc88ef89a79ff125 inherit pub_methods_class_feature_abstract"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_feature_abstract.html#ad4a51a8818f23596fc88ef89a79ff125">~FeatureAbstract</a> ()</td></tr>
+<tr class="separator:ad4a51a8818f23596fc88ef89a79ff125 inherit pub_methods_class_feature_abstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -142,14 +142,14 @@ Inheritance diagram for OrientationFeature:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_orientation_feature__inherit__graph.png" border="0" usemap="#_orientation_feature_inherit__map" alt="Inheritance graph"/></div>
 <map name="_orientation_feature_inherit__map" id="_orientation_feature_inherit__map">
-<area shape="rect" id="node2" href="class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="5,477,168,613"/><area shape="rect" id="node3" href="class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ ~FeatureAbstract()\l+ WriteToStream()\l+ operator==()\l}" alt="" coords="26,5,171,229"/><area shape="rect" id="node4" href="class_feature.html" title="{Feature\&lt; T \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="103,279,235,415"/></map>
+<area shape="rect" id="node2" href="class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="5,477,168,613"/><area shape="rect" id="node3" href="class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="26,5,171,229"/><area shape="rect" id="node4" href="class_feature.html" title="{Feature\&lt; T \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="103,279,235,415"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for OrientationFeature:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_orientation_feature__coll__graph.png" border="0" usemap="#_orientation_feature_coll__map" alt="Collaboration graph"/></div>
 <map name="_orientation_feature_coll__map" id="_orientation_feature_coll__map">
-<area shape="rect" id="node2" href="class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="33,491,195,627"/><area shape="rect" id="node3" href="class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ ~FeatureAbstract()\l+ WriteToStream()\l+ operator==()\l}" alt="" coords="5,5,151,229"/><area shape="rect" id="node4" href="class_feature.html" title="{Feature\&lt; T \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,292,248,428"/></map>
+<area shape="rect" id="node2" href="class_feature.html" title="{Feature\&lt; unsigned int \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="33,491,195,627"/><area shape="rect" id="node3" href="class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="5,5,151,229"/><area shape="rect" id="node4" href="class_feature.html" title="{Feature\&lt; T \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,292,248,428"/></map>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a314e2759927f7c3c625e298ab1f7e244"></a>
@@ -195,7 +195,7 @@ Collaboration diagram for OrientationFeature:</div>
 
 </div>
 </div>
-<a class="anchor" id="a6d8d3934b981be06db8d7191c6ffdbf1"></a>
+<a class="anchor" id="ac0c992dc7d54fc6e4558046142ddb881"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -205,7 +205,7 @@ Collaboration diagram for OrientationFeature:</div>
         <tr>
           <td class="memname">void OrientationFeature::WriteToStream </td>
           <td>(</td>
-          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -217,7 +217,7 @@ Collaboration diagram for OrientationFeature:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_feature.html#a75f94882fda85bc2632620ad2555c510">Feature&lt; unsigned int &gt;</a>.</p>
+<p>Implements <a class="el" href="class_feature.html#a459aef7873c75fb23ede86f71361239b">Feature&lt; unsigned int &gt;</a>.</p>
 
 </div>
 </div>
@@ -228,7 +228,7 @@ Collaboration diagram for OrientationFeature:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

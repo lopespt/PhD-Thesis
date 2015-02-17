@@ -1,8 +1,7 @@
 <map id="ComplexNetworkConstructor" name="ComplexNetworkConstructor">
-<area shape="rect" id="node2" href="$class_complex_network.html" title="Rede Complexa. " alt="" coords="239,645,471,884"/>
-<area shape="rect" id="node4" href="$class_edge.html" title="{Edge\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; from\l&#45; to\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="5,153,195,318"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="219,197,359,274"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="598,197,714,274"/>
-<area shape="rect" id="node9" href="$class_node.html" title="{Node\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Node()\l+ operator\&lt;()\l+ operator==()\l+ operator\&gt;()\l}" alt="" coords="384,145,573,325"/>
-<area shape="rect" id="node11" href="$class_database_reader.html" title="{DatabaseReader\n||+ readNext()\l}" alt="" coords="495,726,617,803"/>
+<area shape="rect" id="node2" href="$class_features_complex_network.html" title="{FeaturesComplexNetwork\n|&#45; featureIndex\l|+ FeaturesComplexNetwork()\l+ ~FeaturesComplexNetwork()\l+ save()\l+ load()\l+ getOutputDegree()\l+ getNodeFromFeature()\l+ refreshCache()\l&#45; load()\l}" alt="" coords="18,868,222,1048"/>
+<area shape="rect" id="node3" href="$class_complex_network.html" title="{ComplexNetwork\&lt; FeatureAbstract\lPtr, Link \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="5,507,235,819"/>
+<area shape="rect" id="node5" href="$class_complex_network.html" title="{ComplexNetwork\&lt; N, E \&gt;\n|# nodes\l# arcs\l# lookup\l|+ ComplexNetwork()\l+ addNode()\l+ addNode()\l+ addArc()\l+ addArc()\l+ getArc()\l+ getArcValue()\l+ getArcValue()\l+ getArcValue()\l+ getNode()\l+ arcExists()\l+ getNumNodes()\l+ getNumArcs()\l+ getArcMap()\l}" alt="" coords="137,132,309,429"/>
+<area shape="rect" id="node6" href="$class_co_ocurrence_equation.html" title="{CoOcurrenceEquation\n||+ reWeight()\l+ firstWeight()\l+ ~CoOcurrenceEquation()\l}" alt="" coords="246,905,429,1011"/>
+<area shape="rect" id="node7" href="$class_database_reader.html" title="{DatabaseReader\n||+ readNext()\l+ readPrevious()\l+ hasNext()\l+ hasPrevious()\l+ getTotal()\l}" alt="" coords="453,890,576,1026"/>
 </map>

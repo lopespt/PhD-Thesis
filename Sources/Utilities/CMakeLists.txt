@@ -3,12 +3,14 @@ FIND_PACKAGE(Qt5Gui REQUIRED)
 FIND_PACKAGE(Qt5Core REQUIRED)
 FIND_PACKAGE(OpenCV REQUIRED)
 
-
 FILE(GLOB_RECURSE Source_Files
     DatabaseReader.cpp
     SunDatabaseReader.cpp
     SupervisedImage.cpp
-    ComplexNetworkConstructor.cpp
+    ComplexNetworkConstructor/ComplexNetworkConstructor.cpp
+    ComplexNetworkConstructor/CoOcurrenceEquation.cpp
+    ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp
+    ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp
     FeaturesComplexNetwork.cpp
     Link.cpp
     GraphUtilities.cpp
@@ -16,7 +18,7 @@ FILE(GLOB_RECURSE Source_Files
     KFoldDatabaseReader.cpp
 )
 ADD_LIBRARY(Utilities ${Source_Files})
-TARGET_LINK_LIBRARIES(Utilities FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork)
+TARGET_LINK_LIBRARIES(Utilities FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ${LEMON_LIBRARIES} ComplexNetwork)
 
 
 

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_complex_network_v2.html" title="ComplexNetworkV2\&lt; N, E \&gt;" alt="" coords="5,5,195,32"/>
+<area shape="rect" id="node1" href="$class_co_ocurrence_equation.html" title="CoOcurrenceEquation" alt="" coords="5,35,159,61"/>
+<area shape="rect" id="node2" href="$class_add_one_co_ocurrence_equation.html" title="AddOneCoOcurrenceEquation" alt="" coords="207,5,409,32"/>
+<area shape="rect" id="node3" href="$class_reinforcement_co_ocurrence_equation.html" title="ReinforcementCoOcurrence\lEquation" alt="" coords="214,57,402,98"/>
 </map>

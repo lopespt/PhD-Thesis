@@ -5,6 +5,9 @@
 #include <QPoint>
 #include "OrientationFeature.hpp"
 #include <cmath>
+#include "Region.hpp"
+#include <QPolygon>
+#include <istream>
 
 
 OrientationFeatureFactory::OrientationFeatureFactory(int discretization):FeatureFactoryAbstract(2), discretization(discretization)

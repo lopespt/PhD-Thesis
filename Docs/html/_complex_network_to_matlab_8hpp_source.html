@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_complex_network_to_matlab.html#a8d0d921690e8d376364c733c45c0f777">   12</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_complex_network_to_matlab.html#a8d0d921690e8d376364c733c45c0f777">convert</a>(QString inputFile, QString outputFile){</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_complex_network.html">ComplexNetwork&lt;NodeString, Link&gt;</a> cn;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        cn.<a class="code" href="class_complex_network.html#a54fbdb35418f424e8dad0dbc5dc16bee">load</a>(inputFile.toStdString().c_str());</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        cn.load(inputFile.toStdString().c_str());</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_complex_network.html">ComplexNetwork&lt;NodeString, Link&gt;::node_iterator</a> node_it;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_complex_network.html">ComplexNetwork&lt;NodeString, Link&gt;::node_iterator</a> node2_it;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_complex_network.html">ComplexNetwork&lt;NodeString, Link&gt;::edge_iterator</a> edge_it;</div>
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            j=0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            outputLabels.write(QString(<span class="stringliteral">&quot;%1: %2\n&quot;</span>).arg(i+1).arg(node_it-&gt;second-&gt;getAttribute().text).toLocal8Bit());</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">for</span>(node2_it = cn.getNodesBeginIterator(); node2_it != cn.getNodesEndIterator(); node2_it++){</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                  <span class="keyword">auto</span> e = cn.<a class="code" href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1">getEdge</a>(node_it-&gt;second, node2_it-&gt;second);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                  <span class="keyword">auto</span> e = cn.getEdge(node_it-&gt;second, node2_it-&gt;second);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                  <span class="keywordflow">if</span>(e){</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        output.write(QString(<span class="stringliteral">&quot;A(%1,%2)=%3;\n&quot;</span>).arg(i+1).arg(j+1).arg(e-&gt;getAttribute().getWeight()).toLocal8Bit());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                  }</div>
@@ -134,18 +134,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif // COMPLEXNETWORKTOMATLAB_HPP</span></div>
-<div class="ttc" id="class_complex_network_html_a6a1c638e4604efe06c12ce3065020ec1"><div class="ttname"><a href="class_complex_network.html#a6a1c638e4604efe06c12ce3065020ec1">ComplexNetwork::getEdge</a></div><div class="ttdeci">virtual EDGE_TYPE * getEdge(node_id from, node_id to)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:272</div></div>
 <div class="ttc" id="_node_string_8hpp_html"><div class="ttname"><a href="_node_string_8hpp.html">NodeString.hpp</a></div></div>
 <div class="ttc" id="class_complex_network_to_matlab_html_a8d0d921690e8d376364c733c45c0f777"><div class="ttname"><a href="class_complex_network_to_matlab.html#a8d0d921690e8d376364c733c45c0f777">ComplexNetworkToMatlab::convert</a></div><div class="ttdeci">static void convert(QString inputFile, QString outputFile)</div><div class="ttdef"><b>Definition:</b> ComplexNetworkToMatlab.hpp:12</div></div>
 <div class="ttc" id="_link_8hpp_html"><div class="ttname"><a href="_link_8hpp.html">Link.hpp</a></div></div>
-<div class="ttc" id="class_complex_network_html_a54fbdb35418f424e8dad0dbc5dc16bee"><div class="ttname"><a href="class_complex_network.html#a54fbdb35418f424e8dad0dbc5dc16bee">ComplexNetwork::load</a></div><div class="ttdeci">void load(const char *filename)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:338</div></div>
 <div class="ttc" id="class_complex_network_html"><div class="ttname"><a href="class_complex_network.html">ComplexNetwork&lt; NodeString, Link &gt;</a></div></div>
 <div class="ttc" id="class_complex_network_to_matlab_html"><div class="ttname"><a href="class_complex_network_to_matlab.html">ComplexNetworkToMatlab</a></div><div class="ttdef"><b>Definition:</b> ComplexNetworkToMatlab.hpp:9</div></div>
 <div class="ttc" id="_complex_network_8hpp_html"><div class="ttname"><a href="_complex_network_8hpp.html">ComplexNetwork.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:47 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,7 +1,6 @@
 <map id="Sources/Utilities/FeaturesComplexNetwork.hpp" name="Sources/Utilities/FeaturesComplexNetwork.hpp">
-<area shape="rect" id="node2" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="139,102,394,129"/>
-<area shape="rect" id="node9" href="$_complex_network_v2_8hpp.html" title="ComplexNetwork/ComplexNetwork\lV2.hpp" alt="" coords="419,95,648,136"/>
-<area shape="rect" id="node13" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="925,95,1102,136"/>
-<area shape="rect" id="node16" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="723,95,901,136"/>
-<area shape="rect" id="node17" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="1127,102,1199,129"/>
+<area shape="rect" id="node2" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="18,102,273,129"/>
+<area shape="rect" id="node5" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="297,95,474,136"/>
+<area shape="rect" id="node9" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="550,95,727,136"/>
+<area shape="rect" id="node11" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="752,102,824,129"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="Sources/Experiments/DatabaseVisualizer/DatabaseVisualizer.cpp" name="Sources/Experiments/DatabaseVisualizer/DatabaseVisualizer.cpp">
-<area shape="rect" id="node2" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="844,117,1063,143"/>
-<area shape="rect" id="node21" href="$supervisedimageviewerwidget_8hpp.html" title="GuiUtilities/SupervisedImage\lViewerWidget.hpp" alt="" coords="353,109,546,151"/>
-<area shape="rect" id="node28" href="$_database_visualizer_widget_8hpp.html" title="GuiUtilities/DatabaseVisualizer\lWidget.hpp" alt="" coords="1574,109,1778,151"/>
-<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="823,199,972,225"/>
-<area shape="rect" id="node4" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="497,273,649,300"/>
-<area shape="rect" id="node6" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="423,348,623,375"/>
+<area shape="rect" id="node2" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="615,117,833,143"/>
+<area shape="rect" id="node14" href="$supervisedimageviewerwidget_8hpp.html" title="GuiUtilities/SupervisedImage\lViewerWidget.hpp" alt="" coords="123,109,317,151"/>
+<area shape="rect" id="node21" href="$_database_visualizer_widget_8hpp.html" title="GuiUtilities/DatabaseVisualizer\lWidget.hpp" alt="" coords="1345,109,1549,151"/>
+<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="593,199,743,225"/>
+<area shape="rect" id="node4" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="540,273,692,300"/>
+<area shape="rect" id="node6" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="465,348,665,375"/>
 </map>

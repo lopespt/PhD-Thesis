@@ -1,6 +1,8 @@
 #include "AreaFeature.hpp"
 
 #include <stdlib.h>
+#include <memory>
+#include <ostream>
 
 AreaFeature::AreaFeature(float content):Feature<float>(content, 1, "AreaFeature")
 {

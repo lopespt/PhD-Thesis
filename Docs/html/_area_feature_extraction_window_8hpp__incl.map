@@ -1,7 +1,7 @@
 <map id="Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.hpp" name="Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.hpp">
-<area shape="rect" id="node3" href="$supervisedimageviewerwidget_8hpp.html" title="GuiUtilities/SupervisedImage\lViewerWidget.hpp" alt="" coords="191,109,385,151"/>
-<area shape="rect" id="node23" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="793,117,1012,143"/>
-<area shape="rect" id="node6" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="462,273,661,300"/>
-<area shape="rect" id="node8" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="423,348,623,375"/>
-<area shape="rect" id="node24" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="823,199,972,225"/>
+<area shape="rect" id="node3" href="$supervisedimageviewerwidget_8hpp.html" title="GuiUtilities/SupervisedImage\lViewerWidget.hpp" alt="" coords="103,109,296,151"/>
+<area shape="rect" id="node16" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="705,117,923,143"/>
+<area shape="rect" id="node6" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="399,273,597,300"/>
+<area shape="rect" id="node8" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="467,348,667,375"/>
+<area shape="rect" id="node17" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="387,199,537,225"/>
 </map>

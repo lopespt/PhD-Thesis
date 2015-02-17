@@ -18,11 +18,11 @@ const int \hyperlink{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf}{g
 \item 
 const char $\ast$ \hyperlink{class_feature_abstract_a4b12b0d228da1c7e21429f263bef004e}{get\+Feature\+Name} () const 
 \item 
-virtual \hyperlink{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}{$\sim$\+Feature\+Abstract} ()
-\item 
-virtual void \hyperlink{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}{Write\+To\+Stream} (Q\+Data\+Stream \&stream) const =0
+virtual void \hyperlink{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b}{Write\+To\+Stream} (std\+::ostream \&stream) const =0
 \item 
 bool \hyperlink{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}{operator==} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} \&other) const 
+\item 
+virtual \hyperlink{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}{$\sim$\+Feature\+Abstract} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -41,10 +41,13 @@ size\+\_\+t \hyperlink{class_feature_abstract_a99b0e94ca4cdf08688924517946b5743}
 class \hyperlink{class_feature_abstract_ac83197c9714439d51f43440c042625e7}{Features\+Complex\+Network}
 \item 
 uint \hyperlink{class_feature_abstract_aca59f644613693185e40001464f20995}{q\+Hash} (const \hyperlink{class_feature_abstract_key}{Feature\+Abstract\+Key} \&v)
+\item 
+std\+::ostream \& \hyperlink{class_feature_abstract_a3266c282d48b8f922e50ea489fc3a667}{operator$<$$<$} (ostream \&os, const shared\+\_\+ptr$<$ \hyperlink{class_feature_abstract}{Feature\+Abstract} $>$ \&node)
 \end{DoxyCompactItemize}
 
 
-Inheritance diagram for Feature\+Abstract\+:\nopagebreak
+Inheritance diagram for Feature\+Abstract\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -53,7 +56,8 @@ Inheritance diagram for Feature\+Abstract\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Feature\+Abstract\+:\nopagebreak
+Collaboration diagram for Feature\+Abstract\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -91,6 +95,18 @@ Collaboration diagram for Feature\+Abstract\+:\nopagebreak
 
 
 Implemented in \hyperlink{class_label_feature_acad3108c7016d5d82ffea0b07ac9911e}{Label\+Feature}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ T $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ float $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ label $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{Area\+Feature}, and \hyperlink{class_orientation_feature_a181ee73c51e33108e21a52c6b95e81e7}{Orientation\+Feature}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_feature_abstract_a4b12b0d228da1c7e21429f263bef004e}{\index{Feature\+Abstract@{Feature\+Abstract}!get\+Feature\+Name@{get\+Feature\+Name}}
 \index{get\+Feature\+Name@{get\+Feature\+Name}!Feature\+Abstract@{Feature\+Abstract}}
@@ -153,16 +169,28 @@ Here is the call graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}{\index{Feature\+Abstract@{Feature\+Abstract}!Write\+To\+Stream@{Write\+To\+Stream}}
+\hypertarget{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b}{\index{Feature\+Abstract@{Feature\+Abstract}!Write\+To\+Stream@{Write\+To\+Stream}}
 \index{Write\+To\+Stream@{Write\+To\+Stream}!Feature\+Abstract@{Feature\+Abstract}}
 \subsubsection[{Write\+To\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Feature\+Abstract\+::\+Write\+To\+Stream (
 \begin{DoxyParamCaption}
-\item[{Q\+Data\+Stream \&}]{stream}
+\item[{std\+::ostream \&}]{stream}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_a0c2c3d93b7bf635de628fc02413f784e}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b}
 
 
-Implemented in \hyperlink{class_label_feature_a2c30c826c770d0c5892b99bea90010f1}{Label\+Feature}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ T $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ float $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ label $>$}, \hyperlink{class_feature_a75f94882fda85bc2632620ad2555c510}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a8d2f99d3cc8ff64b90c2eb8a4c97a72f}{Area\+Feature}, and \hyperlink{class_orientation_feature_a6d8d3934b981be06db8d7191c6ffdbf1}{Orientation\+Feature}.
+Implemented in \hyperlink{class_label_feature_a0058053b59de5c9a9cb856ac12681296}{Label\+Feature}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ T $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ float $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ label $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_ac0edad4aaa2a45caabd27112017bf4a6}{Area\+Feature}, and \hyperlink{class_orientation_feature_ac0c992dc7d54fc6e4558046142ddb881}{Orientation\+Feature}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -170,6 +198,14 @@ Implemented in \hyperlink{class_label_feature_a2c30c826c770d0c5892b99bea90010f1}
 \hypertarget{class_feature_abstract_ac83197c9714439d51f43440c042625e7}{\index{Feature\+Abstract@{Feature\+Abstract}!Features\+Complex\+Network@{Features\+Complex\+Network}}
 \index{Features\+Complex\+Network@{Features\+Complex\+Network}!Feature\+Abstract@{Feature\+Abstract}}
 \subsubsection[{Features\+Complex\+Network}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Features\+Complex\+Network}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_feature_abstract_ac83197c9714439d51f43440c042625e7}
+\hypertarget{class_feature_abstract_a3266c282d48b8f922e50ea489fc3a667}{\index{Feature\+Abstract@{Feature\+Abstract}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Feature\+Abstract@{Feature\+Abstract}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const shared\+\_\+ptr$<$ {\bf Feature\+Abstract} $>$ \&}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_feature_abstract_a3266c282d48b8f922e50ea489fc3a667}
 \hypertarget{class_feature_abstract_aca59f644613693185e40001464f20995}{\index{Feature\+Abstract@{Feature\+Abstract}!q\+Hash@{q\+Hash}}
 \index{q\+Hash@{q\+Hash}!Feature\+Abstract@{Feature\+Abstract}}
 \subsubsection[{q\+Hash}]{\setlength{\rightskip}{0pt plus 5cm}uint q\+Hash (

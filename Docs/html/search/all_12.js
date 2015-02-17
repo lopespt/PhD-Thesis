@@ -1,7 +1,8 @@
 var searchData=
 [
+  ['saida',['saida',['../read_report_8m.html#a5c2e707633cd5095e5fa284cbf17d200',1,'readReport.m']]],
   ['samelabel',['sameLabel',['../class_link.html#ae5f10e1961b948c4a5e71e6702c68de0',1,'Link']]],
-  ['save',['save',['../class_complex_network.html#a5d127d4296808b7ccdadccaa58084e96',1,'ComplexNetwork::save()'],['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork::save()']]],
+  ['save',['save',['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork']]],
   ['scale_5ffactor',['scale_factor',['../class_supervised_image_viewer_widget.html#a3f8c945a473a9840c5d76615422f02ac',1,'SupervisedImageViewerWidget']]],
   ['segmenter',['Segmenter',['../class_segmenter.html',1,'Segmenter'],['../class_segmenter.html#ad39ec3bda31be180820aa0bdca7b125d',1,'Segmenter::Segmenter()']]],
   ['segmenter_2ecpp',['segmenter.cpp',['../segmenter_8cpp.html',1,'']]],
@@ -20,7 +21,9 @@ var searchData=
   ['sourcedir',['sourceDir',['../class_sun_database_reader.html#a6bfc31b2ba24be2b3e18c32e0d343d70',1,'SunDatabaseReader']]],
   ['splitcluster',['splitCluster',['../namespacecompute__modularity.html#a632a3219fb7710031adbb61fda6f7b21',1,'compute_modularity']]],
   ['started',['started',['../class_sun_database_reader.html#aa0b0c1f783f4382a9c8b10a1de1fec71',1,'SunDatabaseReader']]],
+  ['strength',['strength',['../class_reinforcement_co_ocurrence_equation.html#aea34a3a75518f1a404a9ee192feb2709',1,'ReinforcementCoOcurrenceEquation']]],
   ['sub_5fclusterization_5fexperiment',['sub_clusterization_experiment',['../namespacecompute__modularity.html#aa868b771a28de7a8784a1ac26c141492',1,'compute_modularity']]],
+  ['sumprobabilities',['SumProbabilities',['../class_label_guesser_experiment.html#a8c3db06a56bf1ad7513c20a7b80da3eca648e260351661fcd059db11046e060bc',1,'LabelGuesserExperiment']]],
   ['sundatabasefolder',['sunDatabaseFolder',['../class_labels_validation_experiment.html#a13c47376d09961370b63902e98d38fb1',1,'LabelsValidationExperiment']]],
   ['sundatabasereader',['SunDatabaseReader',['../class_sun_database_reader.html',1,'SunDatabaseReader'],['../class_sun_database_reader.html#a7165e085898b5e329402b8acc17f3e0e',1,'SunDatabaseReader::SunDatabaseReader()']]],
   ['sundatabasereader_2ecpp',['SunDatabaseReader.cpp',['../_sun_database_reader_8cpp.html',1,'']]],

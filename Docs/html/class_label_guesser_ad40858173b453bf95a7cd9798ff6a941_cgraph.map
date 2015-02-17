@@ -1,6 +1,3 @@
 <map id="LabelGuesser::LabelGuesser" name="LabelGuesser::LabelGuesser">
-<area shape="rect" id="node2" href="$class_features_complex_network.html#a8e1b87e9664a72c2062aae67bad94261" title="FeaturesComplexNetwork\l::updateIndex" alt="" coords="249,39,425,80"/>
-<area shape="rect" id="node5" href="$class_label_guesser.html#a28aeaaf6c7b4d8faeed2cd2f69da49a3" title="LabelGuesser::buildIndex" alt="" coords="251,105,424,131"/>
-<area shape="rect" id="node3" href="$class_complex_network.html#ab02bc6912437322f146f6ce98b415759" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::Begin" alt="" coords="473,5,637,76"/>
-<area shape="rect" id="node4" href="$class_complex_network.html#a2c90f4efd046776d7a53776b24daae0f" title="ComplexNetwork\&lt; std\l::shared_ptr\&lt; const\l FeatureAbstract \&gt;, Link\l \&gt;::End" alt="" coords="473,100,637,171"/>
+<area shape="rect" id="node2" href="$class_label_guesser.html#a28aeaaf6c7b4d8faeed2cd2f69da49a3" title="LabelGuesser::buildIndex" alt="" coords="249,5,423,32"/>
 </map>

@@ -2,8 +2,8 @@
 #define LABELGUESSEREXPERIMENT_HPP
 
 #include <QList>
-#include <memory>
-#include <QString>
+
+class QString;
 class SupervisedImage;
 class FeaturesComplexNetwork;
 class FeatureAbstractPtr;

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save',['save',['../class_complex_network.html#a5d127d4296808b7ccdadccaa58084e96',1,'ComplexNetwork::save()'],['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork::save()']]],
+  ['save',['save',['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork']]],
   ['segmenter',['Segmenter',['../class_segmenter.html#ad39ec3bda31be180820aa0bdca7b125d',1,'Segmenter']]],
   ['setcomplexnetwork',['setComplexNetwork',['../class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8',1,'ComplexNetworkViewerWidget']]],
   ['setsupervisedimage',['setSupervisedImage',['../class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707',1,'SupervisedImageViewerWidget']]],
@@ -13,6 +13,7 @@ var searchData=
   ['shuffledlist',['shuffledList',['../class_s_u_n_random_folder_generator.html#a515728ee2e168336b2e0e0f72cc86813',1,'SUNRandomFolderGenerator']]],
   ['sizehint',['sizeHint',['../class_supervised_image_viewer_widget.html#aa3c11a2c8303e270510ee0bac344cabb',1,'SupervisedImageViewerWidget']]],
   ['splitcluster',['splitCluster',['../namespacecompute__modularity.html#a632a3219fb7710031adbb61fda6f7b21',1,'compute_modularity']]],
+  ['strength',['strength',['../class_reinforcement_co_ocurrence_equation.html#aea34a3a75518f1a404a9ee192feb2709',1,'ReinforcementCoOcurrenceEquation']]],
   ['sub_5fclusterization_5fexperiment',['sub_clusterization_experiment',['../namespacecompute__modularity.html#aa868b771a28de7a8784a1ac26c141492',1,'compute_modularity']]],
   ['sundatabasereader',['SunDatabaseReader',['../class_sun_database_reader.html#a7165e085898b5e329402b8acc17f3e0e',1,'SunDatabaseReader']]],
   ['sunrandomfoldergenerator',['SUNRandomFolderGenerator',['../class_s_u_n_random_folder_generator.html#ace7843ac3121b56fa6942d592cc43215',1,'SUNRandomFolderGenerator']]],

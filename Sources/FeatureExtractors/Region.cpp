@@ -1,6 +1,15 @@
 
 #include "Region.hpp"
 
+#include <QPixmap>
+#include <QPainter>
+#include <QColor>
+#include <QPoint>
+#include <QColor>
+#include <opencv/cv.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv/highgui.h>
+
 Region::Region(QImage *image, QPolygon boundary, QString label): image(image),boundary(boundary),  label(label){
 }
 

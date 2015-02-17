@@ -1,6 +1,2 @@
-<map id="ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;" name="ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;">
-<area shape="rect" id="node3" href="$class_edge.html" title="{Edge\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; from\l&#45; to\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Edge()\l+ Edge()\l}" alt="" coords="5,153,195,318"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="219,197,359,274"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="598,197,714,274"/>
-<area shape="rect" id="node8" href="$class_node.html" title="{Node\&lt; NODE_TYPE, EDGE\l_TYPE \&gt;\n|&#45; _id\l&#45; attribute\l|+ getAttribute()\l+ setAttribute()\l+ Node()\l+ operator\&lt;()\l+ operator==()\l+ operator\&gt;()\l}" alt="" coords="384,145,573,325"/>
+<map id="ComplexNetwork&lt; N, E &gt;" name="ComplexNetwork&lt; N, E &gt;">
 </map>

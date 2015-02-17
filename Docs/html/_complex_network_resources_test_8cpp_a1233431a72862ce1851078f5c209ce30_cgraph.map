@@ -1,9 +1,6 @@
 <map id="initTest2" name="initTest2">
-<area shape="rect" id="node2" href="$class_complex_network.html#af2c31ca0d2142dafa1d88ca3ff22356f" title="ComplexNetwork::addNode" alt="" coords="141,5,326,32"/>
-<area shape="rect" id="node3" href="$class_complex_network.html#a52c25eb9c9c642a39681e4040fc0a17d" title="ComplexNetwork::addEdge" alt="" coords="141,56,325,83"/>
-<area shape="rect" id="node4" href="$class_complex_network.html#a33f2b4528cc31296ede98be7e6dcd600" title="ComplexNetwork::removeNode" alt="" coords="130,107,337,133"/>
-<area shape="rect" id="node6" href="$class_complex_network.html#a720cb4e40342648d394792cc693d29a5" title="ComplexNetwork::getNumEdges" alt="" coords="125,157,341,184"/>
-<area shape="rect" id="node7" href="$class_complex_network.html#a2167b224079f5c0b44443959ad0b6440" title="ComplexNetwork::EdgesBegin" alt="" coords="132,208,335,235"/>
-<area shape="rect" id="node8" href="$class_complex_network.html#ad806138ea94ec18ed17f4681ab731208" title="ComplexNetwork::EdgesEnd" alt="" coords="137,259,329,285"/>
-<area shape="rect" id="node5" href="$class_complex_network.html#a9b2c7df561a2ad5fc14b04a5c5c56828" title="ComplexNetwork::removeEdge" alt="" coords="389,107,596,133"/>
+<area shape="rect" id="node2" href="$class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461" title="ComplexNetwork::addNode" alt="" coords="135,5,320,32"/>
+<area shape="rect" id="node3" href="$class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c" title="ComplexNetwork::addArc" alt="" coords="141,56,314,83"/>
+<area shape="rect" id="node4" href="$class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb" title="ComplexNetwork::getNumArcs" alt="" coords="125,107,329,133"/>
+<area shape="rect" id="node5" href="$class_complex_network.html#acec7daa653363b1a7f7835258eeef198" title="ComplexNetwork::getArcValue" alt="" coords="125,157,329,184"/>
 </map>

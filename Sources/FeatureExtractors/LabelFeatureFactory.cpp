@@ -1,5 +1,8 @@
 #include "LabelFeatureFactory.hpp"
 #include "LabelFeature.hpp"
+#include "Region.hpp"
+#include <istream>
+
 LabelFeatureFactory::LabelFeatureFactory():FeatureFactoryAbstract(0)
 {
 }
@@ -7,7 +10,8 @@ LabelFeatureFactory::LabelFeatureFactory():FeatureFactoryAbstract(0)
 
 FeatureAbstractPtr LabelFeatureFactory::CreateFromRegion(const Region* region) const{
     label l;
-    strcpy(l.value,region->getLabel().toStdString().c_str());
+    QString labelStr = region->getLabel().prepend('\"').append('\"');
+    strcpy(l.value, labelStr.toStdString().c_str());
     FeatureAbstractPtr feature = FeatureAbstractPtr( new LabelFeature(l));
     fflush(stdout);
     return feature;

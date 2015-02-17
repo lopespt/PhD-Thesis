@@ -1,5 +1,4 @@
 #include "GraphUtilities.hpp"
-#include "CachedComplexNetwork.hpp"
 #include <QHash>
 
 GraphUtilities::GraphUtilities()

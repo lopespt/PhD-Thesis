@@ -2,8 +2,7 @@
 <area shape="rect" id="node2" href="$_label_guesser_experiment_8cpp.html" title="Sources/Experiments\l/LabelGuesser/LabelGuesser\lExperiment.cpp" alt="" coords="5,95,201,151"/>
 <area shape="rect" id="node3" href="$_experiments_2_labels_complex_networks_2main_8cpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/main.cpp" alt="" coords="226,95,399,151"/>
 <area shape="rect" id="node4" href="$_label_guesser_8cpp.html" title="Sources/Experiments\l/LabelsValidationExperiment\l/LabelGuesser.cpp" alt="" coords="424,95,615,151"/>
-<area shape="rect" id="node5" href="$_experiments_2_setup_padrao_2main_8cpp.html" title="Sources/Experiments\l/SetupPadrao/main.cpp" alt="" coords="639,102,800,143"/>
-<area shape="rect" id="node6" href="$_label_feature_8cpp.html" title="Sources/FeatureExtractors\l/LabelFeature.cpp" alt="" coords="824,102,1004,143"/>
-<area shape="rect" id="node7" href="$_label_feature_factory_8cpp.html" title="Sources/FeatureExtractors\l/LabelFeatureFactory.cpp" alt="" coords="1028,102,1208,143"/>
-<area shape="rect" id="node8" href="$_complex_network_construction_test_8cpp.html" title="Sources/Tests/ComplexNetwork\lConstructionTest/ComplexNetwork\lConstructionTest.cpp" alt="" coords="1232,95,1460,151"/>
+<area shape="rect" id="node5" href="$_label_feature_8cpp.html" title="Sources/FeatureExtractors\l/LabelFeature.cpp" alt="" coords="639,102,819,143"/>
+<area shape="rect" id="node6" href="$_label_feature_factory_8cpp.html" title="Sources/FeatureExtractors\l/LabelFeatureFactory.cpp" alt="" coords="843,102,1023,143"/>
+<area shape="rect" id="node7" href="$_complex_network_construction_test_8cpp.html" title="Sources/Tests/ComplexNetwork\lConstructionTest/ComplexNetwork\lConstructionTest.cpp" alt="" coords="1047,95,1275,151"/>
 </map>

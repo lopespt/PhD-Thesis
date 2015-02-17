@@ -1,8 +1,10 @@
 <map id="DatabaseReader::readNext" name="DatabaseReader::readNext">
-<area shape="rect" id="node2" href="$class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="244,5,423,47"/>
-<area shape="rect" id="node4" href="$class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="237,71,429,112"/>
-<area shape="rect" id="node7" href="$class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="251,136,416,177"/>
+<area shape="rect" id="node2" href="$class_database_visualizer_widget.html#a62d817fd2c411ef3b75b470bf21af083" title="DatabaseVisualizerWidget\l::goNext" alt="" coords="244,19,423,60"/>
+<area shape="rect" id="node4" href="$class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="237,109,429,151"/>
+<area shape="rect" id="node9" href="$class_k_fold_database_reader.html#a50c775127f0a9decc8d7f275005cd437" title="KFoldDatabaseReader\l::KFoldDatabaseReader" alt="" coords="251,175,416,216"/>
 <area shape="rect" id="node3" href="$class_database_visualizer_widget.html#af57da2fa08ee2d4f35821d1430cf57df" title="DatabaseVisualizerWidget\l::DatabaseVisualizerWidget" alt="" coords="478,5,663,47"/>
-<area shape="rect" id="node5" href="$_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="545,75,596,102"/>
-<area shape="rect" id="node6" href="$class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="477,127,664,168"/>
+<area shape="rect" id="node5" href="$_experiments_2_area_complex_networks_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="545,71,596,98"/>
+<area shape="rect" id="node6" href="$class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="485,123,657,164"/>
+<area shape="rect" id="node8" href="$class_labels_validation_experiment.html#a139af12709f865656435f2c9812c0567" title="LabelsValidationExperiment\l::buildComplexNetwork" alt="" coords="477,188,664,229"/>
+<area shape="rect" id="node7" href="$_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="712,130,763,157"/>
 </map>

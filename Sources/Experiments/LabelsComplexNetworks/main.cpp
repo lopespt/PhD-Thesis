@@ -13,7 +13,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <QCommandLineParser>
 #include <QCommandLinkButton>
 #include <QStringList>
-#include <Utilities/ComplexNetworkConstructor.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/LabelFeature.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>

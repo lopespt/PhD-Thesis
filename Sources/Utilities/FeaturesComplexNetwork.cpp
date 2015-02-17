@@ -68,3 +68,17 @@ FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const Fe
     return Node(INVALID);
 }
 
+FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string& str){
+    std::stringstream stream;
+    stream << str;
+    int type;
+    sscanf(str.c_str(), "%d", &type);
+    for(FeatureFactoryAbstract* f : factories){
+        if(f->getType() == type){
+            FeatureAbstractPtr feat= f->CreateFromStream(stream);
+            return feat;
+        }
+    }
+    throw new runtime_error("No FeatureFactory Found");
+    return FeatureAbstractPtr();
+}

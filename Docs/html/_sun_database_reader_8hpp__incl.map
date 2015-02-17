@@ -1,5 +1,5 @@
-<map id="src/SunDatabaseReader.hpp" name="src/SunDatabaseReader.hpp">
-<area shape="rect" id="node2" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="98,80,247,107"/>
-<area shape="rect" id="node3" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="268,155,415,181"/>
-<area shape="rect" id="node6" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="404,229,492,256"/>
+<map id="Sources/Utilities/SunDatabaseReader.hpp" name="Sources/Utilities/SunDatabaseReader.hpp">
+<area shape="rect" id="node2" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="196,95,345,121"/>
+<area shape="rect" id="node3" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="157,169,309,196"/>
+<area shape="rect" id="node5" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="133,244,333,271"/>
 </map>

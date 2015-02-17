@@ -72,6 +72,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li class="current"><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -81,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,10 +96,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;<ul>
 <li>AreaFeatureFactory
 : <a class="el" href="class_area_feature.html#acf274ff5848a30a105c61f0e1c56cf7e">AreaFeature</a>
-</li>
-<li>ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;
-: <a class="el" href="class_complex_network_1_1_edge_iterator.html#ad8438fc5199b628ea294f77319026b6a">ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;::EdgeIterator</a>
-, <a class="el" href="class_complex_network_1_1_node_iterator.html#ad8438fc5199b628ea294f77319026b6a">ComplexNetwork&lt; NODE_TYPE, EDGE_TYPE &gt;::NodeIterator</a>
 </li>
 <li>ComplexNetworkV2&lt; N, E &gt;
 : <a class="el" href="class_complex_network_v2_1_1_edge_iterator.html#adb5cc6ad363066c6e1f832e8cb0bf2b8">ComplexNetworkV2&lt; N, E &gt;::EdgeIterator</a>
@@ -112,6 +110,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>LabelFeatureFactory
 : <a class="el" href="class_label_feature.html#a9675cfb38157a70cecfa458743f39dd1">LabelFeature</a>
 </li>
+<li>operator&lt;&lt;
+: <a class="el" href="class_feature_abstract.html#a3266c282d48b8f922e50ea489fc3a667">FeatureAbstract</a>
+, <a class="el" href="class_feature_abstract_ptr.html#aed8fa13e89e72d721eb74a35a53e8814">FeatureAbstractPtr</a>
+, <a class="el" href="class_link.html#a7bf934f67abd8e74c78d5fbfadc427db">Link</a>
+</li>
+<li>operator&gt;&gt;
+: <a class="el" href="class_feature_abstract_ptr.html#a5e97ab964d53de51937247cd6691eca5">FeatureAbstractPtr</a>
+, <a class="el" href="class_link.html#a6a5bf13913ca69fd9b3b8fde3e7cc953">Link</a>
+</li>
 <li>qHash
 : <a class="el" href="class_feature_abstract.html#aca59f644613693185e40001464f20995">FeatureAbstract</a>
 </li>
@@ -119,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 8 2015 13:14:48 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 16 2015 19:47:37 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

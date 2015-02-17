@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['saida',['saida',['../read_report_8m.html#a5c2e707633cd5095e5fa284cbf17d200',1,'readReport.m']]],
   ['samelabel',['sameLabel',['../class_link.html#ae5f10e1961b948c4a5e71e6702c68de0',1,'Link']]],
   ['scale_5ffactor',['scale_factor',['../class_supervised_image_viewer_widget.html#a3f8c945a473a9840c5d76615422f02ac',1,'SupervisedImageViewerWidget']]],
   ['sourcedir',['sourceDir',['../class_sun_database_reader.html#a6bfc31b2ba24be2b3e18c32e0d343d70',1,'SunDatabaseReader']]],

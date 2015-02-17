@@ -1,4 +1,7 @@
-<map id="src/ComplexNetworkConstructor.hpp" name="src/ComplexNetworkConstructor.hpp">
-<area shape="rect" id="node2" href="$_complex_network_constructor_8cpp.html" title="src/ComplexNetworkConstructor.cpp" alt="" coords="5,80,232,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="257,80,351,107"/>
+<map id="Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" name="Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
+<area shape="rect" id="node2" href="$_complex_network_visualizer_8cpp.html" title="Sources/Experiments\l/ComplexNetworkVisualizer\l/ComplexNetworkVisualizer.cpp" alt="" coords="5,109,216,165"/>
+<area shape="rect" id="node3" href="$_label_guesser_experiment_8cpp.html" title="Sources/Experiments\l/LabelGuesser/LabelGuesser\lExperiment.cpp" alt="" coords="241,109,437,165"/>
+<area shape="rect" id="node4" href="$_experiments_2_labels_complex_networks_2main_8cpp.html" title="Sources/Experiments\l/LabelsComplexNetworks\l/main.cpp" alt="" coords="461,109,635,165"/>
+<area shape="rect" id="node5" href="$_complex_network_construction_test_8cpp.html" title="Sources/Tests/ComplexNetwork\lConstructionTest/ComplexNetwork\lConstructionTest.cpp" alt="" coords="659,109,887,165"/>
+<area shape="rect" id="node6" href="$_complex_network_constructor_8cpp.html" title="Sources/Utilities/Complex\lNetworkConstructor/ComplexNetwork\lConstructor.cpp" alt="" coords="912,109,1157,165"/>
 </map>

@@ -1,5 +1,7 @@
 #include "LabelFeature.hpp"
 #include <string.h>
+#include <memory>
+#include <ostream>
 
 LabelFeature::LabelFeature(label l):Feature<label>(l,0,"LabelFeature")
 {

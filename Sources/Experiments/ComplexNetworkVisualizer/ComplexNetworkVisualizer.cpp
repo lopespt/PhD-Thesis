@@ -1,6 +1,11 @@
 #include "ComplexNetworkVisualizer.hpp"
-#include <Utilities/ComplexNetworkConstructor.hpp>
+
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/FeaturesComplexNetwork.hpp>
+
+#include <QWidget>
+#include "ComplexNetworkViewerWidget.hpp"
 
 ComplexNetworkVisualizer::ComplexNetworkVisualizer(QWidget *parent) :
     QMainWindow(parent)

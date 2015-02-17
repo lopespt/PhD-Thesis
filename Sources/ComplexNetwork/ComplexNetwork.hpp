@@ -1,11 +1,6 @@
 #ifndef COMPLEXNETWORK_HPP
 #define COMPLEXNETWORK_HPP
 
-#include <QHash>
-#include <QPair>
-#include <QMap>
-#include <QFile>
-#include <QSet>
 #include <assert.h>
 #include <lemon/list_graph.h>
 

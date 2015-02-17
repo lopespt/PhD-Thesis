@@ -6,6 +6,7 @@ var searchData=
   ['feature_3c_20unsigned_20int_20_3e',['Feature&lt; unsigned int &gt;',['../class_feature.html',1,'']]],
   ['featureabstract',['FeatureAbstract',['../class_feature_abstract.html',1,'']]],
   ['featureabstractkey',['FeatureAbstractKey',['../class_feature_abstract_key.html',1,'']]],
+  ['featureabstractptr',['FeatureAbstractPtr',['../class_feature_abstract_ptr.html',1,'']]],
   ['featurefactoryabstract',['FeatureFactoryAbstract',['../class_feature_factory_abstract.html',1,'']]],
   ['featurescomplexnetwork',['FeaturesComplexNetwork',['../class_features_complex_network.html',1,'']]]
 ];

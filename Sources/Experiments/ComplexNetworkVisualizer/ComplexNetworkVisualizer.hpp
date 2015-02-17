@@ -2,13 +2,15 @@
 #define COMPLEXNETWORKVISUALIZER_HPP
 
 #include <QMainWindow>
-#include <ComplexNetwork/ComplexNetwork.hpp>
-#include <Utilities/NodeString.hpp>
-#include "ComplexNetworkViewerWidget.hpp"
-#include <QVBoxLayout>
-#include <FeatureExtractors/FeatureAbstract.hpp>
-#include <FeatureExtractors/FeatureFactoryAbstract.hpp>
+#include <QList>
 #include <Utilities/FeaturesComplexNetwork.hpp>
+
+
+class ComplexNetworkViewerWidget;
+class FeatureFactoryAbstract;
+class QWidget;
+class QString;
+
 
 class ComplexNetworkVisualizer : public QMainWindow
 {

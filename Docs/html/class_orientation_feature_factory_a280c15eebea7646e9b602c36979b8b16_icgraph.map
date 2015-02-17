@@ -1,6 +1,6 @@
 <map id="OrientationFeatureFactory::discretize" name="OrientationFeatureFactory::discretize">
 <area shape="rect" id="node2" href="$class_orientation_feature_factory.html#a3ba5ebad39d7b2b6d1065208ee2fb60e" title="OrientationFeatureFactory\l::discoverOrientation" alt="" coords="231,5,408,47"/>
-<area shape="rect" id="node3" href="$class_orientation_feature_factory.html#a63e1b4d41e32beb17f523a04479785ee" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="456,5,633,47"/>
+<area shape="rect" id="node3" href="$class_orientation_feature_factory.html#a979d7a274a149c806bd3d0fd2066d3ce" title="OrientationFeatureFactory\l::CreateFromRegion" alt="" coords="456,5,633,47"/>
 <area shape="rect" id="node4" href="$class_label_guesser.html#a83c7361e8308a2347814a418c6165615" title="LabelGuesser::Guess" alt="" coords="681,13,832,39"/>
 <area shape="rect" id="node5" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="880,13,1093,39"/>
 <area shape="rect" id="node6" href="$_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1141,13,1192,39"/>

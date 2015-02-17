@@ -2,9 +2,6 @@
 #ifndef FEATURE_HPP
 #define FEATURE_HPP
 
-#include <QVector>
-#include "Region.hpp"
-#include <string.h>
 #include "FeatureAbstract.hpp"
 
 template <typename T>

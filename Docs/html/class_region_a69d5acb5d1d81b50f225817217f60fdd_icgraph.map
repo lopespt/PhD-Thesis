@@ -1,7 +1,7 @@
 <map id="Region::getLabel" name="Region::getLabel">
-<area shape="rect" id="node2" href="$class_label_feature_factory.html#a3d893ad35ccb2b7eb64dad199cbf9bc1" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="207,5,353,47"/>
+<area shape="rect" id="node2" href="$class_label_feature_factory.html#af0032431002f8af5c9ddd3d4a20dff6a" title="LabelFeatureFactory\l::CreateFromRegion" alt="" coords="207,5,353,47"/>
 <area shape="rect" id="node6" href="$class_supervised_image_viewer_widget.html#a0ec0ea9962e394880410449e91181429" title="SupervisedImageViewerWidget\l::mouseMoveEvent" alt="" coords="176,71,384,112"/>
-<area shape="rect" id="node3" href="$class_label_guesser_experiment.html#aff519caff30a7cfe4962b6645788577c" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="432,5,604,47"/>
+<area shape="rect" id="node3" href="$class_label_guesser_experiment.html#a7ce6e72a0299f09f5d60911b6b2458b4" title="LabelGuesserExperiment\l::getLabelsHints" alt="" coords="432,5,604,47"/>
 <area shape="rect" id="node4" href="$class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="652,5,824,47"/>
 <area shape="rect" id="node5" href="$_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="872,13,923,39"/>
 </map>
