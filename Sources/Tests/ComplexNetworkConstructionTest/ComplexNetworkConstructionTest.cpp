@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <QApplication>
 #include <FeatureExtractors/Feature.hpp>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <locale>

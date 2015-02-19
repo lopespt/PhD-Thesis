@@ -2,6 +2,7 @@
 #define LABELGUESSEREXPERIMENTTHREAD_HPP
 
 #include <QThread>
+#include <QObject>
 #include "LabelGuesserExperiment.hpp"
 class QString;
 
@@ -13,7 +14,7 @@ private:
     QString inputFolder;
     QString outputFile;
 public:
-    LabelGuesserExperimentThread(float trainSize, int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile );
+    LabelGuesserExperimentThread(FeaturesComplexNetwork cn, RegionChooser chooser,  int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile );
     void run();
     ~LabelGuesserExperimentThread();
 

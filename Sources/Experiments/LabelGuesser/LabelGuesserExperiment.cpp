@@ -2,8 +2,8 @@
 
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <Utilities/IterativeRandomWalk.hpp>
-#include <Utilities/KFoldDatabaseReader.hpp>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <FeatureExtractors/LabelFeature.hpp>
@@ -13,9 +13,14 @@
 #include <stdio.h>
 #include <Utilities/GraphUtilities.hpp>
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
+#include <Utilities/DatabaseReader/DatabaseReader.hpp>
+#include <Utilities/DatabaseReader/RegionChooser.hpp>
 
-LabelGuesserExperiment::LabelGuesserExperiment(float trainPerc, int walkLenght, method m):
-    trainPerc(trainPerc), walkLenght(walkLenght), m(m)
+LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, RegionChooser chooser , int walkLenght, method m):
+    cn(cn),
+    chooser(chooser),
+    walkLenght(walkLenght),
+    m(m)
 {
 
 }
@@ -33,7 +38,7 @@ QList< FeatureAbstractPtr > LabelGuesserExperiment::getLabelsHints(SupervisedIma
     return ret;
 }
 
-QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn, QList<FeatureAbstractPtr > hints){
+QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, QList<FeatureAbstractPtr > hints){
     setlocale(LC_ALL, "en_US");
     char buffer[100];
 
@@ -109,26 +114,10 @@ void LabelGuesserExperiment::printLabels(FeaturesComplexNetwork *cn){
     }
 }
 
-void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
+void LabelGuesserExperiment::execute(QString outputFile){
     srand(time(0));
-    SunDatabaseReader r = SunDatabaseReader(inputFolder) ;
-    KFoldDatabaseReader kfold(r, trainPerc);
-    KFoldDatabaseReader::PathDatabaseReader train = kfold.getTrainReader();
-    KFoldDatabaseReader::PathDatabaseReader test = kfold.getTestReader();
 
-    //Create network
-    QList<FeatureFactoryAbstract*> factories;
-    LabelFeatureFactory lblFactory;
-    factories.append(&lblFactory);
-    FeaturesComplexNetwork cn;
-    ReinforcementCoOcurrenceEquation reinf(0.3, 80);
-
-    ComplexNetworkConstructor constructor(cn, train, factories, &reinf);
-    constructor.build();
     cn.refreshCache();
-    cn.save(QString("").append(outputFile).append(".cn").toStdString().c_str());
-    //cn.load("/tmp/Implementation-Build/bin/labels.cn", factories);
-    //cn.load("train.cn", factories);
 
     ListDigraph::ArcMap<double> weights(cn);
     GraphUtilities::getWeights(cn, weights);
@@ -139,19 +128,15 @@ void LabelGuesserExperiment::execute(QString inputFolder, QString outputFile){
     
     fprintf(file, "posicaoRankCorreto \t Escondido \t Top10Escolhidos \n");
     int position = 1;
-    while(test.hasNext()){
-        printf("%d (%d) ", position, test.getTotal());
+    while(chooser.hasNextChoseRegion()){
+        printf("%d (%d) ", position, chooser.getTotal());
         fflush(stdout);
-        SupervisedImage img = test.readNext();
-        while(img.getRegions().size() < 2){
-            img = test.readNext();
-        }
-        QList<Region> regs = img.getRegions();
-        unsigned int choosen = rand() % regs.size();
-        QList< FeatureAbstractPtr > hints = getLabelsHints(img, choosen);
+        RegionChooser::ChosenRegion region = chooser.nextChoseRegion();
+        SupervisedImage img = region.readSupervisedImage();
 
-        QList<QString> guessed = guessByIterativeRandomWalk(walk,cn, hints);
-        QString hidden = img.getRegions()[choosen].getLabel();
+        QList< FeatureAbstractPtr > hints = getLabelsHints(img, region.regionChoosed);
+        QList<QString> guessed = guessByIterativeRandomWalk(walk, hints);
+        QString hidden = img.getRegions()[region.regionChoosed].getLabel();
 
 
         fprintf(file, "%d", getPosition(guessed, hidden));

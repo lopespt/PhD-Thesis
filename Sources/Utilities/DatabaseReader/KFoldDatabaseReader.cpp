@@ -2,11 +2,12 @@
 #include "DatabaseReader.hpp"
 #include <math.h>
 #include <time.h>
-#include "SupervisedImage.hpp"
+#include "../SupervisedImage.hpp"
 #include <QSet>
 #include <QList>
 #include <QString>
 #include <assert.h>
+#include <Utilities/Utils.hpp>
 
 KFoldDatabaseReader::KFoldDatabaseReader(DatabaseReader &reader, float trainRatio)
 {
@@ -28,6 +29,10 @@ KFoldDatabaseReader::KFoldDatabaseReader(DatabaseReader &reader, float trainRati
         i++;
     }
 
+}
+
+KFoldDatabaseReader::KFoldDatabaseReader(QString filePath){
+    load(filePath);
 }
 
 QList<int> KFoldDatabaseReader::randomPermutation(int n){
@@ -88,4 +93,35 @@ unsigned int KFoldDatabaseReader::PathDatabaseReader::getTotal() const{
     return images.size();
 }
 
+void KFoldDatabaseReader::save(QString filePath) const{
+    FILE* out = fopen( filePath.toStdString().c_str() ,"w");
 
+    fprintf(out,"@trainImages\n");
+    for(const QString &i: trainImages){
+        fprintf(out,"%s\n", i.toStdString().c_str());
+    }
+    fprintf(out,"@testImages\n");
+    for(const QString &i: testImages){
+        fprintf(out,"%s\n", i.toStdString().c_str());
+    }
+
+    fclose(out);
+}
+
+void KFoldDatabaseReader::load(QString filePath){
+    testImages.clear();
+    trainImages.clear();
+    FILE* in = fopen( filePath.toStdString().c_str() ,"r");
+    char buffer[400];
+    Utils::readLine(buffer, 400, in);
+    assert(strcmp(buffer,"@trainImages")==0);
+    while(Utils::readLine(buffer, 400, in) != NULL && strcmp( buffer, "@testImages") != 0){
+        trainImages.append(QString(buffer));
+    }
+    assert(strcmp(buffer,"@testImages")==0);
+    while(Utils::readLine(buffer, 400, in) != NULL){
+        testImages.append(QString(buffer));
+    }
+
+    fclose(in);
+}

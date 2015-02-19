@@ -12,6 +12,7 @@ private:
     static QList<int> randomPermutation(int n);
 public:
     KFoldDatabaseReader(DatabaseReader &reader, float trainRatio);
+    KFoldDatabaseReader(QString filePath);
 
     class PathDatabaseReader:public DatabaseReader{
     private:
@@ -33,7 +34,8 @@ public:
 
     PathDatabaseReader getTrainReader() const;
     PathDatabaseReader getTestReader() const;
-
+    void save(QString filePath) const;
+    void load(QString filePath);
 
 
 };

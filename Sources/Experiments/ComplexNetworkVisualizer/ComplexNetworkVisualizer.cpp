@@ -1,7 +1,7 @@
 #include "ComplexNetworkVisualizer.hpp"
 
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Utilities/FeaturesComplexNetwork.hpp>
 
 #include <QWidget>

@@ -7,15 +7,14 @@ FILE(GLOB_RECURSE Source_Files
     DatabaseReader.cpp
     SunDatabaseReader.cpp
     SupervisedImage.cpp
-    ComplexNetworkConstructor/ComplexNetworkConstructor.cpp
-    ComplexNetworkConstructor/CoOcurrenceEquation.cpp
-    ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp
-    ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp
+    ComplexNetworkConstructor/*.cpp
+    DatabaseReader/*.cpp
     FeaturesComplexNetwork.cpp
     Link.cpp
     GraphUtilities.cpp
     IterativeRandomWalk.cpp
     KFoldDatabaseReader.cpp
+    Utils.cpp
 )
 ADD_LIBRARY(Utilities ${Source_Files})
 TARGET_LINK_LIBRARIES(Utilities FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ${LEMON_LIBRARIES} ComplexNetwork)

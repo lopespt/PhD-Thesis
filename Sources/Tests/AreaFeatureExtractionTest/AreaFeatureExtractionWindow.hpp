@@ -6,7 +6,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 
 class AreaFeatureExtractionWindow : public QWidget
 {

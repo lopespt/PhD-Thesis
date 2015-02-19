@@ -4,7 +4,7 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <GuiUtilities/SupervisedImageViewerWidget.hpp>
-#include <Utilities/DatabaseReader.hpp>
+#include <Utilities/DatabaseReader/DatabaseReader.hpp>
 #include <assert.h>
 #include <QObject>
 

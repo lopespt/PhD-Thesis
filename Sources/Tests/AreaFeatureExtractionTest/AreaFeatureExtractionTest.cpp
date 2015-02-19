@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <QVector>
 #include <GuiUtilities/SupervisedImageViewerWidget.hpp>

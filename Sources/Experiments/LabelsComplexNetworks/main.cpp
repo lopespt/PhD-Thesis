@@ -8,7 +8,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <gMainWindow.hpp>
 #include <QVTKApplication.h>
 #include <Utilities/Link.hpp>
-#include <Utilities/SunDatabaseReader.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <QCoreApplication>
 #include <QCommandLineParser>
 #include <QCommandLinkButton>

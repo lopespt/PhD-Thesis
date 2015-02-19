@@ -2,12 +2,16 @@
 #define LABELGUESSEREXPERIMENT_HPP
 
 #include <QList>
+#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/DatabaseReader/RegionChooser.hpp>
 
 class QString;
 class SupervisedImage;
-class FeaturesComplexNetwork;
 class FeatureAbstractPtr;
 class IterativeRandomWalk;
+class FeatureFactoryAbstract;
+class DatabaseReader;
+class RegionChooser;
 
 
 using namespace std;
@@ -22,22 +26,23 @@ public:
     }method;
 
 private:
-    QList<FeatureAbstractPtr > getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
-    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, FeaturesComplexNetwork &cn,  QList<FeatureAbstractPtr > hints);
+    QList<FeatureAbstractPtr> getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
+    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, QList<FeatureAbstractPtr > hints);
     int getPosition(QList<QString>, QString);
     void printLabels(FeaturesComplexNetwork *cn);
 
-    float trainPerc;
+    FeaturesComplexNetwork cn;
+    RegionChooser chooser;
     int walkLenght;
     method m;
 
 public:
 
-    LabelGuesserExperiment(float trainPerc,int walkLenght, method m);
+    LabelGuesserExperiment(FeaturesComplexNetwork cn, RegionChooser chooser, int walkLenght, method m);
 
 
 
-    void execute(QString, QString);
+    void execute(QString);
 
 
 

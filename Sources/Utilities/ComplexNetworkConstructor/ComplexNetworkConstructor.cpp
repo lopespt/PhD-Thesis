@@ -1,7 +1,7 @@
 
 #include "ComplexNetworkConstructor.hpp"
 #include <FeatureExtractors/Feature.hpp>
-#include <Utilities/DatabaseReader.hpp>
+#include <Utilities/DatabaseReader/DatabaseReader.hpp>
 #include <FeatureExtractors/FeatureAbstract.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <QLinkedList>
@@ -48,6 +48,7 @@ void ComplexNetworkConstructor::build(){
         num++;
     }
     fflush(stdout);
+    cn.refreshCache();
 }
 
 /** Atualiza os pesos as arestas de acordo com a Equação:

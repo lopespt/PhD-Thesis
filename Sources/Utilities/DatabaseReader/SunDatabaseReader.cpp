@@ -1,5 +1,6 @@
 
 #include "SunDatabaseReader.hpp"
+#include "../SupervisedImage.hpp"
 
 SunDatabaseReader::SunDatabaseReader(QString sourceDir):sourceDir(sourceDir){
     assert(this->sourceDir.exists());
