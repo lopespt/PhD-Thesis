@@ -8,6 +8,7 @@
 #include "Region.hpp"
 #include <QPolygon>
 #include <istream>
+#include <math.h>
 
 
 OrientationFeatureFactory::OrientationFeatureFactory(int discretization):FeatureFactoryAbstract(2), discretization(discretization)

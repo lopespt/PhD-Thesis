@@ -15,6 +15,7 @@
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 #include <Utilities/DatabaseReader/DatabaseReader.hpp>
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
+#include <time.h>
 
 LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser , int walkLenght, method m):
     cn(cn),
