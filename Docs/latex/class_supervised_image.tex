@@ -19,6 +19,10 @@ const Q\+Image $\ast$ \hyperlink{class_supervised_image_a0a87d87ce7a8f21f5269f29
 Q\+String \hyperlink{class_supervised_image_af3c35e83075edcb7ca58bd708b198a4b}{get\+Image\+Path} () const 
 \item 
 Q\+String \hyperlink{class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf}{get\+Supervised\+Path} () const 
+\item 
+cv\+::\+Mat \hyperlink{class_supervised_image_a5e9e136e057baf0cfde7b68da86e8030}{get\+Cv\+B\+G\+R\+Image} () const 
+\item 
+cv\+::\+Mat \hyperlink{class_supervised_image_a4e366821ce1f63006768966a4199bb76}{get\+Cv\+Hsv\+Image} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -44,14 +48,19 @@ Q\+String \hyperlink{class_supervised_image_aeeb634f3804dffba600e6aea71fc353e}{s
 Q\+Image \hyperlink{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}{image}
 \item 
 Q\+List$<$ \hyperlink{class_region}{Region} $>$ \hyperlink{class_supervised_image_a2113ab863b2253b37dab1d7b575e8b10}{regions}
+\item 
+cv\+::\+Mat \hyperlink{class_supervised_image_a757a552539e544c09eea62df46e91e09}{hsv\+Image}
+\item 
+cv\+::\+Mat \hyperlink{class_supervised_image_a40aec823ee64d4bce926e39381f48e28}{bgr\+Image}
 \end{DoxyCompactItemize}
 
 
-Collaboration diagram for Supervised\+Image\+:\nopagebreak
+Collaboration diagram for Supervised\+Image\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=192pt]{class_supervised_image__coll__graph}
+\includegraphics[width=196pt]{class_supervised_image__coll__graph}
 \end{center}
 \end{figure}
 
@@ -113,6 +122,56 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+\hypertarget{class_supervised_image_a5e9e136e057baf0cfde7b68da86e8030}{\index{Supervised\+Image@{Supervised\+Image}!get\+Cv\+B\+G\+R\+Image@{get\+Cv\+B\+G\+R\+Image}}
+\index{get\+Cv\+B\+G\+R\+Image@{get\+Cv\+B\+G\+R\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{get\+Cv\+B\+G\+R\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Supervised\+Image\+::get\+Cv\+B\+G\+R\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_supervised_image_a5e9e136e057baf0cfde7b68da86e8030}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_a5e9e136e057baf0cfde7b68da86e8030_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_supervised_image_a4e366821ce1f63006768966a4199bb76}{\index{Supervised\+Image@{Supervised\+Image}!get\+Cv\+Hsv\+Image@{get\+Cv\+Hsv\+Image}}
+\index{get\+Cv\+Hsv\+Image@{get\+Cv\+Hsv\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{get\+Cv\+Hsv\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Supervised\+Image\+::get\+Cv\+Hsv\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_supervised_image_a4e366821ce1f63006768966a4199bb76}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_a4e366821ce1f63006768966a4199bb76_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_supervised_image_a4e366821ce1f63006768966a4199bb76_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290}{\index{Supervised\+Image@{Supervised\+Image}!get\+Image@{get\+Image}}
 \index{get\+Image@{get\+Image}!Supervised\+Image@{Supervised\+Image}}
 \subsubsection[{get\+Image}]{\setlength{\rightskip}{0pt plus 5cm}const Q\+Image $\ast$ Supervised\+Image\+::get\+Image (
@@ -122,18 +181,8 @@ Here is the caller graph for this function\+:
 )}}\label{class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_supervised_image_a0a87d87ce7a8f21f5269f29e0d637290_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -170,7 +219,8 @@ Here is the caller graph for this function\+:
 )}}\label{class_supervised_image_a19120479bf06cc96df0eb2aea5f0e205}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -200,7 +250,8 @@ Here is the caller graph for this function\+:
 ) const}}\label{class_supervised_image_a7accd41406835fc82dbeaf783ab2acaf}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -218,7 +269,8 @@ Here is the caller graph for this function\+:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_ae351771d19a2bbd53c88e871ed5bb4de}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -245,6 +297,12 @@ Here is the caller graph for this function\+:
 \hypertarget{class_supervised_image_a9a749e02a7d0f6ba28725465e5f7a29f}{\index{Supervised\+Image@{Supervised\+Image}!already\+Parsed@{already\+Parsed}}
 \index{already\+Parsed@{already\+Parsed}!Supervised\+Image@{Supervised\+Image}}
 \subsubsection[{already\+Parsed}]{\setlength{\rightskip}{0pt plus 5cm}bool Supervised\+Image\+::already\+Parsed\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a9a749e02a7d0f6ba28725465e5f7a29f}
+\hypertarget{class_supervised_image_a40aec823ee64d4bce926e39381f48e28}{\index{Supervised\+Image@{Supervised\+Image}!bgr\+Image@{bgr\+Image}}
+\index{bgr\+Image@{bgr\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{bgr\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Supervised\+Image\+::bgr\+Image\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{class_supervised_image_a40aec823ee64d4bce926e39381f48e28}
+\hypertarget{class_supervised_image_a757a552539e544c09eea62df46e91e09}{\index{Supervised\+Image@{Supervised\+Image}!hsv\+Image@{hsv\+Image}}
+\index{hsv\+Image@{hsv\+Image}!Supervised\+Image@{Supervised\+Image}}
+\subsubsection[{hsv\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Supervised\+Image\+::hsv\+Image\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{class_supervised_image_a757a552539e544c09eea62df46e91e09}
 \hypertarget{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}{\index{Supervised\+Image@{Supervised\+Image}!image@{image}}
 \index{image@{image}!Supervised\+Image@{Supervised\+Image}}
 \subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image Supervised\+Image\+::image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_supervised_image_a0641d3087990ef954a6d5e88e927bbc5}

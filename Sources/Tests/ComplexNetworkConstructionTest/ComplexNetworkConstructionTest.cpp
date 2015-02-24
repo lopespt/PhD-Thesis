@@ -19,7 +19,7 @@ int main(int argc, char **argv){
 
     LabelFeatureFactory feat;
     AreaFeatureFactory area(10);
-    QList<FeatureFactoryAbstract*> extractors;
+    QList<const FeatureFactoryAbstract*> extractors;
     extractors.append(&feat);
     extractors.append(&area);
 

@@ -1,9 +1,9 @@
 <map id="FeaturesComplexNetwork::load" name="FeaturesComplexNetwork::load">
-<area shape="rect" id="node2" href="$class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="245,5,427,47"/>
-<area shape="rect" id="node4" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="229,71,443,98"/>
-<area shape="rect" id="node6" href="$_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="311,122,361,149"/>
-<area shape="rect" id="node7" href="$class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="245,173,427,199"/>
-<area shape="rect" id="node3" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,13,541,39"/>
-<area shape="rect" id="node5" href="$_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,71,541,98"/>
-<area shape="rect" id="node8" href="$_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="491,173,541,199"/>
+<area shape="rect" id="node2" href="$_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="311,5,361,32"/>
+<area shape="rect" id="node3" href="$class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="245,57,427,98"/>
+<area shape="rect" id="node5" href="$class_labels_validation_experiment.html#a139b4fc02f5bced4f013c0a025d66011" title="LabelsValidationExperiment::run" alt="" coords="229,123,443,149"/>
+<area shape="rect" id="node7" href="$class_random_walk_test.html#aca24936de19981bb1d5aa66fbf5f2592" title="RandomWalkTest::execute" alt="" coords="245,173,427,200"/>
+<area shape="rect" id="node4" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,64,541,91"/>
+<area shape="rect" id="node6" href="$_experiments_2_labels_validation_experiment_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="491,123,541,149"/>
+<area shape="rect" id="node8" href="$_tests_2_random_walk_test_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="491,173,541,200"/>
 </map>

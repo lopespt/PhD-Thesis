@@ -34,7 +34,7 @@ void SupervisedImage::parse_xml(){
         QString label    = extractLabel(regionXml);
         label.prepend('\"').append('\"');
         if(polygon.size() != 0 ){
-            this->regions << (Region(&this->image, polygon, label));
+            this->regions << (Region(this, &this->image, polygon, label));
         }
     }
     alreadyParsed=true;
@@ -84,6 +84,23 @@ QString SupervisedImage::getImagePath() const{
 
 QString SupervisedImage::getSupervisedPath() const{
     return this->supervisedPath;
+}
+
+cv::Mat SupervisedImage::getCvBGRImage() const{
+    if(bgrImage.empty()){
+        const QImage& newImg = this->image;
+        cv::Mat ret(newImg.height(), newImg.width(), CV_8UC4, (uchar*)newImg.bits(), newImg.bytesPerLine());
+        this->bgrImage = ret.clone();
+    }
+    return this->bgrImage;
+}
+
+cv::Mat SupervisedImage::getCvHsvImage() const{
+    if(hsvImage.empty()){
+        hsvImage = getCvBGRImage().clone();
+        cv::cvtColor(hsvImage, hsvImage, CV_BGR2HSV);
+    }
+    return this->hsvImage;
 }
 
 SupervisedImage::~SupervisedImage(){

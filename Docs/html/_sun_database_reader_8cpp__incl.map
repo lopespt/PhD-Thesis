@@ -1,6 +1,6 @@
-<map id="Sources/Utilities/SunDatabaseReader.cpp" name="Sources/Utilities/SunDatabaseReader.cpp">
-<area shape="rect" id="node2" href="$_sun_database_reader_8hpp.html" title="SunDatabaseReader.hpp" alt="" coords="398,95,570,121"/>
-<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="196,169,345,196"/>
-<area shape="rect" id="node4" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="157,244,309,271"/>
-<area shape="rect" id="node6" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="133,319,333,345"/>
+<map id="Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" name="Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp">
+<area shape="rect" id="node2" href="$_sun_database_reader_8hpp.html" title="SunDatabaseReader.hpp" alt="" coords="521,95,693,121"/>
+<area shape="rect" id="node10" href="$_supervised_image_8hpp.html" title="../SupervisedImage.hpp" alt="" coords="221,95,384,121"/>
+<area shape="rect" id="node3" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="835,169,984,196"/>
+<area shape="rect" id="node11" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="65,169,265,196"/>
 </map>

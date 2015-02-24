@@ -1,14 +1,14 @@
 <map id="Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" name="Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
-<area shape="rect" id="node2" href="$_complex_network_constructor_8hpp.html" title="ComplexNetworkConstructor.hpp" alt="" coords="822,109,1041,136"/>
-<area shape="rect" id="node7" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="29,273,207,315"/>
-<area shape="rect" id="node18" href="$_reinforcement_co_ocurrence_equation_8hpp.html" title="ReinforcementCoOcurrence\lEquation.hpp" alt="" coords="1116,184,1304,225"/>
-<area shape="rect" id="node20" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="271,191,475,218"/>
-<area shape="rect" id="node21" href="$_database_reader_8hpp.html" title="Utilities/DatabaseReader.hpp" alt="" coords="1167,109,1363,136"/>
-<area shape="rect" id="node22" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="1329,191,1481,218"/>
-<area shape="rect" id="node3" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="537,184,710,225"/>
-<area shape="rect" id="node4" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="684,281,939,307"/>
-<area shape="rect" id="node11" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="283,273,460,315"/>
-<area shape="rect" id="node13" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="587,281,659,307"/>
-<area shape="rect" id="node19" href="$_co_ocurrence_equation_8hpp.html" title="CoOcurrenceEquation.hpp" alt="" coords="1129,281,1309,307"/>
-<area shape="rect" id="node23" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="1385,281,1585,307"/>
+<area shape="rect" id="node2" href="$_complex_network_constructor_8hpp.html" title="ComplexNetworkConstructor.hpp" alt="" coords="779,117,997,143"/>
+<area shape="rect" id="node7" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="31,288,209,329"/>
+<area shape="rect" id="node18" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="273,206,477,233"/>
+<area shape="rect" id="node19" href="$_database_reader_8hpp.html" title="Utilities/DatabaseReader\l/DatabaseReader.hpp" alt="" coords="1295,109,1465,151"/>
+<area shape="rect" id="node20" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="1073,117,1271,143"/>
+<area shape="rect" id="node27" href="$_add_one_co_ocurrence_equation_8hpp.html" title="AddOneCoOcurrenceEquation.hpp" alt="" coords="1605,117,1835,143"/>
+<area shape="rect" id="node3" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="539,199,712,240"/>
+<area shape="rect" id="node4" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="686,295,941,322"/>
+<area shape="rect" id="node11" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="285,288,462,329"/>
+<area shape="rect" id="node13" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="589,295,661,322"/>
+<area shape="rect" id="node21" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="1173,206,1373,233"/>
+<area shape="rect" id="node28" href="$_co_ocurrence_equation_8hpp.html" title="CoOcurrenceEquation.hpp" alt="" coords="1630,206,1810,233"/>
 </map>

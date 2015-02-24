@@ -1,9 +1,9 @@
 var searchData=
 [
+  ['actualregion',['actualRegion',['../class_region_chooser.html#a65f405a6e8c0843f8abea0aa4298dce3',1,'RegionChooser']]],
   ['addarc',['addArc',['../class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c',1,'ComplexNetwork::addArc(ListDigraph::Node f, ListDigraph::Node t)'],['../class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff',1,'ComplexNetwork::addArc(ListDigraph::Node f, ListDigraph::Node t, const E &amp;val)']]],
   ['addautoloop',['addAutoLoop',['../class_graph_utilities.html#ac336fc79436ed71a0c604bb2a35f8b23',1,'GraphUtilities']]],
-  ['addedge',['addEdge',['../class_complex_network_v2.html#ac846f08c3e92c642aa887801adee6aec',1,'ComplexNetworkV2']]],
-  ['addnode',['addNode',['../class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461',1,'ComplexNetwork::addNode()'],['../class_complex_network.html#add76e54a672f7489ec0fc03e720b2040',1,'ComplexNetwork::addNode(const N &amp;val)'],['../class_complex_network_v2.html#ac63bea705ca74ac77cee3344e3f9609e',1,'ComplexNetworkV2::addNode()']]],
+  ['addnode',['addNode',['../class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461',1,'ComplexNetwork::addNode()'],['../class_complex_network.html#add76e54a672f7489ec0fc03e720b2040',1,'ComplexNetwork::addNode(const N &amp;val)']]],
   ['addonecoocurrenceequation',['AddOneCoOcurrenceEquation',['../class_add_one_co_ocurrence_equation.html',1,'AddOneCoOcurrenceEquation'],['../class_add_one_co_ocurrence_equation.html#a13fb88aa8f85bbed226e660cfdb4108c',1,'AddOneCoOcurrenceEquation::AddOneCoOcurrenceEquation()']]],
   ['addonecoocurrenceequation_2ecpp',['AddOneCoOcurrenceEquation.cpp',['../_add_one_co_ocurrence_equation_8cpp.html',1,'']]],
   ['addonecoocurrenceequation_2ehpp',['AddOneCoOcurrenceEquation.hpp',['../_add_one_co_ocurrence_equation_8hpp.html',1,'']]],
@@ -20,5 +20,5 @@ var searchData=
   ['areafeaturefactory',['AreaFeatureFactory',['../class_area_feature_factory.html',1,'AreaFeatureFactory'],['../class_area_feature.html#acf274ff5848a30a105c61f0e1c56cf7e',1,'AreaFeature::AreaFeatureFactory()'],['../class_area_feature_factory.html#a1299cd28490bc46f5ee66e16b712e37d',1,'AreaFeatureFactory::AreaFeatureFactory()']]],
   ['areafeaturefactory_2ecpp',['AreaFeatureFactory.cpp',['../_area_feature_factory_8cpp.html',1,'']]],
   ['areafeaturefactory_2ehpp',['AreaFeatureFactory.hpp',['../_area_feature_factory_8hpp.html',1,'']]],
-  ['asstring',['asString',['../class_area_feature.html#a6c0a6e3346ba2ddaa4a50cb957f08ab2',1,'AreaFeature::asString()'],['../class_feature.html#abdd71dfec0efebf4ff17aeb2bee257c3',1,'Feature::asString()'],['../class_feature_abstract.html#af9ffe853716e6a28135ae1c33fafeafd',1,'FeatureAbstract::asString()'],['../class_label_feature.html#acad3108c7016d5d82ffea0b07ac9911e',1,'LabelFeature::asString()'],['../class_orientation_feature.html#a181ee73c51e33108e21a52c6b95e81e7',1,'OrientationFeature::asString()']]]
+  ['asstring',['asString',['../class_area_feature.html#a6c0a6e3346ba2ddaa4a50cb957f08ab2',1,'AreaFeature::asString()'],['../class_feature.html#abdd71dfec0efebf4ff17aeb2bee257c3',1,'Feature::asString()'],['../class_feature_abstract.html#af9ffe853716e6a28135ae1c33fafeafd',1,'FeatureAbstract::asString()'],['../class_hsv_feature.html#a1f19df5b9276b025f090ae388586c258',1,'HsvFeature::asString()'],['../class_label_feature.html#acad3108c7016d5d82ffea0b07ac9911e',1,'LabelFeature::asString()'],['../class_orientation_feature.html#a181ee73c51e33108e21a52c6b95e81e7',1,'OrientationFeature::asString()']]]
 ];

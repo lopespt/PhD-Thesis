@@ -1,9 +1,9 @@
 #include "LabelGuesserExperimentThread.hpp"
 #include <QString>
 
-LabelGuesserExperimentThread::LabelGuesserExperimentThread( FeaturesComplexNetwork cn, RegionChooser chooser , int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile):
+LabelGuesserExperimentThread::LabelGuesserExperimentThread( FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories, RegionChooser chooser , int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile):
     QThread(NULL),
-    exp(cn, chooser, randomWalkSize, method),
+    exp(cn,factories, chooser, randomWalkSize, method),
     inputFolder(inputFolder),
     outputFile(outputFile)
 {

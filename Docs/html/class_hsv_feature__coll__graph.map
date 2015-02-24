@@ -1,0 +1,5 @@
+<map id="HsvFeature" name="HsvFeature">
+<area shape="rect" id="node2" href="$class_feature.html" title="{Feature\&lt; vector\&lt; float \&gt; \&gt;\n|# content\l|+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="26,491,202,627"/>
+<area shape="rect" id="node3" href="$class_feature_abstract.html" title="{FeatureAbstract\n|# type\l# featureName\l# data\l# data_size\l|+ FeatureAbstract()\l+ operator\&lt;()\l+ asString()\l+ getType()\l+ getFeatureName()\l+ WriteToStream()\l+ operator==()\l+ ~FeatureAbstract()\l}" alt="" coords="5,5,151,229"/>
+<area shape="rect" id="node4" href="$class_feature.html" title="{Feature\&lt; T \&gt;\n||+ getContent()\l+ Feature()\l+ asString()\l+ WriteToStream()\l+ ~Feature()\l}" alt="" coords="116,292,248,428"/>
+</map>

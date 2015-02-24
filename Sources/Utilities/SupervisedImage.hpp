@@ -6,10 +6,11 @@
 #include <FeatureExtractors/Region.hpp>
 #include <QString>
 #include <QImage>
-
+#include <opencv/cv.h>
 
 using namespace std;
 
+class Region;
 class SupervisedImage{
     
     private:
@@ -18,6 +19,8 @@ class SupervisedImage{
         QString supervisedPath;
         QImage image;
         QList<Region> regions;
+        mutable cv::Mat hsvImage;
+        mutable cv::Mat bgrImage;
         static QPolygon extractPolygon(QString Xml);
         static QString extractLabel(QString Xml);
         void parse_xml();
@@ -30,6 +33,8 @@ class SupervisedImage{
         const QImage* getImage() ;
         QString getImagePath() const;
         QString getSupervisedPath() const;
+        cv::Mat getCvBGRImage() const;
+        cv::Mat getCvHsvImage() const;
 
 };
 

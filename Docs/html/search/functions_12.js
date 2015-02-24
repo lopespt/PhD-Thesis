@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save',['save',['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork']]],
+  ['save',['save',['../class_k_fold_database_reader.html#a3f0544d79d13bd58015a2d15df5efaa6',1,'KFoldDatabaseReader::save()'],['../class_region_chooser.html#a8c4f46952101f71bb6b549f79e6eb3c1',1,'RegionChooser::save()'],['../class_features_complex_network.html#a59981f76044a2b98eda4e69a20844ba0',1,'FeaturesComplexNetwork::save()']]],
   ['segmenter',['Segmenter',['../class_segmenter.html#ad39ec3bda31be180820aa0bdca7b125d',1,'Segmenter']]],
   ['setcomplexnetwork',['setComplexNetwork',['../class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8',1,'ComplexNetworkViewerWidget']]],
   ['setsupervisedimage',['setSupervisedImage',['../class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707',1,'SupervisedImageViewerWidget']]],

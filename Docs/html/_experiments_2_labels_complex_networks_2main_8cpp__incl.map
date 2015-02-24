@@ -1,8 +1,8 @@
 <map id="Sources/Experiments/LabelsComplexNetworks/main.cpp" name="Sources/Experiments/LabelsComplexNetworks/main.cpp">
-<area shape="rect" id="node3" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="2317,288,2571,315"/>
+<area shape="rect" id="node3" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="2314,288,2569,315"/>
 <area shape="rect" id="node7" href="$g_main_window_8hpp.html" title="gMainWindow.hpp" alt="" coords="2557,117,2689,143"/>
 <area shape="rect" id="node25" href="$_link_8hpp.html" title="Utilities/Link.hpp" alt="" coords="5342,288,5461,315"/>
-<area shape="rect" id="node40" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="5788,206,6007,233"/>
+<area shape="rect" id="node40" href="$_sun_database_reader_8hpp.html" title="Utilities/DatabaseReader\l/SunDatabaseReader.hpp" alt="" coords="5788,199,5964,240"/>
 <area shape="rect" id="node46" href="$_complex_network_constructor_8hpp.html" title="Utilities/ComplexNetwork\lConstructor/ComplexNetworkConstructor.hpp" alt="" coords="4744,109,5035,151"/>
 <area shape="rect" id="node47" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="5439,199,5612,240"/>
 <area shape="rect" id="node48" href="$_label_feature_8hpp.html" title="FeatureExtractors/LabelFeature.hpp" alt="" coords="5959,117,6195,143"/>

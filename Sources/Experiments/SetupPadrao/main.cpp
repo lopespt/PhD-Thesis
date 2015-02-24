@@ -8,34 +8,28 @@
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <QList>
-
+#include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <QHash>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
+#include <Utilities/SupervisedImage.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
+
 int main(int argc, char* argv[]){
-    typedef FeaturesComplexNetwork CN;
-    CN c;
-    QList<FeatureFactoryAbstract*> factories;
-    AreaFeatureFactory area(10);
-    LabelFeatureFactory label;
-    OrientationFeatureFactory orientation(10);
 
-    factories.append(&label);
+    SunDatabaseReader reader("/Users/wachs/SUN/");
+    FeaturesComplexNetwork cn;
 
-    c.load("complex_network.cn", factories);
-    printf("carreguei\n");
-    fflush(stdout);
+    HsvFeatureFactory hsv(4,3,1,20);
+    QList<const FeatureFactoryAbstract*> facts;
+    facts.append(&hsv);
 
-    CN::ArcMap<double> weights(c);
+    ComplexNetworkConstructor constr(cn, reader, facts);
 
-    GraphUtilities::getWeights(c, weights);
-    IterativeRandomWalk walk(c, weights);
+    constr.build();
 
-    walk.Execute(c.nodeFromId(1000), 3);
-    double p = 0;
-    for(FeaturesComplexNetwork::NodeIt it(c); it != INVALID; ++it ){
-        p  += walk.getProbability(it);
-        printf("%f\n", walk.getProbability(it));
-    }
-    printf("%f\n", p);
+    cn.save("hsv.cn");
 
     return 0;
 }

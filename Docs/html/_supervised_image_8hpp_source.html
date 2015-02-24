@@ -97,48 +97,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_region_8hpp.html">FeatureExtractors/Region.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;opencv/cv.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_supervised_image.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_supervised_image.html">SupervisedImage</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">   16</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">alreadyParsed</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">   17</a></span>&#160;        QString <a class="code" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">imagePath</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">   18</a></span>&#160;        QString <a class="code" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">supervisedPath</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">   19</a></span>&#160;        QImage <a class="code" href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">image</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">   20</a></span>&#160;        QList&lt;Region&gt; <a class="code" href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">regions</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">static</span> QPolygon extractPolygon(QString Xml);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> QString extractLabel(QString Xml);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> parse_xml();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_supervised_image.html">SupervisedImage</a>(QString imagePath, QString supervisedPath);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ~<a class="code" href="class_supervised_image.html">SupervisedImage</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">const</span> QList&lt;Region&gt;&amp; getRegions();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">const</span> QImage* getImage() ;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        QString getImagePath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        QString getSupervisedPath() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_region.html">Region</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_supervised_image.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_supervised_image.html">SupervisedImage</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">   17</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">alreadyParsed</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">   18</a></span>&#160;        QString <a class="code" href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">imagePath</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">   19</a></span>&#160;        QString <a class="code" href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">supervisedPath</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">   20</a></span>&#160;        QImage <a class="code" href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">image</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">   21</a></span>&#160;        QList&lt;Region&gt; <a class="code" href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">regions</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a757a552539e544c09eea62df46e91e09">   22</a></span>&#160;        <span class="keyword">mutable</span> cv::Mat <a class="code" href="class_supervised_image.html#a757a552539e544c09eea62df46e91e09">hsvImage</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_supervised_image.html#a40aec823ee64d4bce926e39381f48e28">   23</a></span>&#160;        <span class="keyword">mutable</span> cv::Mat <a class="code" href="class_supervised_image.html#a40aec823ee64d4bce926e39381f48e28">bgrImage</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">static</span> QPolygon extractPolygon(QString Xml);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">static</span> QString extractLabel(QString Xml);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> parse_xml();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_supervised_image.html">SupervisedImage</a>(QString imagePath, QString supervisedPath);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        ~<a class="code" href="class_supervised_image.html">SupervisedImage</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">const</span> QList&lt;Region&gt;&amp; getRegions();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">const</span> QImage* getImage() ;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        QString getImagePath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        QString getSupervisedPath() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        cv::Mat getCvBGRImage() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        cv::Mat getCvHsvImage() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="ttc" id="class_supervised_image_html_a0641d3087990ef954a6d5e88e927bbc5"><div class="ttname"><a href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">SupervisedImage::image</a></div><div class="ttdeci">QImage image</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:19</div></div>
-<div class="ttc" id="class_supervised_image_html_a2113ab863b2253b37dab1d7b575e8b10"><div class="ttname"><a href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">SupervisedImage::regions</a></div><div class="ttdeci">QList&lt; Region &gt; regions</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:20</div></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="ttc" id="class_supervised_image_html_a0641d3087990ef954a6d5e88e927bbc5"><div class="ttname"><a href="class_supervised_image.html#a0641d3087990ef954a6d5e88e927bbc5">SupervisedImage::image</a></div><div class="ttdeci">QImage image</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:20</div></div>
+<div class="ttc" id="class_supervised_image_html_a2113ab863b2253b37dab1d7b575e8b10"><div class="ttname"><a href="class_supervised_image.html#a2113ab863b2253b37dab1d7b575e8b10">SupervisedImage::regions</a></div><div class="ttdeci">QList&lt; Region &gt; regions</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:21</div></div>
 <div class="ttc" id="_region_8hpp_html"><div class="ttname"><a href="_region_8hpp.html">Region.hpp</a></div></div>
-<div class="ttc" id="class_supervised_image_html_aeeb634f3804dffba600e6aea71fc353e"><div class="ttname"><a href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">SupervisedImage::supervisedPath</a></div><div class="ttdeci">QString supervisedPath</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:18</div></div>
-<div class="ttc" id="class_supervised_image_html_a39f8b0212d2dae489d7b060b0d8dd1b9"><div class="ttname"><a href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">SupervisedImage::imagePath</a></div><div class="ttdeci">QString imagePath</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:17</div></div>
-<div class="ttc" id="class_supervised_image_html"><div class="ttname"><a href="class_supervised_image.html">SupervisedImage</a></div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:13</div></div>
-<div class="ttc" id="class_supervised_image_html_a9a749e02a7d0f6ba28725465e5f7a29f"><div class="ttname"><a href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">SupervisedImage::alreadyParsed</a></div><div class="ttdeci">bool alreadyParsed</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:16</div></div>
+<div class="ttc" id="class_supervised_image_html_aeeb634f3804dffba600e6aea71fc353e"><div class="ttname"><a href="class_supervised_image.html#aeeb634f3804dffba600e6aea71fc353e">SupervisedImage::supervisedPath</a></div><div class="ttdeci">QString supervisedPath</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:19</div></div>
+<div class="ttc" id="class_supervised_image_html_a40aec823ee64d4bce926e39381f48e28"><div class="ttname"><a href="class_supervised_image.html#a40aec823ee64d4bce926e39381f48e28">SupervisedImage::bgrImage</a></div><div class="ttdeci">cv::Mat bgrImage</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:23</div></div>
+<div class="ttc" id="class_supervised_image_html_a757a552539e544c09eea62df46e91e09"><div class="ttname"><a href="class_supervised_image.html#a757a552539e544c09eea62df46e91e09">SupervisedImage::hsvImage</a></div><div class="ttdeci">cv::Mat hsvImage</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:22</div></div>
+<div class="ttc" id="class_supervised_image_html_a39f8b0212d2dae489d7b060b0d8dd1b9"><div class="ttname"><a href="class_supervised_image.html#a39f8b0212d2dae489d7b060b0d8dd1b9">SupervisedImage::imagePath</a></div><div class="ttdeci">QString imagePath</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:18</div></div>
+<div class="ttc" id="class_supervised_image_html"><div class="ttname"><a href="class_supervised_image.html">SupervisedImage</a></div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:14</div></div>
+<div class="ttc" id="class_supervised_image_html_a9a749e02a7d0f6ba28725465e5f7a29f"><div class="ttname"><a href="class_supervised_image.html#a9a749e02a7d0f6ba28725465e5f7a29f">SupervisedImage::alreadyParsed</a></div><div class="ttdeci">bool alreadyParsed</div><div class="ttdef"><b>Definition:</b> SupervisedImage.hpp:17</div></div>
+<div class="ttc" id="class_region_html"><div class="ttname"><a href="class_region.html">Region</a></div><div class="ttdef"><b>Definition:</b> Region.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 22 2015 21:38:31 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

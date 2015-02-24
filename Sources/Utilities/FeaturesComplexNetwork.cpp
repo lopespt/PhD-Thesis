@@ -21,7 +21,7 @@ void FeaturesComplexNetwork::save(const char* filename){
             .run();
 }
 
-void FeaturesComplexNetwork::load(const char *filename, QList< FeatureFactoryAbstract* >& l){
+void FeaturesComplexNetwork::load(const char *filename, const QList<const FeatureFactoryAbstract* >& l){
     clear();
     NodeReader r(l);
     digraphReader(*this, filename)
@@ -36,7 +36,7 @@ void FeaturesComplexNetwork::load(const char *filename, QList< FeatureFactoryAbs
 void FeaturesComplexNetwork::refreshCache(){
     featureIndex.clear();
     for(ListDigraph::NodeIt it(*this); it != INVALID; ++it){
-        featureIndex.insert(FeatureAbstractKey(nodes[it]), it);
+        featureIndex.insert(nodes[it], it);
     }
 }
 
@@ -61,9 +61,9 @@ bool FeaturesComplexNetwork::removeNode(node_id id){
 }*/
 
 
-FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstract *f) const{
-    if(featureIndex.contains(FeatureAbstractKey(f))){
-        return featureIndex[FeatureAbstractKey(f)];
+FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstractPtr& f) const{
+    if(featureIndex.contains(f)){
+        return featureIndex[f];
     }
     return Node(INVALID);
 }
@@ -73,7 +73,7 @@ FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string& 
     stream << str;
     int type;
     sscanf(str.c_str(), "%d", &type);
-    for(FeatureFactoryAbstract* f : factories){
+    for(const FeatureFactoryAbstract* f : factories){
         if(f->getType() == type){
             FeatureAbstractPtr feat= f->CreateFromStream(stream);
             return feat;

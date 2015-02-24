@@ -26,19 +26,20 @@ public:
     }method;
 
 private:
-    QList<FeatureAbstractPtr> getLabelsHints(SupervisedImage &img, unsigned int hide_idx );
-    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, QList<FeatureAbstractPtr > hints);
+    QList<FeatureAbstractPtr> getFeaturesHints(SupervisedImage &img, unsigned int hide_idx );
+    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, const QList<FeatureAbstractPtr >& hints);
     int getPosition(QList<QString>, QString);
     void printLabels(FeaturesComplexNetwork *cn);
 
     FeaturesComplexNetwork cn;
+    QList<const FeatureFactoryAbstract*> factories;
     RegionChooser chooser;
     int walkLenght;
     method m;
 
 public:
 
-    LabelGuesserExperiment(FeaturesComplexNetwork cn, RegionChooser chooser, int walkLenght, method m);
+    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser, int walkLenght, method m);
 
 
 

@@ -9,7 +9,7 @@
 #include <math.h>
 #include <QList>
 
-ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<FeatureFactoryAbstract*> extractors, CoOcurrenceEquation *coOcurrenceEquationPolicy) :cn(cn),
+ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader, QList<const FeatureFactoryAbstract*> extractors, CoOcurrenceEquation *coOcurrenceEquationPolicy) :cn(cn),
     reader(reader),
     extractors(extractors),
     reinforcePolicy(coOcurrenceEquationPolicy),
@@ -38,7 +38,7 @@ void ComplexNetworkConstructor::build(){
         
         for(int idx=0;idx<img.getRegions().size();idx++){
             Region r = img.getRegions().at(idx);
-            for(QList<FeatureFactoryAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
+            for(QList<const FeatureFactoryAbstract*>::iterator i = extractors.begin(); i != extractors.end(); i++){
                 features.append(move((*i)->CreateFromRegion(&r)));
                 regionsIds.append(idx);
             }
@@ -54,19 +54,20 @@ void ComplexNetworkConstructor::build(){
 /** Atualiza os pesos as arestas de acordo com a Equação:
  * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right)  \f]
  */
-void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstractPtr>  features, QList<int> &regionsIds){
+void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstractPtr>& features, QList<int> &regionsIds){
 
 
     QLinkedList<FeaturesComplexNetwork::Node> nodes;
 
     //Cria nós ou pesquisa existentes
-    for(auto f: features){
+    for(auto &f: features){
         FeaturesComplexNetwork::Node id;
-        if(!index.contains(FeatureAbstractKey(f.get()))){
-            id = cn.addNode(move(f));
-            index[FeatureAbstractKey(f.get())]=id;
+        if(!index.contains(f)){
+            FeatureAbstractPtr temp = f;
+            id = cn.addNode(f);
+            index.insert(temp, id);
         }else{
-            id = index[FeatureAbstractKey(f.get())];
+            id = index[f];
         }
         nodes.append(id);
     }

@@ -1,14 +1,14 @@
 <map id="Sources/Experiments/LabelsValidationExperiment/LabelGuesser.cpp" name="Sources/Experiments/LabelsValidationExperiment/LabelGuesser.cpp">
-<area shape="rect" id="node2" href="$_label_guesser_8hpp.html" title="LabelGuesser.hpp" alt="" coords="259,117,389,143"/>
-<area shape="rect" id="node24" href="$_orientation_feature_factory_8hpp.html" title="FeatureExtractors/Orientation\lFeatureFactory.hpp" alt="" coords="647,199,844,240"/>
-<area shape="rect" id="node25" href="$_orientation_feature_8hpp.html" title="FeatureExtractors/Orientation\lFeature.hpp" alt="" coords="1007,109,1204,151"/>
-<area shape="rect" id="node27" href="$_label_feature_8hpp.html" title="FeatureExtractors/LabelFeature.hpp" alt="" coords="1229,117,1465,143"/>
-<area shape="rect" id="node3" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="5,295,205,322"/>
-<area shape="rect" id="node7" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="139,206,338,233"/>
-<area shape="rect" id="node9" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="868,199,1041,240"/>
-<area shape="rect" id="node10" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="733,295,987,322"/>
-<area shape="rect" id="node13" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="1362,288,1539,329"/>
-<area shape="rect" id="node17" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="1109,288,1286,329"/>
-<area shape="rect" id="node19" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="1012,295,1084,322"/>
-<area shape="rect" id="node26" href="$_feature_8hpp.html" title="Feature.hpp" alt="" coords="1300,206,1393,233"/>
+<area shape="rect" id="node2" href="$_label_guesser_8hpp.html" title="LabelGuesser.hpp" alt="" coords="381,117,512,143"/>
+<area shape="rect" id="node25" href="$_orientation_feature_factory_8hpp.html" title="FeatureExtractors/Orientation\lFeatureFactory.hpp" alt="" coords="1007,199,1204,240"/>
+<area shape="rect" id="node26" href="$_orientation_feature_8hpp.html" title="FeatureExtractors/Orientation\lFeature.hpp" alt="" coords="1220,109,1417,151"/>
+<area shape="rect" id="node28" href="$_label_feature_8hpp.html" title="FeatureExtractors/LabelFeature.hpp" alt="" coords="1442,117,1678,143"/>
+<area shape="rect" id="node3" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="124,206,324,233"/>
+<area shape="rect" id="node8" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="262,295,461,322"/>
+<area shape="rect" id="node10" href="$_features_complex_network_8hpp.html" title="Utilities/FeaturesComplex\lNetwork.hpp" alt="" coords="801,199,975,240"/>
+<area shape="rect" id="node11" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="977,295,1231,322"/>
+<area shape="rect" id="node14" href="$_feature_abstract_8hpp.html" title="FeatureExtractors/Feature\lAbstract.hpp" alt="" coords="1509,288,1686,329"/>
+<area shape="rect" id="node18" href="$_feature_factory_abstract_8hpp.html" title="FeatureExtractors/Feature\lFactoryAbstract.hpp" alt="" coords="1255,288,1433,329"/>
+<area shape="rect" id="node20" href="$_link_8hpp.html" title="Link.hpp" alt="" coords="779,295,851,322"/>
+<area shape="rect" id="node27" href="$_feature_8hpp.html" title="Feature.hpp" alt="" coords="1513,206,1607,233"/>
 </map>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['begin',['Begin',['../class_complex_network_v2.html#ad7bfe6bd62d583f42f541f959ecc05f5',1,'ComplexNetworkV2']]],
+  ['bgrimage',['bgrImage',['../class_supervised_image.html#a40aec823ee64d4bce926e39381f48e28',1,'SupervisedImage']]],
   ['boundary',['boundary',['../class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0',1,'Region']]],
   ['bt',['Bt',['../classcompute__modularity_1_1_bt.html',1,'compute_modularity']]],
   ['btnnext',['btnNext',['../class_database_visualizer_widget.html#ab1fc33de442247d3e112b84cde259b24',1,'DatabaseVisualizerWidget']]],

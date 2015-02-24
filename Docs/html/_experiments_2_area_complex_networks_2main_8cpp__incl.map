@@ -1,10 +1,6 @@
 <map id="Sources/Experiments/AreaComplexNetworks/main.cpp" name="Sources/Experiments/AreaComplexNetworks/main.cpp">
-<area shape="rect" id="node4" href="$_sun_database_reader_8hpp.html" title="Utilities/SunDatabaseReader.hpp" alt="" coords="672,117,891,143"/>
-<area shape="rect" id="node16" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="949,117,1203,143"/>
-<area shape="rect" id="node18" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="1227,117,1431,143"/>
-<area shape="rect" id="node23" href="$_link_8hpp.html" title="Utilities/Link.hpp" alt="" coords="1455,117,1574,143"/>
-<area shape="rect" id="node5" href="$_database_reader_8hpp.html" title="DatabaseReader.hpp" alt="" coords="532,199,681,225"/>
-<area shape="rect" id="node6" href="$_supervised_image_8hpp.html" title="SupervisedImage.hpp" alt="" coords="531,273,683,300"/>
-<area shape="rect" id="node8" href="$_region_8hpp.html" title="FeatureExtractors/Region.hpp" alt="" coords="488,348,688,375"/>
-<area shape="rect" id="node19" href="$_feature_abstract_8hpp.html" title="FeatureAbstract.hpp" alt="" coords="1301,199,1443,225"/>
+<area shape="rect" id="node5" href="$_complex_network_8hpp.html" title="ComplexNetwork/ComplexNetwork.hpp" alt="" coords="673,117,927,143"/>
+<area shape="rect" id="node8" href="$_feature_8hpp.html" title="FeatureExtractors/Feature.hpp" alt="" coords="951,117,1155,143"/>
+<area shape="rect" id="node13" href="$_link_8hpp.html" title="Utilities/Link.hpp" alt="" coords="1179,117,1298,143"/>
+<area shape="rect" id="node9" href="$_feature_abstract_8hpp.html" title="FeatureAbstract.hpp" alt="" coords="982,199,1125,225"/>
 </map>

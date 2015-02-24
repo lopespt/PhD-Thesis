@@ -1,3 +1,4 @@
 <map id="Region::getMask" name="Region::getMask">
 <area shape="rect" id="node2" href="$class_area_feature_factory.html#a241e29fcaf19c4756c7d01e86b272be3" title="AreaFeatureFactory\l::CreateFromRegion" alt="" coords="176,5,319,47"/>
+<area shape="rect" id="node3" href="$class_hsv_feature_factory.html#a3ec51eeb00cf9d8a192725ce51288a95" title="HsvFeatureFactory::\lCreateFromRegion" alt="" coords="176,71,319,112"/>
 </map>

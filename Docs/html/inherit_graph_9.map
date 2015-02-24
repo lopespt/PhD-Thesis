@@ -1,8 +1,12 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classcompute__modularity_1_1_bt.html" title="compute_modularity.Bt" alt="" coords="155,5,314,32"/>
-<area shape="rect" id="node3" href="$classcompute__modularity_1_1_edge.html" title="compute_modularity.Edge" alt="" coords="146,56,323,83"/>
-<area shape="rect" id="node4" href="$classcompute__modularity_1_1_header.html" title="compute_modularity.Header" alt="" coords="140,107,329,133"/>
-<area shape="rect" id="node5" href="$classcompute__modularity_1_1_label_node.html" title="compute_modularity.LabelNode" alt="" coords="129,157,340,184"/>
-<area shape="rect" id="node6" href="$classcompute__modularity_1_1_linka.html" title="compute_modularity.Linka" alt="" coords="146,208,323,235"/>
-<area shape="rect" id="node7" href="$classcompute__modularity_1_1_node.html" title="compute_modularity.Node" alt="" coords="146,259,323,285"/>
+<area shape="rect" id="node1" href="$class_feature_abstract.html" title="FeatureAbstract" alt="" coords="5,107,123,133"/>
+<area shape="rect" id="node2" href="$class_feature.html" title="Feature\&lt; T \&gt;" alt="" coords="209,5,308,32"/>
+<area shape="rect" id="node3" href="$class_feature.html" title="Feature\&lt; float \&gt;" alt="" coords="201,56,317,83"/>
+<area shape="rect" id="node5" href="$class_feature.html" title="Feature\&lt; label \&gt;" alt="" coords="199,107,318,133"/>
+<area shape="rect" id="node7" href="$class_feature.html" title="Feature\&lt; unsigned int \&gt;" alt="" coords="177,157,340,184"/>
+<area shape="rect" id="node9" href="$class_feature.html" title="Feature\&lt; vector\&lt; float \&gt; \&gt;" alt="" coords="171,208,347,235"/>
+<area shape="rect" id="node4" href="$class_area_feature.html" title="AreaFeature" alt="" coords="413,56,509,83"/>
+<area shape="rect" id="node6" href="$class_label_feature.html" title="LabelFeature" alt="" coords="411,107,511,133"/>
+<area shape="rect" id="node8" href="$class_orientation_feature.html" title="OrientationFeature" alt="" coords="395,157,528,184"/>
+<area shape="rect" id="node10" href="$class_hsv_feature.html" title="HsvFeature" alt="" coords="416,208,507,235"/>
 </map>

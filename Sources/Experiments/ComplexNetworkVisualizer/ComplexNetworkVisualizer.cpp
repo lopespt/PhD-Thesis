@@ -15,7 +15,7 @@ ComplexNetworkVisualizer::ComplexNetworkVisualizer(QWidget *parent) :
 }
 
 
-void ComplexNetworkVisualizer::load(const QString &file, QList<FeatureFactoryAbstract*> factories){
+void ComplexNetworkVisualizer::load(const QString &file, QList<const FeatureFactoryAbstract*> factories){
     cn.load(file.toStdString().c_str(), factories);
     printf("Total Nodes: %u\n", cn.getNumNodes());
     printf("Total Edges: %u\n", cn.getNumArcs());

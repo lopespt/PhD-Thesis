@@ -27,8 +27,8 @@ bool FeatureAbstract::operator==(const FeatureAbstract& other) const{
 
 }
 
-uint qHash(const FeatureAbstractKey& v){
-    return qHash(QString(v.pointer->getType()).append(QByteArray( (const char*)v.pointer->data, v.pointer->data_size )));
+uint qHash(const FeatureAbstractPtr &v){
+    return v.get()->getHash();
 }
 
 std::ostream & operator<<(ostream& os, const FeatureAbstractPtr& node){

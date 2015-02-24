@@ -1,4 +1,5 @@
 <map id="SupervisedImage::parse_xml" name="SupervisedImage::parse_xml">
-<area shape="rect" id="node2" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="240,5,404,47"/>
-<area shape="rect" id="node3" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="240,71,404,112"/>
+<area shape="rect" id="node2" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="248,5,437,32"/>
+<area shape="rect" id="node3" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="256,57,429,98"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="256,122,429,163"/>
 </map>

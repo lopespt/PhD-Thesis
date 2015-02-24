@@ -16,25 +16,27 @@ enum \hyperlink{class_label_guesser_experiment_a8c3db06a56bf1ad7513c20a7b80da3ec
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_label_guesser_experiment_a23665584de9eb0f70c52f35c5f2e3473}{Label\+Guesser\+Experiment} (float \hyperlink{class_label_guesser_experiment_a24da553164e05d31f67156c70b946fef}{train\+Perc}, int \hyperlink{class_label_guesser_experiment_a5038af94a1310577da234f589c19c77e}{walk\+Lenght}, \hyperlink{class_label_guesser_experiment_a8c3db06a56bf1ad7513c20a7b80da3ec}{method} \hyperlink{class_label_guesser_experiment_a0a0032a29818ba490865d85ac1403b0d}{m})
+\hyperlink{class_label_guesser_experiment_a438d9b15fbe69efc950d4c1aafd337d4}{Label\+Guesser\+Experiment} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \hyperlink{class_label_guesser_experiment_a94903226a99f02913d3e104ccc510880}{cn}, \hyperlink{class_region_chooser}{Region\+Chooser} \hyperlink{class_label_guesser_experiment_a76efedf726d4e95b9c8b2caff4b563cf}{chooser}, int \hyperlink{class_label_guesser_experiment_a5038af94a1310577da234f589c19c77e}{walk\+Lenght}, \hyperlink{class_label_guesser_experiment_a8c3db06a56bf1ad7513c20a7b80da3ec}{method} \hyperlink{class_label_guesser_experiment_a0a0032a29818ba490865d85ac1403b0d}{m})
 \item 
-void \hyperlink{class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f}{execute} (Q\+String, Q\+String)
+void \hyperlink{class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c}{execute} (Q\+String)
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 Q\+List$<$ \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} $>$ \hyperlink{class_label_guesser_experiment_a7ce6e72a0299f09f5d60911b6b2458b4}{get\+Labels\+Hints} (\hyperlink{class_supervised_image}{Supervised\+Image} \&img, unsigned int hide\+\_\+idx)
 \item 
-Q\+List$<$ Q\+String $>$ \hyperlink{class_label_guesser_experiment_a917b9b6d0fe6b874a60307e02a74de8e}{guess\+By\+Iterative\+Random\+Walk} (\hyperlink{class_iterative_random_walk}{Iterative\+Random\+Walk} \&walk, \hyperlink{class_features_complex_network}{Features\+Complex\+Network} \&cn, Q\+List$<$ \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} $>$ hints)
+Q\+List$<$ Q\+String $>$ \hyperlink{class_label_guesser_experiment_a699627db61bd5c21220e2306e9ee6f32}{guess\+By\+Iterative\+Random\+Walk} (\hyperlink{class_iterative_random_walk}{Iterative\+Random\+Walk} \&walk, Q\+List$<$ \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} $>$ hints)
 \item 
 int \hyperlink{class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646}{get\+Position} (Q\+List$<$ Q\+String $>$, Q\+String)
 \item 
-void \hyperlink{class_label_guesser_experiment_a835363da6b06ec1402823493ef933179}{print\+Labels} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$cn)
+void \hyperlink{class_label_guesser_experiment_a835363da6b06ec1402823493ef933179}{print\+Labels} (\hyperlink{class_features_complex_network}{Features\+Complex\+Network} $\ast$\hyperlink{class_label_guesser_experiment_a94903226a99f02913d3e104ccc510880}{cn})
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-float \hyperlink{class_label_guesser_experiment_a24da553164e05d31f67156c70b946fef}{train\+Perc}
+\hyperlink{class_features_complex_network}{Features\+Complex\+Network} \hyperlink{class_label_guesser_experiment_a94903226a99f02913d3e104ccc510880}{cn}
+\item 
+\hyperlink{class_region_chooser}{Region\+Chooser} \hyperlink{class_label_guesser_experiment_a76efedf726d4e95b9c8b2caff4b563cf}{chooser}
 \item 
 int \hyperlink{class_label_guesser_experiment_a5038af94a1310577da234f589c19c77e}{walk\+Lenght}
 \item 
@@ -47,7 +49,7 @@ Collaboration diagram for Label\+Guesser\+Experiment\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=243pt]{class_label_guesser_experiment__coll__graph}
+\includegraphics[height=550pt]{class_label_guesser_experiment__coll__graph}
 \end{center}
 \end{figure}
 
@@ -70,26 +72,26 @@ Collaboration diagram for Label\+Guesser\+Experiment\+:
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_label_guesser_experiment_a23665584de9eb0f70c52f35c5f2e3473}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
+\hypertarget{class_label_guesser_experiment_a438d9b15fbe69efc950d4c1aafd337d4}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \subsubsection[{Label\+Guesser\+Experiment}]{\setlength{\rightskip}{0pt plus 5cm}Label\+Guesser\+Experiment\+::\+Label\+Guesser\+Experiment (
 \begin{DoxyParamCaption}
-\item[{float}]{train\+Perc, }
+\item[{{\bf Features\+Complex\+Network}}]{cn, }
+\item[{{\bf Region\+Chooser}}]{chooser, }
 \item[{int}]{walk\+Lenght, }
 \item[{{\bf method}}]{m}
 \end{DoxyParamCaption}
-)}}\label{class_label_guesser_experiment_a23665584de9eb0f70c52f35c5f2e3473}
+)}}\label{class_label_guesser_experiment_a438d9b15fbe69efc950d4c1aafd337d4}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!execute@{execute}}
+\hypertarget{class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!execute@{execute}}
 \index{execute@{execute}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}void Label\+Guesser\+Experiment\+::execute (
 \begin{DoxyParamCaption}
-\item[{Q\+String}]{input\+Folder, }
 \item[{Q\+String}]{output\+File}
 \end{DoxyParamCaption}
-)}}\label{class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f}
+)}}\label{class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c}
 
 
 Here is the call graph for this function\+:
@@ -97,18 +99,19 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_cgraph}
+\includegraphics[width=350pt]{class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_cgraph}
 \end{center}
 \end{figure}
 
 
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=283pt]{class_label_guesser_experiment_ac59f249adb0e74044f30f2847006743f_icgraph}
+\includegraphics[width=350pt]{class_label_guesser_experiment_a6fef3579411d12ac3bfa27f7cff5e71c_icgraph}
 \end{center}
 \end{figure}
 
@@ -155,7 +158,8 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_ae0a57bb59569d9bc69363a68f888f646}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -164,15 +168,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-\hypertarget{class_label_guesser_experiment_a917b9b6d0fe6b874a60307e02a74de8e}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!guess\+By\+Iterative\+Random\+Walk@{guess\+By\+Iterative\+Random\+Walk}}
+\hypertarget{class_label_guesser_experiment_a699627db61bd5c21220e2306e9ee6f32}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!guess\+By\+Iterative\+Random\+Walk@{guess\+By\+Iterative\+Random\+Walk}}
 \index{guess\+By\+Iterative\+Random\+Walk@{guess\+By\+Iterative\+Random\+Walk}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \subsubsection[{guess\+By\+Iterative\+Random\+Walk}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ Q\+String $>$ Label\+Guesser\+Experiment\+::guess\+By\+Iterative\+Random\+Walk (
 \begin{DoxyParamCaption}
 \item[{{\bf Iterative\+Random\+Walk} \&}]{walk, }
-\item[{{\bf Features\+Complex\+Network} \&}]{cn, }
 \item[{Q\+List$<$ {\bf Feature\+Abstract\+Ptr} $>$}]{hints}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a917b9b6d0fe6b874a60307e02a74de8e}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a699627db61bd5c21220e2306e9ee6f32}
 
 
 Here is the call graph for this function\+:
@@ -180,7 +183,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_label_guesser_experiment_a917b9b6d0fe6b874a60307e02a74de8e_cgraph}
+\includegraphics[width=350pt]{class_label_guesser_experiment_a699627db61bd5c21220e2306e9ee6f32_cgraph}
 \end{center}
 \end{figure}
 
@@ -192,7 +195,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_label_guesser_experiment_a917b9b6d0fe6b874a60307e02a74de8e_icgraph}
+\includegraphics[width=350pt]{class_label_guesser_experiment_a699627db61bd5c21220e2306e9ee6f32_icgraph}
 \end{center}
 \end{figure}
 
@@ -206,8 +209,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a835363da6b06ec1402823493ef933179}
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -219,12 +221,15 @@ Here is the call graph for this function\+:
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_label_guesser_experiment_a76efedf726d4e95b9c8b2caff4b563cf}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!chooser@{chooser}}
+\index{chooser@{chooser}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
+\subsubsection[{chooser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Region\+Chooser} Label\+Guesser\+Experiment\+::chooser\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a76efedf726d4e95b9c8b2caff4b563cf}
+\hypertarget{class_label_guesser_experiment_a94903226a99f02913d3e104ccc510880}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!cn@{cn}}
+\index{cn@{cn}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
+\subsubsection[{cn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Features\+Complex\+Network} Label\+Guesser\+Experiment\+::cn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a94903226a99f02913d3e104ccc510880}
 \hypertarget{class_label_guesser_experiment_a0a0032a29818ba490865d85ac1403b0d}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!m@{m}}
 \index{m@{m}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf method} Label\+Guesser\+Experiment\+::m\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a0a0032a29818ba490865d85ac1403b0d}
-\hypertarget{class_label_guesser_experiment_a24da553164e05d31f67156c70b946fef}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!train\+Perc@{train\+Perc}}
-\index{train\+Perc@{train\+Perc}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
-\subsubsection[{train\+Perc}]{\setlength{\rightskip}{0pt plus 5cm}float Label\+Guesser\+Experiment\+::train\+Perc\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a24da553164e05d31f67156c70b946fef}
 \hypertarget{class_label_guesser_experiment_a5038af94a1310577da234f589c19c77e}{\index{Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}!walk\+Lenght@{walk\+Lenght}}
 \index{walk\+Lenght@{walk\+Lenght}!Label\+Guesser\+Experiment@{Label\+Guesser\+Experiment}}
 \subsubsection[{walk\+Lenght}]{\setlength{\rightskip}{0pt plus 5cm}int Label\+Guesser\+Experiment\+::walk\+Lenght\hspace{0.3cm}{\ttfamily [private]}}}\label{class_label_guesser_experiment_a5038af94a1310577da234f589c19c77e}

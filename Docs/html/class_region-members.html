@@ -91,22 +91,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="class_region.html">Region</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#a4a59ef37013f3a6515a79317b0f0b4c0">boundary</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#a0c258b6ce768a3df3d0260c2ab19c343">getBoundary</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#ab7a8b431bfb87b6ed067915a6637cf8a">getCvImage</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a7ac28a04ed9590f61007073e5e48089f">cvmask</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a0c258b6ce768a3df3d0260c2ab19c343">getBoundary</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a12c653b5aa89c899e2680c9dc1bbf46d">getBoundaryRect</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#a69d5acb5d1d81b50f225817217f60fdd">getLabel</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_region.html#add72dd82adb6ee0d5822b250c3ac07e8">getMask</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_region.html#acc0edaac14854ccc448f419844a722bf">getPixel</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_region.html#a421786f57555f6348ece3fa33eb86594">getPixelRelative</a>(int x, int y, bool *insideRegion=NULL) const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a0e9c8974b3be20ce12a4b823f9f3f636">Region</a>(QImage *image, QPolygon boundary, QString label)</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a8c39ae6d7143a47423f6403c80742bd5">getSupervisedImage</a>() const </td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a090b8bc9a8c73f8f874d8d439a0843be">image</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#afcc063386e02be883d71eaf5bcef2a55">label</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#af07da6f0f304272539c1239847280045">path</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a1f79fb89521984fd4ec62b30c67712cf">Region</a>(SupervisedImage *supervisedImage, QImage *image, QPolygon boundary, QString label)</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_region.html#ad2572028c1a4653a14dbfb1b622aa03e">show_region</a>()</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">~Region</a>()</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_region.html#a897932b50cdd155984c06575726f9b69">supervisedImage</a></td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_region.html#a3c3670fff78f7511d156e3b2f0bc6266">~Region</a>()</td><td class="entry"><a class="el" href="class_region.html">Region</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 16 2015 19:47:37 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 22 2015 21:32:41 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

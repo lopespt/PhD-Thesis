@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['segmenter_2ecpp',['segmenter.cpp',['../segmenter_8cpp.html',1,'']]],
-  ['segmenter_2ehpp',['segmenter.hpp',['../segmenter_8hpp.html',1,'']]],
-  ['segmentertest_2ecpp',['SegmenterTest.cpp',['../_segmenter_test_8cpp.html',1,'']]],
-  ['sundatabasereader_2ecpp',['SunDatabaseReader.cpp',['../_sun_database_reader_8cpp.html',1,'']]],
-  ['sundatabasereader_2ehpp',['SunDatabaseReader.hpp',['../_sun_database_reader_8hpp.html',1,'']]],
-  ['sunrandomfoldergenerator_2ecpp',['SUNRandomFolderGenerator.cpp',['../_s_u_n_random_folder_generator_8cpp.html',1,'']]],
-  ['sunrandomfoldergenerator_2ehpp',['SUNRandomFolderGenerator.hpp',['../_s_u_n_random_folder_generator_8hpp.html',1,'']]],
-  ['supervisedimage_2ecpp',['SupervisedImage.cpp',['../_supervised_image_8cpp.html',1,'']]],
-  ['supervisedimage_2ehpp',['SupervisedImage.hpp',['../_supervised_image_8hpp.html',1,'']]],
-  ['supervisedimageviewerwidget_2ecpp',['supervisedimageviewerwidget.cpp',['../supervisedimageviewerwidget_8cpp.html',1,'']]],
-  ['supervisedimageviewerwidget_2ehpp',['supervisedimageviewerwidget.hpp',['../supervisedimageviewerwidget_8hpp.html',1,'']]]
+  ['randomwalktest_2ecpp',['RandomWalkTest.cpp',['../_random_walk_test_8cpp.html',1,'']]],
+  ['randomwalktest_2ehpp',['RandomWalkTest.hpp',['../_random_walk_test_8hpp.html',1,'']]],
+  ['randomwalktest2_2ecpp',['RandomWalkTest2.cpp',['../_random_walk_test2_8cpp.html',1,'']]],
+  ['randomwalktest2_2ehpp',['RandomWalkTest2.hpp',['../_random_walk_test2_8hpp.html',1,'']]],
+  ['readreport_2em',['readReport.m',['../read_report_8m.html',1,'']]],
+  ['region_2ecpp',['Region.cpp',['../_region_8cpp.html',1,'']]],
+  ['region_2ehpp',['Region.hpp',['../_region_8hpp.html',1,'']]],
+  ['regionchooser_2ecpp',['RegionChooser.cpp',['../_region_chooser_8cpp.html',1,'']]],
+  ['regionchooser_2ehpp',['RegionChooser.hpp',['../_region_chooser_8hpp.html',1,'']]],
+  ['reinforcementcoocurrenceequation_2ecpp',['ReinforcementCoOcurrenceEquation.cpp',['../_reinforcement_co_ocurrence_equation_8cpp.html',1,'']]],
+  ['reinforcementcoocurrenceequation_2ehpp',['ReinforcementCoOcurrenceEquation.hpp',['../_reinforcement_co_ocurrence_equation_8hpp.html',1,'']]]
 ];

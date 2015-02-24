@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
     parser.addHelpOption();
     parser.process(app);
 
-    QList<FeatureFactoryAbstract*> factories;
+    QList<const FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labelFactory;
     OrientationFeatureFactory orientationFactory(40);
     AreaFeatureFactory areaFactory(10);

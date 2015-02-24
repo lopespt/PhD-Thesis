@@ -1,0 +1,5 @@
+<map id="RegionChooser::hasNextChoseRegion" name="RegionChooser::hasNextChoseRegion">
+<area shape="rect" id="node2" href="$class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="496,5,668,47"/>
+<area shape="rect" id="node4" href="$class_region_chooser.html#af20ff7542188a82b04a64c687038743f" title="RegionChooser::nextChose\lRegion" alt="" coords="263,35,448,76"/>
+<area shape="rect" id="node3" href="$class_label_guesser_experiment_thread.html#a816873e28a48cdefc4acd4688bd4b44f" title="LabelGuesserExperimentThread::run" alt="" coords="716,13,957,39"/>
+</map>

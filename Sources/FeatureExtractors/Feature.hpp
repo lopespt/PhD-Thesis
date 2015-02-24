@@ -14,6 +14,7 @@ class Feature:public FeatureAbstract{
         const T &getContent() const;
         Feature<T>(T value, int type, const char* featureName);
         virtual const char* asString(char* buffer) const = 0 ;
+        virtual uint getHash() const = 0;
         virtual void WriteToStream(std::ostream &stream) const = 0;
         virtual ~Feature(){ }
 };

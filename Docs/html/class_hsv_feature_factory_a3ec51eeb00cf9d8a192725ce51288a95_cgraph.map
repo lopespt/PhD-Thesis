@@ -1,0 +1,7 @@
+<map id="HsvFeatureFactory::CreateFromRegion" name="HsvFeatureFactory::CreateFromRegion">
+<area shape="rect" id="node2" href="$class_hsv_feature_factory.html#acf024cd2f4a38ab87d8a6afafca9a9b6" title="HsvFeatureFactory::\lextractHSVFast" alt="" coords="221,5,364,47"/>
+<area shape="rect" id="node3" href="$class_region.html#a8c39ae6d7143a47423f6403c80742bd5" title="Region::getSupervisedImage" alt="" coords="196,71,389,98"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#a4e366821ce1f63006768966a4199bb76" title="SupervisedImage::getCvHsv\lImage" alt="" coords="197,123,388,164"/>
+<area shape="rect" id="node6" href="$class_region.html#add72dd82adb6ee0d5822b250c3ac07e8" title="Region::getMask" alt="" coords="231,189,354,215"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#a5e9e136e057baf0cfde7b68da86e8030" title="SupervisedImage::getCvBGRImage" alt="" coords="437,130,671,157"/>
+</map>

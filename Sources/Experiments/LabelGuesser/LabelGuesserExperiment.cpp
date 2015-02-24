@@ -16,8 +16,9 @@
 #include <Utilities/DatabaseReader/DatabaseReader.hpp>
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
 
-LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, RegionChooser chooser , int walkLenght, method m):
+LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser , int walkLenght, method m):
     cn(cn),
+    factories(factories),
     chooser(chooser),
     walkLenght(walkLenght),
     m(m)
@@ -25,26 +26,27 @@ LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, Region
 
 }
 
-QList< FeatureAbstractPtr > LabelGuesserExperiment::getLabelsHints(SupervisedImage &img, unsigned int hide_idx){
+QList< FeatureAbstractPtr > LabelGuesserExperiment::getFeaturesHints(SupervisedImage &img, unsigned int hide_idx){
     QList< FeatureAbstractPtr > ret;
-    LabelFeatureFactory fact;
-    //char buffer[100];
+  //  char buffer[100];
     for(int i=0;i<img.getRegions().size();i++){
-        if(i != hide_idx){
-            ret.append( fact.CreateFromRegion(&img.getRegions()[i]));
-            //printf("dica: %s\n",ret.last()->asString(buffer));
+        for(const FeatureFactoryAbstract*& fact: factories){
+            if(i != hide_idx){
+                ret.append(fact->CreateFromRegion(&img.getRegions()[i]));
+    //            printf("dica: %s\n",ret.last()->asString(buffer));
+            }
         }
     }
     return ret;
 }
 
-QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, QList<FeatureAbstractPtr > hints){
+QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRandomWalk &walk, const QList<FeatureAbstractPtr >& hints){
     setlocale(LC_ALL, "en_US");
     char buffer[100];
 
     QList<FeaturesComplexNetwork::Node> ids;
-    for(FeatureAbstractPtr &s: hints){
-        FeaturesComplexNetwork::Node id = cn.getNodeFromFeature(s.get());
+    for(const FeatureAbstractPtr &s: hints){
+        FeaturesComplexNetwork::Node id = cn.getNodeFromFeature(s);
         if( cn.valid(id))
             ids.append(id);
     }
@@ -96,7 +98,9 @@ QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRando
 
     QList<QString> retorno;
     for(int i=0;i<order.size();i++){
-        retorno.append( cn.getNode(order[i]).get()->asString(buffer) );
+        FeatureAbstractPtr feat = cn.getNode(order[i]);
+        if(feat.get()->getType() == 0)
+            retorno.append( feat.get()->asString(buffer) );
     }
 
     return  retorno;
@@ -134,7 +138,7 @@ void LabelGuesserExperiment::execute(QString outputFile){
         RegionChooser::ChosenRegion region = chooser.nextChoseRegion();
         SupervisedImage img = region.readSupervisedImage();
 
-        QList< FeatureAbstractPtr > hints = getLabelsHints(img, region.regionChoosed);
+        const QList< FeatureAbstractPtr >& hints = getFeaturesHints(img, region.regionChoosed);
         QList<QString> guessed = guessByIterativeRandomWalk(walk, hints);
         QString hidden = img.getRegions()[region.regionChoosed].getLabel();
 

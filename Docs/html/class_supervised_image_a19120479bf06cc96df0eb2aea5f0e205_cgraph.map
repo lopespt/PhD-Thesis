@@ -1,5 +1,6 @@
 <map id="SupervisedImage::getRegions" name="SupervisedImage::getRegions">
-<area shape="rect" id="node2" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="253,46,448,73"/>
-<area shape="rect" id="node3" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="496,5,669,47"/>
-<area shape="rect" id="node4" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="496,71,669,112"/>
+<area shape="rect" id="node2" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="253,64,448,91"/>
+<area shape="rect" id="node3" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="496,5,685,32"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="504,57,677,98"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="504,122,677,163"/>
 </map>

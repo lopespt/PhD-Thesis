@@ -1,0 +1,169 @@
+\hypertarget{class_hsv_feature_factory}{\section{Hsv\+Feature\+Factory Class Reference}
+\label{class_hsv_feature_factory}\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+}
+
+
+{\ttfamily \#include $<$Hsv\+Feature\+Factory.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hsv_feature_factory_a17f72ac377da6ee731ba5e71f9a19015}{Hsv\+Feature\+Factory} (int h, int s, int v, int \hyperlink{class_hsv_feature_factory_a6bd57065b760e5ef23c555e354c79ae6}{disc})
+\item 
+virtual \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} \hyperlink{class_hsv_feature_factory_a3ec51eeb00cf9d8a192725ce51288a95}{Create\+From\+Region} (const \hyperlink{class_region}{Region} $\ast$r) const 
+\item 
+virtual \hyperlink{class_feature_abstract_ptr}{Feature\+Abstract\+Ptr} \hyperlink{class_hsv_feature_factory_a3a1373d0b56dd3e5fa339351397b3927}{Create\+From\+Stream} (istream \&stream) const 
+\item 
+vector$<$ float $>$ \hyperlink{class_hsv_feature_factory_ac911e916c0a3ebafacba434b5d9d7a98}{extract\+H\+S\+V} (cv\+::\+Mat image, cv\+::\+Mat mask) const 
+\item 
+vector$<$ float $>$ \hyperlink{class_hsv_feature_factory_acf024cd2f4a38ab87d8a6afafca9a9b6}{extract\+H\+S\+V\+Fast} (cv\+::\+Mat image, cv\+::\+Mat mask) const 
+\item 
+\hyperlink{class_hsv_feature_factory_a17e0354f8ee4554b50c3629c8bd171bf}{$\sim$\+Hsv\+Feature\+Factory} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \hyperlink{class_hsv_feature_factory_ad9a0b2d197a4ad50c61cdcb8d699112d}{last\+Hsv\+Image}
+\item 
+Q\+String \hyperlink{class_hsv_feature_factory_a1adf2c7f44d994073e6a0f41aa67d4ef}{last\+Path}
+\item 
+int \hyperlink{class_hsv_feature_factory_aa6c7f3bd586b6bbe1b0ae404c0220f99}{hd}
+\item 
+int \hyperlink{class_hsv_feature_factory_afd7c786338d314feac8a95224f0c6f7d}{sd}
+\item 
+int \hyperlink{class_hsv_feature_factory_a57ee7c097f73c331d22452e3a83cb9f5}{vd}
+\item 
+int \hyperlink{class_hsv_feature_factory_a6bd57065b760e5ef23c555e354c79ae6}{disc}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Hsv\+Feature\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_hsv_feature_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hsv\+Feature\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_hsv_feature_factory__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hsv_feature_factory_a17f72ac377da6ee731ba5e71f9a19015}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{Hsv\+Feature\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}Hsv\+Feature\+Factory\+::\+Hsv\+Feature\+Factory (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{int}]{s, }
+\item[{int}]{v, }
+\item[{int}]{disc}
+\end{DoxyParamCaption}
+)}}\label{class_hsv_feature_factory_a17f72ac377da6ee731ba5e71f9a19015}
+\hypertarget{class_hsv_feature_factory_a17e0354f8ee4554b50c3629c8bd171bf}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!````~Hsv\+Feature\+Factory@{$\sim$\+Hsv\+Feature\+Factory}}
+\index{````~Hsv\+Feature\+Factory@{$\sim$\+Hsv\+Feature\+Factory}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{$\sim$\+Hsv\+Feature\+Factory}]{\setlength{\rightskip}{0pt plus 5cm}Hsv\+Feature\+Factory\+::$\sim$\+Hsv\+Feature\+Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hsv_feature_factory_a17e0354f8ee4554b50c3629c8bd171bf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hsv_feature_factory_a3ec51eeb00cf9d8a192725ce51288a95}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!Create\+From\+Region@{Create\+From\+Region}}
+\index{Create\+From\+Region@{Create\+From\+Region}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{Create\+From\+Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract\+Ptr} Hsv\+Feature\+Factory\+::\+Create\+From\+Region (
+\begin{DoxyParamCaption}
+\item[{const {\bf Region} $\ast$}]{r}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_hsv_feature_factory_a3ec51eeb00cf9d8a192725ce51288a95}
+
+
+Implements \hyperlink{class_feature_factory_abstract_a2b1aca909574b1828c8b019056656036}{Feature\+Factory\+Abstract}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hsv_feature_factory_a3ec51eeb00cf9d8a192725ce51288a95_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hsv_feature_factory_a3a1373d0b56dd3e5fa339351397b3927}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!Create\+From\+Stream@{Create\+From\+Stream}}
+\index{Create\+From\+Stream@{Create\+From\+Stream}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{Create\+From\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Abstract\+Ptr} Hsv\+Feature\+Factory\+::\+Create\+From\+Stream (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{stream}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_hsv_feature_factory_a3a1373d0b56dd3e5fa339351397b3927}
+
+
+Implements \hyperlink{class_feature_factory_abstract_a32e7b404d34169840dae5ff1839da705}{Feature\+Factory\+Abstract}.
+
+\hypertarget{class_hsv_feature_factory_ac911e916c0a3ebafacba434b5d9d7a98}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!extract\+H\+S\+V@{extract\+H\+S\+V}}
+\index{extract\+H\+S\+V@{extract\+H\+S\+V}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{extract\+H\+S\+V}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ float $>$ Hsv\+Feature\+Factory\+::extract\+H\+S\+V (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image, }
+\item[{cv\+::\+Mat}]{mask}
+\end{DoxyParamCaption}
+) const}}\label{class_hsv_feature_factory_ac911e916c0a3ebafacba434b5d9d7a98}
+\hypertarget{class_hsv_feature_factory_acf024cd2f4a38ab87d8a6afafca9a9b6}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!extract\+H\+S\+V\+Fast@{extract\+H\+S\+V\+Fast}}
+\index{extract\+H\+S\+V\+Fast@{extract\+H\+S\+V\+Fast}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{extract\+H\+S\+V\+Fast}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ float $>$ Hsv\+Feature\+Factory\+::extract\+H\+S\+V\+Fast (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat}]{image, }
+\item[{cv\+::\+Mat}]{mask}
+\end{DoxyParamCaption}
+) const}}\label{class_hsv_feature_factory_acf024cd2f4a38ab87d8a6afafca9a9b6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_hsv_feature_factory_acf024cd2f4a38ab87d8a6afafca9a9b6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hsv_feature_factory_a6bd57065b760e5ef23c555e354c79ae6}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!disc@{disc}}
+\index{disc@{disc}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{disc}]{\setlength{\rightskip}{0pt plus 5cm}int Hsv\+Feature\+Factory\+::disc\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_a6bd57065b760e5ef23c555e354c79ae6}
+frequency discretization \hypertarget{class_hsv_feature_factory_aa6c7f3bd586b6bbe1b0ae404c0220f99}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!hd@{hd}}
+\index{hd@{hd}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{hd}]{\setlength{\rightskip}{0pt plus 5cm}int Hsv\+Feature\+Factory\+::hd\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_aa6c7f3bd586b6bbe1b0ae404c0220f99}
+\hypertarget{class_hsv_feature_factory_ad9a0b2d197a4ad50c61cdcb8d699112d}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!last\+Hsv\+Image@{last\+Hsv\+Image}}
+\index{last\+Hsv\+Image@{last\+Hsv\+Image}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{last\+Hsv\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Hsv\+Feature\+Factory\+::last\+Hsv\+Image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_ad9a0b2d197a4ad50c61cdcb8d699112d}
+\hypertarget{class_hsv_feature_factory_a1adf2c7f44d994073e6a0f41aa67d4ef}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!last\+Path@{last\+Path}}
+\index{last\+Path@{last\+Path}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{last\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Hsv\+Feature\+Factory\+::last\+Path\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_a1adf2c7f44d994073e6a0f41aa67d4ef}
+\hypertarget{class_hsv_feature_factory_afd7c786338d314feac8a95224f0c6f7d}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!sd@{sd}}
+\index{sd@{sd}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{sd}]{\setlength{\rightskip}{0pt plus 5cm}int Hsv\+Feature\+Factory\+::sd\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_afd7c786338d314feac8a95224f0c6f7d}
+\hypertarget{class_hsv_feature_factory_a57ee7c097f73c331d22452e3a83cb9f5}{\index{Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}!vd@{vd}}
+\index{vd@{vd}!Hsv\+Feature\+Factory@{Hsv\+Feature\+Factory}}
+\subsubsection[{vd}]{\setlength{\rightskip}{0pt plus 5cm}int Hsv\+Feature\+Factory\+::vd\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hsv_feature_factory_a57ee7c097f73c331d22452e3a83cb9f5}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Feature\+Extractors/\hyperlink{_hsv_feature_factory_8hpp}{Hsv\+Feature\+Factory.\+hpp}\item 
+Sources/\+Feature\+Extractors/\hyperlink{_hsv_feature_factory_8cpp}{Hsv\+Feature\+Factory.\+cpp}\end{DoxyCompactItemize}

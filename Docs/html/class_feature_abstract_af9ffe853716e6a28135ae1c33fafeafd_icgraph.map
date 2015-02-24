@@ -1,10 +1,10 @@
 <map id="FeatureAbstract::asString" name="FeatureAbstract::asString">
 <area shape="rect" id="node2" href="$class_complex_network_viewer_widget.html#aed1e7ad3c16aaf0d744a6eee287e94b8" title="ComplexNetworkViewerWidget\l::setComplexNetwork" alt="" coords="228,5,433,47"/>
-<area shape="rect" id="node5" href="$class_label_guesser_experiment.html#a917b9b6d0fe6b874a60307e02a74de8e" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="227,71,435,112"/>
+<area shape="rect" id="node5" href="$class_label_guesser_experiment.html#a699627db61bd5c21220e2306e9ee6f32" title="LabelGuesserExperiment\l::guessByIterativeRandomWalk" alt="" coords="227,71,435,112"/>
 <area shape="rect" id="node8" href="$class_label_guesser_experiment.html#a835363da6b06ec1402823493ef933179" title="LabelGuesserExperiment\l::printLabels" alt="" coords="245,136,417,177"/>
 <area shape="rect" id="node9" href="$_complex_network_construction_test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="305,202,356,229"/>
 <area shape="rect" id="node3" href="$class_complex_network_visualizer.html#a0d903a9d363d23aa9ec1e2481ee8018b" title="ComplexNetworkVisualizer\l::load" alt="" coords="483,5,664,47"/>
-<area shape="rect" id="node4" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="712,13,763,39"/>
-<area shape="rect" id="node6" href="$class_label_guesser_experiment.html#ac59f249adb0e74044f30f2847006743f" title="LabelGuesserExperiment\l::execute" alt="" coords="487,71,659,112"/>
-<area shape="rect" id="node7" href="$_experiments_2_label_guesser_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="712,78,763,105"/>
+<area shape="rect" id="node4" href="$_experiments_2_complex_network_visualizer_2main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="807,13,858,39"/>
+<area shape="rect" id="node6" href="$class_label_guesser_experiment.html#a6fef3579411d12ac3bfa27f7cff5e71c" title="LabelGuesserExperiment\l::execute" alt="" coords="487,71,659,112"/>
+<area shape="rect" id="node7" href="$class_label_guesser_experiment_thread.html#a816873e28a48cdefc4acd4688bd4b44f" title="LabelGuesserExperimentThread::run" alt="" coords="712,78,953,105"/>
 </map>

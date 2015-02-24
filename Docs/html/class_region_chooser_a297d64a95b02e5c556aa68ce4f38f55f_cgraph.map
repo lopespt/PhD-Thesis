@@ -1,0 +1,12 @@
+<map id="RegionChooser::RegionChooser" name="RegionChooser::RegionChooser">
+<area shape="rect" id="node2" href="$class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe" title="DatabaseReader::hasNext" alt="" coords="301,5,480,32"/>
+<area shape="rect" id="node3" href="$class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081" title="DatabaseReader::readNext" alt="" coords="299,56,483,83"/>
+<area shape="rect" id="node4" href="$class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="283,107,499,133"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#a7accd41406835fc82dbeaf783ab2acaf" title="SupervisedImage::getSupervisedPath" alt="" coords="268,157,513,184"/>
+<area shape="rect" id="node6" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="291,208,491,235"/>
+<area shape="rect" id="node11" href="$class_region_chooser.html#a9afaf9f750216aab6f5d211fe5b1953e" title="RegionChooser::reset" alt="" coords="315,259,467,285"/>
+<area shape="rect" id="node7" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="561,208,756,235"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="804,149,993,176"/>
+<area shape="rect" id="node9" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="812,201,985,242"/>
+<area shape="rect" id="node10" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="812,266,985,307"/>
+</map>

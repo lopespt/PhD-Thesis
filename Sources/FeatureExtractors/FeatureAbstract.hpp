@@ -5,7 +5,6 @@
 #include <memory>
 
 using namespace std;
-class FeatureAbstractKey;
 class FeaturesComplexNetwork;
 class FeatureAbstract{
     protected:
@@ -20,6 +19,8 @@ class FeatureAbstract{
 
         virtual bool operator<(const FeatureAbstract& other) const;
         virtual const char* asString(char* buffer) const=0;
+        virtual uint getHash() const = 0;
+
         const int getType() const{
             return type;
         }
@@ -29,9 +30,8 @@ class FeatureAbstract{
 
         virtual void WriteToStream(std::ostream &stream) const = 0;
 
-        bool operator==(const FeatureAbstract& other) const;
+        virtual bool operator==(const FeatureAbstract& other) const;
 
-        friend uint qHash(const FeatureAbstractKey& v);
         friend class FeaturesComplexNetwork;
 
         friend std::ostream & operator<<(ostream& os, const shared_ptr<FeatureAbstract>& node);
@@ -45,18 +45,29 @@ private:
     shared_ptr<const FeatureAbstract> ptr;
 public:
     FeatureAbstractPtr():ptr(){}
-    FeatureAbstractPtr(const FeatureAbstract* ptr):ptr(ptr){}
+//    FeatureAbstractPtr(const FeatureAbstractPtr &other):ptr(other.ptr){}
+//    FeatureAbstractPtr(const FeatureAbstractPtr &&other):ptr(std::move(other.ptr)){}
+    FeatureAbstractPtr(FeatureAbstract* ptr):ptr(ptr){}
+    FeatureAbstractPtr(const FeatureAbstract* ptr):ptr(ptr, [](const FeatureAbstract* p){printf("deletando ptr\n");fflush(stdout); delete p;}){}
+
+
 
     bool operator<(const FeatureAbstractPtr& other) const{
         return *this->ptr < *other.ptr;
     }
 
-    /*const FeatureAbstractPtr& operator=(const FeatureAbstractPtr& other){
-         this->ptr = move(other.ptr);
+    bool operator==(const FeatureAbstractPtr& other) const{
+        return *this->ptr == *other.ptr;
+    }
+/*
+    FeatureAbstractPtr& operator=(const FeatureAbstractPtr& other) {
+        this->ptr = other.ptr;
         return *this;
-    }*/
+    }
+*/
 
-    const FeatureAbstract* operator -> (){
+
+    const FeatureAbstract* operator -> () const{
         return ptr.get();
     }
 
@@ -65,30 +76,12 @@ public:
     }
 
 
-
     friend ostream& operator<<(ostream& os, const FeatureAbstractPtr& p);
     friend istream& operator>>(istream& is, FeatureAbstractPtr& p);
-};
-
-class FeatureAbstractKey{
-private:
-
-    public:
-        const FeatureAbstract* pointer;
-
-        FeatureAbstractKey(const FeatureAbstractPtr& pointer):pointer(pointer.get()){
-
-        }
-
-        FeatureAbstractKey(const FeatureAbstract* pointer):pointer(pointer){
-        }
-
-        bool operator==(const FeatureAbstractKey& other) const{
-            return (*this->pointer)==(*other.pointer);
-        }
 
 };
 
-uint qHash(const FeatureAbstractKey& v);
+uint qHash(const FeatureAbstractPtr& v);
+
 
 #endif // FEATUREABSTRACT_HPP

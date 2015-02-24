@@ -26,6 +26,7 @@ FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region* region) co
     return FeatureAbstractPtr(new AreaFeature(vect));
 }
 
+
 FeatureAbstractPtr AreaFeatureFactory::CreateFromStream(istream &stream) const{
     AreaFeature* temp = new AreaFeature(0);
     int type;

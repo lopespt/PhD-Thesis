@@ -14,7 +14,7 @@ private:
     QString inputFolder;
     QString outputFile;
 public:
-    LabelGuesserExperimentThread(FeaturesComplexNetwork cn, RegionChooser chooser,  int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile );
+    LabelGuesserExperimentThread(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories, RegionChooser chooser,  int randomWalkSize, LabelGuesserExperiment::method method, QString inputFolder, QString outputFile );
     void run();
     ~LabelGuesserExperimentThread();
 

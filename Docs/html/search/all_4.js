@@ -10,6 +10,7 @@ var searchData=
   ['databasevisualizerwidget_2ecpp',['DatabaseVisualizerWidget.cpp',['../_database_visualizer_widget_8cpp.html',1,'']]],
   ['databasevisualizerwidget_2ehpp',['DatabaseVisualizerWidget.hpp',['../_database_visualizer_widget_8hpp.html',1,'']]],
   ['description',['description',['../struct_features_complex_network_1_1header.html#a945df90d139764d666deaa9d97a773ff',1,'FeaturesComplexNetwork::header']]],
+  ['disc',['disc',['../class_hsv_feature_factory.html#a6bd57065b760e5ef23c555e354c79ae6',1,'HsvFeatureFactory']]],
   ['discover_5ffiles',['discover_files',['../class_sun_database_reader.html#aefbdf63eaff6755bb3dee0ef8687b3aa',1,'SunDatabaseReader']]],
   ['discoverorientation',['discoverOrientation',['../class_orientation_feature_factory.html#a3ba5ebad39d7b2b6d1065208ee2fb60e',1,'OrientationFeatureFactory']]],
   ['discretization',['discretization',['../class_area_feature_factory.html#a77f36879829aeb6c25e7da509649b1ef',1,'AreaFeatureFactory::discretization()'],['../class_orientation_feature_factory.html#abcd8932fe77877dff6657e4070882015',1,'OrientationFeatureFactory::discretization()']]],

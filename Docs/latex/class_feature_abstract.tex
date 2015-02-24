@@ -20,7 +20,7 @@ const char $\ast$ \hyperlink{class_feature_abstract_a4b12b0d228da1c7e21429f263be
 \item 
 virtual void \hyperlink{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b}{Write\+To\+Stream} (std\+::ostream \&stream) const =0
 \item 
-bool \hyperlink{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}{operator==} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} \&other) const 
+virtual bool \hyperlink{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}{operator==} (const \hyperlink{class_feature_abstract}{Feature\+Abstract} \&other) const 
 \item 
 virtual \hyperlink{class_feature_abstract_ad4a51a8818f23596fc88ef89a79ff125}{$\sim$\+Feature\+Abstract} ()
 \end{DoxyCompactItemize}
@@ -56,8 +56,7 @@ Inheritance diagram for Feature\+Abstract\+:
 \end{figure}
 
 
-Collaboration diagram for Feature\+Abstract\+:
-\nopagebreak
+Collaboration diagram for Feature\+Abstract\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -94,7 +93,7 @@ Collaboration diagram for Feature\+Abstract\+:
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_af9ffe853716e6a28135ae1c33fafeafd}
 
 
-Implemented in \hyperlink{class_label_feature_acad3108c7016d5d82ffea0b07ac9911e}{Label\+Feature}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ T $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ float $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ label $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{Area\+Feature}, and \hyperlink{class_orientation_feature_a181ee73c51e33108e21a52c6b95e81e7}{Orientation\+Feature}.
+Implemented in \hyperlink{class_label_feature_acad3108c7016d5d82ffea0b07ac9911e}{Label\+Feature}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ T $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ vector$<$ float $>$ $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ float $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ label $>$}, \hyperlink{class_feature_abdd71dfec0efebf4ff17aeb2bee257c3}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_a6c0a6e3346ba2ddaa4a50cb957f08ab2}{Area\+Feature}, \hyperlink{class_hsv_feature_a1f19df5b9276b025f090ae388586c258}{Hsv\+Feature}, and \hyperlink{class_orientation_feature_a181ee73c51e33108e21a52c6b95e81e7}{Orientation\+Feature}.
 
 
 
@@ -124,7 +123,8 @@ Here is the caller graph for this function\+:
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_feature_abstract_a4cb21d5a97d7f537cda3c919c266a6cf}
 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -142,6 +142,10 @@ Here is the caller graph for this function\+:\nopagebreak
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_feature_abstract_a88fb78d10c6f5395c88ff0ae23fe8b8f}
 
 
+Reimplemented in \hyperlink{class_hsv_feature_a1b710a93fc5d1c55133280dacb90f702}{Hsv\+Feature}.
+
+
+
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -157,7 +161,11 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{DoxyParamCaption}
 \item[{const {\bf Feature\+Abstract} \&}]{other}
 \end{DoxyParamCaption}
-) const}}\label{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_feature_abstract_a8a2253d5e532ba6c95fe3653558c30c5}
+
+
+Reimplemented in \hyperlink{class_hsv_feature_a83ed51eb1e3de306bb3e792e184cce58}{Hsv\+Feature}.
+
 
 
 Here is the call graph for this function\+:\nopagebreak
@@ -178,12 +186,11 @@ Here is the call graph for this function\+:\nopagebreak
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_feature_abstract_a43cad67d17b3f23f1687862526126a1b}
 
 
-Implemented in \hyperlink{class_label_feature_a0058053b59de5c9a9cb856ac12681296}{Label\+Feature}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ T $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ float $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ label $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_ac0edad4aaa2a45caabd27112017bf4a6}{Area\+Feature}, and \hyperlink{class_orientation_feature_ac0c992dc7d54fc6e4558046142ddb881}{Orientation\+Feature}.
+Implemented in \hyperlink{class_label_feature_a0058053b59de5c9a9cb856ac12681296}{Label\+Feature}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ T $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ vector$<$ float $>$ $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ float $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ label $>$}, \hyperlink{class_feature_a459aef7873c75fb23ede86f71361239b}{Feature$<$ unsigned int $>$}, \hyperlink{class_area_feature_ac0edad4aaa2a45caabd27112017bf4a6}{Area\+Feature}, \hyperlink{class_hsv_feature_a02de6378bb15995c8b889e946daf48fe}{Hsv\+Feature}, and \hyperlink{class_orientation_feature_ac0c992dc7d54fc6e4558046142ddb881}{Orientation\+Feature}.
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

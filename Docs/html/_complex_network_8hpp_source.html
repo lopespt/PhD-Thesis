@@ -105,100 +105,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_complex_network.html#a5d466d263d5013364c264497a0c797a8">   14</a></span>&#160;    ListDigraph::ArcMap&lt;E&gt;  <a class="code" href="class_complex_network.html#a5d466d263d5013364c264497a0c797a8">arcs</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_complex_network.html#a15c45cf68f6d708af9ca46a1a155a115">   15</a></span>&#160;    DynArcLookUp&lt;ListDigraph&gt; <a class="code" href="class_complex_network.html#a15c45cf68f6d708af9ca46a1a155a115">lookup</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">   17</a></span>&#160;    <a class="code" href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">ComplexNetwork</a>():nodes(*this), arcs(*this), lookup(*this){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">   20</a></span>&#160;    ListDigraph::Node <a class="code" href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">addNode</a>(){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> ListDigraph::addNode();</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_complex_network.html#ace07d7064b00b9f358eb98228ff547d2">   17</a></span>&#160;    <a class="code" href="class_complex_network.html#ace07d7064b00b9f358eb98228ff547d2">ComplexNetwork</a>(<span class="keyword">const</span> <a class="code" href="class_complex_network.html">ComplexNetwork&lt;N,E&gt;</a> &amp;other):nodes(*this), arcs(*this), lookup(*this){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        digraphCopy(other, *<span class="keyword">this</span>).nodeMap(other.<a class="code" href="class_complex_network.html#ab859f9614083b288b3353962c99681cd">nodes</a>, this-&gt;nodes).arcMap(other.<a class="code" href="class_complex_network.html#a5d466d263d5013364c264497a0c797a8">arcs</a>, this-&gt;arcs).run();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">   21</a></span>&#160;    <a class="code" href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">ComplexNetwork</a>():nodes(*this), arcs(*this), lookup(*this){</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">   24</a></span>&#160;    ListDigraph::Node <a class="code" href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">addNode</a>(<span class="keyword">const</span> N&amp; val){</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ListDigraph::Node <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a> = ListDigraph::addNode();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        nodes[<a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>] = val;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">   30</a></span>&#160;    ListDigraph::Arc <a class="code" href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">addArc</a>( ListDigraph::Node f, ListDigraph::Node t){</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> ListDigraph::addArc(f,t);</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">   24</a></span>&#160;    ListDigraph::Node <a class="code" href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">addNode</a>(){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> ListDigraph::addNode();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">   28</a></span>&#160;    ListDigraph::Node <a class="code" href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">addNode</a>(<span class="keyword">const</span> N&amp; val){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        ListDigraph::Node <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a> = ListDigraph::addNode();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        nodes[<a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>] = val;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">   34</a></span>&#160;    ListDigraph::Arc <a class="code" href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">addArc</a>( ListDigraph::Node f, ListDigraph::Node t, <span class="keyword">const</span> E&amp; val){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ListDigraph::Arc a = ListDigraph::addArc(f, t);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        arcs[a] = val;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> a;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">   40</a></span>&#160;    Arc <a class="code" href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">getArc</a>(Node a, Node b){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        Arc i = lookup(a,b);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        assert(this-&gt;valid(i));</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">   34</a></span>&#160;    ListDigraph::Arc <a class="code" href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">addArc</a>( ListDigraph::Node f, ListDigraph::Node t){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> ListDigraph::addArc(f,t);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">   38</a></span>&#160;    ListDigraph::Arc <a class="code" href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">addArc</a>( ListDigraph::Node f, ListDigraph::Node t, <span class="keyword">const</span> E&amp; val){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ListDigraph::Arc a = ListDigraph::addArc(f, t);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        arcs[a] = val;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> lookup(a,b);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">   47</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">getArcValue</a>(Arc a){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        assert( valid(a) );</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> arcs[a];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">   52</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">getArcValue</a>(<span class="keywordtype">int</span> a){</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        assert( valid(arcFromId(a)) );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> arcs[ this-&gt;arcFromId(a) ];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">   57</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">getArcValue</a>(Node a, Node b){</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        assert( valid(lookup(a,b)) );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> arcs[ lookup(a,b) ];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">   62</a></span>&#160;    N&amp; <a class="code" href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">getNode</a>(Node <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>){</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        assert( valid(n) );</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> nodes[<a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">   67</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">arcExists</a>(Node a, Node b){</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> valid(this-&gt;lookup(a,b));</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">   44</a></span>&#160;    Arc <a class="code" href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">getArc</a>(Node a, Node b){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        Arc i = lookup(a,b);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        assert(this-&gt;valid(i));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> lookup(a,b);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">   51</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">getArcValue</a>(Arc a){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        assert( valid(a) );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> arcs[a];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">   56</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">getArcValue</a>(<span class="keywordtype">int</span> a){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        assert( valid(arcFromId(a)) );</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> arcs[ this-&gt;arcFromId(a) ];</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">   61</a></span>&#160;    E&amp; <a class="code" href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">getArcValue</a>(Node a, Node b){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        assert( valid(lookup(a,b)) );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> arcs[ lookup(a,b) ];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">   66</a></span>&#160;    N&amp; <a class="code" href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">getNode</a>(Node <a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        assert( valid(n) );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> nodes[<a class="code" href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>];</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">   71</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">getNumNodes</a>(){</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> countNodes(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">   71</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">arcExists</a>(Node a, Node b){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> valid(this-&gt;lookup(a,b));</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">getNumArcs</a>(){</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> countArcs(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">getNumNodes</a>(){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> countNodes(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">   80</a></span>&#160;    <span class="keyword">const</span> ListDigraph::ArcMap&lt;E&gt;&amp;  <a class="code" href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">getArcMap</a>()<span class="keyword">const </span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> this-&gt;arcs;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">   79</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">getNumArcs</a>(){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> countArcs(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // COMPLEXNETWORK_HPP</span></div>
-<div class="ttc" id="class_complex_network_html_a2631cf373b8711f9e6ab7fb0636b6f62"><div class="ttname"><a href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">ComplexNetwork::getNode</a></div><div class="ttdeci">N &amp; getNode(Node n)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:62</div></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">   84</a></span>&#160;    <span class="keyword">const</span> ListDigraph::ArcMap&lt;E&gt;&amp;  <a class="code" href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">getArcMap</a>()<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> this-&gt;arcs;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // COMPLEXNETWORK_HPP</span></div>
+<div class="ttc" id="class_complex_network_html_a2631cf373b8711f9e6ab7fb0636b6f62"><div class="ttname"><a href="class_complex_network.html#a2631cf373b8711f9e6ab7fb0636b6f62">ComplexNetwork::getNode</a></div><div class="ttdeci">N &amp; getNode(Node n)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:66</div></div>
+<div class="ttc" id="class_complex_network_html_ace07d7064b00b9f358eb98228ff547d2"><div class="ttname"><a href="class_complex_network.html#ace07d7064b00b9f358eb98228ff547d2">ComplexNetwork::ComplexNetwork</a></div><div class="ttdeci">ComplexNetwork(const ComplexNetwork&lt; N, E &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:17</div></div>
 <div class="ttc" id="print_report_8m_html_aeab71244afb687f16d8c4f5ee9d6ef0e"><div class="ttname"><a href="print_report_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a></div><div class="ttdeci">n</div><div class="ttdef"><b>Definition:</b> printReport.m:15</div></div>
-<div class="ttc" id="class_complex_network_html_ad257925d1fe72a1512c43d83a5c02c6c"><div class="ttname"><a href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">ComplexNetwork::addArc</a></div><div class="ttdeci">ListDigraph::Arc addArc(ListDigraph::Node f, ListDigraph::Node t)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:30</div></div>
-<div class="ttc" id="class_complex_network_html_a2a43744eca534a8b2090ceb11f97be2c"><div class="ttname"><a href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:57</div></div>
-<div class="ttc" id="class_complex_network_html_ac295c2bb486f33b91761f58d727f87ff"><div class="ttname"><a href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">ComplexNetwork::addArc</a></div><div class="ttdeci">ListDigraph::Arc addArc(ListDigraph::Node f, ListDigraph::Node t, const E &amp;val)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:34</div></div>
+<div class="ttc" id="class_complex_network_html_ad257925d1fe72a1512c43d83a5c02c6c"><div class="ttname"><a href="class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c">ComplexNetwork::addArc</a></div><div class="ttdeci">ListDigraph::Arc addArc(ListDigraph::Node f, ListDigraph::Node t)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:34</div></div>
+<div class="ttc" id="class_complex_network_html_a2a43744eca534a8b2090ceb11f97be2c"><div class="ttname"><a href="class_complex_network.html#a2a43744eca534a8b2090ceb11f97be2c">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:61</div></div>
+<div class="ttc" id="class_complex_network_html_ac295c2bb486f33b91761f58d727f87ff"><div class="ttname"><a href="class_complex_network.html#ac295c2bb486f33b91761f58d727f87ff">ComplexNetwork::addArc</a></div><div class="ttdeci">ListDigraph::Arc addArc(ListDigraph::Node f, ListDigraph::Node t, const E &amp;val)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:38</div></div>
 <div class="ttc" id="class_complex_network_html_a15c45cf68f6d708af9ca46a1a155a115"><div class="ttname"><a href="class_complex_network.html#a15c45cf68f6d708af9ca46a1a155a115">ComplexNetwork::lookup</a></div><div class="ttdeci">DynArcLookUp&lt; ListDigraph &gt; lookup</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:15</div></div>
-<div class="ttc" id="class_complex_network_html_ac3b0160abb78c53260c9e77dece41b74"><div class="ttname"><a href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">ComplexNetwork::arcExists</a></div><div class="ttdeci">bool arcExists(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:67</div></div>
-<div class="ttc" id="class_complex_network_html_acec7daa653363b1a7f7835258eeef198"><div class="ttname"><a href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(Arc a)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:47</div></div>
-<div class="ttc" id="class_complex_network_html_aa5810b5e82898b9f7b8ea22d68835bfb"><div class="ttname"><a href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">ComplexNetwork::getNumArcs</a></div><div class="ttdeci">int getNumArcs()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:75</div></div>
-<div class="ttc" id="class_complex_network_html_a9fcc4be3ca83cd6afb5865bff245321b"><div class="ttname"><a href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(int a)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:52</div></div>
-<div class="ttc" id="class_complex_network_html_af82c570ef1bbe0db0751554ed7bec9da"><div class="ttname"><a href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">ComplexNetwork::getNumNodes</a></div><div class="ttdeci">int getNumNodes()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:71</div></div>
-<div class="ttc" id="class_complex_network_html_a0b8a94ddb234a3be1c8f6395879120ea"><div class="ttname"><a href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">ComplexNetwork::getArc</a></div><div class="ttdeci">Arc getArc(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:40</div></div>
+<div class="ttc" id="class_complex_network_html_ac3b0160abb78c53260c9e77dece41b74"><div class="ttname"><a href="class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74">ComplexNetwork::arcExists</a></div><div class="ttdeci">bool arcExists(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:71</div></div>
+<div class="ttc" id="class_complex_network_html_acec7daa653363b1a7f7835258eeef198"><div class="ttname"><a href="class_complex_network.html#acec7daa653363b1a7f7835258eeef198">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(Arc a)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:51</div></div>
+<div class="ttc" id="class_complex_network_html_aa5810b5e82898b9f7b8ea22d68835bfb"><div class="ttname"><a href="class_complex_network.html#aa5810b5e82898b9f7b8ea22d68835bfb">ComplexNetwork::getNumArcs</a></div><div class="ttdeci">int getNumArcs()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:79</div></div>
+<div class="ttc" id="class_complex_network_html_a9fcc4be3ca83cd6afb5865bff245321b"><div class="ttname"><a href="class_complex_network.html#a9fcc4be3ca83cd6afb5865bff245321b">ComplexNetwork::getArcValue</a></div><div class="ttdeci">E &amp; getArcValue(int a)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:56</div></div>
+<div class="ttc" id="class_complex_network_html_af82c570ef1bbe0db0751554ed7bec9da"><div class="ttname"><a href="class_complex_network.html#af82c570ef1bbe0db0751554ed7bec9da">ComplexNetwork::getNumNodes</a></div><div class="ttdeci">int getNumNodes()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:75</div></div>
+<div class="ttc" id="class_complex_network_html_a0b8a94ddb234a3be1c8f6395879120ea"><div class="ttname"><a href="class_complex_network.html#a0b8a94ddb234a3be1c8f6395879120ea">ComplexNetwork::getArc</a></div><div class="ttdeci">Arc getArc(Node a, Node b)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:44</div></div>
 <div class="ttc" id="class_complex_network_html"><div class="ttname"><a href="class_complex_network.html">ComplexNetwork</a></div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:10</div></div>
-<div class="ttc" id="class_complex_network_html_a94dc0dc077369f49fcf6010236c6e461"><div class="ttname"><a href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">ComplexNetwork::addNode</a></div><div class="ttdeci">ListDigraph::Node addNode()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:20</div></div>
+<div class="ttc" id="class_complex_network_html_a94dc0dc077369f49fcf6010236c6e461"><div class="ttname"><a href="class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461">ComplexNetwork::addNode</a></div><div class="ttdeci">ListDigraph::Node addNode()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:24</div></div>
 <div class="ttc" id="class_complex_network_html_a5d466d263d5013364c264497a0c797a8"><div class="ttname"><a href="class_complex_network.html#a5d466d263d5013364c264497a0c797a8">ComplexNetwork::arcs</a></div><div class="ttdeci">ListDigraph::ArcMap&lt; E &gt; arcs</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:14</div></div>
-<div class="ttc" id="class_complex_network_html_a5c67bb0a664e9ffe1607609718f21d16"><div class="ttname"><a href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">ComplexNetwork::getArcMap</a></div><div class="ttdeci">const ListDigraph::ArcMap&lt; E &gt; &amp; getArcMap() const </div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:80</div></div>
+<div class="ttc" id="class_complex_network_html_a5c67bb0a664e9ffe1607609718f21d16"><div class="ttname"><a href="class_complex_network.html#a5c67bb0a664e9ffe1607609718f21d16">ComplexNetwork::getArcMap</a></div><div class="ttdeci">const ListDigraph::ArcMap&lt; E &gt; &amp; getArcMap() const </div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:84</div></div>
 <div class="ttc" id="class_complex_network_html_ab859f9614083b288b3353962c99681cd"><div class="ttname"><a href="class_complex_network.html#ab859f9614083b288b3353962c99681cd">ComplexNetwork::nodes</a></div><div class="ttdeci">ListDigraph::NodeMap&lt; N &gt; nodes</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:13</div></div>
-<div class="ttc" id="class_complex_network_html_add76e54a672f7489ec0fc03e720b2040"><div class="ttname"><a href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">ComplexNetwork::addNode</a></div><div class="ttdeci">ListDigraph::Node addNode(const N &amp;val)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:24</div></div>
-<div class="ttc" id="class_complex_network_html_aeaa6515a7b2b14f58391d3ea96f8ba1c"><div class="ttname"><a href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">ComplexNetwork::ComplexNetwork</a></div><div class="ttdeci">ComplexNetwork()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:17</div></div>
+<div class="ttc" id="class_complex_network_html_add76e54a672f7489ec0fc03e720b2040"><div class="ttname"><a href="class_complex_network.html#add76e54a672f7489ec0fc03e720b2040">ComplexNetwork::addNode</a></div><div class="ttdeci">ListDigraph::Node addNode(const N &amp;val)</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:28</div></div>
+<div class="ttc" id="class_complex_network_html_aeaa6515a7b2b14f58391d3ea96f8ba1c"><div class="ttname"><a href="class_complex_network.html#aeaa6515a7b2b14f58391d3ea96f8ba1c">ComplexNetwork::ComplexNetwork</a></div><div class="ttdeci">ComplexNetwork()</div><div class="ttdef"><b>Definition:</b> ComplexNetwork.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 16 2015 19:47:36 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 22 2015 21:38:31 for PhdThesis by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

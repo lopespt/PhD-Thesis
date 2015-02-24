@@ -20,7 +20,7 @@ private:
     ComplexNetworkViewerWidget *viewer;
 public:
     explicit ComplexNetworkVisualizer(QWidget *parent = 0);
-    void load(const QString &file, QList<FeatureFactoryAbstract*> factories);
+    void load(const QString &file, QList<const FeatureFactoryAbstract*> factories);
 signals:
 
 public slots:

@@ -8,7 +8,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_region_a0e9c8974b3be20ce12a4b823f9f3f636}{Region} (Q\+Image $\ast$\hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image}, Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}, Q\+String \hyperlink{_label_feature_8hpp_a331f639078ba664b292b59c4032245e1}{label})
+\hyperlink{class_region_a1f79fb89521984fd4ec62b30c67712cf}{Region} (\hyperlink{class_supervised_image}{Supervised\+Image} $\ast$\hyperlink{class_region_a897932b50cdd155984c06575726f9b69}{supervised\+Image}, Q\+Image $\ast$\hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image}, Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}, Q\+String \hyperlink{_label_feature_8hpp_a331f639078ba664b292b59c4032245e1}{label})
 \item 
 void \hyperlink{class_region_ad2572028c1a4653a14dbfb1b622aa03e}{show\+\_\+region} ()
 \item 
@@ -24,40 +24,48 @@ Q\+Rgb \hyperlink{class_region_a421786f57555f6348ece3fa33eb86594}{get\+Pixel\+Re
 \item 
 Q\+String \hyperlink{class_region_a69d5acb5d1d81b50f225817217f60fdd}{get\+Label} () const 
 \item 
-cv\+::\+Mat \hyperlink{class_region_add72dd82adb6ee0d5822b250c3ac07e8}{get\+Mask} () const 
+const \hyperlink{class_supervised_image}{Supervised\+Image} $\ast$ \hyperlink{class_region_a8c39ae6d7143a47423f6403c80742bd5}{get\+Supervised\+Image} () const 
 \item 
-cv\+::\+Mat \hyperlink{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}{get\+Cv\+Image} () const 
+cv\+::\+Mat \hyperlink{class_region_add72dd82adb6ee0d5822b250c3ac07e8}{get\+Mask} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_supervised_image}{Supervised\+Image} $\ast$ \hyperlink{class_region_a897932b50cdd155984c06575726f9b69}{supervised\+Image}
 \item 
 Q\+Image $\ast$ \hyperlink{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{image}
 \item 
 Q\+Polygon \hyperlink{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{boundary}
 \item 
 Q\+String \hyperlink{class_region_afcc063386e02be883d71eaf5bcef2a55}{label}
+\item 
+Q\+String \hyperlink{class_region_af07da6f0f304272539c1239847280045}{path}
+\item 
+cv\+::\+Mat \hyperlink{class_region_a7ac28a04ed9590f61007073e5e48089f}{cvmask}
 \end{DoxyCompactItemize}
 
 
-Collaboration diagram for Region\+:\nopagebreak
+Collaboration diagram for Region\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=185pt]{class_region__coll__graph}
+\includegraphics[height=550pt]{class_region__coll__graph}
 \end{center}
 \end{figure}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_region_a0e9c8974b3be20ce12a4b823f9f3f636}{\index{Region@{Region}!Region@{Region}}
+\hypertarget{class_region_a1f79fb89521984fd4ec62b30c67712cf}{\index{Region@{Region}!Region@{Region}}
 \index{Region@{Region}!Region@{Region}}
 \subsubsection[{Region}]{\setlength{\rightskip}{0pt plus 5cm}Region\+::\+Region (
 \begin{DoxyParamCaption}
+\item[{{\bf Supervised\+Image} $\ast$}]{supervised\+Image, }
 \item[{Q\+Image $\ast$}]{image, }
 \item[{Q\+Polygon}]{boundary, }
 \item[{Q\+String}]{label}
 \end{DoxyParamCaption}
-)}}\label{class_region_a0e9c8974b3be20ce12a4b823f9f3f636}
+)}}\label{class_region_a1f79fb89521984fd4ec62b30c67712cf}
 \hypertarget{class_region_a3c3670fff78f7511d156e3b2f0bc6266}{\index{Region@{Region}!````~Region@{$\sim$\+Region}}
 \index{````~Region@{$\sim$\+Region}!Region@{Region}}
 \subsubsection[{$\sim$\+Region}]{\setlength{\rightskip}{0pt plus 5cm}Region\+::$\sim$\+Region (
@@ -77,8 +85,7 @@ Collaboration diagram for Region\+:\nopagebreak
 ) const}}\label{class_region_a0c258b6ce768a3df3d0260c2ab19c343}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -96,8 +103,7 @@ Here is the caller graph for this function\+:
 ) const}}\label{class_region_a12c653b5aa89c899e2680c9dc1bbf46d}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -106,13 +112,6 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\hypertarget{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}{\index{Region@{Region}!get\+Cv\+Image@{get\+Cv\+Image}}
-\index{get\+Cv\+Image@{get\+Cv\+Image}!Region@{Region}}
-\subsubsection[{get\+Cv\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Region\+::get\+Cv\+Image (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{class_region_ab7a8b431bfb87b6ed067915a6637cf8a}
 \hypertarget{class_region_a69d5acb5d1d81b50f225817217f60fdd}{\index{Region@{Region}!get\+Label@{get\+Label}}
 \index{get\+Label@{get\+Label}!Region@{Region}}
 \subsubsection[{get\+Label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Region\+::get\+Label (
@@ -162,8 +161,7 @@ Here is the caller graph for this function\+:
 ) const}}\label{class_region_acc0edaac14854ccc448f419844a722bf}
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -194,12 +192,30 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_region_a421786f57555f6348ece3fa33eb86594_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_a8c39ae6d7143a47423f6403c80742bd5}{\index{Region@{Region}!get\+Supervised\+Image@{get\+Supervised\+Image}}
+\index{get\+Supervised\+Image@{get\+Supervised\+Image}!Region@{Region}}
+\subsubsection[{get\+Supervised\+Image}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Supervised\+Image} $\ast$ Region\+::get\+Supervised\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_a8c39ae6d7143a47423f6403c80742bd5}
+
+
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=348pt]{class_region_a421786f57555f6348ece3fa33eb86594_icgraph}
+\includegraphics[width=350pt]{class_region_a8c39ae6d7143a47423f6403c80742bd5_icgraph}
 \end{center}
 \end{figure}
 
@@ -217,12 +233,21 @@ Here is the caller graph for this function\+:
 \hypertarget{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}{\index{Region@{Region}!boundary@{boundary}}
 \index{boundary@{boundary}!Region@{Region}}
 \subsubsection[{boundary}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Polygon Region\+::boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_a4a59ef37013f3a6515a79317b0f0b4c0}
+\hypertarget{class_region_a7ac28a04ed9590f61007073e5e48089f}{\index{Region@{Region}!cvmask@{cvmask}}
+\index{cvmask@{cvmask}!Region@{Region}}
+\subsubsection[{cvmask}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Region\+::cvmask\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}}\label{class_region_a7ac28a04ed9590f61007073e5e48089f}
 \hypertarget{class_region_a090b8bc9a8c73f8f874d8d439a0843be}{\index{Region@{Region}!image@{image}}
 \index{image@{image}!Region@{Region}}
 \subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image$\ast$ Region\+::image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_a090b8bc9a8c73f8f874d8d439a0843be}
 \hypertarget{class_region_afcc063386e02be883d71eaf5bcef2a55}{\index{Region@{Region}!label@{label}}
 \index{label@{label}!Region@{Region}}
 \subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Region\+::label\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_afcc063386e02be883d71eaf5bcef2a55}
+\hypertarget{class_region_af07da6f0f304272539c1239847280045}{\index{Region@{Region}!path@{path}}
+\index{path@{path}!Region@{Region}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Region\+::path\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_af07da6f0f304272539c1239847280045}
+\hypertarget{class_region_a897932b50cdd155984c06575726f9b69}{\index{Region@{Region}!supervised\+Image@{supervised\+Image}}
+\index{supervised\+Image@{supervised\+Image}!Region@{Region}}
+\subsubsection[{supervised\+Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Supervised\+Image}$\ast$ Region\+::supervised\+Image\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_a897932b50cdd155984c06575726f9b69}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

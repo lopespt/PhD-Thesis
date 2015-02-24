@@ -4,11 +4,11 @@
 <area shape="rect" id="node3" href="$class_database_reader.html#acc71ed6c7af71bdc66b4b6eee3598506" title="DatabaseReader::hasPrevious" alt="" coords="468,5,672,32"/>
 <area shape="rect" id="node4" href="$class_supervised_image_viewer_widget.html#a1ecae5d24940ff3bcbe8e09b85fef707" title="SupervisedImageViewerWidget\l::setSupervisedImage" alt="" coords="466,107,674,149"/>
 <area shape="rect" id="node10" href="$class_database_reader.html#a762e5d499c9d60e5ba85344c1c7c2c8c" title="DatabaseReader::readPrevious" alt="" coords="465,56,675,83"/>
-<area shape="rect" id="node5" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="728,89,917,116"/>
-<area shape="rect" id="node9" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="723,140,923,167"/>
-<area shape="rect" id="node6" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="971,115,1165,141"/>
-<area shape="rect" id="node7" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="1213,74,1387,115"/>
-<area shape="rect" id="node8" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="1213,139,1387,181"/>
+<area shape="rect" id="node5" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="1213,87,1403,113"/>
+<area shape="rect" id="node6" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="723,140,923,167"/>
+<area shape="rect" id="node7" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="971,144,1165,171"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="1221,138,1395,179"/>
+<area shape="rect" id="node9" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="1221,203,1395,245"/>
 <area shape="rect" id="node12" href="$class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe" title="DatabaseReader::hasNext" alt="" coords="481,173,659,200"/>
 <area shape="rect" id="node13" href="$class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081" title="DatabaseReader::readNext" alt="" coords="478,224,662,251"/>
 </map>

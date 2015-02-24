@@ -6,6 +6,7 @@ var searchData=
   ['feature_3c_20float_20_3e',['Feature&lt; float &gt;',['../class_feature.html',1,'']]],
   ['feature_3c_20label_20_3e',['Feature&lt; label &gt;',['../class_feature.html',1,'']]],
   ['feature_3c_20unsigned_20int_20_3e',['Feature&lt; unsigned int &gt;',['../class_feature.html',1,'']]],
+  ['feature_3c_20vector_3c_20int_20_3e_20_3e',['Feature&lt; vector&lt; int &gt; &gt;',['../class_feature.html',1,'']]],
   ['featureabstract',['FeatureAbstract',['../class_feature_abstract.html',1,'FeatureAbstract'],['../class_feature_abstract.html#afb925654d107910da20b213080e8a013',1,'FeatureAbstract::FeatureAbstract()']]],
   ['featureabstract_2ecpp',['FeatureAbstract.cpp',['../_feature_abstract_8cpp.html',1,'']]],
   ['featureabstract_2ehpp',['FeatureAbstract.hpp',['../_feature_abstract_8hpp.html',1,'']]],
@@ -19,8 +20,8 @@ var searchData=
   ['featurescomplexnetwork',['FeaturesComplexNetwork',['../class_features_complex_network.html',1,'FeaturesComplexNetwork'],['../class_feature_abstract.html#ac83197c9714439d51f43440c042625e7',1,'FeatureAbstract::FeaturesComplexNetwork()'],['../class_features_complex_network.html#ad251cdf2e827d41e10c7b3fb1b2d8a22',1,'FeaturesComplexNetwork::FeaturesComplexNetwork()']]],
   ['featurescomplexnetwork_2ecpp',['FeaturesComplexNetwork.cpp',['../_features_complex_network_8cpp.html',1,'']]],
   ['featurescomplexnetwork_2ehpp',['FeaturesComplexNetwork.hpp',['../_features_complex_network_8hpp.html',1,'']]],
+  ['fileexists',['fileExists',['../class_utils.html#a47da16ce68ce717a1ca610af28de99a2',1,'Utils']]],
   ['fillmap',['fillMap',['../class_graph_utilities.html#ae00cf745ed72f71835147a83f3a8111f',1,'GraphUtilities::fillMap(const ListDigraph &amp;graph, ListDigraph::NodeMap&lt; T &gt; &amp;map, const T &amp;value)'],['../class_graph_utilities.html#afcd9e859008f3023f75a1c1b9972cfd6',1,'GraphUtilities::fillMap(const ListDigraph &amp;graph, ListDigraph::ArcMap&lt; T &gt; &amp;map, const T &amp;value)']]],
   ['findnode',['findNode',['../namespacecompute__modularity.html#a03524b2cf695fb83898425ff0f804750',1,'compute_modularity']]],
-  ['firstweight',['firstWeight',['../class_co_ocurrence_equation.html#adeb923a945b5e070d226003f1e247dc1',1,'CoOcurrenceEquation::firstWeight()'],['../class_reinforcement_co_ocurrence_equation.html#ad9ffd4f4ad94858a2522c2e5c519920f',1,'ReinforcementCoOcurrenceEquation::firstWeight()']]],
-  ['from',['from',['../class_complex_network_v2_1_1_edge_iterator.html#a9c12853c790c6168d6439e84f9093e61',1,'ComplexNetworkV2::EdgeIterator']]]
+  ['firstweight',['firstWeight',['../class_add_one_co_ocurrence_equation.html#adc35f9322353d3c7c7748aa68122f880',1,'AddOneCoOcurrenceEquation::firstWeight()'],['../class_co_ocurrence_equation.html#adeb923a945b5e070d226003f1e247dc1',1,'CoOcurrenceEquation::firstWeight()'],['../class_reinforcement_co_ocurrence_equation.html#ad9ffd4f4ad94858a2522c2e5c519920f',1,'ReinforcementCoOcurrenceEquation::firstWeight()']]]
 ];

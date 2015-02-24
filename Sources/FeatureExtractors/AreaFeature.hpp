@@ -13,6 +13,8 @@ public:
     const char* asString(char *buffer) const;
     void WriteToStream(std::ostream &stream) const;
 
+    uint getHash() const;
+
     friend class AreaFeatureFactory;
 
 };

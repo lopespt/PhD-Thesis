@@ -35,7 +35,7 @@ int main(int argc, char **argv){
     printf("%s", folder.toStdString().c_str());
     FeaturesComplexNetwork labels_cn;
     SunDatabaseReader reader(folder);
-    QList<FeatureFactoryAbstract*> factories;
+    QList<const FeatureFactoryAbstract*> factories;
     LabelFeatureFactory labels_factory;
     OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);

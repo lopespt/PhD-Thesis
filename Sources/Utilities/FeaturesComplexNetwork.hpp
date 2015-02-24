@@ -13,7 +13,7 @@ class FeatureFactoryAbstract;
 class FeaturesComplexNetwork:public ComplexNetwork< FeatureAbstractPtr , Link>
 {
 private:
-    QHash<FeatureAbstractKey, Node> featureIndex;
+    QHash<FeatureAbstractPtr, Node> featureIndex;
     void load(const char* filename){}
 
     typedef struct{
@@ -26,17 +26,17 @@ public:
     FeaturesComplexNetwork();
     ~FeaturesComplexNetwork();
     void save(const char* filename);
-    void load(const char* filename, QList<FeatureFactoryAbstract* >& l);
+    void load(const char* filename, const QList<const FeatureFactoryAbstract* >& l);
     float getOutputDegree(Node) const;
     //bool removeNode(node_id id);
-    Node getNodeFromFeature(const FeatureAbstract* f) const;
+    Node getNodeFromFeature(const FeatureAbstractPtr& f) const;
     void refreshCache();
     
     class NodeReader{
     private:
-        QList<FeatureFactoryAbstract*> &factories;
+        const QList<const FeatureFactoryAbstract*> &factories;
     public:
-        NodeReader(QList< FeatureFactoryAbstract* > &factories):factories(factories){}
+        NodeReader(const QList<const FeatureFactoryAbstract* > &factories):factories(factories){}
 
         FeatureAbstractPtr operator()(const string& str);
     };

@@ -20,6 +20,7 @@ class LabelFeature:public Feature<label>
 public:
     LabelFeature(label value);
     const char* asString(char *buffer) const;
+    virtual uint getHash() const;
     void WriteToStream(std::ostream &stream) const;
 
     friend class LabelFeatureFactory;

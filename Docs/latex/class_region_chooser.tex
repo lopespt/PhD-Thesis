@@ -1,0 +1,254 @@
+\hypertarget{class_region_chooser}{\section{Region\+Chooser Class Reference}
+\label{class_region_chooser}\index{Region\+Chooser@{Region\+Chooser}}
+}
+
+
+{\ttfamily \#include $<$Region\+Chooser.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_region_chooser_1_1_chosen_region}{Chosen\+Region}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_region_chooser_a297d64a95b02e5c556aa68ce4f38f55f}{Region\+Chooser} (\hyperlink{class_database_reader}{Database\+Reader} \&reader)
+\item 
+\hyperlink{class_region_chooser_a64da90912e5e3e4beb0491ea810d4d9a}{Region\+Chooser} (Q\+String file)
+\item 
+void \hyperlink{class_region_chooser_a9afaf9f750216aab6f5d211fe5b1953e}{reset} ()
+\item 
+int \hyperlink{class_region_chooser_a315b5e70d4861a81ce73077b99471132}{get\+Total} () const 
+\item 
+bool \hyperlink{class_region_chooser_a6bc2e40d1d220a95174595d8945fb1ba}{has\+Next\+Chose\+Region} () const 
+\item 
+\hyperlink{struct_region_chooser_1_1_chosen_region}{Chosen\+Region} \hyperlink{class_region_chooser_af20ff7542188a82b04a64c687038743f}{next\+Chose\+Region} ()
+\item 
+void \hyperlink{class_region_chooser_a8c4f46952101f71bb6b549f79e6eb3c1}{save} (Q\+String file) const 
+\item 
+void \hyperlink{class_region_chooser_a216b76f2ffe79ec787c971445c9db818}{load} (Q\+String file)
+\item 
+\hyperlink{class_region_chooser_aff58f03e7f0009a5b6ffd9b64f16b52f}{$\sim$\+Region\+Chooser} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ \hyperlink{struct_region_chooser_1_1_chosen_region}{Chosen\+Region} $>$ \hyperlink{class_region_chooser_a7b1c3c82e0dcf7248a9adbeee3b0f129}{regions}
+\item 
+int \hyperlink{class_region_chooser_a65f405a6e8c0843f8abea0aa4298dce3}{actual\+Region}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for Region\+Chooser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_region_chooser__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_region_chooser_a297d64a95b02e5c556aa68ce4f38f55f}{\index{Region\+Chooser@{Region\+Chooser}!Region\+Chooser@{Region\+Chooser}}
+\index{Region\+Chooser@{Region\+Chooser}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{Region\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}Region\+Chooser\+::\+Region\+Chooser (
+\begin{DoxyParamCaption}
+\item[{{\bf Database\+Reader} \&}]{reader}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_a297d64a95b02e5c556aa68ce4f38f55f}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a297d64a95b02e5c556aa68ce4f38f55f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_a64da90912e5e3e4beb0491ea810d4d9a}{\index{Region\+Chooser@{Region\+Chooser}!Region\+Chooser@{Region\+Chooser}}
+\index{Region\+Chooser@{Region\+Chooser}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{Region\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}Region\+Chooser\+::\+Region\+Chooser (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_a64da90912e5e3e4beb0491ea810d4d9a}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a64da90912e5e3e4beb0491ea810d4d9a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_aff58f03e7f0009a5b6ffd9b64f16b52f}{\index{Region\+Chooser@{Region\+Chooser}!````~Region\+Chooser@{$\sim$\+Region\+Chooser}}
+\index{````~Region\+Chooser@{$\sim$\+Region\+Chooser}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{$\sim$\+Region\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}Region\+Chooser\+::$\sim$\+Region\+Chooser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_aff58f03e7f0009a5b6ffd9b64f16b52f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_region_chooser_a315b5e70d4861a81ce73077b99471132}{\index{Region\+Chooser@{Region\+Chooser}!get\+Total@{get\+Total}}
+\index{get\+Total@{get\+Total}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{get\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int Region\+Chooser\+::get\+Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_chooser_a315b5e70d4861a81ce73077b99471132}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a315b5e70d4861a81ce73077b99471132_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_a6bc2e40d1d220a95174595d8945fb1ba}{\index{Region\+Chooser@{Region\+Chooser}!has\+Next\+Chose\+Region@{has\+Next\+Chose\+Region}}
+\index{has\+Next\+Chose\+Region@{has\+Next\+Chose\+Region}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{has\+Next\+Chose\+Region}]{\setlength{\rightskip}{0pt plus 5cm}bool Region\+Chooser\+::has\+Next\+Chose\+Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_region_chooser_a6bc2e40d1d220a95174595d8945fb1ba}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a6bc2e40d1d220a95174595d8945fb1ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_a216b76f2ffe79ec787c971445c9db818}{\index{Region\+Chooser@{Region\+Chooser}!load@{load}}
+\index{load@{load}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void Region\+Chooser\+::load (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_a216b76f2ffe79ec787c971445c9db818}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_region_chooser_a216b76f2ffe79ec787c971445c9db818_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a216b76f2ffe79ec787c971445c9db818_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_af20ff7542188a82b04a64c687038743f}{\index{Region\+Chooser@{Region\+Chooser}!next\+Chose\+Region@{next\+Chose\+Region}}
+\index{next\+Chose\+Region@{next\+Chose\+Region}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{next\+Chose\+Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Region\+Chooser\+::\+Chosen\+Region} Region\+Chooser\+::next\+Chose\+Region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_af20ff7542188a82b04a64c687038743f}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_af20ff7542188a82b04a64c687038743f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_af20ff7542188a82b04a64c687038743f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_a9afaf9f750216aab6f5d211fe5b1953e}{\index{Region\+Chooser@{Region\+Chooser}!reset@{reset}}
+\index{reset@{reset}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Region\+Chooser\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_region_chooser_a9afaf9f750216aab6f5d211fe5b1953e}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_region_chooser_a9afaf9f750216aab6f5d211fe5b1953e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_region_chooser_a8c4f46952101f71bb6b549f79e6eb3c1}{\index{Region\+Chooser@{Region\+Chooser}!save@{save}}
+\index{save@{save}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}void Region\+Chooser\+::save (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{file}
+\end{DoxyParamCaption}
+) const}}\label{class_region_chooser_a8c4f46952101f71bb6b549f79e6eb3c1}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_region_chooser_a8c4f46952101f71bb6b549f79e6eb3c1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_region_chooser_a65f405a6e8c0843f8abea0aa4298dce3}{\index{Region\+Chooser@{Region\+Chooser}!actual\+Region@{actual\+Region}}
+\index{actual\+Region@{actual\+Region}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{actual\+Region}]{\setlength{\rightskip}{0pt plus 5cm}int Region\+Chooser\+::actual\+Region\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_chooser_a65f405a6e8c0843f8abea0aa4298dce3}
+\hypertarget{class_region_chooser_a7b1c3c82e0dcf7248a9adbeee3b0f129}{\index{Region\+Chooser@{Region\+Chooser}!regions@{regions}}
+\index{regions@{regions}!Region\+Chooser@{Region\+Chooser}}
+\subsubsection[{regions}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<${\bf Chosen\+Region}$>$ Region\+Chooser\+::regions\hspace{0.3cm}{\ttfamily [private]}}}\label{class_region_chooser_a7b1c3c82e0dcf7248a9adbeee3b0f129}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+Utilities/\+Database\+Reader/\hyperlink{_region_chooser_8hpp}{Region\+Chooser.\+hpp}\item 
+Sources/\+Utilities/\+Database\+Reader/\hyperlink{_region_chooser_8cpp}{Region\+Chooser.\+cpp}\end{DoxyCompactItemize}

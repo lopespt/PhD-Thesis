@@ -1,8 +1,9 @@
 <map id="Sources/FeatureExtractors/LabelFeatureFactory.cpp" name="Sources/FeatureExtractors/LabelFeatureFactory.cpp">
 <area shape="rect" id="node2" href="$_label_feature_factory_8hpp.html" title="LabelFeatureFactory.hpp" alt="" coords="97,169,268,196"/>
-<area shape="rect" id="node6" href="$_label_feature_8hpp.html" title="LabelFeature.hpp" alt="" coords="275,95,402,121"/>
-<area shape="rect" id="node11" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="427,95,517,121"/>
+<area shape="rect" id="node6" href="$_label_feature_8hpp.html" title="LabelFeature.hpp" alt="" coords="319,95,446,121"/>
+<area shape="rect" id="node11" href="$_region_8hpp.html" title="Region.hpp" alt="" coords="515,95,605,121"/>
 <area shape="rect" id="node3" href="$_feature_factory_abstract_8hpp.html" title="FeatureFactoryAbstract.hpp" alt="" coords="5,244,192,271"/>
 <area shape="rect" id="node7" href="$_feature_8hpp.html" title="Feature.hpp" alt="" coords="292,169,385,196"/>
 <area shape="rect" id="node8" href="$_feature_abstract_8hpp.html" title="FeatureAbstract.hpp" alt="" coords="267,244,410,271"/>
+<area shape="rect" id="node16" href="$_supervised_image_8hpp.html" title="Utilities/SupervisedImage.hpp" alt="" coords="461,169,659,196"/>
 </map>

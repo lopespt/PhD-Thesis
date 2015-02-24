@@ -4,6 +4,7 @@ var searchData=
   ['paintevent',['paintEvent',['../class_supervised_image_viewer_widget.html#a2fd955c04cc44507f6c9d0b3fc43538c',1,'SupervisedImageViewerWidget']]],
   ['parse_5fxml',['parse_xml',['../class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de',1,'SupervisedImage']]],
   ['partition',['partition',['../namespacecompute__modularity.html#a607f9b8be1bf581cedf443b517adcf10',1,'compute_modularity']]],
+  ['path',['path',['../class_region.html#af07da6f0f304272539c1239847280045',1,'Region']]],
   ['pathdatabasereader',['PathDatabaseReader',['../class_k_fold_database_reader_1_1_path_database_reader.html',1,'KFoldDatabaseReader']]],
   ['pathdatabasereader',['PathDatabaseReader',['../class_k_fold_database_reader_1_1_path_database_reader.html#ac09c594260a18ec32f65a9f8d9daf61b',1,'KFoldDatabaseReader::PathDatabaseReader']]],
   ['pic_5fx',['pic_x',['../class_supervised_image_viewer_widget.html#adaa30022724c053ff4e36550bc22e0f5',1,'SupervisedImageViewerWidget']]],

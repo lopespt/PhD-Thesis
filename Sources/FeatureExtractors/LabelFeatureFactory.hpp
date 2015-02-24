@@ -3,7 +3,7 @@
 
 #include "FeatureFactoryAbstract.hpp"
 #include <memory>
-
+#include <QtGlobal>
 class Region;
 
 using namespace std;

@@ -1,20 +1,22 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="104,125,296,166"/>
+<area shape="rect" id="node2" href="$class_complex_network_constructor.html#a19d313488e2c19172e362b521f53e329" title="ComplexNetworkConstructor\l::build" alt="" coords="104,150,296,191"/>
 <area shape="rect" id="node3" href="$class_database_reader.html#a406c8a783b41f31a273ed9c761bf33fe" title="DatabaseReader::hasNext" alt="" coords="363,5,541,32"/>
 <area shape="rect" id="node4" href="$class_database_reader.html#a4bf8a5faaaeaa057050e9c7ca4370081" title="DatabaseReader::readNext" alt="" coords="360,56,544,83"/>
 <area shape="rect" id="node5" href="$class_database_reader.html#abd37fa505553101bd8e18fd52547b7ee" title="DatabaseReader::getTotal" alt="" coords="363,107,541,133"/>
 <area shape="rect" id="node6" href="$class_supervised_image.html#af3c35e83075edcb7ca58bd708b198a4b" title="SupervisedImage::getImagePath" alt="" coords="344,157,560,184"/>
 <area shape="rect" id="node7" href="$class_supervised_image.html#a19120479bf06cc96df0eb2aea5f0e205" title="SupervisedImage::getRegions" alt="" coords="352,208,552,235"/>
-<area shape="rect" id="node11" href="$class_complex_network_constructor.html#acfcdef7c4ba88191a98d2e94c456a371" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="356,271,548,313"/>
-<area shape="rect" id="node8" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="608,195,803,221"/>
-<area shape="rect" id="node9" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="866,122,1039,163"/>
-<area shape="rect" id="node10" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="866,187,1039,229"/>
-<area shape="rect" id="node12" href="$class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461" title="ComplexNetwork::addNode" alt="" coords="613,279,798,305"/>
-<area shape="rect" id="node13" href="$class_complex_network_constructor.html#ad92ef615d6881fa178124b424deff23d" title="ComplexNetworkConstructor\l::reinforceLink" alt="" coords="609,355,801,397"/>
-<area shape="rect" id="node14" href="$class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74" title="ComplexNetwork::arcExists" alt="" coords="860,253,1045,280"/>
-<area shape="rect" id="node15" href="$class_complex_network.html#acec7daa653363b1a7f7835258eeef198" title="ComplexNetwork::getArcValue" alt="" coords="851,304,1055,331"/>
-<area shape="rect" id="node16" href="$class_co_ocurrence_equation.html#a9e274e5677044b1d9deb8d5ce649eea3" title="CoOcurrenceEquation\l::reWeight" alt="" coords="876,355,1029,397"/>
-<area shape="rect" id="node17" href="$class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0" title="Link::isSameLabel" alt="" coords="887,421,1018,448"/>
-<area shape="rect" id="node18" href="$class_co_ocurrence_equation.html#adeb923a945b5e070d226003f1e247dc1" title="CoOcurrenceEquation\l::firstWeight" alt="" coords="876,473,1029,514"/>
-<area shape="rect" id="node19" href="$class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c" title="ComplexNetwork::addArc" alt="" coords="866,539,1039,565"/>
+<area shape="rect" id="node12" href="$class_complex_network_constructor.html#acfcdef7c4ba88191a98d2e94c456a371" title="ComplexNetworkConstructor\l::makeCoOccurrences" alt="" coords="356,259,548,301"/>
+<area shape="rect" id="node21" href="$class_features_complex_network.html#ae09eedea29313658b2158196d18967bb" title="FeaturesComplexNetwork\l::refreshCache" alt="" coords="364,325,540,366"/>
+<area shape="rect" id="node8" href="$class_supervised_image.html#ae351771d19a2bbd53c88e871ed5bb4de" title="SupervisedImage::parse_xml" alt="" coords="608,183,803,209"/>
+<area shape="rect" id="node9" href="$class_supervised_image.html#a0a87d87ce7a8f21f5269f29e0d637290" title="SupervisedImage::getImage" alt="" coords="858,91,1047,117"/>
+<area shape="rect" id="node10" href="$class_supervised_image.html#aaeaaf36c52ed6317d547461d39a57b4e" title="SupervisedImage::extract\lPolygon" alt="" coords="866,142,1039,183"/>
+<area shape="rect" id="node11" href="$class_supervised_image.html#af603900bba42552e5d8395a5a265907a" title="SupervisedImage::extract\lLabel" alt="" coords="866,207,1039,249"/>
+<area shape="rect" id="node13" href="$class_complex_network.html#a94dc0dc077369f49fcf6010236c6e461" title="ComplexNetwork::addNode" alt="" coords="613,267,798,293"/>
+<area shape="rect" id="node14" href="$class_complex_network_constructor.html#ad92ef615d6881fa178124b424deff23d" title="ComplexNetworkConstructor\l::reinforceLink" alt="" coords="609,375,801,417"/>
+<area shape="rect" id="node15" href="$class_complex_network.html#ac3b0160abb78c53260c9e77dece41b74" title="ComplexNetwork::arcExists" alt="" coords="860,273,1045,300"/>
+<area shape="rect" id="node16" href="$class_complex_network.html#acec7daa653363b1a7f7835258eeef198" title="ComplexNetwork::getArcValue" alt="" coords="851,324,1055,351"/>
+<area shape="rect" id="node17" href="$class_co_ocurrence_equation.html#a9e274e5677044b1d9deb8d5ce649eea3" title="CoOcurrenceEquation\l::reWeight" alt="" coords="876,375,1029,417"/>
+<area shape="rect" id="node18" href="$class_link.html#a1eaa1a41eb1bcc0563786d60d7eb45c0" title="Link::isSameLabel" alt="" coords="887,441,1018,468"/>
+<area shape="rect" id="node19" href="$class_co_ocurrence_equation.html#adeb923a945b5e070d226003f1e247dc1" title="CoOcurrenceEquation\l::firstWeight" alt="" coords="876,493,1029,534"/>
+<area shape="rect" id="node20" href="$class_complex_network.html#ad257925d1fe72a1512c43d83a5c02c6c" title="ComplexNetwork::addArc" alt="" coords="866,559,1039,585"/>
 </map>

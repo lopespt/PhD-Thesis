@@ -2,4 +2,6 @@
 <area shape="rect" id="node2" href="$class_feature_abstract.html#a88fb78d10c6f5395c88ff0ae23fe8b8f" title="FeatureAbstract::operator\&lt;" alt="" coords="229,5,411,32"/>
 <area shape="rect" id="node3" href="$class_feature_abstract.html#a8a2253d5e532ba6c95fe3653558c30c5" title="FeatureAbstract::operator==" alt="" coords="225,56,415,83"/>
 <area shape="rect" id="node4" href="$_feature_abstract_8hpp.html#aca59f644613693185e40001464f20995" title="qHash" alt="" coords="290,131,350,157"/>
+<area shape="rect" id="node5" href="$class_hsv_feature.html#a1b710a93fc5d1c55133280dacb90f702" title="HsvFeature::operator\&lt;" alt="" coords="242,181,398,208"/>
+<area shape="rect" id="node6" href="$class_hsv_feature.html#a83ed51eb1e3de306bb3e792e184cce58" title="HsvFeature::operator==" alt="" coords="238,232,402,259"/>
 </map>
