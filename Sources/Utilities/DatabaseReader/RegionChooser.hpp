@@ -9,12 +9,12 @@
 class RegionChooser
 {
 public:
-    typedef struct{
+    class ChosenRegion{
         QString imagePath;
         QString supervisedPath;
         unsigned int regionChoosed;
         SupervisedImage readSupervisedImage() const;
-    }ChosenRegion;
+    };
 private:
     QList<ChosenRegion> regions;
     int actualRegion;
