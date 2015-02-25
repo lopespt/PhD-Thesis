@@ -24,5 +24,7 @@ bool Utils::fileExists(char *filename){
 
 void warn(const char* format, ...){
     va_list v1;
-    fprintf(stderr, format, v1);
+    va_start(v1, format);
+    vfprintf(stderr, format, v1);
+    va_end(v1);
 }

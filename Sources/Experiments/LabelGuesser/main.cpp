@@ -80,7 +80,7 @@ int main2(int argc, char *argv[]){
 
 int main(int argc, char *argv[]){
     time_t inicio = time(0);
-    ConfigFileParser config("/tmp/Implementation-Build/bin/config_fixed_files.ini");
+    ConfigFileParser config(argv[1]);
     FeaturesComplexNetwork cn = config.getComplexNetwork();
     bool constructor_enabled = config.getValue("constructor_general/constructor_enabled").toBool();
     bool constructor_save = config.getValue("constructor_general/save").toBool();
