@@ -4,8 +4,7 @@
 #include <QList>
 #include <QString>
 #include "DatabaseReader.hpp"
-
-class SupervisedImage;
+#include <Utilities/SupervisedImage.hpp>
 
 class RegionChooser
 {
