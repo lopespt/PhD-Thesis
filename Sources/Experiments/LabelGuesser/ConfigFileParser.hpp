@@ -11,6 +11,7 @@ class DatabaseReader;
 class CoOcurrenceEquation;
 class FeaturesComplexNetwork;
 class RegionChooser;
+class KFoldDatabaseReader;
 
 class ConfigFileParser
 {
@@ -21,7 +22,9 @@ private:
     DatabaseReader *trainDatabaseCreated;
     DatabaseReader *testDatabaseCreated;
     CoOcurrenceEquation* coocurrenceCreated;
+    KFoldDatabaseReader* kfoldCreated;
 
+    void loadKfold();
 public:
     ConfigFileParser(QString filePath);
     QList<const FeatureFactoryAbstract*> getFactories();
@@ -30,6 +33,7 @@ public:
     DatabaseReader* getTestDatabaseReader();
     FeaturesComplexNetwork getComplexNetwork();
     RegionChooser getRegionChooser();
+
     QVariant getValue(QString str);
     bool cnLoaded();
 

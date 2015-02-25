@@ -8,6 +8,7 @@
 #include <QFile>
 #include <QtAlgorithms>
 #include <assert.h>
+#include <Utilities/Utils.hpp>
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath){
 
@@ -72,7 +73,7 @@ const QList<Region>& SupervisedImage::getRegions() {
 const QImage* SupervisedImage::getImage() {
     if(image.isNull()){
         if(!image.load(this->imagePath)){
-            printf("Error reading image: %s\n", this->imagePath.toStdString().c_str());
+            warn("Error reading image: %s\n", this->imagePath.toStdString().c_str());
         }
     }
     return &this->image;

@@ -15,7 +15,9 @@
 
 ConfigFileParser::ConfigFileParser(QString filePath):settings(filePath, QSettings::IniFormat),
     trainDatabaseCreated(NULL),
-    testDatabaseCreated(NULL)
+    testDatabaseCreated(NULL),
+    coocurrenceCreated(NULL),
+    kfoldCreated(NULL)
 {
 
 }
@@ -45,23 +47,38 @@ QList<const FeatureFactoryAbstract*> ConfigFileParser::getFactories(){
     return factoriesCreated;
 }
 
+
+void ConfigFileParser::loadKfold(){
+    if(kfoldCreated)
+        return;
+
+    QString database = settings.value("global/databaseReader").toString();
+    if(database.toLower() == "kfold"){
+        QString path = settings.value("kfold/file").toString();
+        if(settings.value("kfold/load").toBool()){
+            kfoldCreated = new KFoldDatabaseReader(path);
+            trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTrainReader() );
+            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTestReader() );
+        }else{
+            QString sunPath = settings.value("sun/database_path").toString();
+            float trainPerc = settings.value("kfold/train_percentage").toFloat();
+            SunDatabaseReader sunReader = SunDatabaseReader(sunPath);
+            kfoldCreated = new KFoldDatabaseReader(sunReader,  trainPerc);
+            if(settings.value("kfold/save").toBool())
+                kfoldCreated->save(path);
+
+        }
+    }
+}
+
 DatabaseReader* ConfigFileParser::getTrainDatabaseReader(){
     if(trainDatabaseCreated)
         return trainDatabaseCreated;
 
     QString database = settings.value("global/databaseReader").toString();
     if(database.toLower() == "kfold"){
-        QString path = settings.value("kfold/file").toString();
-        if(settings.value("kfold/load").toBool()){
-            trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(KFoldDatabaseReader(path).getTrainReader());
-        }else{
-            QString sunPath = settings.value("sun/database_path").toString();
-            float trainPerc = settings.value("kfold/train_percentage").toFloat();
-            SunDatabaseReader sunReader = SunDatabaseReader(sunPath);
-            trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(KFoldDatabaseReader(sunReader,  trainPerc).getTrainReader());
-            if(settings.value("kfold/save").toBool())
-                dynamic_cast<KFoldDatabaseReader*>(trainDatabaseCreated)->save(path);
-        }
+        loadKfold();
+        trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTrainReader() );
     }else if(database.toLower() == "sun"){
             QString sunPath = settings.value("sun/database_path").toString();
             trainDatabaseCreated = new SunDatabaseReader(sunPath);
@@ -76,17 +93,7 @@ DatabaseReader* ConfigFileParser::getTestDatabaseReader(){
 
     QString database = settings.value("global/databaseReader").toString();
     if(database.toLower() == "kfold"){
-        QString path = settings.value("kfold/file").toString();
-        if(settings.value("kfold/load").toBool()){
-            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(KFoldDatabaseReader(path).getTestReader());
-        }else{
-            QString sunPath = settings.value("sun/database_path").toString();
-            float trainPerc = settings.value("kfold/train_percentage").toFloat();
-            SunDatabaseReader sunReader = SunDatabaseReader(sunPath);
-            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(KFoldDatabaseReader(sunReader,  trainPerc).getTestReader());
-            if(settings.value("kfold/save").toBool())
-                dynamic_cast<KFoldDatabaseReader*>(testDatabaseCreated)->save(path);
-        }
+            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTestReader() );
     }else if(database.toLower() == "sun"){
             QString sunPath = settings.value("sun/database_path").toString();
             testDatabaseCreated = new SunDatabaseReader(sunPath);
@@ -156,5 +163,8 @@ ConfigFileParser::~ConfigFileParser()
 
     if(coocurrenceCreated)
         delete coocurrenceCreated;
+
+    if(kfoldCreated)
+        delete kfoldCreated;
 }
 

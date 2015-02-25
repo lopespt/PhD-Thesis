@@ -21,3 +21,8 @@ bool Utils::fileExists(char *filename){
     }
     return false;
 }
+
+void warn(const char* format, ...){
+    va_list v1;
+    fprintf(stderr, format, v1);
+}

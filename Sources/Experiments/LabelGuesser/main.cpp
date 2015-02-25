@@ -16,6 +16,9 @@
 #include <Utilities/Utils.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include "ConfigFileParser.hpp"
+#include <QCommandLineOption>
+#include <QCommandLineParser>
+#include <time.h>
 
 void createFiles(){
     FeaturesComplexNetwork cn;
@@ -76,19 +79,32 @@ int main2(int argc, char *argv[]){
 }
 
 int main(int argc, char *argv[]){
-    ConfigFileParser config("config.ini");
+    time_t inicio = time(0);
+    ConfigFileParser config("/tmp/Implementation-Build/bin/config_fixed_files.ini");
     FeaturesComplexNetwork cn = config.getComplexNetwork();
+    bool constructor_enabled = config.getValue("constructor_general/constructor_enabled").toBool();
+    bool constructor_save = config.getValue("constructor_general/save").toBool();
+    bool guesser_execute = config.getValue("label_guesser_experiment/execute").toBool();
+    QString guesser_output = config.getValue("label_guesser_experiment/output_file").toString();
+
     if(!config.cnLoaded()){
         ComplexNetworkConstructor constructor = config.getConstructor(cn);
-        constructor.build();
-        if(config.getValue("constructor_general/save").toBool())
-            cn.save(config.getValue("FeaturesComplexNetwork/file").toString().toStdString().c_str());
+        if(constructor_enabled){
+            constructor.build();
+            if(constructor_save)
+                cn.save(config.getValue("FeaturesComplexNetwork/file").toString().toStdString().c_str());
+        }
     }
 
-    printf("passei\n");
-    LabelGuesserExperiment l1(cn, config.getFactories(), config.getRegionChooser(), 1, LabelGuesserExperiment::XorProbabilities);
-    printf("passei\n");
-    l1.execute("saida.txt");
+    RegionChooser region_chooser =  config.getRegionChooser();
+
+    if(guesser_execute){
+        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, 1, LabelGuesserExperiment::XorProbabilities);
+        printf("Iniciando experimento\n");
+        l1.execute(guesser_output);
+        printf("Terminado\n");
+        printf("Tempo total %.2f horas\n", (time_t(0) - inicio)/60.0/60.0);
+    }
 
     return 0;
 }
