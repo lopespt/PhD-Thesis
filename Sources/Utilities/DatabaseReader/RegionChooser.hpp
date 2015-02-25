@@ -10,6 +10,7 @@ class RegionChooser
 {
 public:
     class ChosenRegion{
+    public:
         QString imagePath;
         QString supervisedPath;
         unsigned int regionChoosed;
