@@ -86,6 +86,24 @@ int main(int argc, char *argv[]){
     bool constructor_save = config.getValue("constructor_general/save").toBool();
     bool guesser_execute = config.getValue("label_guesser_experiment/execute").toBool();
     QString guesser_output = config.getValue("label_guesser_experiment/output_file").toString();
+    int walk_length = config.getValue("label_guesser_experiment/walk_length").toInt();
+    LabelGuesserExperiment::method method;
+    QStringList vals;
+    vals << "xor"<< "mult" << "add";
+    switch(vals.indexOf(config.getValue("label_guesser_experiment/method").toString())){
+    case 0:
+        method = LabelGuesserExperiment::XorProbabilities;
+        break;
+     case 1:
+        method = LabelGuesserExperiment::MultProbabilities;
+        break;
+      case 2:
+        method = LabelGuesserExperiment::SumProbabilities;
+        break;
+    default:
+        warn("Erro: não foi possivel encontrar um methodo para guesser\n");
+ }
+
 
     if(!config.cnLoaded()){
         ComplexNetworkConstructor constructor = config.getConstructor(cn);
@@ -99,7 +117,7 @@ int main(int argc, char *argv[]){
     RegionChooser region_chooser =  config.getRegionChooser();
 
     if(guesser_execute){
-        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, 1, LabelGuesserExperiment::XorProbabilities);
+        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method);
         printf("Iniciando experimento\n");
         l1.execute(guesser_output);
         printf("Terminado\n");
