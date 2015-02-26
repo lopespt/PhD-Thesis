@@ -136,7 +136,7 @@ RegionChooser ConfigFileParser::getRegionChooser(){
     if(settings.value("region_chooser/load").toBool())
         return RegionChooser(f);
 
-    DatabaseReader *reader = getTrainDatabaseReader();
+    DatabaseReader *reader = getTestDatabaseReader();
     RegionChooser r(*reader);
     if(settings.value("region_chooser/save").toBool())
         r.save(f);
