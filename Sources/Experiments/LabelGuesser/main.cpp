@@ -80,6 +80,9 @@ int main2(int argc, char *argv[]){
 
 int main(int argc, char *argv[]){
     time_t inicio = time(0);
+
+    printf("tempo = %f\n", (time(0) - inicio)/60./60.);
+
     ConfigFileParser config(argv[1]);
     FeaturesComplexNetwork cn = config.getComplexNetwork();
     bool constructor_enabled = config.getValue("constructor_general/constructor_enabled").toBool();
@@ -101,7 +104,8 @@ int main(int argc, char *argv[]){
         method = LabelGuesserExperiment::SumProbabilities;
         break;
     default:
-        warn("Erro: não foi possivel encontrar um methodo para guesser\n");
+        warn("Erro: não foi possivel encontrar um metodo para guesser utilizando default XOR\n");
+        method = LabelGuesserExperiment::XorProbabilities;
  }
 
 

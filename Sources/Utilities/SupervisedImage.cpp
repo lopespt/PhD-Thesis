@@ -9,6 +9,7 @@
 #include <QtAlgorithms>
 #include <assert.h>
 #include <Utilities/Utils.hpp>
+#include <QSize>
 
 SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath){
 
@@ -53,6 +54,10 @@ QPolygon SupervisedImage::extractPolygon(QString Xml){
         res << QPoint(x,y);
     }
     return res;
+}
+
+QSize SupervisedImage::getSize(){
+
 }
 
 QString SupervisedImage::extractLabel(QString Xml){
