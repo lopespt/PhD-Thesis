@@ -56,9 +56,6 @@ QPolygon SupervisedImage::extractPolygon(QString Xml){
     return res;
 }
 
-QSize SupervisedImage::getSize(){
-
-}
 
 QString SupervisedImage::extractLabel(QString Xml){
        
