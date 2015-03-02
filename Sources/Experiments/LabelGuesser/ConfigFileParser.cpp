@@ -144,8 +144,8 @@ RegionChooser ConfigFileParser::getRegionChooser(){
     return r;
 }
 
-QVariant ConfigFileParser::getValue(QString str){
-    return settings.value(str);
+QVariant ConfigFileParser::getValue(QString str, QVariant def){
+    return settings.value(str, def);
 }
 
 ConfigFileParser::~ConfigFileParser()

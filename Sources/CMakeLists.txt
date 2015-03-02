@@ -13,7 +13,7 @@ INCLUDE_DIRECTORIES(${LEMON_INCLUDE_DIRS})
 
 #Set include directory to the root "include" dir
 ADD_SUBDIRECTORY(Utilities)
-#ADD_SUBDIRECTORY(Segmentation)
+ADD_SUBDIRECTORY(Segmentation)
 ADD_SUBDIRECTORY(GuiUtilities)
 ADD_SUBDIRECTORY(Experiments)
 ADD_SUBDIRECTORY(Tests)

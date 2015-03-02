@@ -27,6 +27,7 @@ int main(int argc, char *argv[]){
     factories.append(&orientationFactory);
     factories.append(&areaFactory);
 
+
     //FeaturesComplexNetwork cn;
     //cn.load(parser.positionalArguments().first().toStdString().c_str(), factories);
     //printf("%d\n", cn.getNumNodes());

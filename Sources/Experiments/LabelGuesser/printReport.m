@@ -1,16 +1,23 @@
 
 
-function printReport(filename)
+function varargout = printReport(filename)
 
     rep = readReport(filename);
     testname = regexprep(filename, '.+/','');
     disp('======================================================');
     disp(testname)
+    disp(['Area = ', num2str(100 - 100*sum(rep.posicoes) / (max(rep.posicoes) * max(size(rep.posicoes))) ), '%']);
     disp(['mean = ', num2str(mean(rep.posicoes))]);
     disp(['std  = ', num2str(std(rep.posicoes))]);
     disp(['not identified  = ', num2str( (100 - max(size(rep.posicoes) / max(size(rep.posicaoRankCorreto)))*100 )), '%']);
-
-    plot(sort(rep.posicoes));
+    if nargout == 0
+        plot(sort(rep.posicoes));
+        ylabel('Posicao em que o no correto estava')
+        xlabel('Caso de teste')
+    else
+        varargout(1) = {rep};
+    end
+        
     disp('======================================================');
     n = 30;
     disp([num2str(n), ' Most erroneous classifications']);
@@ -19,7 +26,6 @@ function printReport(filename)
     for i=1:n
        disp([rep.Escondido(b(i),:), '  ', num2str(rep.posicaoRankCorreto(b(i))) ,'  ', rep.Top10Escolhidos(b(i),:)])
     end
-    
     
 end
 

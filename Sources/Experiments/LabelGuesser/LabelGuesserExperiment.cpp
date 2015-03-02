@@ -17,12 +17,13 @@
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
 #include <time.h>
 
-LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser , int walkLenght, method m):
+LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser , int walkLenght, method m, bool useLabels):
     cn(cn),
     factories(factories),
     chooser(chooser),
     walkLenght(walkLenght),
-    m(m)
+    m(m),
+    useLabels(useLabels)
 {
 
 }
@@ -32,7 +33,7 @@ QList< FeatureAbstractPtr > LabelGuesserExperiment::getFeaturesHints(SupervisedI
   //  char buffer[100];
     for(int i=0;i<img.getRegions().size();i++){
         for(const FeatureFactoryAbstract*& fact: factories){
-            if(i != hide_idx){
+            if(i != hide_idx && (useLabels || fact->getType()!=0)){
                 ret.append(fact->CreateFromRegion(&img.getRegions()[i]));
     //            printf("dica: %s\n",ret.last()->asString(buffer));
             }

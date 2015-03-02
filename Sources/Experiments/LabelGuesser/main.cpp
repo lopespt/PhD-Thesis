@@ -91,6 +91,8 @@ int main(int argc, char *argv[]){
     QString guesser_output = config.getValue("label_guesser_experiment/output_file").toString();
     int walk_length = config.getValue("label_guesser_experiment/walk_length").toInt();
     LabelGuesserExperiment::method method;
+    bool useLabels = config.getValue("label_guesser_experiment/use_labels", true).toBool();
+
     QStringList vals;
     vals << "xor"<< "mult" << "add";
     switch(vals.indexOf(config.getValue("label_guesser_experiment/method").toString())){
@@ -118,10 +120,11 @@ int main(int argc, char *argv[]){
         }
     }
 
+
     RegionChooser region_chooser =  config.getRegionChooser();
 
     if(guesser_execute){
-        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method);
+        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method, useLabels);
         printf("Iniciando experimento\n");
         l1.execute(guesser_output);
         printf("Terminado\n");

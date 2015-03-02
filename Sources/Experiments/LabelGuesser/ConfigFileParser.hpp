@@ -34,7 +34,7 @@ public:
     FeaturesComplexNetwork getComplexNetwork();
     RegionChooser getRegionChooser();
 
-    QVariant getValue(QString str);
+    QVariant getValue(QString str, QVariant def = QVariant());
     bool cnLoaded();
 
     ~ConfigFileParser();

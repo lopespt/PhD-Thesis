@@ -36,10 +36,11 @@ private:
     RegionChooser chooser;
     int walkLenght;
     method m;
+    bool useLabels;
 
 public:
 
-    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser, int walkLenght, method m);
+    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser, int walkLenght, method m, bool useLabels = true);
 
 
 
