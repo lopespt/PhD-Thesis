@@ -11,6 +11,10 @@ IF(COMMAND cmake_policy)
 ENDIF(COMMAND cmake_policy)
 
 PROJECT(PhDThesis C CXX)
+
+include(DownloadPackages.txt)
+
+
 SET(CMAKE_AUTOMOC TRUE)
 SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 

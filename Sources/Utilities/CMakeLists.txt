@@ -15,6 +15,7 @@ FILE(GLOB_RECURSE Source_Files
     IterativeRandomWalk.cpp
     KFoldDatabaseReader.cpp
     Utils.cpp
+    *.cpp
 )
 ADD_LIBRARY(Utilities ${Source_Files})
 TARGET_LINK_LIBRARIES(Utilities FeatureExtractors ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ${LEMON_LIBRARIES} ComplexNetwork)

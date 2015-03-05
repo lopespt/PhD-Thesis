@@ -22,6 +22,8 @@ class Region{
         mutable cv::Mat cvmask;
 
     public:
+        Region(QImage *image, cv::Mat mask);
+        Region(QImage *image, QPolygon boundary);
         Region(SupervisedImage* supervisedImage, QImage *image, QPolygon boundary, QString label);
         void show_region();
         ~Region();

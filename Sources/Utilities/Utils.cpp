@@ -1,7 +1,12 @@
 #include "Utils.hpp"
 #include <string.h>
+#include <QImage>
+#include <opencv/cv.h>
+#include <opencv/cxcore.h>
+#include <opencv/highgui.h>
+#include <vector>
 
-
+using namespace std;
 char* Utils::readLine(char *buffer, int i, FILE* f){
 
     if(fgets(buffer, i, f) != NULL){
@@ -13,7 +18,7 @@ char* Utils::readLine(char *buffer, int i, FILE* f){
 }
 
 
-bool Utils::fileExists(char *filename){
+bool Utils::fileExists(const char *filename){
     FILE *f = fopen(filename, "r");
     if(f){
         fclose(f);
@@ -28,3 +33,31 @@ void warn(const char* format, ...){
     vfprintf(stderr, format, v1);
     va_end(v1);
 }
+cv::Mat Utils::QImage2Mat(const QImage& img){
+    cv::Mat ret(img.height(), img.width(), CV_8UC4, (uchar*)img.bits(), img.bytesPerLine());
+    return ret;
+}
+
+
+QPolygon Utils::Mask2QPolygon(const cv::Mat& img){
+    QPolygon ret;
+    vector<vector<cv::Point> > contours;
+    vector<cv::Vec4i> hierarchy;
+    cv::findContours( img.clone(), contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_KCOS, cv::Point(0, 0) );
+
+    for(int i=0;i<contours[0].size();i++){
+        ret.append(QPoint(contours[0][i].x,contours[0][i].y));
+    }
+    return ret;
+}
+
+
+
+
+
+
+
+
+
+
+

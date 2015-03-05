@@ -1,0 +1,18 @@
+# vim:set filetype=cmake :
+include(ExternalProject)
+
+set(cgicc_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/cgi")
+set(cgicc_INSTALL_DIR "${CMAKE_CURRENT_BINARY_DIR}/cgi")
+set(cgicc_CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${cgicc_INSTALL_DIR})
+
+message("cgicc_PREFIX='${cgicc_PREFIX}'")
+message("cgicc_INSTALL_DIR='${cgicc_INSTALL_DIR}'")
+message("cgicc_CMAKE_ARGS='${cgicc_CMAKE_ARGS}'")
+message("GIT_EXECUTABLE='${GIT_EXECUTABLE}'")
+
+ExternalProject_Add(cgicc_gg
+      PREFIX ${cgicc_PREFIX}
+         URL http://ftp.gnu.org/gnu/cgicc/cgicc-3.2.tar.gz
+         CONFIGURE_COMMAND ./configure --prefix=${CMAKE_BINARY_DIR}
+         BUILD_IN_SOURCE 1
+)

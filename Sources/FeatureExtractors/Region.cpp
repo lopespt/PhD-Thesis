@@ -10,6 +10,15 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv/highgui.h>
 
+
+Region::Region(QImage *image, cv::Mat mask):supervisedImage(NULL) ,image(image),boundary(boundary),  label(""){
+
+}
+
+Region::Region(QImage *image, QPolygon boundary):supervisedImage(NULL) ,image(image),boundary(boundary),  label(""){
+
+}
+
 Region::Region(SupervisedImage* supervisedImage,QImage *image, QPolygon boundary, QString label):supervisedImage(supervisedImage) ,image(image),boundary(boundary),  label(label){
 }
 
