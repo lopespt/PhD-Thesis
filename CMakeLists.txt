@@ -12,7 +12,7 @@ ENDIF(COMMAND cmake_policy)
 
 PROJECT(PhDThesis C CXX)
 
-include(DownloadPackages.txt)
+#include(DownloadPackages.txt)
 
 
 SET(CMAKE_AUTOMOC TRUE)

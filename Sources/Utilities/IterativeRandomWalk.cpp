@@ -25,7 +25,7 @@ void IterativeRandomWalk::Execute(ListDigraph::Node start_node, unsigned int max
     clearMap(probs);
 
     probs[start_node] = 1;
-    for(int i=0; i<max_path_length; i++){
+    for(unsigned int i=0; i<max_path_length; i++){
         clearMap(probs2);
         for(ListDigraph::NodeIt node(cn); node != INVALID; ++node){
             if( probs[node] ){

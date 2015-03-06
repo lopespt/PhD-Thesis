@@ -36,7 +36,7 @@ vector<int> HsvFeatureFactory::extractHSVFast(cv::Mat image, cv::Mat mask) const
             }
         }
     }
-    for(int i=0;i<ret.size();i++){
+    for(unsigned int i=0;i<ret.size();i++){
         ret[i] = MIN(ret[i]*1./total*(disc-1)+0.5, (disc-1));
     }
     return ret;
@@ -65,7 +65,7 @@ vector<int> HsvFeatureFactory::extractHSV(cv::Mat image, cv::Mat mask) const{
         }
     }
     //Normalize and discretize
-    for(int i=0;i<ret.size();i++){
+    for(unsigned int i=0;i<ret.size();i++){
         ret[i] = ret[i]*1.0/total*(disc - 1)+0.5;
     }
     printf("\n");

@@ -10,7 +10,7 @@ HsvFeature::HsvFeature(vector<int> content):Feature<vector<int>>(content, 3, "Hs
 
 const char* HsvFeature::asString(char *buffer) const{
     char *start=buffer;
-    for(int i=0; i < content.size(); i++){
+    for(unsigned int i=0; i < content.size(); i++){
         buffer += sprintf(buffer, "%-2d ", content[i]);
     }
     return start;
@@ -24,7 +24,7 @@ uint HsvFeature::getHash() const{
 
 void HsvFeature::WriteToStream(ostream &stream) const{
     stream << type << " ";
-    for(int i=0; i < content.size(); i++){
+    for(unsigned int i=0; i < content.size(); i++){
         stream << content[i];
         stream << " ";
     }

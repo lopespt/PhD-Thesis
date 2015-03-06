@@ -11,7 +11,7 @@
 #include <opencv/highgui.h>
 
 
-Region::Region(QImage *image, cv::Mat mask):supervisedImage(NULL) ,image(image),boundary(boundary),  label(""){
+Region::Region(QImage *image, cv::Mat mask):supervisedImage(NULL) ,image(image),boundary(),  label(""){
 
 }
 
