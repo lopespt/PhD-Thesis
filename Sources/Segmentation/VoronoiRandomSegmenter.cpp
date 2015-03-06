@@ -40,4 +40,5 @@ SegmentedImage VoronoiRandomSegmenter::execute(const cv::Mat &img){
     }
     fflush(stdout);
 */
+return SegmentedImage();
 }
