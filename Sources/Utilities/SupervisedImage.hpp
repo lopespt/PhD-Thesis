@@ -7,6 +7,7 @@
 #include <QString>
 #include <QImage>
 #include <opencv/cv.h>
+#include <FeatureExtractors/QImageCV.hpp>
 
 using namespace std;
 
@@ -17,10 +18,8 @@ class SupervisedImage{
         bool alreadyParsed;
         QString imagePath;
         QString supervisedPath;
-        QImage image;
+        QImageCV image;
         QList<Region> regions;
-        mutable cv::Mat hsvImage;
-        mutable cv::Mat bgrImage;
         static QPolygon extractPolygon(QString Xml);
         static QString extractLabel(QString Xml);
         void parse_xml();
@@ -30,7 +29,7 @@ class SupervisedImage{
         SupervisedImage(QString imagePath, QString supervisedPath);
         ~SupervisedImage();
         const QList<Region>& getRegions();
-        const QImage* getImage() ;
+        const QImageCV* getImage() ;
         QString getImagePath() const;
         QString getSupervisedPath() const;
         cv::Mat getCvBGRImage() const;

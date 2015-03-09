@@ -2,14 +2,15 @@
 #define SEGMENTATIONEVALUATOR_HPP
 
 #include <Utilities/FeaturesComplexNetwork.hpp>
+class SegmentedImage;
 
 class SegmentationEvaluator
 {
-private:
-    const FeaturesComplexNetwork &cn;
+protected:
+    FeaturesComplexNetwork &cn;
 public:
-    SegmentationEvaluator(const FeaturesComplexNetwork &cn);
-    float evaluate();
+    SegmentationEvaluator(FeaturesComplexNetwork &cn);
+    virtual float evaluate(const SegmentedImage &image)=0;
     ~SegmentationEvaluator();
 };
 

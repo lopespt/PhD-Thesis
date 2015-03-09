@@ -2,5 +2,9 @@
 
 Segmenter::Segmenter()
 {
-    printf("Inicializado\n");
+//    printf("Inicializado\n");
+}
+
+Segmenter::~Segmenter(){
+
 }

@@ -24,8 +24,15 @@
 #include <Utilities/VoronoiDiagramGenerator.hpp>
 #include <Utilities/Utils.hpp>
 #include <QImage>
+#include <Segmentation/VoronoiRandomSegmenter.hpp>
+#include <Segmentation/SegmentedImage.hpp>
+#include <FeatureExtractors/Region.hpp>
+#include <Segmentation/EntropyXorSegmentationEvaluator.hpp>
 
 using namespace cv;
+using namespace Voronoi;
+
+
 int main(int argc, char** argv){
     QImage test("/Users/wachs/cores.jpg");
     imshow("teste", Utils::QImage2Mat(test));
@@ -38,12 +45,11 @@ int main(int argc, char** argv){
     v.generateVoronoi(x,y,5,-100,500,-100,500);
 
     float px, py, p2x, p2y;
-    printf("entrando no while\n");
     v.resetIterator();
     //rectangle(m, cv::Point(0,0), cv::Point(399,399),cvScalarAll(255));
     while(v.getNext(px,py,p2x,p2y)){
         line(m,cv::Point(px,py), cv::Point(p2x,p2y), cvScalarAll(255), 1);
-        printf("%f %f %f %f\n", px, py, p2x, p2y);
+        //printf("%f %f %f %f\n", px, py, p2x, p2y);
     }
     Mat vor = m.clone();
     for(int i=0;i<5;i++){

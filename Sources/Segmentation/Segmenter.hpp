@@ -5,15 +5,14 @@
 #include <opencv/cv.h>
 #include "SegmentedImage.hpp"
 #include <Utilities/Utils.hpp>
+#include <QList>
+
 class Segmenter
 {
 public:
     Segmenter();
-    SegmentedImage execute(const QImage &img){
-        return execute(Utils::QImage2Mat(img));
-     }
+    virtual QList<SegmentedImage> execute(const QImage &img, int nSegmentations)=0;
 
-    virtual SegmentedImage execute(const cv::Mat& m)=0;
     virtual ~Segmenter();
 };
 

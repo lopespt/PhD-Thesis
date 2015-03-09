@@ -28,7 +28,7 @@
 */
 
 #include "VoronoiDiagramGenerator.hpp"
-
+namespace Voronoi{
 VoronoiDiagramGenerator::VoronoiDiagramGenerator()
 {
 	siteidx = 0;
@@ -1002,5 +1002,7 @@ struct Site * VoronoiDiagramGenerator::nextone()
 	}
 	else	
 		return( (struct Site *)NULL);
+}
+
 }
 

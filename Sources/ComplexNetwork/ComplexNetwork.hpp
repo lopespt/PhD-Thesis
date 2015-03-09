@@ -53,10 +53,21 @@ public:
         return arcs[a];
     }
 
+    const E& getArcValue(Arc a) const {
+        assert( valid(a) );
+        return arcs[a];
+    }
+
     E& getArcValue(int a){
         assert( valid(arcFromId(a)) );
         return arcs[ this->arcFromId(a) ];
     }
+
+    const E& getArcValue(int a) const{
+        assert( valid(arcFromId(a)) );
+        return arcs[ this->arcFromId(a) ];
+    }
+
 
     E& getArcValue(Node a, Node b){
         assert( valid(lookup(a,b)) );

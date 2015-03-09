@@ -20,7 +20,7 @@ public:
     template<typename T>
     static ListDigraph::ArcMap<T>& fillMap(const ListDigraph& graph, ListDigraph::ArcMap<T> &map, const T& value);
 
-    static void getWeights(FeaturesComplexNetwork& cn, ListDigraph::ArcMap<double>& weights);
+    static void getWeights(const FeaturesComplexNetwork& cn, ListDigraph::ArcMap<double>& weights);
     static void normalizeOutDegrees(ListDigraph& complexNetwork, const ListDigraph::ArcMap<double> &weights, ListDigraph::ArcMap<double> &output);
     static void addAutoLoop(ListDigraph& cn, ListDigraph::ArcMap<double> &arcs, double value=1);
 };

@@ -5,8 +5,8 @@ GraphUtilities::GraphUtilities()
 {
 }
 
-void GraphUtilities::getWeights(FeaturesComplexNetwork &cn, ListDigraph::ArcMap<double> &weights){
-    for( FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it){
+void GraphUtilities::getWeights(const FeaturesComplexNetwork &cn, ListDigraph::ArcMap<double> &weights){
+    for(FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it){
         weights[it] = cn.getArcValue(it).getWeight();
     }
 }

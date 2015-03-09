@@ -84,7 +84,7 @@ FeatureAbstractPtr HsvFeatureFactory::CreateFromStream(istream &stream) const{
 }
 
 FeatureAbstractPtr HsvFeatureFactory::CreateFromRegion(const Region *r) const {
-    FeatureAbstractPtr hsvFeature(new HsvFeature(extractHSVFast(r->getSupervisedImage()->getCvHsvImage(),r->getMask())));
+    FeatureAbstractPtr hsvFeature(new HsvFeature(extractHSVFast(r->getImage()->getCvHsvImage(),r->getMask())));
     return hsvFeature;
 }
 
