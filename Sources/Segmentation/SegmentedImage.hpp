@@ -13,7 +13,7 @@ private:
     QVector<Region> regions;
 
 public:
-    SegmentedImage(const QImageCV &img, QVector<Region> regions);
+    SegmentedImage(QImageCV img, QVector<Region> regions);
 
     const QImageCV &getImage() const;
     const QVector<Region>& getRegions() const;

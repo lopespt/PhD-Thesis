@@ -2,13 +2,17 @@
 #include <opencv/highgui.h>
 #include <Utilities/Utils.hpp>
 
-SegmentedImage::SegmentedImage(const QImageCV &img, QVector<Region> regions):
+SegmentedImage::SegmentedImage(QImageCV img, QVector<Region> regions):
     image(img),
     regions(regions)
 {
-    for(Region r:this->regions){
+    for(Region& r:this->regions){
         r.setImage(&image);
     }
+
+    /*for(Region& r:this->regions){
+        printf("%d\n", r.getImage()->size().width());
+    }*/
 }
 
 

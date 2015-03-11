@@ -22,7 +22,8 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image){
 
     QList<FeatureAbstractPtr> hints;
     for(const Region& r: image.getRegions() ){
-        hints.append( hsv.CreateFromRegion(&r) );
+        printf("%d\n", r.getImage()->width());
+        //hints.append( hsv.CreateFromRegion(&r) );
     }
     puts("teste2");
     IterativeRandomWalk rw(cn, weights);
