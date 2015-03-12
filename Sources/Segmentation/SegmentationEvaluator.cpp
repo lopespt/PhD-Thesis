@@ -1,6 +1,8 @@
 #include "SegmentationEvaluator.hpp"
 
-SegmentationEvaluator::SegmentationEvaluator(FeaturesComplexNetwork &cn):cn(cn)
+SegmentationEvaluator::SegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories):
+    cn(cn),
+    factories(factories)
 {
 
 }

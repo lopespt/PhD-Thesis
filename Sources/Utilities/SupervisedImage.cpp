@@ -11,8 +11,7 @@
 #include <Utilities/Utils.hpp>
 #include <QSize>
 
-SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath){
-
+SupervisedImage::SupervisedImage(QString imagePath, QString supervisedPath):alreadyParsed(false), imagePath(imagePath), supervisedPath(supervisedPath), errorState(false){
 }
 
 
@@ -36,7 +35,7 @@ void SupervisedImage::parse_xml(){
         QString label    = extractLabel(regionXml);
         label.prepend('\"').append('\"');
         if(polygon.size() != 0 ){
-            this->regions << (Region(this, &this->image, polygon, label));
+            this->regions << (Region(&this->image, polygon, label));
         }
     }
     alreadyParsed=true;
@@ -72,10 +71,11 @@ const QList<Region>& SupervisedImage::getRegions() {
 }
 
 
-const QImageCV *SupervisedImage::getImage() {
+const QImageCV *SupervisedImage::getImage() const {
     if(image.isNull()){
         if(!image.load(this->imagePath)){
             warn("Error reading image: %s\n", this->imagePath.toStdString().c_str());
+            errorState = true;
         }
     }
     return &this->image;
@@ -95,6 +95,11 @@ cv::Mat SupervisedImage::getCvBGRImage() const{
 
 cv::Mat SupervisedImage::getCvHsvImage() const{
     return this->image.getCvHsvImage();
+}
+
+bool SupervisedImage::hasError() const {
+    getImage();
+    return errorState;
 }
 
 SupervisedImage::~SupervisedImage(){

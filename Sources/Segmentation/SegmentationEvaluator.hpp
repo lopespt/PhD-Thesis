@@ -8,8 +8,9 @@ class SegmentationEvaluator
 {
 protected:
     FeaturesComplexNetwork &cn;
+    QList<const FeatureFactoryAbstract*> factories;
 public:
-    SegmentationEvaluator(FeaturesComplexNetwork &cn);
+    SegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories);
     virtual float evaluate(const SegmentedImage &image)=0;
     ~SegmentationEvaluator();
 };

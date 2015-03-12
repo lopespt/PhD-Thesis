@@ -46,7 +46,7 @@ public:
             if(pi > 0)
                 total += pi * log2(pi);
         }
-        return total;
+        return -total;
     }
 };
 

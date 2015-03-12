@@ -11,15 +11,23 @@ FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region* region) co
     float vect;
     region->getMask();
     float area = 0;
-    bool ok;
-    for(int i=0;i<region->getBoundaryRect().width();i++){
+    //bool ok;
+    /*for(int i=0;i<region->getBoundaryRect().width();i++){
         for(int j=0;j<region->getBoundaryRect().height();j++){
-           region->getPixelRelative(i,j, &ok); 
+           ok = region->getBoundary().containsPoint(QPoint(i,j), Qt::OddEvenFill);
            if(ok)
                area++;
         }
+    }*/
+    QPolygon boundary = region->getBoundary();
+    for(unsigned int i=0; i< boundary.size() - 1;i++){
+        area += ( 1.0*boundary[i].x()*boundary[i+1].y() - 1.0*boundary[i+1].x()*boundary[i].y() );
     }
-    vect = area / (region->getBoundaryRect().width() * region->getBoundaryRect().height());
+    area += ( 1.0*boundary.last().x()*boundary[0].y() - 1.0*boundary[0].x()*boundary.last().y() );
+    area = fabs(area)/2.0;
+
+    vect = area / (region->getImage()->width() * region->getImage()->height());
+
     //Discretization
 
     vect = ((int)(vect * discretization))/(float)discretization;

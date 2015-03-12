@@ -1,6 +1,8 @@
 #include "VoronoiRandomSegmenter.hpp"
 #include <opencv/cv.h>
 #include <Utilities/VoronoiDiagramGenerator.hpp>
+#include <QList>
+#include <opencv/highgui.h>
 
 using namespace cv;
 using namespace Voronoi;
@@ -18,6 +20,14 @@ void VoronoiRandomSegmenter::setNumberOfRegions(int regions){
     this->regions = regions;
 }
 
+inline bool hasNeightboor(float a, const vector<float>& v){
+    for(const float& f :  v){
+        if(fabs(a - f) <= 3)
+            return true;
+    }
+    return false;
+}
+
 SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) const{
     Mat img = Utils::QImage2Mat(image);
 
@@ -27,11 +37,22 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
     vector<float> x;
     vector<float> y;
     for(int i=0; i < regions; i++){
-        x.push_back(rand() % img.size().width);
-        y.push_back(rand() % img.size().height);
+        
+        float px;
+        float py;
+        //find valid values of px and py
+        do{
+            px= (rand() % img.size().width-3) + 3;
+        }while( hasNeightboor(px, x));
+        do{
+            py = (rand() % img.size().height-3) + 3;
+        }while( hasNeightboor(py, y));
+               
+        x.push_back( px );
+        y.push_back( py );
     }
 
-    v.generateVoronoi(x.data(), y.data(), regions, -100, image.width()+100, -100, image.height()+100);
+    v.generateVoronoi(x.data(), y.data(), regions, -10, image.width()+10, -10, image.height()+10);
 
     float px, py, p2x, p2y;
     v.resetIterator();
@@ -41,7 +62,8 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
         //printf("%f %f %f %f\n", px, py, p2x, p2y);
     }
     Mat vor = m.clone();
-    QVector<Region> regions;
+
+    QList<Region> regions;
 
 
     for(unsigned int i=0;i<this->regions;i++){

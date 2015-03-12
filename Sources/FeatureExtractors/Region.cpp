@@ -11,15 +11,15 @@
 #include <opencv/highgui.h>
 #include <Utilities/Utils.hpp>
 
-Region::Region(const QImageCV *image, cv::Mat mask):supervisedImage(NULL) ,image(image),boundary( Utils::Mask2QPolygon(mask) ),  label(""){
+Region::Region(const QImageCV* image, cv::Mat mask):image(image),boundary( Utils::Mask2QPolygon(mask) ),  label(""){
 
 }
 
-Region::Region(const QImageCV *image, QPolygon boundary):supervisedImage(NULL) ,image(image),boundary(boundary),  label(""){
+Region::Region(const QImageCV* image, QPolygon boundary):image(image),boundary(boundary),  label(""){
 
 }
 
-Region::Region(SupervisedImage* supervisedImage, const QImageCV *image, QPolygon boundary, QString label):supervisedImage(supervisedImage),image(image),boundary(boundary),  label(label){
+Region::Region(const QImageCV* image, QPolygon boundary, QString label):image(image),boundary(boundary),  label(label){
 }
 
 void Region::show_region() {
@@ -73,10 +73,6 @@ cv::Mat Region::getMask() const {
        this->cvmask = img.clone();
     }
    return this->cvmask;
-}
-
-const SupervisedImage* Region::getSupervisedImage()const{
-    return this->supervisedImage;
 }
 
 void Region::setImage(QImageCV *img){

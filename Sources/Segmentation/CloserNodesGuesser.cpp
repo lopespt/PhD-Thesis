@@ -13,11 +13,12 @@ QList<CloserNodesGuesser::NodeProbability> CloserNodesGuesser::doIterativeRandom
     QList<FeaturesComplexNetwork::Node> ids;
     for(const FeatureAbstractPtr &s: hints){
         FeaturesComplexNetwork::Node id = cn.getNodeFromFeature(s);
-        if( cn.valid(id))
+        if( cn.valid(id)){
             ids.append(id);
-        else
-            puts("Node not found");
-
+            puts("Encontrei");
+        }else{
+            //puts("Node not found");
+        }
     }
 
     FeaturesComplexNetwork::NodeMap<double> final(cn);
@@ -48,6 +49,7 @@ QList<CloserNodesGuesser::NodeProbability> CloserNodesGuesser::doIterativeRandom
         NodeProbability n;
         n.node = order[i];
         n.probability = final[order[i]];
+        retorno.append(n);
     }
 
     return  retorno;

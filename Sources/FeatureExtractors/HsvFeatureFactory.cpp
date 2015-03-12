@@ -12,7 +12,7 @@ HsvFeatureFactory::HsvFeatureFactory(int h, int s, int v, int disc):FeatureFacto
     /**
      * @brief assert that a uniform distribution will be truncated to upper value
      */
-    assert( (int)(1.0/(h*s*v)*(disc-1)+0.5)>0 );
+    //assert( (int)(1.0/(h*s*v)*(disc-1)+0.5)>0 );
 }
 
 vector<int> HsvFeatureFactory::extractHSVFast(cv::Mat image, cv::Mat mask) const{

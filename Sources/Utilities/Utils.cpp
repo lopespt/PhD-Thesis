@@ -45,6 +45,8 @@ QPolygon Utils::Mask2QPolygon(const cv::Mat& img){
     vector<cv::Vec4i> hierarchy;
     cv::findContours( img.clone(), contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_KCOS, cv::Point(0, 0) );
 
+    assert(contours.size()>0);
+
     for(unsigned int i=0;i<contours[0].size();i++){
         ret.append(QPoint(contours[0][i].x,contours[0][i].y));
     }
