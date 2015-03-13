@@ -45,6 +45,7 @@ int main(int argc, char** argv){
 
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
+
     while(preader.hasNext()){
         QList<result> results;
         SupervisedImage img = preader.readNext();

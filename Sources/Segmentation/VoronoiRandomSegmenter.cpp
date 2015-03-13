@@ -20,9 +20,10 @@ void VoronoiRandomSegmenter::setNumberOfRegions(int regions){
     this->regions = regions;
 }
 
-inline bool hasNeightboor(float a, const vector<float>& v){
-    for(const float& f :  v){
-        if(fabs(a - f) <= 3)
+inline bool hasNeightboor(float x, float y, const vector<float>& u, const vector<float> & v){
+
+    for(unsigned int i=0; i<u.size(); i++){
+        if(sqrt( (u[i]-x) * (u[i]-x) + (v[i]-y) * (v[i]-y) ) < 2)
             return true;
     }
     return false;
@@ -40,13 +41,19 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
         
         float px;
         float py;
+
+        unsigned long int times = 0;
         //find valid values of px and py
         do{
             px= (rand() % img.size().width-3) + 3;
-        }while( hasNeightboor(px, x));
-        do{
+            printf("px=%f\n", px);
             py = (rand() % img.size().height-3) + 3;
-        }while( hasNeightboor(py, y));
+            printf("py=%f\n", py);
+            times ++ ;
+            if(times > 5000){
+                printf("Trying to find values of X and Y!!\n");
+            }
+        }while( hasNeightboor(px,py,x, y));
                
         x.push_back( px );
         y.push_back( py );
