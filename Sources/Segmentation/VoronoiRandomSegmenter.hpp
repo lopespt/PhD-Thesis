@@ -6,12 +6,12 @@
 class VoronoiRandomSegmenter : public Segmenter
 {
 private:
-    int regions;
+    unsigned int regions;
     SegmentedImage getNextSegmentation(const QImage &image) const;
 public:
     VoronoiRandomSegmenter();
     ~VoronoiRandomSegmenter();
-    void setNumberOfRegions(int regions);
+    void setNumberOfRegions(unsigned int regions);
 
     virtual QList<SegmentedImage> execute(const QImage &img, int nSegmentations);
 
