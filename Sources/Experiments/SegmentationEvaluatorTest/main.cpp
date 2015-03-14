@@ -11,6 +11,7 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <QPair>
+#include
 
 void createTrain(QString kfoldPath, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
     FeaturesComplexNetwork cn;
@@ -29,9 +30,9 @@ typedef QPair<SegmentedImage*, float> result;
 int main(int argc, char** argv){
 
     QList<const FeatureFactoryAbstract*> factories;
-    HsvFeatureFactory hsv(18,3,3,5);
-    AreaFeatureFactory area(15);
-    OrientationFeatureFactory ori(10);
+    HsvFeatureFactory hsv(5,2,2,5);
+    AreaFeatureFactory area(10);
+    OrientationFeatureFactory ori(6);
     factories.append(&hsv);
     factories.append(&area);
     factories.append(&ori);
