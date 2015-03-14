@@ -11,7 +11,6 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <QPair>
-#include
 
 void createTrain(QString kfoldPath, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
     FeaturesComplexNetwork cn;
