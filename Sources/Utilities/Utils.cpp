@@ -5,6 +5,7 @@
 #include <opencv/cxcore.h>
 #include <opencv/highgui.h>
 #include <vector>
+#include <QString>
 
 using namespace std;
 char* Utils::readLine(char *buffer, int i, FILE* f){
@@ -17,6 +18,10 @@ char* Utils::readLine(char *buffer, int i, FILE* f){
     return NULL;
 }
 
+
+bool Utils::fileExists(QString filename){
+    return fileExists(filename.toStdString().c_str());
+}
 
 bool Utils::fileExists(const char *filename){
     FILE *f = fopen(filename, "r");

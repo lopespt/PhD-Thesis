@@ -11,6 +11,7 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <QPair>
+#include "ConfigFileParser.hpp"
 
 void createTrain(QString kfoldPath, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
     FeaturesComplexNetwork cn;
@@ -27,21 +28,19 @@ void createTrain(QString kfoldPath, QString cnPath, QString sunFolder, QList<con
 typedef QPair<SegmentedImage*, float> result;
 
 int main(int argc, char** argv){
+    ConfigFileParser parser(argv[1]);
+    QList<const FeatureFactoryAbstract*> factories = parser.getFactories();
+    QString cnFile = parser.getValue("FeaturesComplexNetwork/file").toString();
+    QString images_setFile = parser.getValue("kfold/file").toString();
+    QString databasePath = parser.getValue("sun/database_path").toString();
 
-    QList<const FeatureFactoryAbstract*> factories;
-    HsvFeatureFactory hsv(5,2,2,5);
-    AreaFeatureFactory area(10);
-    OrientationFeatureFactory ori(6);
-    factories.append(&hsv);
-    factories.append(&area);
-    factories.append(&ori);
-    if(!Utils::fileExists("train.cn") || !Utils::fileExists("reader.kfold")){
+    if(!Utils::fileExists(cnFile) || !Utils::fileExists(images_setFile)){
         puts("Files reader.kfold and train.cn doesnt exist, creating");
-        createTrain("reader.kfold", "train.cn", argv[1], factories);
+        createTrain(images_setFile, cnFile, databasePath, factories);
     }
     FeaturesComplexNetwork cn;
-    KFoldDatabaseReader reader("reader.kfold");
-    cn.load("train.cn", factories);
+    KFoldDatabaseReader reader(images_setFile);
+    cn.load(cnFile.toStdString().c_str(), factories);
 
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
@@ -50,14 +49,16 @@ int main(int argc, char** argv){
         QList<result> results;
         SupervisedImage img = preader.readNext();
         printf("Image(%-5d | %-5d): %s\n", imgn, preader.getTotal(), img.getImagePath().toStdString().c_str());
+        imgn++;
+
         if(img.hasError())
             continue;
+
         VoronoiRandomSegmenter v;
         v.setNumberOfRegions(img.getRegions().size());
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));
-
-
+    
         EntropyXorSegmentationEvaluator evaluator(cn, factories);
 
         int segNum = 0;
@@ -85,7 +86,6 @@ int main(int argc, char** argv){
         }*/
 
 
-        imgn++;
     }
     cv::destroyAllWindows();
     return 0;

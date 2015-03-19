@@ -23,7 +23,7 @@ void VoronoiRandomSegmenter::setNumberOfRegions(unsigned int regions){
 inline bool hasNeightboor(float x, float y, const vector<float>& u, const vector<float> & v){
 
     for(unsigned int i=0; i<u.size(); i++){
-        if( (u[i]-x) * (u[i]-x) + (v[i]-y) * (v[i]-y) < 7)
+        if( (u[i]-x) * (u[i]-x) + (v[i]-y) * (v[i]-y) < 16)
             return true;
     }
     return false;
@@ -46,15 +46,15 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
         //find valid values of px and py
         do{
             px= (rand() % img.size().width-3) + 3;
-            //printf("px=%f\n", px);
             py = (rand() % img.size().height-3) + 3;
-            //printf("py=%f\n", py);
             times ++ ;
             if(times > 5000){
                 printf("Trying to find values of X and Y!!\n");
             }
         }while( hasNeightboor(px,py,x, y));
                
+        //printf("px=%f\n", px);
+        //printf("py=%f\n", py);
         x.push_back( px );
         y.push_back( py );
     }
@@ -66,7 +66,7 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
     //rectangle(m, cv::Point(0,0), cv::Point(399,399),cvScalarAll(255));
     while(v.getNext(px,py,p2x,p2y)){
         line(m,cv::Point(px,py), cv::Point(p2x,p2y), cvScalarAll(255), 1);
-        //printf("%f %f %f %f\n", px, py, p2x, p2y);
+        //printf("l = %f %f %f %f\n", px, py, p2x, p2y);
     }
     Mat vor = m.clone();
 

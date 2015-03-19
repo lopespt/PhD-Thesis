@@ -7,12 +7,14 @@
 #include <opencv/cv.h>
 class QPolygon;
 class QImage;
+class QString;
 class Utils
 {
 public:
 
     static char* readLine(char* buffer, int size, FILE* f);
     static bool fileExists(const char* filename);
+    static bool fileExists(QString filename);
     static cv::Mat QImage2Mat(const QImage& img);
     static QPolygon Mask2QPolygon(const cv::Mat& img);
 
