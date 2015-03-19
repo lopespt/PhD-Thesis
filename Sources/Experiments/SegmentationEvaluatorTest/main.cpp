@@ -13,11 +13,14 @@
 #include <QPair>
 #include "ConfigFileParser.hpp"
 
-void createTrain(QString kfoldPath, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
-    FeaturesComplexNetwork cn;
+void createKfold(QString kfoldPath, QString sunFolder){
     SunDatabaseReader sunReader(sunFolder);
     KFoldDatabaseReader reader(sunReader, 0.7);
     reader.save(kfoldPath);
+}
+
+void createTrain(KFoldDatabaseReader reader, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
+    FeaturesComplexNetwork cn;
     KFoldDatabaseReader::PathDatabaseReader trainReader = reader.getTrainReader();
 
     ComplexNetworkConstructor constructor(cn, trainReader,factories);
@@ -33,13 +36,18 @@ int main(int argc, char** argv){
     QString cnFile = parser.getValue("FeaturesComplexNetwork/file").toString();
     QString images_setFile = parser.getValue("kfold/file").toString();
     QString databasePath = parser.getValue("sun/database_path").toString();
-
-    if(!Utils::fileExists(cnFile) || !Utils::fileExists(images_setFile)){
-        puts("Files reader.kfold and train.cn doesnt exist, creating");
-        createTrain(images_setFile, cnFile, databasePath, factories);
+    if(!Utils::fileExists(images_setFile)){
+        createKfold(images_setFile, databasePath);
     }
-    FeaturesComplexNetwork cn;
+
     KFoldDatabaseReader reader(images_setFile);
+
+    if(!Utils::fileExists(cnFile)) {
+        puts("Files reader.kfold and train.cn doesnt exist, creating");
+        createTrain(reader, cnFile, databasePath, factories);
+    }
+
+    FeaturesComplexNetwork cn;
     cn.load(cnFile.toStdString().c_str(), factories);
 
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
