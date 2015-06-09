@@ -21,7 +21,7 @@ void SupervisedImageViewerWidget::setSupervisedImage(SupervisedImage image) {
         QPainter t(&m_original_pixmap);
         QColor c = QColor::fromHsv(i * 255 / (m_supervised_image->getRegions().size() - 1), 255, 255, 50);
         t.setBrush(c);
-        t.drawConvexPolygon(m_supervised_image->getRegions().at(i).getBoundary());
+        t.drawConvexPolygon(m_supervised_image->getRegions().at(i).getMask().getBoundary());
     }
     update();
 }
@@ -64,7 +64,7 @@ void SupervisedImageViewerWidget::mouseMoveEvent(QMouseEvent *evt) {
     int py = pointer_y * 1.0 / p.height() * m_original_pixmap.height();
     fflush(stdout);
             foreach(Region reg, this->m_supervised_image->getRegions()) {
-            if (reg.getBoundary().containsPoint(QPoint(px, py), Qt::OddEvenFill)) {
+            if (reg.getMask().containsPoint(px, py)) {
                 pointer_label = QString("label: %1").arg(reg.getLabel());
             }
         }

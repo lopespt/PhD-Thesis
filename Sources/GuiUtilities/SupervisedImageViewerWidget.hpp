@@ -5,6 +5,7 @@
 #include <QObject>
 #include <Utilities/SupervisedImage.hpp>
 #include <QMouseEvent>
+#include <QPixmap>
 
 
 class SupervisedImageViewerWidget : public QLabel {
