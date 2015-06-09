@@ -86,11 +86,11 @@ QString SupervisedImage::getSupervisedPath() const {
     return this->supervisedPath;
 }
 
-cv::Mat  __unused SupervisedImage::getCvBGRImage() const {
+const Mat &  SupervisedImage::getCvBGRImage() const {
     return this->image.getCvBGRImage();
 }
 
-cv::Mat  __unused SupervisedImage::getCvHsvImage() const {
+const cv::Mat&  SupervisedImage::getCvHsvImage() const {
     return this->image.getCvHsvImage();
 }
 

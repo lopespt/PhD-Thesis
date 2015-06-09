@@ -45,11 +45,11 @@ public:
 
     cv::Point getImageCenter() const;
 
-    cv::Mat  __unused getCvHsvImage() const;
+    const cv::Mat &  getCvHsvImage() const;
 
     bool hasError() const;
 
-    Mat __unused getCvBGRImage() const;
+    const cv::Mat & getCvBGRImage() const;
 
 
     void addRegion(QString label, const RegionMask &region);

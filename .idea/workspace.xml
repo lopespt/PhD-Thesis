@@ -62,145 +62,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/ConfigFileParser.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/ConfigFileParser.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.hpp" afterPath="$PROJECT_DIR$/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionWindow.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt.user" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlab.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlabFile.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkToMatlabFile/ComplexNetworkToMatlabFile.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkViewerWidget.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/ComplexNetworkVisualizer.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/DatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/DatabaseReader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/DatabaseVisualizer/DatabaseVisualizer.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/DatabaseVisualizer/DatabaseVisualizer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.cpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.hpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/Feature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/Feature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/GraphUtilities.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/GraphUtilities.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/GraphUtilities.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/GraphUtilities.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeature.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeature.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeature.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeature.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelGuesser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelGuesser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelGuesser.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelGuesser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelsValidationExperiment.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelsValidationExperiment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelsValidationExperiment.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/LabelsValidationExperiment.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/Link.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/Link.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/Link.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/Link.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/NodeString.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/NodeString.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/NodeString.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/NodeString.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeature.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeature.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.hpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.hpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/Region.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/Region.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/Region.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/Region.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/SegmentationEvaluator.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/SegmentationEvaluator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/SegmentationEvaluator.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/SegmentationEvaluator.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/Segmenter.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/Segmenter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/Segmenter.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/Segmenter.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/SegmenterTest/SegmenterTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/SegmenterTest/SegmenterTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.hpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/Utils.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/Utils.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/Utils.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/Utils.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/WebServer/WebServer.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/WebServer/WebServer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/WebServer/WebServer.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/WebServer/WebServer.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/doxygen.css" afterPath="$PROJECT_DIR$/Sources/html/doxygen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/dynsections.js" afterPath="$PROJECT_DIR$/Sources/html/dynsections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/index.html" afterPath="$PROJECT_DIR$/Sources/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/jquery.js" afterPath="$PROJECT_DIR$/Sources/html/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/AreaComplexNetworks/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/AreaComplexNetworks/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkVisualizer/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsValidationExperiment/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/WebServer/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/WebServer/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/main.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/tabs.css" afterPath="$PROJECT_DIR$/Sources/html/tabs.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -226,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -250,17 +113,27 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SupervisedImage.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SupervisedImage.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25543478">
+              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupervisedImage.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -276,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QImageCV.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QImageCV.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6929348">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -290,7 +163,7 @@
         <entry file="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/experiment/config_fixed_files.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -300,7 +173,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#50#90#0" expanded="true" />
               </folding>
@@ -316,6 +189,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Guilherme Wachs &lt;lopespt@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -341,9 +219,7 @@
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.hpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.hpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" />
@@ -352,6 +228,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp" />
       </list>
     </option>
   </component>
@@ -504,32 +382,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SetupPadrao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PhD-Thesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Experiments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OutsideSegmentationEvaluatorTestAddingCircle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -900,6 +752,19 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle">
+      <created>1433821559760</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433821559760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle">
+      <created>1433821629220</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1433821629220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -911,26 +776,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5228916" sideWeight="0.38477802" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5228916" sideWeight="0.61733615" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.49753347" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2686747" sideWeight="0.46370682" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.63213533" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48062015" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5228916" sideWeight="0.38266385" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5228916" sideWeight="0.615222" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2686747" sideWeight="0.46370682" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26286116" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.63213533" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48625794" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.47639182" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987952" sideWeight="0.48907682" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.4792107" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -943,6 +808,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -966,6 +836,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7668329">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#57#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,6 +909,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#55#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,6 +954,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22562142">
           <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,6 +969,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#55#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,6 +979,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,6 +1008,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="e#38#57#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,6 +1018,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,6 +1026,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33207548">
           <caret line="2630" column="18" selection-start-line="2630" selection-start-column="18" selection-end-line="2630" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,6 +1048,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28301886">
           <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,18 +1078,10 @@
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.458891">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,6 +1120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,6 +1128,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,7 +1143,7 @@
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#50#90#0" expanded="true" />
           </folding>
@@ -1271,14 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/experiment/config_fixed_files.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,15 +1174,7 @@
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="35" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1322,8 +1189,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6929348">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/experiment/config_fixed_files.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25543478">
+          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
           <folding />
         </state>
       </provider>
