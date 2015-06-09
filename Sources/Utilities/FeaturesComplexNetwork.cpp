@@ -1,27 +1,21 @@
 #include "FeaturesComplexNetwork.hpp"
-#include <string.h>
 #include <QDataStream>
-#include <FeatureExtractors/FeatureFactoryAbstract.hpp>
 #include <lemon/lgf_reader.h>
 #include <lemon/graph_to_eps.h>
-#include <lemon/planarity.h>
-#include <FeatureExtractors/FeatureAbstract.hpp>
 
 using namespace std;
 
 
-
-FeaturesComplexNetwork::FeaturesComplexNetwork():ComplexNetwork()
-{
+FeaturesComplexNetwork::FeaturesComplexNetwork() : ComplexNetwork() {
 }
 
-void FeaturesComplexNetwork::save(const char* filename){
+void FeaturesComplexNetwork::save(const char *filename) {
     digraphWriter(*this, filename).arcMap("arcs", this->arcs)
             .nodeMap("nodes", this->nodes)
             .run();
 }
 
-void FeaturesComplexNetwork::load(const char *filename, const QList<const FeatureFactoryAbstract* >& l){
+void FeaturesComplexNetwork::load(const char *filename, const QList<const FeatureFactoryAbstract *> &l) {
     clear();
     NodeReader r(l);
     digraphReader(*this, filename)
@@ -33,21 +27,21 @@ void FeaturesComplexNetwork::load(const char *filename, const QList<const Featur
     refreshCache();
 }
 
-void FeaturesComplexNetwork::refreshCache(){
+void FeaturesComplexNetwork::refreshCache() {
     featureIndex.clear();
-    for(ListDigraph::NodeIt it(*this); it != INVALID; ++it){
+    for (ListDigraph::NodeIt it(*this); it != INVALID; ++it) {
         featureIndex.insert(nodes[it], it);
     }
 }
 
 
-FeaturesComplexNetwork::~FeaturesComplexNetwork(){
+FeaturesComplexNetwork::~FeaturesComplexNetwork() {
     //clear();
 }
 
-float FeaturesComplexNetwork::getOutputDegree(Node from) const{
-    float total=0;
-    for(OutArcIt e(*this, from); e != INVALID; ++e){
+float FeaturesComplexNetwork::getOutputDegree(Node from) const {
+    float total = 0;
+    for (OutArcIt e(*this, from); e != INVALID; ++e) {
         total += this->arcs[e].getWeight();
     }
     return total;
@@ -61,21 +55,21 @@ bool FeaturesComplexNetwork::removeNode(node_id id){
 }*/
 
 
-FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstractPtr& f) const{
-    if(featureIndex.contains(f)){
+FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstractPtr &f) const {
+    if (featureIndex.contains(f)) {
         return featureIndex[f];
     }
     return Node(INVALID);
 }
 
-FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string& str){
+FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string &str) {
     std::stringstream stream;
     stream << str;
     int type;
     sscanf(str.c_str(), "%d", &type);
-    for(const FeatureFactoryAbstract* f : factories){
-        if(f->getType() == type){
-            FeatureAbstractPtr feat= f->CreateFromStream(stream);
+    for (const FeatureFactoryAbstract *f : factories) {
+        if (f->getType() == type) {
+            FeatureAbstractPtr feat = f->CreateFromStream(stream);
             return feat;
         }
     }

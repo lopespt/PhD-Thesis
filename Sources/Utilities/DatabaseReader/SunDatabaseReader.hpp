@@ -1,5 +1,3 @@
-
-
 #ifndef SUN_DATABASE_READER__HPP
 #define SUN_DATABASE_READER__HPP
 
@@ -12,28 +10,34 @@
 #include <QFileInfo>
 #include <assert.h>
 
-class SunDatabaseReader:public DatabaseReader{
+class SunDatabaseReader : public DatabaseReader {
 
-    private:
-        QDir sourceDir;
-        QList<QString> image_files;
-        QList<QString> supervision_files;
-        void discover_files(QString);
-        QList<QString>::iterator image_files_it;
-        QList<QString>::iterator supervision_files_it;
-        bool started;
-        
+private:
+    QDir sourceDir;
+    QList<QString> image_files;
+    QList<QString> supervision_files;
 
-    public:
-        SunDatabaseReader(QString sourceDir);
-        bool hasNext() const;
-        SupervisedImage readNext();
-        bool hasPrevious() const;
-        SupervisedImage readPrevious();
-        unsigned int getTotal() const;
+    void discover_files(QString);
+
+    QList<QString>::iterator image_files_it;
+    QList<QString>::iterator supervision_files_it;
+    bool started;
+
+
+public:
+    SunDatabaseReader(QString sourceDir);
+
+    bool hasNext() const;
+
+    SupervisedImage readNext();
+
+    bool hasPrevious() const;
+
+    SupervisedImage readPrevious();
+
+    unsigned int getTotal() const;
 
 };
-
 
 
 #endif

@@ -1,10 +1,10 @@
 #ifndef RANDOMWALKTEST_HPP
 #define RANDOMWALKTEST_HPP
 
-class RandomWalkTest
-{
+class RandomWalkTest {
 public:
     RandomWalkTest();
+
     void execute();
 };
 

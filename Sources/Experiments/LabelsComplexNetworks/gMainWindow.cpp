@@ -1,12 +1,11 @@
 #include "gMainWindow.hpp"
 
-GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent):
-    QWidget(parent), cn(cn)
-{
+GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link> &cn, QWidget *parent) :
+        QWidget(parent), cn(cn) {
     QVBoxLayout *l = new QVBoxLayout;
     setLayout(l);
 
-    resize(500,500);
+    resize(500, 500);
     vtk = new QVTKWidget(this);
     l->addWidget(vtk);
 
@@ -25,7 +24,7 @@ GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent):
     view->SetEdgeLabelArrayName("weights");
 
     view->AddRepresentationFromInput(graph);
-    vtkGraphToPolyData* graphToPoly = vtkGraphToPolyData::New();
+    vtkGraphToPolyData *graphToPoly = vtkGraphToPolyData::New();
     graphToPoly->AddInputData(graph);
 
     //vtk->GetRenderWindow()->AddRenderer(view->GetRenderer());
@@ -82,7 +81,7 @@ GMainWindow::GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent):
 
 }
 
-void GMainWindow::setVtkGraph(){
+void GMainWindow::setVtkGraph() {
     /*
     graph = vtkMutableUndirectedGraph::New();
     weights = vtkFloatArray::New();
@@ -117,5 +116,5 @@ void GMainWindow::setVtkGraph(){
 */
 }
 
-GMainWindow::~GMainWindow(){
+GMainWindow::~GMainWindow() {
 }

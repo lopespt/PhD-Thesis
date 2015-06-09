@@ -4,12 +4,13 @@
 #include <QWidget>
 
 class QPushButton;
+
 class SupervisedImageViewerWidget;
+
 class DatabaseReader;
 
-class DatabaseVisualizerWidget : public QWidget
-{
-    Q_OBJECT
+class DatabaseVisualizerWidget : public QWidget {
+Q_OBJECT
 private:
     QPushButton *btnPrevious, *btnNext;
     SupervisedImageViewerWidget *viewer;
@@ -18,11 +19,15 @@ public:
     explicit DatabaseVisualizerWidget(DatabaseReader *reader, QWidget *parent = 0);
 
 signals:
+
     void nextClicked();
+
     void previousClicked();
 
 public slots:
+
     void goNext();
+
     void goPrevious();
 
 };

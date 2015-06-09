@@ -1,10 +1,9 @@
 #include "FeatureFactoryAbstract.hpp"
 
-FeatureFactoryAbstract::FeatureFactoryAbstract(int type):type(type)
-{
+FeatureFactoryAbstract::FeatureFactoryAbstract(int type) : type(type) {
 
 }
 
-int FeatureFactoryAbstract::getType() const{
+int FeatureFactoryAbstract::getType() const {
     return type;
 }

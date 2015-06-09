@@ -1,54 +1,53 @@
-
 #include "Link.hpp"
 
-Link::Link():time(0), weight(0){
+Link::Link() : time(0), weight(0) {
 }
 
-Link::Link(link_time t, float weight, bool sameLabel):time(t), weight(weight), sameLabel(sameLabel){
+Link::Link(link_time t, float weight, bool sameLabel) : time(t), weight(weight), sameLabel(sameLabel) {
 }
 
-float Link::getWeight() const{
+float Link::getWeight() const {
     return this->weight;
 }
 
-void Link::setWeight(float weight){
+void Link::setWeight(float weight) {
     this->weight = weight;
 }
 
-Link Link::operator+(float f) const{
+Link Link::operator+(float f) const {
     Link l(*this);
     l.weight += f;
     return l;
 }
 
 
-Link& Link::operator+=(float f){
-    this->weight+=f;
+Link &Link::operator+=(float f) {
+    this->weight += f;
     return *this;
 }
 
-link_time Link::getTime() const{
+link_time Link::getTime() const {
     return this->time;
 }
 
-void Link::setTime(link_time time){
+void Link::setTime(link_time time) {
     this->time = time;
 }
 
-bool Link::isSameLabel() const{
+bool Link::isSameLabel() const {
     return this->sameLabel;
 }
 
-void Link::isSameLabel(bool v){
-    this->sameLabel=v;
+void Link::isSameLabel(bool v) {
+    this->sameLabel = v;
 }
 
-std::ostream& operator<<(std::ostream& os, const Link& dt){
+std::ostream &operator<<(std::ostream &os, const Link &dt) {
     os << dt.getWeight() << " " << dt.getTime() << " " << dt.isSameLabel();
     return os;
 }
 
-std::istream& operator>>(std::istream& is, Link& dt){
+std::istream &operator>>(std::istream &is, Link &dt) {
     is >> dt.weight >> dt.time >> dt.sameLabel;
     return is;
 }

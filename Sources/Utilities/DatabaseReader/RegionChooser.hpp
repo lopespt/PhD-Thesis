@@ -6,27 +6,35 @@
 #include "DatabaseReader.hpp"
 #include <Utilities/SupervisedImage.hpp>
 
-class RegionChooser
-{
+class RegionChooser {
 public:
-    class ChosenRegion{
+    class ChosenRegion {
     public:
         QString imagePath;
         QString supervisedPath;
         unsigned int regionChoosed;
+
         SupervisedImage readSupervisedImage() const;
     };
+
 private:
     QList<ChosenRegion> regions;
     int actualRegion;
 public:
-    RegionChooser(DatabaseReader& reader);
+    RegionChooser(DatabaseReader &reader);
+
     RegionChooser(QString file);
+
     void reset();
+
     int getTotal() const;
+
     bool hasNextChoseRegion() const;
+
     ChosenRegion nextChoseRegion();
+
     void save(QString file) const;
+
     void load(QString file);
 
 

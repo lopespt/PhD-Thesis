@@ -2,16 +2,13 @@
 
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include "SegmentedImage.hpp"
-#include <FeatureExtractors/Region.hpp>
 #include <Utilities/GraphUtilities.hpp>
-#include <Segmentation/CloserNodesGuesser.hpp>
-#include <Utilities/Utils.hpp>
-#include <algorithm>
 
-EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories):
-    SegmentationEvaluator(cn, factories),
-    weights(cn)
-{
+EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplexNetwork &cn,
+                                                                 QList<const FeatureFactoryAbstract *> factories) :
+        SegmentationEvaluator(cn, factories),
+        weights(cn),
+        rw(cn, weights) {
     GraphUtilities::getWeights(cn, weights);
 }
 
@@ -38,55 +35,53 @@ EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplex
     return 1./Utils::entropy< std::vector, double>(weights, weights.size());
 }*/
 
-float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image){
-    FeaturesComplexNetwork::NodeMap<double> probs(cn);
+float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
+    FeaturesComplexNetwork::NodeMap <double> probs(cn);
 
     QList<FeatureAbstractPtr> hints;
-    for(const FeatureFactoryAbstract* f: factories){
-        for(const Region& r: image.getRegions() ){
-            hints.append( f->CreateFromRegion(&r) );
+    for (const FeatureFactoryAbstract *f: factories) {
+        for (const Region &r: image.getRegions()) {
+            hints.append(f->CreateFromRegion(&r));
         }
     }
 
 
-    IterativeRandomWalk rw(cn, weights);
     float grade = 0;
     int found = 0;
     int notFound = 0;
-    for(unsigned int h=0; h < hints.size();h++){
+    for (unsigned int h = 0; h < hints.size(); h++) {
         float single_grade = 1;
         //h will be hided
         QList<FeatureAbstractPtr> hints_hided;
         //Copy elements except h
-        for(unsigned int i=0;i< hints.size(); i++){
-            if(i != h)
+        for (unsigned int i = 0; i < hints.size(); i++) {
+            if (i != h)
                 hints_hided.append(hints[i]);
         }
 
-        if(cn.getNodeFromFeature(hints[h]) != INVALID){
+        if (cn.getNodeFromFeature(hints[h]) != INVALID) {
             rw.Execute(cn.getNodeFromFeature(hints[h]), 1);
             rw.getAllProbs(probs);
-            for(const FeatureAbstractPtr &item: hints_hided){
+            for (const FeatureAbstractPtr &item: hints_hided) {
                 FeaturesComplexNetwork::Node n = cn.getNodeFromFeature(item);
-                if(cn.valid(n)){
-                    single_grade *= (1-probs[n]);
+                if (cn.valid(n)) {
+                    single_grade *= (1 - probs[n]);
                     found++;
                     //printf("entrei %f\n", single_grade);
-                }else{
+                } else {
                     notFound++;
                 }
-                
+
             }
         }
-        grade = grade + (1-single_grade);
+        grade = grade + (1 - single_grade);
     }
-    printf("%%found = %0.2f\n", (found*1.0)/(found+notFound));
+    printf("%%found = %0.2f\n", (found * 1.0) / (found + notFound));
 
     return grade;
 }
 
-EntropyXorSegmentationEvaluator::~EntropyXorSegmentationEvaluator()
-{
+EntropyXorSegmentationEvaluator::~EntropyXorSegmentationEvaluator() {
 
 }
 

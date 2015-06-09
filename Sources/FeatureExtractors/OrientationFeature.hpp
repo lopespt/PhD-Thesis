@@ -3,12 +3,14 @@
 
 #include "Feature.hpp"
 
-class OrientationFeature:public Feature<unsigned int>
-{
+class OrientationFeature : public Feature<unsigned int> {
 public:
     OrientationFeature(unsigned int value);
+
     virtual uint getHash() const;
-    const char * asString(char *buffer) const;
+
+    const char *asString(char *buffer) const;
+
     void WriteToStream(std::ostream &stream) const;
 };
 

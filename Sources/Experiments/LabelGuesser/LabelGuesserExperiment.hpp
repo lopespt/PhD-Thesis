@@ -6,33 +6,41 @@
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
 
 class QString;
+
 class SupervisedImage;
+
 class FeatureAbstractPtr;
+
 class IterativeRandomWalk;
+
 class FeatureFactoryAbstract;
+
 class DatabaseReader;
+
 class RegionChooser;
 
 
 using namespace std;
 
-class LabelGuesserExperiment
-{
+class LabelGuesserExperiment {
 public:
-     typedef enum{
+    typedef enum {
         MultProbabilities,
         SumProbabilities,
         XorProbabilities
-    }method;
+    } method;
 
 private:
-    QList<FeatureAbstractPtr> getFeaturesHints(SupervisedImage &img, unsigned int hide_idx );
-    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, const QList<FeatureAbstractPtr >& hints);
+    QList<FeatureAbstractPtr> getFeaturesHints(SupervisedImage &img, unsigned int hide_idx);
+
+    QList<QString> guessByIterativeRandomWalk(IterativeRandomWalk &walk, const QList<FeatureAbstractPtr> &hints);
+
     int getPosition(QList<QString>, QString);
+
     void printLabels(FeaturesComplexNetwork *cn);
 
     FeaturesComplexNetwork cn;
-    QList<const FeatureFactoryAbstract*> factories;
+    QList<const FeatureFactoryAbstract *> factories;
     RegionChooser chooser;
     int walkLenght;
     method m;
@@ -40,12 +48,11 @@ private:
 
 public:
 
-    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract*> factories ,  RegionChooser chooser, int walkLenght, method m, bool useLabels = true);
-
+    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract *> factories,
+                           RegionChooser chooser, int walkLenght, method m, bool useLabels = true);
 
 
     void execute(QString);
-
 
 
 };

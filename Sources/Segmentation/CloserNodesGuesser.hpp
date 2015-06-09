@@ -5,8 +5,7 @@
 #include <Utilities/IterativeRandomWalk.hpp>
 #include <QList>
 
-class CloserNodesGuesser
-{
+class CloserNodesGuesser {
 private:
     FeaturesComplexNetwork cn;
     IterativeRandomWalk &rw;
@@ -14,11 +13,13 @@ public:
     typedef struct {
         FeaturesComplexNetwork::Node node;
         float probability;
-    }NodeProbability;
+    } NodeProbability;
 
-    CloserNodesGuesser(const FeaturesComplexNetwork& cn, IterativeRandomWalk& rw);
-    QList<NodeProbability> guessNodes(const QList<FeatureAbstractPtr>& features) const;
-    QList<NodeProbability> doIterativeRandomWalk(const QList<FeatureAbstractPtr >& hints, int walks) const;
+    CloserNodesGuesser(const FeaturesComplexNetwork &cn, IterativeRandomWalk &rw);
+
+    QList<NodeProbability> guessNodes(const QList<FeatureAbstractPtr> &features) const;
+
+    QList<NodeProbability> doIterativeRandomWalk(const QList<FeatureAbstractPtr> &hints, int walks) const;
 
 
     ~CloserNodesGuesser();

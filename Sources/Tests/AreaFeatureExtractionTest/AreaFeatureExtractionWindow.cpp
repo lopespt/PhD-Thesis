@@ -1,8 +1,7 @@
 #include "AreaFeatureExtractionWindow.hpp"
 
 AreaFeatureExtractionWindow::AreaFeatureExtractionWindow(QString databasePath, QWidget *parent) :
-    QWidget(parent), reader(databasePath)
-{
+        QWidget(parent), reader(databasePath) {
     m_vbox = new QVBoxLayout();
     m_supervisedWidget = new SupervisedImageViewerWidget();
     m_vbox->addWidget(m_supervisedWidget);
@@ -21,12 +20,12 @@ AreaFeatureExtractionWindow::AreaFeatureExtractionWindow(QString databasePath, Q
 
 }
 
-void AreaFeatureExtractionWindow::show_previous(){
+void AreaFeatureExtractionWindow::show_previous() {
     SupervisedImage s = reader.readPrevious();
     m_supervisedWidget->setSupervisedImage(s);
 }
 
-void AreaFeatureExtractionWindow::show_next(){
+void AreaFeatureExtractionWindow::show_next() {
     SupervisedImage s = reader.readNext();
     m_supervisedWidget->setSupervisedImage(s);
 }

@@ -1,10 +1,9 @@
 #include "Segmenter.hpp"
 
-Segmenter::Segmenter()
-{
+Segmenter::Segmenter() {
 //    printf("Inicializado\n");
 }
 
-Segmenter::~Segmenter(){
+Segmenter::~Segmenter() {
 
 }

@@ -3,23 +3,31 @@
 
 #include <memory>
 #include <vector>
+
 class FeatureAbstract;
+
 class QDataStream;
+
 class Region;
+
 class FeatureAbstractPtr;
 
 using namespace std;
-class FeatureFactoryAbstract
-{
+
+class FeatureFactoryAbstract {
 private:
     int type;
 public:
 
     FeatureFactoryAbstract(int type);
+
     virtual FeatureAbstractPtr CreateFromRegion(const Region *r) const = 0;
-    virtual FeatureAbstractPtr CreateFromStream(istream &stream) const = 0 ;
+
+    virtual FeatureAbstractPtr CreateFromStream(istream &stream) const = 0;
+
     int getType() const;
-    virtual ~FeatureFactoryAbstract(){}
+
+    virtual ~FeatureFactoryAbstract() { }
 };
 
 

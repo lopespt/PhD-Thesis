@@ -4,14 +4,16 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <Utilities/SunDatabaseReader.hpp>
 #include "LabelGuesser.hpp"
-class LabelsValidationExperiment
-{
+
+class LabelsValidationExperiment {
 private:
     QString sunDatabaseFolder, complexNetworkFile;
 
 public:
     void buildComplexNetwork(DatabaseReader &reader);
+
     LabelsValidationExperiment(QString sunDatabaseFolder, QString complexNetworkFile);
+
     void run();
 };
 

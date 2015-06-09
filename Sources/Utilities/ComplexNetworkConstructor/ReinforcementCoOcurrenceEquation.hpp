@@ -3,8 +3,7 @@
 
 #include "CoOcurrenceEquation.hpp"
 
-class ReinforcementCoOcurrenceEquation: public CoOcurrenceEquation
-{
+class ReinforcementCoOcurrenceEquation : public CoOcurrenceEquation {
 private:
     unsigned long long int time;
 
@@ -15,10 +14,14 @@ private:
     float ma = 1; //Max weight
     float mi = 0.01; //Min weight
     float strength(float lastTimeOccurrence);
+
 public:
     void reWeight(Link &l);
-    void firstWeight(Link& l);
-    ReinforcementCoOcurrenceEquation(float learningRate=0.3, float lambda=80);
+
+    void firstWeight(Link &l);
+
+    ReinforcementCoOcurrenceEquation(float learningRate = 0.3, float lambda = 80);
+
     ~ReinforcementCoOcurrenceEquation();
 };
 

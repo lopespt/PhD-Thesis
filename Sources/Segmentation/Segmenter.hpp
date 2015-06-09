@@ -1,5 +1,6 @@
 #ifndef SEGMENTER_H
 #define SEGMENTER_H
+
 #include <stdio.h>
 #include <QImage>
 #include <opencv/cv.h>
@@ -7,11 +8,11 @@
 #include <Utilities/Utils.hpp>
 #include <QList>
 
-class Segmenter
-{
+class Segmenter {
 public:
     Segmenter();
-    virtual QList<SegmentedImage> execute(const QImage &img, int nSegmentations)=0;
+
+    virtual QList<SegmentedImage> execute(const QImage &img, int nSegmentations) = 0;
 
     virtual ~Segmenter();
 };

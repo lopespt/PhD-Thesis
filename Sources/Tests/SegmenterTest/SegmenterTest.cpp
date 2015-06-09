@@ -1,8 +1,4 @@
-#include <stdio.h>
-
-#include <Segmentation/segmenter.hpp>
-
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
 
     Segmenter s;
 

@@ -1,20 +1,13 @@
 #include "RegionChooser.hpp"
-#include "DatabaseReader.hpp"
-#include "../SupervisedImage.hpp"
-#include <time.h>
-#include <assert.h>
-#include <fstream>
-#include <Utilities/Utils.hpp>
 
-RegionChooser::RegionChooser(DatabaseReader& reader)
-{
+RegionChooser::RegionChooser(DatabaseReader &reader) {
     srand(time(0));
-    while(reader.hasNext()){
+    while (reader.hasNext()) {
         SupervisedImage img = reader.readNext();
         ChosenRegion reg;
         reg.imagePath = img.getImagePath();
         reg.supervisedPath = img.getSupervisedPath();
-        if(img.getRegions().size() > 1){
+        if (img.getRegions().size() > 1) {
             reg.regionChoosed = rand() % img.getRegions().size();
             regions.append(reg);
         }
@@ -22,35 +15,35 @@ RegionChooser::RegionChooser(DatabaseReader& reader)
     reset();
 }
 
-RegionChooser::RegionChooser(QString file){
+RegionChooser::RegionChooser(QString file) {
     load(file);
 }
 
-void RegionChooser::reset(){
+void RegionChooser::reset() {
     this->actualRegion = 0;
 }
 
-int RegionChooser::getTotal() const{
+int RegionChooser::getTotal() const {
     return regions.size();
 }
 
-bool RegionChooser::hasNextChoseRegion() const{
+bool RegionChooser::hasNextChoseRegion() const {
     return this->actualRegion < regions.size();
 }
 
-RegionChooser::ChosenRegion RegionChooser::nextChoseRegion(){
+RegionChooser::ChosenRegion RegionChooser::nextChoseRegion() {
     assert(hasNextChoseRegion());
     return regions.at(actualRegion++);
 }
 
-SupervisedImage RegionChooser::ChosenRegion::readSupervisedImage() const{
+SupervisedImage RegionChooser::ChosenRegion::readSupervisedImage() const {
     return SupervisedImage(this->imagePath, this->supervisedPath);
 }
 
-void RegionChooser::save(QString file) const{
+void RegionChooser::save(QString file) const {
     FILE *f = fopen(file.toStdString().c_str(), "w");
 
-    for(const ChosenRegion &r: regions){
+    for (const ChosenRegion &r: regions) {
         fprintf(f, "%s\n", r.imagePath.toStdString().c_str());
         fprintf(f, "%s\n", r.supervisedPath.toStdString().c_str());
         fprintf(f, "%u\n", r.regionChoosed);
@@ -59,12 +52,12 @@ void RegionChooser::save(QString file) const{
     fclose(f);
 }
 
-void RegionChooser::load(QString file){
+void RegionChooser::load(QString file) {
     regions.clear();
     FILE *f = fopen(file.toStdString().c_str(), "r");
     char buffer[400];
     ChosenRegion r;
-    while(Utils::readLine(buffer, 400, f) != NULL){
+    while (Utils::readLine(buffer, 400, f) != NULL) {
         r.imagePath = QString(buffer);
         assert(Utils::readLine(buffer, 400, f));
         r.supervisedPath = QString(buffer);
@@ -77,8 +70,7 @@ void RegionChooser::load(QString file){
     reset();
 }
 
-RegionChooser::~RegionChooser()
-{
+RegionChooser::~RegionChooser() {
 
 }
 

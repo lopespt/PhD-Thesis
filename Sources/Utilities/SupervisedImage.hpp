@@ -1,3 +1,4 @@
+#include <sys/cdefs.h>
 
 #ifndef SUPERVISED_IMAGE__H
 #define SUPERVISED_IMAGE__H
@@ -11,33 +12,50 @@
 
 using namespace std;
 
-class Region;
-class SupervisedImage{
-    
-    private:
-        bool alreadyParsed;
-        QString imagePath;
-        QString supervisedPath;
-        mutable QImageCV image;
-        QList<Region> regions;
-        static QPolygon extractPolygon(QString Xml);
-        static QString extractLabel(QString Xml);
-        void parse_xml();
-        mutable bool errorState;
-        
+class SupervisedImage {
 
-    public:
-        SupervisedImage(QString imagePath, QString supervisedPath);
-        ~SupervisedImage();
-        const QList<Region>& getRegions();
-        const QImageCV* getImage() const;
-        QString getImagePath() const;
-        QString getSupervisedPath() const;
-        cv::Mat getCvBGRImage() const;
-        cv::Mat getCvHsvImage() const;
-        bool hasError() const;
+private:
+    mutable bool alreadyParsed;
+    QString imagePath;
+    QString supervisedPath;
+    mutable QImageCV image;
+    mutable QList<Region> regions;
 
+    static QPolygon extractPolygon(QString Xml);
+
+    static QString extractLabel(QString Xml);
+
+    void parse_xml() const;
+
+    mutable bool errorState;
+
+
+public:
+    SupervisedImage(QString imagePath, QString supervisedPath);
+
+    ~SupervisedImage();
+
+    const QList<Region> &getRegions() const;
+
+    const QImageCV *getImage() const;
+
+    QString getImagePath() const;
+
+    QString getSupervisedPath() const;
+
+    cv::Point getImageCenter() const;
+
+    cv::Mat  __unused getCvHsvImage() const;
+
+    bool hasError() const;
+
+    Mat __unused getCvBGRImage() const;
+
+
+    void addRegion(QString label, const RegionMask &region);
 };
+
+class Region;
 
 
 #endif

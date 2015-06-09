@@ -2,16 +2,18 @@
 #define SEGMENTATIONEVALUATOR_HPP
 
 #include <Utilities/FeaturesComplexNetwork.hpp>
+
 class SegmentedImage;
 
-class SegmentationEvaluator
-{
+class SegmentationEvaluator {
 protected:
     FeaturesComplexNetwork &cn;
-    QList<const FeatureFactoryAbstract*> factories;
+    QList<const FeatureFactoryAbstract *> factories;
 public:
     SegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories);
-    virtual float evaluate(const SegmentedImage &image)=0;
+
+    virtual float evaluate(const SegmentedImage &image) = 0;
+
     ~SegmentationEvaluator();
 };
 

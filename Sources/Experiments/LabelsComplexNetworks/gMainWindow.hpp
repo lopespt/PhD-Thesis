@@ -49,19 +49,20 @@
 #include <vtkContextScene.h>
 #include <QVTKWidget.h>
 
-class GMainWindow : public QWidget
-{
-    Q_OBJECT
+class GMainWindow : public QWidget {
+Q_OBJECT
 private:
-    ComplexNetwork<NodeString, Link>& cn;
-    vtkRenderer* renderer;
-    QVTKWidget* vtk;
+    ComplexNetwork<NodeString, Link> &cn;
+    vtkRenderer *renderer;
+    QVTKWidget *vtk;
     vtkMutableUndirectedGraph *graph;
     vtkFloatArray *weights;
 
     void setVtkGraph();
+
 public:
-    explicit GMainWindow(ComplexNetwork<NodeString, Link>& cn, QWidget *parent = 0);
+    explicit GMainWindow(ComplexNetwork<NodeString, Link> &cn, QWidget *parent = 0);
+
     virtual ~GMainWindow();
 
 signals:

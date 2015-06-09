@@ -1,48 +1,45 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
-#include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <Segmentation/EntropyXorSegmentationEvaluator.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Segmentation/VoronoiRandomSegmenter.hpp>
-#include <Utilities/SupervisedImage.hpp>
-#include <opencv/cv.h>
 #include <opencv/highgui.h>
-#include <QPair>
 #include "ConfigFileParser.hpp"
 
-void createKfold(QString kfoldPath, QString sunFolder){
+void createKfold(QString kfoldPath, QString sunFolder) {
     SunDatabaseReader sunReader(sunFolder);
     KFoldDatabaseReader reader(sunReader, 0.7);
     reader.save(kfoldPath);
 }
 
-void createTrain(KFoldDatabaseReader reader, QString cnPath, QString sunFolder, QList<const FeatureFactoryAbstract*> factories){
+void createTrain(KFoldDatabaseReader reader, QString cnPath, QString sunFolder,
+                 QList<const FeatureFactoryAbstract *> factories) {
     FeaturesComplexNetwork cn;
     KFoldDatabaseReader::PathDatabaseReader trainReader = reader.getTrainReader();
 
-    ComplexNetworkConstructor constructor(cn, trainReader,factories);
+    ComplexNetworkConstructor constructor(cn, trainReader, factories);
     constructor.build();
     cn.save(cnPath.toStdString().c_str());
 }
 
-typedef QPair<SegmentedImage*, float> result;
+typedef QPair<SegmentedImage *, float> result;
 
-int main(int argc, char** argv){
+int main(int argc, char **argv) {
     ConfigFileParser parser(argv[1]);
-    QList<const FeatureFactoryAbstract*> factories = parser.getFactories();
+    QList<const FeatureFactoryAbstract *> factories = parser.getFactories();
     QString cnFile = parser.getValue("FeaturesComplexNetwork/file").toString();
     QString images_setFile = parser.getValue("kfold/file").toString();
     QString databasePath = parser.getValue("sun/database_path").toString();
-    if(!Utils::fileExists(images_setFile)){
+    if (!Utils::fileExists(images_setFile)) {
         createKfold(images_setFile, databasePath);
     }
 
     KFoldDatabaseReader reader(images_setFile);
 
-    if(!Utils::fileExists(cnFile)) {
+    if (!Utils::fileExists(cnFile)) {
         puts("Files reader.kfold and train.cn doesnt exist, creating");
         createTrain(reader, cnFile, databasePath, factories);
     }
@@ -53,37 +50,38 @@ int main(int argc, char** argv){
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
 
-    while(preader.hasNext()){
+    EntropyXorSegmentationEvaluator evaluator(cn, factories);
+    while (preader.hasNext()) {
         QList<result> results;
         SupervisedImage img = preader.readNext();
         printf("Image(%-5d | %-5d): %s\n", imgn, preader.getTotal(), img.getImagePath().toStdString().c_str());
         imgn++;
 
-        if(img.hasError())
+        if (img.hasError())
             continue;
 
         VoronoiRandomSegmenter v;
         v.setNumberOfRegions(img.getRegions().size());
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
+        //Inserindo a segmentação manual
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));
-    
-        EntropyXorSegmentationEvaluator evaluator(cn, factories);
+
 
         int segNum = 0;
-        for(SegmentedImage& s: seg){
+        for (SegmentedImage &s: seg) {
             float grade = evaluator.evaluate(s);
             results.append(result(&s, grade));
-            printf("Seg %d = %3.1f\n", segNum+1, results[segNum].second);
+            printf("Seg %d = %3.1f\n", segNum + 1, results[segNum].second);
             segNum++;
         }
-        qSort(results.begin(), results.end(), [&](const result &a,const result &b){
+        qSort(results.begin(), results.end(), [&](const result &a, const result &b) {
             return a.second > b.second;
         });
 
         int posFound = -1;
-        for(unsigned int i=0; i< results.size(); i++){
-            if( results[i].first == &seg.last()){
-                posFound = i+1;
+        for (unsigned int i = 0; i < results.size(); i++) {
+            if (results[i].first == &seg.last()) {
+                posFound = i + 1;
             }
         }
 

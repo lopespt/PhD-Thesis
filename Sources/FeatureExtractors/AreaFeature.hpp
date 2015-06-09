@@ -4,13 +4,15 @@
 #include "Feature.hpp"
 
 class QDataStream;
+
 class AreaFeatureFactory;
 
-class AreaFeature:public Feature<float>
-{
+class AreaFeature : public Feature<float> {
 public:
     AreaFeature(float value);
-    const char* asString(char *buffer) const;
+
+    const char *asString(char *buffer) const;
+
     void WriteToStream(std::ostream &stream) const;
 
     uint getHash() const;

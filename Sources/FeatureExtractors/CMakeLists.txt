@@ -7,5 +7,5 @@ INCLUDE_DIRECTORIES(${OPENCV_INCLUDE_DIR})
 
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 ADD_LIBRARY(FeatureExtractors ${Source_Files})
-TARGET_LINK_LIBRARIES(FeatureExtractors ${Qt5Core_LIBRARIES}
+TARGET_LINK_LIBRARIES(FeatureExtractors Utilities ${Qt5Core_LIBRARIES}
     ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} )

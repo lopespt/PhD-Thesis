@@ -1,5 +1,5 @@
 #include "CoOcurrenceEquation.hpp"
 
-CoOcurrenceEquation::~CoOcurrenceEquation(){
+CoOcurrenceEquation::~CoOcurrenceEquation() {
 
 }

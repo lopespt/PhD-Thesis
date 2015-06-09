@@ -1,45 +1,42 @@
 #include "ConfigFileParser.hpp"
 
-#include <QFile>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
-#include <Utilities/DatabaseReader/DatabaseReader.hpp>
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 #include <Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp>
 
-ConfigFileParser::ConfigFileParser(QString filePath):settings(filePath, QSettings::IniFormat),
-    trainDatabaseCreated(NULL),
-    testDatabaseCreated(NULL),
-    coocurrenceCreated(NULL),
-    kfoldCreated(NULL)
-{
+ConfigFileParser::ConfigFileParser(QString filePath) : settings(filePath, QSettings::IniFormat),
+                                                       trainDatabaseCreated(NULL),
+                                                       testDatabaseCreated(NULL),
+                                                       coocurrenceCreated(NULL),
+                                                       kfoldCreated(NULL) {
 
 }
 
-QList<const FeatureFactoryAbstract*> ConfigFileParser::getFactories(){
-    if(!factoriesCreated.empty())
+QList<const FeatureFactoryAbstract *> ConfigFileParser::getFactories() {
+    if (!factoriesCreated.empty())
         return factoriesCreated;
 
-    if( settings.value("factories_enabled/labels").toBool() )
+    if (settings.value("factories_enabled/labels").toBool())
         factoriesCreated.append(new LabelFeatureFactory());
-    if( settings.value("factories_enabled/hsv").toBool()){
+    if (settings.value("factories_enabled/hsv").toBool()) {
         int hd = settings.value("factories/hsv/hue_discretization").toInt();
         int sd = settings.value("factories/hsv/saturation_discretization").toInt();
         int vd = settings.value("factories/hsv/value_discretization").toInt();
         int fd = settings.value("factories/hsv/frequency_discretization").toInt();
         factoriesCreated.append(new HsvFeatureFactory(hd, sd, vd, fd));
     }
-    if( settings.value("factories_enabled/orientation").toBool()){
+    if (settings.value("factories_enabled/orientation").toBool()) {
         int d = settings.value("factories/orientation/orientation_discretization").toInt();
         factoriesCreated.append(new OrientationFeatureFactory(d));
     }
-    if( settings.value("factories_enabled/area").toBool()){
+    if (settings.value("factories_enabled/area").toBool()) {
         int d = settings.value("factories/area/area_discretization").toInt();
         factoriesCreated.append(new AreaFeatureFactory(d));
     }
@@ -48,68 +45,68 @@ QList<const FeatureFactoryAbstract*> ConfigFileParser::getFactories(){
 }
 
 
-void ConfigFileParser::loadKfold(){
-    if(kfoldCreated)
+void ConfigFileParser::loadKfold() {
+    if (kfoldCreated)
         return;
 
     QString database = settings.value("global/databaseReader").toString();
-    if(database.toLower() == "kfold"){
+    if (database.toLower() == "kfold") {
         QString path = settings.value("kfold/file").toString();
-        if(settings.value("kfold/load").toBool()){
+        if (settings.value("kfold/load").toBool()) {
             kfoldCreated = new KFoldDatabaseReader(path);
-            trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTrainReader() );
-            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTestReader() );
-        }else{
+            trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(kfoldCreated->getTrainReader());
+            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(kfoldCreated->getTestReader());
+        } else {
             QString sunPath = settings.value("sun/database_path").toString();
             float trainPerc = settings.value("kfold/train_percentage").toFloat();
             SunDatabaseReader sunReader = SunDatabaseReader(sunPath);
-            kfoldCreated = new KFoldDatabaseReader(sunReader,  trainPerc);
-            if(settings.value("kfold/save").toBool())
+            kfoldCreated = new KFoldDatabaseReader(sunReader, trainPerc);
+            if (settings.value("kfold/save").toBool())
                 kfoldCreated->save(path);
 
         }
     }
 }
 
-DatabaseReader* ConfigFileParser::getTrainDatabaseReader(){
-    if(trainDatabaseCreated)
+DatabaseReader *ConfigFileParser::getTrainDatabaseReader() {
+    if (trainDatabaseCreated)
         return trainDatabaseCreated;
 
     QString database = settings.value("global/databaseReader").toString();
-    if(database.toLower() == "kfold"){
+    if (database.toLower() == "kfold") {
         loadKfold();
-        trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTrainReader() );
-    }else if(database.toLower() == "sun"){
-            QString sunPath = settings.value("sun/database_path").toString();
-            trainDatabaseCreated = new SunDatabaseReader(sunPath);
+        trainDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(kfoldCreated->getTrainReader());
+    } else if (database.toLower() == "sun") {
+        QString sunPath = settings.value("sun/database_path").toString();
+        trainDatabaseCreated = new SunDatabaseReader(sunPath);
     }
 
     return trainDatabaseCreated;
 }
 
-DatabaseReader* ConfigFileParser::getTestDatabaseReader(){
-    if(testDatabaseCreated)
+DatabaseReader *ConfigFileParser::getTestDatabaseReader() {
+    if (testDatabaseCreated)
         return testDatabaseCreated;
 
     QString database = settings.value("global/databaseReader").toString();
-    if(database.toLower() == "kfold"){
-            testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader( kfoldCreated->getTestReader() );
-    }else if(database.toLower() == "sun"){
-            QString sunPath = settings.value("sun/database_path").toString();
-            testDatabaseCreated = new SunDatabaseReader(sunPath);
+    if (database.toLower() == "kfold") {
+        testDatabaseCreated = new KFoldDatabaseReader::PathDatabaseReader(kfoldCreated->getTestReader());
+    } else if (database.toLower() == "sun") {
+        QString sunPath = settings.value("sun/database_path").toString();
+        testDatabaseCreated = new SunDatabaseReader(sunPath);
     }
 
     return testDatabaseCreated;
 }
 
-ComplexNetworkConstructor ConfigFileParser::getConstructor(FeaturesComplexNetwork &cn){
-    if(coocurrenceCreated)
+ComplexNetworkConstructor ConfigFileParser::getConstructor(FeaturesComplexNetwork &cn) {
+    if (coocurrenceCreated)
         return ComplexNetworkConstructor(cn, *getTrainDatabaseReader(), getFactories(), coocurrenceCreated);
 
     QString coocurrenceEqn = settings.value("constructor_general/coocurrence_equation").toString().toLower();
-    if( coocurrenceEqn == "add"){
+    if (coocurrenceEqn == "add") {
         coocurrenceCreated = new AddOneCoOcurrenceEquation();
-    }else if(coocurrenceEqn == "reinforcement"){
+    } else if (coocurrenceEqn == "reinforcement") {
         float learningRate = settings.value("constructor/reinforcement/learningRate").toFloat();
         float lambda = settings.value("constructor/reinforcement/lambda").toFloat();
         coocurrenceCreated = new ReinforcementCoOcurrenceEquation(learningRate, lambda);
@@ -118,53 +115,52 @@ ComplexNetworkConstructor ConfigFileParser::getConstructor(FeaturesComplexNetwor
     return ComplexNetworkConstructor(cn, *getTrainDatabaseReader(), getFactories(), coocurrenceCreated);
 }
 
-bool ConfigFileParser::cnLoaded(){
-   return settings.value("FeaturesComplexNetwork/load").toBool();
+bool ConfigFileParser::cnLoaded() {
+    return settings.value("FeaturesComplexNetwork/load").toBool();
 }
 
-FeaturesComplexNetwork ConfigFileParser::getComplexNetwork(){
+FeaturesComplexNetwork ConfigFileParser::getComplexNetwork() {
     FeaturesComplexNetwork cn;
-    if(cnLoaded()){
+    if (cnLoaded()) {
         QString path = settings.value("FeaturesComplexNetwork/file").toString();
         cn.load(path.toStdString().c_str(), getFactories());
     }
     return cn;
 }
 
-RegionChooser ConfigFileParser::getRegionChooser(){
+RegionChooser ConfigFileParser::getRegionChooser() {
     QString f = settings.value("region_chooser/file").toString();
-    if(settings.value("region_chooser/load").toBool())
+    if (settings.value("region_chooser/load").toBool())
         return RegionChooser(f);
 
     DatabaseReader *reader = getTestDatabaseReader();
     RegionChooser r(*reader);
-    if(settings.value("region_chooser/save").toBool())
+    if (settings.value("region_chooser/save").toBool())
         r.save(f);
 
     return r;
 }
 
-QVariant ConfigFileParser::getValue(QString str, QVariant def){
+QVariant ConfigFileParser::getValue(QString str, QVariant def) {
     return settings.value(str, def);
 }
 
-ConfigFileParser::~ConfigFileParser()
-{
-    for(const FeatureFactoryAbstract*& f: factoriesCreated){
+ConfigFileParser::~ConfigFileParser() {
+    for (const FeatureFactoryAbstract *&f: factoriesCreated) {
         delete f;
     }
     factoriesCreated.clear();
 
-    if(trainDatabaseCreated)
+    if (trainDatabaseCreated)
         delete trainDatabaseCreated;
 
-    if(testDatabaseCreated)
+    if (testDatabaseCreated)
         delete testDatabaseCreated;
 
-    if(coocurrenceCreated)
+    if (coocurrenceCreated)
         delete coocurrenceCreated;
 
-    if(kfoldCreated)
+    if (kfoldCreated)
         delete kfoldCreated;
 }
 

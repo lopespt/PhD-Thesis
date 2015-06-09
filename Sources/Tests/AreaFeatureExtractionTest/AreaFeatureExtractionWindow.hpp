@@ -8,9 +8,8 @@
 #include <QHBoxLayout>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 
-class AreaFeatureExtractionWindow : public QWidget
-{
-    Q_OBJECT
+class AreaFeatureExtractionWindow : public QWidget {
+Q_OBJECT
 private:
     QPushButton *m_next_button;
     QPushButton *m_previous_button;
@@ -20,12 +19,14 @@ private:
     SunDatabaseReader reader;
 
 public:
-    explicit AreaFeatureExtractionWindow(QString databasePath,QWidget *parent = 0);
+    explicit AreaFeatureExtractionWindow(QString databasePath, QWidget *parent = 0);
 
 signals:
 
 public slots:
+
     void show_next();
+
     void show_previous();
 
 };

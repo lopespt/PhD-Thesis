@@ -1,19 +1,23 @@
-
 #ifndef DATABASE_READER__HPP
 #define DATABASE_READER__HPP
 
 class SupervisedImage;
 
-class DatabaseReader{
-    private:
+class DatabaseReader {
+private:
 
-    public:
-        virtual SupervisedImage readNext()=0;
-        virtual SupervisedImage readPrevious()=0;
-        virtual bool hasNext() const=0;
-        virtual bool hasPrevious() const=0;
-        virtual unsigned int getTotal() const=0;
-        virtual ~DatabaseReader(){}
+public:
+    virtual SupervisedImage readNext() = 0;
+
+    virtual SupervisedImage readPrevious() = 0;
+
+    virtual bool hasNext() const = 0;
+
+    virtual bool hasPrevious() const = 0;
+
+    virtual unsigned int getTotal() const = 0;
+
+    virtual ~DatabaseReader() { }
 
 };
 

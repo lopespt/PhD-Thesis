@@ -7,11 +7,10 @@
 #include <QMouseEvent>
 
 
-class SupervisedImageViewerWidget: public QLabel
-{
-    Q_OBJECT
+class SupervisedImageViewerWidget : public QLabel {
+Q_OBJECT
 private:
-    SupervisedImage* m_supervised_image;
+    SupervisedImage *m_supervised_image;
     const bool m_showSupervision;
     QPixmap m_original_pixmap;
     QString pointer_label;
@@ -23,10 +22,15 @@ private:
     QPixmap p;
 public:
     SupervisedImageViewerWidget(QWidget *parent = 0);
+
     void setSupervisedImage(SupervisedImage image);
+
     QSize sizeHint() const;
+
     void paintEvent(QPaintEvent *);
+
     void mouseMoveEvent(QMouseEvent *);
+
     ~SupervisedImageViewerWidget();
 
 signals:

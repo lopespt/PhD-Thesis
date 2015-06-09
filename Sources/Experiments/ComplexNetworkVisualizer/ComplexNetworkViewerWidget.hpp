@@ -35,9 +35,8 @@
 #include <vtkFloatArray.h>
 #include <Utilities/FeaturesComplexNetwork.hpp>
 
-class ComplexNetworkViewerWidget : public QWidget
-{
-    Q_OBJECT
+class ComplexNetworkViewerWidget : public QWidget {
+Q_OBJECT
 private:
     FeaturesComplexNetwork *cn;
     QVTKWidget2 *vtkWidget;
@@ -47,9 +46,12 @@ private:
     QVTKInteractor *interactor;
 
     void createVtkPipeline();
+
 public:
     explicit ComplexNetworkViewerWidget(QWidget *parent = 0);
+
     void setComplexNetwork(FeaturesComplexNetwork &cn);
+
     virtual ~ComplexNetworkViewerWidget();
 
 signals:

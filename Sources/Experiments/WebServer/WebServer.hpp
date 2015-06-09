@@ -2,10 +2,10 @@
 #define WEBSERVER_HPP
 
 
-class WebServer
-{
+class WebServer {
 public:
     WebServer();
+
     ~WebServer();
 };
 

@@ -1,16 +1,8 @@
-#include <ComplexNetwork/ComplexNetwork.hpp>
-#include <Utilities/Link.hpp>
-#include <Utilities/NodeString.hpp>
-#include <QCommandLineParser>
-#include <QCommandLineOption>
-#include <QCoreApplication>
-#include "ComplexNetworkToMatlab.hpp"
+int main(int argc, char *argv[]) {
 
-int main(int argc, char *argv[]){
+    QCoreApplication app(argc, argv);
 
-    QCoreApplication app(argc,argv);
-
-    if(strcmp(argv[1],"--help")==0){
+    if (strcmp(argv[1], "--help") == 0) {
 
     }
 
@@ -18,8 +10,8 @@ int main(int argc, char *argv[]){
     //cn.load();
 
     QCommandLineParser parser;
-    parser.addPositionalArgument("Input File","Complex Network Input File", "Input_File");
-    parser.addPositionalArgument("Output File","Matlab Output File", "Output_File");
+    parser.addPositionalArgument("Input File", "Complex Network Input File", "Input_File");
+    parser.addPositionalArgument("Output File", "Matlab Output File", "Output_File");
 
     parser.addHelpOption();
     parser.process(app);

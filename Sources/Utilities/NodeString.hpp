@@ -3,23 +3,22 @@
 
 class QString;
 
-class NodeString{
-    public:
-        char text[50];
+class NodeString {
+public:
+    char text[50];
 
-        NodeString();
+    NodeString();
 
-        NodeString(const QString& other);
+    NodeString(const QString &other);
 
-        NodeString& operator=(const QString& other);
+    NodeString &operator=(const QString &other);
 
-        bool operator<(const QString& other) const;
+    bool operator<(const QString &other) const;
 
-        bool operator<(const NodeString& other)const;
+    bool operator<(const NodeString &other) const;
 
-        bool operator==(const NodeString& other) const;
+    bool operator==(const NodeString &other) const;
 };
-
 
 
 #endif // NODESTRING_HPP

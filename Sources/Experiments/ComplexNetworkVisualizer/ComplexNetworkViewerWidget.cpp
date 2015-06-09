@@ -1,16 +1,12 @@
 #include "ComplexNetworkViewerWidget.hpp"
-#include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkDataSetAttributes.h>
-#include <QMap>
 #include <vtkProperty.h>
 #include <vtkProperty2D.h>
 #include <vtkTextProperty.h>
-#include <FeatureExtractors/FeatureAbstract.hpp>
-#include <vtkInteractorStyleFlight.h>
+
 ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
-    QWidget(parent)
-{
-    QVBoxLayout* lay = new QVBoxLayout;
+        QWidget(parent) {
+    QVBoxLayout *lay = new QVBoxLayout;
     this->setLayout(lay);
     this->vtkWidget = new QVTKWidget2;
     this->vRenderer = vtkRenderer::New();
@@ -19,45 +15,46 @@ ComplexNetworkViewerWidget::ComplexNetworkViewerWidget(QWidget *parent) :
     //vtkWidget->SetRenderWindow(vtkGenericOpenGLRenderWindow::New());
     vtkWidget->GetRenderWindow()->AddRenderer(vRenderer);
     lay->addWidget(vtkWidget);
-    vRenderer->SetBackground(0.3,0.4,0.5);
+    vRenderer->SetBackground(0.3, 0.4, 0.5);
 }
 
-void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn){
+void ComplexNetworkViewerWidget::setComplexNetwork(FeaturesComplexNetwork &cn) {
     this->cn = &cn;
     char buffer[100];
-    QMap<FeatureAbstractPtr , vtkIdType> vertices;
+    QMap<FeatureAbstractPtr, vtkIdType> vertices;
     vtkFloatArray *array = vtkFloatArray::New();
     vtkStringArray *array2 = vtkStringArray::New();
     array->SetName("pesos");
     array2->SetName("nomes");
 
-    for(FeaturesComplexNetwork::NodeIt it(cn); it!=INVALID; ++it){
+    for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
         vtkIdType node_id = this->graph->AddVertex();
-        vertices[ cn.getNode(it) ] = node_id;
+        vertices[cn.getNode(it)] = node_id;
         array2->InsertValue(node_id, cn.getNode(it)->asString(buffer));
     }
 
 
-    for(FeaturesComplexNetwork::NodeIt i(cn); i!=INVALID; ++i){
-        for(FeaturesComplexNetwork::OutArcIt it(cn, i); it!= INVALID; ++it){
-            vtkEdgeType edgeId = this->graph->AddEdge(vertices[ this->cn->getNode(i)], vertices[this->cn->getNode( cn.target(it))]);
+    for (FeaturesComplexNetwork::NodeIt i(cn); i != INVALID; ++i) {
+        for (FeaturesComplexNetwork::OutArcIt it(cn, i); it != INVALID; ++it) {
+            vtkEdgeType edgeId = this->graph->AddEdge(vertices[this->cn->getNode(i)],
+                                                      vertices[this->cn->getNode(cn.target(it))]);
             array->InsertValue(edgeId.Id, cn.getArcValue(it).getWeight());
         }
     }
     this->graph->GetEdgeData()->AddArray(array);
     this->graph->GetVertexData()->AddArray(array2);
 
-   createVtkPipeline();
-   this->vRenderer->ResetCamera();
-   this->vtkWidget->GetRenderWindow()->GetInteractor()->EnableRenderOn();
-   this->vtkWidget->GetRenderWindow()->Render();
-   this->viewer->SetInteractorStyle(vtkInteractorStyleFlight::New());
-   //this->viewer->GetInteractor()->Start();
-   //this->viewer->GetInteractor()->Start();
-   //this->vRenderer->Render();
+    createVtkPipeline();
+    this->vRenderer->ResetCamera();
+    this->vtkWidget->GetRenderWindow()->GetInteractor()->EnableRenderOn();
+    this->vtkWidget->GetRenderWindow()->Render();
+    this->viewer->SetInteractorStyle(vtkInteractorStyleFlight::New());
+    //this->viewer->GetInteractor()->Start();
+    //this->viewer->GetInteractor()->Start();
+    //this->vRenderer->Render();
 }
 
-void ComplexNetworkViewerWidget::createVtkPipeline(){
+void ComplexNetworkViewerWidget::createVtkPipeline() {
     //vtkGraphMapper* mapper=vtkGraphMapper::New();
     vtkGraphToPolyData *edgesPoly = vtkGraphToPolyData::New();
     vtkPolyDataMapper *edgesMapper = vtkPolyDataMapper::New();
@@ -85,12 +82,12 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     vtkActor *actor = vtkActor::New();
     actor->SetMapper(edgesMapper);
     vtkColorTransferFunction *lc = vtkColorTransferFunction::New();
-    lc->AddHSVPoint(0,0,1,1);
-    lc->AddHSVPoint(1000,1,1,1);
+    lc->AddHSVPoint(0, 0, 1, 1);
+    lc->AddHSVPoint(1000, 1, 1, 1);
     edgesMapper->SetColorModeToMapScalars();
     edgesMapper->SetLookupTable(lc);
     actor->GetProperty()->SetOpacity(0.5);
-    actor->GetProperty()->SetColor(0.4,0.6,0);
+    actor->GetProperty()->SetColor(0.4, 0.6, 0);
     //edgesMapper->SetScalarModeToDefault();
 
 
@@ -114,7 +111,7 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
 
     vtkActor *actor2 = vtkActor::New();
     actor2->SetMapper(nodesMapper);
-    actor2->GetProperty()->SetColor(1,1,0);
+    actor2->GetProperty()->SetColor(1, 1, 0);
 
     vtkActor2D *actor3 = vtkActor2D::New();
     actor3->SetMapper(nodeLabels);
@@ -124,7 +121,7 @@ void ComplexNetworkViewerWidget::createVtkPipeline(){
     vRenderer->AddActor2D(actor3);
 }
 
-ComplexNetworkViewerWidget::~ComplexNetworkViewerWidget(){
+ComplexNetworkViewerWidget::~ComplexNetworkViewerWidget() {
     this->vRenderer->Delete();
     this->graph->Delete();
     this->viewer->Delete();

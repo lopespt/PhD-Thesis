@@ -2,13 +2,15 @@
 #define COOCURRENCEEQUATION_HPP
 
 class Link;
+
 class Region;
 
-class CoOcurrenceEquation
-{
+class CoOcurrenceEquation {
 public:
-    virtual void reWeight(Link& l) = 0;
-    virtual void firstWeight(Link& l) = 0;
+    virtual void reWeight(Link &l) = 0;
+
+    virtual void firstWeight(Link &l) = 0;
+
     virtual ~CoOcurrenceEquation();
 };
 

@@ -3,15 +3,17 @@
 
 #include "CoOcurrenceEquation.hpp"
 
-class AddOneCoOcurrenceEquation: public CoOcurrenceEquation
-{
+class AddOneCoOcurrenceEquation : public CoOcurrenceEquation {
 private:
     unsigned long long int time;
 
 public:
     inline void reWeight(Link &l);
+
     inline void firstWeight(Link &l);
+
     AddOneCoOcurrenceEquation();
+
     ~AddOneCoOcurrenceEquation();
 };
 

@@ -1,89 +1,81 @@
-
 #include "Region.hpp"
 
 #include <QPixmap>
 #include <QPainter>
-#include <QColor>
-#include <QPoint>
-#include <QColor>
-#include <opencv/cv.h>
-#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv/highgui.h>
-#include <Utilities/Utils.hpp>
 
-Region::Region(const QImageCV* image, cv::Mat mask):image(image),boundary( Utils::Mask2QPolygon(mask) ),  label(""){
-
-}
-
-Region::Region(const QImageCV* image, QPolygon boundary):image(image),boundary(boundary),  label(""){
+Region::Region(const QImageCV *image, cv::Mat mask) : image(image), label(""), mask(mask) {
 
 }
 
-Region::Region(const QImageCV* image, QPolygon boundary, QString label):image(image),boundary(boundary),  label(label){
+Region::Region(const QImageCV *image, cv::Mat mask, QString label) : image(image), label(label), mask(mask) {
+
 }
 
-void Region::show_region() {
-    /*l = new QLabel();
-    QPixmap p = QPixmap::fromImage(*this->image);
-    QPainter e(&p);
-    e.setBrush(QBrush(QColor(255,0,0,128)));
-    e.drawConvexPolygon(this->boundary);
-    l->setPixmap(p);
-    l->setVisible(true);*/
+Region::Region(const QImageCV *image, QPolygon boundary, QList<QPolygon> holes) : image(image),
+                                                                                  label(""),
+                                                                                  mask(image->height(), image->width(),
+                                                                                       boundary, holes) {
 }
+
+Region::Region(const QImageCV *image, QPolygon boundary) : image(image),
+                                                           label(""),
+                                                           mask(image->height(), image->width(),
+                                                                boundary) {
+
+}
+
+Region::Region(const QImageCV *image, QPolygon boundary, QList<QPolygon> holes, QString label) : image(image),
+                                                                                                 label(label),
+                                                                                                 mask(image->height(),
+                                                                                                      image->width(),
+                                                                                                      boundary) {
+}
+
+Region::Region(const QImageCV *image, QPolygon boundary, QString label) : image(image),
+                                                                          label(label),
+                                                                          mask(image->height(),
+                                                                               image->width(),
+                                                                               boundary) {
+}
+
 
 QRect Region::getBoundaryRect() const {
-    return boundary.boundingRect();
+    return mask.getBoundary().boundingRect();
 }
 
-QPolygon Region::getBoundary() const{
-    return this->boundary;
-}
 
-QRgb Region::getPixel(int x, int y, bool *insideRegion) const{
-    if(insideRegion)
-        *insideRegion = this->boundary.containsPoint(QPoint(x,y), Qt::OddEvenFill);
-    
+QRgb Region::getPixel(int x, int y, bool *insideRegion) const {
+    if (insideRegion)
+        *insideRegion = this->mask.containsPoint(x, y);
+
     return this->image->pixel(x, y);
 }
 
-QRgb Region::getPixelRelative(int x, int y, bool *insideRegion) const{
-    x = x + boundary.boundingRect().left();
-    y = y + boundary.boundingRect().top();
-    return getPixel(x,y, insideRegion);
+QRgb Region::getPixelRelative(int x, int y, bool *insideRegion) const {
+    x = x + mask.getBoundary().boundingRect().left();
+    y = y + mask.getBoundary().boundingRect().top();
+    return getPixel(x, y, insideRegion);
 }
 
-QString Region::getLabel() const{
+QString Region::getLabel() const {
     return label;
 }
 
-cv::Mat Region::getMask() const {
-    if(cvmask.empty()){
-       cv::Mat img(this->image->size().height(), this->image->size().width(), CV_8UC1 );
-       img = cvScalar(0);
-       int size = boundary.size();
-       cv::Point *poly1 = new cv::Point[size];
-       for(int i=0;i<boundary.size();i++){
-           poly1[i].x = boundary[i].x();
-           poly1[i].y = boundary[i].y();
-       }
-       const cv::Point *points[1] = { poly1 };
-       cv::fillPoly(img, points, &size,1, cvScalar(255));
-       delete[] poly1;
-       this->cvmask = img.clone();
-    }
-   return this->cvmask;
+const RegionMask &Region::getMask() const {
+    return mask;
 }
 
-void Region::setImage(QImageCV *img){
+void Region::setImage(QImageCV *img) {
     this->image = img;
 }
 
-const QImageCV* Region::getImage()const{
+const QImageCV *Region::getImage() const {
     return this->image;
 }
 
-Region::~Region(){
-    //if(l)
-      //  l->deleteLater();
+
+void Region::setMask(const RegionMask &newMask) {
+    assert(newMask.size == mask.size);
+    this->mask = newMask;
 }

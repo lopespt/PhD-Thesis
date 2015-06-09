@@ -3,19 +3,22 @@
 
 #include <QImage>
 #include <opencv/cv.h>
-class QImageCV: public QImage
-{
+
+class QImageCV : public QImage {
 private:
     mutable cv::Mat hsvImage;
     mutable cv::Mat bgrImage;
 public:
 
-    QImageCV():QImage(){}
-    QImageCV(const QImage& other):QImage(other){}
-    QImageCV(QString filename):QImage(filename){}
+    QImageCV() : QImage() { }
 
-    cv::Mat getCvBGRImage() const;
-    cv::Mat getCvHsvImage() const;
+    QImageCV(const QImage &other) : QImage(other) { }
+
+    QImageCV(QString filename) : QImage(filename) { }
+
+    const cv::Mat &getCvBGRImage() const;
+
+    const cv::Mat &getCvHsvImage() const;
 
     ~QImageCV();
 };
