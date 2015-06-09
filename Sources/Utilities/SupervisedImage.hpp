@@ -6,7 +6,6 @@
 #include <QList>
 #include <FeatureExtractors/Region.hpp>
 #include <QString>
-#include <QImage>
 #include <opencv/cv.h>
 #include <FeatureExtractors/QImageCV.hpp>
 

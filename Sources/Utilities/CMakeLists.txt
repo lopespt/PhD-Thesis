@@ -18,5 +18,5 @@ FILE(GLOB_RECURSE Source_Files
     *.cpp
 )
 ADD_LIBRARY(Utilities ${Source_Files})
-TARGET_LINK_LIBRARIES(Utilities ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ${LEMON_LIBRARIES} ComplexNetwork)
+TARGET_LINK_LIBRARIES(Utilities FeatureExtractors   ${Qt5Core_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ${LEMON_LIBRARIES} ComplexNetwork)
 
