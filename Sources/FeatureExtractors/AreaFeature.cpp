@@ -3,11 +3,11 @@
 #include <ostream>
 #include <QHash>
 
-AreaFeature::AreaFeature(float content) : Feature<float>(content, 1, "AreaFeature") {
+AreaFeature::AreaFeature(unsigned int content) : Feature<unsigned int>(content, 1, "AreaFeature") {
 }
 
 const char *AreaFeature::asString(char *buffer) const {
-    sprintf(buffer, "area(%f)", this->content);
+    sprintf(buffer, "area(%u)", this->content);
     return buffer;
 }
 

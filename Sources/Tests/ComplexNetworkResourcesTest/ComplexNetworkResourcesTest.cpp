@@ -29,7 +29,7 @@ int memoryInUse() {
 void initTest(long int num_nodes, long int max_edges) {
 
 
-    for (long int nn = 2000; nn <= num_nodes; nn += 20000) {
+    for (int nn = 2000; nn <= num_nodes; nn += 20000) {
         ComplexNetwork<node_t, int> cn;
         for (int i = 0; i < nn; i++) {
             cn.addNode(node_t(i, i * 2));
@@ -37,9 +37,8 @@ void initTest(long int num_nodes, long int max_edges) {
 
         printf("Nodes created\n");
         fflush(stdout);
-        std::srand(time(NULL));
+        std::srand((unsigned int) time(NULL));
         const long int max = max_edges;
-        time_t last_time = time(NULL);
         time_t initial_time = time(NULL);
         long int density = 0;
         int last_density = -1;
@@ -47,11 +46,11 @@ void initTest(long int num_nodes, long int max_edges) {
             int a = rand() % nn;
             int b = rand() % nn;
             cn.addArc(cn.nodeFromId(a), cn.nodeFromId(b), a + b);
-            density = (i + 1) * 2. / ((nn + 1) * nn) * 100;
+            density = (long) ((i + 1) * 2. / ((nn + 1) * nn) * 100);
             if (density != last_density) {
-                last_density = density;
-                last_time = time(NULL);
-                printf("nodes: %-7ld \t edges: %-11ld \t density: %3ld %%  \t memory: %5d Mb  time: %7ld secs \n", nn,
+                last_density = (int) density;
+                time(NULL);
+                printf("nodes: %i \t edges: %-11ld \t density: %3ld %%  \t memory: %5d Mb  time: %7ld secs \n", nn,
                        i + 1, density, memoryInUse() / 1024, time(NULL) - initial_time);
                 fflush(stdout);
             }
@@ -60,6 +59,7 @@ void initTest(long int num_nodes, long int max_edges) {
 
 }
 
+/*
 void initTest2() {
     ComplexNetwork<int, int> a;
 
@@ -73,9 +73,7 @@ void initTest2() {
     for (lemon::ListDigraph::ArcIt i(a); i != INVALID; ++i) {
         printf("%d\n", a.getArcValue(i));
     }
-
-
-}
+}*/
 
 int main() {
     //initTest2();

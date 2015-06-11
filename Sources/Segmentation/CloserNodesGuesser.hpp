@@ -19,7 +19,7 @@ public:
 
     QList<NodeProbability> guessNodes(const QList<FeatureAbstractPtr> &features) const;
 
-    QList<NodeProbability> doIterativeRandomWalk(const QList<FeatureAbstractPtr> &hints, int walks) const;
+    QList<NodeProbability> doIterativeRandomWalk(const QList<FeatureAbstractPtr> &hints, unsigned int walks) const;
 
 
     ~CloserNodesGuesser();

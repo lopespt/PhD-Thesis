@@ -35,7 +35,7 @@ void warn(const char *format, ...) {
 }
 
 cv::Mat Utils::QImage2Mat(const QImage &img) {
-    cv::Mat ret(img.height(), img.width(), CV_8UC4, (uchar *) img.bits(), img.bytesPerLine());
+    cv::Mat ret(img.height(), img.width(), CV_8UC4, (uchar *) img.bits(), (size_t) img.bytesPerLine());
     return ret;
 }
 

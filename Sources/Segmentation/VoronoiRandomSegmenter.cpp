@@ -6,7 +6,7 @@ using namespace cv;
 using namespace Voronoi;
 
 VoronoiRandomSegmenter::VoronoiRandomSegmenter() {
-    srand(time(0));
+    srand((unsigned int) time(0));
 }
 
 VoronoiRandomSegmenter::~VoronoiRandomSegmenter() {
@@ -36,8 +36,8 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
     vector<float> y;
     for (int i = 0; i < regions; i++) {
 
-        float px;
-        float py;
+        int px;
+        int py;
 
         unsigned long int times = 0;
         //find valid values of px and py
@@ -62,7 +62,7 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
     v.resetIterator();
     //rectangle(m, cv::Point(0,0), cv::Point(399,399),cvScalarAll(255));
     while (v.getNext(px, py, p2x, p2y)) {
-        line(m, cv::Point(px, py), cv::Point(p2x, p2y), cvScalarAll(255), 1);
+        line(m, cv::Point((int) (px+0.5), (int) (py+0.5)), cv::Point((int) (p2x+0.5), (int) (p2y+0.5)), cvScalarAll(255), 1);
         //printf("l = %f %f %f %f\n", px, py, p2x, p2y);
     }
     Mat vor = m.clone();
@@ -72,7 +72,7 @@ SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) 
 
     for (unsigned int i = 0; i < this->regions; i++) {
         m = vor.clone();
-        floodFill(m, cv::Point(x[i], y[i]), cvScalarAll(255));
+        floodFill(m, cv::Point((int) x[i], (int) y[i]), cvScalarAll(255));
         erode(m, m, getStructuringElement(MORPH_ERODE, cv::Size(3, 3)));
         dilate(m, m, getStructuringElement(MORPH_DILATE, cv::Size(3, 3)));
         regions.append(Region(NULL, m));

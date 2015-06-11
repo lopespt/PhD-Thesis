@@ -13,7 +13,6 @@ class AreaFeatureFactory : public FeatureFactoryAbstract {
 private:
     int discretization;
 
-    void discretize(int quantization);
 
 public:
 

@@ -5,7 +5,7 @@ AreaFeatureFactory::AreaFeatureFactory(int discretization) : FeatureFactoryAbstr
 }
 
 FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region *region) const {
-    float vect;
+    unsigned int vect;
     region->getMask();
     float area = 0;
     //bool ok;
@@ -21,24 +21,24 @@ FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region *region) co
         area += (1.0 * boundary[i].x() * boundary[i + 1].y() - 1.0 * boundary[i + 1].x() * boundary[i].y());
     }
     area += (1.0 * boundary.last().x() * boundary[0].y() - 1.0 * boundary[0].x() * boundary.last().y());
-    area = fabs(area) / 2.0;
+    area = fabs(area) / 2.0f;
 
-    vect = area / (region->getImage()->width() * region->getImage()->height());
+    float perc_area = (area / (region->getImage()->width() * region->getImage()->height()));
 
     //Discretization
 
-    vect = ((int) (vect * discretization)) / (float) discretization;
+    vect = (unsigned int) (perc_area * discretization + 0.5);
     return FeatureAbstractPtr(new AreaFeature(vect));
 }
 
 
 FeatureAbstractPtr AreaFeatureFactory::CreateFromStream(istream &stream) const {
-    AreaFeature *temp = new AreaFeature(0);
     int type;
+    float value;
     stream >> type;
     stream.ignore();
-    stream >> temp->content;
-    FeatureAbstractPtr f = FeatureAbstractPtr(move(temp));
+    stream >>  value;
+    FeatureAbstractPtr f = FeatureAbstractPtr(new AreaFeature(value));
     return f;
 }
 

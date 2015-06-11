@@ -34,8 +34,7 @@ void RandomWalkTest2::execute() {
     IterativeRandomWalk w(&net2);
     w.Execute(1, 5);
     double sum = 0;
-    foreach(double
-    d, w.getAllProbs()) {
+    for(double d: w.getAllProbs()) {
         sum += d;
         printf("%f\n", d);
     }

@@ -13,16 +13,13 @@ FeatureAbstract::FeatureAbstract(int type, const char *featureName) : type(type)
 
 bool FeatureAbstract::operator<(const FeatureAbstract &other) const {
     if (this->getType() != other.getType())
-        return other.getType() - this->getType();
-    return memcmp(this->data, other.data, data_size);
+        return (other.getType() < this->getType());
+    return memcmp(this->data, other.data, data_size) < 0;
 }
 
 
 bool FeatureAbstract::operator==(const FeatureAbstract &other) const {
-    if (this->getType() != other.getType())
-        return false;
-    return memcmp(this->data, other.data, this->data_size) == 0;
-
+    return this->getType() == other.getType() && memcmp(this->data, other.data, this->data_size) == 0;
 }
 
 uint qHash(const FeatureAbstractPtr &v) {

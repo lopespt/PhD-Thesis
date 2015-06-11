@@ -1425,7 +1425,7 @@
             if (bB !== L) {
                 if (bB === null) {
                     b.removeAttr(bA, bx);
-                    return
+
                 } else {
                     if (e && "set" in e && by && (bw = e.set(bA, bB, bx)) !== L) {
                         return bw

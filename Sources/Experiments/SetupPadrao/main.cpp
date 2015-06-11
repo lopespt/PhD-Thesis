@@ -10,6 +10,7 @@
 #include <opencv/highgui.h>
 
 #include <Utilities/VoronoiDiagramGenerator.hpp>
+#include <FeatureExtractors/HsvFeatureFactory.hpp>
 
 using namespace cv;
 using namespace Voronoi;
@@ -23,6 +24,44 @@ int vec3diff(const Vec3i &a, const Vec3i &b) {
 }
 
 int main(int argc, char **argv) {
+    AreaFeatureFactory area(20);
+    HsvFeatureFactory hsv(10,3,3,100);
+    OrientationFeatureFactory orie(10);
+
+    QImageCV original("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Tests/Img.png");
+
+    Region a(&original, imread("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Tests/Mask1.png", CV_LOAD_IMAGE_GRAYSCALE));
+    Region b(&original, imread("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Tests/Mask2.png", CV_LOAD_IMAGE_GRAYSCALE));
+    Region c(&original, imread("/Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Tests/Mask3.png", CV_LOAD_IMAGE_GRAYSCALE));
+
+    FeatureAbstractPtr fa = area.CreateFromRegion(&a);
+    FeatureAbstractPtr fb = area.CreateFromRegion(&b);
+    FeatureAbstractPtr fc = area.CreateFromRegion(&c);
+
+    std::cout << fa << endl;
+    std::cout << fb << endl;
+    std::cout << fc << endl;
+
+    fa = hsv.CreateFromRegion(&a);
+    fb = hsv.CreateFromRegion(&b);
+    fc = hsv.CreateFromRegion(&c);
+
+    std::cout << fa << endl;
+    std::cout << fb << endl;
+    std::cout << fc << endl;
+
+
+    fa = orie.CreateFromRegion(&a);
+    fb = orie.CreateFromRegion(&b);
+    fc = orie.CreateFromRegion(&c);
+
+    std::cout << fa << endl;
+    std::cout << fb << endl;
+    std::cout << fc << endl;
+}
+
+
+int main4(int argc, char **argv) {
 
     SupervisedImage sup("/Users/wachs/SUN/Images/a/airfield/sun_bkoykzhsrosredze.jpg",
                         "/Users/wachs/SUN/Annotations/a/airfield/sun_bkoykzhsrosredze.xml");

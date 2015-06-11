@@ -3,7 +3,7 @@
 #include <QColormap>
 
 SupervisedImageViewerWidget::SupervisedImageViewerWidget(QWidget *parent)
-        : QLabel(), m_supervised_image(NULL), m_showSupervision(true) {
+        : QLabel(parent), m_supervised_image(NULL), m_showSupervision(true) {
     this->setMouseTracking(true);
     this->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
 }
@@ -16,7 +16,6 @@ void SupervisedImageViewerWidget::setSupervisedImage(SupervisedImage image) {
         *m_supervised_image = image;
 
     m_original_pixmap = QPixmap::fromImage(*m_supervised_image->getImage());
-    QPixmap p;
     for (int i = 0; i < m_supervised_image->getRegions().size(); i++) {
         QPainter t(&m_original_pixmap);
         QColor c = QColor::fromHsv(i * 255 / (m_supervised_image->getRegions().size() - 1), 255, 255, 50);
@@ -36,14 +35,14 @@ void SupervisedImageViewerWidget::paintEvent(QPaintEvent *event) {
 
     QPainter painter(this);
     //Scale PixMap to the widget size.
-    float pix_r = m_original_pixmap.width() * 1.0 / m_original_pixmap.height();
-    float wid_r = paint_pix_width * 1.0 / paint_pix_height;
+    float pix_r = m_original_pixmap.width() * 1f / m_original_pixmap.height();
+    float wid_r = paint_pix_width * 1f / paint_pix_height;
     if (pix_r > wid_r)
         p = m_original_pixmap.scaledToWidth(paint_pix_width);
     else
         p = m_original_pixmap.scaledToHeight(paint_pix_height);
 
-    scale_factor = paint_pix_width * 1. / m_original_pixmap.width();
+    scale_factor = paint_pix_width * 1.f / m_original_pixmap.width();
     pic_x = paint_pix_width / 2 - p.width() / 2;
     pic_y = paint_pix_height / 2 - p.height() / 2;
     painter.drawPixmap(pic_x, pic_y, p);
@@ -60,8 +59,8 @@ void SupervisedImageViewerWidget::mouseMoveEvent(QMouseEvent *evt) {
     evt->accept();
     pointer_x = evt->x() - pic_x;
     pointer_y = evt->y() - pic_y;
-    int px = pointer_x * 1.0 / p.width() * m_original_pixmap.width();
-    int py = pointer_y * 1.0 / p.height() * m_original_pixmap.height();
+    int px = (int) (pointer_x * 1f / p.width() * m_original_pixmap.width());
+    int py = (int) (pointer_y * 1f / p.height() * m_original_pixmap.height());
     fflush(stdout);
             foreach(Region reg, this->m_supervised_image->getRegions()) {
             if (reg.getMask().containsPoint(px, py)) {

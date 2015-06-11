@@ -1,14 +1,14 @@
 #include "RegionChooser.hpp"
 
 RegionChooser::RegionChooser(DatabaseReader &reader) {
-    srand(time(0));
+    srand((unsigned int) time(0));
     while (reader.hasNext()) {
         SupervisedImage img = reader.readNext();
         ChosenRegion reg;
         reg.imagePath = img.getImagePath();
         reg.supervisedPath = img.getSupervisedPath();
         if (img.getRegions().size() > 1) {
-            reg.regionChoosed = rand() % img.getRegions().size();
+            reg.regionChoosed = (unsigned int) (rand() % img.getRegions().size());
             regions.append(reg);
         }
     }

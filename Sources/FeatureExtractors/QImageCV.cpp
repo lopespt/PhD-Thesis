@@ -3,7 +3,7 @@
 const cv::Mat &QImageCV::getCvBGRImage() const {
     if (bgrImage.empty()) {
         const QImage &newImg = *this;
-        cv::Mat ret(newImg.height(), newImg.width(), CV_8UC4, (uchar *) newImg.bits(), newImg.bytesPerLine());
+        cv::Mat ret(newImg.height(), newImg.width(), CV_8UC4, (uchar *) newImg.bits(), (size_t) newImg.bytesPerLine());
         this->bgrImage = ret.clone();
     }
     return this->bgrImage;

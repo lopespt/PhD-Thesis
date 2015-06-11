@@ -8,7 +8,7 @@ CloserNodesGuesser::CloserNodesGuesser(const FeaturesComplexNetwork &cn, Iterati
 
 
 QList<CloserNodesGuesser::NodeProbability> CloserNodesGuesser::doIterativeRandomWalk(
-        const QList<FeatureAbstractPtr> &hints, int walks) const {
+        const QList<FeatureAbstractPtr> &hints, unsigned int walks) const {
 
     QList<FeaturesComplexNetwork::Node> ids;
     for (const FeatureAbstractPtr &s: hints) {

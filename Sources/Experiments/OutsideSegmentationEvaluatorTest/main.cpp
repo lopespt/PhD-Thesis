@@ -1,13 +1,11 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
-#include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <Segmentation/EntropyXorSegmentationEvaluator.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Segmentation/VoronoiRandomSegmenter.hpp>
-#include <Utilities/SupervisedImage.hpp>
 #include <opencv/highgui.h>
 #include "ConfigFileParser.hpp"
 
@@ -111,7 +109,7 @@ int main2(int argc, char **argv) {
         if (img.hasError())
             continue;
 
-        v.setNumberOfRegions(img.getRegions().size());
+        v.setNumberOfRegions((unsigned int) img.getRegions().size());
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
         //Inserindo a segmentação manual
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));

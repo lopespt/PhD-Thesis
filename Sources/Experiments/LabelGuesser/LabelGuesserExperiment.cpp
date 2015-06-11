@@ -61,7 +61,7 @@ QList<QString> LabelGuesserExperiment::guessByIterativeRandomWalk(IterativeRando
 
             foreach(FeaturesComplexNetwork::Node
                             id, ids) {
-            walk.Execute(id, walkLenght);
+            walk.Execute(id, (unsigned int) walkLenght);
             FeaturesComplexNetwork::NodeMap <double> probs(cn);
             walk.getAllProbs(probs);
             for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
@@ -115,7 +115,7 @@ void LabelGuesserExperiment::printLabels(FeaturesComplexNetwork *cn) {
 }
 
 void LabelGuesserExperiment::execute(QString outputFile) {
-    srand(time(0));
+    srand((unsigned int) time(0));
 
     cn.refreshCache();
 

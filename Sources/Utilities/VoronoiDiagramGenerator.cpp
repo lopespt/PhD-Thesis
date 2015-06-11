@@ -67,7 +67,7 @@ namespace Voronoi {
         sorted = 0;
         freeinit(&sfl, sizeof(Site));
 
-        sites = (struct Site *) myalloc(nsites * sizeof(*sites));
+        sites = (struct Site *) myalloc((unsigned int) (nsites * sizeof(*sites)));
 
         if (sites == 0)
             return false;
@@ -96,7 +96,7 @@ namespace Voronoi {
             //printf("\n%f %f\n",xValues[i],yValues[i]);
         }
 
-        qsort(sites, nsites, sizeof(*sites), scomp);
+        qsort(sites, (size_t) nsites, sizeof(*sites), scomp);
 
         siteidx = 0;
         geominit();
@@ -126,7 +126,7 @@ namespace Voronoi {
         int i;
         freeinit(&hfl, sizeof **ELhash);
         ELhashsize = 2 * sqrt_nsites;
-        ELhash = (struct Halfedge **) myalloc(sizeof *ELhash * ELhashsize);
+        ELhash = (struct Halfedge **) myalloc((unsigned int) (sizeof *ELhash * ELhashsize));
 
         if (ELhash == 0)
             return false;
@@ -145,7 +145,7 @@ namespace Voronoi {
     }
 
 
-    struct Halfedge *VoronoiDiagramGenerator::HEcreate(struct Edge *e, int pm) {
+    struct Halfedge *VoronoiDiagramGenerator::HEcreate(struct Edge *e, char pm) {
         struct Halfedge *answer;
         answer = (struct Halfedge *) getfree(&hfl);
         answer->ELedge = e;
@@ -405,7 +405,7 @@ table may be present.   */
             t3 = yl - topsite->coord.y;
             above = t1 * t1 > t2 * t2 + t3 * t3;
         };
-        return (el->ELpm == le ? above : !above);
+        return el->ELpm == le ? above : !above;
     }
 
 
@@ -454,7 +454,7 @@ table may be present.   */
 
         he->vertex = v;
         ref(v);
-        he->ystar = (float) (v->coord.y + offset);
+        he->ystar = (v->coord.y + offset);
         last = &PQhash[PQbucket(he)];
         while ((next = last->PQnext) != (struct Halfedge *) NULL &&
                (he->ystar > next->ystar ||
@@ -523,7 +523,7 @@ table may be present.   */
         PQcount = 0;
         PQmin = 0;
         PQhashsize = 4 * sqrt_nsites;
-        PQhash = (struct Halfedge *) myalloc(PQhashsize * sizeof *PQhash);
+        PQhash = (struct Halfedge *) myalloc((unsigned int) (PQhashsize * sizeof *PQhash));
 
         if (PQhash == 0)
             return false;
@@ -544,7 +544,7 @@ table may be present.   */
         struct Freenode *t;
 
         if (fl->head == (struct Freenode *) NULL) {
-            t = (struct Freenode *) myalloc(sqrt_nsites * fl->nodesize);
+            t = (struct Freenode *) myalloc((unsigned int) (sqrt_nsites * fl->nodesize));
 
             if (t == 0)
                 return 0;
@@ -690,7 +690,7 @@ table may be present.   */
 
     void VoronoiDiagramGenerator::clip_line(struct Edge *e) {
         struct Site *s1, *s2;
-        float x1 = 0, x2 = 0, y1 = 0, y2 = 0, temp = 0;;
+        float x1 = 0, x2 = 0, y1 = 0, y2 = 0;
 
         x1 = e->reg[0]->coord.x;
         x2 = e->reg[1]->coord.x;

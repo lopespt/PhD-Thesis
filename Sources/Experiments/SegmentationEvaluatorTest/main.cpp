@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
             continue;
 
         VoronoiRandomSegmenter v;
-        v.setNumberOfRegions(img.getRegions().size());
+        v.setNumberOfRegions((unsigned int) img.getRegions().size());
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
         //Inserindo a segmentação manual
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));

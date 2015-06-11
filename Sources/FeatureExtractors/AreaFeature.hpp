@@ -7,9 +7,9 @@ class QDataStream;
 
 class AreaFeatureFactory;
 
-class AreaFeature : public Feature<float> {
+class AreaFeature : public Feature<unsigned int> {
 public:
-    AreaFeature(float value);
+    AreaFeature(unsigned int value);
 
     const char *asString(char *buffer) const;
 

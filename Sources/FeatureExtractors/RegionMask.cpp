@@ -89,3 +89,4 @@ bool RegionMask::containsPoint(int x, int y) const {
 RegionMask::RegionMask(int height, int width) : Mat(height, width, CV_8UC1, cvScalarAll(0)) {
 
 }
+

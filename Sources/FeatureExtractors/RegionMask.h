@@ -27,11 +27,9 @@ public:
     const QPolygon &getBoundary() const;
     const QList<QPolygon> &getHoles() const;
 
-
     RegionMask operator - (const RegionMask& other) const;
     RegionMask operator + (const RegionMask& other) const;
     bool containsPoint(int x, int y) const;
-
 
 
 };

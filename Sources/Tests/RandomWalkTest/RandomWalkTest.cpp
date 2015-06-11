@@ -1,4 +1,6 @@
 #include <Utilities//IterativeRandomWalk.hpp>
+#include <FeatureExtractors/FeatureFactoryAbstract.hpp>
+#include <QList>
 
 class getWeight {
 public:
@@ -10,14 +12,13 @@ public:
 RandomWalkTest::RandomWalkTest() {
 }
 
-void printMatlab(const char *n, QVector <double> v) {
+/*void printMatlab(const char *n, QVector <double> v) {
     printf("%s =[\n", n);
-    foreach(double
-    i, v) {
+    for(double i: v) {
         printf("%f \n", i);
     }
     printf("];");
-}
+}*/
 
 void RandomWalkTest::execute() {
     char buffer[100];
@@ -25,7 +26,7 @@ void RandomWalkTest::execute() {
 
 
     LabelFeatureFactory factory;
-    QList < FeatureFactoryAbstract * > facts;
+    QList<FeatureFactoryAbstract* > facts;
     facts.append(&factory);
     cn.load("/tmp/Implementation-Build/bin/labels.cn", facts);
     IterativeRandomWalk walk(&cn);

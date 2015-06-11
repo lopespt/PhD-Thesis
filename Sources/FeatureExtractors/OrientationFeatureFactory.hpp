@@ -3,6 +3,7 @@
 
 #include "FeatureFactoryAbstract.hpp"
 #include <QList>
+#include <QPoint>
 
 class QPoint;
 
@@ -12,20 +13,20 @@ using namespace std;
 
 class OrientationFeatureFactory : public FeatureFactoryAbstract {
 private:
-    int discretization;
+    unsigned int discretization;
 
     OrientationFeature *discoverOrientation(QList<QPoint> points) const;
 
     float distance(QPoint a, QPoint b) const;
 
-    int discretize(float min, float max, float d, int val) const;
+    unsigned int discretize(unsigned int d, float val) const;
 
 public:
     OrientationFeatureFactory() : OrientationFeatureFactory(10) {
 
     }
 
-    OrientationFeatureFactory(int discretization);
+    OrientationFeatureFactory(unsigned int discretization);
 
     FeatureAbstractPtr CreateFromRegion(const Region *r) const;
 

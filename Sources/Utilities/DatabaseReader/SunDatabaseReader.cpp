@@ -64,5 +64,5 @@ void SunDatabaseReader::discover_files(QString path) {
 }
 
 unsigned int SunDatabaseReader::getTotal() const {
-    return this->image_files.size();
+    return (unsigned int) this->image_files.size();
 }

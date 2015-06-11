@@ -4,7 +4,7 @@
 
 KFoldDatabaseReader::KFoldDatabaseReader(DatabaseReader &reader, float trainRatio) {
     QList<int> randomList = randomPermutation(reader.getTotal());
-    int trainSize = trainRatio * reader.getTotal();
+    int trainSize = (int) (trainRatio * reader.getTotal());
     QSet<int> trainSet;
     for (int i = 0; i < trainSize; i++) {
         trainSet.insert(randomList[i]);
@@ -32,7 +32,7 @@ QList<int> KFoldDatabaseReader::randomPermutation(int n) {
     for (int i = 0; i < n; i++) {
         ret.append(i);
     }
-    srand(time(NULL));
+    srand((unsigned int) time(NULL));
     int r;
     int temp;
     for (int i = 0; i < n; i++) {
@@ -82,7 +82,7 @@ bool KFoldDatabaseReader::PathDatabaseReader::hasPrevious() const {
 }
 
 unsigned int KFoldDatabaseReader::PathDatabaseReader::getTotal() const {
-    return images.size();
+    return (unsigned int) images.size();
 }
 
 void KFoldDatabaseReader::save(QString filePath) const {

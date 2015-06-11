@@ -141,7 +141,7 @@ namespace Voronoi {
 
         struct Halfedge *HEcreate(), *ELleft(), *ELright(), *ELleftbnd();
 
-        struct Halfedge *HEcreate(struct Edge *e, int pm);
+        struct Halfedge *HEcreate(struct Edge *e, char pm);
 
 
         struct Point PQ_min();
