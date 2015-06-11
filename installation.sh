@@ -1,6 +1,13 @@
 #Enable C++11
 
-echo 2 | sudo update-alternatives --config gcc
+sudo apt-get update
+sudo apt-get install -y wget make build-essential
+#echo 2 | sudo update-alternatives --config gcc
+
+
+
+if [ "`which cmake`" == "" ];
+then
 #Install cmake
 dir=$PWD
 cd /tmp
@@ -11,10 +18,10 @@ cd cmake-3.0.2
 make -j5
 sudo make install
 cd $dir
+fi;
 
 #vtk dependencies
-sudo apt-get install libX11-dev libXt-dev libgl1-mesa-dev libosmesa6-dev libglu1-mesa-dev
-
+sudo apt-get install -y  libX11-dev libXt-dev libgl1-mesa-dev libosmesa6-dev libglu1-mesa-dev git
 
 #install vtk v6.1.0
 cd /tmp
