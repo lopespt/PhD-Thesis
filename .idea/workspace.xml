@@ -12,49 +12,49 @@
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="Visualizer_automoc" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
+      <config projectName="PhDThesis" targetName="RandomWalkTest" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest" />
       <config projectName="PhDThesis" targetName="GuiUtilities" />
       <config projectName="PhDThesis" targetName="SetupPadrao_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
-      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors" />
+      <config projectName="PhDThesis" targetName="WebServer_automoc" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
-      <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
       <config projectName="PhDThesis" targetName="Utilities_automoc" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer" />
+      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle_automoc" />
-      <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
+      <config projectName="PhDThesis" targetName="Segmentation_automoc" />
       <config projectName="PhDThesis" targetName="Utilities" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
       <config projectName="PhDThesis" targetName="SetupPadrao" />
-      <config projectName="PhDThesis" targetName="WebServer_automoc" />
-      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
-      <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
+      <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
       <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
       <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
-      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator" />
+      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetwork" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
+      <config projectName="PhDThesis" targetName="Segmentation" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
+      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
       <config projectName="PhDThesis" targetName="LabelGuesserExp" />
       <config projectName="PhDThesis" targetName="Visualizer" />
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="Segmentation_automoc" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors" />
+      <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment_automoc" />
       <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
       <config projectName="PhDThesis" targetName="WebServer" />
-      <config projectName="PhDThesis" targetName="RandomWalkTest" />
-      <config projectName="PhDThesis" targetName="Segmentation" />
+      <config projectName="PhDThesis" targetName="ComplexNetwork" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
@@ -63,61 +63,8 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" afterPath="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="Tested FeatureExtractors: OK!!">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/Utils.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/Utils.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/_node_string_8cpp.html" afterPath="$PROJECT_DIR$/Docs/html/_node_string_8cpp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/annotated.html" afterPath="$PROJECT_DIR$/Docs/html/annotated.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_add_one_co_ocurrence_equation.html" afterPath="$PROJECT_DIR$/Docs/html/class_add_one_co_ocurrence_equation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_area_feature.html" afterPath="$PROJECT_DIR$/Docs/html/class_area_feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_area_feature_extractor.html" afterPath="$PROJECT_DIR$/Docs/html/class_area_feature_extractor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_area_feature_factory.html" afterPath="$PROJECT_DIR$/Docs/html/class_area_feature_factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_cached_complex_network.html" afterPath="$PROJECT_DIR$/Docs/html/class_cached_complex_network.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_feature.html" afterPath="$PROJECT_DIR$/Docs/html/class_feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_features_complex_network.html" afterPath="$PROJECT_DIR$/Docs/html/class_features_complex_network.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_hsv_feature.html" afterPath="$PROJECT_DIR$/Docs/html/class_hsv_feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_hsv_feature_factory.html" afterPath="$PROJECT_DIR$/Docs/html/class_hsv_feature_factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_label_feature.html" afterPath="$PROJECT_DIR$/Docs/html/class_label_feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_label_feature_factory.html" afterPath="$PROJECT_DIR$/Docs/html/class_label_feature_factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_node_spec.html" afterPath="$PROJECT_DIR$/Docs/html/class_node_spec.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_orientation_feature.html" afterPath="$PROJECT_DIR$/Docs/html/class_orientation_feature.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_orientation_feature_factory.html" afterPath="$PROJECT_DIR$/Docs/html/class_orientation_feature_factory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/class_reinforcement_co_ocurrence_equation.html" afterPath="$PROJECT_DIR$/Docs/html/class_reinforcement_co_ocurrence_equation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/files.html" afterPath="$PROJECT_DIR$/Docs/html/files.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/hierarchy.html" afterPath="$PROJECT_DIR$/Docs/html/hierarchy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/jquery.js" afterPath="$PROJECT_DIR$/Sources/html/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Docs/html/search/search.js" afterPath="$PROJECT_DIR$/Docs/html/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Docs/html/search/search.js" afterPath="$PROJECT_DIR$/Sources/Docs/html/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/html/search/search.js" afterPath="$PROJECT_DIR$/Sources/html/search/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/search/search.js" afterPath="$PROJECT_DIR$/html/search/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -179,14 +126,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6465517">
-              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupervisedImageViewerWidget.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutsideSegmentation.hpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46471602">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutsideSegmentation.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,9 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/Utils.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/Utils.hpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/Region.hpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/Region.cpp" />
@@ -248,7 +222,6 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
         <option value="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.hpp" />
-        <option value="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" />
         <option value="$PROJECT_DIR$/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest.cpp" />
@@ -260,6 +233,10 @@
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
+        <option value="$PROJECT_DIR$/installation.sh" />
+        <option value="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp" />
       </list>
     </option>
   </component>
@@ -526,7 +503,7 @@
       <recent name="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetupPadrao">
+  <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="AreaFeatureExtractionTest" CONFIG_NAME="Debug">
       <envs />
       <method />
@@ -842,7 +819,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433823542316</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tested FeatureExtractors: OK!!">
+      <created>1434046208416</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1434046208416</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -854,26 +837,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26746988" sideWeight="0.54756874" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26746988" sideWeight="0.4524313" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49753347" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.63213533" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.4721635" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39156628" sideWeight="0.32135308" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.390625" sideWeight="0.3192389" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626506" sideWeight="0.5532065" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.4918957" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626506" sideWeight="0.44679353" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22410148" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.4136716" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.4524313" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.63213533" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572114" sideWeight="0.46652573" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49753347" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.4524313" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.4136716" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -890,7 +873,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle" />
+    <MESSAGE value="Tested FeatureExtractors: OK!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested FeatureExtractors: OK!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,33 +887,10 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20380434">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52219874">
           <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87103593">
           <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,9 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#93#115#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34957626">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55508476">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28601694">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,9 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28601694">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,21 +1069,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="117" column="10" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1927967">
           <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,9 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1173,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17372881">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,9 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8580508">
           <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.056603774">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4245283">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="735" column="0" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,7 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.3207548">
           <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,7 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16981132">
           <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,9 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#77#114#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,9 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="e#69#102#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1319,13 +1220,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/installation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42213884">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6465517">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46471602">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

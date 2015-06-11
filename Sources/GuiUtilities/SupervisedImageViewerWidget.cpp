@@ -35,8 +35,8 @@ void SupervisedImageViewerWidget::paintEvent(QPaintEvent *event) {
 
     QPainter painter(this);
     //Scale PixMap to the widget size.
-    float pix_r = m_original_pixmap.width() * 1f / m_original_pixmap.height();
-    float wid_r = paint_pix_width * 1f / paint_pix_height;
+    float pix_r = m_original_pixmap.width() * 1.f / m_original_pixmap.height();
+    float wid_r = paint_pix_width * 1.f / paint_pix_height;
     if (pix_r > wid_r)
         p = m_original_pixmap.scaledToWidth(paint_pix_width);
     else
@@ -59,8 +59,8 @@ void SupervisedImageViewerWidget::mouseMoveEvent(QMouseEvent *evt) {
     evt->accept();
     pointer_x = evt->x() - pic_x;
     pointer_y = evt->y() - pic_y;
-    int px = (int) (pointer_x * 1f / p.width() * m_original_pixmap.width());
-    int py = (int) (pointer_y * 1f / p.height() * m_original_pixmap.height());
+    int px = (int) (pointer_x * 1.f / p.width() * m_original_pixmap.width());
+    int py = (int) (pointer_y * 1.f / p.height() * m_original_pixmap.height());
     fflush(stdout);
             foreach(Region reg, this->m_supervised_image->getRegions()) {
             if (reg.getMask().containsPoint(px, py)) {
