@@ -31,7 +31,6 @@ public:
     RegionMask operator + (const RegionMask& other) const;
     bool containsPoint(int x, int y) const;
 
-
 };
 
 

@@ -60,7 +60,9 @@ int main(int argc, char **argv) {
     }
 
     FeaturesComplexNetwork cn;
+    puts("Carregando");
     cn.load(cnFile.toStdString().c_str(), factories);
+    puts("Carregado");
 
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
@@ -79,7 +81,8 @@ int main(int argc, char **argv) {
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
         //Inserindo a segmentação manual
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));
-
+        puts("opa");
+        fflush(stdout);
 
         int segNum = 0;
         for (SegmentedImage &s: seg) {
@@ -88,6 +91,7 @@ int main(int argc, char **argv) {
             printf("Seg %d = %3.1f\n", segNum + 1, results[segNum].second);
             segNum++;
         }
+        continue;
         qSort(results.begin(), results.end(), [&](const result &a, const result &b) {
             return a.second > b.second;
         });

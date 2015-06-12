@@ -106,7 +106,7 @@ int main2(int argc, char **argv) {
         printf("Image(%-5d | %-5d): %s\n", imgn, preader.getTotal(), img.getImagePath().toStdString().c_str());
         imgn++;
 
-        if (img.hasError())
+        if (img.hasError() || img.getRegions().size() < 2)
             continue;
 
         v.setNumberOfRegions((unsigned int) img.getRegions().size());

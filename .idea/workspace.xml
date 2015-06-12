@@ -63,8 +63,11 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="Tested FeatureExtractors: OK!!">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" afterPath="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation.sh" afterPath="$PROJECT_DIR$/installation.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -86,51 +89,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AreaFeatureFactory.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AreaFeatureFactory.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AreaFeature.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeature.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -138,31 +101,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SupervisedImageViewerWidget.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp">
+      <file leaf-file-name="RegionMask.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutsideSegmentation.hpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp">
+      <file leaf-file-name="RegionMask.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46471602">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutsideSegmentation.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp">
+      <file leaf-file-name="installation.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/installation.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.1981132">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -196,15 +159,12 @@
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
         <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.hpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" />
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" />
         <option value="$PROJECT_DIR$/Sources/Utilities/Utils.cpp" />
         <option value="$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" />
@@ -215,7 +175,6 @@
         <option value="$PROJECT_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" />
         <option value="$PROJECT_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" />
@@ -233,10 +192,14 @@
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.hpp" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/OrientationFeatureFactory.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
-        <option value="$PROJECT_DIR$/installation.sh" />
         <option value="$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" />
+        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h" />
+        <option value="$PROJECT_DIR$/installation.sh" />
       </list>
     </option>
   </component>
@@ -418,7 +381,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SegmentationEvaluatorTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="OutsideSegmentationEvaluatorTestAddingCircle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OutsideSegmentationEvaluatorTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,15 +500,17 @@
     <property name="options.lastSelected" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/ComplexNetwork" />
-    <property name="SearchEverywhereHistoryKey" value="setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;new&#9;ACTION&#9;NewGroup&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;commit&#9;ACTION&#9;CheckinProject&#10;overr&#9;ACTION&#9;OverrideMethods&#10;over&#9;ACTION&#9;OverrideMethods&#10;Impleme&#9;ACTION&#9;ImplementMethods&#10;Vorono&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;imple&#9;ACTION&#9;null&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;gett&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;impleme&#9;ACTION&#9;ImplementMethods&#10;Utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.cpp&#10;implement&#9;ACTION&#9;ImplementMethods&#10;construc&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;overri&#9;ACTION&#9;OverrideMethods&#10;region.hpp&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.hpp&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;region.cpp&#9;FILE&#9;file:///Users/wachs/Implementacao/Sources/FeatureExtractors/Region.cpp&#10;main&#9;FILE&#9;file:///Users/wachs/Implementacao/Sources/Experiments/SetupPadrao/main.cpp&#10;qWidgetItem&#9;FILE&#9;file:///opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QListWidgetItem&#10;QWidgetItem&#9;FILE&#9;file:///opt/local/Library/Frameworks/QtWidgets.framework/Headers/QWidgetItem&#10;source&#9;ACTION&#9;CPP.NewCppFile&#10;header&#9;ACTION&#9;CPP.NewHeaderFile&#10;region&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.cpp&#10;reg&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.cpp&#10;refor&#9;ACTION&#9;ReformatCode" />
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" />
+    <property name="SearchEverywhereHistoryKey" value="installat&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;setter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetterAndSetter&#10;Regionm&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.cpp&#10;areaF&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;new&#9;ACTION&#9;NewGroup&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;commit&#9;ACTION&#9;CheckinProject&#10;overr&#9;ACTION&#9;OverrideMethods&#10;over&#9;ACTION&#9;OverrideMethods&#10;Impleme&#9;ACTION&#9;ImplementMethods&#10;Vorono&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;imple&#9;ACTION&#9;null&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;gett&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;impleme&#9;ACTION&#9;ImplementMethods&#10;Utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.cpp&#10;implement&#9;ACTION&#9;ImplementMethods&#10;construc&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;overri&#9;ACTION&#9;OverrideMethods&#10;region.hpp&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.hpp&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;region.cpp&#9;FILE&#9;file:///Users/wachs/Implementacao/Sources/FeatureExtractors/Region.cpp&#10;main&#9;FILE&#9;file:///Users/wachs/Implementacao/Sources/Experiments/SetupPadrao/main.cpp&#10;qWidgetItem&#9;FILE&#9;file:///opt/local/Library/Frameworks/QtWidgets.framework/Versions/5/Headers/QListWidgetItem&#10;QWidgetItem&#9;FILE&#9;file:///opt/local/Library/Frameworks/QtWidgets.framework/Headers/QWidgetItem&#10;source&#9;ACTION&#9;CPP.NewCppFile&#10;header&#9;ACTION&#9;CPP.NewHeaderFile&#10;region&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.cpp&#10;reg&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/Region.cpp&#10;refor&#9;ACTION&#9;ReformatCode" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="js.buildTools.grunt.node_interpreter" value="/usr/local/bin/node" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="/usr/local/lib/node_modules/grunt-cli" />
     <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -503,7 +520,18 @@
       <recent name="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager" selected="Application.OutsideSegmentationEvaluatorTestAddingCircle">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="AreaFeatureExtractionTest" CONFIG_NAME="Debug">
       <envs />
       <method />
@@ -720,7 +748,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="OutsideSegmentationEvaluatorTestAddingCircle" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="OutsideSegmentationEvaluatorTestAddingCircle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PhDThesis" RUN_TARGET_NAME="OutsideSegmentationEvaluatorTestAddingCircle">
+    <configuration default="false" name="OutsideSegmentationEvaluatorTestAddingCircle" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="config_fixed_files.ini" WORKING_DIR="file:///imp/experiments/1" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="OutsideSegmentationEvaluatorTestAddingCircle" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PhDThesis" RUN_TARGET_NAME="OutsideSegmentationEvaluatorTestAddingCircle">
       <envs />
       <method />
     </configuration>
@@ -825,7 +853,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434046208416</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tested FeatureExtractors: OK!! [Bug Fixes]">
+      <created>1434046857263</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1434046857263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -837,26 +871,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.390625" sideWeight="0.3192389" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626506" sideWeight="0.5532065" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.4918957" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626506" sideWeight="0.44679353" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22410148" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.5990134" order="7" side_tool="true" content_ui="tabs" x="10" y="313" width="1419" height="273" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26626506" sideWeight="0.44679353" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.48062015" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.63213533" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572114" sideWeight="0.46652573" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39036146" sideWeight="0.30232558" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22410148" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.4009866" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49753347" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.4524313" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.4136716" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -874,11 +908,19 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle" />
     <MESSAGE value="Tested FeatureExtractors: OK!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested FeatureExtractors: OK!!" />
+    <MESSAGE value="Tested FeatureExtractors: OK!! [Bug Fixes]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested FeatureExtractors: OK!! [Bug Fixes]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp</url>
+          <line>119</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -887,55 +929,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Docs/html/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52219874">
-          <caret line="180" column="4" selection-start-line="180" selection-start-column="4" selection-end-line="180" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/html/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87103593">
-          <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34957626">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/Utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -954,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55508476">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -989,6 +975,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,24 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1064,7 +1033,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
-            <element signature="e#81#98#0" expanded="true" />
+            <element signature="e#81#98#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1080,13 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.1927967">
           <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1115,6 +1077,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,13 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8580508">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1162,25 +1118,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cmath">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="735" column="0" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.3207548">
-          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1195,6 +1136,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,24 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installation.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42213884">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1256,8 +1180,138 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46471602">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/local/include/opencv2/core/mat.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="343" column="27" selection-start-line="343" selection-start-column="27" selection-end-line="343" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/FeatureFactoryAbstract.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45957446">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5744681">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/SupervisedImage.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33829787">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5851064">
+          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/local/Library/Frameworks/QtCore.framework/Versions/5/Headers/qvector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3319149">
+          <caret line="384" column="0" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3962264">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7075472">
+          <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="1" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="81" selection-start-line="24" selection-start-column="81" selection-end-line="24" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1981132">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
