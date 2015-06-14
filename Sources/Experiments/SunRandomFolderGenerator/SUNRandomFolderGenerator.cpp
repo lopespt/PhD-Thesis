@@ -1,4 +1,6 @@
-#include <Utilities/SunDatabaseReader.hpp>
+#include "SUNRandomFolderGenerator.hpp"
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
+#include <Utilities/SupervisedImage.hpp>
 
 SUNRandomFolderGenerator::SUNRandomFolderGenerator(QString inputFolder, QString outputFolder, unsigned int num)
         : inputFolder(inputFolder), outputFolder(outputFolder), num(num) {

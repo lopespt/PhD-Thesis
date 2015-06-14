@@ -1,13 +1,15 @@
+#include <QCoreApplication>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
+#include "SUNRandomFolderGenerator.hpp"
+
 int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
 
-    QCommandLineOption iop("input folder", "SUN Database folder", "input folder");
-    QCommandLineOption oop("output folder", "New random SUN database folder", "output folder");
-    QCommandLineOption nop("number", "Number of images in new random SUN database", "number");
     QCommandLineParser parser;
-    parser.addOption(iop);
-    parser.addOption(oop);
-    parser.addOption(nop);
+    parser.addPositionalArgument("input", "SUN Database folder", "input folder");
+    parser.addPositionalArgument("output", "New random SUN database folder", "output folder");
+    parser.addPositionalArgument("number", "Number of images in new random SUN database", "number");
     parser.addHelpOption();
 
     parser.process(app);

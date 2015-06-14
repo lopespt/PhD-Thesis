@@ -91,7 +91,6 @@ int main(int argc, char **argv) {
             printf("Seg %d = %3.1f\n", segNum + 1, results[segNum].second);
             segNum++;
         }
-        continue;
         qSort(results.begin(), results.end(), [&](const result &a, const result &b) {
             return a.second > b.second;
         });

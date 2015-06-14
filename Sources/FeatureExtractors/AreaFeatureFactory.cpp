@@ -17,6 +17,10 @@ FeatureAbstractPtr AreaFeatureFactory::CreateFromRegion(const Region *region) co
         }
     }*/
     QPolygon boundary = region->getMask().getBoundary();
+
+    if(boundary.size() < 3)
+        return FeatureAbstractPtr(new AreaFeature(0));
+
     for (unsigned int i = 0; i < boundary.size() - 1; i++) {
         area += (1.0 * boundary[i].x() * boundary[i + 1].y() - 1.0 * boundary[i + 1].x() * boundary[i].y());
     }

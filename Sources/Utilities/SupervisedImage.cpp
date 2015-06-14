@@ -104,9 +104,16 @@ SupervisedImage::~SupervisedImage() {
 
 void SupervisedImage::addRegion(QString label, const RegionMask &region) {
     parse_xml();
-    for (auto &r : regions) {
-        r.setMask(r.getMask() - region);
+
+    QMutableListIterator<Region> it(regions);
+
+    while(it.hasNext()){
+        Region& rm = it.next();
+        rm.setMask(rm.getMask() - region);
+        if (cv::countNonZero(rm.getMask()) == 0)
+            it.remove();
     }
+
     regions << Region(getImage(), region, label);
 }
 

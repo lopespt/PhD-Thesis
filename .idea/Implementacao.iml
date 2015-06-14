@@ -7,23 +7,53 @@
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkVisualizer/Visualizer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkVisualizer/Visualizer_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/WebServer/WebServer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/WebServer/WebServer_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities/GuiUtilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities/GuiUtilities_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/clion10/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
