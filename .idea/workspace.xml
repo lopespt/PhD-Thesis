@@ -63,9 +63,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -87,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.5920502">
+              <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -110,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntropyXorSegmentationEvaluator.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EntropyXorSegmentationEvaluator.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.748954">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,8 +185,8 @@
         <option value="$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.h" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
       </list>
     </option>
   </component>
@@ -794,7 +792,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434371262145</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="EntropyXorSegmentationEvaluator.cpp &#10;Grade divided by hints size. (normalization)">
+      <created>1434373592157</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1434373592157</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -848,7 +852,8 @@
     <MESSAGE value="Solve problem when subtracting mask resulting in a empty mask. Solve removing from segmented objects." />
     <MESSAGE value="Solve problem of IterativeRandomWalk. Weights were not considered when walking." />
     <MESSAGE value="Adding bigger circle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding bigger circle" />
+    <MESSAGE value="EntropyXorSegmentationEvaluator.cpp &#10;Grade divided by hints size. (normalization)" />
+    <option name="LAST_COMMIT_MESSAGE" value="EntropyXorSegmentationEvaluator.cpp &#10;Grade divided by hints size. (normalization)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,18 +1237,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.748954">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5920502">
+          <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
           <folding />
         </state>
       </provider>
