@@ -78,7 +78,7 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
                 if (cn.valid(n)){
                     float weight = probs[n];
                     //printf("probs = %f\n", weight);
-                    single_grade *= (1.0f - weight);
+                    single_grade *= (1.f - weight);
                     found++;
                     //printf("entrei %f\n", single_grade);
                 } else {
@@ -87,13 +87,12 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
 
             }
         }
-        grade = grade + (1 - single_grade);
+        grade = grade + (1.f - single_grade);
     }
     double percFound = (found * 1.0) / (found + notFound);
     printf("%%found = %0.2f\n", percFound);
 
-
-    return grade;
+    return grade/hints.size();
 }
 
 EntropyXorSegmentationEvaluator::~EntropyXorSegmentationEvaluator() {

@@ -106,8 +106,10 @@ int main(int argc, char **argv) {
 
         posTotal += posFound;
         printf("Correct segmentation found at position %d\n", posFound);
-
-
+        if(posFound >= 5) {
+            imshow("win", img.getCvBGRImage());
+            waitKey(0);
+        }
         /*for(unsigned int i=0;i<bestImage.getRegions().size();i++){
             bestImage.showRegion(i);
         }*/
