@@ -1,5 +1,7 @@
-#include <Utilities/CachedComplexNetwork.hpp>
-#include <Utilities/RandomWalk.hpp>
+#include "RandomWalkTest2.hpp"
+#include <ComplexNetwork/ComplexNetwork.hpp>
+#include <Utilities/IterativeRandomWalk.hpp>
+#include <Utilities/GraphUtilities.hpp>
 
 RandomWalkTest2::RandomWalkTest2() {
 
@@ -8,36 +10,31 @@ RandomWalkTest2::RandomWalkTest2() {
 
 void RandomWalkTest2::execute() {
 
-    CachedComplexNetwork <int, double> net;
+    ComplexNetwork <int, double> net;
 
-    net.addNode(1);
-    net.addNode(2);
-    net.addNode(3);
-    net.addNode(4);
+    const ListDigraphBase::Node &na = net.addNode(1);
+    const ListDigraphBase::Node &nb = net.addNode(2);
+    const ListDigraphBase::Node &nc = net.addNode(3);
+    const ListDigraphBase::Node &nd = net.addNode(4);
 
-    net.addEdge(net.getNodeId(1), net.getNodeId(4), 0.5);
-    net.addEdge(net.getNodeId(1), net.getNodeId(2), 0.5);
-    net.addEdge(net.getNodeId(1), net.getNodeId(3), 0.5);
-    net.addEdge(net.getNodeId(3), net.getNodeId(2), 0.5);
-    CachedComplexNetwork <int, double> net2 = RandomWalk::addAutoLoop(net);
-    net2 = RandomWalk::normalizeGraph(net2);
+    net.addArc(na , nd, 100);
+    net.addArc(nc, nb, 0.5);
+    net.addArc(nb, nc, 0.5);
+    net.addArc(nc, nb, 0.5);
+    ListDigraph::ArcMap<double> weights(net) ;
+    GraphUtilities::copyMap(net, net.getArcMap(), weights);
+    IterativeRandomWalk walk(net, weights);
+    walk.Execute(na,1);
 
-    for (auto n = net2.Begin(); n != net2.End(); n++) {
-        for (auto e = n.EdgesBegin(); e != n.EdgesEnd(); e++) {
-            //printf("%d -> %d = %f\n", *net2.getNode(e.getFromNodeId()), *net2.getNode(e.getToNodeId()), *e);
+
+    for (auto n = ComplexNetwork<int, double>::NodeIt(net) ; n != INVALID; ++n) {
+        for (auto e = ComplexNetwork<int, double>::NodeIt(net) ; e != INVALID; ++e) {
+            printf("%d -> %d = %f\n", net.getNode(n), net.getNode(e), walk.getProbability(e) );
         }
     }
 
 
     printf("passei\n");
 
-    IterativeRandomWalk w(&net2);
-    w.Execute(1, 5);
-    double sum = 0;
-    for(double d: w.getAllProbs()) {
-        sum += d;
-        printf("%f\n", d);
-    }
-    printf("sum  = %f;", sum);
 
 }

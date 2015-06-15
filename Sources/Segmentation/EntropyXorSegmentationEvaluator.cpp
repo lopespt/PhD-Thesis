@@ -8,8 +8,10 @@ EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplex
                                                                  QList<const FeatureFactoryAbstract *> factories) :
         SegmentationEvaluator(cn, factories),
         weights(cn),
-        rw(cn, weights) {
+        rw(cn)
+{
     GraphUtilities::getWeights(cn, weights);
+    rw.setWeights(weights);
 }
 
 /*
@@ -60,12 +62,15 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
         }
 
         if (cn.getNodeFromFeature(hints[h]) != INVALID) {
-            rw.Execute(cn.getNodeFromFeature(hints[h]), 1);
+            const ListDigraphBase::Node &nfrom = cn.getNodeFromFeature(hints[h]);
+            rw.Execute(nfrom, 1);
             rw.getAllProbs(probs);
             for (const FeatureAbstractPtr &item: hints_hided) {
                 FeaturesComplexNetwork::Node n = cn.getNodeFromFeature(item);
-                if (cn.valid(n)) {
-                    single_grade *= (1 - probs[n]);
+                if (cn.valid(n)){
+                    float weight = probs[n];
+                    //printf("probs = %f\n", weight);
+                    single_grade *= (1.0f - weight);
                     found++;
                     //printf("entrei %f\n", single_grade);
                 } else {
@@ -76,7 +81,9 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
         }
         grade = grade + (1 - single_grade);
     }
-    printf("%%found = %0.2f\n", (found * 1.0) / (found + notFound));
+    double percFound = (found * 1.0) / (found + notFound);
+    printf("%%found = %0.2f\n", percFound);
+
 
     return grade;
 }

@@ -13,7 +13,7 @@ SET(CMAKE_AUTOMOC TRUE)
 
 
 #Build RandomWalkTest
-FILE(GLOB_RECURSE RandomWalkTest_Sources *.cpp)
+FILE(GLOB_RECURSE RandomWalkTest_Sources main.cpp RandomWalkTest2.cpp)
 ADD_EXECUTABLE(RandomWalkTest ${RandomWalkTest_Sources})
 TARGET_LINK_LIBRARIES(RandomWalkTest ${Qt5Widgets_LIBRARIES} ${Qt5Gui_LIBRARIES} ${OpenCV_LIBRARIES} ComplexNetwork FeatureExtractors Utilities Segmentation)
 

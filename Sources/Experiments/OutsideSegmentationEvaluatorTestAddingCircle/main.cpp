@@ -66,6 +66,7 @@ int main(int argc, char **argv) {
 
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
+    int posTotal = 0;
 
     EntropyXorSegmentationEvaluator evaluator(cn, factories);
     while (preader.hasNext()) {
@@ -81,8 +82,6 @@ int main(int argc, char **argv) {
         QList<SegmentedImage> seg = v.execute(*img.getImage(), 5);
         //Inserindo a segmentação manual
         seg.append(SegmentedImage(*img.getImage(), img.getRegions()));
-        puts("opa");
-        fflush(stdout);
 
         int segNum = 0;
         for (SegmentedImage &s: seg) {
@@ -102,14 +101,17 @@ int main(int argc, char **argv) {
             }
         }
 
+        posTotal += posFound;
         printf("Correct segmentation found at position %d\n", posFound);
+
 
         /*for(unsigned int i=0;i<bestImage.getRegions().size();i++){
             bestImage.showRegion(i);
         }*/
 
-
     }
+
+    printf("Mean Position %.2f\n", posTotal*1.f/preader.getTotal());
     cv::destroyAllWindows();
     return 0;
 }

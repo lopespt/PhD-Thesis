@@ -23,7 +23,8 @@ public:
     template<typename T>
     static ListDigraph::ArcMap <T> &fillMap(const ListDigraph &graph, ListDigraph::ArcMap <T> &map, const T &value);
 
-    static void getWeights(const FeaturesComplexNetwork &cn, ListDigraph::ArcMap <double> &weights);
+
+    static ListDigraph::ArcMap<double> & getWeights(const FeaturesComplexNetwork &cn, ListDigraph::ArcMap <double> &weights);
 
     static void normalizeOutDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
                                     ListDigraph::ArcMap <double> &output);
