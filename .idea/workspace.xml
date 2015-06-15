@@ -63,6 +63,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" afterPath="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -85,34 +86,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5920502">
-              <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SumWeightSegmentationEvaluator.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              <folding>
-                <element signature="e#50#93#0" expanded="true" />
-                <marker date="1434340574000" expanded="true" signature="201:1133" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntropyXorSegmentationEvaluator.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EntropyXorSegmentationEvaluator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6464435">
+              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -183,10 +171,10 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.h" />
-        <option value="$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp" />
       </list>
     </option>
   </component>
@@ -798,7 +786,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434373592157</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="EntropyXorSegmentationEvaluator.cpp &#10;Grade divided by hints size. (normalization)">
+      <created>1434373934458</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1434373934458</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1036,6 +1030,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33263597">
           <caret line="894" column="0" selection-start-line="894" selection-start-column="0" selection-end-line="894" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,17 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          <folding>
-            <element signature="e#50#93#0" expanded="true" />
-            <marker date="1434340574000" expanded="true" signature="201:1133" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1237,18 +1221,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/SumWeightSegmentationEvaluator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.68619245">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#50#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5920502">
-          <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6464435">
+          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
           <folding />
         </state>
       </provider>

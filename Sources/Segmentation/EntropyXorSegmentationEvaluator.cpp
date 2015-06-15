@@ -92,7 +92,7 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
     double percFound = (found * 1.0) / (found + notFound);
     printf("%%found = %0.2f\n", percFound);
 
-    return grade/hints.size();
+    return (float) ((grade/hints.size())*percFound);
 }
 
 EntropyXorSegmentationEvaluator::~EntropyXorSegmentationEvaluator() {

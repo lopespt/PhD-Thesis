@@ -90,7 +90,7 @@ int main(int argc, char **argv) {
         for (SegmentedImage &s: seg) {
             float grade = evaluator.evaluate(s);
             results.append(result(&s, grade));
-            printf("Seg %d = %3.1f\n", segNum + 1, results[segNum].second);
+            printf("Seg %d = %3.4f\n", segNum + 1, results[segNum].second);
             segNum++;
         }
         qSort(results.begin(), results.end(), [&](const result &a, const result &b) {
