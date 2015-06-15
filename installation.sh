@@ -23,7 +23,7 @@ cd $dir
 fi;
 
 #vtk dependencies
-sudo apt-get install -y  libX11-dev libXt-dev libgl1-mesa-dev libosmesa6-dev libglu1-mesa-dev git
+sudo apt-get install -y  libX11-dev libXt-dev libgl1-mesa-dev libosmesa6-dev libglu1-mesa-dev git xvfb
 
 #install vtk v6.1.0
 cd /tmp
