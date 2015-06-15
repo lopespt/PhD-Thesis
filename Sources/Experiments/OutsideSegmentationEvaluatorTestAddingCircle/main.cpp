@@ -7,6 +7,7 @@
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Segmentation/VoronoiRandomSegmenter.hpp>
 #include <opencv/highgui.h>
+#include <Segmentation/SumWeightSegmentationEvaluator.h>
 #include "ConfigFileParser.hpp"
 #include "AddCircleSegmentation.hpp"
 
@@ -69,6 +70,8 @@ int main(int argc, char **argv) {
     int posTotal = 0;
 
     EntropyXorSegmentationEvaluator evaluator(cn, factories);
+//    SumWeightSegmentationEvaluator evaluator(cn, factories);
+
     while (preader.hasNext()) {
         QList<result> results;
         SupervisedImage img = preader.readNext();

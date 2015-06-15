@@ -3,6 +3,7 @@
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include "SegmentedImage.hpp"
 #include <Utilities/GraphUtilities.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplexNetwork &cn,
                                                                  QList<const FeatureFactoryAbstract *> factories) :
@@ -38,6 +39,13 @@ EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplex
 }*/
 
 float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
+
+//    namedWindow("win1");
+//    namedWindow("win2");
+//    imshow("win1", image.getImage().getCvBGRImage());
+//    imshow("win2", image.getRegions().last().getMask());
+//    waitKey(0);
+
     FeaturesComplexNetwork::NodeMap <double> probs(cn);
 
     QList<FeatureAbstractPtr> hints;
