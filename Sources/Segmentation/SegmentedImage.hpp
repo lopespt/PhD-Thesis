@@ -26,7 +26,6 @@ public:
 
     const QList<Region> &getRegions() const;
 
-
     void showRegion(int i) const;
 
     ~SegmentedImage();

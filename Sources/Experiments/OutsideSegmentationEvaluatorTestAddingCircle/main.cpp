@@ -1,7 +1,7 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
-#include <Segmentation/EntropyXorSegmentationEvaluator.hpp>
+#include <Segmentation/XorSegmentationEvaluator.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
     int imgn = 1;
     int posTotal = 0;
 
-    EntropyXorSegmentationEvaluator evaluator(cn, factories);
+    XorSegmentationEvaluator evaluator(cn, factories);
 //    SumWeightSegmentationEvaluator evaluator(cn, factories);
 
     while (preader.hasNext()) {

@@ -4,16 +4,16 @@
 #include "SegmentationEvaluator.hpp"
 #include <Utilities/IterativeRandomWalk.hpp>
 
-class EntropyXorSegmentationEvaluator : public SegmentationEvaluator {
+class XorSegmentationEvaluator : public SegmentationEvaluator {
 private:
     FeaturesComplexNetwork::ArcMap <double> weights;
     IterativeRandomWalk rw;
 public:
-    EntropyXorSegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories);
+    XorSegmentationEvaluator(FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories);
 
     float evaluate(const SegmentedImage &image);
 
-    ~EntropyXorSegmentationEvaluator();
+    ~XorSegmentationEvaluator();
 };
 
 #endif // XORSEGMENTATIONEVALUATOR_HPP

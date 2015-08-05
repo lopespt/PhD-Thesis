@@ -1,7 +1,7 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
-#include <Segmentation/EntropyXorSegmentationEvaluator.hpp>
+#include <Segmentation/XorSegmentationEvaluator.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
     KFoldDatabaseReader::PathDatabaseReader preader = reader.getTestReader();
     int imgn = 1;
 
-    EntropyXorSegmentationEvaluator evaluator(cn, factories);
+    XorSegmentationEvaluator evaluator(cn, factories);
     while (preader.hasNext()) {
         QList<result> results;
         SupervisedImage img = preader.readNext();

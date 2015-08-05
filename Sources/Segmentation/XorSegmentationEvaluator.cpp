@@ -1,11 +1,11 @@
-#include "EntropyXorSegmentationEvaluator.hpp"
+#include "XorSegmentationEvaluator.hpp"
 
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include "SegmentedImage.hpp"
 #include <Utilities/GraphUtilities.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplexNetwork &cn,
+XorSegmentationEvaluator::XorSegmentationEvaluator(FeaturesComplexNetwork &cn,
                                                                  QList<const FeatureFactoryAbstract *> factories) :
         SegmentationEvaluator(cn, factories),
         weights(cn),
@@ -17,7 +17,7 @@ EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplex
 
 /*
  * Method 1 - failed
- * float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image){
+ * float XorSegmentationEvaluator::evaluate(const SegmentedImage &image){
     HsvFeatureFactory hsv(18,3,3,4);
 
 
@@ -38,7 +38,7 @@ EntropyXorSegmentationEvaluator::EntropyXorSegmentationEvaluator(FeaturesComplex
     return 1./Utils::entropy< std::vector, double>(weights, weights.size());
 }*/
 
-float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
+float XorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
 
 //    namedWindow("win1");
 //    namedWindow("win2");
@@ -95,7 +95,7 @@ float EntropyXorSegmentationEvaluator::evaluate(const SegmentedImage &image) {
     return (float) ((grade/hints.size())*percFound);
 }
 
-EntropyXorSegmentationEvaluator::~EntropyXorSegmentationEvaluator() {
+XorSegmentationEvaluator::~XorSegmentationEvaluator() {
 
 }
 

@@ -90,3 +90,12 @@ RegionMask::RegionMask(int height, int width) : Mat(height, width, CV_8UC1, cvSc
 
 }
 
+QPoint RegionMask::getCenter() const {
+    QPoint center(0,0);
+    for(QPoint p: boundary){
+        center+=p;
+    }
+    center.setX((int)  ((center.x() + 0.5) / boundary.size()));
+    center.setY((int)  ((center.y() + 0.5) / boundary.size()));
+    return center;
+}

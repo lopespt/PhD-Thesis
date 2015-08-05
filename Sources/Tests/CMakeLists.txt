@@ -15,6 +15,7 @@ ADD_SUBDIRECTORY(AreaFeatureExtractionTest)
 ADD_SUBDIRECTORY(ComplexNetworkConstructionTest)
 ADD_SUBDIRECTORY(ComplexNetworkResourcesTest)
 ADD_SUBDIRECTORY(RandomWalkTest)
+ADD_SUBDIRECTORY(IntersectionQLineQPolygonTest)
 #ADD_SUBDIRECTORY(SegmenterTest)
 
 MESSAGE(STATUS ${CMAKE_INSTALL_PREFIX})

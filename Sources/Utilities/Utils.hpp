@@ -33,7 +33,7 @@ public:
 
     static QPolygon &Mask2QPolygon(const cv::Mat &img, QPolygon &poly, QList<QPolygon> &holes);
 
-    static cv::Mat &QPolygon2Mask(cv::Mat &img, const QPolygon external, const QList<QPolygon> &holes);
+    static cv::Mat &QPolygon2Mask(cv::Mat &img, const QPolygon external, const QList<QPolygon> &holes = QList<QPolygon>());
 
     static void QPolygon2CvPointArray(const QPolygon &poly, vector<vector<cv::Point> > &outputPoints);
 
@@ -68,8 +68,12 @@ public:
                 total += pi * log2(pi);
         }
         return -total;
+
     }
 
+    static QImage Mat2QImage(const cv::Mat3b &src);
+
+    //static QImage Mat2QImage(const cv::Mat_ <double> &src);
 };
 
 void warn(const char *format, ...);
