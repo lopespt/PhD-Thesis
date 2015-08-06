@@ -12,7 +12,7 @@ class FrequentLabels {
 private:
 
 public:
-    void FrequentLabels(QString sunPath, QString output);
+    FrequentLabels(QString sunPath, QString output);
 };
 
 
