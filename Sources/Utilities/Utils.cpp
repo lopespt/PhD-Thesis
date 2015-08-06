@@ -1,5 +1,6 @@
 #include "Utils.hpp"
 #include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 
@@ -86,6 +87,7 @@ cv::Mat &Utils::QPolygon2Mask(cv::Mat &img, const QPolygon external, const QList
     vector<vector<cv::Point> > points;
 
     QPolygon2CvPointArray(external, points);
+
     cv::fillPoly(img, points, cvScalarAll(255), 4);
 
     for (const QPolygon &hole : holes) {

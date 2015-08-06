@@ -1,4 +1,5 @@
 #include "QImageCV.hpp"
+#include <opencv2/opencv.hpp>
 
 const cv::Mat &QImageCV::getCvBGRImage() const {
     if (bgrImage.empty()) {

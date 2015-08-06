@@ -4,6 +4,7 @@
 
 #include <Utilities/SupervisedImage.hpp>
 #include <Segmentation/SegmentedImage.hpp>
+#include <opencv2/opencv.hpp>
 #include "AddCircleSegmentation.hpp"
 
 QList<SegmentedImage> AddCircleSegmentation::execute(const QImage &image, int nSegmentations) {

@@ -3,6 +3,7 @@
 //
 
 #include "RegionMask.h"
+#include <opencv2/opencv.hpp>
 
 RegionMask::RegionMask(const Mat &mask) : Mat(mask) {
     assert(mask.type() == CV_8UC1);

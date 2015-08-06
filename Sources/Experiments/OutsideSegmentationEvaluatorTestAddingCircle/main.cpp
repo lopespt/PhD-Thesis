@@ -7,6 +7,7 @@
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Segmentation/VoronoiRandomSegmenter.hpp>
 #include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
 #include <Segmentation/SumWeightSegmentationEvaluator.h>
 #include "ConfigFileParser.hpp"
 #include "AddCircleSegmentation.hpp"

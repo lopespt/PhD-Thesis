@@ -1,6 +1,7 @@
 #include "HsvFeatureFactory.hpp"
 #include "Region.hpp"
 #include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
 #include "FeatureAbstract.hpp"
 #include "HsvFeature.hpp"
 

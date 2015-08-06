@@ -2,6 +2,7 @@
 #define GMAINWINDOW_HPP
 
 #include <QWidget>
+
 #include <vtkQtView.h>
 #include <vtkQtTableView.h>
 #include <QWidget>

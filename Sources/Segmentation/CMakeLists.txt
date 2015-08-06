@@ -9,6 +9,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 
+
 FILE(GLOB_RECURSE Source_Files  *.cpp)
 
 ADD_LIBRARY(Segmentation ${Source_Files})

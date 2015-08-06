@@ -10,9 +10,10 @@ INCLUDE(${VTK_USE_FILE})
 
 
 
+ADD_SUBDIRECTORY(AnimatedNonAnimatedImages)
 ADD_SUBDIRECTORY(LabelsComplexNetworks)
 #ADD_SUBDIRECTORY(AreaComplexNetworks)
-ADD_SUBDIRECTORY(ComplexNetworkVisualizer)
+#ADD_SUBDIRECTORY(ComplexNetworkVisualizer)
 ##ADD_SUBDIRECTORY(ComplexNetworkToMatlabFile)
 #ADD_SUBDIRECTORY(DatabaseVisualizer)
 ADD_SUBDIRECTORY(SetupPadrao)

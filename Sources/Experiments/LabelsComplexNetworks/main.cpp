@@ -6,7 +6,7 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <QApplication>
-#include <gMainWindow.hpp>
+//#include <gMainWindow.hpp>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <QCommandLineParser>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>

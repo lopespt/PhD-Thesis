@@ -7,6 +7,7 @@
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <Segmentation/VoronoiRandomSegmenter.hpp>
 #include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
 #include "ConfigFileParser.hpp"
 
 void createKfold(QString kfoldPath, QString sunFolder) {

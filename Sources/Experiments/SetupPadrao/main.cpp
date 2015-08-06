@@ -8,7 +8,7 @@
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <Utilities/SupervisedImage.hpp>
 #include <opencv/highgui.h>
-
+#include <opencv2/opencv.hpp>
 #include <Utilities/VoronoiDiagramGenerator.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 

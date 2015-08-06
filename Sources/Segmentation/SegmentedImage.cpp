@@ -1,5 +1,6 @@
 #include "SegmentedImage.hpp"
 #include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
 
 SegmentedImage::SegmentedImage(QImageCV img, QList<Region> regions) :
         image(img),
