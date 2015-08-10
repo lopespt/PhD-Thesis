@@ -1,0 +1,13 @@
+
+FIND_PACKAGE(Qt5Core REQUIRED)
+FIND_PACKAGE(Qt5Widgets REQUIRED)
+
+INCLUDE_DIRECTORIES(".")
+INCLUDE_DIRECTORIES("../../../")
+
+FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
+
+ADD_EXECUTABLE(ConfigCreator ${Source_Files})
+TARGET_LINK_LIBRARIES(ConfigCreator  Qt5::Core Qt5::Widgets)
+
+

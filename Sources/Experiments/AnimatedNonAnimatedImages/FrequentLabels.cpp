@@ -13,16 +13,16 @@
 #include <qtextstream.h>
 #include <QCoreApplication>
 #include <Utilities/Utils.hpp>
+#include <Utilities/tictac.h>
 
 FrequentLabels::FrequentLabels(QString sunPath, QString outputFile) {
     SunDatabaseReader reader(sunPath);
     QMap<QString, int> index;
     typedef QPair<QString, int> reg;
     QList<reg> ordered;
-    Utils::tic();
+    tictac::tic();
     while(reader.hasNext() ){
         SupervisedImage img = reader.readNext();
-        Utils::tac();
         QList<Region> regions = img.getRegions();
         for( Region &r : regions ){
             if( index.contains(r.getLabel()) ){
@@ -45,5 +45,6 @@ FrequentLabels::FrequentLabels(QString sunPath, QString outputFile) {
         outputStream << k.first << "\t" << k.second << "\n";
     }
     output.close();
+    tictac::tac();
 
 }
