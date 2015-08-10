@@ -16,7 +16,6 @@ ConfigFileParser::ConfigFileParser(QString filePath) : settings(filePath, QSetti
                                                        testDatabaseCreated(NULL),
                                                        coocurrenceCreated(NULL),
                                                        kfoldCreated(NULL) {
-
 }
 
 QList<const FeatureFactoryAbstract *> ConfigFileParser::getFactories() {
