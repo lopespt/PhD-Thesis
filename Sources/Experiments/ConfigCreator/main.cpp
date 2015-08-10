@@ -21,6 +21,10 @@ int main(int argc, char *argv[]) {
                 for(int fi : f) {
 
                     QSettings s(QString("config%1_%2_%3_%4.ini").arg(hi).arg(si).arg(vi).arg(fi),QSettings::IniFormat);
+
+                    s.setValue("global/databaseReader", "kfold");
+                    s.setValue("sun/database_path", argv[1]);
+
                     s.setValue("kfold/load", 0);
                     s.setValue("kfold/save", 1);
                     s.setValue("kfold/file", "images_set.kfold");
