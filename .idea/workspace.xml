@@ -94,8 +94,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/ConfigCreator/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6766917">
-              <caret line="36" column="123" selection-start-line="36" selection-start-column="123" selection-end-line="36" selection-end-column="123" />
+            <state vertical-scroll-proportion="0.59210527">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
               <folding>
                 <element signature="e#51#71#0" expanded="true" />
               </folding>
@@ -991,7 +991,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439226734979</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="ConfigCreator added sun database_path&#10;&#10;&#10;">
+      <created>1439227344021</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1439227344021</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1055,7 +1061,8 @@
     <MESSAGE value="ConfigCreator for ini files" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="ConfigCreator added sun database_path&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConfigCreator added sun database_path&#10;&#10;" />
+    <MESSAGE value="ConfigCreator added sun database_path&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConfigCreator added sun database_path&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1465,8 +1472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/ConfigCreator/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6766917">
-          <caret line="36" column="123" selection-start-line="36" selection-start-column="123" selection-end-line="36" selection-end-column="123" />
+        <state vertical-scroll-proportion="0.59210527">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
             <element signature="e#51#71#0" expanded="true" />
           </folding>

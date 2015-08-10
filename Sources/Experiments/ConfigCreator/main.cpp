@@ -25,13 +25,13 @@ int main(int argc, char *argv[]) {
                     s.setValue("global/databaseReader", "kfold");
                     s.setValue("sun/database_path", argv[1]);
 
-                    s.setValue("kfold/load", 0);
-                    s.setValue("kfold/save", 1);
+                    s.setValue("kfold/load", 1);
+                    s.setValue("kfold/save", 0);
                     s.setValue("kfold/file", "images_set.kfold");
                     s.setValue("kfold/train_percentage", 0.7);
 
-                    s.setValue("region_chooser/load", 0);
-                    s.setValue("region_chooser/save", 1);
+                    s.setValue("region_chooser/load", 1);
+                    s.setValue("region_chooser/save", 0);
                     s.setValue("region_chooser/file", "chosenRegions.txt");
                     s.setValue("FeaturesComplexNetwork/load", 0);
                     s.setValue("FeaturesComplexNetwork/file", QString("train%1_%2_%3_%4.cn").arg(hi).arg(si).arg(vi).arg(fi));
