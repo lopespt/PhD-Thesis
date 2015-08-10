@@ -15,3 +15,5 @@ FILE(GLOB_RECURSE Source_Files  *.cpp)
 ADD_LIBRARY(Segmentation ${Source_Files})
 TARGET_LINK_LIBRARIES(Segmentation   FeatureExtractors ComplexNetwork Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
 
+
+

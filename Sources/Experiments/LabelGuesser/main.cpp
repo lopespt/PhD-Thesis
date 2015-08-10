@@ -8,6 +8,7 @@
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include "ConfigFileParser.hpp"
 #include <QCommandLineParser>
+#include <Utilities/tictac.h>
 
 void createFiles() {
     FeaturesComplexNetwork cn;
@@ -69,11 +70,10 @@ int main2(int argc, char *argv[]) {
     l3.wait();
     return 0;
 }
-
+using namespace tictac;
 int main(int argc, char *argv[]) {
     time_t inicio = time(0);
-
-    printf("tempo = %f\n", (time(0) - inicio) / 60. / 60.);
+    tic();
 
     ConfigFileParser config(argv[1]);
     FeaturesComplexNetwork cn = config.getComplexNetwork();
@@ -102,7 +102,6 @@ int main(int argc, char *argv[]) {
             method = LabelGuesserExperiment::XorProbabilities;
     }
 
-
     if (!config.cnLoaded()) {
         ComplexNetworkConstructor constructor = config.getConstructor(cn);
         if (constructor_enabled) {
@@ -120,7 +119,7 @@ int main(int argc, char *argv[]) {
         printf("Iniciando experimento\n");
         l1.execute(guesser_output);
         printf("Terminado\n");
-        printf("Tempo total %.2f horas\n", (time(0) - inicio) / 60.0 / 60.0);
+        tac();
     }
 
     return 0;
