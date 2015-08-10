@@ -4,9 +4,11 @@
 
 
 #include <QSettings>
+#include <qapplication.h>
 
 
 int main(int argc, char *argv[]) {
+    QCoreApplication app(argc, argv);
 
     int h[] = {5,10,15,20,25,30,35};
     int s[] = {3,6,9};
