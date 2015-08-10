@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
                     s.setValue("region_chooser/save", 1);
                     s.setValue("region_chooser/file", "chosenRegions.txt");
                     s.setValue("FeaturesComplexNetwork/load", 0);
-                    s.setValue("FeaturesComplexNetwork/file", "train.cn");
+                    s.setValue("FeaturesComplexNetwork/file", QString("train%1_%2_%3_%4.cn").arg(hi).arg(si).arg(vi).arg(fi));
 
 
                     s.setValue("factories_enabled/labels", 1);
