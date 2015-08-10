@@ -120,7 +120,7 @@ int main(int argc, char *argv[]) {
         printf("Iniciando experimento\n");
         l1.execute(guesser_output);
         printf("Terminado\n");
-        printf("Tempo total %.2f horas\n", (time_t(0) - inicio) / 60.0 / 60.0);
+        printf("Tempo total %.2f horas\n", (time(0) - inicio) / 60.0 / 60.0);
     }
 
     return 0;

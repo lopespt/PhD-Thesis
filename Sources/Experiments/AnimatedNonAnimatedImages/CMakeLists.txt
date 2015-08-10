@@ -9,8 +9,12 @@ FIND_PACKAGE(OpenCV REQUIRED)
 INCLUDE(${VTK_USE_FILE})
 
 INCLUDE_DIRECTORIES(".")
+INCLUDE_DIRECTORIES("../../../")
 
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 
 ADD_EXECUTABLE(AnimattedNonAnimattedImagesExperiment ${Source_Files})
 TARGET_LINK_LIBRARIES(AnimattedNonAnimattedImagesExperiment  FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
+
+
+
