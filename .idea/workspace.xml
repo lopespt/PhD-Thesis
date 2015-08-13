@@ -69,20 +69,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/FrequentLabels.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/FrequentLabels.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -108,10 +95,11 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6589959">
-              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.5962343">
+              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#761#790#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding>
                 <element signature="e#50#90#0" expanded="true" />
               </folding>
@@ -1051,7 +1039,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439228372097</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Parallelism added to ComplexNetworkConstructorP">
+      <created>1439435069020</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1439435069020</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1070,7 +1064,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34698796" sideWeight="0.71740663" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253012" sideWeight="0.44115573" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.38195914" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.38195914" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48907682" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1116,7 +1110,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="ConfigCreator added sun database_path&#10;&#10;" />
     <MESSAGE value="ConfigCreator added sun database_path&#10;&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="ConfigCreator added sun database_path&#10;&#10;&#10;" />
+    <MESSAGE value="Parallelism added to ComplexNetworkConstructorP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parallelism added to ComplexNetworkConstructorP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1493,6 +1488,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/DatabaseReader.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27824268">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1503,18 +1506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/DatabaseReader.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27824268">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
             <element signature="e#50#90#0" expanded="true" />
           </folding>
@@ -1523,10 +1518,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6589959">
-          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.5962343">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#761#790#0" expanded="true" />
           </folding>
         </state>
       </provider>

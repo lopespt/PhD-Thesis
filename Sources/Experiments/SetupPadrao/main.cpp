@@ -18,6 +18,7 @@
 using namespace cv;
 using namespace std;
 #include <Utilities/tictac.h>
+#include <FeatureExtractors/HsvFeatureFactory.hpp>
 
 
 int main(int argc, char **argv) {
@@ -27,6 +28,9 @@ int main(int argc, char **argv) {
 
     QList<const FeatureFactoryAbstract*> features;
     features.append(new LabelFeatureFactory());
+    features.append(new  HsvFeatureFactory(18,3,3,5) );
+    features.append(new  OrientationFeatureFactory(18) );
+    features.append(new  AreaFeatureFactory(18) );
     /*
     {
         tictac::tic();
@@ -45,10 +49,10 @@ int main(int argc, char **argv) {
         builderP.build();
         puts("terminei");
         fflush(stdout);
-        cnTemp.save("teste2.train");
+        cnTemp.save("saida.train");
         tictac::tac();
     }
-    cn.load("teste.train", features);
+    //cn.load("teste.train", features);
     /*
     cn2.load("teste2.train", features);
     printf("Nos: %d - Arestas: %d\n", cn.getNumNodes(), cn.getNumArcs());
