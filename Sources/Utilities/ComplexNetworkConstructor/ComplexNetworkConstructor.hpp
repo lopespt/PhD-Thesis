@@ -4,6 +4,7 @@
 #include <Utilities/FeaturesComplexNetwork.hpp>
 #include <QList>
 #include <QHash>
+#include <mutex>
 
 class FeatureFactoryAbstract;
 
@@ -16,8 +17,10 @@ using namespace std;
 class ComplexNetworkConstructor {
 
 private:
-
     QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> index;
+    static mutex mtx;
+protected:
+
 
     FeaturesComplexNetwork &cn;
     DatabaseReader &reader;
@@ -27,7 +30,7 @@ private:
 
     unsigned long long int time = 1;
 
-    void makeCoOccurrences(QLinkedList<FeatureAbstractPtr> &features, QList<int> &regionsIds);
+    virtual void makeCoOccurrences(QLinkedList<FeatureAbstractPtr> &features, QList<int> &regionsIds);
 
     void reinforceLink(const FeaturesComplexNetwork::Node &a, const FeaturesComplexNetwork::Node &b, bool isSameLabel);
 
@@ -38,7 +41,7 @@ public:
 
     ~ComplexNetworkConstructor();
 
-    void build();
+    virtual void build();
 
 };
 

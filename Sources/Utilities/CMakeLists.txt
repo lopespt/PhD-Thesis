@@ -3,6 +3,8 @@ FIND_PACKAGE(Qt5Gui REQUIRED)
 FIND_PACKAGE(Qt5Core REQUIRED)
 FIND_PACKAGE(OpenCV REQUIRED)
 
+
+
 FILE(GLOB_RECURSE Source_Files
     DatabaseReader.cpp
     SunDatabaseReader.cpp

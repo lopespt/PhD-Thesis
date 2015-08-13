@@ -13,10 +13,14 @@ SunDatabaseReader::SunDatabaseReader(QString sourceDir) : sourceDir(sourceDir) {
 }
 
 bool SunDatabaseReader::hasNext() const {
-    return image_files_it + 1 != image_files.end();
+    mtx.lock();
+    auto ret = image_files_it + 1 != image_files.end();
+    mtx.unlock();
+    return  ret;
 }
 
 SupervisedImage  SunDatabaseReader::readNext() {
+    mtx.lock();
     assert(image_files_it != image_files.end());
     if (started) {
         image_files_it++;
@@ -24,20 +28,26 @@ SupervisedImage  SunDatabaseReader::readNext() {
     }
     started = true;
     SupervisedImage ret(*image_files_it, *supervision_files_it);
+    mtx.unlock();
     return ret;
 }
 
 bool SunDatabaseReader::hasPrevious() const {
-    return image_files_it != image_files.begin();
+    mtx.lock();
+    auto ret = image_files_it != image_files.begin();
+    mtx.unlock();
+    return ret;
 }
 
 SupervisedImage  SunDatabaseReader::readPrevious() {
+    mtx.lock();
     assert(image_files_it != image_files.begin());
     SupervisedImage ret(*(image_files_it - 1), *(supervision_files_it - 1));
     if (image_files_it != image_files.begin()) {
         image_files_it--;
         supervision_files_it--;
     }
+    mtx.unlock();
     return ret;
 }
 

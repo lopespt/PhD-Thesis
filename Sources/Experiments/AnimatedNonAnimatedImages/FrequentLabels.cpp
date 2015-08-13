@@ -41,9 +41,13 @@ FrequentLabels::FrequentLabels(QString sunPath, QString outputFile) {
     QFile output(outputFile);
     output.open(QIODevice::WriteOnly);
     QTextStream outputStream(&output);
-    for( reg &k : ordered ){
-        outputStream << k.first << "\t" << k.second << "\n";
+    for( QString &k : index.keys() ){
+        outputStream << k << "\t" << index[k] << "\n";
     }
+    //for( reg &k : ordered ){
+    //    outputStream << k.first << "\t" << k.second << "\n";
+    //}
+
     output.close();
     tictac::tac();
 

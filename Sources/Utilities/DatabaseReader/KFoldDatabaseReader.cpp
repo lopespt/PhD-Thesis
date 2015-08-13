@@ -64,21 +64,33 @@ SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readAt(unsigned int i) 
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readNext() {
+    mtx.lock();
     assert(hasNext());
-    return readAt(++current);
+    auto ret = readAt(++current);
+    mtx.unlock();
+    return ret;
 }
 
 bool KFoldDatabaseReader::PathDatabaseReader::hasNext() const {
-    return current < getTotal() - 1;
+    mtx.lock();
+    bool ret = current < getTotal() - 1;
+    mtx.unlock();
+    return ret;
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readPrevious() {
+    mtx.lock();
     assert(hasPrevious());
-    return readAt(--current);
+    auto ret = readAt(--current);
+    mtx.unlock();
+    return ret;
 }
 
 bool KFoldDatabaseReader::PathDatabaseReader::hasPrevious() const {
-    return current > 0;
+    mtx.lock();
+    bool ret  = current > 0;
+    mtx.unlock();
+    return ret;
 }
 
 unsigned int KFoldDatabaseReader::PathDatabaseReader::getTotal() const {

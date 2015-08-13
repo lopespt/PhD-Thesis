@@ -4,6 +4,8 @@
 #include <QLinkedList>
 #include "AddOneCoOcurrenceEquation.hpp"
 
+mutex ComplexNetworkConstructor::mtx;
+
 ComplexNetworkConstructor::ComplexNetworkConstructor(FeaturesComplexNetwork &cn, DatabaseReader &reader,
                                                      QList<const FeatureFactoryAbstract *> extractors,
                                                      CoOcurrenceEquation *coOcurrenceEquationPolicy) : cn(cn),
@@ -27,9 +29,9 @@ ComplexNetworkConstructor::~ComplexNetworkConstructor() {
 
 void ComplexNetworkConstructor::build() {
 
-    QList<int> regionsIds;
     unsigned int num = 1;
     while (reader.hasNext()) {
+        QList<int> regionsIds;
         QLinkedList<FeatureAbstractPtr> features;
         SupervisedImage img = reader.readNext();
         if (num % 10 == 0)
@@ -55,7 +57,6 @@ void ComplexNetworkConstructor::build() {
  * \f[ w_{i,j} = w_{i,j} + \alpha\left(\frac{\lambda}{\Delta t} - w_{i,j} \right)  \f]
  */
 void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstractPtr> &features, QList<int> &regionsIds) {
-
 
     QLinkedList<FeaturesComplexNetwork::Node> nodes;
 

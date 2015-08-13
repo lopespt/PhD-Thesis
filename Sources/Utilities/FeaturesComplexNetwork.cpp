@@ -56,10 +56,15 @@ bool FeaturesComplexNetwork::removeNode(node_id id){
 
 
 FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstractPtr &f) const {
+    mtxN.lock();
+    FeaturesComplexNetwork::Node n;
     if (featureIndex.contains(f)) {
-        return featureIndex[f];
+        n = featureIndex[f];
+    }else {
+        n = Node(INVALID);
     }
-    return Node(INVALID);
+    mtxN.unlock();
+    return n;
 }
 
 FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string &str) {

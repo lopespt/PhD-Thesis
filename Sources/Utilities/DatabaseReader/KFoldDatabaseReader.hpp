@@ -3,6 +3,8 @@
 
 #include <QList>
 #include "DatabaseReader.hpp"
+#include <QString>
+#include <mutex>
 
 class SupervisedImage;
 
@@ -18,14 +20,21 @@ public:
 
     KFoldDatabaseReader(QString filePath);
 
+
     class PathDatabaseReader : public DatabaseReader {
     private:
+        mutable std::mutex mtx;
         QList<QString> images;
         unsigned int current;
 
         SupervisedImage readAt(unsigned int i);
 
         PathDatabaseReader(QList<QString> images);
+        PathDatabaseReader(const PathDatabaseReader& other){
+            this->images = other.images;
+            this->current = other.current;
+            this->mtx.unlock();
+        }
 
 
     public:

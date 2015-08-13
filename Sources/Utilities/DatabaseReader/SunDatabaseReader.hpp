@@ -9,10 +9,12 @@
 #include <QFileInfoList>
 #include <QFileInfo>
 #include <assert.h>
+#include <mutex>
 
 class SunDatabaseReader : public DatabaseReader {
 
 private:
+    mutable std::mutex mtx;
     QDir sourceDir;
     QList<QString> image_files;
     QList<QString> supervision_files;

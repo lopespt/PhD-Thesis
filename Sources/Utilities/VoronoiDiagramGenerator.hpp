@@ -40,8 +40,8 @@
 #endif
 #define DELETED -2
 
-#define le 0
-#define re 1
+#define v_le 0
+#define v_re 1
 
 namespace Voronoi {
 
