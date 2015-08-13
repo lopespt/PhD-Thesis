@@ -1,6 +1,5 @@
 #include "LabelGuesserExperiment.hpp"
 #include <QCoreApplication>
-#include "LabelGuesserExperimentThread.hpp"
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
@@ -9,6 +8,8 @@
 #include "ConfigFileParser.hpp"
 #include <QCommandLineParser>
 #include <Utilities/tictac.h>
+#include <QStringList>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
 
 void createFiles() {
     FeaturesComplexNetwork cn;
@@ -40,7 +41,6 @@ int main2(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
 
     createFiles();
-    return 0;
 
     FeaturesComplexNetwork cn;
 
@@ -53,26 +53,15 @@ int main2(int argc, char *argv[]) {
 
     RegionChooser chooser("/tmp/Implementation-Build/bin/chosenRegions.txt");
     printf("Iniciando experimentos\n");
-
-    LabelGuesserExperimentThread l1(cn, factories, chooser, 3, LabelGuesserExperiment::XorProbabilities,
-                                    "/Users/wachs/SUN/", "guess_reinf_70p_1w_Xor.txt");
-    l1.start();
-
-    LabelGuesserExperimentThread l2(cn, factories, chooser, 2, LabelGuesserExperiment::XorProbabilities,
-                                    "/Users/wachs/SUN/", "guess_reinf_70p_2w_Xor.txt");
-    //l2.start();
-
-    LabelGuesserExperimentThread l3(cn, factories, chooser, 3, LabelGuesserExperiment::XorProbabilities,
-                                    "/Users/wachs/SUN/", "guess_reinf_70p_3w_Xor.txt");
-    //l3.start();
-    l1.wait();
-    l2.wait();
-    l3.wait();
     return 0;
 }
 using namespace tictac;
 int main(int argc, char *argv[]) {
-    time_t inicio = time(0);
+    QCoreApplication app(argc, argv);
+    QCommandLineParser parser;
+    parser.addHelpOption();
+    parser.addOption(QCommandLineOption(QStringList() << "threads" << "j","Number of threads for construction", "Threads","1"));
+    parser.process(app);
     tic();
 
     ConfigFileParser config(argv[1]);
@@ -84,6 +73,7 @@ int main(int argc, char *argv[]) {
     int walk_length = config.getValue("label_guesser_experiment/walk_length").toInt();
     LabelGuesserExperiment::method method;
     bool useLabels = config.getValue("label_guesser_experiment/use_labels", true).toBool();
+    int numThreads = parser.value("threads").toInt();
 
     QStringList vals;
     vals << "xor" << "mult" << "add";
@@ -103,19 +93,26 @@ int main(int argc, char *argv[]) {
     }
 
     if (!config.cnLoaded()) {
-        ComplexNetworkConstructor constructor = config.getConstructor(cn);
-        if (constructor_enabled) {
-            constructor.build();
-            if (constructor_save)
-                cn.save(config.getValue("FeaturesComplexNetwork/file").toString().toStdString().c_str());
+        if(numThreads > 1) {
+            ComplexNetworkConstructorP constructor = config.getConstructorP(cn, numThreads);
+            if (constructor_enabled) {
+                constructor.build();
+                if (constructor_save)
+                    cn.save(config.getValue("FeaturesComplexNetwork/file").toString().toStdString().c_str());
+            }
+        }else{
+            ComplexNetworkConstructor constructor = config.getConstructor(cn);
+            if (constructor_enabled) {
+                constructor.build();
+                if (constructor_save)
+                    cn.save(config.getValue("FeaturesComplexNetwork/file").toString().toStdString().c_str());
+            }
         }
     }
-
-
     RegionChooser region_chooser = config.getRegionChooser();
 
     if (guesser_execute) {
-        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method, useLabels);
+        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method,numThreads, useLabels);
         printf("Iniciando experimento\n");
         l1.execute(guesser_output);
         printf("Terminado\n");

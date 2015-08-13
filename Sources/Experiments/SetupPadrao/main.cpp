@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
         tictac::tic();
         FeaturesComplexNetwork cnTemp;
         SunDatabaseReader reader(argv[1]);
-        ComplexNetworkConstructorP builderP(cnTemp, reader, features, NULL);
+        ComplexNetworkConstructorP builderP(cnTemp, reader, features, 5);
         builderP.build();
         puts("terminei");
         fflush(stdout);

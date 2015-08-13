@@ -5,6 +5,7 @@
 #include <QString>
 #include "DatabaseReader.hpp"
 #include <Utilities/SupervisedImage.hpp>
+#include <mutex>
 
 class RegionChooser {
 public:

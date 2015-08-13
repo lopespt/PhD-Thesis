@@ -4,6 +4,7 @@
 #include <QString>
 #include <QSettings>
 #include <QList>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
 
 class FeatureFactoryAbstract;
 
@@ -36,6 +37,7 @@ public:
 
     QList<const FeatureFactoryAbstract *> getFactories();
 
+    ComplexNetworkConstructorP getConstructorP(FeaturesComplexNetwork &cn, int threads=1);
     ComplexNetworkConstructor getConstructor(FeaturesComplexNetwork &cn);
 
     DatabaseReader *getTrainDatabaseReader();

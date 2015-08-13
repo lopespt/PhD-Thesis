@@ -64,8 +64,8 @@ SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readAt(unsigned int i) 
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readNext() {
-    mtx.lock();
     assert(hasNext());
+    mtx.lock();
     auto ret = readAt(++current);
     mtx.unlock();
     return ret;
@@ -79,8 +79,8 @@ bool KFoldDatabaseReader::PathDatabaseReader::hasNext() const {
 }
 
 SupervisedImage KFoldDatabaseReader::PathDatabaseReader::readPrevious() {
-    mtx.lock();
     assert(hasPrevious());
+    mtx.lock();
     auto ret = readAt(--current);
     mtx.unlock();
     return ret;

@@ -20,12 +20,19 @@ private:
     CoOcurrenceEquation *coOcurrenceEquationPolicy;
     QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> index;
     QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node>* cache;
+    int numThreads;
 public:
+    ComplexNetworkConstructorP(const ComplexNetworkConstructorP &other):ComplexNetworkConstructor(other.cn, other.reader,
+                                                                                                  other.extractors,
+                                                                                                  other.coOcurrenceEquationPolicy), coOcurrenceEquationPolicy(other.coOcurrenceEquationPolicy), cache(other.cache), numThreads(other.numThreads){
+
+    }
+
     ComplexNetworkConstructorP(FeaturesComplexNetwork &cn, DatabaseReader &reader,
-                               const QList<const FeatureFactoryAbstract *> &extractors,
-                               CoOcurrenceEquation *coOcurrenceEquationPolicy, QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> *cache=NULL) : ComplexNetworkConstructor(cn, reader,
+                               const QList<const FeatureFactoryAbstract *> &extractors, int numThreads,
+                               CoOcurrenceEquation *coOcurrenceEquationPolicy=NULL, QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> *cache=NULL) : ComplexNetworkConstructor(cn, reader,
                                                                                                            extractors,
-                                                                                                           coOcurrenceEquationPolicy), coOcurrenceEquationPolicy(coOcurrenceEquationPolicy), cache(cache) {
+                                                                                                           coOcurrenceEquationPolicy), coOcurrenceEquationPolicy(coOcurrenceEquationPolicy), cache(cache), numThreads(numThreads) {
     setAutoDelete(true);
     }
 

@@ -1,6 +1,17 @@
 #include "SunDatabaseReader.hpp"
 #include "../SupervisedImage.hpp"
 
+SunDatabaseReader::SunDatabaseReader(const SunDatabaseReader &other) {
+    this->image_files = other.image_files;
+    this->image_files_it = this->image_files.begin();
+    this->mtx.unlock();
+    this->sourceDir = other.sourceDir;
+    this->started = false;
+    this->supervision_files = other.supervision_files;
+    this->supervision_files_it = this->supervision_files.begin();
+
+}
+
 SunDatabaseReader::SunDatabaseReader(QString sourceDir) : sourceDir(sourceDir) {
     assert(this->sourceDir.exists());
     assert(this->sourceDir.exists("Annotations"));
@@ -76,3 +87,4 @@ void SunDatabaseReader::discover_files(QString path) {
 unsigned int SunDatabaseReader::getTotal() const {
     return (unsigned int) this->image_files.size();
 }
+

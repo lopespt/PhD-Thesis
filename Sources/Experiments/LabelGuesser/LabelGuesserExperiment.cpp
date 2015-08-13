@@ -6,16 +6,21 @@
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <Utilities/GraphUtilities.hpp>
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
+#include <qthreadpool.h>
 
 LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn,
-                                               QList<const FeatureFactoryAbstract *> factories, RegionChooser chooser,
-                                               int walkLenght, method m, bool useLabels) :
+                                               QList<const FeatureFactoryAbstract *> factories, RegionChooser &chooser,
+                                               int walkLenght, method m, int threads, bool useLabels) :
         cn(cn),
         factories(factories),
         chooser(chooser),
         walkLenght(walkLenght),
         m(m),
-        useLabels(useLabels) {
+        threads(threads),
+        useLabels(useLabels),
+        position(1),
+        file(NULL)
+{
 
 }
 
@@ -123,12 +128,16 @@ void LabelGuesserExperiment::execute(QString outputFile) {
     GraphUtilities::getWeights(cn, weights);
     IterativeRandomWalk walk(cn, weights);
 
-    FILE *file = fopen(outputFile.toStdString().c_str(), "w");
+    file = fopen(outputFile.toStdString().c_str(), "w");
     assert(file);
 
     fprintf(file, "posicaoRankCorreto \t Escondido \t Top10Escolhidos \n");
-    int position = 1;
-    while (chooser.hasNextChoseRegion()) {
+    QThreadPool p;
+    for(int i=0; i<threads; i++){
+        p.start(new execTask(*this, weights));
+    }
+    p.waitForDone();
+    /*while (chooser.hasNextChoseRegion()) {
         printf("%d (%d) ", position, chooser.getTotal());
         fflush(stdout);
         RegionChooser::ChosenRegion region = chooser.nextChoseRegion();
@@ -150,6 +159,43 @@ void LabelGuesserExperiment::execute(QString outputFile) {
                guessed.first().toStdString().c_str());
         fflush(file);
         position++;
-    }
+    }*/
     fclose(file);
+}
+
+void LabelGuesserExperiment::execTask::run() {
+    while (true) {
+        exp.mtx.lock();
+        if(!exp.chooser.hasNextChoseRegion()) {
+            exp.mtx.unlock();
+            break;
+        }
+
+        int gp=exp.position;
+        RegionChooser::ChosenRegion region = exp.chooser.nextChoseRegion();
+        exp.position++;
+        exp.mtx.unlock();
+
+
+        SupervisedImage img = region.readSupervisedImage();
+        const QList<FeatureAbstractPtr> &hints = exp.getFeaturesHints(img, region.regionChoosed);
+        QList<QString> guessed = exp.guessByIterativeRandomWalk(walk, hints);
+        QString hidden = img.getRegions()[region.regionChoosed].getLabel();
+
+
+        exp.mtx.lock();
+        printf("%d (%d) ", gp, exp.chooser.getTotal());
+        fprintf(exp.file, "%d", exp.getPosition(guessed, hidden));
+        fprintf(exp.file, "\t\"%s\"\t", hidden.toStdString().c_str());
+        for (int i = 0; i < 10; i++) {
+            fprintf(exp.file, "\"%s\", ", guessed[i].toStdString().c_str());
+        }
+        fprintf(exp.file, "\n");
+
+        printf("%-3d %-20s %-20s\n", exp.getPosition(guessed, hidden), hidden.toStdString().c_str(),
+               guessed.first().toStdString().c_str());
+        fflush(exp.file);
+        fflush(stdout);
+        exp.mtx.unlock();
+    }
 }

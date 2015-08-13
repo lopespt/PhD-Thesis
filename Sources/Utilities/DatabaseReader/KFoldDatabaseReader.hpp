@@ -30,14 +30,15 @@ public:
         SupervisedImage readAt(unsigned int i);
 
         PathDatabaseReader(QList<QString> images);
+
+
+    public:
         PathDatabaseReader(const PathDatabaseReader& other){
             this->images = other.images;
             this->current = other.current;
             this->mtx.unlock();
         }
 
-
-    public:
         virtual SupervisedImage readNext();
 
         virtual SupervisedImage readPrevious();

@@ -28,6 +28,7 @@ private:
 
 public:
     SunDatabaseReader(QString sourceDir);
+    SunDatabaseReader(const SunDatabaseReader& other);
 
     bool hasNext() const;
 

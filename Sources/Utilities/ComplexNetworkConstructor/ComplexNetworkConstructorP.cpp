@@ -14,9 +14,9 @@ std::mutex ComplexNetworkConstructorP::mtx;
 
 void ComplexNetworkConstructorP::build() {
     QThreadPool pool;
-    pool.setMaxThreadCount(48);
-    for(int i=0;i<48;i++) {
-        pool.start(new ComplexNetworkConstructorP(cn, reader, extractors, coOcurrenceEquationPolicy, &this->index));
+    pool.setMaxThreadCount(numThreads);
+    for(int i=0;i<numThreads;i++) {
+        pool.start(new ComplexNetworkConstructorP(cn, reader, extractors, 1, coOcurrenceEquationPolicy, &this->index));
     }
     pool.waitForDone();
     fflush(stdout);

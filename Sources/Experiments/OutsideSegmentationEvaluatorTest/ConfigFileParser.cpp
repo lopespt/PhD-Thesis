@@ -10,6 +10,7 @@
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 #include <Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
 
 ConfigFileParser::ConfigFileParser(QString filePath) : settings(filePath, QSettings::IniFormat),
                                                        trainDatabaseCreated(NULL),
@@ -99,6 +100,22 @@ DatabaseReader *ConfigFileParser::getTestDatabaseReader() {
     return testDatabaseCreated;
 }
 
+ComplexNetworkConstructorP ConfigFileParser::getConstructorP(FeaturesComplexNetwork &cn, int threads){
+    if (coocurrenceCreated)
+    return ComplexNetworkConstructorP(cn, *getTrainDatabaseReader(), getFactories(), threads,
+                                      coocurrenceCreated);
+
+    QString coocurrenceEqn = settings.value("constructor_general/coocurrence_equation").toString().toLower();
+    if (coocurrenceEqn == "add") {
+        coocurrenceCreated = new AddOneCoOcurrenceEquation();
+    } else if (coocurrenceEqn == "reinforcement") {
+        float learningRate = settings.value("constructor/reinforcement/learningRate").toFloat();
+        float lambda = settings.value("constructor/reinforcement/lambda").toFloat();
+        coocurrenceCreated = new ReinforcementCoOcurrenceEquation(learningRate, lambda);
+    }
+
+    return ComplexNetworkConstructorP(cn, *getTrainDatabaseReader(), getFactories(), threads, coocurrenceCreated);
+}
 ComplexNetworkConstructor ConfigFileParser::getConstructor(FeaturesComplexNetwork &cn) {
     if (coocurrenceCreated)
         return ComplexNetworkConstructor(cn, *getTrainDatabaseReader(), getFactories(), coocurrenceCreated);
@@ -112,7 +129,8 @@ ComplexNetworkConstructor ConfigFileParser::getConstructor(FeaturesComplexNetwor
         coocurrenceCreated = new ReinforcementCoOcurrenceEquation(learningRate, lambda);
     }
 
-    return ComplexNetworkConstructor(cn, *getTrainDatabaseReader(), getFactories(), coocurrenceCreated);
+        return ComplexNetworkConstructor(cn, *getTrainDatabaseReader(), getFactories(), coocurrenceCreated);
+
 }
 
 bool ConfigFileParser::cnLoaded() {

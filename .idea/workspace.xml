@@ -11,53 +11,53 @@
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="Visualizer_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest" />
       <config projectName="PhDThesis" targetName="GuiUtilities" />
+      <config projectName="PhDThesis" targetName="RandomWalkTest" />
       <config projectName="PhDThesis" targetName="SetupPadrao_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors" />
       <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
-      <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="Utilities_automoc" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer" />
+      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation_automoc" />
       <config projectName="PhDThesis" targetName="Utilities" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
-      <config projectName="PhDThesis" targetName="SetupPadrao" />
+      <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
       <config projectName="PhDThesis" targetName="WebServer_automoc" />
-      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest" />
       <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
       <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
       <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
-      <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
+      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="ConfigCreator" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
       <config projectName="PhDThesis" targetName="SunRandomFolderGenerator" />
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="ConfigCreator_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetwork" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile" />
       <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="LabelGuesserExp" />
       <config projectName="PhDThesis" targetName="Visualizer" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="SetupPadrao" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
+      <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment" />
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest_automoc" />
       <config projectName="PhDThesis" targetName="WebServer" />
-      <config projectName="PhDThesis" targetName="RandomWalkTest" />
+      <config projectName="PhDThesis" targetName="ComplexNetwork" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation" />
     </generated>
@@ -69,7 +69,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.hpp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -93,70 +109,55 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5962343">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.65481174">
+              <caret line="118" column="13" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#761#790#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KFoldDatabaseReader.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp">
+      <file leaf-file-name="LabelGuesserExperiment.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <caret line="68" column="84" selection-start-line="68" selection-start-column="84" selection-end-line="68" selection-end-column="84" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#71#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplexNetwork.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp">
+      <file leaf-file-name="IterativeRandomWalk.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplexNetworkConstructorP.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp">
+      <file leaf-file-name="ConfigFileParser.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#50#90#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexNetworkConstructor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplexNetworkConstructorP.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp">
+      <file leaf-file-name="ComplexNetworkConstructor.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="e#146#186#0" expanded="true" />
-              </folding>
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,14 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/HsvFeatureFactory.cpp" />
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.hpp" />
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/QImageCV.cpp" />
-        <option value="$PROJECT_DIR$/Sources/FeatureExtractors/RegionMask.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Segmentation/SegmentedImage.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Segmentation/VoronoiRandomSegmenter.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/FrequentLabels.h" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" />
@@ -211,12 +204,8 @@
         <option value="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Segmentation/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/tictac.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/tictac.h" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/ConfigCreator/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" />
@@ -226,17 +215,29 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.h" />
         <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" />
         <option value="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperimentThread.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp" />
       </list>
     </option>
   </component>
@@ -366,54 +367,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PhD-Thesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ComplexNetworkConstructor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementacao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PhD-Thesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Experiments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -440,7 +393,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SetupPadrao" />
+              <option name="myItemId" value="OutsideSegmentationEvaluatorTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabelGuesser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -508,7 +487,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
-    <property name="SearchEverywhereHistoryKey" value="override&#9;ACTION&#9;OverrideMethods&#10;overri&#9;ACTION&#9;OverrideMethods&#10;overr&#9;ACTION&#9;OverrideMethods&#10;over&#9;ACTION&#9;OverrideMethods&#10;constructor&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;commi&#9;ACTION&#9;CheckinProject&#10;LabelGu&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp&#10;comm&#9;ACTION&#9;CheckinProject&#10;SUNR&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp&#10;commit&#9;ACTION&#9;CheckinProject&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;LabelG&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp&#10;Comple&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/ComplexNetwork/ComplexNetwork.hpp&#10;push&#9;ACTION&#9;Vcs.Push&#10;AddCi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;gmainw&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp&#10;gmainwin&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp&#10;Voronoi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;regionma&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;qimage&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/QImageCV.hpp&#10;class&#9;ACTION&#9;CIDR.Lang.Cpp.NewClass&#10;constru&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;outside&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp&#10;Shape&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/ShapeSignatureFeature.h&#10;new&#9;ACTION&#9;NewGroup&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;implement&#9;ACTION&#9;ImplementMethods&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;segme&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.hpp&#10;install&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;main&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp&#10;circl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;imple&#9;ACTION&#9;ImplementMethods&#10;Entrop&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp&#10;Segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;AreaFea&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;installat&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;setter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetterAndSetter&#10;Regionm&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.cpp&#10;areaF&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;Impleme&#9;ACTION&#9;ImplementMethods&#10;Vorono&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;gett&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;impleme&#9;ACTION&#9;ImplementMethods&#10;Utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.cpp&#10;construc&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor" />
+    <property name="SearchEverywhereHistoryKey" value="construct&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;overri&#9;ACTION&#9;OverrideMethods&#10;constru&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;Construct&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp&#10;override&#9;ACTION&#9;OverrideMethods&#10;overr&#9;ACTION&#9;OverrideMethods&#10;over&#9;ACTION&#9;OverrideMethods&#10;constructor&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;commi&#9;ACTION&#9;CheckinProject&#10;LabelGu&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp&#10;comm&#9;ACTION&#9;CheckinProject&#10;SUNR&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp&#10;commit&#9;ACTION&#9;CheckinProject&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;LabelG&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp&#10;Comple&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/ComplexNetwork/ComplexNetwork.hpp&#10;push&#9;ACTION&#9;Vcs.Push&#10;AddCi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;gmainw&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp&#10;gmainwin&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp&#10;Voronoi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;regionma&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;qimage&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/QImageCV.hpp&#10;class&#9;ACTION&#9;CIDR.Lang.Cpp.NewClass&#10;outside&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp&#10;Shape&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/ShapeSignatureFeature.h&#10;new&#9;ACTION&#9;NewGroup&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;implement&#9;ACTION&#9;ImplementMethods&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;segme&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.hpp&#10;install&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;main&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp&#10;circl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;imple&#9;ACTION&#9;ImplementMethods&#10;Entrop&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp&#10;Segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;AreaFea&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;installat&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;setter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetterAndSetter&#10;Regionm&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.cpp&#10;areaF&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;Impleme&#9;ACTION&#9;ImplementMethods&#10;Vorono&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;gett&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;impleme&#9;ACTION&#9;ImplementMethods" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="true" />
@@ -544,7 +523,7 @@
       <recent name="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SetupPadrao">
+  <component name="RunManager" selected="Application.LabelGuesserExp">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -1045,7 +1024,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439435069020</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Parallelism added to ComplexNetworkConstructorP">
+      <created>1439435576297</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1439435576297</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1057,18 +1042,18 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.61804086" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.43269908" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34698796" sideWeight="0.28118393" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.6243834" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.4298802" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34698796" sideWeight="0.2797745" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.46370682" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34698796" sideWeight="0.71740663" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2635659" sideWeight="0.5048193" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253012" sideWeight="0.44115573" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.38195914" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39036146" sideWeight="0.37561664" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48907682" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22410148" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22410148" sideWeight="0.49518073" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.3777308" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1122,7 +1107,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1131,62 +1116,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64453125">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SunRandomFolderGenerator/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/WebServer/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1222,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1243,13 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1257,38 +1172,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06276151">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5334728">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62343097">
-          <caret line="132" column="26" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4707113">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30962342">
-          <caret line="110" column="8" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1394,24 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33263597">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50209206">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/lemon/bits/graph_extender.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1436,36 +1305,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7719665">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="e#65#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75313807">
           <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18828452">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1478,20 +1321,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/DatabaseReader.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27824268">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.15271966">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25104603">
+          <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30125523">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0355649">
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33263597">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#50#90#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.004184">
+          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21548118">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1499,30 +1408,121 @@
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#146#186#0" expanded="true" />
+            <element signature="e#146#186#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5252918">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36820084">
+          <caret line="148" column="3" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74058574">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09414226">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/GraphUtilities.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15690376">
+          <caret line="5" column="127" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding>
-            <element signature="e#50#90#0" expanded="true" />
+            <element signature="e#53#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5962343">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="84" selection-start-line="68" selection-start-column="84" selection-end-line="68" selection-end-column="84" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#761#790#0" expanded="true" />
+            <element signature="e#71#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1799163">
+          <caret line="101" column="42" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/IterativeRandomWalk.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65481174">
+          <caret line="118" column="13" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
