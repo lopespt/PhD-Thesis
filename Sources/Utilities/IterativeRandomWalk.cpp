@@ -18,6 +18,7 @@ IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn, const ListDigraph::Arc
     GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
     GraphUtilities::addAutoLoop(this->cn, this->weights);
     GraphUtilities::normalizeOutDegrees(this->cn, this->weights, this->weights);
+
 }
 
 

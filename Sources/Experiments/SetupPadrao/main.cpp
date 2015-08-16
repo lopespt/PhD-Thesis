@@ -19,61 +19,23 @@ using namespace cv;
 using namespace std;
 #include <Utilities/tictac.h>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
+#include <Utilities/Modularity.hpp>
 
 
 int main(int argc, char **argv) {
-    //QCoreApplication app(argc, argv);
     FeaturesComplexNetwork cn;
-    FeaturesComplexNetwork cn2;
+    QList<const FeatureFactoryAbstract*> factories;
+    factories.append(new LabelFeatureFactory());
+    factories.append(new HsvFeatureFactory(20,9,6,4));
+    cn.load("train20_9_6_4.cn", factories);
 
-    QList<const FeatureFactoryAbstract*> features;
-    features.append(new LabelFeatureFactory());
-    features.append(new  HsvFeatureFactory(18,3,3,5) );
-    features.append(new  OrientationFeatureFactory(18) );
-    features.append(new  AreaFeatureFactory(18) );
-    /*
-    {
-        tictac::tic();
-        SunDatabaseReader reader("/Users/wachs/SUN/");
-        ComplexNetworkConstructor builder(cn, reader, features, NULL);
-        builder.build();
-        cn.save("teste.train");
-        tictac::tac();
-    }
-     */
-    {
-        tictac::tic();
-        FeaturesComplexNetwork cnTemp;
-        SunDatabaseReader reader(argv[1]);
-        ComplexNetworkConstructorP builderP(cnTemp, reader, features, 5);
-        builderP.build();
-        puts("terminei");
-        fflush(stdout);
-        cnTemp.save("saida.train");
-        tictac::tac();
-    }
-    //cn.load("teste.train", features);
-    /*
-    cn2.load("teste2.train", features);
-    printf("Nos: %d - Arestas: %d\n", cn.getNumNodes(), cn.getNumArcs());
-    printf("Nos: %d - Arestas: %d\n", cn2.getNumNodes(), cn2.getNumArcs());
-    float sum=0;
-    char buffer[50];
 
-    for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it ) {
-        for(FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2 ) {
-            FeatureAbstractPtr &node = cn.getNode(it);
-            FeatureAbstractPtr &node2 = cn.getNode(it2);
-            if(cn.arcExists(it,it2)) {
+    FeaturesComplexNetwork::ArcMap<double> l(cn);
+    GraphUtilities::getWeights(cn, l);
 
-                auto v1 = cn.getArcValue(cn.getNodeFromFeature(node), cn.getNodeFromFeature(node2)).getWeight();
-                auto v2 = cn2.getArcValue(cn2.getNodeFromFeature(node), cn2.getNodeFromFeature(node2)).getWeight();
-                sum += v2-v1;
-            }
-        }
-    }
-    printf("soma = %f\n", sum);
-     //return app.exec();*/
+    Modularity m(cn, l);
+    m.execute();
+
     return 0;
 }
 
