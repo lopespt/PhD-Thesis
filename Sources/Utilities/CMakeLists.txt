@@ -13,6 +13,7 @@ FILE(GLOB_RECURSE Source_Files
     DatabaseReader/*.cpp
     FeaturesComplexNetwork.cpp
     Link.cpp
+    Modularity.cpp
     GraphUtilities.cpp
     IterativeRandomWalk.cpp
     KFoldDatabaseReader.cpp

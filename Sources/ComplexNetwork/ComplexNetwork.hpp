@@ -55,66 +55,66 @@ public:
     }
 
     Arc getArc(Node a, Node b) {
-        mtxE.lock();
+        //mtxE.lock();
         Arc i = lookup(a, b);
         assert(this->valid(i));
-        mtxE.unlock();
+        //mtxE.unlock();
         return lookup(a, b);
     }
 
     E &getArcValue(Arc a) {
-        mtxE.lock();
+        //mtxE.lock();
         assert(valid(a));
         auto &ret = arcs[a];
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 
     const E &getArcValue(Arc a) const {
-        mtxE.lock();
+        //mtxE.lock();
         assert(valid(a));
         auto &ret = arcs[a];
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 
     E &getArcValue(int a) {
-        mtxE.lock();
+        //mtxE.lock();
         assert(valid(arcFromId(a)));
         auto &ret = arcs[this->arcFromId(a)];
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 
     const E &getArcValue(int a) const {
-        mtxE.lock();
+        //mtxE.lock();
         assert(valid(arcFromId(a)));
         auto &ret = arcs[this->arcFromId(a)];
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 
 
-    E &getArcValue(Node a, Node b) {
-        mtxE.lock();
+    inline E &getArcValue(Node a, Node b) {
+        //mtxE.lock();
         assert(valid(lookup(a, b)));
         auto &ret = arcs[lookup(a, b)];
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 
     N &getNode(Node n) {
-        mtxN.lock();
+        //mtxN.lock();
         assert(valid(n));
         auto &ret = nodes[n];
-        mtxN.unlock();
+        //mtxN.unlock();
         return ret;
     }
 
     bool arcExists(Node a, Node b) {
-        mtxE.lock();
+        //mtxE.lock();
         auto ret = valid(this->lookup(a, b));
-        mtxE.unlock();
+        //mtxE.unlock();
         return ret;
     }
 

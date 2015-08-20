@@ -1,62 +1,85 @@
 //
-// Created by Guilherme Wachs on 13/08/15.
+// Created by Guilherme Wachs on 16/08/15.
 //
 
+#include <qthreadpool.h>
 #include "Modularity.hpp"
-#include <QProcess>
-#include <QStringList>
-#include <FeatureExtractors/LabelFeature.hpp>
+
+
+bool Modularity::isSameClusters(const FeaturesComplexNetwork::Node &n1, const FeaturesComplexNetwork::Node &n2) {
+    return clusters[n1] == clusters[n2];
+}
+
 
 float Modularity::execute() {
+    float mod = 0;
+    float m = cn.getNumArcs();
+    for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it )
+        for(FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2 ){
+            double Aij = cn.arcExists(it, it2) ? cn.getArcValue(it,it2).getWeight() : 0;
+            double rand = deg[it]*deg[it2]/(2*m);
+            mod += (Aij - rand) * isSameClusters(it, it2);
+        }
 
-    QProcess proc;
-    //proc.setArguments(QStringList() << "-" << "--abc" << "-o -");
+    mod /= (2*m);
 
-    proc.start("/bin/bash");
-    proc.waitForStarted();
+    return mod;
+}
 
-    proc.write("mcl - -I 4 --abc -te 4 -dump-interval all -o -\n");
-
-    char buff[2000];
-    typedef QPair<FeaturesComplexNetwork::Node, float> Pt;
-
-    QList<Pt> degrees;
-    for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it){
-        degrees.append(Pt(it, cn.getOutputDegree(it)));
+float Modularity::executeP(int threads){
+    result = 0;
+    it = FeaturesComplexNetwork::NodeIt(cn);
+    mtx.unlock();
+    QThreadPool pool;
+    for(int i=0;i<threads;i++){
+        pool.start(new ParcialSumProcess(*this));
     }
+    pool.waitForDone();
 
-    qSort(degrees.begin(),degrees.end(), [](const Pt& a, const Pt& b){
-        return a.second < b.second;
-    });
+    result /= (2*cn.getNumArcs());
 
-    for(int i=0;i<cn.getNumNodes() * 0.2;i++){
-        cn.erase(degrees[i].first);
-    }
+    return result;
+}
 
-    for(FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it ){
-        FeatureAbstractPtr n1 = cn.getNode(cn.source(it));
-        FeatureAbstractPtr n2 = cn.getNode(cn.target(it));
-        if(n1->getType() == 0 && n2->getType()==0) {
-            QString str1(n1->asString(buff));
-            QString str2(n2->asString(buff));
+FeaturesComplexNetwork::Node Modularity::nextNode() {
+    FeaturesComplexNetwork::Node n = it;
+    ++it;
+    return n;
+}
 
-            str1.replace(" ","_");
-            str2.replace(" ","_");
 
-            sprintf(buff, "%s %s %f\n", str1.toStdString().c_str(), str2.toStdString().c_str(), weights[it]);
-            printf("%s", buff);
-            proc.write(buff);
+
+void Modularity::ParcialSumProcess::run() {
+    float pmod = 0;
+    FeaturesComplexNetwork::Node it;
+    puts("Thread started");
+    float numArcs = m.cn.getNumArcs();
+
+    while(true){
+        m.mtx.lock();
+        if(m.hasNextNode())
+            it = m.nextNode();
+        else {
+            m.mtx.unlock();
+            break;
+        }
+        //printf("%d\n", m.cn.id(m.it) );
+        m.mtx.unlock();
+        for(FeaturesComplexNetwork::NodeIt it2(m.cn); it2 != INVALID; ++it2 ){
+            //printf("%d\n", m.cn.id(it2));
+            double Aij = m.cn.arcExists(it, it2) ? m.cn.getArcValue(it,it2).getWeight() : 0;
+            double rand = m.deg[it]*m.deg[it2]/(2*numArcs);
+            pmod += (Aij - rand) * m.isSameClusters(it, it2);
         }
     }
 
+    m.mtx.lock();
+    m.result+= pmod;
+    m.mtx.unlock();
+    printf("Finished thread: %f\n", pmod);
 
-    proc.closeWriteChannel();
-    proc.waitForReadyRead();
-    proc.waitForFinished();
+}
 
-    puts(proc.readAll().constData());
-    fprintf(stderr, "%s\n", proc.readAllStandardError().constData());
-
-
-    return 0;
+bool Modularity::hasNextNode() {
+    return it != INVALID;
 }

@@ -21,7 +21,6 @@ IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn, const ListDigraph::Arc
 
 }
 
-
 void IterativeRandomWalk::clearMap(NodeMapDouble &ma ) {
     for (ListDigraph::NodeIt it(cn); it != INVALID; ++it) {
         ma[it] = 0;

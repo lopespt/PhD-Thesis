@@ -30,6 +30,8 @@ public:
                                     ListDigraph::ArcMap <double> &output);
 
     static void addAutoLoop(ListDigraph &cn, ListDigraph::ArcMap <double> &arcs, double value = 1);
+
+
 };
 
 
