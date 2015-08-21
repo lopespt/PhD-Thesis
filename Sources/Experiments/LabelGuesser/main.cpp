@@ -51,10 +51,6 @@ int main(int argc, char *argv[]) {
     ConfigParser config(app);
     tic();
 
-    FeaturesComplexNetwork cn;
-    if(!config.getCnInput().isEmpty()){
-        cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
-    }
 
 
 
@@ -86,12 +82,20 @@ int main(int argc, char *argv[]) {
             method = LabelGuesserExperiment::XorProbabilities;
     }
 
+
     if(!QFile::exists(config.getKFoldFilePath()) || !QFile::exists(config.getChoosenRegionFilePath())){
         createFiles(config);
     }
 
+    FeaturesComplexNetwork cn;
     if(constructor_enabled){
         buildCN(config);
+        cn.load(config.getCnOutput().toStdString().c_str(), config.getFactories());
+    }else if (!config.getCnInput().isEmpty()){
+        cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
+    }else{
+        puts("No Complex Network to work!! Exiting");
+        return 0;
     }
 
     RegionChooser region_chooser(config.getChoosenRegionFilePath());

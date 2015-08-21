@@ -13,6 +13,8 @@
 
 class ConfigParser : private QCommandLineParser{
     QSettings *settings;
+    QList<const FeatureFactoryAbstract*> factoriesCreated;
+
 
 public:
     ConfigParser(const QCoreApplication &app);

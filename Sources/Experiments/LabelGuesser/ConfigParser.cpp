@@ -31,6 +31,7 @@ ConfigParser::ConfigParser(const QCoreApplication &app) {
     addOption(QCommandLineOption(QStringList() << "choosen", "Region choosen filepath", "choosen", ""));
     process(app);
 
+
     if (!value("config").isEmpty()) {
         settings = new QSettings(value("config"), QSettings::IniFormat);
     } else {
@@ -41,7 +42,9 @@ ConfigParser::ConfigParser(const QCoreApplication &app) {
 }
 
 QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
-    QList<const FeatureFactoryAbstract *> factoriesCreated;
+    if(factoriesCreated.size()>0)
+        return factoriesCreated;
+
 
     QString h = getPreferedValue("factories/hsv/hue_discretization", "h");
     QString v = getPreferedValue("factories/hsv/value_discretization", "v");
@@ -52,7 +55,7 @@ QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
 
 
 
-    bool hLabels = (settings != NULL && settings->value("factories_enabled/labels").toBool()) || !isSet("l");
+    bool hLabels = (settings != NULL && settings->value("factories_enabled/labels").toBool()) || isSet("l");
     bool hHSV = (settings != NULL && settings->value("factories_enabled/hsv").toBool()) ||
                 (!value("h").isEmpty() && !value("s").isEmpty() && !value("v").isEmpty() && !value("y").isEmpty());
     bool hOri =
@@ -84,6 +87,9 @@ QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
 
 
 ConfigParser::~ConfigParser() {
+    for(auto &f : factoriesCreated)
+        delete f;
+
     if (settings)
         delete settings;
 }
@@ -107,7 +113,7 @@ QString ConfigParser::getPreferedValue(const QString &configKey, const QString &
     else if (!setConfig.isEmpty())
         return setConfig;
     else {
-        printf("Nao foi encontrada uma configuracao (%s,%s)\n", configKey.toStdString().c_str(), commKey.toStdString().c_str());
+        //printf("Nao foi encontrada uma configuracao (%s,%s)\n", configKey.toStdString().c_str(), commKey.toStdString().c_str());
         return QString(def);
     }
 }
