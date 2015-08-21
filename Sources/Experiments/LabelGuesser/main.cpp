@@ -55,13 +55,13 @@ int main(int argc, char *argv[]) {
 
 
     bool constructor_enabled = config.hasToBuildCN();
-    printf("%d\n\n", constructor_enabled);
     bool guesser_execute = !config.getGuesserOutput().isEmpty();
     QString guesser_output = config.getGuesserOutput();
     int walk_length = config.getPreferedValue("label_guesser_experiment/walk_length","","1").toInt();
     LabelGuesserExperiment::method method;
     bool useLabels = true;
     int numThreads = config.getNumThreads();
+    printf("%d\n", config.getFactories().size());
 
 
     QStringList vals;

@@ -37,8 +37,6 @@ ConfigParser::ConfigParser(const QCoreApplication &app) {
     } else {
         settings = NULL;
     }
-
-
 }
 
 QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
@@ -46,7 +44,7 @@ QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
         return factoriesCreated;
 
 
-    QString h = getPreferedValue("factories/hsv/hue_discretization", "h");
+    QString h = getPreferedValue("factories/hsv/hue_discretization", "H");
     QString v = getPreferedValue("factories/hsv/value_discretization", "v");
     QString s = getPreferedValue("factories/hsv/saturation_discretization", "s");
     QString y = getPreferedValue("factories/hsv/frequency_discretization", "y");
@@ -57,11 +55,10 @@ QList<const FeatureFactoryAbstract *> ConfigParser::getFactories() {
 
     bool hLabels = (settings != NULL && settings->value("factories_enabled/labels").toBool()) || isSet("l");
     bool hHSV = (settings != NULL && settings->value("factories_enabled/hsv").toBool()) ||
-                (!value("h").isEmpty() && !value("s").isEmpty() && !value("v").isEmpty() && !value("y").isEmpty());
+                (!value("H").isEmpty() && !value("s").isEmpty() && !value("v").isEmpty() && !value("y").isEmpty());
     bool hOri =
             (settings != NULL && settings->value("factories_enabled/orientation").toBool()) || !value("o").isEmpty();
     bool hArea = (settings != NULL && settings->value("factories_enabled/area").toBool()) || !value("a").isEmpty();
-
 
     if (hLabels)
         factoriesCreated.append(new LabelFeatureFactory());
