@@ -16,7 +16,7 @@ ConfigParser::ConfigParser(const QCoreApplication &app) {
                                  "1"));
     addOption(QCommandLineOption(QStringList() << "config" << "c", "Configuration file", "config", ""));
     addOption(QCommandLineOption(QStringList() << "l", "Label feature", "", ""));
-    addOption(QCommandLineOption(QStringList() << "h", "HSV H discretization", "h", ""));
+    addOption(QCommandLineOption(QStringList() << "H", "HSV H discretization", "h", ""));
     addOption(QCommandLineOption(QStringList() << "s", "HSV S discretization", "s", ""));
     addOption(QCommandLineOption(QStringList() << "v", "HSV V discretization", "v", ""));
     addOption(QCommandLineOption(QStringList() << "y", "HSV Y discretization", "y", ""));

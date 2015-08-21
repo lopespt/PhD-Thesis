@@ -72,7 +72,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -128,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8661088">
-              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -140,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigParser.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfigParser.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="179" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.5209205">
+              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding>
                 <element signature="e#50#102#0" expanded="true" />
               </folding>
@@ -268,8 +267,8 @@
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
       </list>
     </option>
   </component>
@@ -1174,7 +1173,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440119963475</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="New ConfigParser">
+      <created>1440124899947</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1440124899947</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1632,6 +1637,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1644,20 +1659,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="179" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.5209205">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="e#50#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8661088">
-          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
