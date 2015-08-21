@@ -50,11 +50,15 @@ int main(int argc, char **argv) {
     });
 
     char buffer[50];
+
     for(const Node &t: list){
         if(cn.getNode(t)->getType() == 0 ) {
             printf("%-40s %f\n", cn.getNode(t)->asString(buffer), degs[t] );
         }
     }
+
+
+
 
     tic();
     MCLClustering m(cn, weights);
