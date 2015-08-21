@@ -171,7 +171,7 @@ QString ConfigParser::getGuesserOutput() {
     if(ret.isEmpty() && settings && settings->value("label_guesser_experiment/execute").toBool()){
         ret = settings->value("label_guesser_experiment/output_file").toString();
     }
-    assert(!ret.isEmpty());
+    //assert(!ret.isEmpty());
 
     return ret;
 }

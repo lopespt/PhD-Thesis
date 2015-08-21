@@ -56,8 +56,7 @@ int main(int argc, char *argv[]) {
 
     bool constructor_enabled = config.hasToBuildCN();
     printf("%d\n\n", constructor_enabled);
-    bool constructor_save = !config.getCnOutput().isEmpty();
-    bool guesser_execute = true;
+    bool guesser_execute = !config.getGuesserOutput().isEmpty();
     QString guesser_output = config.getGuesserOutput();
     int walk_length = config.getPreferedValue("label_guesser_experiment/walk_length","","1").toInt();
     LabelGuesserExperiment::method method;
@@ -100,10 +99,13 @@ int main(int argc, char *argv[]) {
 
     RegionChooser region_chooser(config.getChoosenRegionFilePath());
 
-    LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method,numThreads, useLabels);
-    printf("Iniciando experimento\n");
-    l1.execute(guesser_output);
-    printf("Terminado\n");
+    if(guesser_execute) {
+        LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method, numThreads,
+                                  useLabels);
+        printf("Iniciando experimento\n");
+        l1.execute(guesser_output);
+        printf("Terminado\n");
+    }
     tac();
 
     return 0;

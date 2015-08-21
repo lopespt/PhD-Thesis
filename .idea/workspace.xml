@@ -70,12 +70,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="Thread Implementation in LabelGuesser">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/MCLClustering.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/MCLClustering.cpp" />
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Implementacao.iws" />
@@ -131,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.8661088">
+              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -143,11 +140,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigParser.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConfigParser.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7217573">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="179" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
               <folding>
                 <element signature="e#50#102#0" expanded="true" />
               </folding>
@@ -189,7 +186,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
                 <element signature="e#117#146#0" expanded="true" />
               </folding>
@@ -271,8 +268,8 @@
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigFileParser.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
       </list>
     </option>
   </component>
@@ -1165,7 +1162,19 @@
       <option name="project" value="LOCAL" />
       <updated>1440046062945</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="New ConfigParser">
+      <created>1440118896751</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1440118896751</updated>
+    </task>
+    <task id="LOCAL-00035" summary="New ConfigParser">
+      <created>1440119963474</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1440119963475</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1232,7 +1241,8 @@
     <MESSAGE value="ConfigCreator added sun database_path&#10;&#10;&#10;" />
     <MESSAGE value="Parallelism added to ComplexNetworkConstructorP" />
     <MESSAGE value="Thread Implementation in LabelGuesser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thread Implementation in LabelGuesser" />
+    <MESSAGE value="New ConfigParser" />
+    <option name="LAST_COMMIT_MESSAGE" value="New ConfigParser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1364,14 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/lemon/list_graph.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.953975">
-          <caret line="157" column="16" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtCore.framework/Headers/qhash.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33263597">
@@ -1440,13 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50209206">
           <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5920502">
-          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1621,32 +1616,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/include/lemon/list_graph.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37029287">
+          <caret line="404" column="36" selection-start-line="404" selection-start-column="36" selection-end-line="404" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="e#117#146#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+          <caret line="179" column="11" selection-start-line="179" selection-start-column="11" selection-end-line="179" selection-end-column="11" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#50#102#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7217573">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8661088">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
           <folding>
-            <element signature="e#50#102#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
