@@ -1,7 +1,7 @@
 #ifndef FEATURESCOMPLEXNETWORK_HPP
 #define FEATURESCOMPLEXNETWORK_HPP
 
-#include <ComplexNetwork/ComplexNetwork.hpp>
+#include <lemon/list_graph.h>
 #include <FeatureExtractors/FeatureAbstract.hpp>
 #include <FeatureExtractors/FeatureFactoryAbstract.hpp>
 #include "Link.hpp"
@@ -10,10 +10,20 @@
 #include <memory>
 #include <exception>
 
+using namespace lemon;
 class FeatureFactoryAbstract;
 
-class FeaturesComplexNetwork : public ComplexNetwork<FeatureAbstractPtr, Link> {
+class FeaturesComplexNetwork : private ListDigraph {
 private:
+    typedef typename ListDigraph::NodeMap<FeatureAbstractPtr> NMap;
+    typedef typename ListDigraph::ArcMap<Link> AMap;
+
+    mutable std::mutex mtxN;
+    mutable std::mutex mtxE;
+
+    NMap nodes;
+    AMap arcs;
+
     QHash<FeatureAbstractPtr, Node> featureIndex;
 
     void load(const char *filename) { }
@@ -21,17 +31,16 @@ private:
 
 public:
     FeaturesComplexNetwork();
-
     ~FeaturesComplexNetwork();
 
     void save(const char *filename);
-
     void load(const char *filename, const QList<const FeatureFactoryAbstract *> &l);
+
 
     float getOutputWeightedDegree(Node) const;
     float getInputWeightedDegree(Node) const;
 
-    //bool removeNode(node_id id);
+
     Node getNodeFromFeature(const FeatureAbstractPtr &f) const;
 
     void refreshCache();

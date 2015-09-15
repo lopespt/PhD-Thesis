@@ -16,6 +16,7 @@ protected:
     ListDigraph::NodeMap <N> nodes;
     ListDigraph::ArcMap <E> arcs;
     DynArcLookUp<ListDigraph> lookup;
+
 public:
     ComplexNetwork(const ComplexNetwork<N, E> &other) : nodes(*this), arcs(*this), lookup(*this) {
         digraphCopy(other, *this).nodeMap(other.nodes, this->nodes).arcMap(other.arcs, this->arcs).run();
