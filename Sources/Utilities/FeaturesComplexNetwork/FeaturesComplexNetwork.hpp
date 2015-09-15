@@ -36,14 +36,6 @@ public:
 
     void refreshCache();
 
-    class NodeReader {
-    private:
-        const QList<const FeatureFactoryAbstract *> &factories;
-    public:
-        NodeReader(const QList<const FeatureFactoryAbstract *> &factories) : factories(factories) { }
-
-        FeatureAbstractPtr operator()(const string &str);
-    };
 };
 
 #endif // FEATURESCOMPLEXNETWORK_HPP

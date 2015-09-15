@@ -5,6 +5,14 @@
 
 using namespace std;
 
+class NodeReader {
+private:
+    const QList<const FeatureFactoryAbstract *> &factories;
+public:
+    NodeReader(const QList<const FeatureFactoryAbstract *> &factories) : factories(factories) { }
+
+    FeatureAbstractPtr operator()(const string &str);
+};
 
 FeaturesComplexNetwork::FeaturesComplexNetwork() : ComplexNetwork() {
 }
@@ -75,7 +83,7 @@ FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const Fe
     return n;
 }
 
-FeatureAbstractPtr FeaturesComplexNetwork::NodeReader::operator()(const string &str) {
+FeatureAbstractPtr NodeReader::operator()(const string &str) {
     std::stringstream stream;
     stream << str;
     int type;
