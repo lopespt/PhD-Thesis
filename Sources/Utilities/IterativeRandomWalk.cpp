@@ -17,8 +17,13 @@ IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn, const ListDigraph::Arc
 
     GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
     GraphUtilities::addAutoLoop(this->cn, this->weights);
-    GraphUtilities::normalizeOutDegrees(this->cn, this->weights, this->weights);
+    GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
 
+    /*
+    GraphUtilities::normalizeInDegrees(this->cn, weights, this->weights);
+    GraphUtilities::addAutoLoop(this->cn, this->weights);
+    GraphUtilities::normalizeInDegrees(this->cn, this->weights, this->weights);
+    */
 }
 
 void IterativeRandomWalk::clearMap(NodeMapDouble &ma ) {

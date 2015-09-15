@@ -1,0 +1,18 @@
+
+FIND_PACKAGE(Qt5Core REQUIRED)
+FIND_PACKAGE(Qt5OpenGL REQUIRED)
+FIND_PACKAGE(Qt5Widgets REQUIRED)
+FIND_PACKAGE(Qt5Sql REQUIRED)
+#FIND_PACKAGE(Qt5WebKitWidgets REQUIRED)
+FIND_PACKAGE(VTK REQUIRED)
+FIND_PACKAGE(OpenCV REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+SET(CMAKE_AUTOMOC ON)
+
+INCLUDE_DIRECTORIES(".")
+
+FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
+
+ADD_EXECUTABLE(LabelGuesserRemovingHints ${Source_Files} ../LabelGuesser/ConfigParser.cpp )
+TARGET_LINK_LIBRARIES(LabelGuesserRemovingHints FeatureExtractors ComplexNetwork Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})

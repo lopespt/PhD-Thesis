@@ -58,8 +58,6 @@ int main(int argc, char **argv) {
     }
 
 
-
-
     tic();
     MCLClustering m(cn, weights);
     m.execute();

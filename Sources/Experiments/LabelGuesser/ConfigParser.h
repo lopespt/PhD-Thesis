@@ -29,6 +29,7 @@ public:
     QString getChoosenRegionFilePath();
 
 
+
     int getNumThreads();
 
     QList<const FeatureFactoryAbstract*> getFactories();

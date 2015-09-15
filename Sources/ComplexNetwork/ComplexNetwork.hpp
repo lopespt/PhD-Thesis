@@ -54,7 +54,7 @@ public:
         return a;
     }
 
-    Arc getArc(Node a, Node b) {
+    Arc getArc(Node a, Node b) const{
         //mtxE.lock();
         Arc i = lookup(a, b);
         assert(this->valid(i));
@@ -111,7 +111,7 @@ public:
         return ret;
     }
 
-    bool arcExists(Node a, Node b) {
+    bool arcExists(const Node &a,const Node &b) const{
         //mtxE.lock();
         auto ret = valid(this->lookup(a, b));
         //mtxE.unlock();

@@ -33,7 +33,8 @@ public:
 
     void load(const char *filename, const QList<const FeatureFactoryAbstract *> &l);
 
-    float getOutputDegree(Node) const;
+    float getOutputWeightedDegree(Node) const;
+    float getInputWeightedDegree(Node) const;
 
     //bool removeNode(node_id id);
     Node getNodeFromFeature(const FeatureAbstractPtr &f) const;

@@ -39,7 +39,15 @@ FeaturesComplexNetwork::~FeaturesComplexNetwork() {
     //clear();
 }
 
-float FeaturesComplexNetwork::getOutputDegree(Node from) const {
+float FeaturesComplexNetwork::getOutputWeightedDegree(Node from) const {
+    float total = 0;
+    for (OutArcIt e(*this, from); e != INVALID; ++e) {
+        total += this->arcs[e].getWeight();
+    }
+    return total;
+}
+
+float FeaturesComplexNetwork::getInputWeightedDegree(Node from) const {
     float total = 0;
     for (OutArcIt e(*this, from); e != INVALID; ++e) {
         total += this->arcs[e].getWeight();

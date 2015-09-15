@@ -16,11 +16,13 @@ class ComplexNetworkConstructorP : public ComplexNetworkConstructor, public QRun
 private:
     static unsigned int numP;
     static std::mutex mtx;
+
     QMutex mx;
     CoOcurrenceEquation *coOcurrenceEquationPolicy;
     QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> index;
     QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node>* cache;
     int numThreads;
+
 public:
     ComplexNetworkConstructorP(const ComplexNetworkConstructorP &other):ComplexNetworkConstructor(other.cn, other.reader,
                                                                                                   other.extractors,

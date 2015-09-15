@@ -29,6 +29,11 @@ public:
     static void normalizeOutDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
                                     ListDigraph::ArcMap <double> &output);
 
+    static void normalizeInDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
+                                    ListDigraph::ArcMap <double> &output);
+
+    static void normalizeWeights(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
+                                    ListDigraph::ArcMap <double> &output);
     static void addAutoLoop(ListDigraph &cn, ListDigraph::ArcMap <double> &arcs, double value = 1);
 
 

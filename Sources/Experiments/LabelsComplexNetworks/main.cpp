@@ -19,6 +19,7 @@ int main(int argc, char **argv) {
     QCommandLineParser parser;
     parser.addPositionalArgument("folder", "SUN Database Folder", "folder");
     parser.addOption(QCommandLineOption("o", "Output File", "file", "complex_network.cn"));
+    parser.addOption(QCommandLineOption("m", "Matlab File", "matlab", "mat.m"));
     parser.addHelpOption();
 
     QString folder;
@@ -31,7 +32,7 @@ int main(int argc, char **argv) {
     SunDatabaseReader reader(folder);
     QList<const FeatureFactoryAbstract *> factories;
     LabelFeatureFactory labels_factory;
-    OrientationFeatureFactory orientation_factory(2000);
+    //OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
     ///factories.append(&orientation_factory);
 
@@ -40,8 +41,18 @@ int main(int argc, char **argv) {
     printf("Nodes: %u\n", labels_cn.getNumNodes());
     printf("Edges: %u", labels_cn.getNumArcs());
 
-
     labels_cn.save(parser.value("o").toStdString().c_str());
+
+    FILE *f = fopen(parser.value("m").toStdString().c_str(), "w");
+
+    float deg;
+    for(FeaturesComplexNetwork::NodeIt it(labels_cn); it != INVALID; ++it){
+            deg = labels_cn.getOutputWeightedDegree(it) + labels_cn.getInputWeightedDegree(it);
+            fprintf(f,"%f\n", deg);
+    }
+
+    fclose(f);
+
     return 0;
 
 

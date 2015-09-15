@@ -1,4 +1,3 @@
-#include "LabelGuesserExperiment.hpp"
 #include <QCoreApplication>
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
@@ -9,8 +8,10 @@
 #include <QCommandLineParser>
 #include <Utilities/tictac.h>
 #include "ConfigParser.h"
+#include "LabelGuesserExperiment.hpp"
 #include <QStringList>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
+#include <Utilities/DatabaseReader/RegionChooser.hpp>
 
 void createFiles(ConfigParser &config) {
     FeaturesComplexNetwork cn;

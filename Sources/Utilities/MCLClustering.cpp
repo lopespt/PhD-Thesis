@@ -24,7 +24,7 @@ float MCLClustering::execute() {
 
     QList<Pt> degrees;
     for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it){
-        degrees.append(Pt(it, cn.getOutputDegree(it)));
+        degrees.append(Pt(it, cn.getOutputWeightedDegree(it)));
     }
 
     qSort(degrees.begin(),degrees.end(), [](const Pt& a, const Pt& b){
