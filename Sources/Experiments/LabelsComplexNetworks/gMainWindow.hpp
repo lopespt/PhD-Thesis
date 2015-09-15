@@ -21,7 +21,7 @@
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <Utilities/NodeString.hpp>
-#include <Utilities/Link.hpp>
+#include <Utilities/FeaturesComplexNetwork/Link.hpp>
 #include <vtkMutableUndirectedGraph.h>
 #include <QMap>
 #include <vtkSimple2DLayoutStrategy.h>

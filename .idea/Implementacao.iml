@@ -146,14 +146,14 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/IterativeRandomWalk.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Link.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Link.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/MCLClustering.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/MCLClustering.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Modularity.cpp" isTestSource="false" />

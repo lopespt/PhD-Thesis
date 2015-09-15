@@ -1,5 +1,5 @@
 #include "AddOneCoOcurrenceEquation.hpp"
-#include <Utilities/Link.hpp>
+#include <Utilities/FeaturesComplexNetwork/Link.hpp>
 
 AddOneCoOcurrenceEquation::AddOneCoOcurrenceEquation() : time(1) {
 

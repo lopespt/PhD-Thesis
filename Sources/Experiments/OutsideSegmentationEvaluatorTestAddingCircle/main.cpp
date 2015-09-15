@@ -1,4 +1,4 @@
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
 #include <Segmentation/XorSegmentationEvaluator.hpp>

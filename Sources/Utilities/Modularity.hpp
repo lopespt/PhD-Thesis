@@ -7,7 +7,7 @@
 
 
 #include <qthread.h>
-#include "FeaturesComplexNetwork.hpp"
+#include "FeaturesComplexNetwork/FeaturesComplexNetwork.hpp"
 #include "Degrees.h"
 #include <mutex>
 #include <QRunnable>

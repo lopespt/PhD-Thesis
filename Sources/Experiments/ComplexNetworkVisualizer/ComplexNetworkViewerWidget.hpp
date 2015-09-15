@@ -31,9 +31,9 @@
 #include <vtkActor2D.h>
 #include <vtkColorTransferFunction.h>
 #include <vtkRenderedGraphRepresentation.h>
-#include <Utilities/Link.hpp>
+#include <Utilities/FeaturesComplexNetwork/Link.hpp>
 #include <vtkFloatArray.h>
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 
 class ComplexNetworkViewerWidget : public QWidget {
 Q_OBJECT

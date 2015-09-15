@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QList>
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 
 
 class ComplexNetworkViewerWidget;

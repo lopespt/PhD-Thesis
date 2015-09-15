@@ -2,7 +2,7 @@
 #define RANDOMWALK_HPP
 
 #include <ComplexNetwork/ComplexNetwork.hpp>
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 
 class GraphUtilities {
 private:

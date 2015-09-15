@@ -1,5 +1,5 @@
 #include "ReinforcementCoOcurrenceEquation.hpp"
-#include <Utilities/Link.hpp>
+#include <Utilities/FeaturesComplexNetwork/Link.hpp>
 #include <math.h>
 
 ReinforcementCoOcurrenceEquation::ReinforcementCoOcurrenceEquation(float learningRate, float lambda) : time(1),

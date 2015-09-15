@@ -18,11 +18,6 @@ private:
 
     void load(const char *filename) { }
 
-    typedef struct {
-        char description[200];
-        unsigned int num_nodes;
-        unsigned int num_edges;
-    } header;
 
 public:
     FeaturesComplexNetwork();

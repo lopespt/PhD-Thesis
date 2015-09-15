@@ -2,7 +2,7 @@
 #define LABELGUESSEREXPERIMENT_HPP
 
 #include <QList>
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
 #include <QtCore/qrunnable.h>
 #include <mutex>

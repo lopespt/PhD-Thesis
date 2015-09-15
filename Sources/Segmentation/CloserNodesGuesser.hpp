@@ -1,7 +1,7 @@
 #ifndef CLOSERNODESGUESSER_HPP
 #define CLOSERNODESGUESSER_HPP
 
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <Utilities/IterativeRandomWalk.hpp>
 #include <QList>
 

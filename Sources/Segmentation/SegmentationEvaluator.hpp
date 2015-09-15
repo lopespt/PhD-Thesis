@@ -1,7 +1,7 @@
 #ifndef SEGMENTATIONEVALUATOR_HPP
 #define SEGMENTATIONEVALUATOR_HPP
 
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 
 class SegmentedImage;
 

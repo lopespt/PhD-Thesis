@@ -6,7 +6,7 @@
 #define PHDTHESIS_CLUSTERINGCOEFFICIENT_H
 
 
-#include "FeaturesComplexNetwork.hpp"
+#include "FeaturesComplexNetwork/FeaturesComplexNetwork.hpp"
 
 class ClusteringCoefficient {
 private:

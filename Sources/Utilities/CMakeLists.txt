@@ -11,8 +11,8 @@ FILE(GLOB_RECURSE Source_Files
     SupervisedImage.cpp
     ComplexNetworkConstructor/*.cpp
     DatabaseReader/*.cpp
-    FeaturesComplexNetwork.cpp
-    Link.cpp
+        FeaturesComplexNetwork/FeaturesComplexNetwork.cpp
+        FeaturesComplexNetwork/Link.cpp
     Modularity.cpp
     GraphUtilities.cpp
     IterativeRandomWalk.cpp

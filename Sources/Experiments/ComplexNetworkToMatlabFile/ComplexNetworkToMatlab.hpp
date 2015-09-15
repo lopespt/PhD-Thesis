@@ -4,7 +4,7 @@
 #include <QFile>
 #include <ComplexNetwork/ComplexNetwork.hpp>
 #include <Utilities/NodeString.hpp>
-#include <Utilities/Link.hpp>
+#include <Utilities/FeaturesComplexNetwork/Link.hpp>
 
 class ComplexNetworkToMatlab {
 public:

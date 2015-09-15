@@ -1,7 +1,7 @@
 #ifndef COMPLEX_NETWORK_CONSTRUCTOR__HPP
 #define COMPLEX_NETWORK_CONSTRUCTOR__HPP
 
-#include <Utilities/FeaturesComplexNetwork.hpp>
+#include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <QList>
 #include <QHash>
 #include <mutex>
