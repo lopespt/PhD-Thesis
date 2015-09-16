@@ -13,4 +13,4 @@ INCLUDE_DIRECTORIES(".")
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 
 ADD_EXECUTABLE(SetupPadrao ${Source_Files})
-TARGET_LINK_LIBRARIES(SetupPadrao FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
+TARGET_LINK_LIBRARIES(SetupPadrao FeatureExtractors ComplexNetwork Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})

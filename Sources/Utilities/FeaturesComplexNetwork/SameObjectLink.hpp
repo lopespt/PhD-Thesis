@@ -9,8 +9,10 @@
 
 class SameObjectLink : public Link {
 public:
-    SameObjectLink() : Link(), isSameLabel(true){ }
-    SameObjectLink(link_time time, float weight) : Link(time, weight, true){ }
+    SameObjectLink() : Link(){
+        setLinkType(LinkType::SameLabel);
+    }
+    SameObjectLink(link_time time, float weight) : Link(time, weight, LinkType::SameLabel ){ }
 
 };
 

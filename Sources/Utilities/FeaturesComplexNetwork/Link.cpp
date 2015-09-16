@@ -3,7 +3,7 @@
 Link::Link() : time(0), weight(0) {
 }
 
-Link::Link(link_time t, float weight, bool sameLabel) : time(t), weight(weight), sameLabel(sameLabel) {
+Link::Link(link_time t, float weight, LinkType type) : time(t), weight(weight), type(type) {
 }
 
 float Link::getWeight() const {
@@ -34,22 +34,25 @@ void Link::setTime(link_time time) {
     this->time = time;
 }
 
-bool Link::isSameLabel() const {
-    return this->sameLabel;
-}
-
-void Link::isSameLabel(bool v) {
-    this->sameLabel = v;
-}
 
 std::ostream &operator<<(std::ostream &os, const Link &dt) {
-    os << dt.getWeight() << " " << dt.getTime() << " " << dt.isSameLabel();
+    os << dt.getWeight() << " " << dt.getTime() << " " << (int)dt.type;
     return os;
 }
 
 std::istream &operator>>(std::istream &is, Link &dt) {
-    is >> dt.weight >> dt.time >> dt.sameLabel;
+    int i;
+    is >> dt.weight >> dt.time >> i;
+    dt.type = (Link::LinkType) i;
     return is;
 }
 
 
+Link::LinkType Link::getLinkType() const {
+    return type;
+}
+
+
+void Link::setLinkType(Link::LinkType type) {
+    this->type = type;
+}

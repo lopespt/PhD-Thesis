@@ -5,6 +5,12 @@
 
 using namespace std;
 
+uint lemon::qHash(const ListDigraph::Arc &a){
+    uint ret = (uint) ListDigraph::id(a);
+    printf("%d\n", ret);
+    return ret;
+}
+
 class NodeReader {
 private:
     const QList<const FeatureFactoryAbstract *> &factories;
@@ -14,7 +20,7 @@ public:
     FeatureAbstractPtr operator()(const string &str);
 };
 
-FeaturesComplexNetwork::FeaturesComplexNetwork() : ComplexNetwork() {
+FeaturesComplexNetwork::FeaturesComplexNetwork() : ListDigraph(), arcs(*this), nodes(*this) {
 }
 
 void FeaturesComplexNetwork::save(const char *filename) {
@@ -40,6 +46,19 @@ void FeaturesComplexNetwork::refreshCache() {
     for (ListDigraph::NodeIt it(*this); it != INVALID; ++it) {
         featureIndex.insert(nodes[it], it);
     }
+
+
+    for (ListDigraph::ArcIt it(*this); it != INVALID; ++it) {
+        switch (arcs[it].type){
+            case Link::LinkType::OtherLabel:
+                otherLabelLinks[it] = arcs[it];
+                break;
+            case Link::LinkType::SameLabel:
+                sameLabelLinks[it] = arcs[it];
+                break;
+        }
+    }
+
 }
 
 
@@ -72,14 +91,12 @@ bool FeaturesComplexNetwork::removeNode(node_id id){
 
 
 FeaturesComplexNetwork::Node FeaturesComplexNetwork::getNodeFromFeature(const FeatureAbstractPtr &f) const {
-    mtxN.lock();
     FeaturesComplexNetwork::Node n;
     if (featureIndex.contains(f)) {
         n = featureIndex[f];
     }else {
         n = Node(INVALID);
     }
-    mtxN.unlock();
     return n;
 }
 
@@ -96,4 +113,33 @@ FeatureAbstractPtr NodeReader::operator()(const string &str) {
     }
     throw new runtime_error("No FeatureFactory Found");
     return FeatureAbstractPtr();
+}
+
+ListDigraph::Node FeaturesComplexNetwork::addNode(const FeatureAbstractPtr &value) {
+    auto newNode = ListDigraphBase::Node();
+    featureIndex[value] = newNode;
+    nodes[newNode] = value;
+    return newNode;
+
+}
+
+ListDigraph::Arc FeaturesComplexNetwork::addArc(const ListDigraph::Node &from, const ListDigraph::Node &to,
+                                                    const Link &link) {
+
+
+    return ListDigraphBase::Arc();
+}
+
+void FeaturesComplexNetwork::erase(ListDigraphBase::Node n) {
+    for( OutArcIt it(*this, n); it != INVALID; ++it ){
+        sameLabelLinks.remove(it);
+        otherLabelLinks.remove(it);
+    }
+    ListDigraph::erase(n);
+}
+
+void FeaturesComplexNetwork::erase(ListDigraphBase::Arc a) {
+    sameLabelLinks.remove(a);
+    otherLabelLinks.remove(a);
+    ListDigraph::erase(a);
 }

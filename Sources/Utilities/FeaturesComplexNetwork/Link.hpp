@@ -7,12 +7,14 @@ typedef unsigned long long int link_time;
 
 class Link {
 
-private:
+protected:
     link_time time;
     float weight;
-    bool sameLabel;
 
 public:
+
+    enum class LinkType{ OtherLabel, SameLabel } type;
+
     link_time getTime() const;
 
     void setTime(link_time time);
@@ -23,15 +25,15 @@ public:
 
     Link();
 
-    Link(link_time t, float weight, bool sameLabel = false);
+    Link(link_time t, float weight, LinkType type);
 
     Link operator+(float) const;
 
     Link &operator+=(float);
 
-    bool isSameLabel() const;
+    Link::LinkType getLinkType() const;
 
-    void isSameLabel(bool);
+    void setLinkType(LinkType type);
 
     friend std::ostream &operator<<(std::ostream &os, const Link &dt);
 

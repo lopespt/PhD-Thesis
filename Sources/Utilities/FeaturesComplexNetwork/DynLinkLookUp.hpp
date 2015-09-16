@@ -7,19 +7,24 @@
 
 #include <lemon/core.h>
 #include <lemon/list_graph.h>
-#include "Link.hpp"
-
+#include <vector>
+class FeaturesComplexNetwork;
 using namespace lemon;
+using namespace std;
 
-class DynLinkLookUp : public DynArcLookUp {
+class DynLinkLookUp {
 
 private:
-    QHash<FeatureAbstractPtr, Node> featureIndex;
+    typedef typename AlterationNotifier<ListDigraph, ListDigraph::Arc>::ObserverBase Parent;
+    typedef AlterationNotifier<ListDigraph, ListDigraph::Arc> Notifier;
 
 public:
-    DynLinkLookUp(const FeaturesComplexNetwork &g): DynArcLookUp(g) { }
+    DynLinkLookUp(const FeaturesComplexNetwork &g);
+
+protected:
 
 
+public:
 };
 
 
