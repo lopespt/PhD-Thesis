@@ -28,12 +28,14 @@ public:
 
 private:
 
+    typedef QPair<ListDigraph::Node, ListDigraph::Node> ArcKey;
+
     NMap<FeatureAbstractPtr> nodes;
     AMap<Link> arcs;
 
     QHash<FeatureAbstractPtr, Node> featureIndex;
-    QHash<ListDigraph::Arc, Link> sameLabelLinks;
-    QHash<ListDigraph::Arc, Link> otherLabelLinks;
+    QHash<ArcKey, ListDigraph::Arc> sameLabelLinks;
+    QHash<ArcKey, ListDigraph::Arc> otherLabelLinks;
 
     void load(const char *filename) {
     }
@@ -79,14 +81,19 @@ public:
 
     void erase(Arc a);
 
+    ListDigraph::Arc getLinkArc(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel) const;
+    Link& getLinkArcValue(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel);
+    Link getLinkArcValue(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel) const;
+
+    bool arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,Link::LinkType type=Link::LinkType::OtherLabel);
+
     FeaturesComplexNetwork();
-
-
     ~FeaturesComplexNetwork();
 };
 
 namespace lemon {
     uint qHash(const lemon::ListDigraph::Arc &a);
+    uint qHash(const lemon::ListDigraph::Node &a);
 }
 #endif // FEATURESCOMPLEXNETWORK_HPP
 

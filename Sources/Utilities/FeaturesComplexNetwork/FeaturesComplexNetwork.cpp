@@ -2,12 +2,17 @@
 #include <QDataStream>
 #include <lemon/lgf_reader.h>
 #include <lemon/graph_to_eps.h>
+#include <assert.h>
 
 using namespace std;
 
 uint lemon::qHash(const ListDigraph::Arc &a){
     uint ret = (uint) ListDigraph::id(a);
-    printf("%d\n", ret);
+    return ret;
+}
+
+uint lemon::qHash(const ListDigraph::Node &a){
+    uint ret = (uint) ListDigraph::id(a);
     return ret;
 }
 
@@ -20,7 +25,7 @@ public:
     FeatureAbstractPtr operator()(const string &str);
 };
 
-FeaturesComplexNetwork::FeaturesComplexNetwork() : ListDigraph(), arcs(*this), nodes(*this) {
+FeaturesComplexNetwork::FeaturesComplexNetwork() : ListDigraph(), nodes(*this), arcs(*this) {
 }
 
 void FeaturesComplexNetwork::save(const char *filename) {
@@ -43,18 +48,20 @@ void FeaturesComplexNetwork::load(const char *filename, const QList<const Featur
 
 void FeaturesComplexNetwork::refreshCache() {
     featureIndex.clear();
+    sameLabelLinks.clear();
+    otherLabelLinks.clear();
     for (ListDigraph::NodeIt it(*this); it != INVALID; ++it) {
         featureIndex.insert(nodes[it], it);
     }
 
-
     for (ListDigraph::ArcIt it(*this); it != INVALID; ++it) {
+        ArcKey arc(source(it), target(it));
         switch (arcs[it].type){
             case Link::LinkType::OtherLabel:
-                otherLabelLinks[it] = arcs[it];
+                otherLabelLinks[arc] = it;
                 break;
             case Link::LinkType::SameLabel:
-                sameLabelLinks[it] = arcs[it];
+                sameLabelLinks[arc] = it;
                 break;
         }
     }
@@ -116,30 +123,101 @@ FeatureAbstractPtr NodeReader::operator()(const string &str) {
 }
 
 ListDigraph::Node FeaturesComplexNetwork::addNode(const FeatureAbstractPtr &value) {
-    auto newNode = ListDigraphBase::Node();
+    auto newNode = ListDigraph::addNode();
     featureIndex[value] = newNode;
     nodes[newNode] = value;
     return newNode;
-
 }
 
 ListDigraph::Arc FeaturesComplexNetwork::addArc(const ListDigraph::Node &from, const ListDigraph::Node &to,
                                                     const Link &link) {
 
 
-    return ListDigraphBase::Arc();
+    auto arc = ListDigraph::addArc(from, to);
+    arcs[arc] = link;
+    auto key = ArcKey(from, to);
+    switch (link.type){
+        case Link::LinkType::OtherLabel:
+            otherLabelLinks[key] = arc;
+            break;
+        case Link::LinkType::SameLabel:
+            sameLabelLinks[key] = arc;
+            break;
+    }
+    return arc;
 }
 
-void FeaturesComplexNetwork::erase(ListDigraphBase::Node n) {
+void FeaturesComplexNetwork::erase(ListDigraph::Node n) {
     for( OutArcIt it(*this, n); it != INVALID; ++it ){
-        sameLabelLinks.remove(it);
-        otherLabelLinks.remove(it);
+        ArcKey arc(source(it), target(it));
+        sameLabelLinks.remove(arc);
+        otherLabelLinks.remove(arc);
+    }
+    for( InArcIt it(*this, n); it != INVALID; ++it ){
+        ArcKey arc(source(it), target(it));
+        sameLabelLinks.remove(arc);
+        otherLabelLinks.remove(arc);
     }
     ListDigraph::erase(n);
 }
 
-void FeaturesComplexNetwork::erase(ListDigraphBase::Arc a) {
-    sameLabelLinks.remove(a);
-    otherLabelLinks.remove(a);
+void FeaturesComplexNetwork::erase(ListDigraph::Arc a) {
+    ArcKey arc(source(a), target(a));
+    sameLabelLinks.remove(arc);
+    otherLabelLinks.remove(arc);
     ListDigraph::erase(a);
+}
+
+ListDigraph::Arc FeaturesComplexNetwork::getLinkArc(const ListDigraph::Node &from,
+                                                           const ListDigraph::Node &to, Link::LinkType type) const {
+    if(type == Link::LinkType::OtherLabel) {
+        auto it = otherLabelLinks.find(ArcKey(from, to));
+        if (it != otherLabelLinks.end())
+            return *it;
+    }else if(type == Link::LinkType::SameLabel){
+        auto it = sameLabelLinks.find(ArcKey(from, to));
+        if (it != sameLabelLinks.end())
+            return *it;
+    }
+    return INVALID;
+}
+
+Link& FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Node &from,
+                                                               const ListDigraph::Node &to, Link::LinkType type) {
+    if(type == Link::LinkType::OtherLabel) {
+        auto it = otherLabelLinks.find(ArcKey(from, to));
+        assert(  it != otherLabelLinks.end() );
+        return arcs[*it];
+    }else if(type == Link::LinkType::SameLabel){
+        auto it = sameLabelLinks.find(ArcKey(from, to));
+        assert(  it != sameLabelLinks.end() );
+        return arcs[*it];
+    }
+    assert(1==2);
+}
+
+Link FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Node &from,
+                                              const ListDigraph::Node &to, Link::LinkType type) const {
+    if(type == Link::LinkType::OtherLabel) {
+        auto it = otherLabelLinks.find(ArcKey(from, to));
+        assert(  it != otherLabelLinks.end() );
+        return arcs[*it];
+    }else if(type == Link::LinkType::SameLabel){
+        auto it = sameLabelLinks.find(ArcKey(from, to));
+        assert(  it != sameLabelLinks.end() );
+        puts("aqui");
+        return arcs[*it];
+    }
+    assert(1==2);
+}
+bool FeaturesComplexNetwork::arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,
+                                       Link::LinkType type) {
+    if(type == Link::LinkType::OtherLabel) {
+        auto it = otherLabelLinks.find(ArcKey(from, to));
+        return   it != otherLabelLinks.end();
+    }else if(type == Link::LinkType::SameLabel){
+        auto it = sameLabelLinks.find(ArcKey(from, to));
+        return  it != sameLabelLinks.end() ;
+    }
+    return false;
 }

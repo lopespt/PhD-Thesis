@@ -126,14 +126,32 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Utilities/Utilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

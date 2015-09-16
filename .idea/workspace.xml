@@ -8,8 +8,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
-      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
-      <config projectName="PhDThesis" targetName="WebServer" />
+      <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="Visualizer_automoc" />
@@ -21,10 +20,10 @@
       <config projectName="PhDThesis" targetName="LabelGuesserExp" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest" />
       <config projectName="PhDThesis" targetName="LabelGuesserRemovingHints" />
-      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
       <config projectName="PhDThesis" targetName="Utilities" />
-      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="Visualizer" />
       <config projectName="PhDThesis" targetName="SetupPadrao_automoc" />
@@ -32,30 +31,31 @@
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle_automoc" />
+      <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="LabelGuesserRemovingHints_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
+      <config projectName="PhDThesis" targetName="SetupPadrao" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
       <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment" />
       <config projectName="PhDThesis" targetName="ConfigCreator_automoc" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
       <config projectName="PhDThesis" targetName="SunRandomFolderGenerator" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="SegmenterTest" />
+      <config projectName="PhDThesis" targetName="WebServer" />
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetwork" />
-      <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
+      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer" />
       <config projectName="PhDThesis" targetName="FeatureExtractors" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
-      <config projectName="PhDThesis" targetName="SetupPadrao" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
+      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
+      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
       <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures" />
@@ -63,7 +63,7 @@
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
       <config projectName="PhDThesis" targetName="RandomWalkTest" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true" GENERATION_PASS_SYSTEM_ENVIRONMENT="true" BUILD_OUTPUT_DIR="/tmp/phd">
@@ -74,18 +74,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,47 +100,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FeaturesComplexNetwork.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp">
+      <file leaf-file-name="ComplexNetworkConstructor.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SameObjectLink.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.5471698">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComplexNetwork.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp">
+      <file leaf-file-name="ComplexNetworkConstructor.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeaturesComplexNetwork.hpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75536484">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
               <folding>
-                <element signature="e#71#100#0" expanded="true" />
-                <element signature="e#540#552#0" expanded="true" />
-                <element signature="e#609#621#0" expanded="true" />
+                <element signature="e#83#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -210,7 +180,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$PROJECT_DIR$/Sources/Utilities/MCLClustering.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork.cpp" />
@@ -235,16 +204,17 @@
         <option value="$PROJECT_DIR$/Sources/ComplexNetwork/DynLinkLookUp.hpp" />
         <option value="$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
       </list>
     </option>
   </component>
@@ -311,6 +281,144 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Implementacao" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComplexNetworkConstructor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SetupPadrao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1008,7 +1116,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442328503478</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="New improvements to FeaturesComplexNetwork">
+      <created>1442431800928</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1442431800928</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1020,26 +1134,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22339676" sideWeight="0.6639676" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22339676" sideWeight="0.66487455" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48907682" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39036146" sideWeight="0.21564482" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34698796" sideWeight="0.26286116" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40481928" sideWeight="0.53629315" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40481928" sideWeight="0.4524313" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40481928" sideWeight="0.4524313" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.26074702" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40481928" sideWeight="0.54756874" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22339676" sideWeight="0.3360324" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32771084" sideWeight="0.739253" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22339676" sideWeight="0.33512545" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4524313" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39036146" sideWeight="0.28047922" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.44679353" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.3460183" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.41437632" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.4524313" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1099,34 +1213,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ClusteringCoefficient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/GraphUtilities.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14150943">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Segmentation/SegmentationEvaluator.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08490566">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08490566">
@@ -1306,44 +1392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78451884">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4707113">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/lemon/core.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16981132">
-          <caret line="1855" column="8" selection-start-line="1855" selection-start-column="8" selection-end-line="1855" selection-end-column="8" />
-          <folding>
-            <element signature="e#66930#66943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/include/lemon/list_graph.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30962342">
@@ -1367,13 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtCore.framework/Headers/qhash.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30125523">
-          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.577406">
@@ -1386,6 +1427,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18828452">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,31 +1436,8 @@
         <state vertical-scroll-proportion="0.6066946">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding>
-            <element signature="e#123#146#0" expanded="true" />
+            <element signature="e#123#146#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8200837">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30962342">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43933055">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,32 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33263597">
           <caret line="1081" column="0" selection-start-line="1081" selection-start-column="0" selection-end-line="1081" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1463,10 +1456,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/include/lemon/bits/array_map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3179916">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/lemon/core.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5334728">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28242677">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4707113">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/assert.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5104601">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtCore.framework/Headers/qhash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33263597">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/FeatureAbstract.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08490566">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/FeatureExtractors/LabelFeature.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding>
+            <element signature="e#83#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <marker date="1442438264000" expanded="true" signature="21:58" placeholder="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <caret line="163" column="46" selection-start-line="163" selection-start-column="46" selection-end-line="163" selection-end-column="46" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -1475,13 +1584,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75536484">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
           <folding>
             <element signature="e#71#100#0" expanded="true" />
             <element signature="e#540#552#0" expanded="true" />
             <element signature="e#609#621#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5471698">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

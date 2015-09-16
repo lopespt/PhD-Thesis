@@ -90,14 +90,15 @@ void ComplexNetworkConstructor::makeCoOccurrences(QLinkedList<FeatureAbstractPtr
 
 void ComplexNetworkConstructor::reinforceLink(const FeaturesComplexNetwork::Node &a,
                                               const FeaturesComplexNetwork::Node &b, bool isSameLabel) {
-    if (cn.arcExists(a, b)) {
-        Link &e = cn.getArcValue(a, b);
+
+    Link::LinkType type = isSameLabel ? Link::LinkType::SameLabel : Link::LinkType::OtherLabel;
+
+    if (cn.arcExists(a, b, type)) {
+        Link &e = cn.getLinkArcValue(a, b, type);
         reinforcePolicy->reWeight(e);
-        e.isSameLabel(isSameLabel);
     } else {
-        Link l;
+        Link l(1,0,type);
         reinforcePolicy->firstWeight(l);
-        l.isSameLabel(isSameLabel);
         cn.addArc(a, b, l);
     }
 }
