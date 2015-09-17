@@ -12,7 +12,7 @@ SET(CMAKE_AUTOMOC ON)
 
 INCLUDE_DIRECTORIES(".")
 
-FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
+FILE(GLOB_RECURSE Source_Files  *.cpp)
 
 ADD_EXECUTABLE(LabelGuesserRemovingHints ${Source_Files} ../LabelGuesser/ConfigParser.cpp )
 TARGET_LINK_LIBRARIES(LabelGuesserRemovingHints FeatureExtractors ComplexNetwork Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
