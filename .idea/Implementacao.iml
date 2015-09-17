@@ -126,6 +126,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ClusteringCoefficient.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ClusteringCoefficient.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" isTestSource="false" />
@@ -136,10 +138,38 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/IterativeRandomWalk.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/MCLClustering.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/MCLClustering.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Modularity.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Modularity.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/NodeString.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/NodeString.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/SupervisedImage.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/SupervisedImage.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Utils.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Utils.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />

@@ -7,7 +7,7 @@
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 #include <qthreadpool.h>
 
-LabelGuesserExperimentRemovingHints::LabelGuesserExperimentRemovingHints(FeaturesComplexNetwork cn,
+LabelGuesserExperimentRemovingHints::LabelGuesserExperimentRemovingHints(const FeaturesComplexNetwork &cn,
                                                QList<const FeatureFactoryAbstract *> factories, RegionChooser &chooser,
                                                int walkLenght, method m, int threads, float percentLabels) :
         cn(cn),
@@ -66,13 +66,13 @@ float LabelGuesserExperimentRemovingHints::evaluateLocalFeatures(const FeaturesC
 
     float total = 0;
     for( FeaturesComplexNetwork::OutArcIt it(cn,node); it != INVALID; ++it ){
-        if( cn.getArcValue(it).isSameLabel() && localFeatures.contains( cn.getNode( cn.target( it ) ) ) ) {
-            total += cn.getArcValue(it).getWeight();
+        if( cn.getLinkArcValue(it).getLinkType() == Link::LinkType::SameLabel && localFeatures.contains( cn.getNode( cn.target( it ) ) ) ) {
+            total += cn.getLinkArcValue(it).getWeight();
         }
     }
     for( FeaturesComplexNetwork::InArcIt it(cn,node); it != INVALID; ++it ){
-        if( cn.getArcValue(it).isSameLabel() && localFeatures.contains( cn.getNode( cn.source( it ) ) ) ) {
-            total += cn.getArcValue(it).getWeight();
+        if( cn.getLinkArcValue(it).getLinkType() == Link::LinkType::SameLabel && localFeatures.contains( cn.getNode( cn.source( it ) ) ) ) {
+            total += cn.getLinkArcValue(it).getWeight();
         }
     }
     return total/localFeatures.size();
@@ -248,7 +248,7 @@ void LabelGuesserExperimentRemovingHints::execute(QString outputFile) {
     chooser.reset();
     srand((unsigned int) time(0));
 
-    cn.refreshCache();
+    //cn.refreshCache();
 
     ListDigraph::ArcMap <double> weights(cn);
     GraphUtilities::getWeights(cn, weights);

@@ -2,7 +2,7 @@
 #include "GraphUtilities.hpp"
 
 
-IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn):
+IterativeRandomWalk::IterativeRandomWalk(const FeaturesComplexNetwork &cn):
     cn(cn),weights(cn), probs(cn), probs2(cn)
 {
     clearMap(probs);
@@ -10,14 +10,14 @@ IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn):
 }
 
 
-IterativeRandomWalk::IterativeRandomWalk(ListDigraph &cn, const ListDigraph::ArcMap <double> &weights) :
+IterativeRandomWalk::IterativeRandomWalk(const FeaturesComplexNetwork &cn, const ListDigraph::ArcMap <double> &weights) :
         cn(cn), weights(cn), probs(cn), probs2(cn) {
 
     clearMap(probs);
 
     GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
-    GraphUtilities::addAutoLoop(this->cn, this->weights);
-    GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
+    //GraphUtilities::addAutoLoop(this->cn, this->weights);
+    //GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
 
     /*
     GraphUtilities::normalizeInDegrees(this->cn, weights, this->weights);
@@ -47,6 +47,7 @@ void IterativeRandomWalk::Execute(ListDigraph::Node start_node, unsigned int max
                 for (ListDigraph::OutArcIt edge(cn, node); edge != INVALID; ++edge) {
                     probs2[cn.target(edge)] += probs[node] * weights[edge];
                 }
+                //probs2[node] += 0.2;
             }
         }
 
@@ -67,6 +68,6 @@ void IterativeRandomWalk::clearMap(ArcMapDouble &map) {
 
 void IterativeRandomWalk::setWeights(ArcMapDouble &weights) {
     GraphUtilities::normalizeOutDegrees(this->cn, weights, this->weights);
-    GraphUtilities::addAutoLoop(this->cn, this->weights);
-    GraphUtilities::normalizeOutDegrees(this->cn, this->weights, this->weights);
+    //GraphUtilities::addAutoLoop(this->cn, this->weights);
+    //GraphUtilities::normalizeOutDegrees(this->cn, this->weights, this->weights);
 }

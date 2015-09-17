@@ -8,7 +8,7 @@
 #include <Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp>
 #include <qthreadpool.h>
 
-LabelGuesserExperiment::LabelGuesserExperiment(FeaturesComplexNetwork cn,
+LabelGuesserExperiment::LabelGuesserExperiment(const FeaturesComplexNetwork &cn,
                                                QList<const FeatureFactoryAbstract *> factories, RegionChooser &chooser,
                                                int walkLenght, method m, int threads, bool useLabels) :
         cn(cn),
@@ -122,7 +122,7 @@ void LabelGuesserExperiment::printLabels(FeaturesComplexNetwork *cn) {
 void LabelGuesserExperiment::execute(QString outputFile) {
     srand((unsigned int) time(0));
 
-    cn.refreshCache();
+//    cn.refreshCache();
 
     ListDigraph::ArcMap <double> weights(cn);
     GraphUtilities::getWeights(cn, weights);

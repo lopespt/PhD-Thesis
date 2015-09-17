@@ -158,6 +158,7 @@ void FeaturesComplexNetwork::erase(ListDigraph::Node n) {
         sameLabelLinks.remove(arc);
         otherLabelLinks.remove(arc);
     }
+    featureIndex.remove(nodes[n]);
     ListDigraph::erase(n);
 }
 
@@ -168,7 +169,7 @@ void FeaturesComplexNetwork::erase(ListDigraph::Arc a) {
     ListDigraph::erase(a);
 }
 
-ListDigraph::Arc FeaturesComplexNetwork::getLinkArc(const ListDigraph::Node &from,
+ListDigraph::Arc FeaturesComplexNetwork::getArc(const ListDigraph::Node &from,
                                                            const ListDigraph::Node &to, Link::LinkType type) const {
     if(type == Link::LinkType::OtherLabel) {
         auto it = otherLabelLinks.find(ArcKey(from, to));
@@ -211,7 +212,7 @@ Link FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Node &from,
     assert(1==2);
 }
 bool FeaturesComplexNetwork::arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,
-                                       Link::LinkType type) {
+                                       Link::LinkType type) const{
     if(type == Link::LinkType::OtherLabel) {
         auto it = otherLabelLinks.find(ArcKey(from, to));
         return   it != otherLabelLinks.end();
@@ -221,3 +222,24 @@ bool FeaturesComplexNetwork::arcExists(const ListDigraph::Node &from, const List
     }
     return false;
 }
+
+Link FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Arc &a) const {
+    return arcs[a];
+}
+
+int FeaturesComplexNetwork::getNumArcs() const{
+    return sameLabelLinks.size()+otherLabelLinks.size();
+}
+
+int FeaturesComplexNetwork::getNumNodes() const {
+    return featureIndex.size();
+}
+
+FeatureAbstractPtr& FeaturesComplexNetwork::getNode(const ListDigraph::Node &node) {
+    return nodes[node];
+}
+
+FeatureAbstractPtr FeaturesComplexNetwork::getNode(const ListDigraph::Node &node) const {
+    return nodes[node];
+}
+

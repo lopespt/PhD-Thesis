@@ -16,7 +16,7 @@ float Modularity::execute() {
     float m = cn.getNumArcs();
     for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it )
         for(FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2 ){
-            double Aij = cn.arcExists(it, it2) ? cn.getArcValue(it,it2).getWeight() : 0;
+            double Aij = cn.arcExists(it, it2) ? cn.getLinkArcValue(it,it2).getWeight() : 0;
             double rand = deg[it]*deg[it2]/(2*m);
             mod += (Aij - rand) * isSameClusters(it, it2);
         }
@@ -67,7 +67,7 @@ void Modularity::ParcialSumProcess::run() {
         m.mtx.unlock();
         for(FeaturesComplexNetwork::NodeIt it2(m.cn); it2 != INVALID; ++it2 ){
             //printf("%d\n", m.cn.id(it2));
-            double Aij = m.cn.arcExists(it, it2) ? m.cn.getArcValue(it,it2).getWeight() : 0;
+            double Aij = m.cn.arcExists(it, it2) ? m.cn.getLinkArcValue(it,it2).getWeight() : 0;
             double rand = m.deg[it]*m.deg[it2]/(2*numArcs);
             pmod += (Aij - rand) * m.isSameClusters(it, it2);
         }

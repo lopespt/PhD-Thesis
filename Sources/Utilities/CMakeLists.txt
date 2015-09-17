@@ -6,19 +6,19 @@ FIND_PACKAGE(OpenCV REQUIRED)
 
 
 FILE(GLOB_RECURSE Source_Files
-    #DatabaseReader.cpp
-    #SunDatabaseReader.cpp
-    #SupervisedImage.cpp
+    DatabaseReader.cpp
+    SunDatabaseReader.cpp
+    SupervisedImage.cpp
     ComplexNetworkConstructor/*.cpp
-    #DatabaseReader/*.cpp
+    DatabaseReader/*.cpp
         FeaturesComplexNetwork/FeaturesComplexNetwork.cpp
         FeaturesComplexNetwork/Link.cpp
-    #Modularity.cpp
-    #GraphUtilities.cpp
-    #IterativeRandomWalk.cpp
-    #KFoldDatabaseReader.cpp
-    #Utils.cpp
-    #*.cpp
+    Modularity.cpp
+    GraphUtilities.cpp
+    IterativeRandomWalk.cpp
+    KFoldDatabaseReader.cpp
+    Utils.cpp
+    *.cpp
 )
 
 ADD_LIBRARY(Utilities ${Source_Files})

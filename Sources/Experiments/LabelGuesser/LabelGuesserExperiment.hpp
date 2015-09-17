@@ -43,7 +43,7 @@ private:
 
     void printLabels(FeaturesComplexNetwork *cn);
 
-    FeaturesComplexNetwork cn;
+    const FeaturesComplexNetwork& cn;
     QList<const FeatureFactoryAbstract *> factories;
     RegionChooser &chooser;
     int walkLenght;
@@ -54,7 +54,7 @@ private:
     FILE *file;
 public:
 
-    LabelGuesserExperiment(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract *> factories,
+    LabelGuesserExperiment(const FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories,
                            RegionChooser &chooser, int walkLenght, method m, int threads, bool useLabels = true);
 
 

@@ -42,7 +42,7 @@ public:
 
     DatabaseReader *getTestDatabaseReader();
 
-    FeaturesComplexNetwork getComplexNetwork();
+    void getComplexNetwork(FeaturesComplexNetwork &cn);
 
     RegionChooser getRegionChooser();
 

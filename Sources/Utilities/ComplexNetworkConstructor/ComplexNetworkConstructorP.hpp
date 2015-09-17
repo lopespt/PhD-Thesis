@@ -11,7 +11,7 @@
 #include <mutex>
 #include <QMutex>
 
-class ComplexNetworkConstructorP : public ComplexNetworkConstructor, public QRunnable {
+class ComplexNetworkConstructorP : public ComplexNetworkConstructor {
 
 private:
     static unsigned int numP;
@@ -19,29 +19,38 @@ private:
 
     QMutex mx;
     CoOcurrenceEquation *coOcurrenceEquationPolicy;
-    QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> index;
-    QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node>* cache;
     int numThreads;
 
 public:
-    ComplexNetworkConstructorP(const ComplexNetworkConstructorP &other):ComplexNetworkConstructor(other.cn, other.reader,
-                                                                                                  other.extractors,
-                                                                                                  other.coOcurrenceEquationPolicy), coOcurrenceEquationPolicy(other.coOcurrenceEquationPolicy), cache(other.cache), numThreads(other.numThreads){
+    ComplexNetworkConstructorP(const ComplexNetworkConstructorP &other) : ComplexNetworkConstructor(other.cn,
+                                                                                                    other.reader,
+                                                                                                    other.extractors,
+                                                                                                    other.coOcurrenceEquationPolicy),
+                                                                          coOcurrenceEquationPolicy(
+                                                                                  other.coOcurrenceEquationPolicy),
+                                                                          numThreads(other.numThreads) {
 
     }
 
     ComplexNetworkConstructorP(FeaturesComplexNetwork &cn, DatabaseReader &reader,
                                const QList<const FeatureFactoryAbstract *> &extractors, int numThreads,
-                               CoOcurrenceEquation *coOcurrenceEquationPolicy=NULL, QHash<FeatureAbstractPtr, FeaturesComplexNetwork::Node> *cache=NULL) : ComplexNetworkConstructor(cn, reader,
-                                                                                                           extractors,
-                                                                                                           coOcurrenceEquationPolicy), coOcurrenceEquationPolicy(coOcurrenceEquationPolicy), cache(cache), numThreads(numThreads) {
-    setAutoDelete(true);
-    }
-
+                               CoOcurrenceEquation *coOcurrenceEquationPolicy = NULL) : ComplexNetworkConstructor(cn,
+                                                                                                                  reader,
+                                                                                                                  extractors,
+                                                                                                                  coOcurrenceEquationPolicy),
+                                                                                        coOcurrenceEquationPolicy(
+                                                                                                coOcurrenceEquationPolicy),
+                                                                                        numThreads(numThreads) { }
 
     virtual void build() override;
 
-    virtual void run() override;
+    class ConstructorTask : public QRunnable {
+    private:
+        ComplexNetworkConstructorP &constructor;
+    public:
+        ConstructorTask(ComplexNetworkConstructorP &constructor);
+        virtual void run() override;
+    };
 
 private:
 

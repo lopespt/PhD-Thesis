@@ -119,13 +119,11 @@ bool ConfigFileParser::cnLoaded() {
     return settings.value("FeaturesComplexNetwork/load").toBool();
 }
 
-FeaturesComplexNetwork ConfigFileParser::getComplexNetwork() {
-    FeaturesComplexNetwork cn;
+void ConfigFileParser::getComplexNetwork(FeaturesComplexNetwork &cn) {
     if (cnLoaded()) {
         QString path = settings.value("FeaturesComplexNetwork/file").toString();
         cn.load(path.toStdString().c_str(), getFactories());
     }
-    return cn;
 }
 
 RegionChooser ConfigFileParser::getRegionChooser() {

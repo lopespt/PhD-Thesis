@@ -3,28 +3,29 @@
 #include <opencv2/core/core.hpp>
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <FeatureExtractors/LabelFeature.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp>
+#include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
+#include <FeatureExtractors/LabelFeatureFactory.hpp>
+#include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
+#include <FeatureExtractors/HsvFeatureFactory.hpp>
 
 using namespace cv;
 using namespace std;
 
 int main(int argc, char *argv[]) {
 
-    FeaturesComplexNetwork cn;
+    {
+        FeaturesComplexNetwork cn;
+        SunDatabaseReader reader("/Users/wachs/SUN");
+        LabelFeatureFactory lblFactory;
+        HsvFeatureFactory hsvFactory(10,4,4,4);
+        QList<const FeatureFactoryAbstract *> factories;
+        factories << &lblFactory << &hsvFactory;
 
-    FeatureAbstractPtr n1(new LabelFeature("Teste"));
-    FeatureAbstractPtr n2(new LabelFeature("Teste 1"));
-    FeatureAbstractPtr n3(new LabelFeature("Teste 2"));
-    FeatureAbstractPtr n4(new LabelFeature("Teste"));
-    FeatureAbstractPtr n5(new LabelFeature("Teste 2"));
-
-    cn.addNode(n1);
-    cn.addNode(n2);
-    cn.addNode(n3);
-    Link l(5,3, Link::LinkType::SameLabel);
-    cn.addArc( cn.getNodeFromFeature(n4), cn.getNodeFromFeature(n5), l );
-    float f = cn.getLinkArcValue( cn.getNodeFromFeature(n4) , cn.getNodeFromFeature(n5), Link::LinkType::SameLabel).getWeight();
-
-    printf("%f\n", cn.getLinkArcValue( cn.getNodeFromFeature(n1) , cn.getNodeFromFeature(n3), Link::LinkType::SameLabel).getWeight()   );
+        ComplexNetworkConstructorP constructor(cn, reader, factories, 8);
+        constructor.build();
+        cn.save("rede3.cn");
+    }
     return 0;
 }
 

@@ -7,7 +7,7 @@
 
 class CloserNodesGuesser {
 private:
-    FeaturesComplexNetwork cn;
+    const FeaturesComplexNetwork &cn;
     IterativeRandomWalk &rw;
 public:
     typedef struct {

@@ -5,15 +5,15 @@ GraphUtilities::GraphUtilities() {
 
 ListDigraph::ArcMap<double>& GraphUtilities::getWeights(const FeaturesComplexNetwork &cn, ListDigraph::ArcMap <double> &weights) {
     for (FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it) {
-        weights[it] = cn.getArcValue(it).getWeight();
+        weights[it] = cn.getLinkArcValue(it).getWeight();
     }
     return weights;
 }
 
-void  GraphUtilities::normalizeOutDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
-                                         ListDigraph::ArcMap <double> &output) {
+void  GraphUtilities::normalizeOutDegrees(const FeaturesComplexNetwork &complexNetwork, const FeaturesComplexNetwork::ArcMap <double> &weights,
+                                         FeaturesComplexNetwork::ArcMap <double> &output) {
 
-    for (ListDigraph::NodeIt it(complexNetwork); it != INVALID; ++it) {
+    for (FeaturesComplexNetwork::NodeIt it(complexNetwork); it != INVALID; ++it) {
         //sum weights
         double totalOut = 0.0;
 
@@ -50,7 +50,7 @@ void  GraphUtilities::normalizeInDegrees(ListDigraph &complexNetwork, const List
     }
 }
 
-void GraphUtilities::addAutoLoop(ListDigraph &cn, ListDigraph::ArcMap <double> &arcs, double value) {
+void GraphUtilities::addAutoLoop(FeaturesComplexNetwork &cn, ListDigraph::ArcMap <double> &arcs, double value) {
     ArcLookUp<ListDigraph> look(cn);
     look.refresh();
 
@@ -58,7 +58,7 @@ void GraphUtilities::addAutoLoop(ListDigraph &cn, ListDigraph::ArcMap <double> &
         ListDigraph::Arc arcId = look(it, it);
 
         if (arcId == INVALID)
-            arcId = cn.addArc(it, it);
+           // arcId = cn.addArc(it, it, ); ??????
 
         arcs[arcId] = value;
     }

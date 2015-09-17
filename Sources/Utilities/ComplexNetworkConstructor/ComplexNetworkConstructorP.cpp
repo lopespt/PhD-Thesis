@@ -16,53 +16,56 @@ void ComplexNetworkConstructorP::build() {
     QThreadPool pool;
     pool.setMaxThreadCount(numThreads);
     for(int i=0;i<numThreads;i++) {
-        pool.start(new ComplexNetworkConstructorP(cn, reader, extractors, 1, coOcurrenceEquationPolicy, &this->index));
+        pool.start(new ConstructorTask(*this));
     }
     pool.waitForDone();
     fflush(stdout);
     cn.refreshCache();
 }
 
-void ComplexNetworkConstructorP::run() {
-    while (reader.hasNext()) {
-        //printf("Entrei\n");
-        QList<int> regionsIds;
-        QLinkedList<FeatureAbstractPtr> features;
-        SupervisedImage img = reader.readNext();
-        if (numP % 10 == 0)
-            printf("Reading image(%u/%d): %s%s\n", numP, reader.getTotal(), img.getImagePath().size() > 60 ? "..." : "",
-                   img.getImagePath().right(60).toStdString().c_str());
+void ComplexNetworkConstructorP::ConstructorTask::run() {
+    try {
+        while (constructor.reader.hasNext()) {
+            //printf("Entrei\n");
+            QList<int> regionsIds;
+            QLinkedList<FeatureAbstractPtr> features;
+            SupervisedImage img = constructor.reader.readNext();
+            if (numP % 10 == 0)
+                printf("Reading image(%u/%d): %s%s\n", numP, constructor.reader.getTotal(),
+                       img.getImagePath().size() > 60 ? "..." : "",
+                       img.getImagePath().right(60).toStdString().c_str());
 
-        for (int idx = 0; idx < img.getRegions().size(); idx++) {
-            Region r = img.getRegions().at(idx);
-            for (QList<const FeatureFactoryAbstract *>::iterator i = extractors.begin(); i != extractors.end(); i++) {
-                features.append(move((*i)->CreateFromRegion(&r)));
-                regionsIds.append(idx);
+            for (int idx = 0; idx < img.getRegions().size(); idx++) {
+                Region r = img.getRegions().at(idx);
+                for (QList<const FeatureFactoryAbstract *>::iterator i = constructor.extractors.begin();
+                     i != constructor.extractors.end(); i++) {
+                    features.append(move((*i)->CreateFromRegion(&r)));
+                    regionsIds.append(idx);
+                }
             }
+            //printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
+            constructor.mtx.lock();
+            constructor.makeCoOccurrences(features, regionsIds);
+            constructor.mtx.unlock();
+            numP++;
+            //printf("Sai\n");
         }
-        //printf("Nodes: %ld , Edges: %ld\n", cn.getNumNodes(), cn.getNumEdges());
-        mtx.lock();
-        makeCoOccurrences(features, regionsIds);
-        mtx.unlock();
-        numP++;
-        //printf("Sai\n");
+    }catch(exception e){
+        puts(e.what());
+    }catch(const char *s){
+        puts(s);
     }
 }
 
 void ComplexNetworkConstructorP::makeCoOccurrences(QLinkedList<FeatureAbstractPtr> &features, QList<int> &regionsIds) {
 
     QLinkedList<FeaturesComplexNetwork::Node> nodes;
-
-
     //Cria nós ou pesquisa existentes
     for (auto &f: features) {
         FeaturesComplexNetwork::Node id;
-        if (!cache->contains(f)) {
+        if ((id = cn.getNodeFromFeature(f)) == INVALID) {
             FeatureAbstractPtr temp = f;
             id = cn.addNode(f);
-            cache->insert(temp, id);
-        } else {
-            id = (*cache)[f];
         }
         nodes.append(id);
     }
@@ -79,4 +82,8 @@ void ComplexNetworkConstructorP::makeCoOccurrences(QLinkedList<FeatureAbstractPt
         }
         i++;
     }
+}
+
+ComplexNetworkConstructorP::ConstructorTask::ConstructorTask(ComplexNetworkConstructorP &constructor) : constructor(constructor) {
+    setAutoDelete(true);
 }

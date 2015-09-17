@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
     for (it = FeaturesComplexNetwork::NodeIt(cn); it != INVALID; ++it) {
         for (FeaturesComplexNetwork::OutArcIt j(cn, it); j != INVALID; ++j) {
             printf("%s -> %s: %f\n", cn.getNode(cn.source(j))->asString(buffer),
-                   cn.getNode(cn.target(j))->asString(buffer2), cn.getArcValue(j).getWeight());
+                   cn.getNode(cn.target(j))->asString(buffer2), cn.getLinkArcValue(j).getWeight());
         }
 //        printf("%s\n", cn.getNode(it)->asString(buffer));
     }

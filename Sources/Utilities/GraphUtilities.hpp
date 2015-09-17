@@ -26,15 +26,15 @@ public:
 
     static ListDigraph::ArcMap<double> & getWeights(const FeaturesComplexNetwork &cn, ListDigraph::ArcMap <double> &weights);
 
-    static void normalizeOutDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
-                                    ListDigraph::ArcMap <double> &output);
+    static void normalizeOutDegrees(const FeaturesComplexNetwork &complexNetwork, const FeaturesComplexNetwork::ArcMap <double> &weights,
+                                    FeaturesComplexNetwork::ArcMap <double> &output);
 
     static void normalizeInDegrees(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
                                     ListDigraph::ArcMap <double> &output);
 
     static void normalizeWeights(ListDigraph &complexNetwork, const ListDigraph::ArcMap <double> &weights,
                                     ListDigraph::ArcMap <double> &output);
-    static void addAutoLoop(ListDigraph &cn, ListDigraph::ArcMap <double> &arcs, double value = 1);
+    static void addAutoLoop(FeaturesComplexNetwork &cn, FeaturesComplexNetwork::ArcMap <double> &arcs, double value = 1);
 
 
 };

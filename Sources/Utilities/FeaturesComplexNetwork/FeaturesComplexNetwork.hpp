@@ -74,20 +74,25 @@ public:
     void refreshCache();
 
     ListDigraph::Node addNode(const FeatureAbstractPtr &value);
-
-    ListDigraph::Arc addArc(const ListDigraph::Node &from, const ListDigraph::Node &to, const Link &link);
+    FeatureAbstractPtr& getNode(const ListDigraph::Node &node);
+    FeatureAbstractPtr getNode(const ListDigraph::Node &node) const;
 
     void erase(Node n);
-
     void erase(Arc a);
 
-    ListDigraph::Arc getLinkArc(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel) const;
+    ListDigraph::Arc addArc(const ListDigraph::Node &from, const ListDigraph::Node &to, const Link &link);
+    ListDigraph::Arc getArc(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel) const;
     Link& getLinkArcValue(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel);
     Link getLinkArcValue(const ListDigraph::Node &from, const ListDigraph::Node &to, Link::LinkType type=Link::LinkType::OtherLabel) const;
+    Link getLinkArcValue(const ListDigraph::Arc &a) const;
 
-    bool arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,Link::LinkType type=Link::LinkType::OtherLabel);
+    bool arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,Link::LinkType type=Link::LinkType::OtherLabel) const;
+
+    int getNumArcs() const;
+    int getNumNodes() const;
 
     FeaturesComplexNetwork();
+    friend class DigraphCopy<FeaturesComplexNetwork, FeaturesComplexNetwork>;
     ~FeaturesComplexNetwork();
 };
 

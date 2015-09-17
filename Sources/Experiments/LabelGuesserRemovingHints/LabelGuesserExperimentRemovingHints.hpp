@@ -46,7 +46,7 @@ private:
 
     void printLabels(FeaturesComplexNetwork *cn);
 
-    FeaturesComplexNetwork cn;
+    const FeaturesComplexNetwork &cn;
     QList<const FeatureFactoryAbstract *> factories;
     RegionChooser &chooser;
     int walkLenght;
@@ -57,7 +57,7 @@ private:
     FILE *file;
 public:
 
-    LabelGuesserExperimentRemovingHints(FeaturesComplexNetwork cn, QList<const FeatureFactoryAbstract *> factories,
+    LabelGuesserExperimentRemovingHints(const FeaturesComplexNetwork &cn, QList<const FeatureFactoryAbstract *> factories,
                            RegionChooser &chooser, int walkLenght, method m, int threads, float percentLabelsHintsUsed = 1.0);
 
 
