@@ -60,7 +60,6 @@ int main(int argc, char **argv) {
     m.execute();
     tac();
 
-    /*
     char buff[200];
     QList<FeaturesComplexNetwork::Node> nd = m.getClusterNodes(0);
     for( FeaturesComplexNetwork::Node& n : nd ){

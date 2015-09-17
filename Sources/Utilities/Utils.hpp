@@ -27,7 +27,9 @@ public:
 
     static bool fileExists(QString filename);
 
-    static cv::Mat QImage2Mat(const QImage &img);
+    //static cv::Mat QImage2Mat(const QImage &img);
+    //static QImage Mat2QImage(const cv::Mat3b &src);
+    //static QImage Mat2QImage(const cv::Mat_ <double> &src);
 
     static QPolygon Mask2QPolygon(const cv::Mat &img);
 
@@ -101,9 +103,6 @@ public:
 
     }
 
-    static QImage Mat2QImage(const cv::Mat3b &src);
-
-    //static QImage Mat2QImage(const cv::Mat_ <double> &src);
 };
 
 void warn(const char *format, ...);

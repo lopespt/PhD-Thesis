@@ -35,10 +35,37 @@ void warn(const char *format, ...) {
     va_end(v1);
 }
 
-cv::Mat Utils::QImage2Mat(const QImage &img) {
+/*cv::Mat Utils::QImage2Mat(const QImage &img) {
     cv::Mat ret(img.height(), img.width(), CV_8UC4, (uchar *) img.bits(), (size_t) img.bytesPerLine());
     return ret;
-}
+}*/
+
+/*QImage Utils::Mat2QImage(const cv::Mat3b &src) {
+    QImage dest(src.cols, src.rows, QImage::Format_ARGB32);
+    for (int y = 0; y < src.rows; ++y) {
+        const cv::Vec3b *srcrow = src[y];
+        QRgb *destrow = (QRgb*)dest.scanLine(y);
+        for (int x = 0; x < src.cols; ++x) {
+            destrow[x] = qRgba(srcrow[x][2], srcrow[x][1], srcrow[x][0], 255);
+        }
+    }
+    return dest;
+}*/
+
+/*QImage Utils::Mat2QImage(const cv::Mat_<double> &src)
+{
+    double scale = 255.0;
+    QImage dest(src.cols, src.rows, QImage::Format_ARGB32);
+    for (int y = 0; y < src.rows; ++y) {
+        const double *srcrow = src[y];
+        QRgb *destrow = (QRgb*)dest.scanLine(y);
+        for (int x = 0; x < src.cols; ++x) {
+            unsigned int color = srcrow[x] * scale;
+            destrow[x] = qRgba(color, color, color, 255);
+        }
+    }
+    return dest;
+}*/
 
 
 QPolygon Utils::Mask2QPolygon(const cv::Mat &img) {
@@ -97,32 +124,5 @@ cv::Mat &Utils::QPolygon2Mask(cv::Mat &img, const QPolygon external, const QList
 
     }
     return img;
-}
-
-/*QImage Utils::Mat2QImage(const cv::Mat_<double> &src)
-{
-    double scale = 255.0;
-    QImage dest(src.cols, src.rows, QImage::Format_ARGB32);
-    for (int y = 0; y < src.rows; ++y) {
-        const double *srcrow = src[y];
-        QRgb *destrow = (QRgb*)dest.scanLine(y);
-        for (int x = 0; x < src.cols; ++x) {
-            unsigned int color = srcrow[x] * scale;
-            destrow[x] = qRgba(color, color, color, 255);
-        }
-    }
-    return dest;
-}*/
-
-QImage Utils::Mat2QImage(const cv::Mat3b &src) {
-    QImage dest(src.cols, src.rows, QImage::Format_ARGB32);
-    for (int y = 0; y < src.rows; ++y) {
-        const cv::Vec3b *srcrow = src[y];
-        QRgb *destrow = (QRgb*)dest.scanLine(y);
-        for (int x = 0; x < src.cols; ++x) {
-            destrow[x] = qRgba(srcrow[x][2], srcrow[x][1], srcrow[x][0], 255);
-        }
-    }
-    return dest;
 }
 

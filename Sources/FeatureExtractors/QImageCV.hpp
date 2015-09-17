@@ -4,6 +4,7 @@
 #include <QImage>
 #include <opencv/cv.h>
 #include <Utilities/Utils.hpp>
+#include <Utilities/cvmatandqimage.h>
 
 class QImageCV : public QImage {
 private:
@@ -21,7 +22,7 @@ public:
     QImageCV(const QImage &other) : QImage(other) {
 
     }
-    QImageCV(const cv::Mat &other) : QImage( Utils::Mat2QImage(other.clone()) ) { }
+    QImageCV(const cv::Mat &other) : QImage( QtOcv::mat2Image(other) ) { }
 
     QImageCV(QString filename) : QImage(filename) { }
 
