@@ -18,6 +18,7 @@ FILE(GLOB_RECURSE Source_Files
     IterativeRandomWalk.cpp
     KFoldDatabaseReader.cpp
     Utils.cpp
+    cvmatandqimage.cpp
     *.cpp
 )
 

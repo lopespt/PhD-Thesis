@@ -59,9 +59,9 @@ void RegionChooser::load(QString file) {
     ChosenRegion r;
     while (Utils::readLine(buffer, 400, f) != NULL) {
         r.imagePath = QString(buffer);
-        assert(Utils::readLine(buffer, 400, f));
+        Utils::readLine(buffer, 400, f);
         r.supervisedPath = QString(buffer);
-        assert(Utils::readLine(buffer, 400, f));
+        Utils::readLine(buffer, 400, f);
         sscanf(buffer, "%u", &r.regionChoosed);
         regions.append(r);
     }

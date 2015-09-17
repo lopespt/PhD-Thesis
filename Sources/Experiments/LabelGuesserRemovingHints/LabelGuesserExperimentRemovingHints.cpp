@@ -140,12 +140,14 @@ QList<QString> LabelGuesserExperimentRemovingHints::guessByIterativeRandomWalkWi
         localFeaturesGrade[i] = evaluateLocalFeatures(i, localFeatures);
     }
 
+    Utils::normalizeVectorByMax<FeaturesComplexNetwork::NodeMap<double>, FeaturesComplexNetwork::NodeIt>(final, FeaturesComplexNetwork::NodeIt(cn), INVALID);
+    Utils::normalizeVectorByMax<FeaturesComplexNetwork::NodeMap<double>, FeaturesComplexNetwork::NodeIt>(localFeaturesGrade, FeaturesComplexNetwork::NodeIt(cn), INVALID);
 
     //Ordem decrescente
     qSort(order.begin(), order.end(),
           [&](const FeaturesComplexNetwork::Node &a, const FeaturesComplexNetwork::Node &b) {
-              return (final[b] ) < (final[a] );
-              //return (final[b]  + localFeaturesGrade[b] ) < (final[a] + localFeaturesGrade[a] );
+              //return (final[b] ) < (final[a] );
+              return (final[b]  + localFeaturesGrade[b] ) < (final[a] + localFeaturesGrade[a] );
               //return ( localFeaturesGrade[b] ) < ( localFeaturesGrade[a] );
           });
 

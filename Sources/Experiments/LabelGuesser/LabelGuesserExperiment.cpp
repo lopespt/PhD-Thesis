@@ -178,6 +178,9 @@ void LabelGuesserExperiment::execTask::run() {
 
 
         SupervisedImage img = region.readSupervisedImage();
+        if(img.hasError()){
+            continue;
+        }
         const QList<FeatureAbstractPtr> &hints = exp.getFeaturesHints(img, region.regionChoosed);
         QList<QString> guessed = exp.guessByIterativeRandomWalk(walk, hints);
         QString hidden = img.getRegions()[region.regionChoosed].getLabel();

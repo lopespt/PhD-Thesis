@@ -50,6 +50,36 @@ public:
 
         return a;
     }
+    template<typename T, typename IDX>
+    static T &normalizeVector(T& a, IDX begin, IDX end) {
+        double total = 0.00001;
+        for ( IDX i = begin; i != end; ++i) {
+            total += a[i];
+        }
+
+        for ( IDX i = begin; i != end; ++i) {
+            a[i] = a[i] / total;
+        }
+
+        return a;
+    }
+    template<typename T, typename IDX>
+    static T &normalizeVectorByMax(T& a, IDX begin, IDX end) {
+        double max = a[begin]+0.00001;
+        for ( IDX i = begin; i != end; ++i) {
+            if(max < a[i]) {
+                max += a[i];
+            }
+        }
+
+        for ( IDX i = begin; i != end; ++i) {
+            a[i] = a[i] / max;
+        }
+
+        return a;
+    }
+
+
 
     template<template<typename, typename> class C, typename T>
     struct VectorGetter {

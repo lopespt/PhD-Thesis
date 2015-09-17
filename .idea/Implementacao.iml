@@ -170,12 +170,17 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Utils.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.h" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug0/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />

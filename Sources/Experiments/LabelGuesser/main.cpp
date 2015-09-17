@@ -52,13 +52,10 @@ int main(int argc, char *argv[]) {
     ConfigParser config(app);
     tic();
 
-
-
-
     bool constructor_enabled = config.hasToBuildCN();
     bool guesser_execute = !config.getGuesserOutput().isEmpty();
     QString guesser_output = config.getGuesserOutput();
-    int walk_length = config.getPreferedValue("label_guesser_experiment/walk_length","","1").toInt();
+    int walk_length = config.getPreferedValue("label_guesser_experiment/walk_length", "", "1").toInt();
     LabelGuesserExperiment::method method;
     bool useLabels = true;
     int numThreads = config.getNumThreads();
@@ -67,7 +64,7 @@ int main(int argc, char *argv[]) {
 
     QStringList vals;
     vals << "xor" << "mult" << "add";
-    switch (vals.indexOf(config.getPreferedValue("label_guesser_experiment/method","", "xor"))) {
+    switch (vals.indexOf(config.getPreferedValue("label_guesser_experiment/method", "", "xor"))) {
         case 0:
             method = LabelGuesserExperiment::XorProbabilities;
             break;
@@ -83,24 +80,24 @@ int main(int argc, char *argv[]) {
     }
 
 
-    if(!QFile::exists(config.getKFoldFilePath()) || !QFile::exists(config.getChoosenRegionFilePath())){
+    if (!QFile::exists(config.getKFoldFilePath()) || !QFile::exists(config.getChoosenRegionFilePath())) {
         createFiles(config);
     }
 
     FeaturesComplexNetwork cn;
-    if(constructor_enabled){
+    if (constructor_enabled) {
         buildCN(config);
         cn.load(config.getCnOutput().toStdString().c_str(), config.getFactories());
-    }else if (!config.getCnInput().isEmpty()){
+    } else if (!config.getCnInput().isEmpty()) {
         cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
-    }else{
+    } else {
         puts("No Complex Network to work!! Exiting");
         return 0;
     }
 
     RegionChooser region_chooser(config.getChoosenRegionFilePath());
 
-    if(guesser_execute) {
+    if (guesser_execute) {
         LabelGuesserExperiment l1(cn, config.getFactories(), region_chooser, walk_length, method, numThreads,
                                   useLabels);
         printf("Iniciando experimento\n");
@@ -108,6 +105,5 @@ int main(int argc, char *argv[]) {
         printf("Terminado\n");
     }
     tac();
-
     return 0;
 }

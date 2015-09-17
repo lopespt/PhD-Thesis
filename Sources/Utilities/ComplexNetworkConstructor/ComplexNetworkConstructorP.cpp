@@ -24,8 +24,8 @@ void ComplexNetworkConstructorP::build() {
 }
 
 void ComplexNetworkConstructorP::ConstructorTask::run() {
-    try {
         while (constructor.reader.hasNext()) {
+            try {
             //printf("Entrei\n");
             QList<int> regionsIds;
             QLinkedList<FeatureAbstractPtr> features;
@@ -49,16 +49,18 @@ void ComplexNetworkConstructorP::ConstructorTask::run() {
             constructor.mtx.unlock();
             numP++;
             //printf("Sai\n");
+            }catch(exception e){
+                fputs(e.what(), stderr);
+                constructor.mtx.unlock();
+            }catch(const char *s){
+                fputs(s, stderr);
+                constructor.mtx.unlock();
+            }
+
         }
-    }catch(exception e){
-        puts(e.what());
-    }catch(const char *s){
-        puts(s);
-    }
 }
 
 void ComplexNetworkConstructorP::makeCoOccurrences(QLinkedList<FeatureAbstractPtr> &features, QList<int> &regionsIds) {
-
     QLinkedList<FeaturesComplexNetwork::Node> nodes;
     //Cria nós ou pesquisa existentes
     for (auto &f: features) {

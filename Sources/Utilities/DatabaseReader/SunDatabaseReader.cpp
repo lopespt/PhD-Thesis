@@ -74,8 +74,6 @@ void SunDatabaseReader::discover_files(QString path) {
         fsupervised = fsupervised.replace(".jpg", ".xml");
         this->supervision_files.append(fsupervised);
 
-        //printf("%s\n", f.absoluteFilePath().toStdString().c_str());
-        //printf("%s\n", fsupervised.toStdString().c_str());
     }
 
     QFileInfoList folders_list = d.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot);
