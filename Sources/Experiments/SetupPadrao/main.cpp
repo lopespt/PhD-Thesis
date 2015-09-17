@@ -15,16 +15,27 @@ using namespace std;
 int main(int argc, char *argv[]) {
 
     {
-        FeaturesComplexNetwork cn;
-        SunDatabaseReader reader("/Users/wachs/SUN");
+        QList<const FeatureFactoryAbstract*> factories;
         LabelFeatureFactory lblFactory;
-        HsvFeatureFactory hsvFactory(10,4,4,4);
-        QList<const FeatureFactoryAbstract *> factories;
-        factories << &lblFactory << &hsvFactory;
+        factories.append(&lblFactory);
+        FeaturesComplexNetwork cn1;
+        cn1.load("rede1.cn",factories);
+        FeaturesComplexNetwork cn2;
+        cn2.load("rede2.cn", factories);
 
-        ComplexNetworkConstructorP constructor(cn, reader, factories, 8);
-        constructor.build();
-        cn.save("rede3.cn");
+        int i=0;
+        for(FeaturesComplexNetwork::ArcIt it(cn1); it != INVALID; ++it){
+                FeatureAbstractPtr f1,f2;
+                f1 = cn1.getNode( cn1.source(it) );
+                f2 = cn1.getNode( cn1.target(it) );
+
+                float w = cn1.getLinkArcValue(it).getWeight();
+                float w2 = cn2.getLinkArcValue(cn2.getNodeFromFeature(f1), cn2.getNodeFromFeature(f2)).getWeight();
+                assert(w==w2);
+            printf("%d\n", ++i);
+        }
+        puts("Ok!!");
+
     }
     return 0;
 }
