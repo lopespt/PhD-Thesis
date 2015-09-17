@@ -28,7 +28,7 @@ inline bool hasNeightboor(float x, float y, const vector<float> &u, const vector
 }
 
 SegmentedImage VoronoiRandomSegmenter::getNextSegmentation(const QImage &image) const {
-    Mat img = Utils::QImage2Mat(image);
+    Mat img = QtOcv::image2Mat(image);
 
     Mat m(img.size(), CV_8UC1, cvScalarAll(0));
 

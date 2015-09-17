@@ -27,7 +27,7 @@ const QImageCV &SegmentedImage::getImage() const {
 
 
 void SegmentedImage::showRegion(int i) const {
-    Mat orig = Utils::QImage2Mat(image);
+    Mat orig = QtOcv::image2Mat(image);
     Mat m(orig.size(), CV_8UC4, cvScalarAll(0));
     orig.copyTo(m, regions[i].getMask());
     //cv::resize(m, m, cv::Size(), 100, 100);
