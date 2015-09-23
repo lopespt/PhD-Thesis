@@ -13,15 +13,23 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char *argv[]) {
-
     {
-        QList<const FeatureFactoryAbstract*> factories;
+        QList<const FeatureFactoryAbstract *> factories;
         LabelFeatureFactory lblFactory;
         factories.append(&lblFactory);
+        {
+
+        FeaturesComplexNetwork cn1;
+        SunDatabaseReader reader("/Users/wachs/SUN/");
+        ComplexNetworkConstructorP constr(cn1, reader, factories, 8);
+        constr.build();
+        cn1.save("rede1.cn");
+        }
+
         FeaturesComplexNetwork cn1;
         cn1.load("rede1.cn",factories);
         FeaturesComplexNetwork cn2;
-        cn2.load("rede2.cn", factories);
+        cn2.load("rede1.cn", factories);
 
         int i=0;
         for(FeaturesComplexNetwork::ArcIt it(cn1); it != INVALID; ++it){
@@ -31,7 +39,9 @@ int main(int argc, char *argv[]) {
 
                 float w = cn1.getLinkArcValue(it).getWeight();
                 float w2 = cn2.getLinkArcValue(cn2.getNodeFromFeature(f1), cn2.getNodeFromFeature(f2)).getWeight();
-                assert(w==w2);
+                if(w!=w2){
+                    exit(11);
+                }
             printf("%d\n", ++i);
         }
         puts("Ok!!");

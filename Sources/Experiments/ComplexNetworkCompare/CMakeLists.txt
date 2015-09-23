@@ -13,8 +13,8 @@ INCLUDE_DIRECTORIES("../../../")
 
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 
-ADD_EXECUTABLE(AnimattedNonAnimattedImagesExperiment ${Source_Files})
-TARGET_LINK_LIBRARIES(AnimattedNonAnimattedImagesExperiment  FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
+ADD_EXECUTABLE(ComplexNetworkCompare ${Source_Files})
+TARGET_LINK_LIBRARIES(ComplexNetworkCompare FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
 
 
 

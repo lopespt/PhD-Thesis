@@ -13,6 +13,9 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <FeatureExtractors/LabelFeature.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
+#include <lemon/bellman_ford.h>
+#include <lemon/
+#include <Utilities/GraphUtilities.hpp>
 
 int main(int argc, char **argv) {
     QCoreApplication app(argc, argv);
@@ -27,6 +30,7 @@ int main(int argc, char **argv) {
 
     folder = parser.positionalArguments().first();
 
+
     printf("%s", folder.toStdString().c_str());
     FeaturesComplexNetwork labels_cn;
     SunDatabaseReader reader(folder);
@@ -35,6 +39,14 @@ int main(int argc, char **argv) {
     //OrientationFeatureFactory orientation_factory(2000);
     factories.append(&labels_factory);
     ///factories.append(&orientation_factory);
+
+    labels_cn.load("labels.cn", factories);
+    FeaturesComplexNetwork::ArcMap<double> dists(labels_cn);
+    GraphUtilities::getWeights(labels_cn, dists);
+    BellmanFord f(labels_cn, dists);
+    f.start()
+
+
 
     ComplexNetworkConstructor constructor(labels_cn, reader, factories);
     constructor.build();

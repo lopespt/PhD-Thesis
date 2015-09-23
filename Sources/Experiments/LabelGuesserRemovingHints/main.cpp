@@ -1,4 +1,5 @@
 #include <QCoreApplication>
+
 #include <Utilities/DatabaseReader/SunDatabaseReader.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <Utilities/DatabaseReader/KFoldDatabaseReader.hpp>
@@ -6,7 +7,6 @@
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <QCommandLineParser>
 #include <Utilities/tictac.h>
-#include "../LabelGuesser/ConfigParser.h"
 #include "LabelGuesserExperimentRemovingHints.hpp"
 #include <QStringList>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
@@ -14,6 +14,7 @@
 #include <Utilities/ClusteringCoefficient.h>
 #include <Utilities/GraphUtilities.hpp>
 #include <lemon/dijkstra.h>
+#include <Utilities/ConfigParser.h>
 
 void createFiles(ConfigParser &config) {
     FeaturesComplexNetwork cn;

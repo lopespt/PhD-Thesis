@@ -19,6 +19,7 @@ FILE(GLOB_RECURSE Source_Files
     KFoldDatabaseReader.cpp
     Utils.cpp
     cvmatandqimage.cpp
+    ConfigParser.cpp
     *.cpp
 )
 

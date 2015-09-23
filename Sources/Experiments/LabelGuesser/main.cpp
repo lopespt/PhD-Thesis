@@ -7,11 +7,11 @@
 #include "ConfigFileParser.hpp"
 #include <QCommandLineParser>
 #include <Utilities/tictac.h>
-#include "ConfigParser.h"
 #include "LabelGuesserExperiment.hpp"
 #include <QStringList>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
 #include <Utilities/DatabaseReader/RegionChooser.hpp>
+#include <Utilities/ConfigParser.h>
 
 void createFiles(ConfigParser &config) {
     FeaturesComplexNetwork cn;
