@@ -84,7 +84,7 @@ int compareCn(const FeaturesComplexNetwork &cn1, const FeaturesComplexNetwork &c
 }
 
 int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
+    QCoreApplication app(argc, argv);
     QCommandLineParser p;
     configureParse(p,app);
 
