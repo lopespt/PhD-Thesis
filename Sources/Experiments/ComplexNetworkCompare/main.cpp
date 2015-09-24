@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
-#include <qapplication.h>
+#include <QCoreApplication>
 #include <Utilities/ConfigParser.h>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <FeatureExtractors/AreaFeatureFactory.hpp>
