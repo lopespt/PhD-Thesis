@@ -46,7 +46,7 @@ QList<const FeatureFactoryAbstract*> getFactories(QCommandLineParser &p){
         lista.append(new LabelFeatureFactory());
     }
 
-    return QList<const FeatureFactoryAbstract*>();
+    return lista;
 }
 
 void clearFactories(QList<const FeatureFactoryAbstract* > &f) {
@@ -88,23 +88,24 @@ int main(int argc, char *argv[]) {
     QCommandLineParser p;
     configureParse(p,app);
 
-    FeaturesComplexNetwork cn1;
-    FeaturesComplexNetwork cn2;
+    try{
+        FeaturesComplexNetwork cn1;
+        FeaturesComplexNetwork cn2;
 
-    auto f  = getFactories(p);
-    puts("Carregando");
-    cn1.load(p.positionalArguments()[0].toStdString().c_str(), f);
-    cn2.load(p.positionalArguments()[1].toStdString().c_str(), f);
-    puts("Carregado");
+        auto f  = getFactories(p);
+        cn1.load(p.positionalArguments()[0].toStdString().c_str(), f);
+        cn2.load(p.positionalArguments()[1].toStdString().c_str(), f);
 
-    if(compareCn(cn1, cn2) == 0){
-        puts("Equals");
-    }else{
-        puts("Differents");
+        if(compareCn(cn1, cn2) == 0){
+            puts("Equals");
+        }else{
+            puts("Differents");
+        }
+        clearFactories(f);
+
+    }catch (std::exception *e){
+        puts(e->what());
     }
-
-    clearFactories(f);
-
     return 0;
 }
 
