@@ -11,7 +11,7 @@
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 
-void configureParse(QCommandLineParser &p, QApplication &app){
+void configureParse(QCommandLineParser &p, QCoreApplication &app){
     p.addHelpOption();
     p.addPositionalArgument("cn1", "Complex Network 1", "cn1");
     p.addPositionalArgument("cn2", "Complex Network 2", "cn2");
