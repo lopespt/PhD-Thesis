@@ -174,14 +174,23 @@
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
@@ -674,6 +683,9 @@
           <root url="file:///usr/include" />
           <root url="file:///usr/local/include" />
         </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" />
+        </excluded>
       </library>
     </orderEntry>
   </component>
