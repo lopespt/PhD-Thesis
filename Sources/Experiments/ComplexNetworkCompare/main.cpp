@@ -22,6 +22,7 @@ void configureParse(QCommandLineParser &p, QCoreApplication &app){
     p.addOption(QCommandLineOption("a", "Area Discretization","a",0));
     p.addOption(QCommandLineOption("o", "Orientation Discretization","a",0));
     p.addOption(QCommandLineOption("l", "Labels"));
+    p.addOption(QCommandLineOption("t", "Consider Time"));
 
     p.process(app);
     if(p.positionalArguments().size() < 2) {
@@ -46,6 +47,7 @@ QList<const FeatureFactoryAbstract*> getFactories(QCommandLineParser &p){
         lista.append(new LabelFeatureFactory());
     }
 
+
     return lista;
 }
 
@@ -55,7 +57,7 @@ void clearFactories(QList<const FeatureFactoryAbstract* > &f) {
     }
 }
 
-int compareCn(const FeaturesComplexNetwork &cn1, const FeaturesComplexNetwork &cn2) {
+int compareCn(const FeaturesComplexNetwork &cn1, const FeaturesComplexNetwork &cn2,bool compareTimes) {
 
     if(cn1.getNumNodes() != cn2.getNumNodes())
         return 1;
@@ -76,7 +78,7 @@ int compareCn(const FeaturesComplexNetwork &cn1, const FeaturesComplexNetwork &c
         if( cn2.getLinkArcValue(it2).getWeight() != cn1.getLinkArcValue(it).getWeight() ){
             return 1;
         }
-        if( cn2.getLinkArcValue(it2).getTime() != cn1.getLinkArcValue(it).getTime() ){
+        if( compareTimes && cn2.getLinkArcValue(it2).getTime() != cn1.getLinkArcValue(it).getTime() ){
             return 1;
         }
     }
@@ -96,7 +98,7 @@ int main(int argc, char *argv[]) {
         cn1.load(p.positionalArguments()[0].toStdString().c_str(), f);
         cn2.load(p.positionalArguments()[1].toStdString().c_str(), f);
 
-        if(compareCn(cn1, cn2) == 0){
+        if(compareCn(cn1, cn2, p.isSet("t")) == 0){
             puts("Equals");
         }else{
             puts("Differents");
