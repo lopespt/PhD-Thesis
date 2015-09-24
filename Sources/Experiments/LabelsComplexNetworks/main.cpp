@@ -13,7 +13,6 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <FeatureExtractors/LabelFeature.hpp>
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
-#include <lemon/bellman_ford.h>
 #include <Utilities/GraphUtilities.hpp>
 
 int main(int argc, char **argv) {
