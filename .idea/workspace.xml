@@ -8,7 +8,8 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
-      <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
+      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
+      <config projectName="PhDThesis" targetName="WebServer" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="Visualizer_automoc" />
@@ -22,9 +23,8 @@
       <config projectName="PhDThesis" targetName="LabelGuesserRemovingHints" />
       <config projectName="PhDThesis" targetName="ComplexNetworkCompare_automoc" />
       <config projectName="PhDThesis" targetName="Utilities" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
+      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures_automoc" />
-      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="Visualizer" />
       <config projectName="PhDThesis" targetName="SetupPadrao_automoc" />
@@ -32,40 +32,40 @@
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle_automoc" />
-      <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="LabelGuesserRemovingHints_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
-      <config projectName="PhDThesis" targetName="SetupPadrao" />
-      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment" />
       <config projectName="PhDThesis" targetName="ConfigCreator_automoc" />
+      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
       <config projectName="PhDThesis" targetName="SunRandomFolderGenerator" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkCompare" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="WebServer" />
+      <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest_automoc" />
+      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetwork" />
-      <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
+      <config projectName="PhDThesis" targetName="ComplexNetwork_automoc" />
+      <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer" />
       <config projectName="PhDThesis" targetName="FeatureExtractors" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment_automoc" />
-      <config projectName="PhDThesis" targetName="RandomWalkTest_automoc" />
-      <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkToMatlabFile_automoc" />
-      <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
+      <config projectName="PhDThesis" targetName="GuiUtilities_automoc" />
+      <config projectName="PhDThesis" targetName="SetupPadrao" />
+      <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
       <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
-      <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
+      <config projectName="PhDThesis" targetName="ComplexNetworkCompare" />
       <config projectName="PhDThesis" targetName="RandomWalkTest" />
       <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
-      <config projectName="PhDThesis" targetName="FeatureExtractors_automoc" />
+      <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true" GENERATION_PASS_SYSTEM_ENVIRONMENT="true" BUILD_OUTPUT_DIR="/tmp/phd">
@@ -74,10 +74,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare">
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,12 +103,8 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
               <folding>
-                <marker date="1443052754000" expanded="true" signature="59:416" placeholder="..." />
-                <marker date="1443052754000" expanded="true" signature="479:1221" placeholder="{...}" />
-                <marker date="1443052754000" expanded="true" signature="1295:1838" placeholder="{...}" />
-                <marker date="1443052754000" expanded="true" signature="1902:1952" placeholder="{...}" />
+                <element signature="e#50#68#0" expanded="true" />
                 <marker date="1443052754000" expanded="true" signature="2038:2847" placeholder="{...}" />
-                <marker date="1443052754000" expanded="true" signature="2882:3393" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -120,16 +115,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="195" column="31" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
-              <folding>
-                <marker date="1442506006000" expanded="false" signature="9:422" placeholder="..." />
-                <marker date="1442506006000" expanded="true" signature="943:947" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="1061:1517" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="1718:3856" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="3933:3967" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="4038:4252" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="4311:5794" placeholder="{...}" />
-                <marker date="1442506006000" expanded="true" signature="5841:7142" placeholder="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,9 +126,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
-                <marker date="1443053908000" expanded="false" signature="112:171" placeholder="..." />
-                <marker date="1443053908000" expanded="true" signature="210:563" placeholder="..." />
-                <marker date="1443053908000" expanded="true" signature="597:2159" placeholder="{...}" />
+                <element signature="e#201#258#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,8 +135,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34951457">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49514562">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -948,12 +932,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00007" summary="Tested FeatureExtractors: OK!! [Bug Fixes]">
-      <created>1434046857263</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1434046857263</updated>
-    </task>
     <task id="LOCAL-00008" summary="Innstallation.sh adjustments">
       <created>1434114595524</created>
       <option name="number" value="00008" />
@@ -1242,7 +1220,13 @@
       <option name="project" value="LOCAL" />
       <updated>1443053839551</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare">
+      <created>1443054129172</created>
+      <option name="number" value="00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1443054129172</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1585,7 +1569,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2935943">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1609,7 +1595,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1617,16 +1605,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="195" column="31" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
-          <folding>
-            <marker date="1442506006000" expanded="false" signature="9:422" placeholder="..." />
-            <marker date="1442506006000" expanded="true" signature="943:947" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="1061:1517" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="1718:3856" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="3933:3967" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="4038:4252" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="4311:5794" placeholder="{...}" />
-            <marker date="1442506006000" expanded="true" signature="5841:7142" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1642,7 +1621,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1675,12 +1656,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
           <folding>
-            <marker date="1443052754000" expanded="true" signature="59:416" placeholder="..." />
-            <marker date="1443052754000" expanded="true" signature="479:1221" placeholder="{...}" />
-            <marker date="1443052754000" expanded="true" signature="1295:1838" placeholder="{...}" />
-            <marker date="1443052754000" expanded="true" signature="1902:1952" placeholder="{...}" />
+            <element signature="e#50#68#0" expanded="true" />
             <marker date="1443052754000" expanded="true" signature="2038:2847" placeholder="{...}" />
-            <marker date="1443052754000" expanded="true" signature="2882:3393" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1690,9 +1667,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
-            <marker date="1443053908000" expanded="false" signature="112:171" placeholder="..." />
-            <marker date="1443053908000" expanded="true" signature="210:563" placeholder="..." />
-            <marker date="1443053908000" expanded="true" signature="597:2159" placeholder="{...}" />
+            <element signature="e#201#258#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1707,8 +1682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34951457">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49514562">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
