@@ -75,24 +75,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/FrequentLabels.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/FrequentLabels.hpp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sources/Experiments/AnimatedNonAnimatedImages/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/ConfigParser.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/ConfigParser.h" afterPath="$PROJECT_DIR$/Sources/Utilities/ConfigParser.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,11 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83773583">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
               <folding>
                 <element signature="e#50#68#0" expanded="true" />
               </folding>
@@ -131,6 +116,18 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="195" column="31" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4787234">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="e#201#258#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,13 +209,13 @@
         <option value="$PROJECT_DIR$/Sources/FeatureExtractors/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesser/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/LabelGuesserRemovingHints/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp" />
       </list>
     </option>
   </component>
@@ -421,6 +418,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="LabelsComplexNetworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Experiments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ComplexNetworkCompare" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -532,7 +555,7 @@
       <recent name="$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ComplexNetworkCompare">
+  <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -889,12 +912,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle">
-      <created>1433822055073</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1433822055073</updated>
-    </task>
     <task id="LOCAL-00004" summary="Added new experiment:&#10;OutsideSegmentationEvaluatorTestAddCircle">
       <created>1433822464973</created>
       <option name="number" value="00004" />
@@ -1183,7 +1200,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442510037826</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare">
+      <created>1443052299712</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1443052299714</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1195,17 +1218,17 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.6218638" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.6233108" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.48625794" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28674698" sideWeight="0.3030303" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28674698" sideWeight="0.30091614" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34578314" sideWeight="0.2572234" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28674698" sideWeight="0.6969697" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5048193" sideWeight="0.47357294" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.29175475" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.29175475" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.7082452" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.3781362" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28674698" sideWeight="0.69908386" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.3766892" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.54897815" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1230,7 +1253,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Tested FeatureExtractors: OK!!" />
     <MESSAGE value="Tested FeatureExtractors: OK!! [Bug Fixes]" />
     <MESSAGE value="Innstallation.sh adjustments" />
     <MESSAGE value="Solve problem when subtracting mask resulting in a empty mask. Solve removing from segmented objects." />
@@ -1255,7 +1277,8 @@
     <MESSAGE value="New improvements to FeaturesComplexNetwork" />
     <MESSAGE value="Finished improvements to FeaturesComplexNetwork" />
     <MESSAGE value="Inserted CVMatAndQImage project helper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserted CVMatAndQImage project helper" />
+    <MESSAGE value="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare" />
+    <option name="LAST_COMMIT_MESSAGE" value="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1522,14 +1545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7099644">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/SetupPadrao/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2935943">
@@ -1626,10 +1641,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83773583">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
           <folding>
             <element signature="e#50#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/LabelsComplexNetworks/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4787234">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#201#258#0" expanded="true" />
           </folding>
         </state>
       </provider>

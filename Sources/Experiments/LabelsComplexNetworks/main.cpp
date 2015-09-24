@@ -14,7 +14,6 @@ VTK_MODULE_INIT(vtkInteractionStyle);
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <FeatureExtractors/OrientationFeatureFactory.hpp>
 #include <lemon/bellman_ford.h>
-#include <lemon/
 #include <Utilities/GraphUtilities.hpp>
 
 int main(int argc, char **argv) {
@@ -43,9 +42,6 @@ int main(int argc, char **argv) {
     labels_cn.load("labels.cn", factories);
     FeaturesComplexNetwork::ArcMap<double> dists(labels_cn);
     GraphUtilities::getWeights(labels_cn, dists);
-    BellmanFord f(labels_cn, dists);
-    f.start()
-
 
 
     ComplexNetworkConstructor constructor(labels_cn, reader, factories);
