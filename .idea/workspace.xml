@@ -79,6 +79,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -153,24 +154,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeEstimator.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimeEstimator.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1981132">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="e#122#137#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeEstimator.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TimeEstimator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-              <folding>
-                <element signature="e#50#67#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.16981132">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -290,11 +291,11 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
         <option value="$PROJECT_DIR$/Sources/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp" />
       </list>
     </option>
   </component>
@@ -987,12 +988,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00018" summary="Bug Building Process">
-      <created>1438871898267</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1438871898267</updated>
-    </task>
     <task id="LOCAL-00019" summary="Bug Building Process">
       <created>1438872039646</created>
       <option name="number" value="00019" />
@@ -1281,7 +1276,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445858592850</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="MCLClustering added to project">
+      <created>1445858699096</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1445858699096</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1714,16 +1715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
-          <folding>
-            <element signature="e#50#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1768,8 +1759,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1981132">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#122#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16981132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>

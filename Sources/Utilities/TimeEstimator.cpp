@@ -4,6 +4,7 @@
 
 #include <math.h>
 #include "TimeEstimator.hpp"
+#include <stdio.h>
 
 TimeEstimator::TimeEstimator(int totalTicks) : start(0), last(0), totalTicks(totalTicks), ticks(0) {
     cx=0;
