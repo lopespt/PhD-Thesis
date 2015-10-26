@@ -14,6 +14,7 @@
 #include <qtextstream.h>
 #include <Experiments/PhysicalMeasures/Measures/WeightDistribution.hpp>
 #include <Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp>
+#include <Utilities/ConfigParser.h>
 
 using namespace tictac;
 using namespace std;
@@ -35,21 +36,28 @@ void gravaDist(const FeaturesComplexNetwork &cn, const WeightDistribution::ArcMa
     fclose(f);
 }
 
+
+void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key,float> &dist, QString filename ) {
+    FILE *f = fopen(filename.toStdString().c_str(), "w");
+    for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
+        for (FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2) {
+
+            fprintf(f, "%-5d\t%-5d\t%-20.5f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
+        }
+        fclose(f);
+    }
+}
+
 int main(int argc, char **argv) {
+
+    QCoreApplication app(argc, argv);
+    ConfigParser config(app);
+
 
     puts("Carregando");
     FeaturesComplexNetwork cn;
-    QList<const FeatureFactoryAbstract *> factories;
-    HsvFeatureFactory hsv(10,3,6,3);
-    LabelFeatureFactory label;
-    AreaFeatureFactory area(5);
-    OrientationFeatureFactory orie(5);
-    factories.append(&hsv);
-    factories.append(&label);
-    factories.append(&area);
-    factories.append(&orie);
+    cn.load(config.getCnInput().toStdString().c_str(), config.getFactories() );
 
-    cn.load("/tmp/F_3/H10_S3_V6/A_5/O_5/network.cn",factories);
     puts("Pronto!");
 
     //float result = ClusteringCoefficient::Compute(cn, 5, 0.5);
@@ -71,7 +79,6 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn);
     dist.run();
-
 
 
     printf("Fim\n");

@@ -21,6 +21,7 @@ private:
 public:
     DistanceDistribution(const FeaturesComplexNetwork &cn);
     void run();
+    QHash<DistanceDistribution::Key, float> getDistances() const;
 
 };
 

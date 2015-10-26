@@ -49,3 +49,7 @@ void DistanceDistribution::run() {
     }
     pool.waitForDone();
 }
+
+QHash<DistanceDistribution::Key, float> DistanceDistribution::getDistances() const {
+    return this->dist;
+}
