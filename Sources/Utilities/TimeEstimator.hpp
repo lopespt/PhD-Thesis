@@ -5,6 +5,7 @@
 #ifndef PHDTHESIS_TIMEESTIMATOR_HPP
 #define PHDTHESIS_TIMEESTIMATOR_HPP
 #include <list>
+#include <time.h>
 
 class TimeEstimator {
 
