@@ -15,8 +15,6 @@ DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn) : c
         for (FeaturesComplexNetwork::NodeIt j(cn); j != INVALID; ++j) {
             if(cn.arcExists(i,j,Link::LinkType::OtherLabel)) {
                 dist[Key(i, j)] = 1.0/cn.getLinkArcValue(i,j,Link::LinkType::OtherLabel).getWeight();
-            }else{
-                dist[Key(i, j)] = INFINITE;
             }
         }
     }
