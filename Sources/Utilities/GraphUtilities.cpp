@@ -82,3 +82,9 @@ void GraphUtilities::normalizeWeights(ListDigraph &cn, const ListDigraph::ArcMap
             output[it] = output[it]/max;
     }
 }
+
+void GraphUtilities::outputAbcFormat(const ListDigraph &cn, const ListDigraph::ArcMap<double> &weights) {
+    for(ListDigraph::ArcIt it(cn); it != INVALID; ++it){
+        printf("%d %d %f\n", cn.id(cn.source(it)), cn.id(cn.target(it)), weights[it] );
+    }
+}

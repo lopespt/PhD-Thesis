@@ -11,9 +11,7 @@ INCLUDE(${VTK_USE_FILE})
 
 INCLUDE_DIRECTORIES(".")
 
-
 FILE(GLOB_RECURSE Source_Files  *.cpp *.hpp)
 
-ADD_EXECUTABLE(PhysicalMeasures ${Source_Files})
-TARGET_LINK_LIBRARIES(PhysicalMeasures FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})
-
+ADD_EXECUTABLE(mclClustering ${Source_Files})
+TARGET_LINK_LIBRARIES(mclClustering FeatureExtractors ComplexNetwork Segmentation Utilities Qt5::Core Qt5::Widgets Qt5::OpenGL  ${OpenCV_LIBS}  ${VTK_LIBRARIES})

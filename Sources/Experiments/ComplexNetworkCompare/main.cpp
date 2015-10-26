@@ -98,6 +98,8 @@ int main(int argc, char *argv[]) {
         cn1.load(p.positionalArguments()[0].toStdString().c_str(), f);
         cn2.load(p.positionalArguments()[1].toStdString().c_str(), f);
 
+
+
         if(compareCn(cn1, cn2, p.isSet("t")) == 0){
             puts("Equals");
         }else{

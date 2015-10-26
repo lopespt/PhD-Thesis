@@ -32,7 +32,7 @@ float MCLClustering::execute() {
     });
 
     for(int i=0;i<cn.getNumNodes() * 0.2;i++){
-        cn.erase(degrees[i].first);
+    //    cn.erase(degrees[i].first);
     }
 
     for(FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it ){

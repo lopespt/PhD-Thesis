@@ -20,6 +20,7 @@ FILE(GLOB_RECURSE Source_Files
     Utils.cpp
     cvmatandqimage.cpp
     ConfigParser.cpp
+    TimeEstimator.cpp
     *.cpp
 )
 

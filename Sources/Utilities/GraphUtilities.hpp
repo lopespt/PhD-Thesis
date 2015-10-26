@@ -36,6 +36,7 @@ public:
                                     ListDigraph::ArcMap <double> &output);
     static void addAutoLoop(FeaturesComplexNetwork &cn, FeaturesComplexNetwork::ArcMap <double> &arcs, double value = 1);
 
+    static void outputAbcFormat(const ListDigraph &cn, const ListDigraph::ArcMap<double> &weights );
 
 };
 

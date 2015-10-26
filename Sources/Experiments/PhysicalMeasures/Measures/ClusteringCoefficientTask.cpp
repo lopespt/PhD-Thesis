@@ -1,0 +1,47 @@
+//
+// Created by Guilherme Wachs on 21/10/15.
+//
+
+#include "ClusteringCoefficientTask.hpp"
+
+ClusteringCoefficientTask::ClusteringCoefficientTask(const FeaturesComplexNetwork &cn,
+                                                     const FeaturesComplexNetwork::ArcMap<double>& weights,
+                                                     QList<FeaturesComplexNetwork::Node> nodes):cn(cn), weights(weights), nodes(nodes) {
+
+
+
+}
+
+QList<ClusteringCoefficientTask::NodeCC> ClusteringCoefficientTask::getResults() const {
+    return results;
+}
+
+void ClusteringCoefficientTask::run() {
+    int i=0;
+    int size = nodes.size();
+    for(const auto &node: nodes){
+        results.append(NodeCC{ node, computeCC(node) });
+        //printf("%5d | %5d (%3d)\n",i++,size,(int)(i*1./size*100));
+    }
+}
+
+float ClusteringCoefficientTask::computeCC(ListDigraphBase::Node node) const {
+
+    float sum=0;
+    int total=0;
+    for( FeaturesComplexNetwork::OutArcIt it(cn,node); it != INVALID; ++it){
+        total++;
+        for( FeaturesComplexNetwork::OutArcIt it2(cn,node); it2 != INVALID; ++it2) {
+            FeaturesComplexNetwork::Node a = cn.target(it);
+            FeaturesComplexNetwork::Node b = cn.target(it2);
+
+            if(cn.arcExists(a,b,Link::LinkType::OtherLabel))
+                sum += weights[cn.getArc(a,b,Link::LinkType::OtherLabel)];
+
+            if(cn.arcExists(b,a,Link::LinkType::OtherLabel))
+                sum += weights[cn.getArc(b,a,Link::LinkType::OtherLabel)];
+        }
+    }
+
+    return sum/(total*(total-1));
+}

@@ -183,6 +183,9 @@ ListDigraph::Arc FeaturesComplexNetwork::getArc(const ListDigraph::Node &from,
     return INVALID;
 }
 
+
+
+
 Link& FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Node &from,
                                                                const ListDigraph::Node &to, Link::LinkType type) {
     if(type == Link::LinkType::OtherLabel) {
