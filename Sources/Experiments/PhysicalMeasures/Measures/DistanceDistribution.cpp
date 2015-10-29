@@ -4,7 +4,6 @@
 
 #include <qthreadpool.h>
 #include <Utilities/TimeEstimator.hpp>
-#include <sqltypes.h>
 #include "DistanceDistribution.hpp"
 #include "DistanceTask.hpp"
 
