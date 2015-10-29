@@ -31,9 +31,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/ConfigFileParser.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/CMakeLists.txt" isTestSource="false" />
@@ -41,6 +41,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/ConfigFileParser.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficient.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficient.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp" isTestSource="false" />
@@ -53,7 +54,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.hpp" isTestSource="false" />
@@ -61,13 +61,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SetupPadrao/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SetupPadrao/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SunRandomFolderGenerator/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SunRandomFolderGenerator/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SunRandomFolderGenerator/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/WebServer/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/WebServer/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/WebServer/WebServer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/WebServer/WebServer.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/WebServer/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/FeatureExtractors/AreaFeature.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/FeatureExtractors/AreaFeature.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/FeatureExtractors/AreaFeatureFactory.cpp" isTestSource="false" />
@@ -105,9 +105,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/GuiUtilities/DatabaseVisualizerWidget.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/GuiUtilities/SupervisedImageViewerWidget.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/CloserNodesGuesser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/CloserNodesGuesser.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/SegmentationEvaluator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/SegmentationEvaluator.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Segmentation/SegmentedImage.cpp" isTestSource="false" />
@@ -134,24 +134,26 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionTest.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/IntersectionQLineQPolygonTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/RandomWalkTest2.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Tests/RandomWalkTest/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ClusteringCoefficient.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ClusteringCoefficient.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/AddOneCoOcurrenceEquation.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructor.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/CoOcurrenceEquation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ComplexNetworkConstructor/ReinforcementCoOcurrenceEquation.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ConfigParser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/ConfigParser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/KFoldDatabaseReader.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/RegionChooser.cpp" isTestSource="false" />
@@ -186,26 +188,294 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Utils.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/VoronoiDiagramGenerator.hpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/cvmatandqimage.h" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp">
-      <sourceFolder url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/WebServer/WebServer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/WebServer/WebServer_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities/GuiUtilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities/GuiUtilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/WebServer/WebServer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/WebServer/WebServer_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities/GuiUtilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities/GuiUtilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation/Segmentation_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Utilities/Utilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/WebServer/WebServer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/WebServer/WebServer_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities/GuiUtilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities/GuiUtilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation/Segmentation_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Utilities/Utilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/ComplexNetwork/ComplexNetwork_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ComplexNetworkCompare/ComplexNetworkCompare_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ComplexNetworksConstructor/ComplexNetworkConstructor_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/ConfigCreator/ConfigCreator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelGuesser/LabelGuesserExp_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelGuesserRemovingHints/LabelGuesserRemovingHints_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/LabelsComplexNetworks/LabelsComplexNetworkExperiment_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/MCLClustering/mclClustering_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/OutsideSegmentationEvaluatorTestAddingCircle_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SetupPadrao/SetupPadrao_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SunRandomFolderGenerator/SunRandomFolderGenerator_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/WebServer/WebServer_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/WebServer/WebServer_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/FeatureExtractors/FeatureExtractors_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities/GuiUtilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities/GuiUtilities_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation/Segmentation_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation/Segmentation_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Utilities/Utilities_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Utilities/Utilities_automoc.cpp" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -214,17 +484,16 @@
         <CLASSES>
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
+          <root url="file:///Library/Frameworks/iTunesLibrary.framework/Headers" />
           <root url="file:///Library/Frameworks/Mono.framework/Headers" />
           <root url="file:///Library/Frameworks/OSXFUSE.framework/Headers" />
-          <root url="file:///Library/Frameworks/iTunesLibrary.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AGL.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AVFoundation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AVKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
+          <root url="file:///opt/local/include" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accounts.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AddressBook.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AGL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppKitScripting.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppleScriptKit.framework/Headers" />
@@ -244,12 +513,13 @@
           <root url="file:///System/Library/Frameworks/AudioUnit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AudioVideoBridging.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Automator.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/CFNetwork.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AVFoundation.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AVKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CalendarStore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/CommonPanels.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/Help.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/ImageCapture.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/Ink.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/NavigationServices.framework/Headers" />
@@ -258,6 +528,7 @@
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/SecurityHI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/SpeechRecognition.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/CFNetwork.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CloudKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Cocoa.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Collaboration.framework/Headers" />
@@ -271,9 +542,9 @@
           <root url="file:///System/Library/Frameworks/CoreGraphics.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreLocation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/CoreMIDI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreMedia.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreMediaIO.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/CoreMIDI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/DictionaryServices.framework/Headers" />
@@ -289,37 +560,37 @@
           <root url="file:///System/Library/Frameworks/CoreVideo.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreWLAN.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CryptoTokenKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/DVComponentGlue.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/DVDPlayback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DirectoryService.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiscRecording.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiscRecordingUI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiskArbitration.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/DVComponentGlue.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/DVDPlayback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/EventKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ExceptionHandling.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/FWAUserLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/FinderSync.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ForceFeedback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Foundation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GLKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GLUT.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GSS.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/FWAUserLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameController.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameplayKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GLKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GLUT.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GSS.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Hypervisor.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ICADevices.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/ImageCaptureCore.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/ImageIO.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IMServicePlugIn.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InputMethodKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InstallerPlugins.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InstantMessage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetooth.framework/Frameworks/CoreBluetooth.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetooth.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetoothUI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOSurface.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/ImageCaptureCore.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/ImageIO.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InputMethodKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InstallerPlugins.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InstantMessage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaFrameEmbedding.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaScriptCore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaVM.framework/Frameworks/JavaNativeFoundation.framework/Headers" />
@@ -327,8 +598,8 @@
           <root url="file:///System/Library/Frameworks/JavaVM.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Kerberos.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Kernel.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/LDAP.framework/Headers" />
           <root url="file:///System/Library/Frameworks/LatentSemanticMapping.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/LDAP.framework/Headers" />
           <root url="file:///System/Library/Frameworks/LocalAuthentication.framework/Headers" />
           <root url="file:///System/Library/Frameworks/MapKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/MediaAccessibility.framework/Headers" />
@@ -341,12 +612,12 @@
           <root url="file:///System/Library/Frameworks/NetFS.framework/Headers" />
           <root url="file:///System/Library/Frameworks/NetworkExtension.framework/Headers" />
           <root url="file:///System/Library/Frameworks/NotificationCenter.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/OSAKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenAL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenCL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenDirectory.framework/Frameworks/CFOpenDirectory.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenDirectory.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenGL.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/OSAKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/PCSC.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Photos.framework/Headers" />
           <root url="file:///System/Library/Frameworks/PhotosUI.framework/Headers" />
@@ -377,44 +648,44 @@
           <root url="file:///System/Library/Frameworks/StoreKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/SyncServices.framework/Headers" />
           <root url="file:///System/Library/Frameworks/SystemConfiguration.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/TWAIN.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tcl.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tcl.framework/PrivateHeaders" />
           <root url="file:///System/Library/Frameworks/Tk.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tk.framework/PrivateHeaders" />
+          <root url="file:///System/Library/Frameworks/TWAIN.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/VideoDecodeAcceleration.framework/Headers" />
           <root url="file:///System/Library/Frameworks/VideoToolbox.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/WebKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/vmnet.framework/Headers" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest" />
+          <root url="file:///System/Library/Frameworks/WebKit.framework/Headers" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/Enginio.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtBluetooth.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtCLucene.framework/Headers" />
@@ -454,24 +725,22 @@
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtXml.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtXmlPatterns.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/mkspecs/macx-clang" />
-          <root url="file:///opt/local/include" />
           <root url="file:///usr/include" />
           <root url="file:///usr/local/include" />
         </CLASSES>
         <SOURCES>
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include" />
           <root url="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include" />
+          <root url="file:///Library/Frameworks/iTunesLibrary.framework/Headers" />
           <root url="file:///Library/Frameworks/Mono.framework/Headers" />
           <root url="file:///Library/Frameworks/OSXFUSE.framework/Headers" />
-          <root url="file:///Library/Frameworks/iTunesLibrary.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AGL.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AVFoundation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/AVKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
+          <root url="file:///opt/local/include" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accounts.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AddressBook.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AGL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppKitScripting.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AppleScriptKit.framework/Headers" />
@@ -491,12 +760,13 @@
           <root url="file:///System/Library/Frameworks/AudioUnit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/AudioVideoBridging.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Automator.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/CFNetwork.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AVFoundation.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/AVKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CalendarStore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/CarbonSound.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/CommonPanels.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/Help.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/ImageCapture.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/Ink.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/NavigationServices.framework/Headers" />
@@ -505,6 +775,7 @@
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/SecurityHI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Frameworks/SpeechRecognition.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Carbon.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/CFNetwork.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CloudKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Cocoa.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Collaboration.framework/Headers" />
@@ -518,9 +789,9 @@
           <root url="file:///System/Library/Frameworks/CoreGraphics.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreLocation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/CoreMIDI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreMedia.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreMediaIO.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/CoreMIDI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/AE.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreServices.framework/Frameworks/DictionaryServices.framework/Headers" />
@@ -536,37 +807,37 @@
           <root url="file:///System/Library/Frameworks/CoreVideo.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CoreWLAN.framework/Headers" />
           <root url="file:///System/Library/Frameworks/CryptoTokenKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/DVComponentGlue.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/DVDPlayback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DirectoryService.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiscRecording.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiscRecordingUI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/DiskArbitration.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/DVComponentGlue.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/DVDPlayback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/EventKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ExceptionHandling.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/FWAUserLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/FinderSync.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ForceFeedback.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Foundation.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GLKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GLUT.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/GSS.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/FWAUserLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameController.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/GameplayKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GLKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GLUT.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/GSS.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Hypervisor.framework/Headers" />
           <root url="file:///System/Library/Frameworks/ICADevices.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/ImageCaptureCore.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/ImageIO.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IMServicePlugIn.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InputMethodKit.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InstallerPlugins.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/InstantMessage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetooth.framework/Frameworks/CoreBluetooth.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetooth.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOBluetoothUI.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/IOSurface.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/ImageCaptureCore.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/ImageIO.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InputMethodKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InstallerPlugins.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/InstantMessage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaFrameEmbedding.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaScriptCore.framework/Headers" />
           <root url="file:///System/Library/Frameworks/JavaVM.framework/Frameworks/JavaNativeFoundation.framework/Headers" />
@@ -574,8 +845,8 @@
           <root url="file:///System/Library/Frameworks/JavaVM.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Kerberos.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Kernel.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/LDAP.framework/Headers" />
           <root url="file:///System/Library/Frameworks/LatentSemanticMapping.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/LDAP.framework/Headers" />
           <root url="file:///System/Library/Frameworks/LocalAuthentication.framework/Headers" />
           <root url="file:///System/Library/Frameworks/MapKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/MediaAccessibility.framework/Headers" />
@@ -588,12 +859,12 @@
           <root url="file:///System/Library/Frameworks/NetFS.framework/Headers" />
           <root url="file:///System/Library/Frameworks/NetworkExtension.framework/Headers" />
           <root url="file:///System/Library/Frameworks/NotificationCenter.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/OSAKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenAL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenCL.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenDirectory.framework/Frameworks/CFOpenDirectory.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenDirectory.framework/Headers" />
           <root url="file:///System/Library/Frameworks/OpenGL.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/OSAKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/PCSC.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Photos.framework/Headers" />
           <root url="file:///System/Library/Frameworks/PhotosUI.framework/Headers" />
@@ -624,44 +895,44 @@
           <root url="file:///System/Library/Frameworks/StoreKit.framework/Headers" />
           <root url="file:///System/Library/Frameworks/SyncServices.framework/Headers" />
           <root url="file:///System/Library/Frameworks/SystemConfiguration.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/TWAIN.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tcl.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tcl.framework/PrivateHeaders" />
           <root url="file:///System/Library/Frameworks/Tk.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Tk.framework/PrivateHeaders" />
+          <root url="file:///System/Library/Frameworks/TWAIN.framework/Headers" />
+          <root url="file:///System/Library/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/VideoDecodeAcceleration.framework/Headers" />
           <root url="file:///System/Library/Frameworks/VideoToolbox.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/WebKit.framework/Headers" />
-          <root url="file:///System/Library/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/vmnet.framework/Headers" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest" />
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest" />
+          <root url="file:///System/Library/Frameworks/WebKit.framework/Headers" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/Enginio.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtBluetooth.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtCLucene.framework/Headers" />
@@ -701,12 +972,38 @@
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtXml.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/lib/QtXmlPatterns.framework/Headers" />
           <root url="file://$USER_HOME$/Qt/5.3/clang_64/mkspecs/macx-clang" />
-          <root url="file:///opt/local/include" />
           <root url="file:///usr/include" />
           <root url="file:///usr/local/include" />
         </SOURCES>
         <excluded>
-          <root url="file://$USER_HOME$/Library/Caches/clion11/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/GuiUtilities/GuiUtilities_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Segmentation/Segmentation_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/GuiUtilities/GuiUtilities_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Segmentation/Segmentation_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/GuiUtilities/GuiUtilities_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Segmentation/Segmentation_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/GuiUtilities/GuiUtilities_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Segmentation/Segmentation_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/AreaFeatureExtractionTest/AreaFeatureExtractionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkConstructionTest/ComplexNetworkConstructionTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/ComplexNetworkResourcesTest/ComplexNetworkResourcesTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/IntersectionQLineQPolygonTest/IntersectionQLineQPolygonTest_automoc.cpp" />
+          <root url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Tests/RandomWalkTest/RandomWalkTest_automoc.cpp" />
         </excluded>
       </library>
     </orderEntry>

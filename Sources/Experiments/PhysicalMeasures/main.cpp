@@ -41,11 +41,10 @@ void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistr
     FILE *f = fopen(filename.toStdString().c_str(), "w");
     for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
         for (FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2) {
-
             fprintf(f, "%-5d\t%-5d\t%-20.5f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
         }
-        fclose(f);
     }
+    fclose(f);
 }
 
 int main(int argc, char **argv) {
@@ -77,9 +76,9 @@ int main(int argc, char **argv) {
     gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
     */
 
-    DistanceDistribution dist(cn);
+    DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();
-
+    gravaDistancias(cn, dist.getDistances(), "/tmp/Redes/distancias.txt");
 
     printf("Fim\n");
 

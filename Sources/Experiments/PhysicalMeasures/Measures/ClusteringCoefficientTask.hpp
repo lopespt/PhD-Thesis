@@ -18,9 +18,9 @@ public:
 
 private:
     const FeaturesComplexNetwork &cn;
-    QList<FeaturesComplexNetwork::Node> nodes;
     QList<NodeCC> results;
     const FeaturesComplexNetwork::ArcMap<double>& weights;
+    QList<FeaturesComplexNetwork::Node> nodes;
 
     float computeCC(FeaturesComplexNetwork::Node) const;
 

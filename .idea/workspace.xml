@@ -8,6 +8,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
+      <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="SunRandomFolderGenerator_automoc" />
       <config projectName="PhDThesis" targetName="DatabaseVisualizer_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructor_automoc" />
@@ -27,21 +28,20 @@
       <config projectName="PhDThesis" targetName="Utilities" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures_automoc" />
-      <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTest_automoc" />
+      <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="mclClustering" />
       <config projectName="PhDThesis" targetName="SetupPadrao_automoc" />
       <config projectName="PhDThesis" targetName="Utilities_automoc" />
       <config projectName="PhDThesis" targetName="IntersectionQLineQPolygonTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle_automoc" />
-      <config projectName="PhDThesis" targetName="SegmenterTest" />
       <config projectName="PhDThesis" targetName="AreaComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="LabelGuesserRemovingHints_automoc" />
       <config projectName="PhDThesis" targetName="OutsideSegmentationEvaluatorTestAddingCircle" />
+      <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest_automoc" />
       <config projectName="PhDThesis" targetName="SegmenterTest_automoc" />
       <config projectName="PhDThesis" targetName="Segmentation_automoc" />
-      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="AnimattedNonAnimattedImagesExperiment" />
       <config projectName="PhDThesis" targetName="ConfigCreator_automoc" />
       <config projectName="PhDThesis" targetName="LabelsValidationExperiment" />
@@ -63,12 +63,12 @@
       <config projectName="PhDThesis" targetName="LabelsComplexNetworkExperiment_automoc" />
       <config projectName="PhDThesis" targetName="ComplexNetworkConstructionTest" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest" />
-      <config projectName="PhDThesis" targetName="Visualizer" />
+      <config projectName="PhDThesis" targetName="LabelGuesserExp_automoc" />
       <config projectName="PhDThesis" targetName="PhysicalMeasures" />
       <config projectName="PhDThesis" targetName="ComplexNetworkResourcesTest" />
       <config projectName="PhDThesis" targetName="ComplexNetworkCompare" />
       <config projectName="PhDThesis" targetName="RandomWalkTest" />
-      <config projectName="PhDThesis" targetName="SegmentationEvaluatorTest_automoc" />
+      <config projectName="PhDThesis" targetName="Visualizer" />
       <config projectName="PhDThesis" targetName="AreaFeatureExtractionTest_automoc" />
     </generated>
   </component>
@@ -78,10 +78,18 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="Added ConfigParser to PhusicalMeasures&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,22 +109,25 @@
     <favorites_list name="Implementacao" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-              <folding />
+              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+              <folding>
+                <marker date="1446126001000" expanded="true" signature="1531:1886" placeholder="{...}" />
+                <marker date="1446126001000" expanded="true" signature="1920:2834" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistanceDistribution.hpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DistanceDistribution.hpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.77754235">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#138#208#0" expanded="true" />
               </folding>
@@ -128,22 +139,8 @@
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-              <folding>
-                <element signature="e#50#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DistanceTask.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5084746">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding>
-                <element signature="e#50#68#0" expanded="true" />
-              </folding>
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,37 +208,37 @@
         <option value="$PROJECT_DIR$/Sources/Segmentation/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Experiments/ComplexNetworkCompare/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficient.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficient.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DegreeDistribution.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DegreeDistribution.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
         <option value="$PROJECT_DIR$/Sources/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/TimeEstimator.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ConfigParser.cpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/ConfigParser.h" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
   <component name="NamedScopeManager">
     <scope name="C++" pattern="file[Implementacao]:Sources/ComplexNetwork/*||file[Implementacao]:Sources/Experiments/*||file[Implementacao]:Sources/Experiments//*||file[Implementacao]:Sources/FeatureExtractors//*||file[Implementacao]:Sources/GuiUtilities//*||file[Implementacao]:Sources/Segmentation//*||file[Implementacao]:Sources/Tests//*||file[Implementacao]:Sources/Utilities//*||file[Implementacao]:Sources/*" />
-    <order />
   </component>
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
@@ -295,6 +292,8 @@
       <autoscrollToSource />
       <autoscrollFromSource ProjectPane="false" />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -387,7 +386,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FeatureExtractors" />
+              <option name="myItemId" value="Utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FeaturesComplexNetwork" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,6 +468,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Implementacao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PhD-Thesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ComplexNetwork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Cidr.FilesView">
@@ -529,7 +554,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork" />
-    <property name="SearchEverywhereHistoryKey" value="Construct&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;over&#9;ACTION&#9;OverrideMethods&#10;imple&#9;ACTION&#9;null&#10;Graph&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/GraphUtilities.cpp&#10;trace&#9;ACTION&#9;Unscramble&#10;overr&#9;ACTION&#9;OverrideMethods&#10;mcl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/MCLClustering.cpp&#10;construct&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;overri&#9;ACTION&#9;OverrideMethods&#10;constru&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;override&#9;ACTION&#9;OverrideMethods&#10;constructor&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;commi&#9;ACTION&#9;CheckinProject&#10;LabelGu&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp&#10;comm&#9;ACTION&#9;CheckinProject&#10;SUNR&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp&#10;commit&#9;ACTION&#9;CheckinProject&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;LabelG&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp&#10;Comple&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/ComplexNetwork/ComplexNetwork.hpp&#10;push&#9;ACTION&#9;Vcs.Push&#10;AddCi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;gmainw&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp&#10;gmainwin&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp&#10;Voronoi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;regionma&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;qimage&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/QImageCV.hpp&#10;class&#9;ACTION&#9;CIDR.Lang.Cpp.NewClass&#10;outside&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp&#10;Shape&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/ShapeSignatureFeature.h&#10;new&#9;ACTION&#9;NewGroup&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;implement&#9;ACTION&#9;ImplementMethods&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;segme&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.hpp&#10;install&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;main&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/main.cpp&#10;circl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;Entrop&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp&#10;Segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;AreaFea&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;installat&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;setter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetterAndSetter&#10;Regionm&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.cpp&#10;areaF&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;Impleme&#9;ACTION&#9;ImplementMethods" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/PhysicalMeasures/main.cpp&#10;Construct&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;over&#9;ACTION&#9;OverrideMethods&#10;imple&#9;ACTION&#9;null&#10;Graph&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/GraphUtilities.cpp&#10;trace&#9;ACTION&#9;Unscramble&#10;overr&#9;ACTION&#9;OverrideMethods&#10;mcl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/MCLClustering.cpp&#10;construct&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;overri&#9;ACTION&#9;OverrideMethods&#10;constru&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;override&#9;ACTION&#9;OverrideMethods&#10;constructor&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateConstructor&#10;commi&#9;ACTION&#9;CheckinProject&#10;LabelGu&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.hpp&#10;comm&#9;ACTION&#9;CheckinProject&#10;SUNR&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/SunRandomFolderGenerator/SUNRandomFolderGenerator.hpp&#10;commit&#9;ACTION&#9;CheckinProject&#10;utils&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Utilities/Utils.hpp&#10;LabelG&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelGuesser/LabelGuesserExperiment.cpp&#10;Comple&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/ComplexNetwork/ComplexNetwork.hpp&#10;push&#9;ACTION&#9;Vcs.Push&#10;AddCi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;gmainw&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.cpp&#10;gmainwin&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/LabelsComplexNetworks/gMainWindow.hpp&#10;Voronoi&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/VoronoiRandomSegmenter.cpp&#10;segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;regionma&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;qimage&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/QImageCV.hpp&#10;class&#9;ACTION&#9;CIDR.Lang.Cpp.NewClass&#10;outside&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTest/OutsideSegmentation.cpp&#10;Shape&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/ShapeSignatureFeature.h&#10;new&#9;ACTION&#9;NewGroup&#10;getter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetter&#10;implement&#9;ACTION&#9;ImplementMethods&#10;implemen&#9;ACTION&#9;ImplementMethods&#10;segme&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.hpp&#10;install&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;circl&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Experiments/OutsideSegmentationEvaluatorTestAddingCircle/AddCircleSegmentation.cpp&#10;Entrop&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/EntropyXorSegmentationEvaluator.cpp&#10;Segmented&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/Segmentation/SegmentedImage.cpp&#10;AreaFea&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;installat&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/installation.sh&#10;setter&#9;ACTION&#9;CIDR.Lang.Cpp.GenerateGetterAndSetter&#10;Regionm&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.cpp&#10;areaF&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/AreaFeatureFactory.cpp&#10;setupp&#9;RUN_CONFIGURATION&#9;SetupPadrao&#10;regionmas&#9;FILE&#9;file:///Users/wachs/Dropbox/Tese-Guilherme/Implementacoes/Doutorado/cpp/PhD-Thesis/Sources/FeatureExtractors/RegionMask.h&#10;rena&#9;ACTION&#9;RenameElement&#10;Impleme&#9;ACTION&#9;ImplementMethods" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="full.screen.before.presentation.mode" value="true" />
@@ -556,6 +581,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="com.intellij.ide.scratch.NewScratchFileAction" value="ObjectiveC" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -585,8 +611,15 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="ComplexNetwork" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PhDThesis" TARGET_NAME="AreaFeatureExtractionTest" CONFIG_NAME="Debug">
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -607,9 +640,9 @@
     </configuration>
     <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
       <pass-parent-env-vars value="true" />
+      <envs />
       <force value="false" />
       <verbose value="false" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -618,6 +651,12 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
       <envs />
       <method />
     </configuration>
@@ -950,12 +989,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00022" summary="ConfigCreator for ini files">
-      <created>1439224528880</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1439224528880</updated>
-    </task>
     <task id="LOCAL-00023" summary="ConfigCreator for ini files">
       <created>1439226005464</created>
       <option name="number" value="00023" />
@@ -1244,7 +1277,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445861098046</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Added ConfigParser to PhusicalMeasures&#10;">
+      <created>1445863487131</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1445863487132</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1256,26 +1295,26 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2896406" sideWeight="0.554" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.48343903" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39759037" sideWeight="0.23326287" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34457833" sideWeight="0.37350246" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28674698" sideWeight="0.6969697" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5048193" sideWeight="0.47357294" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.4587738" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39759037" sideWeight="0.76673716" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2896406" sideWeight="0.446" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.54897815" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39759037" sideWeight="0.44679353" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.41226214" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.48343903" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39759037" sideWeight="0.22903453" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34457833" sideWeight="0.37350246" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28674698" sideWeight="0.6969697" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5048193" sideWeight="0.47357294" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.4587738" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39759037" sideWeight="0.77096546" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.538" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.41226214" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2896406" sideWeight="0.462" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.54897815" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39759037" sideWeight="0.44679353" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1329,13 +1368,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/ComplexNetworksConstructor/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1424,7 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2112403">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1432,7 +1463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3488372">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,7 +1470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1744186">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,9 +1477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40697673">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#50#68#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,7 +1498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04661017">
           <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,25 +1505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="372" column="0" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#147#165#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3962264">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1506,25 +1512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="115" selection-start-line="50" selection-start-column="115" selection-end-line="50" selection-end-column="115" />
-          <folding>
-            <element signature="e#50#67#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37790698">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6511628">
-          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1532,7 +1519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1540,7 +1526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,7 +1533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1556,9 +1540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#134#204#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,7 +1547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,7 +1554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1582,15 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39618644">
           <caret line="2598" column="0" selection-start-line="2598" selection-start-column="0" selection-end-line="2598" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include/float.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33262712">
-          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,7 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2075472">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,17 +1582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5943396">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#122#192#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1632,7 +1589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28301886">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1640,7 +1596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4245283">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,7 +1603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3962264">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,7 +1610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1509434">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,9 +1617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2264151">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#122#137#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1674,7 +1624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.254717">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1682,14 +1631,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3773585">
           <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.0/include/float.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/ConfigParser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34150943">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#117#146#0" expanded="true" />
           </folding>
@@ -1698,8 +1654,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Utilities/ConfigParser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33962265">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/ComplexNetwork/ComplexNetwork.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5084746">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/ClusteringCoefficientTask.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="23" selection-start-line="210" selection-start-column="23" selection-end-line="210" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#122#192#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1707,17 +1721,10 @@
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
           <folding>
-            <element signature="e#138#208#0" expanded="true" />
+            <marker date="1446126001000" expanded="true" signature="1531:1886" placeholder="{...}" />
+            <marker date="1446126001000" expanded="true" signature="1920:2834" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1725,19 +1732,17 @@
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="e#50#68#0" expanded="true" />
-          </folding>
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5084746">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.77754235">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#50#68#0" expanded="true" />
+            <element signature="e#138#208#0" expanded="true" />
           </folding>
         </state>
       </provider>

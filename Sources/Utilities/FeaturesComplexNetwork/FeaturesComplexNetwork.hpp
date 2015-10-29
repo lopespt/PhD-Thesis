@@ -97,8 +97,17 @@ public:
 };
 
 namespace lemon {
-    uint qHash(const lemon::ListDigraph::Arc &a);
-    uint qHash(const lemon::ListDigraph::Node &a);
+    //uint qHash(const lemon::ListDigraph::Arc &a);
+    //uint qHash(const lemon::ListDigraph::Node &a);
+    inline uint qHash(const ListDigraph::Arc &a) noexcept{
+        uint ret = (uint) ListDigraph::id(a);
+        return ret;
+    }
+
+    inline uint qHash(const ListDigraph::Node &a) noexcept {
+        uint ret = (uint) ListDigraph::id(a);
+        return ret;
+    }
 }
 #endif // FEATURESCOMPLEXNETWORK_HPP
 

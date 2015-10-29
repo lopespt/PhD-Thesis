@@ -10,6 +10,8 @@
 #include <qthread.h>
 #include <qrunnable.h>
 #include "DistanceDistribution.hpp"
+#include <float.h>
+#define INFINITE FLT_MAX
 
 class DistanceTask : public QRunnable {
 private:

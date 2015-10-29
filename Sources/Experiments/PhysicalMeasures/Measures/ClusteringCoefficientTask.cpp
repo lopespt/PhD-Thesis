@@ -17,8 +17,8 @@ QList<ClusteringCoefficientTask::NodeCC> ClusteringCoefficientTask::getResults()
 }
 
 void ClusteringCoefficientTask::run() {
-    int i=0;
-    int size = nodes.size();
+//    int i=0;
+  //  int size = nodes.size();
     for(const auto &node: nodes){
         results.append(NodeCC{ node, computeCC(node) });
         //printf("%5d | %5d (%3d)\n",i++,size,(int)(i*1./size*100));

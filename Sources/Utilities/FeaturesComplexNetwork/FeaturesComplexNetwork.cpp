@@ -6,15 +6,6 @@
 
 using namespace std;
 
-uint lemon::qHash(const ListDigraph::Arc &a){
-    uint ret = (uint) ListDigraph::id(a);
-    return ret;
-}
-
-uint lemon::qHash(const ListDigraph::Node &a){
-    uint ret = (uint) ListDigraph::id(a);
-    return ret;
-}
 
 class NodeReader {
 private:
@@ -217,11 +208,9 @@ Link FeaturesComplexNetwork::getLinkArcValue(const ListDigraph::Node &from,
 bool FeaturesComplexNetwork::arcExists(const ListDigraph::Node &from, const ListDigraph::Node &to,
                                        Link::LinkType type) const{
     if(type == Link::LinkType::OtherLabel) {
-        auto it = otherLabelLinks.find(ArcKey(from, to));
-        return   it != otherLabelLinks.end();
+        return otherLabelLinks.contains(ArcKey(from, to));
     }else if(type == Link::LinkType::SameLabel){
-        auto it = sameLabelLinks.find(ArcKey(from, to));
-        return  it != sameLabelLinks.end() ;
+        return sameLabelLinks.contains(ArcKey(from, to));
     }
     return false;
 }

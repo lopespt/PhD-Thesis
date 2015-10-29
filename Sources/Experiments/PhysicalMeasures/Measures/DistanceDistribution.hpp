@@ -8,18 +8,22 @@
 
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <qmap.h>
-#define INFINITE FLT_MAX
+#include <lemon/core.h>
 
 class DistanceDistribution {
 public:
     typedef FeaturesComplexNetwork::Node Node;
     typedef QPair<Node,Node> Key;
     QHash<Key, float> dist;
+
+    //lemon::ListDigraph graph;
+
 private:
     const FeaturesComplexNetwork &cn;
+    int maxThreads;
 
 public:
-    DistanceDistribution(const FeaturesComplexNetwork &cn);
+    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30);
     void run();
     QHash<DistanceDistribution::Key, float> getDistances() const;
 
