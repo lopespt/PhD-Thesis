@@ -79,20 +79,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/Dijkstra.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/Dijkstra.hpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/fiboheap.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/Utilities/fiboqueue.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Implementacao.iml" afterPath="$PROJECT_DIR$/.idea/Implementacao.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" afterPath="$PROJECT_DIR$/Sources/Utilities/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" afterPath="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,24 +101,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.63503647">
+              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#1944#1968#0" expanded="true" />
-                <element signature="e#2379#2403#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistanceDistribution.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DistanceDistribution.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54744524">
+            <state vertical-scroll-proportion="0.0">
               <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <element signature="e#50#74#0" expanded="true" />
@@ -252,10 +239,10 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
       </list>
     </option>
   </component>
@@ -950,12 +937,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00024" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <created>1439226070839</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1439226070839</updated>
-    </task>
     <task id="LOCAL-00025" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
       <created>1439226389875</created>
       <option name="number" value="00025" />
@@ -1244,7 +1225,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446140953435</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Distance with Dijkstra and Threads">
+      <created>1446319145975</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1446319145977</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1291,7 +1278,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="EntropyXorSegmentationEvaluator.cpp &#10;Grade divided by hints size and pondered ( by not found nodes. (normalization)" />
     <MESSAGE value="Installation. Install Virtual Framebuffer" />
     <MESSAGE value="Removed FIND_PACKAGE(Qt5WebKitWidgets REQUIRED" />
     <MESSAGE value="Bug Building Process" />
@@ -1316,7 +1302,8 @@
     <MESSAGE value="stdio included in TimeEstimator&#10;" />
     <MESSAGE value="Added ConfigParser to PhusicalMeasures&#10;" />
     <MESSAGE value="SqlTypes include removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="SqlTypes include removed" />
+    <MESSAGE value="Distance with Dijkstra and Threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Distance with Dijkstra and Threads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1654,18 +1641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#1944#1968#0" expanded="true" />
-            <element signature="e#2379#2403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1694,11 +1669,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54744524">
+        <state vertical-scroll-proportion="0.0">
           <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="e#50#74#0" expanded="true" />
             <element signature="e#239#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63503647">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1944#1968#0" expanded="true" />
           </folding>
         </state>
       </provider>

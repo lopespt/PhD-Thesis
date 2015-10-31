@@ -70,12 +70,12 @@ public:
     }
 };
 
-template <typename K, typename V>
+/*template <typename K, typename V>
 struct std::hash<Keyer<K,V> >{
     size_t operator()(const Keyer<K,V>& obj) const{
         return std::hash<K>()(obj.key);
     };
-};
+};*/
 
 
 
