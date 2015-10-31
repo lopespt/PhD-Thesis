@@ -14,18 +14,19 @@ class DistanceDistribution {
 public:
     typedef FeaturesComplexNetwork::Node Node;
     typedef QPair<Node,Node> Key;
-    QHash<Key, float> dist;
+    QHash<Key, double> dist;
 
     //lemon::ListDigraph graph;
 
 private:
     const FeaturesComplexNetwork &cn;
     int maxThreads;
-
+    void getDistMap(FeaturesComplexNetwork::ArcMap<double> &dmap);
 public:
     DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30);
     void run();
-    QHash<DistanceDistribution::Key, float> getDistances() const;
+    QHash<DistanceDistribution::Key, double> getDistances() const;
+
 
 };
 

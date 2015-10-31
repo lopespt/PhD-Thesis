@@ -162,6 +162,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/DatabaseReader/SunDatabaseReader.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Degrees.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Dijkstra.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/Dijkstra.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/DynLinkLookUp.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" isTestSource="false" />
@@ -170,6 +172,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/Link.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/FeaturesComplexNetwork/SameObjectLink.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/fiboheap.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/fiboqueue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/GraphUtilities.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Utilities/IterativeRandomWalk.cpp" isTestSource="false" />

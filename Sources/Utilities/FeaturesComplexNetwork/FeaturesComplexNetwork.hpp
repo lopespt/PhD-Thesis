@@ -57,6 +57,8 @@ public:
     void load(const char *filename, const QList<const FeatureFactoryAbstract *> &l);
 
 
+    const AMap<Link> & getArcs() const;
+
     float getOutputWeightedDegree(Node) const;
 
     float getInputWeightedDegree(Node) const;

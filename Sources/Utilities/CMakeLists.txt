@@ -21,6 +21,9 @@ FILE(GLOB_RECURSE Source_Files
     cvmatandqimage.cpp
     ConfigParser.cpp
     TimeEstimator.cpp
+    Dijkstra.cpp
+    fiboheap.h
+    fiboqueue.h
     *.cpp
 )
 

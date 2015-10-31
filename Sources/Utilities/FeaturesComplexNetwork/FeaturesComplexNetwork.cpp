@@ -235,3 +235,6 @@ FeatureAbstractPtr FeaturesComplexNetwork::getNode(const ListDigraph::Node &node
     return nodes[node];
 }
 
+const FeaturesComplexNetwork::AMap<Link> &FeaturesComplexNetwork::getArcs() const {
+    return this->arcs;
+}

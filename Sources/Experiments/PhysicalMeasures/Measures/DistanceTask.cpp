@@ -3,22 +3,20 @@
 //
 
 #include <float.h>
+#include <lemon/dijkstra.h>
 #include "DistanceTask.hpp"
 
-DistanceTask::DistanceTask(const FeaturesComplexNetwork &cn, QHash<DistanceDistribution::Key, float> &dist,
-                           const FeaturesComplexNetwork::NodeIt &it) : cn(cn), dist(dist), it(it) {
+
+DistanceTask::DistanceTask(const FeaturesComplexNetwork &cn, const FeaturesComplexNetwork::ArcMap<double> &dists, const QList<FeaturesComplexNetwork::Node> nodes):cn(cn), dij(cn,dists), nodes(nodes) {
     setAutoDelete(true);
 }
 
 void DistanceTask::run() {
-    for(FeaturesComplexNetwork::NodeIt i(cn); i != INVALID; ++i) {
-        for (FeaturesComplexNetwork::NodeIt j(cn); j != INVALID; ++j) {
-            if(dist.contains(Key(i,it)) && dist.contains(Key(it,j))) {
-                if(!dist.contains(Key(i,j)))
-                    dist[Key(i,j)]=INFINITE;
-                dist[Key(i, j)] = std::min(dist[Key(i, j)], dist[Key(i, it)] + dist[Key(it, j)]);
-            }
+    for(auto &node: nodes) {
+        dij.run(node);
+        for(FeaturesComplexNetwork::NodeIt d(cn); d != INVALID; ++d){
+            if(dij.dist(d)!=INFINITE)
+                dist[{node,d}]=dij.dist(d);
         }
     }
 }
-

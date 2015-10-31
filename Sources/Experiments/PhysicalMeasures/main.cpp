@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ComplexNetwork/ComplexNetwork.hpp>
-
+#include <set>
 #include <Utilities/tictac.h>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
 #include <Utilities/MCLClustering.hpp>
@@ -15,6 +15,7 @@
 #include <Experiments/PhysicalMeasures/Measures/WeightDistribution.hpp>
 #include <Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp>
 #include <Utilities/ConfigParser.h>
+#include <Utilities/fiboqueue.h>
 
 using namespace tictac;
 using namespace std;
@@ -37,7 +38,7 @@ void gravaDist(const FeaturesComplexNetwork &cn, const WeightDistribution::ArcMa
 }
 
 
-void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key,float> &dist, QString filename ) {
+void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key,double> &dist, QString filename ) {
     FILE *f = fopen(filename.toStdString().c_str(), "w");
     for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
         for (FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2) {
@@ -46,6 +47,37 @@ void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistr
     }
     fclose(f);
 }
+
+template<typename K, typename V>
+class Keyer{
+public:
+    K key;
+    V value;
+    bool operator<(const Keyer& b) const {
+        return this->key < b.key;
+    }
+
+    bool operator>(const Keyer& b) const {
+        return this->key > b.key;
+    }
+
+    bool operator==(const Keyer& b)const {
+        return this->key == b.key;
+    }
+
+    Keyer operator-(const Keyer& b) const{
+        return  {this->key, this->value-b.value};
+    }
+};
+
+template <typename K, typename V>
+struct std::hash<Keyer<K,V> >{
+    size_t operator()(const Keyer<K,V>& obj) const{
+        return std::hash<K>()(obj.key);
+    };
+};
+
+
 
 int main(int argc, char **argv) {
 
@@ -78,9 +110,10 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();
-    gravaDistancias(cn, dist.getDistances(), "/tmp/Redes/distancias.txt");
+    gravaDistancias(cn, dist.getDistances(), "distancias2.txt");
 
     printf("Fim\n");
+
 
     return 0;
 }

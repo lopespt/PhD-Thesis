@@ -15,12 +15,15 @@
 
 class DistanceTask : public QRunnable {
 private:
-    typedef DistanceDistribution::Key Key;
     const FeaturesComplexNetwork &cn;
-    QHash<DistanceDistribution::Key, float>& dist ;
-    const FeaturesComplexNetwork::NodeIt &it;
+    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double> > dij;
+    const QList<FeaturesComplexNetwork::Node> nodes;
+
+    typedef FeaturesComplexNetwork::Node Node;
+    typedef QPair<Node,Node> Key;
+    QHash<Key, double> dist;
 public:
-    DistanceTask(const FeaturesComplexNetwork& cn, QHash<DistanceDistribution::Key, float>& dist ,const FeaturesComplexNetwork::NodeIt &it);
+    DistanceTask(const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double> &dists, const QList<FeaturesComplexNetwork::Node> nodes );
     virtual void run() override;
 };
 
