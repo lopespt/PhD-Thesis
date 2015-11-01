@@ -28,7 +28,7 @@ void DistanceTask::run() {
                     dist->dist[{node, d}] = dijDist[d];
             }
         }catch (exception e) {
-            puts("excessao");
+            printf("excessao: %s\n", e.what());
         }
         if( n % 20 == 0 ) {
             dist->te.print();

@@ -8,17 +8,40 @@
 #include <FeatureExtractors/LabelFeatureFactory.hpp>
 #include <Utilities/ComplexNetworkConstructor/ComplexNetworkConstructorP.hpp>
 #include <FeatureExtractors/HsvFeatureFactory.hpp>
+#include <Utilities/SupervisedImage.hpp>
+#include <qset.h>
 
 using namespace cv;
 using namespace std;
 
 int main(int argc, char *argv[]) {
+
+    QSet<QString> labels;
+
+    SunDatabaseReader reader("/Users/wachs/SUN/");
+    int n=0;
+    while(reader.hasNext()){
+        auto img = reader.readNext();
+        if(!img.hasError()) {
+            auto regions = img.getRegions();
+            for (auto &r : regions) {
+                labels.insert(r.getLabel());
+            }
+        }
+        n++;
+        printf("%d\n", n);
+    }
+
+    printf("total: %d\n", labels.size());
+    return 0;
+}
+
+int main2(int argc, char *argv[]) {
     {
         QList<const FeatureFactoryAbstract *> factories;
         LabelFeatureFactory lblFactory;
         factories.append(&lblFactory);
         {
-
         FeaturesComplexNetwork cn1;
         SunDatabaseReader reader("/Users/wachs/SUN/");
         ComplexNetworkConstructorP constr(cn1, reader, factories, 8);
