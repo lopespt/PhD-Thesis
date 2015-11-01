@@ -38,13 +38,14 @@ void gravaDist(const FeaturesComplexNetwork &cn, const WeightDistribution::ArcMa
 }
 
 
-void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key,double> &dist, QString filename ) {
+void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key, double> dist, QString filename ) {
     FILE *f = fopen(filename.toStdString().c_str(), "w");
     for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
         for (FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2) {
-            fprintf(f, "%-5d\t%-5d\t%-20.5f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
+            fprintf(f, "%-5d\t%-5d\t%-20.4f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
         }
     }
+
     fclose(f);
 }
 
@@ -88,7 +89,6 @@ int main(int argc, char **argv) {
     puts("Carregando");
     FeaturesComplexNetwork cn;
     cn.load(config.getCnInput().toStdString().c_str(), config.getFactories() );
-
     puts("Pronto!");
 
     //float result = ClusteringCoefficient::Compute(cn, 5, 0.5);
@@ -110,10 +110,8 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();
-    gravaDistancias(cn, dist.getDistances(), "distancias2.txt");
-
+    gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");
-
 
     return 0;
 }
