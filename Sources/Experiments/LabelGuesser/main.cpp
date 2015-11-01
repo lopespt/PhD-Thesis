@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
     QString guesser_output = config.getGuesserOutput();
     int walk_length = config.getPreferedValue("label_guesser_experiment/walk_length", "", "1").toInt();
     LabelGuesserExperiment::method method;
-    bool useLabels = true;
+    bool useLabels = false;
     int numThreads = config.getNumThreads();
     printf("%d\n", config.getFactories().size());
 
