@@ -110,7 +110,7 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();
-    gravaDistancias(cn, dist.getDist(), config.getCnOutput());
+    gravaDistancias(cn, dist.getDist(), "distancias.txt");
     printf("Fim\n");
 
     return 0;
