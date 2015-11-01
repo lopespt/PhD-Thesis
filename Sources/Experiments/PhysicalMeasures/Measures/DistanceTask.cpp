@@ -15,7 +15,6 @@ DistanceTask::DistanceTask(DistanceDistribution* dist, const FeaturesComplexNetw
 void DistanceTask::run() {
     int n=0;
     for(auto &node: nodes) {
-        try {
             FeaturesComplexNetwork::NodeMap<double> dijDist(cn);
             dijkstra(cn, lenghts).distMap(dijDist).run(node);
             /*Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn, lenghts);
@@ -27,9 +26,6 @@ void DistanceTask::run() {
                 if (dijDist[d] != INFINITE)
                     dist->dist[{node, d}] = dijDist[d];
             }
-        }catch (exception e) {
-            printf("excessao: %s\n", e.what());
-        }
         if( n % 20 == 0 ) {
             dist->te.print();
             fflush(stdout);
