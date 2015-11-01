@@ -18,10 +18,12 @@ void DistanceTask::run() {
         FeaturesComplexNetwork::NodeMap<double> dijDist(cn);
         dijkstra(cn, dists).distMap(dijDist).run(node);
         dist->mut.lock();
+        puts("Terminei Dijkstra... Setando Nos");
         for(FeaturesComplexNetwork::NodeIt d(cn); d != INVALID; ++d){
             if(dijDist[d]!=INFINITE)
                 dist->dist[{node,d}]=dijDist[d];
         }
+        puts("Terminei Setar Nos");
         if( n % 20 == 0 )
             dist->te.print();
         n++;
