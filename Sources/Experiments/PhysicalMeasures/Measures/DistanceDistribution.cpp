@@ -27,6 +27,7 @@ void DistanceDistribution::run() {
     QVector<QList<Node> > threadsNodes(maxThreads);
     threadsNodes.append(QList<Node>());
     int threadNum=0;
+    puts("Criando lista de nos");
     for(FeaturesComplexNetwork::NodeIt k(cn); k != INVALID; ++k) {
         threadsNodes[threadNum].append(k);
         threadNum++;
@@ -34,6 +35,8 @@ void DistanceDistribution::run() {
             threadNum=0;
         }
     }
+    puts("Termino lista de nos");
+    puts("Iniciando Threads");
     for(auto &threadNodesItem : threadsNodes ){
         pool.start(new DistanceTask(this,cn,dists, threadNodesItem));
 

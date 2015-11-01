@@ -78,8 +78,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="DistanceDistribution finished">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
     </list>
     <ignored path="Implementacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,21 +109,19 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#1945#1969#0" expanded="true" />
-                <marker date="1446346771000" expanded="true" signature="1579:1935" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistanceDistribution.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DistanceDistribution.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.30656934">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="e#50#74#0" expanded="true" />
-                <marker date="1446345531000" expanded="true" signature="491:1535" placeholder="{...}" />
-                <marker date="1446345531000" expanded="true" signature="1984:2063" placeholder="{...}" />
+                <element signature="e#239#274#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistanceDistribution.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DistanceDistribution.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.729927">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -240,10 +239,10 @@
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp" />
         <option value="$PROJECT_DIR$/Sources/Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.cpp" />
-        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
         <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp" />
+        <option value="$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp" />
       </list>
     </option>
   </component>
@@ -938,18 +937,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00028" summary="ConfigCreator added sun database_path&#10;&#10;&#10;">
-      <created>1439228372097</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1439228372097</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Parallelism added to ComplexNetworkConstructorP">
-      <created>1439435069020</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1439435069020</updated>
-    </task>
     <task id="LOCAL-00030" summary="Parallelism added to ComplexNetworkConstructorP">
       <created>1439435576297</created>
       <option name="number" value="00030" />
@@ -1232,7 +1219,19 @@
       <option name="project" value="LOCAL" />
       <updated>1446347030107</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="DistanceDistribution finished">
+      <created>1446347111324</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1446347111324</updated>
+    </task>
+    <task id="LOCAL-00078" summary="DistanceDistribution finished">
+      <created>1446347843434</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1446347843434</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1246,14 +1245,14 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1987315" sideWeight="0.49202734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.48343903" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47108433" sideWeight="0.42776603" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47108433" sideWeight="0.42776603" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.37138832" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4918957" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39638555" sideWeight="0.7850599" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5048077" sideWeight="0.47075406" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40722892" sideWeight="0.38336858" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47108433" sideWeight="0.572234" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47108433" sideWeight="0.572234" order="7" side_tool="true" content_ui="combo" x="10" y="313" width="1419" height="273" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1987315" sideWeight="0.50797266" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.52360815" order="3" side_tool="false" content_ui="tabs" x="427" y="396" width="1440" height="812" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1664,6 +1663,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1671,28 +1678,18 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#1945#1969#0" expanded="true" />
-            <marker date="1446346771000" expanded="true" signature="1579:1935" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.30656934">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding>
             <element signature="e#50#74#0" expanded="true" />
-            <marker date="1446345531000" expanded="true" signature="491:1535" placeholder="{...}" />
-            <marker date="1446345531000" expanded="true" signature="1984:2063" placeholder="{...}" />
+            <element signature="e#239#274#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceDistribution.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.729927">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
