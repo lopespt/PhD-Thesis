@@ -9,14 +9,19 @@
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <qmap.h>
 #include <lemon/core.h>
+#include "DistanceTask.hpp"
+#include <QVector>
+#include <Utilities/TimeEstimator.hpp>
 
+class DistanceTask;
 class DistanceDistribution {
 public:
     typedef FeaturesComplexNetwork::Node Node;
     typedef QPair<Node,Node> Key;
     QHash<Key, double> dist;
-
-    //lemon::ListDigraph graph;
+    TimeEstimator te;
+    QVector<DistanceTask*> threads;
+    QMutex mut;
 
 private:
     const FeaturesComplexNetwork &cn;
@@ -25,8 +30,8 @@ private:
 public:
     DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30);
     void run();
-    QHash<DistanceDistribution::Key, double> getDistances() const;
-
+    const QHash<Key, double> getDist() const;
+    ~DistanceDistribution();
 
 };
 

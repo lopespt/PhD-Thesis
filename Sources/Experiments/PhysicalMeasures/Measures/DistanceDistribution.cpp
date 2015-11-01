@@ -12,42 +12,47 @@
 #include "DistanceTask.hpp"
 
 
-DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads) : cn(cn), maxThreads(maxThreads) {
-
+DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
 }
 
 void DistanceDistribution::run() {
-    int n=0;
     QThreadPool pool;
     pool.setMaxThreadCount(maxThreads);
-    TimeEstimator te(cn.getNumNodes());
     FILE *fo = fopen("time.txt","w");
 
     FeaturesComplexNetwork::ArcMap<double> dists(cn);
     getDistMap(dists);
+    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,dists);
 
-    QVector<QList<Node> > threadsNodes;
+    QVector<QList<Node> > threadsNodes(maxThreads);
     threadsNodes.append(QList<Node>());
-    for(FeaturesComplexNetwork::NodeIt k(cn); k != INVALID; ++k){
-        threadsNodes.last().append(k);
-
-        if(threadsNodes.last().size() >= 20){
-            pool.start(new DistanceTask(cn,dists, threadsNodes.last()));
-            threadsNodes.push_back(QList<Node>());
+    int threadNum=0;
+    for(FeaturesComplexNetwork::NodeIt k(cn); k != INVALID; ++k) {
+        threadsNodes[threadNum].append(k);
+        threadNum++;
+        if(threadNum % maxThreads == 0) {
+            threadNum=0;
         }
-        if(pool.activeThreadCount() >= maxThreads){
-            pool.waitForDone();
-        }
-        te.tick();
-        te.print();
     }
-    pool.waitForDone();
+    for(auto &threadNodesItem : threadsNodes ){
+        pool.start(new DistanceTask(this,cn,dists, threadNodesItem));
+
+        /*dij.run(k);
+        for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
+            dist[{k,it}]=dij.dist(it);
+        }
+           */
+    }
+    /*pool.waitForDone();
+    for(auto &t : threads){
+        this->dist.unite(t->getDists());
+        delete t;
+    }
+    threads.clear();
+*/
     fclose(fo);
 }
 
-QHash<DistanceDistribution::Key, double> DistanceDistribution::getDistances() const {
-    return this->dist;
-}
 
 void DistanceDistribution::getDistMap(FeaturesComplexNetwork::ArcMap<double> &dmap) {
     GraphUtilities::getWeights(cn, dmap);
@@ -59,4 +64,16 @@ void DistanceDistribution::getDistMap(FeaturesComplexNetwork::ArcMap<double> &dm
         }
     }
 
+}
+
+DistanceDistribution::~DistanceDistribution() {
+    /*for(auto &t: threads){
+        delete t;
+    }*/
+    threads.clear();
+}
+
+
+const QHash<DistanceDistribution::Key, double> DistanceDistribution::getDist() const {
+    return this->dist;
 }

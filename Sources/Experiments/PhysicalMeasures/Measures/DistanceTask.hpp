@@ -9,21 +9,25 @@
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
 #include <qthread.h>
 #include <qrunnable.h>
-#include "DistanceDistribution.hpp"
 #include <float.h>
+#include <lemon/dijkstra.h>
+#include "DistanceDistribution.hpp"
+
 #define INFINITE FLT_MAX
 
+class DistanceDistribution;
 class DistanceTask : public QRunnable {
 private:
+    DistanceDistribution *dist;
     const FeaturesComplexNetwork &cn;
-    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double> > dij;
+    const FeaturesComplexNetwork::ArcMap<double> &dists;
     const QList<FeaturesComplexNetwork::Node> nodes;
 
     typedef FeaturesComplexNetwork::Node Node;
     typedef QPair<Node,Node> Key;
-    QHash<Key, double> dist;
+
 public:
-    DistanceTask(const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double> &dists, const QList<FeaturesComplexNetwork::Node> nodes );
+    DistanceTask(DistanceDistribution *dist,const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double> &dists, const QList<FeaturesComplexNetwork::Node> nodes );
     virtual void run() override;
 };
 
