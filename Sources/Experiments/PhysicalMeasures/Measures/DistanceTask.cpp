@@ -30,8 +30,10 @@ void DistanceTask::run() {
         }catch (exception e) {
             puts("excessao");
         }
-        if( n % 20 == 0 )
+        if( n % 20 == 0 ) {
             dist->te.print();
+            fflush(stdout);
+        }
         n++;
         dist->te.tick();
         dist->mut.unlock();
