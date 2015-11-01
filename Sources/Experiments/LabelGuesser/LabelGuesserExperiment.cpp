@@ -176,29 +176,32 @@ void LabelGuesserExperiment::execTask::run() {
         exp.position++;
         exp.mtx.unlock();
 
+        try {
+            SupervisedImage img = region.readSupervisedImage();
+            if (img.hasError()) {
+                continue;
+            }
+            const QList<FeatureAbstractPtr> &hints = exp.getFeaturesHints(img, region.regionChoosed);
+            QList<QString> guessed = exp.guessByIterativeRandomWalk(walk, hints);
+            QString hidden = img.getRegions()[region.regionChoosed].getLabel();
 
-        SupervisedImage img = region.readSupervisedImage();
-        if(img.hasError()){
-            continue;
+            exp.mtx.lock();
+            printf("%d (%d) ", gp, exp.chooser.getTotal());
+            fprintf(exp.file, "%d", exp.getPosition(guessed, hidden));
+            fprintf(exp.file, "\t\"%s\"\t", hidden.toStdString().c_str());
+            for (int i = 0; i < 10; i++) {
+                fprintf(exp.file, "\"%s\", ", guessed[i].toStdString().c_str());
+            }
+            fprintf(exp.file, "\n");
+
+            printf("%-3d %-20s %-20s\n", exp.getPosition(guessed, hidden), hidden.toStdString().c_str(),
+                   guessed.first().toStdString().c_str());
+            fflush(exp.file);
+            fflush(stdout);
+        }catch(exception e){
+            printf("exception: %s\n", e.what());
+            exp.mtx.unlock();
         }
-        const QList<FeatureAbstractPtr> &hints = exp.getFeaturesHints(img, region.regionChoosed);
-        QList<QString> guessed = exp.guessByIterativeRandomWalk(walk, hints);
-        QString hidden = img.getRegions()[region.regionChoosed].getLabel();
-
-
-        exp.mtx.lock();
-        printf("%d (%d) ", gp, exp.chooser.getTotal());
-        fprintf(exp.file, "%d", exp.getPosition(guessed, hidden));
-        fprintf(exp.file, "\t\"%s\"\t", hidden.toStdString().c_str());
-        for (int i = 0; i < 10; i++) {
-            fprintf(exp.file, "\"%s\", ", guessed[i].toStdString().c_str());
-        }
-        fprintf(exp.file, "\n");
-
-        printf("%-3d %-20s %-20s\n", exp.getPosition(guessed, hidden), hidden.toStdString().c_str(),
-               guessed.first().toStdString().c_str());
-        fflush(exp.file);
-        fflush(stdout);
         exp.mtx.unlock();
     }
 }
