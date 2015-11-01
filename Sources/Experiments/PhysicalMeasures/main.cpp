@@ -45,7 +45,6 @@ void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistr
             fprintf(f, "%-5d\t%-5d\t%-20.4f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
         }
     }
-
     fclose(f);
 }
 
@@ -82,6 +81,7 @@ struct std::hash<Keyer<K,V> >{
 
 int main(int argc, char **argv) {
 
+    puts("v2");
     QCoreApplication app(argc, argv);
     ConfigParser config(app);
 
