@@ -20,9 +20,9 @@ void DistanceDistribution::run() {
     pool.setMaxThreadCount(maxThreads);
     FILE *fo = fopen("time.txt","w");
 
-    FeaturesComplexNetwork::ArcMap<double> dists(cn);
-    getDistMap(dists);
-    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,dists);
+    FeaturesComplexNetwork::ArcMap<double> lenghts(cn);
+    getDistMap(lenghts);
+    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,lenghts);
 
     QVector<QList<Node> > threadsNodes(maxThreads);
     threadsNodes.append(QList<Node>());
@@ -38,7 +38,7 @@ void DistanceDistribution::run() {
     puts("Termino lista de nos");
     puts("Iniciando Threads");
     for(auto &threadNodesItem : threadsNodes ){
-        pool.start(new DistanceTask(this,cn,dists, threadNodesItem));
+        pool.start(new DistanceTask(this,cn,lenghts, threadNodesItem));
 
         /*dij.run(k);
         for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
@@ -46,7 +46,8 @@ void DistanceDistribution::run() {
         }
            */
     }
-    /*pool.waitForDone();
+    pool.waitForDone();
+    /*
     for(auto &t : threads){
         this->dist.unite(t->getDists());
         delete t;

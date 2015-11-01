@@ -20,14 +20,14 @@ class DistanceTask : public QRunnable {
 private:
     DistanceDistribution *dist;
     const FeaturesComplexNetwork &cn;
-    const FeaturesComplexNetwork::ArcMap<double> &dists;
+    const FeaturesComplexNetwork::ArcMap<double> &lenghts;
     const QList<FeaturesComplexNetwork::Node> nodes;
 
     typedef FeaturesComplexNetwork::Node Node;
     typedef QPair<Node,Node> Key;
 
 public:
-    DistanceTask(DistanceDistribution *dist,const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double> &dists, const QList<FeaturesComplexNetwork::Node> nodes );
+    DistanceTask(DistanceDistribution *dist,const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double> &lenghts, const QList<FeaturesComplexNetwork::Node> nodes );
     virtual void run() override;
 };
 

@@ -88,7 +88,7 @@ int main(int argc, char **argv) {
 
     puts("Carregando");
     FeaturesComplexNetwork cn;
-    cn.load(config.getCnInput().toStdString().c_str(), config.getFactories() );
+    cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
     puts("Pronto!");
 
     //float result = ClusteringCoefficient::Compute(cn, 5, 0.5);
@@ -108,9 +108,10 @@ int main(int argc, char **argv) {
     gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
     */
 
+
     DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();
-    gravaDistancias(cn, dist.getDist(), "distancias.txt");
+    gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");
 
     return 0;
