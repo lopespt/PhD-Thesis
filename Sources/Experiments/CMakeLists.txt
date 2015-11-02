@@ -28,4 +28,5 @@ ADD_SUBDIRECTORY(SegmentationEvaluatorTest)
 ADD_SUBDIRECTORY(OutsideSegmentationEvaluatorTest)
 ADD_SUBDIRECTORY(OutsideSegmentationEvaluatorTestAddingCircle)
 ADD_SUBDIRECTORY(MCLClustering)
+ADD_SUBDIRECTORY(RandomGraphGenerator)
 

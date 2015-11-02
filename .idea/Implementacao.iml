@@ -54,6 +54,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/DistanceTask.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/PhysicalMeasures/Measures/WeightDistribution.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/RandomGraphGenerator/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sources/Experiments/SegmentationEvaluatorTest/ConfigFileParser.hpp" isTestSource="false" />
@@ -226,6 +228,9 @@
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Debug/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
     </content>
@@ -297,6 +302,9 @@
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/MinSizeRel/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
@@ -370,6 +378,9 @@
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
     </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp" isTestSource="false" />
+    </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/RelWithDebInfo/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />
     </content>
@@ -441,6 +452,9 @@
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/PhysicalMeasures/PhysicalMeasures_automoc.cpp" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp">
+      <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/RandomGraphGenerator/RandomGraphGenerator_automoc.cpp" isTestSource="false" />
     </content>
     <content url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp">
       <sourceFolder url="file://$USER_HOME$/Library/Caches/CLion12/cmake/generated/2a170017/2a170017/Release/Sources/Experiments/SegmentationEvaluatorTest/SegmentationEvaluatorTest_automoc.cpp" isTestSource="false" />

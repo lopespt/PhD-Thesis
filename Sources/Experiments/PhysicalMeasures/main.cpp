@@ -38,12 +38,10 @@ void gravaDist(const FeaturesComplexNetwork &cn, const WeightDistribution::ArcMa
 }
 
 
-void gravaDistancias(const FeaturesComplexNetwork &cn, const QHash<DistanceDistribution::Key, double> dist, QString filename ) {
+void gravaDistancias(const FeaturesComplexNetwork &cn, const QList<DistanceDistribution::Distancia> dist, QString filename ) {
     FILE *f = fopen(filename.toStdString().c_str(), "w");
-    for (FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it) {
-        for (FeaturesComplexNetwork::NodeIt it2(cn); it2 != INVALID; ++it2) {
-            fprintf(f, "%-5d\t%-5d\t%-20.4f\n", cn.id(it), cn.id(it2), dist[DistanceDistribution::Key(it, it2)]);
-        }
+    for(auto &d : dist){
+            fprintf(f, "%-5d\t%-5d\t%-20.4f\n", cn.id(d.from), cn.id(d.to), d.peso);
     }
     fclose(f);
 }
@@ -80,8 +78,7 @@ struct std::hash<Keyer<K,V> >{
 
 
 int main(int argc, char **argv) {
-
-    puts("v2");
+    puts("v3");
     QCoreApplication app(argc, argv);
     ConfigParser config(app);
 
@@ -107,7 +104,6 @@ int main(int argc, char **argv) {
     gravaDist(cn, dist.getSumOutDegrees(), "sumout.txt");
     gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
     */
-
 
     DistanceDistribution dist(cn, config.getNumThreads());
     dist.run();

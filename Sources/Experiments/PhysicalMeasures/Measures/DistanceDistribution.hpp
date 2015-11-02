@@ -18,8 +18,12 @@ class DistanceTask;
 class DistanceDistribution {
 public:
     typedef FeaturesComplexNetwork::Node Node;
-    typedef QPair<Node,Node> Key;
-    QHash<Key, double> dist;
+    typedef struct{
+        Node from;
+        Node to;
+        double peso;
+    }Distancia;
+    QList<Distancia> dist;
     TimeEstimator te;
     QVector<DistanceTask*> threads;
     QMutex mut;
@@ -31,7 +35,7 @@ private:
 public:
     DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30);
     void run();
-    const QHash<Key, double> getDist() const;
+    const QList<Distancia> getDist() const;
     ~DistanceDistribution();
 
 };

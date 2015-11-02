@@ -22,7 +22,7 @@ void DistanceDistribution::run() {
 
     FeaturesComplexNetwork::ArcMap<double> lenghts(cn);
     getDistMap(lenghts);
-    Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,lenghts);
+    //Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,lenghts);
 
     QVector<QList<Node> > threadsNodes(maxThreads);
     threadsNodes.append(QList<Node>());
@@ -78,6 +78,6 @@ DistanceDistribution::~DistanceDistribution() {
 }
 
 
-const QHash<DistanceDistribution::Key, double> DistanceDistribution::getDist() const {
+const QList<DistanceDistribution::Distancia> DistanceDistribution::getDist() const {
     return this->dist;
 }

@@ -24,7 +24,7 @@ void DistanceTask::run() {
             dist->mut.lock();
             for (FeaturesComplexNetwork::NodeIt d(cn); d != INVALID; ++d) {
                 if (dijDist[d] != INFINITE)
-                    dist->dist[{node, d}] = dijDist[d];
+                    dist->dist.append({node, d, dijDist[d]});
             }
         if( n % 20 == 0 ) {
             dist->te.print();
