@@ -58,6 +58,11 @@ void DistanceTask::run() {
     }
     dist->mut.lock();
     dist->te.print();
+    printf("radiusExpZero: %f\n", dist->radiusExpZero );
+    printf("radius: %f\n", dist->radius );
+    printf("diameter: %f\n", dist->diameter);
+    printf("diameter: %d %d %f\n", cn.id(dist->mostDistantFrom), cn.id(dist->mostDistantTo), dist->diameter);
+    fflush(stdout);
     dist->mut.unlock();
 }
 

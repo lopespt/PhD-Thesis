@@ -100,9 +100,6 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
     dist.run();
-    printf("radiusExpZero: %f\n", dist.radiusExpZero );
-    printf("radius: %f\n", dist.radius );
-    printf("diameter: %d %d %f\n", cn.id(dist.mostDistantFrom), cn.id(dist.mostDistantTo), dist.diameter);
     //gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");
 

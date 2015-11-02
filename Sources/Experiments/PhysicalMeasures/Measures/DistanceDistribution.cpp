@@ -22,7 +22,6 @@ DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int
 void DistanceDistribution::run() {
     QThreadPool pool;
     pool.setMaxThreadCount(maxThreads);
-    FILE *fo = fopen("","w");
 
     FeaturesComplexNetwork::ArcMap<double> lenghts(cn);
     getDistMap(lenghts);
@@ -51,6 +50,11 @@ void DistanceDistribution::run() {
            */
     }
     pool.waitForDone();
+    printf("radiusExpZero: %f\n", radiusExpZero );
+    printf("radius: %f\n", radius );
+    printf("diameter: %f\n", diameter);
+    fflush(stdout);
+    printf("diameter: %d %d %f\n", cn.id(mostDistantFrom), cn.id(mostDistantTo), diameter);
     /*
     for(auto &t : threads){
         this->dist.unite(t->getDists());
@@ -58,7 +62,6 @@ void DistanceDistribution::run() {
     }
     threads.clear();
 */
-    fclose(fo);
 }
 
 
