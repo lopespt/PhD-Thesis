@@ -35,6 +35,7 @@ int main(int argc, char *argv[]) {
     QVector<Node> cnRandomNodes(cn.getNumNodes());
     for( NodeIt it(cn); it != INVALID; ++it ){
         cnRandomNodes[i-1]=cnRandom.addNode(new LabelFeature(QString::number(i).toStdString().c_str()));
+        i++;
     }
 
     for(ArcIt arcs(cn); arcs != INVALID; ++arcs){
