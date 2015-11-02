@@ -24,15 +24,16 @@ void DistanceTask::run() {
             dist->mut.lock();
             for (FeaturesComplexNetwork::NodeIt d(cn); d != INVALID; ++d) {
                 if (dijDist[d] != INFINITE)
-                    dist->dist.append({node, d, dijDist[d]});
+                    fprintf(dist->outfile, "%-5d\t%-5d\t%-20.4f\n", cn.id(node), cn.id(d), dijDist[d]);
+                //dist->dist.append({node, d, dijDist[d]});
             }
-        if( n % 20 == 0 ) {
-            dist->te.print();
-            fflush(stdout);
-        }
-        n++;
-        dist->te.tick();
-        dist->mut.unlock();
+            if( n % 20 == 0 ) {
+                dist->te.print();
+                fflush(stdout);
+            }
+            n++;
+            dist->te.tick();
+            dist->mut.unlock();
     }
     dist->mut.lock();
     dist->te.print();

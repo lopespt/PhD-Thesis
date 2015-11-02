@@ -27,13 +27,13 @@ public:
     TimeEstimator te;
     QVector<DistanceTask*> threads;
     QMutex mut;
-
+    FILE* outfile;
 private:
     const FeaturesComplexNetwork &cn;
     int maxThreads;
     void getDistMap(FeaturesComplexNetwork::ArcMap<double> &dmap);
 public:
-    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30);
+    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30, char* outputFile);
     void run();
     const QList<Distancia> getDist() const;
     ~DistanceDistribution();

@@ -12,13 +12,14 @@
 #include "DistanceTask.hpp"
 
 
-DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
+DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads, char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
+    this->outfile = fopen(outputFile,"w");
 }
 
 void DistanceDistribution::run() {
     QThreadPool pool;
     pool.setMaxThreadCount(maxThreads);
-    FILE *fo = fopen("time.txt","w");
+    FILE *fo = fopen("","w");
 
     FeaturesComplexNetwork::ArcMap<double> lenghts(cn);
     getDistMap(lenghts);
@@ -75,6 +76,7 @@ DistanceDistribution::~DistanceDistribution() {
         delete t;
     }*/
     threads.clear();
+    fclose(this->outfile);
 }
 
 
