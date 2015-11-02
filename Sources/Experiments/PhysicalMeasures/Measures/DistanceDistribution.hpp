@@ -33,7 +33,7 @@ private:
     int maxThreads;
     void getDistMap(FeaturesComplexNetwork::ArcMap<double> &dmap);
 public:
-    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30, char* outputFile);
+    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30, const char* outputFile="distancias.txt");
     void run();
     const QList<Distancia> getDist() const;
     ~DistanceDistribution();

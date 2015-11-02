@@ -105,7 +105,7 @@ int main(int argc, char **argv) {
     gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
     */
 
-    DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput());
+    DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
     dist.run();
     //gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");

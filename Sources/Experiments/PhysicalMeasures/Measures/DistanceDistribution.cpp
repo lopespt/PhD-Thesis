@@ -12,7 +12,7 @@
 #include "DistanceTask.hpp"
 
 
-DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads, char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
+DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads, const char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
     this->outfile = fopen(outputFile,"w");
 }
 
