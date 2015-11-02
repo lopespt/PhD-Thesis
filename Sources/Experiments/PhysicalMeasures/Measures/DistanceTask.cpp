@@ -14,7 +14,9 @@ DistanceTask::DistanceTask(DistanceDistribution* dist, const FeaturesComplexNetw
 
 void DistanceTask::run() {
     int n=0;
+
     for(auto &node: nodes) {
+            double ecc=0;
             FeaturesComplexNetwork::NodeMap<double> dijDist(cn);
             dijkstra(cn, lenghts).distMap(dijDist).run(node);
             /*Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn, lenghts);
@@ -23,10 +25,29 @@ void DistanceTask::run() {
             dij.start();*/
             dist->mut.lock();
             for (FeaturesComplexNetwork::NodeIt d(cn); d != INVALID; ++d) {
-                if (dijDist[d] != INFINITE)
-                    fprintf(dist->outfile, "%-5d\t%-5d\t%-20.4f\n", cn.id(node), cn.id(d), dijDist[d]);
+                auto distancia = dijDist[d];
+                if (distancia != INFINITE && distancia > ecc){
+                    ecc = distancia;
+                }
+
+                //fprintf(dist->outfile, "%-5d\t%-5d\t%-20.4f\n", cn.id(node), cn.id(d), dijDist[d]);
                 //dist->dist.append({node, d, dijDist[d]});
             }
+
+            if(ecc > this->dist->diameter){
+                this->dist->diameter = ecc;
+                this->dist->mostDistantFrom = node;
+                this->dist->mostDistantTo = node;
+            }
+
+            if(ecc < this->dist->radius){
+                this->dist->radius = ecc;
+            }
+
+            if(ecc>0 && ecc < this->dist->radiusExpZero){
+                this->dist->radiusExpZero = ecc;
+            }
+
             if( n % 20 == 0 ) {
                 dist->te.print();
                 fflush(stdout);

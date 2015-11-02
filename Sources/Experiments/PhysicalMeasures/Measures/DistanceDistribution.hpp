@@ -18,16 +18,15 @@ class DistanceTask;
 class DistanceDistribution {
 public:
     typedef FeaturesComplexNetwork::Node Node;
-    typedef struct{
-        Node from;
-        Node to;
-        double peso;
-    }Distancia;
-    QList<Distancia> dist;
     TimeEstimator te;
     QVector<DistanceTask*> threads;
     QMutex mut;
     FILE* outfile;
+    double diameter;
+    double radius;
+    double radiusExpZero;
+    Node mostDistantFrom;
+    Node mostDistantTo;
 private:
     const FeaturesComplexNetwork &cn;
     int maxThreads;
@@ -35,7 +34,6 @@ private:
 public:
     DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30, const char* outputFile="distancias.txt");
     void run();
-    const QList<Distancia> getDist() const;
     ~DistanceDistribution();
 
 };

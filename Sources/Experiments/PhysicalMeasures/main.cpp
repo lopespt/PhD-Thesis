@@ -38,13 +38,6 @@ void gravaDist(const FeaturesComplexNetwork &cn, const WeightDistribution::ArcMa
 }
 
 
-void gravaDistancias(const FeaturesComplexNetwork &cn, const QList<DistanceDistribution::Distancia> dist, QString filename ) {
-    FILE *f = fopen(filename.toStdString().c_str(), "w");
-    for(auto &d : dist){
-            fprintf(f, "%-5d\t%-5d\t%-20.4f\n", cn.id(d.from), cn.id(d.to), d.peso);
-    }
-    fclose(f);
-}
 
 template<typename K, typename V>
 class Keyer{
@@ -78,7 +71,7 @@ struct std::hash<Keyer<K,V> >{
 
 
 int main(int argc, char **argv) {
-    puts("v3");
+    puts("v4");
     QCoreApplication app(argc, argv);
     ConfigParser config(app);
 
@@ -107,6 +100,9 @@ int main(int argc, char **argv) {
 
     DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
     dist.run();
+    printf("radiusExpZero: %f\n", dist.radiusExpZero );
+    printf("radius: %f\n", dist.radius );
+    printf("diameter: %d %d %f\n", cn.id(dist.mostDistantFrom), cn.id(dist.mostDistantTo), dist.diameter);
     //gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");
 

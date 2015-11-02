@@ -14,6 +14,9 @@
 
 DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads, const char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
     this->outfile = fopen(outputFile,"w");
+    this->diameter = 0;
+    this->radius = INFINITE;
+    this->radiusExpZero = INFINITE;
 }
 
 void DistanceDistribution::run() {
@@ -80,6 +83,3 @@ DistanceDistribution::~DistanceDistribution() {
 }
 
 
-const QList<DistanceDistribution::Distancia> DistanceDistribution::getDist() const {
-    return this->dist;
-}
