@@ -28,11 +28,11 @@ public:
     Node mostDistantFrom;
     Node mostDistantTo;
 private:
-    const FeaturesComplexNetwork &cn;
+    FeaturesComplexNetwork &cn;
     int maxThreads;
     void getDistMap(FeaturesComplexNetwork::ArcMap<double> &dmap);
 public:
-    DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads=30, const char* outputFile="distancias.txt");
+    DistanceDistribution(FeaturesComplexNetwork &cn, int maxThreads=30, const char* outputFile="distancias.txt");
     void run();
     ~DistanceDistribution();
 

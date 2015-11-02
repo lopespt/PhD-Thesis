@@ -71,7 +71,7 @@ struct std::hash<Keyer<K,V> >{
 
 
 int main(int argc, char **argv) {
-    puts("v5");
+    puts("v6");
     QCoreApplication app(argc, argv);
     ConfigParser config(app);
 

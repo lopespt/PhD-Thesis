@@ -12,7 +12,7 @@
 #include "DistanceTask.hpp"
 
 
-DistanceDistribution::DistanceDistribution(const FeaturesComplexNetwork &cn, int maxThreads, const char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
+DistanceDistribution::DistanceDistribution(FeaturesComplexNetwork &cn, int maxThreads, const char* outputFile) : te(cn.getNumNodes()), cn(cn), maxThreads(maxThreads) {
     this->outfile = fopen(outputFile,"w");
     this->diameter = 0;
     this->radius = INFINITE;
@@ -72,9 +72,11 @@ void DistanceDistribution::getDistMap(FeaturesComplexNetwork::ArcMap<double> &dm
     GraphUtilities::getWeights(cn, dmap);
     for(FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it){
         if( cn.getLinkArcValue(it).type == Link::LinkType::OtherLabel ){
-            dmap[it] = 1.0/cn.getLinkArcValue(it).getWeight();
+            //dmap[it] = 1.0/cn.getLinkArcValue(it).getWeight();
+            dmap[it] = 1.0;
         }else{
-            dmap[it] = INFINITE;
+            cn.erase(it);
+            //dmap[it] = INFINITE;
         }
     }
 
