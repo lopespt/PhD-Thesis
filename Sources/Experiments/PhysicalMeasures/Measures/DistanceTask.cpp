@@ -14,7 +14,7 @@ DistanceTask::DistanceTask(DistanceDistribution* dist, const FeaturesComplexNetw
 
 void DistanceTask::run() {
     int n=0;
-
+    puts("Iniciando Thread");
     for(auto &node: nodes) {
             double ecc=0;
             FeaturesComplexNetwork::NodeMap<double> dijDist(cn);

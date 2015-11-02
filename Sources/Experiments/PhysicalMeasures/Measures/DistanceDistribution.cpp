@@ -27,15 +27,17 @@ void DistanceDistribution::run() {
     getDistMap(lenghts);
     //Dijkstra<FeaturesComplexNetwork, FeaturesComplexNetwork::ArcMap<double>> dij(cn,lenghts);
 
-    QVector<QList<Node> > threadsNodes(maxThreads);
+    QVector<QList<Node> > threadsNodes;
     threadsNodes.append(QList<Node>());
-    int threadNum=0;
+    int numNodes=0;
     puts("Criando lista de nos");
+
     for(FeaturesComplexNetwork::NodeIt k(cn); k != INVALID; ++k) {
-        threadsNodes[threadNum].append(k);
-        threadNum++;
-        if(threadNum % maxThreads == 0) {
-            threadNum=0;
+        threadsNodes.last().append(k);
+        numNodes++;
+        if(numNodes >= 100) {
+            numNodes=0;
+            threadsNodes.append(QList<Node>());
         }
     }
     puts("Termino lista de nos");
@@ -50,6 +52,7 @@ void DistanceDistribution::run() {
            */
     }
     pool.waitForDone();
+    puts("=====Resultado FINAL===========");
     printf("radiusExpZero: %f\n", radiusExpZero );
     printf("radius: %f\n", radius );
     printf("diameter: %f\n", diameter);
