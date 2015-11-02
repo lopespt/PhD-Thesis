@@ -38,9 +38,11 @@ int main(int argc, char *argv[]) {
     }
 
     for(ArcIt arcs(cn); arcs != INVALID; ++arcs){
-        Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
-        Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
-        cnRandom.addArc(from,to, cn.getLinkArcValue(arcs));
+        if(cn.getLinkArcValue(arcs).type == Link::LinkType::OtherLabel) {
+            Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
+            Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
+            cnRandom.addArc(from, to, cn.getLinkArcValue(arcs));
+        }
     }
 
     puts("Salvando Rede");
