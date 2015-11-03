@@ -20,10 +20,10 @@ void ClusteringCoefficientTask::run() {
     QList<NodeCC> ccs;
     for(const auto &node: nodes){
         ccs.append(NodeCC{ node, computeCC(node) });
-        parent->te.tick();
         //printf("%5d | %5d (%3d)\n",i++,size,(int)(i*1./size*100));
     }
     parent->mut.lock();
+    parent->te.tick(ccs.size());
     parent->ccs.append(ccs);
     parent->te.print();
     parent->mut.unlock();

@@ -9,7 +9,7 @@
 #include "ClusteringCoefficient.hpp"
 #include "ClusteringCoefficientTask.hpp"
 
-ClusteringCoefficient::ClusteringCoefficient(FeaturesComplexNetwork &cn, int threads, float ratio) : cn(cn), threads(threads), ratio(ratio), te(cn.getNumNodes()) {
+ClusteringCoefficient::ClusteringCoefficient(FeaturesComplexNetwork &cn, int threads, float ratio) : cn(cn), threads(threads), ratio(ratio), te((int)(cn.getNumNodes() * ratio)) {
 }
 
 float ClusteringCoefficient::Compute() {

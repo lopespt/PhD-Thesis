@@ -27,12 +27,12 @@ void TimeEstimator::estimate() {
     txxx = (time_t) (cxxx*totalTicks*totalTicks*totalTicks) + start;
 }
 
-void TimeEstimator::tick() {
+void TimeEstimator::tick(int i) {
     if(ticks==0)
         start=time(NULL);
 
     last = time(NULL);
-    ticks++;
+    ticks+=i;
 }
 
 void TimeEstimator::print() {
@@ -74,3 +74,4 @@ time_t TimeEstimator::getElapsedTime() const {
 int TimeEstimator::getTicks() const{
     return ticks;
 }
+

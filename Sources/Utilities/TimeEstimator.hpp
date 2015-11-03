@@ -26,7 +26,7 @@ private:
     static void formatTime(time_t dt, time_t& hour, time_t& min, time_t& sec);
 public:
     TimeEstimator(int totalTicks);
-    void tick();
+    void tick(int i=1);
     void print();
     time_t getx() const;
     time_t getxx() const;
@@ -34,6 +34,7 @@ public:
     time_t getElapsedTime() const;
 
     int getTicks() const;
+
 };
 
 
