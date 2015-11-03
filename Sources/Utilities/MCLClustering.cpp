@@ -66,7 +66,7 @@ float MCLClustering::execute() {
         clusters.append(oneCluster);
     }
 
-    //fprintf(stderr, "%s\n", proc.readAllStandardError().constData());
+    fprintf(stderr, "%s\n", proc.readAllStandardError().constData());
 
     return 0;
 }

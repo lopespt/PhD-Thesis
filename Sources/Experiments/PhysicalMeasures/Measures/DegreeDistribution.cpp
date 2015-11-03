@@ -2,6 +2,7 @@
 // Created by Guilherme Wachs on 25/10/15.
 //
 
+#include <Utilities/TimeEstimator.hpp>
 #include "DegreeDistribution.hpp"
 DegreeDistribution::DegreeDistribution(const FeaturesComplexNetwork &cn) : cn(cn) {
     for(FeaturesComplexNetwork::NodeIt it(cn); it != INVALID; ++it ){
@@ -29,13 +30,19 @@ const DegreeDistribution::NodeMap DegreeDistribution::getSumInDegrees() const {
 }
 
 void DegreeDistribution::run() {
+    TimeEstimator te(cn.getNumArcs());
+    int i=0;
     for(FeaturesComplexNetwork::ArcIt it(cn); it != INVALID; ++it ){
+        te.tick();
         if(!onlyContexts || cn.getLinkArcValue(it).getLinkType()==Link::LinkType::OtherLabel ) {
             outDegrees[cn.source(it)]++;
             inDegrees[cn.target(it)]++;
             SumOutDegrees[cn.source(it)] += cn.getLinkArcValue(it).getWeight();
             SumInDegrees[ cn.target(it)] += cn.getLinkArcValue(it).getWeight();
         }
+        i++;
+        if(i % 1000 == 0)
+            te.print();
     }
 }
 

@@ -81,14 +81,13 @@ int main(int argc, char **argv) {
     cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
     puts("Pronto!");
 
-    ClusteringCoefficient CC(cn, config.getNumThreads(), 0.5);
-    float result = CC.Compute();
-    printf("CC = %f\n", result);
+    //ClusteringCoefficient CC(cn, config.getNumThreads(), 0.5);
+    //float result = CC.Compute();
+    //printf("CC = %f\n", result);
 
     //printf("%f\n", result);
 
-    /*
-    DegreeDistribution dist(cn);
+    /*DegreeDistribution dist(cn);
     dist.run();
     WeightDistribution wdist(cn);
     wdist.run();
@@ -97,12 +96,16 @@ int main(int argc, char **argv) {
     gravaDist(cn, dist.getOutDegrees(), "out.txt");
     gravaDist(cn, dist.getSumInDegrees(), "sumin.txt");
     gravaDist(cn, dist.getSumOutDegrees(), "sumout.txt");
-    gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
-    */
+    gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");*/
 
-    //DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
-    //dist.run();
+    DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
+    dist.run();
     //gravaDistancias(cn, dist.getDist(), config.getCnOutput());
+
+    /*FeaturesComplexNetwork::ArcMap<double> weights(cn);
+    GraphUtilities::getWeights(cn,weights);
+    MCLClustering mod(cn,weights);
+    mod.execute();*/
     printf("Fim\n");
 
     return 0;
