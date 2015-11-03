@@ -49,9 +49,11 @@ int main(int argc, char *argv[]) {
     double media = total/numArestas;
 
     for(ArcIt arcs(cn); arcs != INVALID; ++arcs) {
-        Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
-        Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
-        cnRandom.addArc(from, to,  Link(1,media, Link::LinkType::OtherLabel));
+        if(cn.getLinkArcValue(arcs).type == Link::LinkType::OtherLabel) {
+            Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
+            Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
+            cnRandom.addArc(from, to, Link(1, media, Link::LinkType::OtherLabel));
+        }
     }
 
     puts("Salvando Rede");
