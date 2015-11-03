@@ -38,12 +38,20 @@ int main(int argc, char *argv[]) {
         i++;
     }
 
-    for(ArcIt arcs(cn); arcs != INVALID; ++arcs){
+    double total=0;
+    unsigned int numArestas;
+    for(ArcIt arcs(cn); arcs != INVALID; ++arcs) {
         if(cn.getLinkArcValue(arcs).type == Link::LinkType::OtherLabel) {
-            Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
-            Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
-            cnRandom.addArc(from, to, cn.getLinkArcValue(arcs));
+            total += cn.getLinkArcValue(arcs).getWeight();
+            numArestas++;
         }
+    }
+    double media = total/numArestas;
+
+    for(ArcIt arcs(cn); arcs != INVALID; ++arcs) {
+        Node from = cnRandomNodes[random.integer(cnRandomNodes.size())];
+        Node to = cnRandomNodes[random.integer(cnRandomNodes.size())];
+        cnRandom.addArc(from, to,  Link(1,media, Link::LinkType::OtherLabel));
     }
 
     puts("Salvando Rede");
