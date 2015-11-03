@@ -3,26 +3,31 @@
 //
 
 #include "ClusteringCoefficientTask.hpp"
+#include "ClusteringCoefficient.hpp"
 
-ClusteringCoefficientTask::ClusteringCoefficientTask(const FeaturesComplexNetwork &cn,
+ClusteringCoefficientTask::ClusteringCoefficientTask(ClusteringCoefficient *parent ,const FeaturesComplexNetwork &cn,
                                                      const FeaturesComplexNetwork::ArcMap<double>& weights,
-                                                     QList<FeaturesComplexNetwork::Node> nodes):cn(cn), weights(weights), nodes(nodes) {
+                                                     QList<FeaturesComplexNetwork::Node> nodes): parent(parent) ,cn(cn), weights(weights), nodes(nodes) {
 
-
+    this->setAutoDelete(true);
 
 }
 
-QList<ClusteringCoefficientTask::NodeCC> ClusteringCoefficientTask::getResults() const {
-    return results;
-}
 
 void ClusteringCoefficientTask::run() {
 //    int i=0;
   //  int size = nodes.size();
+    QList<NodeCC> ccs;
     for(const auto &node: nodes){
-        results.append(NodeCC{ node, computeCC(node) });
+        ccs.append(NodeCC{ node, computeCC(node) });
+        parent->te.tick();
         //printf("%5d | %5d (%3d)\n",i++,size,(int)(i*1./size*100));
     }
+    parent->mut.lock();
+    parent->ccs.append(ccs);
+    parent->te.print();
+    parent->mut.unlock();
+
 }
 
 float ClusteringCoefficientTask::computeCC(ListDigraphBase::Node node) const {
@@ -41,6 +46,10 @@ float ClusteringCoefficientTask::computeCC(ListDigraphBase::Node node) const {
             if(cn.arcExists(b,a,Link::LinkType::OtherLabel))
                 sum += weights[cn.getArc(b,a,Link::LinkType::OtherLabel)];
         }
+    }
+
+    if(total<=1){
+        return 0;
     }
 
     return sum/(total*(total-1));

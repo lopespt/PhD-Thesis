@@ -7,12 +7,27 @@
 
 
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
-#include "ClusteringCoefficientTask.hpp"
 
 #include <QList>
+#include <Utilities/TimeEstimator.hpp>
+#include <QMutex>
+
 class ClusteringCoefficient {
+private:
+    FeaturesComplexNetwork &cn;
+    int threads;
+    float ratio;
 public:
-    static float Compute(FeaturesComplexNetwork &cn, int threads, float ratio);
+    typedef struct {
+        FeaturesComplexNetwork::Node id;
+        float cc;
+    }NodeCC;
+    QList<NodeCC> ccs;
+    QMutex mut;
+    TimeEstimator te;
+    ClusteringCoefficient (FeaturesComplexNetwork &cn, int threads, float ratio);
+
+    float Compute();
 };
 
 

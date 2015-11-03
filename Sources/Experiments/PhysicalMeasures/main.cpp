@@ -81,7 +81,9 @@ int main(int argc, char **argv) {
     cn.load(config.getCnInput().toStdString().c_str(), config.getFactories());
     puts("Pronto!");
 
-    //float result = ClusteringCoefficient::Compute(cn, 5, 0.5);
+    ClusteringCoefficient CC(cn, config.getNumThreads(), 0.5);
+    float result = CC.Compute();
+    printf("CC = %f\n", result);
 
     //printf("%f\n", result);
 
@@ -98,13 +100,14 @@ int main(int argc, char **argv) {
     gravaDist(cn, wdist.getWeightsDistribution(), "weights.txt");
     */
 
-    DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
-    dist.run();
+    //DistanceDistribution dist(cn, config.getNumThreads(), config.getCnOutput().toStdString().c_str());
+    //dist.run();
     //gravaDistancias(cn, dist.getDist(), config.getCnOutput());
     printf("Fim\n");
 
     return 0;
 }
 
+//CC = 0.050027
 
 

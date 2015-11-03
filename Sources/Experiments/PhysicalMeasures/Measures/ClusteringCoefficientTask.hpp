@@ -5,20 +5,18 @@
 #ifndef PHDTHESIS_CLUSTERINGCOEFFICIENTTASK_HPP
 #define PHDTHESIS_CLUSTERINGCOEFFICIENTTASK_HPP
 
-#include <QThread>
+#include <QRunnable>
 #include <QList>
 #include <Utilities/FeaturesComplexNetwork/FeaturesComplexNetwork.hpp>
+#include "ClusteringCoefficient.hpp"
 
-class ClusteringCoefficientTask : public QThread {
+class ClusteringCoefficientTask : public QRunnable {
 public:
-    typedef struct {
-        FeaturesComplexNetwork::Node id;
-        float cc;
-    }NodeCC;
 
 private:
+    typedef ClusteringCoefficient::NodeCC NodeCC;
+    ClusteringCoefficient *parent;
     const FeaturesComplexNetwork &cn;
-    QList<NodeCC> results;
     const FeaturesComplexNetwork::ArcMap<double>& weights;
     QList<FeaturesComplexNetwork::Node> nodes;
 
@@ -26,9 +24,8 @@ private:
 
 public:
 
-    ClusteringCoefficientTask(const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double>& weights, QList<FeaturesComplexNetwork::Node> nodes);
+    ClusteringCoefficientTask(ClusteringCoefficient* parent, const FeaturesComplexNetwork& cn, const FeaturesComplexNetwork::ArcMap<double>& weights, QList<FeaturesComplexNetwork::Node> nodes);
 
-    QList<NodeCC> getResults() const;
 
 
 protected:
