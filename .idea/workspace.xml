@@ -80,7 +80,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="DistanceDistribution finished v6 Clustering Coefficient">
+    <list default="true" id="3b25eec8-ec19-4299-a6c5-5c7068b41c15" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp" afterPath="$PROJECT_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp" />
     </list>
@@ -103,21 +103,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7074468">
+            <state vertical-scroll-proportion="0.0">
               <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.30851063">
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -1073,12 +1073,6 @@
       <option name="number" value="Default" />
       <updated>1412902447752</updated>
     </task>
-    <task id="LOCAL-00051" summary="Inserted CVMatAndQImage project helper">
-      <created>1442510037826</created>
-      <option name="number" value="00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1442510037826</updated>
-    </task>
     <task id="LOCAL-00052" summary="Altered AnimmatedNonAnimattedImagesExperiment to ComplexNetworkCompare">
       <created>1443052299712</created>
       <option name="number" value="00052" />
@@ -1367,7 +1361,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446516501750</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="DistanceDistribution finished v6 Clustering Coefficient">
+      <created>1446561653585</created>
+      <option name="number" value="00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1446561653586</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -1850,18 +1850,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/Experiments/PhysicalMeasures/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Sources/Experiments/RandomGraphGenerator/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7074468">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.30851063">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
           <folding />
         </state>
       </provider>

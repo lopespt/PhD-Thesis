@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     }
 
     double total=0;
-    unsigned int numArestas;
+    unsigned int numArestas=0;
     for(ArcIt arcs(cn); arcs != INVALID; ++arcs) {
         if(cn.getLinkArcValue(arcs).type == Link::LinkType::OtherLabel) {
             total += cn.getLinkArcValue(arcs).getWeight();
